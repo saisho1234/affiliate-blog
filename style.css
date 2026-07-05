@@ -36,11 +36,17 @@ nav ul a:hover { color: var(--primary); }
 
 /* CTAボタン */
 .btn { display: inline-block; padding: 14px 32px; border-radius: 8px; font-weight: 700; font-size: 1rem; text-decoration: none; transition: all .2s; cursor: pointer; border: none; }
-.btn-primary { background: var(--accent); color: white; }
-.btn-primary:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 4px 16px rgba(249,115,22,0.4); }
+.btn-primary { background: var(--accent); color: white; position: relative; overflow: hidden; }
+.btn-primary:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(249,115,22,0.5); }
+.btn-primary::after { content: ''; position: absolute; top: 50%; left: 50%; width: 0; height: 0; background: rgba(255,255,255,0.3); border-radius: 50%; transform: translate(-50%,-50%); transition: width .4s, height .4s; }
+.btn-primary:active::after { width: 200px; height: 200px; }
 .btn-outline { background: transparent; color: white; border: 2px solid white; }
 .btn-outline:hover { background: white; color: var(--primary); }
 .btn-sm { padding: 10px 20px; font-size: 0.9rem; }
+.btn-lg { padding: 18px 40px; font-size: 1.1rem; }
+/* パルスアニメーション（目を引くCTA用） */
+@keyframes pulse-btn { 0%,100% { box-shadow: 0 0 0 0 rgba(249,115,22,0.5); } 50% { box-shadow: 0 0 0 10px rgba(249,115,22,0); } }
+.btn-pulse { animation: pulse-btn 2s infinite; }
 
 /* セクション */
 section { max-width: 1100px; margin: 0 auto; padding: 48px 20px; }
@@ -87,10 +93,25 @@ section { max-width: 1100px; margin: 0 auto; padding: 48px 20px; }
 .pros li, .cons li { margin-bottom: 4px; }
 
 /* CTA ブロック */
-.cta-block { background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; border-radius: var(--radius); padding: 32px 24px; text-align: center; margin: 32px 0; }
-.cta-block h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 8px; }
-.cta-block p { opacity: 0.85; margin-bottom: 20px; font-size: 0.95rem; }
+.cta-block { background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; border-radius: var(--radius); padding: 36px 28px; text-align: center; margin: 40px 0; border: 2px solid rgba(255,255,255,0.15); }
+.cta-block h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 10px; }
+.cta-block p { opacity: 0.9; margin-bottom: 22px; font-size: 0.98rem; }
 .cta-note { font-size: 0.8rem; opacity: 0.7; margin-top: 10px; }
+/* オレンジCTA（目立つ高CV色） */
+.cta-block-orange { background: linear-gradient(135deg, #ea580c, #f97316); color: white; border-radius: var(--radius); padding: 36px 28px; text-align: center; margin: 40px 0; }
+.cta-block-orange h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 10px; }
+.cta-block-orange p { opacity: 0.9; margin-bottom: 22px; font-size: 0.98rem; }
+/* おすすめラベル */
+.recommend-badge { display: inline-block; background: #f97316; color: white; font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: 4px; margin-bottom: 8px; letter-spacing: 0.05em; }
+/* 緊急性バナー */
+.urgency-bar { background: #fef3c7; border: 1px solid #fbbf24; border-radius: 6px; padding: 10px 16px; font-size: 0.88rem; color: #92400e; font-weight: 600; text-align: center; margin: 16px 0; }
+/* スティッキーモバイルCTA */
+.sticky-cta { display: none; }
+@media (max-width: 768px) {
+  .sticky-cta { display: flex; position: fixed; bottom: 0; left: 0; right: 0; z-index: 999; background: var(--accent); color: white; text-align: center; padding: 14px 20px; font-weight: 700; font-size: 1rem; text-decoration: none; justify-content: center; align-items: center; gap: 8px; box-shadow: 0 -2px 12px rgba(0,0,0,0.2); }
+  .sticky-cta:hover { background: var(--accent-dark); }
+  .article-wrap { padding-bottom: 80px; }
+}
 
 /* FAQ */
 .faq-list { display: flex; flex-direction: column; gap: 12px; }
@@ -138,4 +159,9 @@ footer a { color: #60a5fa; text-decoration: none; }
   .tools-grid { grid-template-columns: 1fr; }
   .pros-cons { grid-template-columns: 1fr; }
   .article-wrap { padding: 20px 16px; }
+  .btn { width: 100%; display: block; text-align: center; padding: 16px 20px; font-size: 1.05rem; }
+  .cta-block, .cta-block-orange { padding: 24px 16px; }
 }
+/* ハイライトアフィリリンク */
+.affiliate-link-highlight { display: inline-flex; align-items: center; gap: 6px; background: #fff7ed; border: 1.5px solid #f97316; border-radius: 6px; padding: 2px 10px; color: #ea580c; font-weight: 600; text-decoration: none; font-size: 0.9rem; transition: all .2s; }
+.affiliate-link-highlight:hover { background: #f97316; color: white; }
