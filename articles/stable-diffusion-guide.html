@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【2026年最新】Stable Diffusionの始め方・使い方を初心者向けに徹底解説｜無料で高品質AI画像生成 | AI navi</title>
+  <meta name="description" content="Stable Diffusionの始め方・使い方を初心者向けに徹底解説。無料でローカル環境に導入する方法・プロンプトの書き方・おすすめモデルを2026年最新情報で紹介。">
+  <meta property="og:title" content="【2026年最新】Stable Diffusionの始め方・使い方を初心者向けに徹底解説 | AI navi">
+  <meta property="og:description" content="Stable Diffusionの始め方・使い方を初心者向けに徹底解説。無料でローカル環境に導入する方法・プロンプトの書き方・おすすめモデルを2026年最新情報で紹介。">
+  <meta property="og:url" content="https://ai-navi.app/articles/stable-diffusion-guide.html">
+  <meta property="og:image" content="https://ai-navi.app/og-image.png">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ai-navi.app/og-image.png">
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://ai-navi.app/articles/stable-diffusion-guide.html">
+  <link rel="stylesheet" href="../style.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3542835566663350" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "【2026年最新】Stable Diffusionの始め方・使い方を初心者向けに徹底解説",
+    "datePublished": "2026-07-05",
+    "dateModified": "2026-07-05",
+    "publisher": { "@type": "Organization", "name": "AI navi" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Stable Diffusionは無料ですか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "はい、Stable Diffusion本体はオープンソースで完全無料です。ただしローカル動作には高性能なGPU（NVIDIA VRAM 6GB以上推奨）が必要です。PCスペックが足りない場合はConoHa AI Canvasなどのクラウドサービスを利用する方法もあります。"}
+      },
+      {
+        "@type": "Question",
+        "name": "Stable DiffusionはどんなPCスペックが必要ですか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "最低限NVIDIA GPU（VRAM 4GB以上）・RAM 8GB・ストレージ20GB以上が必要です。快適に使うにはVRAM 8GB以上・RAM 16GB以上を推奨します。AMD GPUやMac（Apple Silicon）でも動作しますが、設定が複雑になる場合があります。"}
+      },
+      {
+        "@type": "Question",
+        "name": "MidjourneyとStable Diffusionを比べてどう違いますか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "Midjourneyはブラウザで手軽に使える有料サービス（月$10〜）で品質が高く初心者向けです。Stable Diffusionは無料ですが高性能PCが必要で、カスタマイズ性と自由度が圧倒的に高いのが特徴です。"}
+      },
+      {
+        "@type": "Question",
+        "name": "Stable Diffusionで生成した画像は商用利用できますか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "使用するモデルのライセンスによって異なります。多くのモデルはCreativeML Open RAIL-Mライセンスに基づいており、商用利用可能です。ただし特定のモデルは非商用限定の場合があるため、各モデルのライセンスを必ず確認してください。"}
+      },
+      {
+        "@type": "Question",
+        "name": "Stable Diffusionは日本語プロンプトで使えますか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "基本的には英語プロンプトが推奨されます。日本語でも動作しますが、精度が下がる場合があります。DeepLなどで英語に翻訳してからプロンプトを入力すると品質が向上します。"}
+      },
+      {
+        "@type": "Question",
+        "name": "Stable Diffusionはインストールが難しいですか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "AUTOMATIC1111（WebUI）を使えば比較的手順が整理されていますが、Pythonのインストールやコマンドライン操作が必要なため初心者には少し難しく感じる場合があります。PCスペックが足りない・インストールが面倒な方はConoHa AI Canvasのようなクラウドサービスがおすすめです。"}
+      },
+      {
+        "@type": "Question",
+        "name": "Stable Diffusionでおすすめのモデルは何ですか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "汎用性ならSD XL（SDXL）が高品質で人気です。アニメ・イラスト系ならAnythingV5・NovelAI由来モデル、リアル系ならRealisticVisionがおすすめです。Civitaiというサイトで多数のモデルを無料でダウンロードできます。"}
+      },
+      {
+        "@type": "Question",
+        "name": "Stable Diffusionで生成した画像の著作権はどうなりますか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "現在の日本の著作権法では、AIが生成した画像の著作権の扱いは明確ではありません。ただし、モデルのライセンスに従えば生成画像を利用することは一般的に問題ないとされています。商用利用する場合は各モデルのライセンスを確認してください。"}
+      },
+      {
+        "@type": "Question",
+        "name": "Stable Diffusionはスマホで使えますか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "スマホへのローカルインストールは現実的ではありません。スマホで使いたい場合はConoHa AI Canvasなどのクラウド型サービスを利用するのがおすすめです。ブラウザから操作できます。"}
+      },
+      {
+        "@type": "Question",
+        "name": "Stable Diffusionの最新バージョンは何ですか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "2026年7月時点での主要バージョンはStable Diffusion XL（SDXL）およびSD 3.5です。開発元のStability AIは継続的に新バージョンをリリースしています。最新情報は公式サイトやCivitaiで確認してください。"}
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://ai-navi.app/"},
+      {"@type": "ListItem", "position": 2, "name": "AIツール比較", "item": "https://ai-navi.app/"},
+      {"@type": "ListItem", "position": 3, "name": "【2026年最新】Stable Diffusionの始め方・使い方を初心者向けに徹底解説｜無料で高品質AI画像生成", "item": "https://ai-navi.app/articles/stable-diffusion-guide.html"}
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="/">AI <span>navi</span></a>
+    <ul>
+      <li><a href="/#ranking">ランキング</a></li>
+      <li><a href="/#compare">比較表</a></li>
+      <li><a href="claude-vs-chatgpt.html">比較</a></li>
+      <li><a href="free-ai-tools.html">無料AI</a></li>
+      <li><a href="claude-review.html">Claude</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="breadcrumb">
+  <a href="/">ホーム</a> &gt; <a href="ai-image-generation.html">AI画像生成</a> &gt; Stable Diffusion 始め方
+</div>
+
+<div class="article-wrap">
+  <div class="article-header">
+    <h1>【2026年最新】Stable Diffusionの始め方・使い方を初心者向けに徹底解説｜無料で高品質AI画像生成</h1>
+    <div class="article-meta">
+      <span>📅 2026年7月5日</span>
+      <span>🔄 最終更新: 2026年7月5日</span>
+      <span>📖 約4,000字</span>
+    </div>
+  </div>
+
+  <div class="summary-box">
+    <h3>この記事でわかること</h3>
+    <ul>
+      <li>Stable Diffusionとは何か・何ができるか</li>
+      <li>必要なPCスペックとインストール手順（AUTOMATIC1111 / ComfyUI）</li>
+      <li>プロンプトの書き方と高品質画像を生成するコツ</li>
+      <li>おすすめモデル・LoRAの選び方</li>
+      <li>PCスペック不足でも使えるクラウド代替手段</li>
+    </ul>
+  </div>
+
+  <!-- CTA（冒頭） -->
+  <div class="cta-block">
+    <h3>PCなしでStable Diffusion品質を体験するならConoHa AI Canvas</h3>
+    <p>高性能GPUが不要・ブラウザだけで動作・商用利用OK・月額¥550〜。ローカル環境を構築する手間なくすぐに始められます。</p>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+8D9CVM+50+7RUDGZ" rel="nofollow noopener" target="_blank" class="btn btn-outline">ConoHa AI Canvasを無料で試す →</a>
+    <div class="cta-note">※ 本リンクはアフィリエイトリンクです</div>
+  </div>
+
+  <div class="article-toc">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#what">Stable Diffusionとは？</a></li>
+      <li><a href="#compare">Midjourney・Adobe Fireflyとの違い</a></li>
+      <li><a href="#requirements">必要なスペック・環境</a></li>
+      <li><a href="#install">始め方・インストール方法</a></li>
+      <li><a href="#howto">基本的な使い方・プロンプトの書き方</a></li>
+      <li><a href="#models">おすすめモデル・LoRA</a></li>
+      <li><a href="#ui">AUTOMATIC1111 vs ComfyUI</a></li>
+      <li><a href="#cloud">クラウドで使う方法</a></li>
+      <li><a href="#recommend">こんな人におすすめ</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#summary">まとめ</a></li>
+    </ol>
+  </div>
+
+  <div class="article-body">
+
+    <h2 id="what">Stable Diffusionとは？</h2>
+    <p>Stable Diffusion（ステーブル・ディフュージョン）は、Stability AIが開発した<strong>オープンソースの画像生成AI</strong>です。2022年の公開以来、世界中のユーザーや開発者に利用されており、テキストから高品質な画像を生成できます。</p>
+    <p>最大の特徴は<strong>完全無料でローカル環境（自分のPC）にインストールできる</strong>こと。MidjourneyやDALL-Eのような有料クラウドサービスと異なり、一度環境を構築すれば生成コストがかからず、画像枚数の制限もありません。</p>
+    <p>また、ソースコードが公開されているため、世界中の開発者がさまざまな派生モデル・拡張機能を開発しています。リアル系・アニメ系・イラスト系など多様なスタイルの画像を生成できるのが強みです。</p>
+    <ul>
+      <li><strong>オープンソース</strong> — 無料・商用利用可（モデルによる）</li>
+      <li><strong>ローカル動作</strong> — インターネット接続なしで利用可能</li>
+      <li><strong>高いカスタマイズ性</strong> — モデル・LoRA・拡張機能を自由に追加</li>
+      <li><strong>無制限生成</strong> — 枚数制限・課金制限なし（ローカル環境の場合）</li>
+    </ul>
+
+    <h2 id="compare">Midjourney・Adobe Fireflyとの違い</h2>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th>項目</th><th>Stable Diffusion</th><th>Midjourney</th><th>Adobe Firefly</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>料金</td><td><span class="tag-free">無料（ローカル）</span></td><td><span class="tag-paid">月$10〜</span></td><td><span class="tag-free">無料枠あり</span></td></tr>
+          <tr><td>インストール</td><td>必要（複雑）</td><td>不要</td><td>不要</td></tr>
+          <tr><td>必要なPC</td><td>高性能GPU必須</td><td>不要</td><td>不要</td></tr>
+          <tr><td>画像品質</td><td>◎（モデル次第）</td><td>◎</td><td>○</td></tr>
+          <tr><td>カスタマイズ性</td><td>◎ 最高</td><td>△</td><td>△</td></tr>
+          <tr><td>日本語プロンプト</td><td>△（英語推奨）</td><td>△（英語推奨）</td><td>◎</td></tr>
+          <tr><td>商用利用</td><td>○（モデル次第）</td><td>✅</td><td>✅</td></tr>
+          <tr><td>初心者向け</td><td>△（難しい）</td><td>◎</td><td>◎</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Stable Diffusionは<strong>無料・カスタマイズ性・自由度</strong>が圧倒的に高い一方、PCスペックが必要でセットアップに手間がかかります。手軽さを求めるならMidjourneyやConoHa AI Canvasがおすすめです。</p>
+
+    <h2 id="requirements">必要なスペック・環境</h2>
+    <p>Stable Diffusionをローカルで動かすには以下のスペックが必要です。</p>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th>項目</th><th>最低スペック</th><th>推奨スペック</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>GPU</td><td>NVIDIA VRAM 4GB以上</td><td>NVIDIA VRAM 8GB以上（RTX 3060以上）</td></tr>
+          <tr><td>RAM</td><td>8GB</td><td>16GB以上</td></tr>
+          <tr><td>ストレージ</td><td>20GB以上（SSD推奨）</td><td>50GB以上（モデル複数導入時）</td></tr>
+          <tr><td>OS</td><td>Windows 10/11・Linux・macOS</td><td>Windows 11（CUDA対応）</td></tr>
+          <tr><td>Python</td><td>3.10.x</td><td>3.10.x（バージョン注意）</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>AMD GPUやMac（Apple Silicon）</strong>でも動作しますが、CUDAが使えないため速度が遅くなる場合があります。MacはMPS（Metal Performance Shaders）経由での動作に対応しています。</p>
+    <p>GPUスペックが足りない場合や「インストールが面倒」と感じる方には、クラウドでStable Diffusionを使えるサービスが便利です（後述）。</p>
+
+    <h2 id="install">始め方・インストール方法</h2>
+    <p>ここではWindows環境でのAUTOMATIC1111（Stable Diffusion WebUI）のインストール手順を解説します。</p>
+
+    <h3>STEP 1: 前提ソフトウェアのインストール</h3>
+    <ul>
+      <li><strong>Python 3.10.x</strong> — 公式サイト（python.org）からダウンロード。「Add Python to PATH」にチェックを入れる。</li>
+      <li><strong>Git</strong> — git-scm.comからダウンロードしてインストール。</li>
+      <li><strong>NVIDIAドライバ</strong> — GeForce Experienceまたは公式サイトから最新版を適用。</li>
+    </ul>
+
+    <h3>STEP 2: リポジトリのクローン</h3>
+    <p>コマンドプロンプトまたはPowerShellを開き、インストール先フォルダで以下を実行します。</p>
+    <pre style="background:#1e1e1e;color:#d4d4d4;padding:16px;border-radius:8px;overflow-x:auto;font-size:14px;">git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+cd stable-diffusion-webui</pre>
+
+    <h3>STEP 3: モデルファイルの配置</h3>
+    <p>Civitai（civitai.com）やHugging Faceからモデルファイル（.safetensors形式）をダウンロードし、<code>models/Stable-diffusion/</code> フォルダに配置します。</p>
+
+    <h3>STEP 4: 起動</h3>
+    <p><code>webui-user.bat</code>（Windows）をダブルクリックして起動します。初回は必要なライブラリが自動インストールされるため数分かかります。完了するとブラウザで <code>http://127.0.0.1:7860</code> が開きます。</p>
+
+    <h2 id="howto">基本的な使い方・プロンプトの書き方</h2>
+    <p>WebUIが開いたら、テキストボックスにプロンプト（生成したい画像の説明文）を入力して「Generate」ボタンを押すだけです。</p>
+
+    <h3>プロンプトの基本構造</h3>
+    <pre style="background:#1e1e1e;color:#d4d4d4;padding:16px;border-radius:8px;overflow-x:auto;font-size:14px;">[被写体], [スタイル], [背景・環境], [品質キーワード]
+例: beautiful anime girl, blue hair, sunset background, high quality, detailed, 8k</pre>
+
+    <h3>プロンプトのコツ</h3>
+    <ul>
+      <li><strong>英語で書く</strong> — 基本的に英語が精度高い。日本語→DeepLで翻訳して使うと効果的。</li>
+      <li><strong>品質キーワードを加える</strong> — 「masterpiece」「best quality」「ultra-detailed」「8k」など。</li>
+      <li><strong>重要な要素を前に書く</strong> — モデルは前半のワードを優先しやすい。</li>
+      <li><strong>ネガティブプロンプトを活用</strong> — 不要な要素を除外する。例: 「lowres, bad anatomy, blurry, worst quality」。</li>
+      <li><strong>重み付けを使う</strong> — 強調したいワードは <code>(word:1.2)</code> 、弱めたいワードは <code>(word:0.8)</code> で制御できる。</li>
+    </ul>
+
+    <h3>主要な生成パラメータ</h3>
+    <ul>
+      <li><strong>Sampling Steps</strong> — 生成ステップ数。20〜30が品質と速度のバランスが良い。</li>
+      <li><strong>CFG Scale</strong> — プロンプトへの忠実度。7〜12が一般的。高いほどプロンプト通りになるが不自然になりやすい。</li>
+      <li><strong>Seed</strong> — 乱数シード。同じシードと設定で同じ画像を再現できる。</li>
+      <li><strong>Sampling Method</strong> — DPM++ 2M Karras・Euler aが汎用的でおすすめ。</li>
+    </ul>
+
+    <!-- CTA（中間） -->
+    <div class="cta-block">
+      <h3>インストールが面倒・PCスペックが足りない方へ</h3>
+      <p>ConoHa AI CanvasはブラウザでStable Diffusion品質の画像生成が可能。インストール不要・VRAM制限なし・月¥550〜。</p>
+      <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+8D9CVM+50+7RUDGZ" rel="nofollow noopener" target="_blank" class="btn btn-outline">ConoHa AI Canvasを試す →</a>
+      <div class="cta-note">※ 本リンクはアフィリエイトリンクです</div>
+    </div>
+
+    <h2 id="models">おすすめモデル・LoRA</h2>
+    <p>Stable Diffusionの強みのひとつが、用途に合わせてモデルを切り替えられること。Civitaiで多数のモデルを無料でダウンロードできます。</p>
+
+    <h3>おすすめベースモデル</h3>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <h3>SDXL（Stable Diffusion XL）</h3>
+        <p>Stability AI公式の最新世代モデル。高解像度・高品質で汎用性が高い。リアル・イラスト両方に対応。</p>
+        <p><strong>推奨用途:</strong> 汎用・高品質な画像全般</p>
+      </div>
+      <div class="tool-card">
+        <h3>AnythingV5</h3>
+        <p>アニメ・イラスト特化の人気モデル。日本のアニメ調イラストの生成精度が高く、初心者にも使いやすい。</p>
+        <p><strong>推奨用途:</strong> アニメ・マンガ風イラスト</p>
+      </div>
+      <div class="tool-card">
+        <h3>RealisticVision</h3>
+        <p>フォトリアルな人物・風景を生成するモデル。写真と見間違えるほどのリアルな画像が生成可能。</p>
+        <p><strong>推奨用途:</strong> リアル系・人物写真風</p>
+      </div>
+      <div class="tool-card">
+        <h3>DreamShaper</h3>
+        <p>リアル・アニメの中間スタイルで汎用性が高い人気モデル。ファンタジー・デジタルアート風の表現が得意。</p>
+        <p><strong>推奨用途:</strong> ファンタジー・汎用</p>
+      </div>
+    </div>
+
+    <h3>LoRAとは？</h3>
+    <p>LoRA（Low-Rank Adaptation）は、ベースモデルに追加で読み込む小さな追加学習ファイルです。特定のキャラクター・スタイル・概念を少ないデータで再現できます。CivitaiでLoRAファイル（.safetensors）をダウンロードし、<code>models/Lora/</code> フォルダに配置して使います。プロンプト内で <code>&lt;lora:filename:0.8&gt;</code> のように記述して有効化します。</p>
+
+    <h2 id="ui">AUTOMATIC1111 vs ComfyUI</h2>
+    <p>Stable DiffusionのWebUIは主に2種類が主流です。自分のスタイルに合う方を選びましょう。</p>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th>項目</th><th>AUTOMATIC1111</th><th>ComfyUI</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>難易度</td><td>初心者向け</td><td>中〜上級者向け</td></tr>
+          <tr><td>UI</td><td>シンプルなフォーム形式</td><td>ノードベースのワークフロー</td></tr>
+          <tr><td>拡張機能</td><td>豊富（Extensions）</td><td>豊富（Custom Nodes）</td></tr>
+          <tr><td>生成速度</td><td>標準</td><td>やや高速（最適化しやすい）</td></tr>
+          <tr><td>学習コスト</td><td>低い</td><td>高い（ノード設計が必要）</td></tr>
+          <tr><td>おすすめ</td><td>これから始める方</td><td>凝ったワークフローを組みたい方</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>初めてStable Diffusionを使う方は<strong>AUTOMATIC1111からスタートする</strong>のがおすすめです。慣れてきたらComfyUIに移行するユーザーも多くいます。</p>
+
+    <h2 id="cloud">クラウドで使う方法</h2>
+    <p>「PCスペックが足りない」「インストールが面倒」という方は、クラウドでStable Diffusionを使う方法があります。</p>
+
+    <h3>ConoHa AI Canvas（国内ユーザー最強）</h3>
+    <p>GMOインターネットが提供するクラウド型AI画像生成サービス。ブラウザだけでStable Diffusion品質の画像を生成でき、LoRA・img2imgにも対応しています。月¥550〜の低コストで商用利用も可能です。</p>
+    <ul>
+      <li>インストール・設定が完全不要</li>
+      <li>高性能クラウドGPUで高速生成</li>
+      <li>VRAM不足を気にせず高解像度出力が可能</li>
+      <li>日本語サポートあり・国内サービスなので安心</li>
+    </ul>
+
+    <h3>Google Colab</h3>
+    <p>GoogleのクラウドJupyter環境。無料プランでもGPUが使えますが、利用制限があります。AUTOMATIC1111をColabで動かすノートブックが公開されており、無料で試す入口として利用できます。ただし無料枠は不安定なため、継続利用には有料プランが必要です。</p>
+
+    <h3>Replicate / Modal</h3>
+    <p>APIベースのクラウドGPUサービス。Stable Diffusionを従量課金で利用できます。開発者・エンジニア向けですが、ちょっと試したい場合にも使えます。</p>
+
+    <h2 id="recommend">こんな人におすすめ</h2>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <h3>Stable Diffusion（ローカル）がおすすめ</h3>
+        <ul>
+          <li>NVIDIA GPU（VRAM 8GB以上）を持っている</li>
+          <li>コストをできるだけゼロにしたい</li>
+          <li>無制限に画像を生成したい</li>
+          <li>モデル・LoRAを自由に使ってカスタマイズしたい</li>
+          <li>プログラム・コマンドに抵抗がない</li>
+        </ul>
+      </div>
+      <div class="tool-card">
+        <h3>ConoHa AI Canvasがおすすめ</h3>
+        <ul>
+          <li>GPUが非力・MacやノートPCを使っている</li>
+          <li>インストール作業をしたくない</li>
+          <li>スマホやタブレットからも使いたい</li>
+          <li>安定した環境で手軽にStable Diffusion品質を体験したい</li>
+          <li>月¥550〜の低コストで商用利用したい</li>
+        </ul>
+      </div>
+    </div>
+    <p>また、AI画像生成ツール全般を比較したい方は<a href="ai-image-generation.html">AI画像生成おすすめ12選の比較記事</a>もご覧ください。Midjourney の詳しいレビューは<a href="midjourney-review.html">こちら</a>、デザイン用途には<a href="canva-pro-review.html">Canva Proレビュー</a>も参考になります。</p>
+
+    <h2 id="faq">よくある質問</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Stable Diffusionは無料ですか？</div>
+        <div class="faq-a">はい、Stable Diffusion本体はオープンソースで完全無料です。ただしローカル動作には高性能なGPU（NVIDIA VRAM 6GB以上推奨）が必要です。PCスペックが足りない場合はConoHa AI Canvasなどのクラウドサービスを利用する方法もあります。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">PCのスペックはどのくらい必要ですか？</div>
+        <div class="faq-a">最低限NVIDIA GPU（VRAM 4GB以上）・RAM 8GB・ストレージ20GB以上が必要です。快適に使うにはVRAM 8GB以上・RAM 16GB以上を推奨します。AMD GPUやMac（Apple Silicon）でも動作しますが、設定が複雑になる場合があります。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Midjourneyと比べてどう違いますか？</div>
+        <div class="faq-a">Midjourneyはブラウザで手軽に使える有料サービス（月$10〜）で品質が高く初心者向けです。Stable Diffusionは無料ですが高性能PCが必要で、カスタマイズ性と自由度が圧倒的に高いのが特徴です。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">商用利用はできますか？</div>
+        <div class="faq-a">使用するモデルのライセンスによって異なります。多くのモデルはCreativeML Open RAIL-Mライセンスに基づいており商用利用可能です。ただし特定のモデルは非商用限定の場合があるため、各モデルのライセンスを必ず確認してください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">日本語プロンプトは使えますか？</div>
+        <div class="faq-a">基本的には英語プロンプトが推奨されます。日本語でも動作しますが、精度が下がる場合があります。DeepLなどで英語に翻訳してからプロンプトを入力すると品質が向上します。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">インストールは難しいですか？</div>
+        <div class="faq-a">AUTOMATIC1111を使えば比較的手順が整理されていますが、Pythonのインストールやコマンドライン操作が必要なため初心者には少し難しく感じる場合があります。PCスペックが足りない・インストールが面倒な方はConoHa AI Canvasのようなクラウドサービスがおすすめです。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">モデルは何を使えばいいですか？</div>
+        <div class="faq-a">汎用性ならSD XL（SDXL）が高品質で人気です。アニメ・イラスト系ならAnythingV5・NovelAI由来モデル、リアル系ならRealisticVisionがおすすめです。Civitaiというサイトで多数のモデルを無料でダウンロードできます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">生成した画像の著作権はどうなりますか？</div>
+        <div class="faq-a">現在の日本の著作権法では、AIが生成した画像の著作権の扱いは明確ではありません。モデルのライセンスに従えば生成画像を利用することは一般的に問題ないとされていますが、商用利用する場合は各モデルのライセンスを確認してください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">スマホで使えますか？</div>
+        <div class="faq-a">スマホへのローカルインストールは現実的ではありません。スマホで使いたい場合はConoHa AI Canvasなどのクラウド型サービスを利用するのがおすすめです。ブラウザから操作できます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">最新バージョンは何ですか？</div>
+        <div class="faq-a">2026年7月時点での主要バージョンはStable Diffusion XL（SDXL）およびSD 3.5です。開発元のStability AIは継続的に新バージョンをリリースしています。最新情報は公式サイトやCivitaiで確認してください。</div>
+      </div>
+    </div>
+
+    <h2 id="summary">まとめ</h2>
+    <p>Stable Diffusionは、無料・高カスタマイズ性・無制限生成という唯一無二のメリットを持つ画像生成AIです。高性能GPUを持っているユーザーにとっては最強のツールとなります。</p>
+    <ul>
+      <li><strong>完全無料でローカル動作</strong> — コストゼロで無制限生成</li>
+      <li><strong>モデル・LoRAで無限にカスタマイズ</strong> — Civitaiで豊富な素材</li>
+      <li><strong>AUTOMATIC1111で初心者も始めやすい</strong> — GUIで直感操作</li>
+      <li><strong>PCスペックが足りない場合はConoHa AI Canvas</strong> — ブラウザだけでStable Diffusion品質</li>
+    </ul>
+    <p>まずはConoHa AI Canvasでクラウドから体験してみて、本格的に使いたくなったらローカル環境を構築するのがスムーズなステップです。</p>
+
+    <!-- CTA（末尾） -->
+    <div class="cta-block">
+      <h3>まずはConoHa AI Canvasでお試しを</h3>
+      <p>ローカルPCなしでStable Diffusion品質の画像生成を体験。インストール不要・商用利用OK・月¥550〜。</p>
+      <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+8D9CVM+50+7RUDGZ" rel="nofollow noopener" target="_blank" class="btn btn-outline">ConoHa AI Canvasを試す →</a>
+      <div class="cta-note">※ 本リンクはアフィリエイトリンクです</div>
+    </div>
+
+    <div style="margin-top:32px;">
+      <h3>関連記事</h3>
+      <ul>
+        <li><a href="ai-image-generation.html">【2026年】AI画像生成おすすめ12選比較｜無料・日本語対応・商用OK</a></li>
+        <li><a href="midjourney-review.html">Midjourneyの使い方・料金・評判を徹底レビュー</a></li>
+        <li><a href="canva-pro-review.html">Canva Pro レビュー｜料金・機能・無料との違いを解説</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="affiliate-disc">本サイトはアフィリエイト広告（A8.net等）を利用しています。記事内のリンクから商品・サービスを購入・申込みいただいた場合、当サイトに報酬が発生することがあります。</div>
+  <div class="footer-nav">
+    <a href="/">ホーム</a>
+    <a href="claude-review.html">Claudeレビュー</a>
+    <a href="free-ai-tools.html">無料AIツール</a>
+    <a href="ai-image-generation.html">AI画像生成</a>
+    <a href="conoha-ai-canvas-review.html">ConoHa AI Canvas</a>
+    <a href="#">プライバシーポリシー</a>
+  </div>
+  <p>© 2026 AI navi</p>
+</footer>
+
+</body>
+</html>
