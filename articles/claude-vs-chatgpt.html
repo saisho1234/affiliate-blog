@@ -281,11 +281,11 @@
 
       <h3>Claudeとは</h3>
       <p>Claudeは、Anthropic（アンソロピック）が開発したAIアシスタントです。Anthropicは元OpenAIの研究者たちが設立した企業で、「安全で有益なAI」を企業理念に掲げています。</p>
-      <p>現在の最新モデルは<strong>Claude 3.5 Sonnet / Claude 3 Opus</strong>など複数ラインアップがあります。2024年以降、特に日本語品質と長文処理能力で高い評価を受けています。</p>
+      <p>現在の最新モデルは<strong>Claude Sonnet 4.5 / Claude Opus 4.5</strong>など複数ラインアップがあります。2024年以降、特に日本語品質と長文処理能力で高い評価を受けています。</p>
       <ul>
         <li>開発元: Anthropic（米国）</li>
         <li>リリース: 2023年3月〜</li>
-        <li>最新モデル: Claude 3.5 Sonnet、Claude 3 Opus</li>
+        <li>最新モデル: Claude Sonnet 4.5、Claude Opus 4.5</li>
         <li>対応言語: 多言語対応（日本語品質が高い）</li>
         <li>公式サイト: claude.ai</li>
       </ul>
@@ -317,7 +317,7 @@
           <tbody>
             <tr>
               <td><strong>無料プラン</strong></td>
-              <td>あり（制限付きでClaude 3.5 Sonnet利用可）</td>
+              <td>あり（制限付きでClaude Sonnet 4.5利用可）</td>
               <td>あり（GPT-4o制限付き利用可）</td>
             </tr>
             <tr>
@@ -426,6 +426,9 @@
       <!-- Claudeが勝る場面 -->
       <h2 id="claude-wins">Claudeが勝る場面3選</h2>
 
+      <h3>Artifacts（コードのリアルタイムプレビュー）</h3>
+      <p>Claudeには「Artifacts」という独自機能があります。生成したHTMLコードやReactコンポーネントをチャット画面内でそのままプレビュー確認できる機能で、<strong>ChatGPTにはない差別化ポイント</strong>です。コード生成・Webアプリ作成にClaudeが特に向いている理由の一つです。</p>
+
       <h3>1. 日本語文章作成・ビジネス文書</h3>
       <p>Claudeの最大の強みは<strong>日本語の自然さ</strong>です。メール・報告書・ブログ記事など、日本語でのアウトプットが求められる場面では、Claudeのほうがより自然で読みやすい文章を生成します。</p>
       <p>ChatGPTも優秀ですが、Claudeは文体の一貫性・敬語の使い方・文末表現のバリエーションなどで一歩上回っています。特に<strong>ビジネスメール・提案書・プレスリリース</strong>などフォーマルな文書では差が顕著です。</p>
@@ -441,12 +444,14 @@
       </div>
 
       <h3>2. 長文の処理・要約・分析</h3>
-      <p>Claudeは<strong>最大200,000トークン（約15万字）</strong>という業界トップクラスのコンテキスト長を誇ります。これはChatGPT（最大128,000トークン）を大きく上回ります。</p>
+      <p>Claudeは<strong>最大200,000トークン（長文処理に圧倒的な強み）</strong>という業界トップクラスのコンテキスト長を誇ります。これはChatGPT（最大128,000トークン）を大きく上回ります。</p>
       <p>長い契約書・論文・書籍・コードベースを丸ごと読み込んで分析・要約させる用途では、Claudeのほうが圧倒的に有利です。複数のドキュメントを同時に処理する場合も同様です。</p>
 
       <h3>3. 倫理的・安全な回答の一貫性</h3>
       <p>Anthropicは「安全なAI」を最優先に開発を進めており、Claudeは有害なコンテンツを生成しにくく設計されています。企業での利用・教育用途での利用においても安心して使えます。</p>
       <p>また、Claudeは回答が分からないときに「分からない」と正直に答える傾向が強く、<strong>ハルシネーション（事実誤認）が比較的少ない</strong>という特徴があります。</p>
+
+      <div class="urgency-bar" style="margin: 16px 0;">⚠️ 正直に言うと: Claudeの無料版はChatGPTの無料版より使用回数の制限が厳しいです。毎日大量に使う場合はPro（$20/月）への課金が必要になる可能性が高いです。</div>
 
       <!-- ChatGPTが勝る場面 -->
       <h2 id="chatgpt-wins">ChatGPTが勝る場面3選</h2>
@@ -470,7 +475,7 @@
 
       <!-- 実際に比較 -->
       <h2 id="actual-comparison">実際に同じプロンプトで比較してみた</h2>
-      <p>同じプロンプトをClaude（Claude 3.5 Sonnet）とChatGPT（GPT-4o）に入力して、出力を比較してみました。</p>
+      <p>同じプロンプトをClaude（Claude Sonnet 4.5）とChatGPT（GPT-4o）に入力して、出力を比較してみました。</p>
 
       <h3>テスト1: 日本語ビジネスメール作成</h3>
       <div class="prompt-box">
@@ -623,6 +628,35 @@
           <div class="faq-question">Q. ビジネス用途ではどちらがおすすめですか？</div>
           <div class="faq-answer">ビジネス文書・メール作成・長文レポートなどの用途にはClaudeが特に適しています。ChatGPTはより多機能でプラグインやAPI連携が豊富なためシステム開発や多用途での利用に向いています。企業での組織的な利用にはClaude TeamやChatGPT Teamプランも検討してみてください。</div>
         </div>
+      </div>
+
+      <h2 id="workflow">プロが実践するClaudeとChatGPTの使い分けワークフロー</h2>
+      <p>どちらか一方ではなく、<strong>用途に合わせて使い分けるのが最も効率的</strong>です。</p>
+      <div class="tools-grid" style="grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0;">
+      <div class="tool-card">
+      <div class="tool-card-header"><div class="tool-icon" style="background:#7c3aed;">C</div><h3>Claudeを使う場面</h3></div>
+      <ul>
+      <li>📄 長文の構成・アウトライン作成</li>
+      <li>📝 文書・報告書の精度の高い文章生成</li>
+      <li>💻 コードレビュー・Artifacts確認</li>
+      <li>📚 PDFやファイルの内容分析・要約</li>
+      <li>✅ 丁寧な日本語ビジネス文体が必要な場面</li>
+      </ul>
+      </div>
+      <div class="tool-card">
+      <div class="tool-card-header"><div class="tool-icon" style="background:#10b981;">G</div><h3>ChatGPTを使う場面</h3></div>
+      <ul>
+      <li>🔍 最新情報の検索・収集</li>
+      <li>🎨 DALL-E 3で画像生成</li>
+      <li>🤖 GPTsでルーティン業務の自動化</li>
+      <li>📊 データ分析・Pythonコード実行</li>
+      <li>🌐 英語でのリサーチ・翻訳</li>
+      </ul>
+      </div>
+      </div>
+      <div class="summary-box">
+      <h3>💡 おすすめの使い分け例</h3>
+      <p><strong>ブログ記事作成なら</strong>: 構成・アウトラインはClaude → 本文執筆はChatGPT → 最終チェック・修正はClaudeが効率的</p>
       </div>
 
       <!-- まとめ -->
