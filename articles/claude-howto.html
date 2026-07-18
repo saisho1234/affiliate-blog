@@ -815,6 +815,153 @@
 
     </div>
 
+    <!-- H2: Claudeでできること一覧 -->
+    <h2 id="features-list">Claudeでできること一覧</h2>
+    <p>Claudeは多様なタスクをこなせる万能AIです。代表的な用途をカード形式でまとめました。</p>
+
+    <div class="usecase-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:24px 0;">
+      <div class="usecase-card" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;">
+        <div class="uc-icon" style="font-size:2rem;margin-bottom:8px;">✍️</div>
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:6px;">文章作成</h3>
+        <p style="font-size:0.88rem;color:var(--text-light);">ブログ記事・メール・報告書・SNS投稿・プレスリリースなど、あらゆる文章を日本語で高品質に生成。自然な文体と正確な日本語が強みです。</p>
+      </div>
+      <div class="usecase-card" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;">
+        <div class="uc-icon" style="font-size:2rem;margin-bottom:8px;">💻</div>
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:6px;">コード生成</h3>
+        <p style="font-size:0.88rem;color:var(--text-light);">JavaScript・Python・Reactなど多数の言語に対応。コードの自動生成・バグ修正・リファクタリング・コードレビューまで幅広く対応します。</p>
+      </div>
+      <div class="usecase-card" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;">
+        <div class="uc-icon" style="font-size:2rem;margin-bottom:8px;">📊</div>
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:6px;">データ分析</h3>
+        <p style="font-size:0.88rem;color:var(--text-light);">CSVや表データを貼り付けてトレンド分析・比較・洞察の抽出ができます。Excelよりも直感的な操作でビジネス上の示唆を引き出せます。</p>
+      </div>
+      <div class="usecase-card" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;">
+        <div class="uc-icon" style="font-size:2rem;margin-bottom:8px;">🌐</div>
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:6px;">翻訳</h3>
+        <p style="font-size:0.88rem;color:var(--text-light);">英語・中国語・韓国語・フランス語など多言語に対応。ニュアンスを保ちながら自然な翻訳ができ、ビジネス文書・技術文書の翻訳精度が特に高いです。</p>
+      </div>
+      <div class="usecase-card" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;">
+        <div class="uc-icon" style="font-size:2rem;margin-bottom:8px;">📝</div>
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:6px;">要約</h3>
+        <p style="font-size:0.88rem;color:var(--text-light);">長文・PDF・議事録・論文などを短時間で要約。最大200,000トークンのコンテキストにより、長大な文書も一度に処理できます。</p>
+      </div>
+      <div class="usecase-card" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;">
+        <div class="uc-icon" style="font-size:2rem;margin-bottom:8px;">💡</div>
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:6px;">アイデア出し</h3>
+        <p style="font-size:0.88rem;color:var(--text-light);">新規事業・商品企画・マーケティング施策・キャッチコピーなど、ブレインストーミングのパートナーとして大量のアイデアを高速で生成します。</p>
+      </div>
+    </div>
+
+    <!-- H2: Artifacts機能の使い方 -->
+    <h2 id="artifacts">Artifacts機能の使い方（コード実行・HTMLプレビュー・SVG生成）</h2>
+    <p>Claudeには<strong>Artifacts（アーティファクト）</strong>という強力な機能があります。コードや成果物をチャットウィンドウとは別のパネルで表示・実行できる機能で、2024年に追加されてから多くのユーザーに活用されています。</p>
+
+    <h3>Artifactsでできる3つのこと</h3>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:20px 0;">
+      <div style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;">
+        <p style="font-weight:700;font-size:0.95rem;color:var(--primary);margin-bottom:8px;">1. コード実行</p>
+        <p style="font-size:0.88rem;color:var(--text-light);">PythonやJavaScriptのコードを書くだけでなく、Artifacts上で実際に実行して結果を確認できます。「この計算をやって」と依頼すると、コードと実行結果を同時に見られます。</p>
+        <p style="font-size:0.82rem;color:var(--text-light);margin-top:8px;">例: 「月次売上のグラフをPythonで描いて」→コード生成＋グラフ表示</p>
+      </div>
+      <div style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;">
+        <p style="font-weight:700;font-size:0.95rem;color:var(--primary);margin-bottom:8px;">2. HTMLプレビュー</p>
+        <p style="font-size:0.88rem;color:var(--text-light);">HTMLとCSSで書いたWebページをリアルタイムでプレビューできます。「簡単なランディングページを作って」と頼むと、コードと同時に見た目を確認しながら修正できます。</p>
+        <p style="font-size:0.82rem;color:var(--text-light);margin-top:8px;">例: 「シンプルなポートフォリオページのHTMLを作って」</p>
+      </div>
+      <div style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px;">
+        <p style="font-weight:700;font-size:0.95rem;color:var(--primary);margin-bottom:8px;">3. SVG生成</p>
+        <p style="font-size:0.88rem;color:var(--text-light);">SVGコードからアイコン・図形・フローチャートなどのベクターグラフィックを生成してプレビューできます。画像生成とは異なるアプローチでビジュアルを作成できます。</p>
+        <p style="font-size:0.82rem;color:var(--text-light);margin-top:8px;">例: 「シンプルなフローチャートをSVGで作って」</p>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <strong>Artifactsの使い方:</strong> Claudeにコード生成やHTMLの作成を依頼すると、自動的にArtifactsパネルが開いて結果が表示されます。特別な設定は不要で、無料版でも利用できます。
+    </div>
+
+    <!-- H2: 使いこなしTips -->
+    <h2 id="tips">Claudeの使いこなしTips 5選</h2>
+    <p>Claudeをより効果的に使うための実践的なコツを5つ紹介します。</p>
+
+    <div style="counter-reset:tips-counter;">
+      <div style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:16px;display:flex;gap:16px;align-items:flex-start;">
+        <div style="background:var(--primary);color:white;font-size:0.75rem;font-weight:700;padding:4px 10px;border-radius:20px;white-space:nowrap;flex-shrink:0;margin-top:2px;">TIP 1</div>
+        <div>
+          <p style="font-weight:700;margin-bottom:6px;">ロール指定で専門的な回答を引き出す</p>
+          <p style="font-size:0.9rem;color:var(--text-light);">「あなたはプロのコピーライターです」「あなたはシニアエンジニアです」のように役割を与えることで、その専門家視点の回答が得られます。最初の一文にロール指定を入れるだけで回答の質が大幅に向上します。</p>
+          <div class="prompt-example" style="background:#f8fafc;border-left:3px solid var(--primary);padding:10px 14px;font-size:0.88rem;border-radius:0 6px 6px 0;margin-top:10px;">例: 「あなたはSEOに精通したWebマーケターです。この記事タイトルを10案考えてください。」</div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:16px;display:flex;gap:16px;align-items:flex-start;">
+        <div style="background:var(--primary);color:white;font-size:0.75rem;font-weight:700;padding:4px 10px;border-radius:20px;white-space:nowrap;flex-shrink:0;margin-top:2px;">TIP 2</div>
+        <div>
+          <p style="font-weight:700;margin-bottom:6px;">具体的な条件を箇条書きで渡す</p>
+          <p style="font-size:0.9rem;color:var(--text-light);">曖昧な指示より「誰向けに」「何文字で」「どのトーンで」「どの形式で」を明示することで、求める回答に近づきます。特に条件を箇条書きにして渡すと整理しやすくなります。</p>
+          <div class="prompt-example" style="background:#f8fafc;border-left:3px solid var(--primary);padding:10px 14px;font-size:0.88rem;border-radius:0 6px 6px 0;margin-top:10px;">例: 「【対象】30代会社員 【文字数】500字 【トーン】親しみやすい 【目的】メルマガ登録を促す」</div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:16px;display:flex;gap:16px;align-items:flex-start;">
+        <div style="background:var(--primary);color:white;font-size:0.75rem;font-weight:700;padding:4px 10px;border-radius:20px;white-space:nowrap;flex-shrink:0;margin-top:2px;">TIP 3</div>
+        <div>
+          <p style="font-weight:700;margin-bottom:6px;">出力フォーマットを指定して再利用しやすくする</p>
+          <p style="font-size:0.9rem;color:var(--text-light);">「Markdown形式で」「表形式で」「JSON形式で」「番号付きリストで」など出力形式を指定することで、そのまま使えるアウトプットが得られます。後続の作業に合わせた形式を指定しましょう。</p>
+          <div class="prompt-example" style="background:#f8fafc;border-left:3px solid var(--primary);padding:10px 14px;font-size:0.88rem;border-radius:0 6px 6px 0;margin-top:10px;">例: 「比較結果をMarkdownの表形式で出力してください」</div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:16px;display:flex;gap:16px;align-items:flex-start;">
+        <div style="background:var(--primary);color:white;font-size:0.75rem;font-weight:700;padding:4px 10px;border-radius:20px;white-space:nowrap;flex-shrink:0;margin-top:2px;">TIP 4</div>
+        <div>
+          <p style="font-weight:700;margin-bottom:6px;">反復改善で品質を高める</p>
+          <p style="font-size:0.9rem;color:var(--text-light);">一度の回答に満足せず「もっとカジュアルに」「3番のパターンをさらに深掘りして」「具体的な数字を入れて」と追加指示して磨き上げましょう。Claudeは同じ会話の文脈を保持するので、反復指示で品質が向上します。</p>
+          <div class="prompt-example" style="background:#f8fafc;border-left:3px solid var(--primary);padding:10px 14px;font-size:0.88rem;border-radius:0 6px 6px 0;margin-top:10px;">例: 「良いですが、もう少し説得力を高めるため、具体的な事例や数字を追加してください」</div>
+        </div>
+      </div>
+      <div style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:16px;display:flex;gap:16px;align-items:flex-start;">
+        <div style="background:var(--primary);color:white;font-size:0.75rem;font-weight:700;padding:4px 10px;border-radius:20px;white-space:nowrap;flex-shrink:0;margin-top:2px;">TIP 5</div>
+        <div>
+          <p style="font-weight:700;margin-bottom:6px;">Projects機能でプロジェクト別に文脈を管理する</p>
+          <p style="font-size:0.9rem;color:var(--text-light);">Claudeの「Projects」機能を使うと、プロジェクトごとに会話の文脈・知識・指示を引き継げます。例えば「ブログ執筆プロジェクト」「コーディングプロジェクト」のように分けることで、毎回同じ前提を説明せずに済みます（Proプランで利用可能）。</p>
+          <div class="prompt-example" style="background:#f8fafc;border-left:3px solid var(--primary);padding:10px 14px;font-size:0.88rem;border-radius:0 6px 6px 0;margin-top:10px;">使い方: 左サイドバーの「Projects」から新規作成 → プロジェクト名と説明を設定 → 以降の会話はすべてそのプロジェクト内で継続</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- H2: FAQ -->
+    <h2 id="faq-howto">よくある質問（FAQ）追加5問</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Claudeのコードインタープリター機能はありますか？</div>
+        <div class="faq-a">ClaudeにはChatGPTのような独立したコードインタープリター機能はありませんが、Artifacts機能を使うことでコードの実行・HTMLプレビュー・SVG生成が可能です。Pythonコードを書いて実行結果を確認したり、HTMLページをリアルタイムでプレビューしたりできます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">ClaudeとChatGPTを比較してどちらが優れていますか？</div>
+        <div class="faq-a">用途によって異なります。日本語の文章品質・長文処理・コーディングの正確さはClaudeが得意です。一方、画像生成（DALL-E 3）・プラグイン連携・リアルタイムWeb検索はChatGPTが優れています。両方無料で使えるので、自分の用途に合った方を選ぶか、使い分けるのがベストです。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Claudeで長い文書（PDFなど）を分析できますか？</div>
+        <div class="faq-a">はい、最大200,000トークン（約15万字相当）のコンテキストに対応しています。PDFや長い文章をそのまま添付または貼り付けて「この文書を要約して」「この契約書の重要なポイントを抽出して」と依頼できます。長文処理はClaudeの最大の強みの一つです。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Claudeをビジネスで安全に使えますか？</div>
+        <div class="faq-a">個人利用の無料版・Proプランでは、デフォルトでチャット内容がモデル改善に使用される場合があります。機密情報や個人情報の入力は避けてください。法人向けのTeam・Enterpriseプランでは、データがOpenAIの学習に使われない保証があります。業務利用には上位プランを推奨します。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">ClaudeのProプランにする価値はありますか？</div>
+        <div class="faq-a">毎日業務でClaudeを使っている方、複数プロジェクトで文脈を管理したい方、最新モデルへの優先アクセスが必要な方にはProプラン（月$20）の価値があります。逆に週数回程度の利用であれば、無料版で十分な場合がほとんどです。まず無料版を2〜3週間試してから判断することをおすすめします。</div>
+      </div>
+    </div>
+
+    <!-- 関連記事ボックス -->
+    <div class="related-box" style="background:#f0f7ff;border-left:4px solid #4e8cff;padding:1.2rem 1.5rem;border-radius:8px;margin:2.5rem 0;">
+      <p style="font-weight:700;margin:0 0 0.8rem;color:#2c5f9e;font-size:1rem;">📚 関連記事もチェック</p>
+      <ul style="margin:0;padding-left:1.4rem;line-height:2;">
+        <li><a href="./claude-review.html" style="color:#4e8cff;">Claude AIレビュー【2026年最新】ChatGPTと徹底比較</a></li>
+        <li><a href="./claude-vs-chatgpt.html" style="color:#4e8cff;">ChatGPT vs Claude 徹底比較【2026年版】どちらを選ぶべきか？</a></li>
+        <li><a href="./free-ai-tools.html" style="color:#4e8cff;">無料で使えるAIツール厳選15選【2026年版】</a></li>
+      </ul>
+    </div>
+
     <!-- H2: まとめ -->
     <h2 id="summary">まとめ</h2>
     <p>この記事では、Claude AIの使い方について以下の内容を解説しました。</p>
