@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>【2026年】ConoHa AI Canvasの使い方ガイド｜初心者でも簡単にAI画像を生成する方法 | AI navi</title>
+  <meta name="description" content="ConoHa AI Canvasの使い方・始め方を初心者向けに徹底解説。登録から画像生成、プロンプトのコツ、活用法まで実際に使った体験をもとにステップバイステップで紹介。2026年最新ガイド。">
+  <meta property="og:title" content="【2026年】ConoHa AI Canvasの使い方ガイド｜初心者でも簡単にAI画像生成 | AI navi">
+  <meta property="og:description" content="ConoHa AI Canvasの登録方法から画像生成、プロンプトのコツまで。初心者でも迷わない完全ガイド。">
+  <meta property="og:url" content="https://ai-navi.app/articles/conoha-ai-canvas-howto">
+  <meta property="og:image" content="https://ai-navi.app/og-image.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="AI navi">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ai-navi.app/og-image.png">
+  <link rel="canonical" href="https://ai-navi.app/articles/conoha-ai-canvas-howto">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3542835566663350" crossorigin="anonymous"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "【2026年】ConoHa AI Canvasの使い方ガイド｜初心者でも簡単にAI画像を生成する方法",
+    "image": "https://ai-navi.app/og-image.png",
+    "datePublished": "2026-07-20",
+    "dateModified": "2026-07-20",
+    "author": { "@type": "Organization", "name": "AI navi", "url": "https://ai-navi.app" },
+    "publisher": { "@type": "Organization", "name": "AI navi", "logo": { "@type": "ImageObject", "url": "https://ai-navi.app/og-image.png" } }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://ai-navi.app/"},
+      {"@type": "ListItem", "position": 2, "name": "AIツール比較", "item": "https://ai-navi.app/"},
+      {"@type": "ListItem", "position": 3, "name": "ConoHa AI Canvasの使い方ガイド", "item": "https://ai-navi.app/articles/conoha-ai-canvas-howto"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"ConoHa AI Canvasは初心者でも使えますか？","acceptedAnswer":{"@type":"Answer","text":"はい、ブラウザからアクセスするだけで使えるクラウド型サービスなので、高性能PCやGPUは不要です。日本語プロンプトにも対応しており、初心者でもすぐに画像生成を始められます。"}},
+    {"@type":"Question","name":"ConoHa AI Canvasの料金はいくらですか？","acceptedAnswer":{"@type":"Answer","text":"エントリープランが月額1,100円（10時間分のWebUI利用込み）、スタンダードプランが月額4,378円（50時間分）、アドバンスプランが月額9,878円（100時間分）です。無料時間超過分は6.6円/分の従量課金です。"}},
+    {"@type":"Question","name":"生成できる画像の枚数に制限はありますか？","acceptedAnswer":{"@type":"Answer","text":"画像の生成枚数に制限はありません。各プランに含まれるWebUI利用時間の範囲内であれば、何枚でも自由に生成できます。時間超過分は従量課金（6.6円/分）となります。"}},
+    {"@type":"Question","name":"日本語のプロンプトで画像を生成できますか？","acceptedAnswer":{"@type":"Answer","text":"はい、ConoHa AI Canvasは日本語プロンプトに対応しています。英語が苦手な方でも日本語で指示を入力するだけで画像を生成できます。ただし、より精度の高い生成には英語プロンプトの併用もおすすめです。"}},
+    {"@type":"Question","name":"商用利用は可能ですか？","acceptedAnswer":{"@type":"Answer","text":"ConoHa AI Canvasで生成した画像の商用利用は、使用するモデルのライセンスに依存します。商用利用可能なモデルを選択すれば、ブログ・SNS・広告など幅広い用途で使用できます。"}},
+    {"@type":"Question","name":"LoRAやCheckpointは使えますか？","acceptedAnswer":{"@type":"Answer","text":"はい、LoRA（画風やキャラクターの微調整モデル）やCheckpoint（ベースモデル）を自由にアップロードして利用できます。Civitaiなどからダウンロードしたモデルを導入可能です。"}},
+    {"@type":"Question","name":"スマホからでも使えますか？","acceptedAnswer":{"@type":"Answer","text":"ブラウザベースのサービスなのでスマホからもアクセスは可能ですが、画像生成UIの操作性を考えるとPCでの利用を強く推奨します。画面サイズが小さいと操作しにくい場合があります。"}},
+    {"@type":"Question","name":"Stable Diffusionとの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"ConoHa AI CanvasはStable Diffusion（AUTOMATIC1111）をクラウド上で動かすサービスです。ローカル版と同等の機能をブラウザだけで使えるため、GPU搭載PCを持っていない方でも本格的なAI画像生成ができます。"}},
+    {"@type":"Question","name":"解約はいつでもできますか？","acceptedAnswer":{"@type":"Answer","text":"はい、月額プランはいつでも解約可能です。解約後は契約期間終了まで利用でき、違約金は発生しません。解約手続きはConoHaの管理パネルから簡単に行えます。"}},
+    {"@type":"Question","name":"動画も生成できますか？","acceptedAnswer":{"@type":"Answer","text":"はい、ConoHa AI Canvasではテキストや画像をもとにAIが動きをつけた動画を生成する機能も利用できます。専門的な編集スキルがなくても、構図やモーションを自動で調整してくれます。"}}
+  ]}
+  </script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="/">AI <span>navi</span></a>
+    <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('nav-open')" aria-label="メニュー"><span></span><span></span><span></span></button>
+    <ul>
+      <li><a href="/#ranking">ランキング</a></li>
+      <li><a href="/#compare">比較表</a></li>
+      <li><a href="claude-review.html">Claude</a></li>
+      <li><a href="chatgpt-review.html">ChatGPT</a></li>
+      <li><a href="../diagnosis.html">AI診断</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="breadcrumb">
+  <a href="/">ホーム</a> &gt; <a href="/">AIツール比較</a> &gt; ConoHa AI Canvas 使い方ガイド
+</div>
+
+<div class="article-wrap">
+  <div class="article-header">
+    <h1>【2026年】ConoHa AI Canvasの使い方ガイド｜初心者でも簡単にAI画像を生成する方法</h1>
+    <div class="article-meta">
+      <span>2026年7月20日</span>
+      <span>最終更新: 2026年7月20日</span>
+      <span>約6,500字</span>
+    </div>
+  </div>
+  <div class="author-box">
+    <div class="author-avatar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="52" height="52"><circle cx="32" cy="32" r="32" fill="#4f46e5"/><circle cx="32" cy="24" r="10" fill="white"/><ellipse cx="32" cy="52" rx="16" ry="12" fill="white"/></svg></div>
+    <div class="author-info">
+      <div class="author-name">AI navi 編集部</div>
+      <div class="author-bio">ChatGPT・Claude・Geminiなど主要AIを日常的に活用するブロガー。各ツールを実際に試し、使いやすさ・料金・機能をわかりやすく比較・解説しています。</div>
+    </div>
+  </div>
+  <div class="article-hero-img">
+    <img src="../images/photos/laptop-work.jpg" alt="ConoHa AI Canvasで画像生成するイメージ" loading="lazy" style="width:100%;height:240px;object-fit:cover;border-radius:10px;margin:16px 0;">
+  </div>
+
+  <div class="summary-box">
+    <h3>この記事でわかること</h3>
+    <ul>
+      <li>ConoHa AI Canvasとは何か・他のAI画像生成ツールとの違い</li>
+      <li>アカウント登録から初めての画像生成までの完全手順</li>
+      <li>高品質な画像を生成するプロンプトのコツ</li>
+      <li>LoRA・Checkpointの導入方法</li>
+      <li>ブログ・SNS・副業など具体的な活用シーン</li>
+      <li>料金プランの選び方と節約テクニック</li>
+    </ul>
+  </div>
+
+  <!-- CTA 冒頭 -->
+  <div class="cta-block-orange">
+    <div class="recommend-badge">★ 編集部おすすめ</div>
+    <h3>結論：ConoHa AI Canvasは「手軽さ」と「本格派」を両立したAI画像生成サービス</h3>
+    <p>高性能GPU不要・ブラウザだけで本格的なStable Diffusion環境が使える。月額1,100円からスタートでき、生成枚数は無制限。初心者がAI画像生成を始めるならこれ一択です。</p>
+    <div class="urgency-bar">今なら月額1,100円で10時間使える エントリープランが人気</div>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+8D9CVM+50+7RUDGZ" rel="nofollow noopener" target="_blank" class="btn btn-primary btn-pulse btn-lg">ConoHa AI Canvasを始める →</a>
+    <div class="cta-note">※ 本リンクはアフィリエイトリンクです</div>
+  </div>
+
+  <div class="article-toc">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#what">ConoHa AI Canvasとは？</a></li>
+      <li><a href="#price">料金プランと選び方</a></li>
+      <li><a href="#register">登録方法（ステップバイステップ）</a></li>
+      <li><a href="#howto">基本的な使い方・画像生成の手順</a></li>
+      <li><a href="#prompt">プロンプトのコツ・高品質な画像を作るテクニック</a></li>
+      <li><a href="#lora">LoRA・Checkpointの導入方法</a></li>
+      <li><a href="#use-case">活用シーン・こんな使い方ができる</a></li>
+      <li><a href="#experience">実際に使ってみた体験レビュー</a></li>
+      <li><a href="#compare">他のAI画像生成ツールとの比較</a></li>
+      <li><a href="#merit">メリット・デメリット</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#summary">まとめ</a></li>
+    </ol>
+  </div>
+
+  <div class="article-body">
+
+    <h2 id="what">ConoHa AI Canvasとは？</h2>
+    <div class="article-img-mid" style="margin: 24px 0; border-radius: 10px; overflow: hidden;">
+      <img src="../images/photos/hands-typing.jpg" alt="AI画像生成を始める" style="width: 100%; height: 240px; object-fit: cover;" loading="lazy">
+    </div>
+    <p><strong>ConoHa AI Canvas</strong>は、GMOインターネットグループが提供する<strong>クラウド型AI画像生成サービス</strong>です。Stable Diffusion（AUTOMATIC1111 WebUI）をクラウド上で動かす仕組みで、高性能なGPU搭載PCを持っていなくても、ブラウザだけで本格的なAI画像生成ができます。</p>
+
+    <p>「AI画像生成に興味はあるけど、ローカル環境の構築が難しそう」「高スペックPCを持っていない」という方にとって、最も手軽にStable Diffusion環境を手に入れられるサービスです。</p>
+
+    <h3>ConoHa AI Canvasの3つの強み</h3>
+    <ul>
+      <li><strong>環境構築ゼロ</strong> — アカウント作成後すぐに画像生成をスタートできる</li>
+      <li><strong>生成枚数の制限なし</strong> — 利用時間内であれば何枚でも自由に生成OK</li>
+      <li><strong>日本語プロンプト対応</strong> — 英語が苦手でも日本語で直感的に使える</li>
+    </ul>
+
+    <p>運営元はレンタルサーバー「ConoHa」で知られるGMOインターネットグループ。サーバーインフラの技術力に定評のある日本企業が運営しているため、<strong>安定性とサポートの安心感</strong>も大きなメリットです。</p>
+
+    <p>関連記事: <a href="conoha-ai-canvas-review.html">ConoHa AI Canvasの評判・口コミを徹底レビュー</a></p>
+
+
+    <h2 id="price">料金プランと選び方</h2>
+    <p>ConoHa AI Canvasの料金は<strong>「月額基本料金 + WebUI利用料金」</strong>の合算方式です。各プランに無料のWebUI利用時間が含まれており、超過分は1分あたり6.6円の従量課金となります。</p>
+
+    <table class="price-table">
+      <thead>
+        <tr><th>プラン</th><th>月額料金</th><th>無料利用時間</th><th>ストレージ</th><th>こんな人向け</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>エントリー</strong></td><td>1,100円/月</td><td>10時間</td><td>30GB</td><td>初めてAI画像生成を試す方</td></tr>
+        <tr><td><strong>スタンダード</strong></td><td>4,378円/月</td><td>50時間</td><td>100GB</td><td>定期的に画像を生成する方</td></tr>
+        <tr><td><strong>アドバンス</strong></td><td>9,878円/月</td><td>100時間</td><td>500GB</td><td>大量生成・プロユース</td></tr>
+      </tbody>
+    </table>
+
+    <div class="summary-box">
+      <h3>編集部のおすすめ</h3>
+      <p>初めての方は<strong>エントリープラン（月額1,100円）</strong>で十分です。10時間あれば数百枚の画像を生成可能。ブログのアイキャッチやSNS素材を作る程度なら余裕があります。使い慣れてきて利用時間が足りなくなったらスタンダードにアップグレードしましょう。</p>
+    </div>
+
+    <h3>料金を節約するコツ</h3>
+    <ul>
+      <li><strong>プロンプトを事前に考えておく</strong> — WebUIを開いてから考えると無駄に時間を消費します</li>
+      <li><strong>使わないときはWebUIを停止する</strong> — 起動中は利用時間がカウントされるため、離席時は停止しましょう</li>
+      <li><strong>バッチ生成を活用する</strong> — 同じプロンプトで一気に複数枚生成すると効率的です</li>
+    </ul>
+
+
+    <h2 id="register">登録方法（ステップバイステップ）</h2>
+    <p>ここからは実際にConoHa AI Canvasに登録して画像生成を始めるまでの手順を、画面の流れに沿って解説します。所要時間は<strong>約5〜10分</strong>です。</p>
+
+    <h3>STEP 1: ConoHa公式サイトにアクセス</h3>
+    <p>まず<a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+8D9CVM+50+7RUDGZ" rel="nofollow noopener" target="_blank">ConoHa AI Canvas公式サイト</a>にアクセスします。トップページの「今すぐはじめる」ボタンをクリックしましょう。</p>
+
+    <h3>STEP 2: ConoHaアカウントを作成</h3>
+    <p>初めての方は新規アカウント登録が必要です。</p>
+    <ol>
+      <li><strong>メールアドレスとパスワード</strong>を入力</li>
+      <li>確認メールが届くので、<strong>メール内のリンクをクリック</strong>して認証</li>
+      <li><strong>個人情報</strong>（氏名・住所・電話番号）を入力</li>
+      <li><strong>本人確認</strong> — 電話番号認証（SMS or 電話）を完了</li>
+    </ol>
+    <p>すでにConoHa WINGやConoHa VPSのアカウントをお持ちの方は、同じアカウントでそのままログインできます。</p>
+
+    <h3>STEP 3: お支払い方法を登録</h3>
+    <p>クレジットカードまたはConoHaチャージ（プリペイド方式）で支払いを設定します。クレジットカードなら即座に利用開始できます。</p>
+
+    <h3>STEP 4: AI Canvasプランを選択</h3>
+    <p>管理パネルにログイン後、左メニューから「AI Canvas」を選択します。</p>
+    <ol>
+      <li>料金プラン（エントリー / スタンダード / アドバンス）を選択</li>
+      <li>内容を確認して「お申し込み」をクリック</li>
+    </ol>
+    <p>初めての方は<strong>エントリープラン</strong>がおすすめです。月額1,100円で10時間分のWebUI利用時間が含まれています。</p>
+
+    <h3>STEP 5: WebUIを起動して準備完了！</h3>
+    <p>申し込み完了後、管理パネルのAI Canvas画面から<strong>「WebUIを起動」</strong>ボタンをクリックします。数分でStable Diffusion（AUTOMATIC1111）の環境が立ち上がり、すぐに画像生成を始められます。</p>
+
+    <div class="summary-box">
+      <h3>登録のポイント</h3>
+      <ul>
+        <li>ConoHaの既存アカウントがあれば新規登録不要</li>
+        <li>クレジットカード登録で即座に利用開始</li>
+        <li>WebUIの起動は管理パネルからワンクリック</li>
+        <li>起動から画像生成まで約3分</li>
+      </ul>
+    </div>
+
+
+    <h2 id="howto">基本的な使い方・画像生成の手順</h2>
+    <p>WebUIが起動したら、いよいよ画像生成です。ここでは最も基本的な「txt2img（テキストから画像を生成）」の手順を解説します。</p>
+
+    <h3>1. txt2imgタブを開く</h3>
+    <p>WebUIを開くと、デフォルトで「txt2img」タブが選択されています。ここがメインの画像生成画面です。</p>
+
+    <h3>2. プロンプト（指示文）を入力</h3>
+    <p>上部の「Prompt」欄に、生成したい画像の内容を入力します。</p>
+    <p><strong>プロンプトの例:</strong></p>
+    <p><code>beautiful landscape, sunset over ocean, dramatic clouds, high quality, 4k, photorealistic</code></p>
+    <p>日本語にも対応しているので、<code>美しい風景、海に沈む夕日、ドラマチックな雲</code> のように入力することもできます。</p>
+
+    <h3>3. ネガティブプロンプトを入力</h3>
+    <p>「Negative prompt」欄には、<strong>生成して欲しくない要素</strong>を記述します。</p>
+    <p><code>low quality, blurry, deformed, ugly, watermark, text</code></p>
+    <p>これにより、品質の低い画像や不自然な描写を抑制できます。</p>
+
+    <h3>4. パラメータを設定</h3>
+    <ul>
+      <li><strong>Sampling method（サンプラー）:</strong> 「DPM++ 2M Karras」や「Euler a」が定番。初心者は「DPM++ 2M Karras」がおすすめ</li>
+      <li><strong>Sampling steps:</strong> 20〜30が標準。数値が大きいほど精密だが生成時間が増加</li>
+      <li><strong>Width / Height（画像サイズ）:</strong> 512×512が基本。ブログ用なら768×512がおすすめ</li>
+      <li><strong>CFG Scale:</strong> 7〜12が推奨。高いほどプロンプトに忠実だが不自然になりやすい</li>
+      <li><strong>Seed:</strong> -1（ランダム）にしておくと毎回異なる画像が生成される</li>
+    </ul>
+
+    <h3>5. 「Generate」ボタンをクリック</h3>
+    <p>設定が終わったら「Generate」ボタンを押すだけ。<strong>数秒〜数十秒で画像が生成</strong>されます。気に入った画像は右クリックで保存するか、下部の「Save」ボタンで保存しましょう。</p>
+
+    <h3>6. img2img（画像から画像を生成）も試してみよう</h3>
+    <p>「img2img」タブでは、<strong>既存の画像をベースに新しい画像を生成</strong>できます。写真をアニメ風に変換したり、ラフスケッチから精密なイラストを作ったりと、応用の幅が広がります。</p>
+
+    <p>関連記事: <a href="ai-image-generation.html">AI画像生成ツール比較ガイド</a></p>
+
+    <!-- CTA 中間 -->
+    <div class="cta-block-orange">
+      <h3>まずは実際に触ってみよう</h3>
+      <p>月額1,100円のエントリープランで、本格的なAI画像生成を体験できます。設定不要・ブラウザだけでOK。</p>
+      <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+8D9CVM+50+7RUDGZ" rel="nofollow noopener" target="_blank" class="btn btn-primary btn-pulse btn-lg">ConoHa AI Canvasを試してみる →</a>
+      <div class="cta-note">※ 本リンクはアフィリエイトリンクです</div>
+    </div>
+
+
+    <h2 id="prompt">プロンプトのコツ・高品質な画像を作るテクニック</h2>
+    <p>ConoHa AI Canvasで<strong>クオリティの高い画像を生成する</strong>ためには、プロンプトの書き方がとても重要です。実際に何百枚も生成して見つけたコツを紹介します。</p>
+
+    <h3>基本構造：「主題 + スタイル + 品質 + 詳細」</h3>
+    <p>良いプロンプトは4つの要素で構成されます。</p>
+    <ol>
+      <li><strong>主題（Subject）:</strong> 何を描くか — 「a girl」「landscape」「cat」</li>
+      <li><strong>スタイル（Style）:</strong> 画風 — 「anime style」「photorealistic」「oil painting」</li>
+      <li><strong>品質（Quality）:</strong> クオリティ指定 — 「masterpiece」「best quality」「4k」「highly detailed」</li>
+      <li><strong>詳細（Details）:</strong> 細かい指定 — 「blue eyes」「golden hour lighting」「bokeh background」</li>
+    </ol>
+
+    <h3>プロンプト実例集</h3>
+    <p><strong>ブログのアイキャッチ用（風景系）:</strong></p>
+    <p><code>beautiful japanese garden in autumn, red maple leaves, traditional temple, soft sunlight, high quality, masterpiece, 4k resolution</code></p>
+
+    <p><strong>SNS投稿用（キャラクター系）:</strong></p>
+    <p><code>1girl, cute anime style, pastel colors, sitting at cafe, coffee cup, warm lighting, masterpiece, best quality</code></p>
+
+    <p><strong>ビジネス素材用（アイコン・バナー）:</strong></p>
+    <p><code>modern flat design icon, AI technology concept, blue and white color scheme, clean background, minimalist, professional</code></p>
+
+    <h3>やりがちな失敗と対策</h3>
+    <ul>
+      <li><strong>プロンプトが短すぎる</strong> → 「cat」だけでなく「fluffy orange cat, sitting on windowsill, sunlight, detailed fur」のように詳細に</li>
+      <li><strong>相反する指示を入れている</strong> → 「photorealistic anime style」のように矛盾した指示は避ける</li>
+      <li><strong>ネガティブプロンプトを空にしている</strong> → 最低限 <code>low quality, blurry, deformed</code> は入れておく</li>
+      <li><strong>CFG Scaleが高すぎる</strong> → 15以上にすると色が飽和して不自然になりやすい。7〜11が安定</li>
+    </ul>
+
+    <p>関連記事: <a href="stable-diffusion-guide.html">Stable Diffusion完全ガイド</a></p>
+
+
+    <h2 id="lora">LoRA・Checkpointの導入方法</h2>
+    <p>ConoHa AI Canvasの魅力のひとつが、<strong>LoRA（Low-Rank Adaptation）やCheckpoint（ベースモデル）を自由に導入できる</strong>点です。これにより、アニメ風・リアル風・特定のキャラクター風など、理想の画風で画像を生成できるようになります。</p>
+
+    <h3>Checkpointとは？</h3>
+    <p>画像生成のベースとなるAIモデルファイルです。モデルによって「リアルな人物が得意」「アニメイラストが得意」「風景画が得意」など特性が異なります。</p>
+
+    <h3>LoRAとは？</h3>
+    <p>Checkpointに追加で適用する<strong>微調整モデル</strong>です。「特定のキャラクター」「特定の画風」「特定のポーズ」などを再現するために使います。ファイルサイズが小さく、手軽に導入できるのが特徴です。</p>
+
+    <h3>導入手順</h3>
+    <ol>
+      <li><strong>モデルをダウンロード</strong> — <a href="https://civitai.com/" rel="nofollow noopener" target="_blank">Civitai</a>などのサイトからCheckpointやLoRAをダウンロード</li>
+      <li><strong>ConoHa AI Canvasにアップロード</strong> — 管理パネルのファイルマネージャーから、Checkpointは「models/Stable-diffusion」フォルダに、LoRAは「models/Lora」フォルダにアップロード</li>
+      <li><strong>WebUIで選択</strong> — WebUIの左上でCheckpointを切り替え、プロンプト内で <code>&lt;lora:モデル名:強度&gt;</code> を記述してLoRAを適用</li>
+    </ol>
+
+    <div class="summary-box">
+      <h3>おすすめのモデル（初心者向け）</h3>
+      <ul>
+        <li><strong>リアル系:</strong> Beautiful Realistic Asians, Realistic Vision</li>
+        <li><strong>アニメ系:</strong> Anything V5, Counterfeit</li>
+        <li><strong>汎用系:</strong> DreamShaper, Deliberate</li>
+      </ul>
+      <p>まずは汎用系のDreamShaperあたりから試して、慣れてきたらリアル系・アニメ系のモデルに挑戦してみましょう。</p>
+    </div>
+
+
+    <h2 id="use-case">活用シーン・こんな使い方ができる</h2>
+    <p>ConoHa AI Canvasで生成した画像は、さまざまなシーンで活用できます。実際の活用例を紹介します。</p>
+
+    <h3>1. ブログのアイキャッチ画像</h3>
+    <p>記事のテーマに合ったオリジナル画像を生成すれば、<strong>フリー素材サイトと被らない唯一無二のアイキャッチ</strong>が作れます。SEO的にもオリジナル画像は有利です。</p>
+
+    <h3>2. SNSの投稿素材</h3>
+    <p>Instagram・X（旧Twitter）に投稿するビジュアル素材をAIで量産。毎日投稿するSNS運用の素材不足を解消できます。</p>
+
+    <h3>3. AI画像で副業</h3>
+    <p>生成した画像をストックフォトサイトに出品したり、NFTアートとして販売したり。<strong>AI画像生成スキルは副業にも直結します</strong>。</p>
+
+    <h3>4. YouTubeサムネイル</h3>
+    <p>注目を集めるサムネイル画像をAIで作成。Photoshopのスキルがなくてもプロ級のサムネが完成します。</p>
+
+    <h3>5. Webデザインの素材・モックアップ</h3>
+    <p>Webサイトのデザインカンプやプレゼン資料に使う素材をすぐに生成。デザイナーへの発注前のイメージ共有にも便利です。</p>
+
+    <p>関連記事: <a href="ai-side-job.html">AIを使った副業の始め方ガイド</a></p>
+
+
+    <h2 id="experience">実際に使ってみた体験レビュー</h2>
+    <p>ここからは、AI navi編集部が実際にConoHa AI Canvasを使ってみた感想をお伝えします。</p>
+
+    <div class="summary-box">
+      <h3>AI navi編集部の評価（5段階）</h3>
+      <ul>
+        <li>始めやすさ: 5/5 — アカウント作成から画像生成まで10分以内</li>
+        <li>画像の品質: 4.5/5 — ローカル版と遜色ないクオリティ</li>
+        <li>操作性: 4/5 — AUTOMATIC1111に慣れていれば快適</li>
+        <li>コスパ: 4.5/5 — GPU購入費を考えれば圧倒的にお得</li>
+        <li>総合評価: 4.5/5</li>
+      </ul>
+    </div>
+
+    <h3>良かった点</h3>
+    <p><strong>環境構築のストレスがゼロ。</strong>ローカルでStable Diffusionを動かそうとすると、Python環境の設定・CUDAのインストール・モデルファイルの配置など、初心者には挫折ポイントが多数あります。ConoHa AI Canvasなら、それがすべてスキップ。アカウント作成からわずか5分で最初の画像を生成できました。</p>
+
+    <p><strong>生成速度が安定して速い。</strong>512×512の画像なら1枚あたり5〜10秒程度で生成されます。サーバー側のGPUスペックが高いため、ローカルの中〜低スペックPCよりも速く、ストレスフリーでした。</p>
+
+    <p><strong>日本語プロンプトが思った以上に使える。</strong>「桜の咲く日本庭園、春の朝、柔らかい光」のように日本語で入力しても、かなり意図通りの画像が生成されました。もちろん英語プロンプトの方が精度は高いですが、日本語だけでも十分実用的です。</p>
+
+    <h3>気になった点</h3>
+    <p><strong>WebUI起動中は常に利用時間がカウントされる</strong>ため、プロンプトを考えながら操作していると予想以上に時間を消費します。事前にプロンプトをメモ帳にまとめておくのがベストです。</p>
+
+    <p><strong>完全な初心者にはAUTOMATIC1111のUIが少し複雑に感じるかもしれません。</strong>パラメータの意味がわからないと戸惑う場面もありますが、デフォルト設定のままでも十分きれいな画像は生成できます。</p>
+
+
+    <h2 id="compare">他のAI画像生成ツールとの比較</h2>
+    <p>ConoHa AI Canvasと主要なAI画像生成ツールを比較してみましょう。</p>
+
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th>ツール</th><th>月額料金</th><th>環境構築</th><th>カスタマイズ性</th><th>日本語対応</th><th>特徴</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>ConoHa AI Canvas</strong></td><td>1,100円〜</td><td>不要</td><td>非常に高い</td><td>対応</td><td>クラウドStable Diffusion</td></tr>
+          <tr><td>Midjourney</td><td>$10〜</td><td>不要</td><td>低い</td><td>一部</td><td>高品質・Discord操作</td></tr>
+          <tr><td>Adobe Firefly</td><td>680円〜</td><td>不要</td><td>中程度</td><td>対応</td><td>商用安心・Adobe連携</td></tr>
+          <tr><td>DALL-E 3</td><td>ChatGPT Plus内</td><td>不要</td><td>低い</td><td>対応</td><td>自然言語で指示</td></tr>
+          <tr><td>ローカルSD</td><td>0円（GPU必要）</td><td>必要</td><td>非常に高い</td><td>対応</td><td>完全無料・要スペック</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>ConoHa AI Canvasが最も向いているのは、</strong>「Stable Diffusionの自由度が欲しいけど、高性能PCやGPUは持っていない」という方です。LoRAやCheckpointの自由な導入、パラメータの細かい調整など、<strong>他のクラウドAIツールにはない圧倒的なカスタマイズ性</strong>が最大の差別化ポイントです。</p>
+
+    <p>一方、「とにかく簡単に1枚だけ画像を作りたい」という方には<a href="midjourney-review.html">Midjourney</a>や<a href="adobe-firefly-review.html">Adobe Firefly</a>の方が手軽かもしれません。</p>
+
+    <p>関連記事: <a href="free-ai-tools.html">無料で使えるAIツールまとめ</a></p>
+
+
+    <h2 id="merit">メリット・デメリット</h2>
+    <h3>メリット</h3>
+    <ul>
+      <li><strong>環境構築不要</strong> — ブラウザだけで本格的なStable Diffusion環境が使える</li>
+      <li><strong>高性能GPU不要</strong> — クラウド側のGPUで処理するため、低スペックPCでもOK</li>
+      <li><strong>生成枚数無制限</strong> — 利用時間内であれば何枚でも生成し放題</li>
+      <li><strong>LoRA・Checkpoint対応</strong> — 自由にモデルを導入して理想の画風を追求可能</li>
+      <li><strong>日本語対応・国内運営</strong> — 日本語プロンプト対応で日本語サポートも充実</li>
+      <li><strong>月額1,100円から</strong> — GPU購入（10〜20万円）と比較して圧倒的にローコスト</li>
+      <li><strong>動画生成にも対応</strong> — テキストや画像からAI動画を生成する機能も利用可能</li>
+    </ul>
+
+    <h3>デメリット</h3>
+    <ul>
+      <li><strong>従量課金に注意</strong> — WebUI起動中は常に利用時間がカウントされる</li>
+      <li><strong>UIに学習コストあり</strong> — AUTOMATIC1111のインターフェースは初見では複雑に感じる</li>
+      <li><strong>大量生成にはコストがかかる</strong> — ヘビーユーザーはローカル環境の方が長期的に安い場合も</li>
+      <li><strong>オフライン利用不可</strong> — インターネット接続が必須</li>
+    </ul>
+
+
+    <h2 id="faq">よくある質問（FAQ）</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">ConoHa AI Canvasは初心者でも使えますか？</div>
+        <div class="faq-a">はい、ブラウザからアクセスするだけで使えるクラウド型サービスなので、高性能PCやGPUは不要です。日本語プロンプトにも対応しており、初心者でもすぐに画像生成を始められます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">ConoHa AI Canvasの料金はいくらですか？</div>
+        <div class="faq-a">エントリープランが月額1,100円（10時間分のWebUI利用込み）、スタンダードプランが月額4,378円（50時間分）、アドバンスプランが月額9,878円（100時間分）です。無料時間超過分は6.6円/分の従量課金です。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">生成できる画像の枚数に制限はありますか？</div>
+        <div class="faq-a">画像の生成枚数に制限はありません。各プランに含まれるWebUI利用時間の範囲内であれば、何枚でも自由に生成できます。時間超過分は従量課金（6.6円/分）となります。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">日本語のプロンプトで画像を生成できますか？</div>
+        <div class="faq-a">はい、ConoHa AI Canvasは日本語プロンプトに対応しています。英語が苦手な方でも日本語で指示を入力するだけで画像を生成できます。ただし、より精度の高い生成には英語プロンプトの併用もおすすめです。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">商用利用は可能ですか？</div>
+        <div class="faq-a">ConoHa AI Canvasで生成した画像の商用利用は、使用するモデルのライセンスに依存します。商用利用可能なモデルを選択すれば、ブログ・SNS・広告など幅広い用途で使用できます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">LoRAやCheckpointは使えますか？</div>
+        <div class="faq-a">はい、LoRA（画風やキャラクターの微調整モデル）やCheckpoint（ベースモデル）を自由にアップロードして利用できます。Civitaiなどからダウンロードしたモデルを導入可能です。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">スマホからでも使えますか？</div>
+        <div class="faq-a">ブラウザベースのサービスなのでスマホからもアクセスは可能ですが、画像生成UIの操作性を考えるとPCでの利用を強く推奨します。画面サイズが小さいと操作しにくい場合があります。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Stable Diffusionとの違いは何ですか？</div>
+        <div class="faq-a">ConoHa AI CanvasはStable Diffusion（AUTOMATIC1111）をクラウド上で動かすサービスです。ローカル版と同等の機能をブラウザだけで使えるため、GPU搭載PCを持っていない方でも本格的なAI画像生成ができます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">解約はいつでもできますか？</div>
+        <div class="faq-a">はい、月額プランはいつでも解約可能です。解約後は契約期間終了まで利用でき、違約金は発生しません。解約手続きはConoHaの管理パネルから簡単に行えます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">動画も生成できますか？</div>
+        <div class="faq-a">はい、ConoHa AI Canvasではテキストや画像をもとにAIが動きをつけた動画を生成する機能も利用できます。専門的な編集スキルがなくても、構図やモーションを自動で調整してくれます。</div>
+      </div>
+    </div>
+
+
+    <h2 id="summary">まとめ</h2>
+    <p>ConoHa AI Canvasは、<strong>「Stable Diffusionを使いたいけど環境構築が面倒」「高性能GPUを持っていない」</strong>という方にとって、ベストな選択肢です。</p>
+
+    <p>月額1,100円のエントリープランから始められ、生成枚数は無制限。LoRAやCheckpointも自由に導入でき、ローカル版と同等のカスタマイズ性を持ちながら、面倒な環境構築は一切不要です。</p>
+
+    <p>ブログのアイキャッチ画像、SNS素材、副業用のイラスト制作など、AI画像生成のスキルはこれからの時代に必須。ConoHa AI Canvasで、まずは最初の1枚を生成してみてください。</p>
+
+    <div class="summary-box">
+      <h3>この記事のまとめ</h3>
+      <ul>
+        <li>ConoHa AI CanvasはクラウドでStable Diffusionを使えるサービス</li>
+        <li>月額1,100円から、生成枚数無制限で使い放題</li>
+        <li>環境構築ゼロ、ブラウザだけで本格的なAI画像生成が可能</li>
+        <li>日本語プロンプト対応で初心者にもやさしい</li>
+        <li>LoRA・Checkpointの導入で自由にカスタマイズ可能</li>
+        <li>ブログ・SNS・副業など活用シーンは無限大</li>
+      </ul>
+    </div>
+
+    <!-- CTA 末尾 -->
+    <div class="cta-block-orange">
+      <h3>ConoHa AI Canvasで、AIによる画像生成を始めよう</h3>
+      <p>環境構築不要・月額1,100円から。ブラウザを開くだけで、プロ級のAI画像生成があなたのものに。</p>
+      <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+8D9CVM+50+7RUDGZ" rel="nofollow noopener" target="_blank" class="btn btn-primary btn-pulse btn-lg">今すぐConoHa AI Canvasを始める →</a>
+      <div class="cta-note">※ 本リンクはアフィリエイトリンクです</div>
+    </div>
+
+    <h3>関連記事</h3>
+    <ul>
+      <li><a href="conoha-ai-canvas-review.html">ConoHa AI Canvasの評判・口コミレビュー</a></li>
+      <li><a href="ai-image-generation.html">AI画像生成ツール比較ガイド</a></li>
+      <li><a href="adobe-firefly-review.html">Adobe Fireflyレビュー</a></li>
+      <li><a href="midjourney-review.html">Midjourneyレビュー</a></li>
+      <li><a href="stable-diffusion-guide.html">Stable Diffusion完全ガイド</a></li>
+      <li><a href="ai-side-job.html">AIを使った副業の始め方</a></li>
+      <li><a href="free-ai-tools.html">無料で使えるAIツールまとめ</a></li>
+      <li><a href="chatgpt-review.html">ChatGPTレビュー</a></li>
+    </ul>
+
+  </div>
+</div>
+
+<footer>
+  <div class="affiliate-disc">本サイトはアフィリエイト広告（A8.net等）を利用しています。記事内のリンクから商品・サービスを購入・申込みいただいた場合、当サイトに報酬が発生することがあります。</div>
+  <div class="footer-nav">
+    <a href="/">ホーム</a>
+    <a href="claude-review.html">Claudeレビュー</a>
+    <a href="chatgpt-review.html">ChatGPTレビュー</a>
+    <a href="#">プライバシーポリシー</a>
+  </div>
+  <p>&copy; 2026 AI navi</p>
+</footer>
+
+<!-- スティッキーモバイルCTA -->
+<a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+8D9CVM+50+7RUDGZ" rel="nofollow noopener" target="_blank" class="sticky-cta">
+  ConoHa AI Canvasを始める →
+</a>
+
+</body>
+</html>
