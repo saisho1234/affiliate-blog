@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>【2026年最新】Stable Diffusionの始め方・使い方を初心者向けに徹底解説｜無料で高品質AI画像生成 | AI navi</title>
-  <meta name="description" content="Stable Diffusionの始め方・使い方を初心者向けに徹底解説。無料でローカル環境に導入する方法・プロンプトの書き方・おすすめモデルを2026年最新情報で紹介。">
-  <meta property="og:title" content="【2026年最新】Stable Diffusionの始め方・使い方を初心者向けに徹底解説 | AI navi">
-  <meta property="og:description" content="Stable Diffusionの始め方・使い方を初心者向けに徹底解説。無料でローカル環境に導入する方法・プロンプトの書き方・おすすめモデルを2026年最新情報で紹介。">
+  <title>【2026年最新】Stable Diffusion 初心者向け始め方・Google Colabで無料で使う方法を徹底解説 | AI navi</title>
+  <meta name="description" content="Stable Diffusionを無料で始める方法を初心者向けに徹底解説。Google Colabで高性能GPUなしで動かせる手順・AUTOMATIC1111の導入方法・プロンプトの書き方を2026年最新版で紹介。初心者でも10分で始められます。">
+  <meta property="og:title" content="【2026年最新】Stable Diffusion 初心者向け始め方・Google Colabで無料で使う方法を徹底解説 | AI navi">
+  <meta property="og:description" content="Stable Diffusionを無料で始める方法を初心者向けに徹底解説。Google Colabで高性能GPUなしで動かせる手順・AUTOMATIC1111の導入方法・プロンプトの書き方を2026年最新版で紹介。初心者でも10分で始められます。">
   <meta property="og:url" content="https://ai-navi.app/articles/stable-diffusion-guide">
   <meta property="og:image" content="https://ai-navi.app/images/og-stable-diffusion.png">
   <meta property="og:type" content="article">
@@ -20,9 +20,9 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "【2026年最新】Stable Diffusionの始め方・使い方を初心者向けに徹底解説",
+    "headline": "【2026年最新】Stable Diffusion 初心者向け始め方・Google Colabで無料で使う方法を徹底解説",
     "datePublished": "2026-07-05",
-    "dateModified": "2026-07-05",
+    "dateModified": "2026-07-29",
     "publisher": { "@type": "Organization", "name": "AI navi" }
   }
   </script>
@@ -33,53 +33,53 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Stable Diffusionは無料ですか？",
-        "acceptedAnswer": {"@type": "Answer", "text": "はい、Stable Diffusion本体はオープンソースで完全無料です。ただしローカル動作には高性能なGPU（NVIDIA VRAM 6GB以上推奨）が必要です。PCスペックが足りない場合はConoHa AI Canvasなどのクラウドサービスを利用する方法もあります。"}
+        "name": "Stable Diffusionは無料で使えますか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "はい、Stable Diffusion本体はオープンソースで完全無料です。ローカルにインストールすれば生成コストはかかりません。PCスペックが足りない場合はGoogle Colab（無料枠あり）やConoHa AI Canvasなどのクラウドサービスを利用する方法もあります。"}
       },
       {
         "@type": "Question",
-        "name": "Stable DiffusionはどんなPCスペックが必要ですか？",
-        "acceptedAnswer": {"@type": "Answer", "text": "最低限NVIDIA GPU（VRAM 4GB以上）・RAM 8GB・ストレージ20GB以上が必要です。快適に使うにはVRAM 8GB以上・RAM 16GB以上を推奨します。AMD GPUやMac（Apple Silicon）でも動作しますが、設定が複雑になる場合があります。"}
+        "name": "Google Colabで無料で使う方法は？",
+        "acceptedAnswer": {"@type": "Answer", "text": "Google Colab（colab.research.google.com）にアクセスし、ランタイムをT4 GPUに設定した後、AUTOMATIC1111用の公開ノートブックを実行するだけです。無料プランでもNVIDIA T4（VRAM 15GB）が使えるためStable DiffusionやSDXLも動作します。ただし利用時間に上限があり、セッションが切れると作業が消えるためGoogle Driveへの保存が必須です。"}
       },
       {
         "@type": "Question",
-        "name": "MidjourneyとStable Diffusionを比べてどう違いますか？",
-        "acceptedAnswer": {"@type": "Answer", "text": "Midjourneyはブラウザで手軽に使える有料サービス（月$10〜）で品質が高く初心者向けです。Stable Diffusionは無料ですが高性能PCが必要で、カスタマイズ性と自由度が圧倒的に高いのが特徴です。"}
+        "name": "PCのスペックはどのくらい必要ですか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "最低限NVIDIA GPU（VRAM 4GB以上）・RAM 8GB・ストレージ20GB以上が必要です。快適に使うにはVRAM 8GB以上・RAM 16GB以上を推奨します。SDXLを使う場合はVRAM 8GB以上が必須です。PCスペックが足りない場合はGoogle ColabやConoHa AI Canvasなどのクラウドサービスが代替手段になります。"}
       },
       {
         "@type": "Question",
         "name": "Stable Diffusionで生成した画像は商用利用できますか？",
-        "acceptedAnswer": {"@type": "Answer", "text": "使用するモデルのライセンスによって異なります。多くのモデルはCreativeML Open RAIL-Mライセンスに基づいており、商用利用可能です。ただし特定のモデルは非商用限定の場合があるため、各モデルのライセンスを必ず確認してください。"}
+        "acceptedAnswer": {"@type": "Answer", "text": "使用するモデルのライセンスによって異なります。多くのモデルはCreativeML Open RAIL-Mライセンスに基づいており商用利用可能です。ただし特定のモデルは非商用限定の場合があるため、各モデルのライセンスを必ず確認してください。SD 3系はHugging Faceのライセンスに従って商用利用の可否が決まります。"}
+      },
+      {
+        "@type": "Question",
+        "name": "MidjourneyとStable Diffusionを比べてどう違いますか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "Midjourneyはブラウザで手軽に使える有料サービス（月$10〜）で品質が高く初心者向けです。Stable Diffusionは無料ですが高性能PCが必要で、カスタマイズ性と自由度が圧倒的に高いのが特徴です。Google Colabを使えばPCなしでもStable Diffusionを無料で試せます。"}
       },
       {
         "@type": "Question",
         "name": "Stable Diffusionは日本語プロンプトで使えますか？",
-        "acceptedAnswer": {"@type": "Answer", "text": "基本的には英語プロンプトが推奨されます。日本語でも動作しますが、精度が下がる場合があります。DeepLなどで英語に翻訳してからプロンプトを入力すると品質が向上します。"}
+        "acceptedAnswer": {"@type": "Answer", "text": "基本的には英語プロンプトが推奨されます。日本語でも動作しますが、精度が下がる場合があります。DeepLなどで英語に翻訳してからプロンプトを入力すると品質が向上します。SD 3はプロンプト理解度が向上しており、日本語の精度も改善されています。"}
       },
       {
         "@type": "Question",
-        "name": "Stable Diffusionはインストールが難しいですか？",
-        "acceptedAnswer": {"@type": "Answer", "text": "AUTOMATIC1111（WebUI）を使えば比較的手順が整理されていますが、Pythonのインストールやコマンドライン操作が必要なため初心者には少し難しく感じる場合があります。PCスペックが足りない・インストールが面倒な方はConoHa AI Canvasのようなクラウドサービスがおすすめです。"}
+        "name": "Stable Diffusionはインストールが難しいですか？初心者でもできますか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "AUTOMATIC1111（WebUI）を使えば比較的手順が整理されていますが、Pythonのインストールやコマンドライン操作が必要なため初心者には少し難しく感じる場合があります。インストールが不安な場合は、まずGoogle Colab上のノートブックでセルを実行するだけで試せるため、初心者にはそちらが最初のステップとしておすすめです。"}
       },
       {
         "@type": "Question",
-        "name": "Stable Diffusionでおすすめのモデルは何ですか？",
-        "acceptedAnswer": {"@type": "Answer", "text": "汎用性ならSD XL（SDXL）が高品質で人気です。アニメ・イラスト系ならAnythingV5・NovelAI由来モデル、リアル系ならRealisticVisionがおすすめです。Civitaiというサイトで多数のモデルを無料でダウンロードできます。"}
+        "name": "2026年現在おすすめのモデルは何ですか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "汎用性・品質ならSDXL（Stable Diffusion XL）が2026年現在も主流でおすすめです。さらに高品質を求めるならSD 3.5 Mediumも選択肢に入ります。アニメ・イラスト系ならAnythingV5、リアル系ならRealisticVisionが人気です。Civitaiで多数のモデルを無料でダウンロードできます。"}
       },
       {
         "@type": "Question",
         "name": "Stable Diffusionで生成した画像の著作権はどうなりますか？",
-        "acceptedAnswer": {"@type": "Answer", "text": "現在の日本の著作権法では、AIが生成した画像の著作権の扱いは明確ではありません。ただし、モデルのライセンスに従えば生成画像を利用することは一般的に問題ないとされています。商用利用する場合は各モデルのライセンスを確認してください。"}
+        "acceptedAnswer": {"@type": "Answer", "text": "現在の日本の著作権法では、AIが生成した画像の著作権の扱いは明確ではありません。モデルのライセンスに従えば生成画像を利用することは一般的に問題ないとされていますが、商用利用する場合は各モデルのライセンスを確認してください。"}
       },
       {
         "@type": "Question",
         "name": "Stable Diffusionはスマホで使えますか？",
-        "acceptedAnswer": {"@type": "Answer", "text": "スマホへのローカルインストールは現実的ではありません。スマホで使いたい場合はConoHa AI Canvasなどのクラウド型サービスを利用するのがおすすめです。ブラウザから操作できます。"}
-      },
-      {
-        "@type": "Question",
-        "name": "Stable Diffusionの最新バージョンは何ですか？",
-        "acceptedAnswer": {"@type": "Answer", "text": "2026年7月時点での主要バージョンはStable Diffusion XL（SDXL）およびSD 3.5です。開発元のStability AIは継続的に新バージョンをリリースしています。最新情報は公式サイトやCivitaiで確認してください。"}
+        "acceptedAnswer": {"@type": "Answer", "text": "スマホへのローカルインストールは現実的ではありません。ただしGoogle ColabやConoHa AI Canvasなどのクラウド型サービスはブラウザで操作できるため、スマホからでも利用可能です。Colab無料プランはスマホのブラウザからでもアクセスできます。"}
       }
     ]
   }
@@ -92,7 +92,7 @@
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://ai-navi.app/"},
       {"@type": "ListItem", "position": 2, "name": "AIツール比較", "item": "https://ai-navi.app/"},
-      {"@type": "ListItem", "position": 3, "name": "【2026年最新】Stable Diffusionの始め方・使い方を初心者向けに徹底解説｜無料で高品質AI画像生成", "item": "https://ai-navi.app/articles/stable-diffusion-guide"}
+      {"@type": "ListItem", "position": 3, "name": "【2026年最新】Stable Diffusion 初心者向け始め方・Google Colabで無料で使う方法を徹底解説", "item": "https://ai-navi.app/articles/stable-diffusion-guide"}
     ]
   }
   </script>
@@ -122,11 +122,11 @@
 
 <div class="article-wrap">
   <div class="article-header">
-    <h1>【2026年最新】Stable Diffusionの始め方・使い方を初心者向けに徹底解説｜無料で高品質AI画像生成</h1>
+    <h1>【2026年最新】Stable Diffusion 初心者向け始め方・Google Colabで無料で使う方法を徹底解説</h1>
     <div class="article-meta">
       <span>📅 2026年7月5日</span>
-      <span>🔄 最終更新: 2026年7月5日</span>
-      <span>📖 約4,000字</span>
+      <span>🔄 最終更新: 2026年7月29日</span>
+      <span>📖 約6,000字</span>
     </div>
   </div>
   <div class="author-box">
@@ -147,8 +147,10 @@
     <ul>
       <li>Stable Diffusionとは何か・何ができるか</li>
       <li>必要なPCスペックとインストール手順（AUTOMATIC1111 / ComfyUI）</li>
+      <li><strong>Google Colabで無料で使う方法（2026年最新手順）</strong></li>
       <li>プロンプトの書き方と高品質画像を生成するコツ</li>
-      <li>おすすめモデル・LoRAの選び方</li>
+      <li>おすすめモデル・LoRAの選び方（SDXL・SD 3など最新版）</li>
+      <li>よくあるエラーと解決策（RuntimeError・CUDA out of memory など）</li>
       <li>PCスペック不足でも使えるクラウド代替手段</li>
     </ul>
   </div>
@@ -168,12 +170,15 @@
       <li><a href="#compare">Midjourney・Adobe Fireflyとの違い</a></li>
       <li><a href="#requirements">必要なスペック・環境</a></li>
       <li><a href="#install">始め方・インストール方法</a></li>
+      <li><a href="#colab">Google Colabで無料で使う方法（2026年版）</a></li>
       <li><a href="#howto">基本的な使い方・プロンプトの書き方</a></li>
-      <li><a href="#models">おすすめモデル・LoRA</a></li>
+      <li><a href="#models">おすすめモデル・LoRA（SDXL・SD 3最新版）</a></li>
       <li><a href="#ui">AUTOMATIC1111 vs ComfyUI</a></li>
+      <li><a href="#latest2026">2026年最新情報：SDXL・SD 3・無料WebUI</a></li>
+      <li><a href="#errors">よくあるエラーと解決策</a></li>
       <li><a href="#cloud">クラウドで使う方法</a></li>
       <li><a href="#recommend">こんな人におすすめ</a></li>
-      <li><a href="#faq">よくある質問</a></li>
+      <li><a href="#faq">よくある質問（10問）</a></li>
       <li><a href="#summary">まとめ</a></li>
     </ol>
   </div>
@@ -253,6 +258,41 @@ cd stable-diffusion-webui</pre>
 
     <h3>STEP 4: 起動</h3>
     <p><code>webui-user.bat</code>（Windows）をダブルクリックして起動します。初回は必要なライブラリが自動インストールされるため数分かかります。完了するとブラウザで <code>http://127.0.0.1:7860</code> が開きます。</p>
+
+    <h2 id="colab">Google Colabで無料で使う方法（2026年版）</h2>
+    <p>高性能GPUを持っていなくても、<strong>Google Colaboratory（Colab）</strong>を使えばブラウザ上でStable Diffusionを無料で動かせます。「stable diffusion google colab 2026」で検索するユーザーが多いように、PCスペック不問で試せる最も手軽な方法のひとつです。</p>
+
+    <h3>Google Colabとは？</h3>
+    <p>Googleが提供するクラウド型のJupyter Notebook環境です。無料プランでもNVIDIA T4 GPUが使えるため、Stable Diffusionを動かすのに十分なスペックを無料で利用できます。</p>
+
+    <h3>2026年現在のGoogle Colab動作状況</h3>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th>プラン</th><th>GPU</th><th>利用制限</th><th>月額</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>無料（Free）</td><td>T4（15GB VRAM）</td><td>あり（数時間/日）</td><td>無料</td></tr>
+          <tr><td>Colab Pro</td><td>A100・V100も使用可</td><td>緩め</td><td>$9.99/月〜</td></tr>
+          <tr><td>Colab Pro+</td><td>高性能GPU優先</td><td>さらに緩め</td><td>$49.99/月〜</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>2026年現在、無料プランでもSDXLクラスのモデルが動作します。ただし<strong>セッションが切れると作業が消えるため</strong>、Google Driveとの連携保存が必須です。</p>
+
+    <h3>Google ColabでStable Diffusionを使う手順</h3>
+    <ol style="line-height:2;">
+      <li><strong>Google Colabにアクセス</strong> — <code>colab.research.google.com</code> にアクセスし、Googleアカウントでログイン。</li>
+      <li><strong>公開ノートブックを開く</strong> — GitHub等で公開されている「AUTOMATIC1111 Colab Notebook」を検索して開く。または新規ノートブックを作成。</li>
+      <li><strong>ランタイムをGPUに変更</strong> — 「ランタイム」→「ランタイムのタイプを変更」→「T4 GPU」を選択。</li>
+      <li><strong>Google Driveをマウント</strong> — モデルや生成画像をドライブに保存するためマウントしておく。</li>
+      <li><strong>セルを順番に実行</strong> — ノートブックのセルを上から順に実行（Shift+Enter）。必要なライブラリが自動インストールされる。</li>
+      <li><strong>WebUIにアクセス</strong> — 起動後に表示されるURLをクリックすれば、ブラウザ上でAUTOMATIC1111が操作できる。</li>
+    </ol>
+
+    <div style="background:#f0fdf4;border-left:4px solid #22c55e;padding:16px 20px;border-radius:8px;margin:24px 0;">
+      <strong>ポイント:</strong> 無料プランは利用時間に上限があります。長時間の作業や大量生成にはConoHa AI CanvasなどのクラウドサービスやColab有料プランが安定しておすすめです。
+    </div>
 
     <h2 id="howto">基本的な使い方・プロンプトの書き方</h2>
     <p>WebUIが開いたら、テキストボックスにプロンプト（生成したい画像の説明文）を入力して「Generate」ボタンを押すだけです。</p>
@@ -335,6 +375,120 @@ cd stable-diffusion-webui</pre>
     </div>
     <p>初めてStable Diffusionを使う方は<strong>AUTOMATIC1111からスタートする</strong>のがおすすめです。慣れてきたらComfyUIに移行するユーザーも多くいます。</p>
 
+    <h2 id="latest2026">2026年最新情報：SDXL・SD 3・無料WebUIサービス</h2>
+    <p>Stable Diffusionは進化が速く、2026年現在もさまざまな新モデル・サービスが登場しています。最新の状況を把握しておきましょう。</p>
+
+    <h3>Stable Diffusion XL（SDXL）</h3>
+    <p>SDXL（Stable Diffusion XL）はStability AIが2023年にリリースした大型モデルで、2026年現在も主流モデルとして広く使われています。1024×1024の高解像度出力が標準で、従来のSD 1.5と比べて圧倒的に高品質な画像を生成できます。</p>
+    <ul>
+      <li>解像度: デフォルト1024×1024（SD 1.5は512×512）</li>
+      <li>VRAM要件: 8GB以上推奨（6GBでも動作する場合あり）</li>
+      <li>LoRA・ControlNetにも対応。Civitaiで多数のSDXL対応モデルが公開中</li>
+    </ul>
+
+    <h3>Stable Diffusion 3（SD 3）</h3>
+    <p>Stability AIが2024年にリリースしたSD 3は、テキスト描写精度が大幅に向上したモデルです。2026年現在はSD 3.5 Medium・SD 3.5 Largeが公開されており、Hugging FaceからダウンロードしてAUTOMATIC1111やComfyUIで利用できます。</p>
+    <ul>
+      <li>テキストのプロンプト理解度がSDXLより高い</li>
+      <li>SD 3.5 Medium（約5GB）はVRAM 6〜8GBでも動作</li>
+      <li>Google Colabでも動作確認済み（2026年7月現在）</li>
+    </ul>
+
+    <h3>無料で使えるWebUIサービス（2026年版）</h3>
+    <p>PCに環境構築しなくても、以下のWebサービスで無料または低コストでStable Diffusionが試せます。</p>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th>サービス</th><th>無料枠</th><th>主な特徴</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Stable Diffusion Online（stablediffusionweb.com）</td><td>あり（制限あり）</td><td>ブラウザだけで即利用・SD 2.1ベース</td></tr>
+          <tr><td>Hugging Face Spaces</td><td>あり（低速）</td><td>多数のモデルをブラウザで無料試用</td></tr>
+          <tr><td>Google Colab（無料プラン）</td><td>あり（時間制限）</td><td>T4 GPU・AUTOMATIC1111を動かせる</td></tr>
+          <tr><td>ConoHa AI Canvas</td><td>無料お試しあり</td><td>月¥550〜・安定・商用利用OK（国内サービス）</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="errors">よくあるエラーと解決策</h2>
+    <p>Stable Diffusionのセットアップ・使用中によく発生するエラーとその対処法をまとめました。初心者がつまずきやすいポイントを中心に解説します。</p>
+
+    <div style="border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;margin:24px 0;">
+      <div style="background:#fef2f2;padding:14px 18px;border-bottom:1px solid #fecaca;">
+        <strong style="color:#dc2626;">RuntimeError: CUDA out of memory</strong>
+      </div>
+      <div style="padding:14px 18px;">
+        <p><strong>原因:</strong> GPUのVRAMが不足しています。SDXLは8GB以上必要なため、4〜6GB GPUでは発生しやすいエラーです。</p>
+        <p><strong>解決策:</strong></p>
+        <ul>
+          <li>生成解像度を下げる（768×768 → 512×512 など）</li>
+          <li>Batch sizeを1に下げる</li>
+          <li>起動引数に <code>--medvram</code> または <code>--lowvram</code> を追加する</li>
+          <li>AUTOMATIC1111の設定でSDXLではなくSD 1.5系モデルを使用する</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;margin:24px 0;">
+      <div style="background:#fef2f2;padding:14px 18px;border-bottom:1px solid #fecaca;">
+        <strong style="color:#dc2626;">RuntimeError: Expected all tensors to be on the same device</strong>
+      </div>
+      <div style="padding:14px 18px;">
+        <p><strong>原因:</strong> モデルの一部がGPU、一部がCPU上に乗ってしまっている状態です。</p>
+        <p><strong>解決策:</strong></p>
+        <ul>
+          <li>WebUIを再起動し、<code>--xformers</code> 引数を外してみる</li>
+          <li>xformersのバージョンをPyTorchのバージョンに合わせる</li>
+          <li>AUTOMATIC1111を最新版にアップデート（<code>git pull</code>）</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;margin:24px 0;">
+      <div style="background:#fef2f2;padding:14px 18px;border-bottom:1px solid #fecaca;">
+        <strong style="color:#dc2626;">ModuleNotFoundError / pip install エラー</strong>
+      </div>
+      <div style="padding:14px 18px;">
+        <p><strong>原因:</strong> PythonまたはGitのバージョン不一致・環境変数の設定ミスが多い原因です。</p>
+        <p><strong>解決策:</strong></p>
+        <ul>
+          <li>Pythonのバージョンを <strong>3.10.x</strong> に合わせる（3.11・3.12は非対応の場合あり）</li>
+          <li>インストール時に「Add Python to PATH」にチェックを入れたか確認</li>
+          <li><code>venv</code> フォルダを削除して <code>webui-user.bat</code> を再実行（クリーンインストール）</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;margin:24px 0;">
+      <div style="background:#fef2f2;padding:14px 18px;border-bottom:1px solid #fecaca;">
+        <strong style="color:#dc2626;">生成した画像が真っ黒・灰色になる</strong>
+      </div>
+      <div style="padding:14px 18px;">
+        <p><strong>原因:</strong> NSFWフィルターの誤検知、またはモデルとVAEの組み合わせ不一致が多い原因です。</p>
+        <p><strong>解決策:</strong></p>
+        <ul>
+          <li>起動引数に <code>--no-half-vae</code> を追加する</li>
+          <li>Settings → VAEで「Automatic」を選択、またはモデルに対応したVAEを手動設定</li>
+          <li>Clip skipを2に変更してみる（アニメ系モデルで効果的）</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;margin:24px 0;">
+      <div style="background:#fef2f2;padding:14px 18px;border-bottom:1px solid #fecaca;">
+        <strong style="color:#dc2626;">Google Colabでセッションが切れてしまう</strong>
+      </div>
+      <div style="padding:14px 18px;">
+        <p><strong>原因:</strong> Colab無料プランはアイドル状態が続くと自動的にセッションが終了します。</p>
+        <p><strong>解決策:</strong></p>
+        <ul>
+          <li>モデルはGoogle Driveに保存してセッション再開時にマウントして読み込む</li>
+          <li>定期的にセルを実行してアイドル状態を防ぐ</li>
+          <li>長時間作業にはColab Pro（$9.99/月）またはConoHa AI Canvasが安定</li>
+        </ul>
+      </div>
+    </div>
+
     <h2 id="cloud">クラウドで使う方法</h2>
     <p>「PCスペックが足りない」「インストールが面倒」という方は、クラウドでStable Diffusionを使う方法があります。</p>
 
@@ -385,35 +539,39 @@ cd stable-diffusion-webui</pre>
     </div>
     <p>また、AI画像生成ツール全般を比較したい方は<a href="ai-image-generation.html">AI画像生成おすすめ12選の比較記事</a>もご覧ください。Midjourney の詳しいレビューは<a href="midjourney-review.html">こちら</a>、デザイン用途には<a href="canva-pro-review.html">Canva Proレビュー</a>も参考になります。</p>
 
-    <h2 id="faq">よくある質問</h2>
+    <h2 id="faq">よくある質問（10問）</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q">Stable Diffusionは無料ですか？</div>
-        <div class="faq-a">はい、Stable Diffusion本体はオープンソースで完全無料です。ただしローカル動作には高性能なGPU（NVIDIA VRAM 6GB以上推奨）が必要です。PCスペックが足りない場合はConoHa AI Canvasなどのクラウドサービスを利用する方法もあります。</div>
+        <div class="faq-q">Stable Diffusionは無料で使えますか？</div>
+        <div class="faq-a">はい、Stable Diffusion本体はオープンソースで完全無料です。ローカルにインストールすれば生成コストはかかりません。ただしローカル動作には高性能なGPU（NVIDIA VRAM 6GB以上推奨）が必要です。PCスペックが足りない場合はGoogle Colab（無料枠あり）やConoHa AI Canvasなどのクラウドサービスを利用する方法もあります。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Google Colabで無料で使う方法は？</div>
+        <div class="faq-a">Google Colab（colab.research.google.com）にアクセスし、ランタイムをT4 GPUに設定した後、AUTOMATIC1111用の公開ノートブックを実行するだけです。無料プランでもNVIDIA T4（VRAM 15GB）が使えるためStable DiffusionやSDXLも動作します。ただし利用時間に上限があり、セッションが切れると作業が消えるためGoogle Driveへの保存が必須です。詳しくは「Google Colabで無料で使う方法」セクションをご覧ください。</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">PCのスペックはどのくらい必要ですか？</div>
-        <div class="faq-a">最低限NVIDIA GPU（VRAM 4GB以上）・RAM 8GB・ストレージ20GB以上が必要です。快適に使うにはVRAM 8GB以上・RAM 16GB以上を推奨します。AMD GPUやMac（Apple Silicon）でも動作しますが、設定が複雑になる場合があります。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Midjourneyと比べてどう違いますか？</div>
-        <div class="faq-a">Midjourneyはブラウザで手軽に使える有料サービス（月$10〜）で品質が高く初心者向けです。Stable Diffusionは無料ですが高性能PCが必要で、カスタマイズ性と自由度が圧倒的に高いのが特徴です。</div>
+        <div class="faq-a">最低限NVIDIA GPU（VRAM 4GB以上）・RAM 8GB・ストレージ20GB以上が必要です。快適に使うにはVRAM 8GB以上・RAM 16GB以上を推奨します。SDXLを使う場合はVRAM 8GB以上が必須です。PCスペックが足りない場合はGoogle ColabやConoHa AI Canvasなどのクラウドサービスが代替手段になります。</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">商用利用はできますか？</div>
-        <div class="faq-a">使用するモデルのライセンスによって異なります。多くのモデルはCreativeML Open RAIL-Mライセンスに基づいており商用利用可能です。ただし特定のモデルは非商用限定の場合があるため、各モデルのライセンスを必ず確認してください。</div>
+        <div class="faq-a">使用するモデルのライセンスによって異なります。多くのモデルはCreativeML Open RAIL-Mライセンスに基づいており商用利用可能です。ただし特定のモデルは非商用限定の場合があるため、各モデルのライセンスを必ず確認してください。SD 3系はHugging Faceのライセンスに従って商用利用の可否が決まります。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Midjourneyと比べてどう違いますか？</div>
+        <div class="faq-a">Midjourneyはブラウザで手軽に使える有料サービス（月$10〜）で品質が高く初心者向けです。Stable Diffusionは無料ですが高性能PCが必要で、カスタマイズ性と自由度が圧倒的に高いのが特徴です。Google Colabを使えばPCなしでもStable Diffusionを無料で試せます。</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">日本語プロンプトは使えますか？</div>
-        <div class="faq-a">基本的には英語プロンプトが推奨されます。日本語でも動作しますが、精度が下がる場合があります。DeepLなどで英語に翻訳してからプロンプトを入力すると品質が向上します。</div>
+        <div class="faq-a">基本的には英語プロンプトが推奨されます。日本語でも動作しますが、精度が下がる場合があります。DeepLなどで英語に翻訳してからプロンプトを入力すると品質が向上します。SD 3はプロンプト理解度が向上しており、日本語の精度も改善されています。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">インストールは難しいですか？</div>
-        <div class="faq-a">AUTOMATIC1111を使えば比較的手順が整理されていますが、Pythonのインストールやコマンドライン操作が必要なため初心者には少し難しく感じる場合があります。PCスペックが足りない・インストールが面倒な方はConoHa AI Canvasのようなクラウドサービスがおすすめです。</div>
+        <div class="faq-q">インストールは難しいですか？初心者でもできますか？</div>
+        <div class="faq-a">AUTOMATIC1111を使えば比較的手順が整理されていますが、Pythonのインストールやコマンドライン操作が必要なため初心者には少し難しく感じる場合があります。インストールが不安な場合は、まずGoogle Colab上のノートブックでセルを実行するだけで試せるため、初心者にはそちらが最初のステップとしておすすめです。</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">モデルは何を使えばいいですか？</div>
-        <div class="faq-a">汎用性ならSD XL（SDXL）が高品質で人気です。アニメ・イラスト系ならAnythingV5・NovelAI由来モデル、リアル系ならRealisticVisionがおすすめです。Civitaiというサイトで多数のモデルを無料でダウンロードできます。</div>
+        <div class="faq-q">2026年現在おすすめのモデルは何ですか？</div>
+        <div class="faq-a">汎用性・品質ならSDXL（Stable Diffusion XL）が2026年現在も主流でおすすめです。さらに高品質を求めるならSD 3.5 Mediumも選択肢に入ります。アニメ・イラスト系ならAnythingV5・NovelAI由来モデル、リアル系ならRealisticVisionが人気です。Civitaiで多数のモデルを無料でダウンロードできます。</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">生成した画像の著作権はどうなりますか？</div>
@@ -421,11 +579,7 @@ cd stable-diffusion-webui</pre>
       </div>
       <div class="faq-item">
         <div class="faq-q">スマホで使えますか？</div>
-        <div class="faq-a">スマホへのローカルインストールは現実的ではありません。スマホで使いたい場合はConoHa AI Canvasなどのクラウド型サービスを利用するのがおすすめです。ブラウザから操作できます。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">最新バージョンは何ですか？</div>
-        <div class="faq-a">2026年7月時点での主要バージョンはStable Diffusion XL（SDXL）およびSD 3.5です。開発元のStability AIは継続的に新バージョンをリリースしています。最新情報は公式サイトやCivitaiで確認してください。</div>
+        <div class="faq-a">スマホへのローカルインストールは現実的ではありません。ただしGoogle ColabやConoHa AI Canvasなどのクラウド型サービスはブラウザで操作できるため、スマホからでも利用可能です。Colab無料プランはスマホのブラウザからでもアクセスできます。</div>
       </div>
     </div>
 
