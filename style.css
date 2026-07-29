@@ -234,3 +234,20 @@ footer a { color: #60a5fa; text-decoration: none; }
   text-decoration: none;
   margin-right: 12px;
 }
+
+.article-screenshot {
+  margin: 24px 0;
+  text-align: center;
+}
+.article-screenshot img {
+  width: 100%;
+  max-width: 800px;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.article-screenshot figcaption {
+  font-size: 0.8rem;
+  color: #6c757d;
+  margin-top: 8px;
+}
