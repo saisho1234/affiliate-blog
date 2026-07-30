@@ -56,6 +56,34 @@
     ]
   }
   </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "itemReviewed": {
+      "@type": "SoftwareApplication",
+      "name": "Claude AI",
+      "applicationCategory": "BusinessApplication"
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "4.6",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "田中 誠",
+      "url": "https://ai-navi.app/about"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AI navi"
+    },
+    "reviewBody": "Anthropicが開発した高性能AIアシスタント。長文処理・コード生成・文章校正において業界トップクラスの精度を誇る。"
+  }
+  </script>
 </head>
 <body>
 
@@ -144,6 +172,11 @@
   <div class="article-body">
 
     <h2 id="what">Claude AIとは？基本情報</h2>
+    <div class="rating-display" style="display:flex;align-items:center;gap:8px;margin:16px 0;padding:12px 16px;background:#fffbf0;border-radius:8px;border:1px solid #ffd700;">
+      <span style="color:#ffd700;font-size:1.4rem;">★★★★★</span>
+      <span style="font-weight:700;font-size:1.1rem;">4.6 / 5</span>
+      <span style="color:#6c757d;font-size:0.85rem;">（編集部評価）</span>
+    </div>
     <div class="article-img-mid" style="margin: 24px 0; border-radius: 10px; overflow: hidden;">
       <img src="../images/photos/ai-robot.jpg" alt="Claude AIとは" style="width: 100%; height: 240px; object-fit: cover;" loading="lazy">
     </div>
