@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <!-- 背景円 -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+    <clipPath id="circle">
+      <circle cx="60" cy="60" r="60"/>
+    </clipPath>
+  </defs>
+  <circle cx="60" cy="60" r="60" fill="url(#bg)"/>
+  <!-- 体 -->
+  <ellipse cx="60" cy="85" rx="28" ry="20" fill="rgba(255,255,255,0.25)"/>
+  <!-- 顔 -->
+  <circle cx="60" cy="48" r="20" fill="rgba(255,255,255,0.9)"/>
+  <!-- 目 -->
+  <circle cx="53" cy="46" r="2.5" fill="#667eea"/>
+  <circle cx="67" cy="46" r="2.5" fill="#667eea"/>
+  <!-- 眉毛 -->
+  <path d="M49 41 Q53 39 57 41" stroke="#764ba2" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M63 41 Q67 39 71 41" stroke="#764ba2" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- 口（笑顔） -->
+  <path d="M54 53 Q60 58 66 53" stroke="#667eea" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- 鼻 -->
+  <path d="M59 48 L58 52 L62 52" stroke="rgba(102,126,234,0.5)" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 髪 -->
+  <path d="M40 45 Q40 25 60 23 Q80 25 80 45 Q78 35 60 34 Q42 35 40 45Z" fill="rgba(50,30,80,0.8)"/>
+  <!-- ネクタイ・スーツの一部 -->
+  <path d="M55 68 L60 78 L65 68 L62 65 L60 70 L58 65Z" fill="rgba(102,126,234,0.6)"/>
+</svg>
