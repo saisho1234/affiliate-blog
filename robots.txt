@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /articles/*.html
 
 Sitemap: https://ai-navi.app/sitemap.xml
