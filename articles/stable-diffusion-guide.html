@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stable Diffusion 使い方ガイド【2026年最新】Google Colabで無料で始める方法・モデル選びまで | AI navi</title>
-  <meta name="description" content="Stable DiffusionをGoogle Colabで無料で使う方法を2026年最新版で徹底解説。Colabで使えない場合の対処法・ローカルインストール手順・プロンプトの書き方・おすすめモデル・商用利用ルールまで網羅。初心者でも10分で始められます。">
+  <title>Stable Diffusion×Google Colab 使い方ガイド【2026年最新】無料で画像生成 | AI navi</title>
+  <meta name="description" content="Stable DiffusionをGoogle Colabで無料で使う方法を解説。インストール手順・モデル選び・使えない時の対処法まで。2026年最新版で初心者でも10分で始められます。">
   <meta name="keywords" content="Stable Diffusion,Google Colab,2026,使い方,無料,画像生成,インストール不要,使えない,対処法,AUTOMATIC1111,ComfyUI,SDXL,SD3,プロンプト,商用利用,Midjourney,DALL-E,比較,LoRA,AI画像生成">
-  <meta property="og:title" content="Stable Diffusion × Google Colab 使い方【2026年最新】無料で画像生成・インストール不要 | AI navi">
-  <meta property="og:description" content="Stable DiffusionをGoogle Colabで無料で使う方法を2026年最新版で徹底解説。Colabで使えない場合の対処法・プロンプトの書き方・おすすめモデル・商用利用ルールまで網羅。">
+  <meta property="og:title" content="Stable Diffusion×Google Colab 使い方ガイド【2026年最新】無料で画像生成 | AI navi">
+  <meta property="og:description" content="Stable DiffusionをGoogle Colabで無料で使う方法を解説。インストール手順・モデル選び・使えない時の対処法まで。2026年最新版。">
   <meta property="og:url" content="https://ai-navi.app/articles/stable-diffusion-guide">
   <meta property="og:image" content="https://ai-navi.app/images/og-stable-diffusion.png">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="AI navi">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Stable Diffusion × Google Colab 使い方【2026年最新】無料で画像生成・インストール不要">
-  <meta name="twitter:description" content="Google ColabでStable Diffusionを無料で使う方法を2026年最新版で解説。使えない場合の対処法・プロンプト例・商用利用ルールも網羅。">
+  <meta name="twitter:title" content="Stable Diffusion×Google Colab 使い方ガイド【2026年最新】無料で画像生成">
+  <meta name="twitter:description" content="Stable DiffusionをGoogle Colabで無料で使う方法を解説。インストール手順・モデル選び・使えない時の対処法まで。">
   <meta name="twitter:image" content="https://ai-navi.app/images/og-stable-diffusion.png">
   <link rel="canonical" href="https://ai-navi.app/articles/stable-diffusion-guide">
   <link rel="stylesheet" href="../style.css">
@@ -23,7 +23,7 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Stable Diffusion × Google Colab 使い方【2026年最新】無料で画像生成・インストール不要",
+    "headline": "Stable Diffusion×Google Colab 使い方ガイド【2026年最新】無料で画像生成",
     "datePublished": "2026-07-05",
     "dateModified": "2026-08-10",
     "publisher": { "@type": "Organization", "name": "AI navi" }
@@ -120,7 +120,7 @@
     "itemListElement": [
       {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://ai-navi.app/"},
       {"@type": "ListItem", "position": 2, "name": "AIツール比較", "item": "https://ai-navi.app/"},
-      {"@type": "ListItem", "position": 3, "name": "Stable Diffusion × Google Colab 使い方【2026年最新】", "item": "https://ai-navi.app/articles/stable-diffusion-guide"}
+      {"@type": "ListItem", "position": 3, "name": "Stable Diffusion×Google Colab 使い方ガイド【2026年最新】", "item": "https://ai-navi.app/articles/stable-diffusion-guide"}
     ]
   }
   </script>
@@ -203,12 +203,12 @@
 </header>
 
 <div class="breadcrumb">
-  <a href="/">ホーム</a> &gt; <a href="ai-image-generation">AI画像生成</a> &gt; Stable Diffusion × Google Colab 使い方
+  <a href="/">ホーム</a> &gt; <a href="ai-image-generation">AI画像生成</a> &gt; Stable Diffusion×Google Colab 使い方ガイド
 </div>
 
 <div class="article-wrap">
   <div class="article-header">
-    <h1>Stable Diffusion × Google Colab 使い方【2026年最新】無料で画像生成・インストール不要</h1>
+    <h1>Stable Diffusion×Google Colab 使い方ガイド【2026年最新】無料で画像生成</h1>
     <div class="article-meta">
       <span>2026年7月5日</span>
       <span>最終更新: 2026年8月5日</span>
@@ -251,7 +251,8 @@
   </div>
 
 <div class="experience-box" style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 20px; margin: 24px 0; border-radius: 0 8px 8px 0;">
-<h3>筆者の実体験：Stable Diffusionを半年使った感想</h3>
+<h3>【2026年最新】Google ColabでStable Diffusionを無料で使う方法</h3>
+<p><strong>2026年8月現在、Google Colabの無料プランでStable Diffusionは動作します。</strong>本記事ではGoogle ColabでStable Diffusionを無料で使うインストール手順、おすすめモデルの選び方、使えない場合の対処法までを完全ガイドとしてまとめています。</p>
 <p>筆者はブログのアイキャッチ画像やSNS用ビジュアルの作成にStable Diffusionを約6ヶ月間使っています。Google Colabの無料枠で始めましたが、セッション切れが頻繁に発生し、途中から有料のColab Proに移行しました。</p>
 <p>最初はプロンプトの書き方に苦戦しましたが、ネガティブプロンプトの重要性を理解してからは品質が劇的に向上。特に「low quality, blurry, deformed」を必ず入れることで、安定したクオリティの画像が生成できるようになりました。</p>
 <p>Midjourneyと比較すると、Stable Diffusionは自由度が高い反面、セットアップのハードルが高いです。「手軽に綺麗な画像が欲しい」ならMidjourney、「細かくカスタマイズしたい」ならStable Diffusionがおすすめです。</p>
