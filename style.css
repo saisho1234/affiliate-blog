@@ -251,3 +251,40 @@ footer a { color: #60a5fa; text-decoration: none; }
   color: #6c757d;
   margin-top: 8px;
 }
+
+/* === CTR改善: CTAボタン強化 === */
+.btn-primary {
+  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.4);
+  letter-spacing: 0.03em;
+}
+
+/* === CTR改善: 比較表おすすめ行ハイライト === */
+.compare-table tr.recommended td {
+  background: #eff6ff !important;
+  border-left: 3px solid var(--primary);
+  font-weight: 600;
+}
+
+/* === CTR改善: 関連記事hover効果 === */
+.related-articles li {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.related-articles li:hover {
+  transform: translateX(6px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* === CTR改善: 比較表スクロールヒント（モバイル） === */
+@media (max-width: 768px) {
+  .compare-table-wrap::after {
+    content: '← 横スクロールできます →';
+    display: block;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--text-light);
+    padding: 6px 0;
+    background: #f0f4ff;
+    border-radius: 4px;
+    margin-top: 4px;
+  }
+}
