@@ -288,3 +288,92 @@ footer a { color: #60a5fa; text-decoration: none; }
     margin-top: 4px;
   }
 }
+
+/* === 収益化改善: PC対応スティッキーCTAバー === */
+@media (min-width: 769px) {
+  .sticky-cta {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 -2px 16px rgba(0,0,0,0.15);
+    transition: background 0.2s;
+  }
+  .sticky-cta:hover {
+    background: linear-gradient(135deg, var(--accent-dark), #c2410c);
+  }
+  .article-wrap {
+    padding-bottom: 70px;
+  }
+}
+
+/* === 収益化改善: インラインCTAボタンボックス === */
+.cta-inline-box {
+  background: linear-gradient(135deg, #fff7ed, #ffedd5);
+  border: 2px solid #fb923c;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 24px 0;
+  text-align: center;
+}
+.cta-inline-box p {
+  margin: 0 0 14px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #9a3412;
+}
+.cta-inline-box .btn {
+  display: inline-block;
+}
+
+/* === 収益化改善: 比較表おすすめバッジ === */
+.badge-recommend {
+  display: inline-block;
+  background: #ef4444;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+  letter-spacing: 0.05em;
+}
+
+/* === 収益化改善: アフィリエイトリンクボタン化 === */
+.af-link-btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 3px 10px rgba(249,115,22,0.3);
+}
+.af-link-btn:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(249,115,22,0.4);
+}
+
+/* === 収益化改善: AdSense間隔調整 === */
+.ad-unit {
+  margin: 32px 0;
+  text-align: center;
+  min-height: 100px;
+}
