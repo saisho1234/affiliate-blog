@@ -91,6 +91,9 @@
   <url><loc>https://ai-navi.app/articles/onamae-review</loc><lastmod>2026-08-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ai-navi.app/articles/chatgpt-freelance-guide</loc><lastmod>2026-08-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
+  <!-- NotebookLM新記事（2026-08-22追加） -->
+  <url><loc>https://ai-navi.app/articles/notebooklm-howto</loc><lastmod>2026-08-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
   <!-- DeepLクラスター新記事（2026-08-20追加） -->
   <url><loc>https://ai-navi.app/articles/deepl-file-limit</loc><lastmod>2026-08-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ai-navi.app/articles/deepl-free-vs-pro</loc><lastmod>2026-08-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
