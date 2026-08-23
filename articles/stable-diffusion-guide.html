@@ -25,7 +25,7 @@
     "@type": "Article",
     "headline": "Stable Diffusion×Google Colab 使い方ガイド｜使えない時の対処法も解説【2026年最新】",
     "datePublished": "2026-07-05",
-    "dateModified": "2026-08-22",
+    "dateModified": "2026-08-23",
     "publisher": { "@type": "Organization", "name": "AI navi" }
   }
   </script>
@@ -108,6 +108,16 @@
         "@type": "Question",
         "name": "AUTOMATIC1111とComfyUIのどちらがおすすめ？",
         "acceptedAnswer": {"@type": "Answer", "text": "初心者にはAUTOMATIC1111がおすすめです。シンプルなフォーム形式のUIで、設定項目がわかりやすく配置されています。ComfyUIはノードベースのワークフロー設計で上級者向けですが、複雑な処理の自動化や高速生成が可能です。まずAUTOMATIC1111で基本を学び、慣れたらComfyUIに移行するのがスムーズです。"}
+      },
+      {
+        "@type": "Question",
+        "name": "SDXL TurboとSDXLの違いは？",
+        "acceptedAnswer": {"@type": "Answer", "text": "SDXL Turboは通常のSDXLを高速化したモデルで、1〜4ステップで画像を生成できます（通常SDXLは20〜30ステップ必要）。生成速度は5〜10倍高速ですが、解像度は512x512が基本でSDXLの1024x1024より低くなります。プロンプトの試行錯誤やラフ生成に向いており、最終出力にはSDXLやSD 3.5の方が高品質です。"}
+      },
+      {
+        "@type": "Question",
+        "name": "FLUX.1とStable Diffusionの違いは？",
+        "acceptedAnswer": {"@type": "Answer", "text": "FLUX.1はStability AIの元メンバーが設立したBlack Forest Labsが開発した画像生成モデルです。FLUX.1 schnellはApache 2.0ライセンスで完全に商用利用可能で、1〜4ステップの高速生成に対応します。Stable Diffusionとは開発元・アーキテクチャが異なりますが、ComfyUIで利用でき、2026年現在SDXLやSD 3.5と並ぶ選択肢として注目されています。"}
       }
     ]
   }
@@ -211,8 +221,8 @@
     <h1>Stable Diffusion×Google Colab 使い方ガイド｜使えない時の対処法も解説【2026年最新】</h1>
     <div class="article-meta">
       <span>2026年7月5日</span>
-      <span>最終更新: 2026年8月5日</span>
-      <span>約15,000字</span>
+      <span>最終更新: 2026年8月23日</span>
+      <span>約18,000字</span>
     </div>
   </div>
   <div class="author-box">
@@ -272,7 +282,7 @@
       <li><a href="#models">おすすめモデル・拡張機能（SDXL・SD 3最新版）</a></li>
       <li><a href="#ui">AUTOMATIC1111 vs ComfyUI</a></li>
       <li><a href="#commercial">生成画像の商用利用ルール</a> <span class="section-new-badge">NEW</span></li>
-      <li><a href="#latest2026">2026年最新情報: SDXL・SD 3・無料WebUI</a></li>
+      <li><a href="#latest2026">2026年最新情報: SDXL Turbo・SD 3.5・FLUX.1・モデル比較</a> <span class="section-new-badge">NEW</span></li>
       <li><a href="#errors">よくあるエラーと解決策</a></li>
       <li><a href="#cloud">クラウドで使う方法</a></li>
       <li><a href="#recommend">こんな人におすすめ</a></li>
@@ -309,7 +319,7 @@
     <p>「<strong>stable diffusion google colab 使えない</strong>」は非常に多い検索クエリです。2026年8月現在、Google ColabでStable Diffusionを使おうとして問題が発生するケースとその解決策を網羅的に解説します。</p>
 
     <div class="warning-box">
-      <strong>注意:</strong> Google Colabの仕様は頻繁に変更されます。この記事の情報は2026年8月5日時点のものです。最新の動作状況はGoogle公式ドキュメントで確認してください。
+      <strong>注意:</strong> Google Colabの仕様は頻繁に変更されます。この記事の情報は2026年8月23日時点のものです。最新の動作状況はGoogle公式ドキュメントで確認してください。
     </div>
 
     <h3>問題1: GPU割り当てエラー（「GPUバックエンドに接続できません」）</h3>
@@ -373,6 +383,48 @@
           <tr><td><strong>ローカルインストール</strong></td><td>無料（GPU必要）</td><td>やや難</td><td>最高</td><td>★★★★☆</td></tr>
           <tr><td><strong>Replicate API</strong></td><td>従量課金</td><td>中級</td><td>高い</td><td>★★★☆☆</td></tr>
           <tr><td><strong>Hugging Face Spaces</strong></td><td>無料（低速）</td><td>簡単</td><td>低い</td><td>★★☆☆☆</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>問題4: xformersインストールエラー（「No matching distribution found」）</h3>
+    <div class="step-box">
+      <p><strong>原因:</strong> xformersパッケージのバージョンがColabのPyTorch/CUDAバージョンと一致していない場合に発生します。Colab環境の更新により、以前動作していたコードが突然エラーになることがあります。</p>
+      <p><strong>解決策:</strong></p>
+      <ul>
+        <li>xformersのバージョンを明示的に指定してインストール: <code>!pip install xformers==0.0.27</code>（バージョンはColab環境に合わせて変更）</li>
+        <li>xformersを使わず起動オプションに <code>--opt-sdp-attention</code> を使用する（PyTorch 2.0以降のSDP Attentionで代替可能）</li>
+        <li>AUTOMATIC1111の <code>--xformers</code> オプションを外して <code>--opt-sub-quad-attention</code> で起動する</li>
+      </ul>
+    </div>
+
+    <h3>問題5: 「CUDA out of memory」エラーがColabで発生する</h3>
+    <div class="step-box">
+      <p><strong>原因:</strong> 無料枠のT4 GPU（VRAM 15GB）でもSDXLの高解像度生成やバッチサイズ2以上で発生することがあります。特にControlNetやADetailer併用時にVRAM消費が増大します。</p>
+      <p><strong>解決策:</strong></p>
+      <ul>
+        <li>起動引数に <code>--medvram</code> を追加する</li>
+        <li>生成解像度を1024x1024から768x768に下げる</li>
+        <li>Batch sizeを1にする</li>
+        <li>ControlNetを使う場合は <code>--lowvram</code> オプションも検討する</li>
+        <li>SD 3.5 Mediumなど軽量モデルに切り替える</li>
+      </ul>
+    </div>
+
+    <h3>Google ColabでStable Diffusionが使えない時のトラブルシューティングまとめ</h3>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th>エラー・症状</th><th>主な原因</th><th>最速の解決策</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>GPUが割り当てられない</td><td>無料枠の混雑</td><td>早朝に再試行 or Colab Pro</td></tr>
+          <tr><td>ModuleNotFoundError</td><td>ノートブックが古い</td><td>最新ノートブックに更新</td></tr>
+          <tr><td>ポリシー制限の警告</td><td>Google側の制限</td><td>ConoHa AI Canvas等に移行</td></tr>
+          <tr><td>xformersエラー</td><td>バージョン不一致</td><td>--opt-sdp-attentionで代替</td></tr>
+          <tr><td>CUDA out of memory</td><td>VRAM不足</td><td>--medvram追加 or 解像度を下げる</td></tr>
+          <tr><td>セッション切断</td><td>アイドルタイムアウト</td><td>Google Driveにモデル保存</td></tr>
+          <tr><td>生成画像が真っ黒</td><td>VAE不一致</td><td>--no-half-vae追加</td></tr>
         </tbody>
       </table>
     </div>
@@ -799,24 +851,105 @@ beautiful anime girl, blue hair, sunset background, high quality, detailed, 8k</
     <p>AI画像の商用利用についてさらに詳しく知りたい方は、<a href="ai-image-commercial-use">AI画像の商用利用ルール詳細記事</a>もご覧ください。</p>
 
     <!-- ===== 12. 2026年最新情報 ===== -->
-    <h2 id="latest2026">2026年最新情報: SDXL・SD 3・無料WebUIサービス</h2>
+    <h2 id="latest2026">2026年最新情報: SDXL Turbo・SD 3.5・FLUX.1・モデル比較</h2>
     <p>Stable Diffusionは進化が速く、2026年現在もさまざまな新モデル・サービスが登場しています。最新の状況を把握しておきましょう。</p>
 
-    <h3>Stable Diffusion XL（SDXL）</h3>
-    <p>SDXLはStability AIが2023年にリリースした大型モデルで、2026年現在も主流モデルとして広く使われています。1024x1024の高解像度出力が標準で、従来のSD 1.5と比べて圧倒的に高品質な画像を生成できます。</p>
+    <h3>Stable Diffusion XL（SDXL）-- 2026年も現役の定番モデル</h3>
+    <p>SDXLはStability AIが2023年にリリースした大型モデルで、2026年現在も主流モデルとして広く使われています。1024x1024の高解像度出力が標準で、従来のSD 1.5と比べて圧倒的に高品質な画像を生成できます。派生モデルやLoRAの蓄積が圧倒的に多く、Civitaiでの対応素材数では他モデルを大きく引き離しています。</p>
     <ul>
       <li>解像度: デフォルト1024x1024（SD 1.5は512x512）</li>
       <li>VRAM要件: 8GB以上推奨（6GBでも動作する場合あり）</li>
       <li>LoRA・ControlNetにも対応。Civitaiで多数のSDXL対応モデルが公開中</li>
+      <li>2026年時点でも「安定の定番」として最も広く使われている</li>
     </ul>
 
-    <h3>Stable Diffusion 3（SD 3）</h3>
-    <p>Stability AIが2024年にリリースしたSD 3は、テキスト描写精度が大幅に向上したモデルです。2026年8月現在はSD 3.5 Medium・SD 3.5 Largeが公開されており、Hugging FaceからダウンロードしてAUTOMATIC1111やComfyUIで利用できます。</p>
+    <h3>SDXL Turbo -- 超高速リアルタイム生成</h3>
+    <p>SDXL TurboはStability AIが開発した高速版SDXLモデルです。Adversarial Diffusion Distillation（ADD）技術により、わずか<strong>1〜4ステップで画像を生成</strong>できます。通常のSDXLが20〜30ステップ必要なのに対し、劇的に高速化されています。</p>
     <ul>
-      <li>テキストのプロンプト理解度がSDXLより高い</li>
-      <li>SD 3.5 Medium（約5GB）はVRAM 6〜8GBでも動作</li>
-      <li>Google Colabでも動作確認済み（2026年8月現在）</li>
+      <li><strong>生成速度:</strong> 1〜4ステップで画像生成完了（通常の5〜10倍高速）</li>
+      <li><strong>リアルタイムプレビュー:</strong> プロンプト入力中にリアルタイムで画像が変化するインタラクティブ生成が可能</li>
+      <li><strong>解像度:</strong> 512x512が基本（高解像度はアップスケーラーと組み合わせ）</li>
+      <li><strong>VRAM:</strong> 6GB以上で動作。Google Colab無料枠でも快適に動作</li>
+      <li><strong>用途:</strong> アイデア出し・ラフ生成・プロンプトの試行錯誤に最適</li>
     </ul>
+    <div class="info-box">
+      <strong>使い方:</strong> ComfyUIまたはAUTOMATIC1111でSDXL Turboモデルを読み込み、Sampling Stepsを1〜4、CFG Scaleを1〜2に設定します。ネガティブプロンプトは不要（効果がほぼないため）。Hugging FaceやCivitaiからモデルファイルをダウンロードできます。
+    </div>
+
+    <h3>Stable Diffusion 3.5 -- 次世代の高精度モデル</h3>
+    <p>Stability AIが2024年にリリースしたSD 3の改良版です。2026年8月現在はSD 3.5 Medium・SD 3.5 Large・SD 3.5 Large Turboの3バリアントが公開されており、Hugging FaceからダウンロードしてAUTOMATIC1111やComfyUIで利用できます。</p>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th>バリアント</th><th>パラメータ数</th><th>VRAM要件</th><th>特徴</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>SD 3.5 Medium</strong></td><td>約2.5B</td><td>6〜8GB</td><td>コンシューマGPUで動作。コスパ最良</td></tr>
+          <tr><td><strong>SD 3.5 Large</strong></td><td>約8B</td><td>12GB以上推奨</td><td>最高品質。テキスト描写精度が最も高い</td></tr>
+          <tr><td><strong>SD 3.5 Large Turbo</strong></td><td>約8B</td><td>12GB以上推奨</td><td>Largeの高速版。4ステップで高品質生成</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul>
+      <li>テキストのプロンプト理解度がSDXLより大幅に高い</li>
+      <li>LoRA・ControlNetにも対応済み</li>
+      <li>SD 3.5 MediumはGoogle Colabの無料枠（T4 GPU）でも動作確認済み</li>
+      <li>ライセンス: Stability AI Community License（年間売上$100万未満は無料）</li>
+    </ul>
+
+    <h3>FLUX.1 -- Black Forest Labs発の注目モデル</h3>
+    <p>FLUX.1はStability AIの元メンバーが設立したBlack Forest Labsが2024年に公開したオープンソースモデルです。SDXLやSD 3.5と並ぶ選択肢として2026年に注目を集めています。</p>
+    <ul>
+      <li><strong>FLUX.1 [schnell]:</strong> 高速版。1〜4ステップで生成可能。Apache 2.0ライセンスで完全に商用利用可能</li>
+      <li><strong>FLUX.1 [dev]:</strong> 開発者向け高品質版。非商用ライセンス</li>
+      <li><strong>FLUX.1 [pro]:</strong> API経由で利用する最高品質版</li>
+      <li>ComfyUIで利用可能。AUTOMATIC1111では一部拡張が必要</li>
+      <li>VRAM 12GB以上推奨（schnellは8GBでも動作する場合あり）</li>
+    </ul>
+
+    <h3>2026年最新モデル比較表</h3>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th>モデル</th><th>画質</th><th>速度</th><th>VRAM</th><th>LoRA/拡張</th><th>商用利用</th><th>おすすめ用途</th></tr>
+        </thead>
+        <tbody>
+          <tr class="compare-highlight-green"><td><strong>SDXL</strong></td><td>◎</td><td>○</td><td>8GB〜</td><td>◎ 最多</td><td>○</td><td>汎用・定番・初心者向け</td></tr>
+          <tr><td><strong>SDXL Turbo</strong></td><td>○</td><td>◎ 超高速</td><td>6GB〜</td><td>△</td><td>○</td><td>ラフ生成・試行錯誤</td></tr>
+          <tr class="compare-highlight-blue"><td><strong>SD 3.5 Medium</strong></td><td>◎</td><td>○</td><td>6〜8GB</td><td>○</td><td>条件付き</td><td>高品質・テキスト含む画像</td></tr>
+          <tr><td><strong>SD 3.5 Large</strong></td><td>◎+</td><td>△</td><td>12GB〜</td><td>○</td><td>条件付き</td><td>最高品質を求める場合</td></tr>
+          <tr class="compare-highlight-purple"><td><strong>FLUX.1 schnell</strong></td><td>◎</td><td>◎</td><td>8〜12GB</td><td>△</td><td>◎ Apache2.0</td><td>高速・商用利用</td></tr>
+          <tr><td><strong>SD 1.5</strong></td><td>○</td><td>◎</td><td>4GB〜</td><td>◎ 豊富</td><td>○</td><td>低スペックPC・レガシー</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="info-box">
+      <strong>2026年の初心者向けおすすめ:</strong> まずは<strong>SDXL</strong>で始めるのが最も安全です。派生モデル・LoRA・チュートリアルが最も豊富で、トラブル時の情報も見つかりやすいためです。高速生成を試したい場合はSDXL Turbo、最新の高品質を求めるならSD 3.5 Mediumを検討してください。
+    </div>
+
+    <h3>Google Colab vs ローカル vs ConoHa AI Canvas 3択比較</h3>
+    <p>Stable Diffusionをどの環境で動かすべきかは、予算・PCスペック・使い方で異なります。以下の比較表で最適な環境を選びましょう。</p>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th>項目</th><th class="compare-highlight-green">Google Colab</th><th class="compare-highlight-blue">ローカル環境</th><th class="compare-highlight-orange">ConoHa AI Canvas</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>初期費用</strong></td><td>無料</td><td>GPU代10〜15万円</td><td>無料（お試し）</td></tr>
+          <tr><td><strong>月額費用</strong></td><td>無料（Pro: $9.99）</td><td>電気代のみ</td><td>550円〜</td></tr>
+          <tr><td><strong>セットアップ難易度</strong></td><td>簡単</td><td>やや難しい</td><td>超簡単</td></tr>
+          <tr><td><strong>GPU性能</strong></td><td>T4（無料）/ A100（Pro）</td><td>自分のGPU次第</td><td>クラウドGPU</td></tr>
+          <tr><td><strong>利用時間制限</strong></td><td>あり（無料: 数時間/日）</td><td>なし</td><td>なし</td></tr>
+          <tr><td><strong>モデル自由度</strong></td><td>自由（Drive保存）</td><td>完全自由</td><td>プリセット中心</td></tr>
+          <tr><td><strong>LoRA対応</strong></td><td>可能</td><td>可能</td><td>対応</td></tr>
+          <tr><td><strong>安定性</strong></td><td>低〜中</td><td>高</td><td>高</td></tr>
+          <tr><td><strong>商用利用</strong></td><td>モデル次第</td><td>モデル次第</td><td>OK</td></tr>
+          <tr><td><strong>スマホ対応</strong></td><td>可能</td><td>不可</td><td>可能</td></tr>
+          <tr><td><strong>おすすめユーザー</strong></td><td>初心者・お試し</td><td>本格ユーザー</td><td>PC不要で安定利用したい方</td></tr>
+        </tbody>
+      </table>
+    </div>
 
     <h3>無料で使えるWebUIサービス（2026年版）</h3>
     <p>PCに環境構築しなくても、以下のWebサービスで無料または低コストでStable Diffusionが試せます。</p>

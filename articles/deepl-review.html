@@ -29,7 +29,7 @@
     "@type": "Article",
     "headline": "DeepL Proの料金・値上げ情報｜無料版との違い・評判を実際に検証【2026年最新】",
     "datePublished": "2026-07-04",
-    "dateModified": "2026-08-22",
+    "dateModified": "2026-08-23",
     "author": {"@type": "Person", "name": "田中 誠", "url": "https://ai-navi.app/about"},
     "publisher": {"@type": "Organization", "name": "AI navi", "url": "https://ai-navi.app"}
   }
@@ -86,7 +86,15 @@
         "name": "DeepL APIとは何ですか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "DeepL APIは、DeepLの翻訳エンジンを自社アプリやシステムに組み込むためのインターフェースです。無料枠（Free）では月50万文字まで翻訳可能で、超過分は従量課金となります。Proプランでは利用上限が大幅に拡張されます。"
+          "text": "DeepL APIは、DeepLの翻訳エンジンを自社アプリやシステムに組み込むためのインターフェースです。2026年現在、APIプランはDeveloper（累計100万文字の評価用）とGrowth（月額サブスクリプション＋従量課金の本番用）の2種類に再編されています。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "DeepL API Freeはなくなったのですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、従来のDeepL API Free（月50万文字無料）は新規申込を終了しました。現在はDeveloperプラン（累計100万文字の一度きり評価用枠）とGrowthプラン（月額サブスク＋従量課金）に統合されています。既存のAPI Freeユーザーは当面利用継続できるケースもありますが、新規での無料API利用はDeveloperプランの100万文字枠のみです。"
         }
       },
       {
@@ -425,7 +433,7 @@
     <div class="container">
 
       <h1>DeepL Proの料金・値上げ情報｜無料版との違い・評判を実際に検証【2026年最新】</h1>
-      <p class="note">公開日: 2026年7月4日 | 最終更新: 2026年8月22日</p>
+      <p class="note">公開日: 2026年7月4日 | 最終更新: 2026年8月23日</p>
       <div class="author-box" style="display:flex;align-items:center;gap:16px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px;margin:20px 0;">
         <div style="flex-shrink:0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="52" height="52"><circle cx="32" cy="32" r="32" fill="#4f46e5"/><circle cx="32" cy="24" r="10" fill="white"/><ellipse cx="32" cy="52" rx="16" ry="12" fill="white"/></svg></div>
         <div>
@@ -479,7 +487,7 @@
           <li><a href="#reputation">DeepL Proの評判・口コミ｜メリットと翻訳精度を実際に検証</a></li>
           <li><a href="#signup">DeepL Proの登録・始め方</a></li>
           <li><a href="#howto">DeepLの使い方（基本操作）</a></li>
-          <li><a href="#api">DeepL APIとは？</a></li>
+          <li><a href="#api">DeepL APIとは？（API Free廃止情報あり）</a></li>
           <li><a href="#vs">Google翻訳・ChatGPT翻訳との比較</a></li>
           <li><a href="#pro-merit">DeepL Proのメリット5選</a></li>
           <li><a href="#merit">DeepLが特に優れているシーン</a></li>
@@ -560,8 +568,8 @@
           </tr>
           <tr>
             <td>API利用</td>
-            <td>DeepL API Free（別途登録）</td>
-            <td>DeepL API Pro（大容量）</td>
+            <td>Developer（累計100万文字・評価用）</td>
+            <td>Growth（月額＋従量課金・本番用）</td>
           </tr>
           <tr>
             <td>サポート</td>
@@ -636,7 +644,7 @@
             <td>無料版</td>
             <td>0円</td>
             <td>—</td>
-            <td>1,500文字/回（Web）<br>50万文字（API）</td>
+            <td>1,500文字/回（Web）<br>API: Developer 累計100万文字</td>
             <td>月3件</td>
             <td>1件</td>
             <td>×</td>
@@ -817,9 +825,33 @@
       <p>DeepL APIは、DeepLの翻訳機能を外部システムやアプリに組み込むためのプログラムインターフェース（API）です。開発者向けのサービスで、自社の業務システム・Webサービス・モバイルアプリに翻訳機能を追加できます。</p>
 
       <h3>DeepL API Free vs Pro｜API Freeはなくなった？</h3>
-      <p>「DeepL API Freeがなくなった」という噂を見かけることがありますが、2026年8月時点ではDeepL API Freeは引き続き提供されています。ただし登録画面のUIが変更されたことで見つけにくくなったケースがあるため、公式サイトの「API」ページから直接アクセスしてください。</p>
-      <p><strong>DeepL API Free</strong>は月50万文字まで無料で利用可能ですが、リクエスト数の上限や商用利用の制限があります。個人開発・プロトタイプ作成には十分です。</p>
-      <p><strong>DeepL API Pro</strong>は文字数の大幅な拡張・優先処理・データの即時削除・SLAが適用された商用利用向けプランです。月間数百万文字以上を翻訳するサービスへの組み込みに適しています。</p>
+      <p>「<strong>DeepL API Freeがなくなった</strong>」という声がSNSやフォーラムで増えています。結論から言うと、<strong>2026年8月時点でDeepL APIのプラン体系は大幅に変更されました</strong>。</p>
+
+      <h4 id="api-free-discontinued">DeepL API Free廃止について</h4>
+      <p>DeepLは2025年後半〜2026年にかけてAPI料金体系を再編し、従来の「API Free」（月50万文字無料）と「API Pro」は新規申込を終了しました。現在は以下の2つのプランに統合されています。</p>
+      <ul>
+        <li><strong>Developer（デベロッパー）プラン</strong>：累計100万文字まで無料で利用可能。ただし月間の繰り返し枠ではなく、<strong>一度きりの総量</strong>として付与される評価用プランです。開発・テスト・プロトタイプ作成向け</li>
+        <li><strong>Growth（グロース）プラン</strong>：月額サブスクリプション＋従量課金のハイブリッド。本番環境でのAPI利用に適したプランで、一定量の翻訳枠が含まれ、超過分は従量課金となります</li>
+      </ul>
+      <p><strong>既存のAPI Freeユーザーへの影響：</strong>既にAPI Freeを契約済みのユーザーは、当面は既存の枠が維持されるケースが報告されていますが、新規でAPI Freeを申し込むことはできなくなっています。今後、既存ユーザーも順次新プランへの移行が求められる可能性があります。</p>
+
+      <h4>API Free廃止後の代替手段</h4>
+      <div class="merit-grid">
+        <div class="merit-card">
+          <strong>Developerプランで評価・テスト</strong>
+          個人開発やプロトタイプ作成であれば、累計100万文字のDeveloperプランで十分です。ただし月額更新ではなく使い切り型のため、本番運用には向きません。
+        </div>
+        <div class="merit-card">
+          <strong>Growthプランで本番運用</strong>
+          商用サービスにDeepL APIを組み込む場合は、Growthプランへの移行が必須です。月額固定費＋従量課金のため、利用量に応じたコスト管理が可能です。
+        </div>
+        <div class="merit-card">
+          <strong>代替APIの検討</strong>
+          無料APIが必要な場合は、Google Cloud Translation API（月50万文字無料枠）やLibreTranslate（オープンソース）なども選択肢になります。ただし翻訳精度はDeepLが優位です。
+        </div>
+      </div>
+      <p class="note">※ APIプランの詳細・最新の料金体系は必ず<a href="https://www.deepl.com/ja/pro#developer" rel="nofollow noopener" target="_blank">DeepL公式サイトのAPIページ</a>でご確認ください。プラン内容は変更される可能性があります。</p>
+
       <p>APIの利用にはトークン（APIキー）の発行が必要で、DeepLのアカウント設定から取得できます。Python・JavaScript・Javaなど主要言語向けの公式SDKも提供されており、数行のコードでDeepLの翻訳エンジンを呼び出せます。</p>
 
       <div class="internal-links">
@@ -1073,7 +1105,12 @@
 
       <div class="faq-item">
         <div class="faq-q">Q6. DeepL APIとは何ですか？</div>
-        <div class="faq-a">DeepL APIは、DeepLの翻訳エンジンを自社アプリやシステムに組み込むためのインターフェースです。無料枠（API Free）では月50万文字まで翻訳可能で、それを超えると有料のAPI Proプランへの切り替えが必要です。Python・JavaScript等の公式SDKが提供されており、開発者が手軽に組み込めます。</div>
+        <div class="faq-a">DeepL APIは、DeepLの翻訳エンジンを自社アプリやシステムに組み込むためのインターフェースです。2026年現在、APIプランは「Developer（累計100万文字の評価用）」と「Growth（月額サブスクリプション＋従量課金の本番用）」の2種類に再編されています。Python・JavaScript等の公式SDKが提供されており、開発者が手軽に組み込めます。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Q6-2. DeepL API Freeはなくなったのですか？</div>
+        <div class="faq-a">はい、従来のDeepL API Free（月50万文字無料）は新規申込を終了しました。現在はDeveloperプラン（累計100万文字の一度きり評価用枠）とGrowthプラン（月額サブスク＋従量課金）に統合されています。既存のAPI Freeユーザーは当面利用継続できるケースもありますが、新規での無料API利用はDeveloperプランの100万文字枠のみとなります。最新情報は<a href="https://www.deepl.com/ja/pro#developer" rel="nofollow noopener" target="_blank">DeepL公式サイト</a>でご確認ください。</div>
       </div>
 
       <div class="faq-item">
