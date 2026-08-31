@@ -48,6 +48,14 @@
       px: 'https://www13.a8.net/0.gif?a8mat=4B7ROU+691VG2+5J4W+5YRHE',
       color: '#b45309',
       label: '公式サイトを見る →'
+    },
+    {
+      name: 'MillenVPN',
+      desc: 'AIツール利用時のプライバシーを守るVPN・月額286円〜',
+      url: 'https://px.a8.net/svt/ejp?a8mat=4BAITO+6XGN8Y+3JTE+HVNAR',
+      px: 'https://www19.a8.net/0.gif?a8mat=4BAITO+6XGN8Y+3JTE+HVNAR',
+      color: '#0f172a',
+      label: '今すぐ試す →'
     }
   ];
 
@@ -58,7 +66,8 @@
   else if (path.includes('awarefy') || path.includes('mental')) idx = 2;
   else if (path.includes('irusiru') || path.includes('slide') || path.includes('presentation')) idx = 3;
   else if (path.includes('plaud') || path.includes('voice') || path.includes('record')) idx = 4;
-  else idx = Math.floor(Date.now() / (1000 * 60 * 30)) % programs.length; // 30分ごとに切り替え
+  else if (path.includes('vpn') || path.includes('security') || path.includes('privacy')) idx = 5;
+  else idx = Math.floor(Date.now() / (1000 * 60 * 30)) % programs.length; // 30分ごとに切り替え（6プログラム）
 
   const p = programs[idx];
 
