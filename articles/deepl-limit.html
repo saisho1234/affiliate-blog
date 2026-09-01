@@ -62,7 +62,11 @@
     {"@type":"Question","name":"DeepL Proの無料トライアルはありますか？","acceptedAnswer":{"@type":"Answer","text":"はい、DeepL Proは30日間の無料トライアルを提供しています（クレジットカード登録が必要）。トライアル期間中はProの全機能が使え、期間内に解約すれば費用はかかりません。"}},
     {"@type":"Question","name":"DeepL Proの無料トライアルの申し込み方法は？","acceptedAnswer":{"@type":"Answer","text":"DeepL公式サイト（deepl.com/pro）にアクセスし、プランを選択してアカウント作成・クレジットカード登録を行います。登録後すぐにPro機能が有効になり、30日以内に解約すれば課金されません。所要時間は約3分です。"}},
     {"@type":"Question","name":"DeepLは無料で無制限に使えますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、DeepL無料版には1回1,500文字・月3ファイルの制限があります。「DeepL 無料無制限」と検索される方が多いですが、無制限に翻訳するにはDeepL Pro（有料プラン）へのアップグレードが必要です。30日間の無料トライアルで無制限翻訳を体験できます。"}},
-    {"@type":"Question","name":"Cookie削除でDeepLの上限を解除できますか？","acceptedAnswer":{"@type":"Answer","text":"一時的に解除できる場合があります。DeepL無料版はCookieで利用状況を管理しているため、ブラウザのCookieを削除すると利用カウントがリセットされることがあります。ただし根本的な解決にはならないため、頻繁に上限に達する場合はDeepL Proへの移行をおすすめします。"}}
+    {"@type":"Question","name":"Cookie削除でDeepLの上限を解除できますか？","acceptedAnswer":{"@type":"Answer","text":"一時的に解除できる場合があります。DeepL無料版はCookieで利用状況を管理しているため、ブラウザのCookieを削除すると利用カウントがリセットされることがあります。ただし根本的な解決にはならないため、頻繁に上限に達する場合はDeepL Proへの移行をおすすめします。"}},
+    {"@type":"Question","name":"DeepLの翻訳上限は1日何文字ですか？","acceptedAnswer":{"@type":"Answer","text":"DeepL無料版には「1日あたりの文字数上限」という公式な制限は設けられていません。制限の単位は「1回あたり1,500文字」です。ただし短時間に大量翻訳を繰り返すと一時的な利用制限がかかる場合があります。この一時制限は数分〜数時間で自動解除されます。"}},
+    {"@type":"Question","name":"DeepLの上限エラーはVPNで回避できますか？","acceptedAnswer":{"@type":"Answer","text":"VPNを使うとIPアドレスが変わるため、IPアドレス単位の一時制限については回避できる場合があります。ただしDeepLの利用規約では制限を意図的に回避する行為を禁止しており、アカウント停止のリスクもあるため推奨しません。正規の方法（DeepL Proへの移行・時間をおいて再試行）での対処をおすすめします。"}},
+    {"@type":"Question","name":"DeepLをブラウザ版とアプリ版で使うと上限が共有されますか？","acceptedAnswer":{"@type":"Answer","text":"同一アカウントでログインしている場合、ブラウザ版とデスクトップアプリの利用状況は共有されます。ログインしていない（ゲスト利用）状態ではIPアドレスやCookieで別々に管理されるため、ブラウザとアプリで独立してカウントされる場合があります。"}},
+    {"@type":"Question","name":"DeepL APIの無料枠はどれくらい使えますか？","acceptedAnswer":{"@type":"Answer","text":"DeepL API Free（無料プラン）では月50万文字まで利用できます。ただしこのAPIは開発者向けのサービスであり、一般ユーザーのWebサイトでの通常翻訳とは別枠です。2024年以降はDeepL API Freeの新規登録が制限されている場合があります。"}}
   ]}
   </script>
 </head>
@@ -752,7 +756,7 @@
       <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
 
-    <h2 id="faq">よくある質問（FAQ）18問</h2>
+    <h2 id="faq">よくある質問（FAQ）22問</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q">DeepL無料版の翻訳上限は何文字ですか？</div>
@@ -825,6 +829,22 @@
       <div class="faq-item">
         <div class="faq-q">Cookie削除でDeepLの上限を解除できますか？</div>
         <div class="faq-a">一時的に解除できる場合があります。DeepL無料版はCookieで利用状況を管理しているため、ブラウザのCookieを削除すると利用カウントがリセットされることがあります。ただし根本的な解決にはならないため、頻繁に上限に達する場合はDeepL Proへの移行をおすすめします。詳しくは<a href="#solution5">解除方法5選</a>をご覧ください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">DeepLの翻訳上限は1日何文字ですか？</div>
+        <div class="faq-a">DeepL無料版には「1日あたりの文字数上限」という公式な制限は設けられていません。制限の単位は「1回あたり1,500文字」です。ただし短時間に大量翻訳を繰り返すと、ボット対策の自動判定により一時的な利用制限がかかる場合があります。この一時制限は数分〜数時間で自動解除されます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">DeepLの上限エラーはVPNで回避できますか？</div>
+        <div class="faq-a">VPNを使うとIPアドレスが変わるため、IPアドレス単位の一時制限については回避できる場合があります。ただし、DeepLの利用規約では制限を意図的に回避する行為を禁止しています。アカウント停止のリスクもあるため、VPNによる回避は推奨しません。正規の方法（DeepL Proへの移行・時間をおいて再試行）での対処をおすすめします。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">DeepLをブラウザ版とアプリ版で使うと上限が共有されますか？</div>
+        <div class="faq-a">はい、DeepLのブラウザ版（Web）とデスクトップアプリは同一アカウントでログインしている場合、利用状況が共有されます。ただし、ログインしていない（ゲスト利用）状態ではIPアドレスやCookieで管理されるため、ブラウザとアプリで別々にカウントされる場合があります。ログインしている場合は合算されると考えてください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">DeepL APIの無料枠はどれくらい使えますか？</div>
+        <div class="faq-a">DeepL API Free（無料プラン）では月50万文字まで利用できます。ただし、このAPIは開発者向けのサービスであり、一般ユーザーのWebサイト・アプリでの通常翻訳とは別枠です。また、2024年以降はDeepL API Freeの新規登録が制限されている場合があります。一般ユーザーが上限を回避したい場合は、DeepL Proへのアップグレードが現実的な解決策です。</div>
       </div>
     </div>
 
@@ -965,5 +985,20 @@
 <a href="https://www.deepl.com/pro?cta=header-prices" target="_blank" rel="nofollow noopener" class="sticky-cta">DeepL Pro 30日間無料トライアル →</a>
 <a href="https://www.deepl.com/pro?cta=header-prices" target="_blank" rel="nofollow noopener" class="sticky-cta-mobile">DeepL Pro 30日間無料 &#x2192;</a>
 <script src="../banner.js"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "DeepL翻訳上限エラーの解除方法",
+  "step": [
+    {"@type": "HowToStep", "name": "時間をおいてリセットを待つ", "text": "DeepLの無料版は一定時間後に自動リセットされます。短時間アクセス制限は数分〜数時間で自動解除されます。"},
+    {"@type": "HowToStep", "name": "ブラウザを変える", "text": "ChromeとEdgeなど複数ブラウザを使い分けることで上限を回避できます。シークレットモードやCookie削除も有効です。"},
+    {"@type": "HowToStep", "name": "DeepL APIの無料枠を使う", "text": "DeepL APIには月50万文字の無料枠があります（開発者向け）。一般利用の上限とは別管理です。"},
+    {"@type": "HowToStep", "name": "Google翻訳などを使う", "text": "DeepLが使えない間はGoogle翻訳やMicrosoft Translatorを代替として使います。文字数制限が事実上なく、短文確認に最適です。"},
+    {"@type": "HowToStep", "name": "DeepL Proにアップグレード", "text": "DeepL Proは翻訳文字数が大幅に増え、上限エラーが出にくくなります。30日間の無料トライアルで試すことができます。"}
+  ]
+}
+</script>
 </body>
 </html>
