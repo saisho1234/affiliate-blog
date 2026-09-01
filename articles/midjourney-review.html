@@ -163,6 +163,46 @@
           "@type": "Answer",
           "text": "プロンプトを具体的に書くことが重要です。主題・スタイル・構図・色味・照明を明確に指定し、--noパラメータで不要な要素を除外しましょう。英語プロンプトに切り替えたり、--style rawでより忠実な描写にするのも効果的です。生成結果をVary（バリエーション）で微調整することもできます。"
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Midjourneyは無料で使える？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "2026年現在、無料トライアルは終了しています。最安プランはBasic $10/月（約200枚/月生成可能）です。無料で画像生成したい場合はStable DiffusionやMicrosoft Designerがおすすめです。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Midjourneyの画像は商用利用できる？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "有料プランユーザーは商用利用OKです。クレジット表記も不要。ただし年間収益100万ドル以上の企業はPro以上のプランが必要です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "MidjourneyとStable Diffusionの違いは？（詳細）",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Midjourneyはクラウド型でプロンプトだけで高品質画像を生成できる手軽さが魅力。Stable Diffusionはローカル型で完全無料・カスタマイズ自由ですが、GPU搭載PCが必要でセットアップにも知識が求められます。手軽さならMidjourney、自由度ならStable Diffusionです。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "MidjourneyとDALL-E 3の違いは？（詳細）",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Midjourneyはアート・イラスト系が得意で独特の美的センスが特徴。DALL-E 3はChatGPT統合で日本語プロンプトに対応し、テキスト描画が得意です。料金面ではMidjourneyは$10〜の独立サブスク、DALL-E 3はChatGPT Plus $20/月に含まれます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Midjourneyの使い方は？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Discord経由またはmidjourney.comのウェブアプリから利用できます。/imagineコマンドに英語プロンプトを入力するだけで画像生成が可能。2026年にはWebアプリ版も充実し、Discordなしでも快適に利用できるようになっています。"
+        }
       }
     ]
   }
@@ -837,6 +877,69 @@
         </ul>
       </section>
 
+      <!-- セクション8.5: 競合4ツール比較表 -->
+      <section id="compare-4tool">
+        <h2>AI画像生成ツール4社 徹底比較表（Midjourney vs DALL-E 3 vs Stable Diffusion vs Adobe Firefly）</h2>
+        <p>主要4つのAI画像生成ツールを料金・商用利用・日本語対応・得意分野で比較します。ツール選びの参考にしてください。</p>
+
+        <div class="price-table-wrap">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th>ツール名</th>
+                <th>料金</th>
+                <th>商用利用</th>
+                <th>日本語対応</th>
+                <th>得意分野</th>
+                <th>特徴</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Midjourney</strong></td>
+                <td>$10〜$120/月</td>
+                <td>有料プランで可（クレジット不要）</td>
+                <td>一部対応（英語推奨）</td>
+                <td>アート・イラスト・広告素材</td>
+                <td>独特の美的センスで圧倒的な画質。Discord/ウェブアプリで利用</td>
+              </tr>
+              <tr>
+                <td><strong>DALL-E 3</strong></td>
+                <td>ChatGPT Plus $20/月に含まれる</td>
+                <td>ChatGPT Plus加入で可</td>
+                <td>良好（日本語プロンプトOK）</td>
+                <td>テキスト描画・プロンプト理解</td>
+                <td>ChatGPT統合で会話形式の指示が可能。テキスト入り画像に強い</td>
+              </tr>
+              <tr>
+                <td><strong>Stable Diffusion</strong></td>
+                <td>無料（ローカル）〜有料クラウド</td>
+                <td>モデルライセンスによる</td>
+                <td>一部対応（英語推奨）</td>
+                <td>カスタマイズ・LoRA・ControlNet</td>
+                <td>オープンソースで完全無料。GPU搭載PCが必要。自由度が最も高い</td>
+              </tr>
+              <tr>
+                <td><strong>Adobe Firefly</strong></td>
+                <td>Creative Cloud $7,780/年〜 or 単体プラン</td>
+                <td>Adobeプランで可（著作権安全性が高い）</td>
+                <td>良好（日本語対応）</td>
+                <td>商用利用の安全性・Adobe連携</td>
+                <td>学習データがライセンス済みで著作権リスクが最小。Photoshop等と連携</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>どのツールを選ぶべき？</h3>
+        <ul>
+          <li><strong>品質・芸術性を最優先</strong> → Midjourney</li>
+          <li><strong>日本語で手軽に使いたい</strong> → DALL-E 3（ChatGPT Plus）</li>
+          <li><strong>無料で自由にカスタマイズしたい</strong> → <a href="stable-diffusion-guide">Stable Diffusion</a></li>
+          <li><strong>著作権リスクを最小限にしたい企業</strong> → Adobe Firefly</li>
+        </ul>
+      </section>
+
       <!-- セクション9: おすすめな人・おすすめしない人 -->
       <section id="recommend">
         <h2>Midjourneyがおすすめな人・おすすめしない人</h2>
@@ -949,6 +1052,31 @@
             <p>プロンプトを具体的に書くことが重要です。主題・スタイル・構図・色味・照明を明確に指定し、--noパラメータで不要な要素を除外しましょう。英語プロンプトに切り替えたり、--style rawでより忠実な描写にするのも効果的です。生成結果をVary（バリエーション）で微調整することもできます。</p>
           </details>
 
+          <details class="faq-item">
+            <summary>Midjourneyは無料で使える？</summary>
+            <p>2026年現在、無料トライアルは終了しています。最安プランはBasic $10/月（約200枚/月生成可能）です。無料で画像生成したい場合は<a href="stable-diffusion-guide">Stable Diffusion</a>やMicrosoft Designerがおすすめです。</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Midjourneyの画像は商用利用できる？</summary>
+            <p>有料プランユーザーは商用利用OKです。クレジット表記も不要。ただし年間収益100万ドル以上の企業はPro以上のプランが必要です。詳しくは<a href="#commercial">商用利用ルールのセクション</a>をご確認ください。</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>MidjourneyとStable Diffusionの違いは？（詳細）</summary>
+            <p>Midjourneyはクラウド型でプロンプトだけで高品質画像を生成できる手軽さが魅力。Stable Diffusionはローカル型で完全無料・カスタマイズ自由ですが、GPU搭載PCが必要でセットアップにも知識が求められます。手軽さならMidjourney、自由度ならStable Diffusionです。詳しくは<a href="stable-diffusion-guide">Stable Diffusion無料ガイド</a>もご覧ください。</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>MidjourneyとDALL-E 3の違いは？（詳細）</summary>
+            <p>Midjourneyはアート・イラスト系が得意で独特の美的センスが特徴。DALL-E 3はChatGPT統合で日本語プロンプトに対応し、テキスト描画が得意です。料金面ではMidjourneyは$10〜の独立サブスク、DALL-E 3はChatGPT Plus $20/月に含まれます。</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Midjourneyの使い方は？</summary>
+            <p>Discord経由またはmidjourney.comのウェブアプリから利用できます。/imagineコマンドに英語プロンプトを入力するだけで画像生成が可能。2026年にはWebアプリ版も充実し、Discordなしでも快適に利用できるようになっています。詳しくは<a href="#howto-5step">使い方5ステップガイド</a>をご覧ください。</p>
+          </details>
+
         </div>
       </section>
 
@@ -994,6 +1122,8 @@
             <li><a href="adobe-firefly-review">Adobe Firefly レビュー｜料金・使い方・Midjourneyとの比較</a></li>
             <li><a href="ai-image-commercial-use">AI画像の商用利用ルール｜Midjourney・DALL-E・Stable Diffusion比較</a></li>
             <li><a href="free-ai-tools">無料AIツール10選【2026年版】コスト0で始められるおすすめサービス</a></li>
+            <li><a href="stable-diffusion-vram">Stable Diffusion VRAM不足解決法｜低スペックPCでも動かす方法</a></li>
+            <li><a href="ai-image-generation">AI画像生成おすすめ比較【2026年最新】主要ツールの特徴を解説</a></li>
           </ul>
         </div>
       </section>
