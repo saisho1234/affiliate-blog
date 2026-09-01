@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="800" height="380" font-family="'Hiragino Sans','Yu Gothic',sans-serif">
+  <!-- 背景 -->
+  <rect width="800" height="380" fill="#f8fafc" rx="16"/>
+  <!-- タイトル -->
+  <rect x="0" y="0" width="800" height="60" fill="#7c3aed" rx="16"/>
+  <rect x="0" y="44" width="800" height="16" fill="#7c3aed"/>
+  <text x="400" y="36" text-anchor="middle" fill="white" font-size="19" font-weight="bold">Google Colab で Stable Diffusion を使う手順（10分）</text>
+
+  <!-- STEP矢印フロー -->
+  <!-- STEP 1 -->
+  <rect x="20" y="80" width="134" height="100" fill="white" rx="12" stroke="#ddd6fe" stroke-width="2"/>
+  <rect x="20" y="80" width="134" height="32" fill="#7c3aed" rx="12"/>
+  <rect x="20" y="98" width="134" height="14" fill="#7c3aed"/>
+  <text x="87" y="100" text-anchor="middle" fill="white" font-size="13" font-weight="bold">STEP 1</text>
+  <text x="87" y="128" text-anchor="middle" fill="#1e293b" font-size="11" font-weight="bold">Googleアカウント</text>
+  <text x="87" y="144" text-anchor="middle" fill="#1e293b" font-size="11" font-weight="bold">でログイン</text>
+  <text x="87" y="162" text-anchor="middle" fill="#64748b" font-size="10">既存アカウントでOK</text>
+
+  <!-- 矢印 -->
+  <polygon points="162,130 176,124 176,136" fill="#7c3aed"/>
+  <line x1="154" y1="130" x2="176" y2="130" stroke="#7c3aed" stroke-width="2.5"/>
+
+  <!-- STEP 2 -->
+  <rect x="178" y="80" width="134" height="100" fill="white" rx="12" stroke="#ddd6fe" stroke-width="2"/>
+  <rect x="178" y="80" width="134" height="32" fill="#7c3aed" rx="12"/>
+  <rect x="178" y="98" width="134" height="14" fill="#7c3aed"/>
+  <text x="245" y="100" text-anchor="middle" fill="white" font-size="13" font-weight="bold">STEP 2</text>
+  <text x="245" y="128" text-anchor="middle" fill="#1e293b" font-size="11" font-weight="bold">ノートブックを</text>
+  <text x="245" y="144" text-anchor="middle" fill="#1e293b" font-size="11" font-weight="bold">Colabで開く</text>
+  <text x="245" y="162" text-anchor="middle" fill="#64748b" font-size="10">GitHubから入手</text>
+
+  <!-- 矢印 -->
+  <polygon points="320,130 334,124 334,136" fill="#7c3aed"/>
+  <line x1="312" y1="130" x2="334" y2="130" stroke="#7c3aed" stroke-width="2.5"/>
+
+  <!-- STEP 3 -->
+  <rect x="336" y="80" width="134" height="100" fill="white" rx="12" stroke="#ddd6fe" stroke-width="2"/>
+  <rect x="336" y="80" width="134" height="32" fill="#7c3aed" rx="12"/>
+  <rect x="336" y="98" width="134" height="14" fill="#7c3aed"/>
+  <text x="403" y="100" text-anchor="middle" fill="white" font-size="13" font-weight="bold">STEP 3</text>
+  <text x="403" y="128" text-anchor="middle" fill="#1e293b" font-size="11" font-weight="bold">ランタイムを</text>
+  <text x="403" y="144" text-anchor="middle" fill="#1e293b" font-size="11" font-weight="bold">GPU(T4)に設定</text>
+  <text x="403" y="162" text-anchor="middle" fill="#64748b" font-size="10">無料枠で利用可</text>
+
+  <!-- 矢印 -->
+  <polygon points="478,130 492,124 492,136" fill="#7c3aed"/>
+  <line x1="470" y1="130" x2="492" y2="130" stroke="#7c3aed" stroke-width="2.5"/>
+
+  <!-- STEP 4 -->
+  <rect x="494" y="80" width="134" height="100" fill="white" rx="12" stroke="#ddd6fe" stroke-width="2"/>
+  <rect x="494" y="80" width="134" height="32" fill="#7c3aed" rx="12"/>
+  <rect x="494" y="98" width="134" height="14" fill="#7c3aed"/>
+  <text x="561" y="100" text-anchor="middle" fill="white" font-size="13" font-weight="bold">STEP 4</text>
+  <text x="561" y="128" text-anchor="middle" fill="#1e293b" font-size="11" font-weight="bold">セルを上から</text>
+  <text x="561" y="144" text-anchor="middle" fill="#1e293b" font-size="11" font-weight="bold">順に実行</text>
+  <text x="561" y="162" text-anchor="middle" fill="#64748b" font-size="10">▶ボタンを押すだけ</text>
+
+  <!-- 矢印 -->
+  <polygon points="636,130 650,124 650,136" fill="#f97316"/>
+  <line x1="628" y1="130" x2="650" y2="130" stroke="#f97316" stroke-width="2.5"/>
+
+  <!-- STEP 5 -->
+  <rect x="652" y="80" width="130" height="100" fill="#fff7ed" rx="12" stroke="#f97316" stroke-width="2.5"/>
+  <rect x="652" y="80" width="130" height="32" fill="#f97316" rx="12"/>
+  <rect x="652" y="98" width="130" height="14" fill="#f97316"/>
+  <text x="717" y="100" text-anchor="middle" fill="white" font-size="13" font-weight="bold">完成！</text>
+  <text x="717" y="128" text-anchor="middle" fill="#1e293b" font-size="11" font-weight="bold">Web UIが起動</text>
+  <text x="717" y="144" text-anchor="middle" fill="#1e293b" font-size="11" font-weight="bold">画像生成スタート</text>
+  <text x="717" y="162" text-anchor="middle" fill="#f97316" font-size="10" font-weight="bold">約5〜10分で完了</text>
+
+  <!-- 比較表 -->
+  <rect x="20" y="200" width="760" height="160" fill="white" rx="12" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="400" y="224" text-anchor="middle" fill="#1e293b" font-size="15" font-weight="bold">環境別 Stable Diffusion 比較</text>
+
+  <!-- ヘッダー -->
+  <rect x="30" y="232" width="220" height="28" fill="#f1f5f9" rx="4"/>
+  <rect x="258" y="232" width="158" height="28" fill="#f1f5f9" rx="4"/>
+  <rect x="424" y="232" width="158" height="28" fill="#f1f5f9" rx="4"/>
+  <rect x="590" y="232" width="180" height="28" fill="#f1f5f9" rx="4"/>
+  <text x="140" y="251" text-anchor="middle" fill="#64748b" font-size="12" font-weight="bold">項目</text>
+  <text x="337" y="251" text-anchor="middle" fill="#64748b" font-size="12" font-weight="bold">Google Colab無料</text>
+  <text x="503" y="251" text-anchor="middle" fill="#64748b" font-size="12" font-weight="bold">ConoHa AI Canvas</text>
+  <text x="680" y="251" text-anchor="middle" fill="#64748b" font-size="12" font-weight="bold">ローカル環境</text>
+
+  <!-- 行1: 費用 -->
+  <text x="140" y="278" text-anchor="middle" fill="#1e293b" font-size="12">費用</text>
+  <text x="337" y="278" text-anchor="middle" fill="#22c55e" font-size="12" font-weight="bold">無料</text>
+  <text x="503" y="278" text-anchor="middle" fill="#f97316" font-size="12">月550円〜</text>
+  <text x="680" y="278" text-anchor="middle" fill="#22c55e" font-size="12">無料（電気代のみ）</text>
+  <line x1="30" y1="288" x2="770" y2="288" stroke="#f1f5f9" stroke-width="1"/>
+
+  <!-- 行2: セットアップ -->
+  <text x="140" y="308" text-anchor="middle" fill="#1e293b" font-size="12">セットアップ難易度</text>
+  <text x="337" y="308" text-anchor="middle" fill="#22c55e" font-size="12">★★☆ 中程度</text>
+  <text x="503" y="308" text-anchor="middle" fill="#22c55e" font-size="12">★☆☆ 簡単</text>
+  <text x="680" y="308" text-anchor="middle" fill="#ef4444" font-size="12">★★★ 難しい</text>
+  <line x1="30" y1="318" x2="770" y2="318" stroke="#f1f5f9" stroke-width="1"/>
+
+  <!-- 行3: 安定性 -->
+  <text x="140" y="338" text-anchor="middle" fill="#1e293b" font-size="12">安定性・速度</text>
+  <text x="337" y="338" text-anchor="middle" fill="#f59e0b" font-size="12">混雑時不安定</text>
+  <text x="503" y="338" text-anchor="middle" fill="#22c55e" font-size="12">安定・高速</text>
+  <text x="680" y="338" text-anchor="middle" fill="#22c55e" font-size="12">最速（PC性能次第）</text>
+
+  <!-- フッター -->
+  <text x="400" y="372" text-anchor="middle" fill="#94a3b8" font-size="10">AI navi (ai-navi.app) | 2026年最新情報</text>
+</svg>
