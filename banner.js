@@ -11,43 +11,43 @@
   const programs = [
     {
       name: 'MiriCanvas',
-      desc: 'AIで3分でプレゼン資料を作成・無料登録',
+      desc: 'テンプレ選んでAIが自動デザイン・30秒で無料登録',
       url: 'https://px.a8.net/svt/ejp?a8mat=4B7ROU+6NC9YQ+5EX8+5YRHE',
       px: 'https://www15.a8.net/0.gif?a8mat=4B7ROU+6NC9YQ+5EX8+5YRHE',
       color: '#7c3aed',
-      label: '無料で始める →'
+      label: '30秒で無料登録 →'
     },
     {
       name: 'Notta',
-      desc: 'AI文字起こし・議事録を自動作成',
+      desc: '会議を録音するだけでAIが議事録を自動作成',
       url: 'https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM',
       px: 'https://www19.a8.net/0.gif?a8mat=4B7QWV+7FX302+5988+5YJRM',
       color: '#0ea5e9',
-      label: '無料で試す →'
+      label: '無料プランで試す →'
     },
     {
       name: 'Awarefy',
-      desc: 'メンタルケアアプリ・7日間無料',
+      desc: '精神科医監修・AIがメンタルを毎日サポート',
       url: 'https://px.a8.net/svt/ejp?a8mat=4B7ROU+5OT4VM+5CBW+5YZ75',
       px: 'https://www12.a8.net/0.gif?a8mat=4B7ROU+5OT4VM+5CBW+5YZ75',
       color: '#16a34a',
-      label: '7日間無料で試す →'
+      label: '7日間無料で全機能を体験 →'
     },
     {
       name: 'イルシル',
-      desc: 'AIスライド資料作成ツール・無料プランあり',
+      desc: 'テキスト入力だけでAIがスライド自動生成',
       url: 'https://px.a8.net/svt/ejp?a8mat=4B7QWV+73EZAQ+5UMS+5YZ75',
       px: 'https://www10.a8.net/0.gif?a8mat=4B7QWV+73EZAQ+5UMS+5YZ75',
       color: '#ea580c',
-      label: '無料で使う →'
+      label: '無料プランで今すぐ作成 →'
     },
     {
       name: 'PLAUD NOTE',
-      desc: 'AI搭載ボイスレコーダー・議事録を自動生成',
+      desc: '録音ボタン1つで議事録が完成・月300分無料',
       url: 'https://px.a8.net/svt/ejp?a8mat=4B7ROU+691VG2+5J4W+5YRHE',
       px: 'https://www13.a8.net/0.gif?a8mat=4B7ROU+691VG2+5J4W+5YRHE',
       color: '#b45309',
-      label: '公式サイトを見る →'
+      label: '最新価格をチェック →'
     },
     {
       name: 'MillenVPN',

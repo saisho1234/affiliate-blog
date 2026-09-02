@@ -25,7 +25,7 @@
     "headline": "DeepL 無料版の上限に達しました｜制限の解除方法5選【2026年最新】",
     "image": "https://ai-navi.app/og-image.png",
     "datePublished": "2026-07-29",
-    "dateModified": "2026-08-28",
+    "dateModified": "2026-09-02",
     "author": { "@type": "Person", "name": "田中 誠", "url": "https://ai-navi.app/about" },
     "publisher": { "@type": "Organization", "name": "AI navi", "logo": { "@type": "ImageObject", "url": "https://ai-navi.app/og-image.png" } }
   }
@@ -66,7 +66,8 @@
     {"@type":"Question","name":"DeepLの翻訳上限は1日何文字ですか？","acceptedAnswer":{"@type":"Answer","text":"DeepL無料版には「1日あたりの文字数上限」という公式な制限は設けられていません。制限の単位は「1回あたり1,500文字」です。ただし短時間に大量翻訳を繰り返すと一時的な利用制限がかかる場合があります。この一時制限は数分〜数時間で自動解除されます。"}},
     {"@type":"Question","name":"DeepLの上限エラーはVPNで回避できますか？","acceptedAnswer":{"@type":"Answer","text":"VPNを使うとIPアドレスが変わるため、IPアドレス単位の一時制限については回避できる場合があります。ただしDeepLの利用規約では制限を意図的に回避する行為を禁止しており、アカウント停止のリスクもあるため推奨しません。正規の方法（DeepL Proへの移行・時間をおいて再試行）での対処をおすすめします。"}},
     {"@type":"Question","name":"DeepLをブラウザ版とアプリ版で使うと上限が共有されますか？","acceptedAnswer":{"@type":"Answer","text":"同一アカウントでログインしている場合、ブラウザ版とデスクトップアプリの利用状況は共有されます。ログインしていない（ゲスト利用）状態ではIPアドレスやCookieで別々に管理されるため、ブラウザとアプリで独立してカウントされる場合があります。"}},
-    {"@type":"Question","name":"DeepL APIの無料枠はどれくらい使えますか？","acceptedAnswer":{"@type":"Answer","text":"DeepL API Free（無料プラン）では月50万文字まで利用できます。ただしこのAPIは開発者向けのサービスであり、一般ユーザーのWebサイトでの通常翻訳とは別枠です。2024年以降はDeepL API Freeの新規登録が制限されている場合があります。"}}
+    {"@type":"Question","name":"DeepL APIの無料枠はどれくらい使えますか？","acceptedAnswer":{"@type":"Answer","text":"DeepL API Free（無料プラン）では月50万文字まで利用できます。ただしこのAPIは開発者向けのサービスであり、一般ユーザーのWebサイトでの通常翻訳とは別枠です。2024年以降はDeepL API Freeの新規登録が制限されている場合があります。"}},
+    {"@type":"Question","name":"DeepL API Freeは廃止されたのですか？","acceptedAnswer":{"@type":"Answer","text":"2024年後半からDeepL API Free（月50万文字無料の開発者向けプラン）の新規登録が停止されており、事実上の廃止状態です。既存ユーザーは引き続き利用できる場合がありますが、新規では申し込めません。なお、これは開発者向けAPIの話であり、DeepLのWebサイトやアプリで翻訳する一般ユーザーの無料版（DeepL Free）は2026年9月現在も利用可能です。代替としてはDeepL API Pro（従量課金）、Google Cloud Translation API（月50万文字無料枠）、ChatGPT APIなどがあります。"}}
   ]}
   </script>
 </head>
@@ -665,6 +666,28 @@
     </div>
 
     <h2 id="alternatives">DeepL API Freeの廃止と代替手段｜制限なく使える無料翻訳ツール</h2>
+
+    <h3 id="api-free-abolished">DeepL API Freeは廃止された？無料版への影響と対策【2026年最新】</h3>
+    <p>「<strong>DeepL API Free なくなった</strong>」「<strong>DeepL API Free 廃止</strong>」と検索する方が増えています。結論から言うと、<strong>DeepL API Freeプランは2024年後半から新規登録の受付が停止</strong>されており、事実上の廃止状態です。</p>
+
+    <p><strong>経緯と現状（2026年9月時点）：</strong></p>
+    <ul>
+      <li><strong>2024年後半</strong>：DeepL API Free（月50万文字まで無料）の新規アカウント登録が停止。既存ユーザーは引き続き利用可能</li>
+      <li><strong>2025年以降</strong>：既存のAPI Freeユーザーも段階的に有料プラン（API Pro）への移行を案内される事例が報告</li>
+      <li><strong>2026年現在</strong>：API Freeの新規登録は不可。既存ユーザーの利用可否はアカウントにより異なる</li>
+    </ul>
+
+    <p><strong>一般ユーザー（Web版・アプリ版）への影響：</strong></p>
+    <p>API Freeの廃止は<strong>開発者向けAPI</strong>の話であり、<strong>DeepLのWebサイトやアプリで翻訳する一般ユーザーには直接の影響はありません</strong>。無料版（DeepL Free）のテキスト翻訳（1回1,500文字・月3ファイル）は2026年9月現在も利用可能です。</p>
+
+    <p><strong>API Freeが使えなくなった開発者の対策：</strong></p>
+    <ol>
+      <li><strong>DeepL API Pro</strong>に移行する（従量課金制・月$5.49〜 + $25/100万文字）</li>
+      <li><strong>Google Cloud Translation API</strong>を利用する（月50万文字まで無料枠あり）</li>
+      <li><strong>ChatGPT API</strong>（GPT-4o mini）で翻訳する（低コストで高品質）</li>
+      <li><strong>LibreTranslate</strong>（オープンソース）をセルフホストする（完全無料）</li>
+    </ol>
+
     <p>2024年にDeepL API Freeプラン（月50万文字無料）の新規登録が制限されるなど、無料で使えるDeepLの範囲は年々縮小傾向にあります。API Freeが使えなくなった方や、DeepLの上限に達したとき、以下の無料ツールを代替・一時的な代用として活用できます。</p>
 
     <div class="table-wrapper">
@@ -926,16 +949,16 @@
   <h2 style="font-size:1.2em;margin-bottom:16px;color:#1a1a2e;">DeepLと組み合わせると便利なAIツール</h2>
 
   <div style="background:#fff;border-radius:8px;padding:16px;margin-bottom:16px;border-left:4px solid #0ea5e9;">
-    <h3 style="font-size:1em;margin:0 0 8px;">Notta｜音声を自動で文字起こし＆翻訳サポート</h3>
-    <p style="font-size:0.9em;color:#555;margin:0 0 12px;">会議・インタビューの音声をAIが自動文字起こし。DeepLと組み合わせて多言語対応の議事録作成が可能。無料プランあり。</p>
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank" style="display:inline-block;background:#0ea5e9;color:#fff;padding:10px 24px;border-radius:6px;font-weight:bold;text-decoration:none;font-size:0.9em;">AIで議事録を自動生成・無料で始める →</a>
+    <h3 style="font-size:1em;margin:0 0 8px;">Notta｜翻訳だけじゃない！音声→テキスト変換もAIで自動化</h3>
+    <p style="font-size:0.9em;color:#555;margin:0 0 12px;">DeepLの上限に悩む方は、そもそも翻訳する前のテキスト化もAIに任せませんか？Nottaなら会議の音声を自動で文字起こし→DeepLに貼って翻訳、の流れが最速。無料プランあり。</p>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank" style="display:inline-block;background:#0ea5e9;color:#fff;padding:10px 24px;border-radius:6px;font-weight:bold;text-decoration:none;font-size:0.9em;">Nottaを無料プランで試す（30秒で登録） →</a>
     <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B7QWV+7FX302+5988+5YJRM" alt="">
   </div>
 
   <div style="background:#fff;border-radius:8px;padding:16px;border-left:4px solid #8b5cf6;">
-    <h3 style="font-size:1em;margin:0 0 8px;">MiriCanvas｜翻訳した文章をAIでプレゼン資料に変換</h3>
-    <p style="font-size:0.9em;color:#555;margin:0 0 12px;">DeepLで翻訳したテキストをそのまま貼り付けるだけで、AIがプロ品質のプレゼン・資料を自動生成。無料で登録できる。</p>
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B7ROU+6NC9YQ+5EX8+5YRHE" rel="nofollow noopener" target="_blank" style="display:inline-block;background:#8b5cf6;color:#fff;padding:10px 24px;border-radius:6px;font-weight:bold;text-decoration:none;font-size:0.9em;">3分でプレゼン完成・無料で始める →</a>
+    <h3 style="font-size:1em;margin:0 0 8px;">MiriCanvas｜翻訳した文章をAIでプレゼン資料に一発変換</h3>
+    <p style="font-size:0.9em;color:#555;margin:0 0 12px;">DeepLで翻訳した英語テキストをそのまま貼るだけ。AIがデザイン・レイアウトを自動生成してプロ品質のプレゼンが3分で完成。30秒で無料登録、クレカ不要。</p>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B7ROU+6NC9YQ+5EX8+5YRHE" rel="nofollow noopener" target="_blank" style="display:inline-block;background:#8b5cf6;color:#fff;padding:10px 24px;border-radius:6px;font-weight:bold;text-decoration:none;font-size:0.9em;">30秒で無料登録してプレゼンを作る →</a>
     <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4B7ROU+6NC9YQ+5EX8+5YRHE" alt="">
   </div>
 </section>
