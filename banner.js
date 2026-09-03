@@ -47,7 +47,7 @@
       url: 'https://px.a8.net/svt/ejp?a8mat=4B7ROU+691VG2+5J4W+5YRHE',
       px: 'https://www13.a8.net/0.gif?a8mat=4B7ROU+691VG2+5J4W+5YRHE',
       color: '#b45309',
-      label: '最新価格をチェック →'
+      label: '月300分無料で試す →'
     },
     {
       name: 'MillenVPN',
@@ -55,7 +55,7 @@
       url: 'https://px.a8.net/svt/ejp?a8mat=4BAITO+6XGN8Y+3JTE+HVNAR',
       px: 'https://www19.a8.net/0.gif?a8mat=4BAITO+6XGN8Y+3JTE+HVNAR',
       color: '#0f172a',
-      label: '今すぐ試す →'
+      label: '月額286円〜 今すぐ試す →'
     }
   ];
 
@@ -67,7 +67,9 @@
   else if (path.includes('irusiru') || path.includes('slide') || path.includes('presentation')) idx = 3;
   else if (path.includes('plaud') || path.includes('voice') || path.includes('record')) idx = 4;
   else if (path.includes('vpn') || path.includes('security') || path.includes('privacy')) idx = 5;
-  else idx = Math.floor(Date.now() / (1000 * 60 * 30)) % programs.length; // 30分ごとに切り替え（6プログラム）
+  else if (path.includes('translate') || path.includes('deepl') || path.includes('writing')) idx = 1;
+  else if (path.includes('image') || path.includes('design') || path.includes('canva')) idx = 0;
+  else idx = 0; // デフォルト: MiriCanvas（最もCV見込みが高い）
 
   const p = programs[idx];
 
