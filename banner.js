@@ -62,14 +62,15 @@
   // 現在の記事に合わせてプログラムを選択（URLベース）
   const path = location.pathname;
   let idx = 0;
-  if (path.includes('notta') || path.includes('transcri')) idx = 1;
-  else if (path.includes('awarefy') || path.includes('mental')) idx = 2;
-  else if (path.includes('irusiru') || path.includes('slide') || path.includes('presentation')) idx = 3;
-  else if (path.includes('plaud') || path.includes('voice') || path.includes('record')) idx = 4;
-  else if (path.includes('vpn') || path.includes('security') || path.includes('privacy')) idx = 5;
-  else if (path.includes('translate') || path.includes('deepl') || path.includes('writing')) idx = 1;
-  else if (path.includes('image') || path.includes('design') || path.includes('canva')) idx = 0;
-  else idx = 0; // デフォルト: MiriCanvas（最もCV見込みが高い）
+  if (path.includes('notta') || path.includes('transcri') || path.includes('memo') || path.includes('voice') || path.includes('record') || path.includes('plaud') || path.includes('zenchord')) idx = 1; // Notta
+  else if (path.includes('awarefy') || path.includes('mental')) idx = 2; // Awarefy
+  else if (path.includes('irusiru') || path.includes('slide') || path.includes('presentation')) idx = 3; // イルシル
+  else if (path.includes('stable-diffusion') || path.includes('image') || path.includes('conoha') || path.includes('midjourney') || path.includes('firefly') || path.includes('ai-image')) idx = 0; // MiriCanvas（画像生成系もデザインに繋がる）
+  else if (path.includes('vpn') || path.includes('security') || path.includes('privacy') || path.includes('ablenet')) idx = 5; // MillenVPN
+  else if (path.includes('translate') || path.includes('deepl') || path.includes('ai-translate')) idx = 1; // Notta（翻訳代替）
+  else if (path.includes('design') || path.includes('canva') || path.includes('miri') || path.includes('gamma') || path.includes('free-ai')) idx = 0; // MiriCanvas
+  else if (path.includes('plaud') || path.includes('ic-recorder')) idx = 4; // Plaud
+  else idx = 0; // デフォルト: MiriCanvas
 
   const p = programs[idx];
 
