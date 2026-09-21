@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stable Diffusion 無料で使う方法【2026年最新】Google Colab・ComfyUI完全ガイド｜AI navi</title>
+  <title>【2026年最新】Stable Diffusionの使い方 完全ガイド｜無料で始める方法・プロンプトの書き方まで｜AI navi</title>
   <meta name="description" content="Stable Diffusion・ComfyUIをGoogle Colabで無料で使う方法を解説。「Google Colabで使えない」「2026年版の設定方法は？」の疑問を全解決。AUTOMATIC1111・ComfyUIのインストール手順から対処法まで初心者でも10分で始められます。">
   <meta name="keywords" content="Stable Diffusion,Google Colab,2026,使い方,無料,画像生成,インストール不要,使えない,対処法,AUTOMATIC1111,ComfyUI,SDXL,SD3,プロンプト,商用利用,Midjourney,DALL-E,比較,LoRA,AI画像生成">
-  <meta property="og:title" content="Stable Diffusion 無料で使う方法【2026年最新】Google Colab・ComfyUI完全ガイド｜AI navi">
+  <meta property="og:title" content="【2026年最新】Stable Diffusionの使い方 完全ガイド｜無料で始める方法・プロンプトの書き方まで">
   <meta property="og:description" content="Stable Diffusion・ComfyUIをGoogle Colabで無料で使う方法を解説。「Google Colabで使えない」時の原因と対処法、インストール手順、モデル選びまで。2026年最新版。">
   <meta property="og:url" content="https://ai-navi.app/articles/stable-diffusion-guide">
   <meta property="og:image" content="https://ai-navi.app/images/og-stable-diffusion.png">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="AI navi">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Stable Diffusion 無料で使う方法【2026年最新】Google Colab・ComfyUI完全ガイド｜AI navi">
+  <meta name="twitter:title" content="【2026年最新】Stable Diffusionの使い方 完全ガイド｜無料で始める方法・プロンプトの書き方まで">
   <meta name="twitter:description" content="Stable DiffusionをGoogle Colabで無料で使う方法を解説。「Google Colabで使えない」時の原因と対処法、インストール手順、モデル選びまで。">
   <meta name="twitter:image" content="https://ai-navi.app/images/og-stable-diffusion.png">
   <link rel="canonical" href="https://ai-navi.app/articles/stable-diffusion-guide">
@@ -22,9 +22,9 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Stable Diffusion 無料で使う方法【2026年最新】Google Colab・ComfyUI完全ガイド",
+    "headline": "【2026年最新】Stable Diffusionの使い方 完全ガイド｜無料で始める方法・プロンプトの書き方まで",
     "datePublished": "2026-07-05",
-    "dateModified": "2026-09-17",
+    "dateModified": "2026-09-21",
     "publisher": { "@type": "Organization", "name": "AI navi" }
   }
   </script>
@@ -132,6 +132,31 @@
         "@type": "Question",
         "name": "Stable Diffusion Google Colabが使えない場合の代替手段は？",
         "acceptedAnswer": {"@type": "Answer", "text": "Colabが使えない場合の代替手段は主に3つです。(1) ConoHa AI Canvas（月550円〜）: 国内サービスで安定性が高く、ブラウザだけで商用利用OKの高品質画像生成が可能。(2) Colab Pro（月$9.99）: 無料枠より優先的にGPUが割り当てられ安定して利用できる。(3) ローカル環境構築: NVIDIA GPU（VRAM 8GB以上）があれば完全無料・無制限で利用可能。"}
+      },
+      {
+        "@type": "Question",
+        "name": "Stable DiffusionはMacで使えますか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "Apple Silicon搭載Macで動作しますが、NVIDIA GPU搭載PCと比べて3〜10倍遅くなります。快適に使いたい場合はGoogle Colabなどのクラウドサービスの利用を推奨します。"}
+      },
+      {
+        "@type": "Question",
+        "name": "img2imgとtxt2imgの違いは？",
+        "acceptedAnswer": {"@type": "Answer", "text": "txt2imgはテキスト（プロンプト）のみで画像を生成します。img2imgは既存の画像+テキストを入力し、元画像をベースに新しい画像を生成します。スケッチからリアル画像を作りたい場合などに便利です。"}
+      },
+      {
+        "@type": "Question",
+        "name": "Stable Diffusionで生成した画像をSNSに投稿しても大丈夫？",
+        "acceptedAnswer": {"@type": "Answer", "text": "使用するモデルのライセンスに依存します。標準のSD 1.5やSDXLはCreativeML Open RAIL-Mライセンスで、商用利用も可能です。ただし、一部のファインチューンモデルは非商用に限定されている場合があるため、利用前にライセンスを確認してください。"}
+      },
+      {
+        "@type": "Question",
+        "name": "ForgeとAutomatic1111（A1111）どちらを使うべき？",
+        "acceptedAnswer": {"@type": "Answer", "text": "新規ユーザーにはForgeを推奨します。A1111をベースに高速化・省メモリ化されており、VRAM 6GB以下のGPUでも快適に動作します。既にA1111に慣れている場合は移行の必要はありません。"}
+      },
+      {
+        "@type": "Question",
+        "name": "LoRAとは何ですか？",
+        "acceptedAnswer": {"@type": "Answer", "text": "Low-Rank Adaptationの略で、少量のデータで特定のスタイルやキャラクターを学習させる技術です。ベースモデルに追加して使用し、アニメ調・写真調など特定の画風を再現できます。CivitAIなどで多数の無料LoRAが公開されています。"}
       }
     ]
   }
@@ -232,7 +257,7 @@
 
 <div class="article-wrap">
   <div class="article-header">
-    <h1>Google Colab Stable Diffusion 2026 無料で使う方法｜使えない時の対処法も解説【最新版】</h1>
+    <h1>【2026年最新】Stable Diffusionの使い方 完全ガイド｜無料で始める方法・プロンプトの書き方まで</h1>
     <div class="article-meta">
       <span>2026年7月5日</span>
       <span>最終更新: 2026年9月11日</span>
@@ -324,6 +349,7 @@
       <li><a href="#install">ローカル環境のインストール方法</a></li>
       <li><a href="#howto">基本的な使い方・プロンプトの書き方</a></li>
       <li><a href="#prompt-guide">プロンプト完全ガイド（例10個付き）</a> <span class="section-new-badge">NEW</span></li>
+      <li><a href="#img2img">img2img・inpaintingの使い方</a> <span class="section-new-badge">NEW</span></li>
       <li><a href="#models">おすすめモデル・拡張機能（SDXL・SD 3最新版）</a></li>
       <li><a href="#ui">AUTOMATIC1111 vs ComfyUI</a></li>
       <li><a href="#commercial">生成画像の商用利用ルール</a> <span class="section-new-badge">NEW</span></li>
@@ -331,7 +357,8 @@
       <li><a href="#errors">よくあるエラーと解決策</a></li>
       <li><a href="#cloud">クラウドで使う方法</a></li>
       <li><a href="#recommend">こんな人におすすめ</a></li>
-      <li><a href="#faq">よくある質問（18問）</a></li>
+      <li><a href="#business-use">Stable Diffusionのビジネス活用5選</a> <span class="section-new-badge">NEW</span></li>
+      <li><a href="#faq">よくある質問（23問）</a></li>
       <li><a href="#summary">まとめ</a></li>
     </ol>
   </div>
@@ -888,6 +915,68 @@ beautiful anime girl, blue hair, sunset background, high quality, detailed, 8k</
       <div class="code-block" style="margin-top:8px;">lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, blurry, deformed</div>
     </div>
 
+    <!-- ===== 8.5 img2img / inpainting ===== -->
+    <h2 id="img2img">img2img（画像から画像生成）の使い方</h2>
+    <p>txt2img（テキストから画像生成）に加えて、<strong>img2img</strong>は既存の画像をベースに新しい画像を生成する機能です。スケッチからリアルな画像を作ったり、写真のスタイルを変換したり、色味を変更する際に非常に便利です。</p>
+
+    <h3>img2imgの使い方 3ステップ</h3>
+    <ol>
+      <li><strong>画像をアップロード</strong> -- WebUIの「img2img」タブを開き、ベースとなる画像をドラッグ&ドロップします。</li>
+      <li><strong>プロンプトを入力</strong> -- 生成したい画像のイメージをテキストで指示します。元画像の雰囲気を活かしつつ変更したい部分を記述しましょう。</li>
+      <li><strong>Denoising Strengthを調整</strong> -- この値が生成結果を大きく左右します。値が低いほど元画像に近く、高いほど大きく変化します。</li>
+    </ol>
+
+    <h3>Denoising Strength値の目安</h3>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th>値</th><th>変化の度合い</th><th>用途</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>0.2〜0.3</strong></td><td>微調整</td><td>色味の微調整、ノイズ除去、軽い修正</td></tr>
+          <tr><td><strong>0.4〜0.5</strong></td><td>中程度の変更</td><td>スタイル変換、構図を保ったまま画風変更</td></tr>
+          <tr><td><strong>0.6〜0.8</strong></td><td>大幅に変更</td><td>スケッチからリアル画像生成、大胆なスタイル変換</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>img2imgの活用例</h3>
+    <ul>
+      <li><strong>スケッチからリアル画像生成</strong> -- 手描きのラフスケッチをアップロードし、Denoising Strength 0.6〜0.8で高品質な画像に変換</li>
+      <li><strong>写真のスタイル変換</strong> -- 実写の風景写真をアニメ調・水彩画調・油絵調に変換</li>
+      <li><strong>色味の変更</strong> -- 昼の写真を夕焼け・夜景に変換するなど、雰囲気を大きく変える</li>
+      <li><strong>画像のアップスケール</strong> -- 低解像度の画像を高解像度に変換（Denoising Strength 0.2〜0.4で元画像を保持）</li>
+    </ul>
+
+    <h3>inpainting（部分修正）でピンポイント編集</h3>
+    <p><strong>inpainting</strong>は画像の一部だけをマスク（選択）して、その部分だけを再生成する機能です。背景だけを変更したい、人物の服装だけを変えたい、不要なオブジェクトを消したい場合に非常に便利です。</p>
+    <ul>
+      <li><strong>使い方</strong>: WebUIの「img2img」→「Inpaint」タブを開き、修正したい部分をブラシで塗りつぶし（マスク）してからプロンプトを入力</li>
+      <li><strong>マスクのコツ</strong>: 修正したい範囲より少し広めにマスクすると自然な仕上がりになります。境界がギザギザにならないよう、ブラシサイズを調整しましょう</li>
+      <li><strong>Inpaint area</strong>: 「Only masked」を選ぶとマスク部分だけを高解像度で再生成でき、品質が向上します</li>
+      <li><strong>活用例</strong>: 顔だけ修正、背景の差し替え、不要な文字やオブジェクトの除去、服装の変更</li>
+    </ul>
+
+    <h3>Stable Diffusion WebUIを日本語化する方法【3ステップ】</h3>
+    <p>AUTOMATIC1111 WebUIは初期設定では英語ですが、簡単に日本語化できます。</p>
+    <ol>
+      <li><strong>STEP1</strong>: Settings（設定）タブ → 左メニューから「User interface」を開く</li>
+      <li><strong>STEP2</strong>: 「Localization」の項目で「ja_JP」を選択する</li>
+      <li><strong>STEP3</strong>: ページ上部の「Apply settings」をクリック → 「Reload UI」で再読み込みして完了</li>
+    </ol>
+    <div class="info-box">
+      <strong>注意:</strong> 一部のメニューや拡張機能は英語のまま残る場合があります。また、ComfyUIはノードベースのため日本語化の仕組みが異なります。英語のまま使うユーザーも多いです。
+    </div>
+
+    <h3>MacでStable Diffusionを使う場合の注意点</h3>
+    <p>Apple Silicon（M1/M2/M3/M4）搭載のMacでもStable Diffusionは動作しますが、以下の点に注意が必要です。</p>
+    <ul>
+      <li><strong>速度はNVIDIA GPUの3〜10倍遅い</strong> -- Apple SiliconはPyTorch MPSバックエンドで動作しますが、CUDA対応のNVIDIA GPUと比べて大幅に遅くなります</li>
+      <li><strong>ローカルよりクラウドGPUの利用を推奨</strong> -- 快適に使いたい場合はGoogle ColabやConoHa AI Canvasなどのクラウドサービスの利用がおすすめです</li>
+      <li><strong>インストール手順が異なる</strong> -- Mac用のインストールではPyTorch MPSバックエンドの設定が必要で、通常のWindows向け手順とは異なります。AUTOMATIC1111の公式WikiにMac用の手順が記載されています</li>
+      <li><strong>一部の拡張機能が非対応</strong> -- CUDA専用の拡張機能はMacでは動作しない場合があります</li>
+    </ul>
+
     <!-- ===== 9. おすすめモデル・拡張機能 ===== -->
     <h2 id="models">おすすめモデル・拡張機能（SDXL・SD 3最新版）</h2>
     <p>Stable Diffusionの強みのひとつが、用途に合わせてモデルを切り替えられること。Civitaiで多数のモデルを無料でダウンロードできます。</p>
@@ -1289,8 +1378,39 @@ beautiful anime girl, blue hair, sunset background, high quality, detailed, 8k</
     <div class="ad-unit">
     </div>
 
-    <!-- ===== 16. よくある質問（15問） ===== -->
-    <h2 id="faq">よくある質問（18問）</h2>
+    <!-- ===== ビジネス活用セクション ===== -->
+    <h2 id="business-use">Stable Diffusionのビジネス活用5選</h2>
+    <p>Stable Diffusionは個人の趣味だけでなく、<strong>ビジネスシーンでも活用が広がっています</strong>。無料で商用利用可能なモデルを使えば、外注コストを大幅に削減できます。</p>
+
+    <div class="tools-grid">
+      <div class="tool-card">
+        <h3>1. ブログ・メディアのアイキャッチ画像作成</h3>
+        <p>記事のテーマに合わせたオリジナルのアイキャッチ画像を無料で量産できます。フリー素材サイトでは見つからない独自のビジュアルで、他サイトとの差別化が可能です。</p>
+      </div>
+      <div class="tool-card">
+        <h3>2. SNS投稿用のオリジナル画像</h3>
+        <p>Instagram・X（Twitter）・TikTokなどのSNS投稿に使うオリジナル画像を生成。統一感のあるブランドイメージを低コストで構築できます。</p>
+      </div>
+      <div class="tool-card">
+        <h3>3. 広告バナー・クリエイティブのプロトタイプ</h3>
+        <p>広告バナーやLPのビジュアル案を複数パターン素早く生成し、A/Bテストの素材作成を効率化。デザイナーへの発注前のイメージ共有にも有効です。</p>
+      </div>
+      <div class="tool-card">
+        <h3>4. 商品イメージ・コンセプト画像の作成</h3>
+        <p>新商品の企画段階でイメージ画像を生成し、チーム内の認識合わせやクライアントへのプレゼンに活用。実物がなくてもビジュアルで伝えられます。</p>
+      </div>
+      <div class="tool-card">
+        <h3>5. プレゼン資料の挿絵</h3>
+        <p>プレゼン資料やレポートに使うイラスト・図解を生成。フリー素材では表現しきれないオリジナルのビジュアルで資料の説得力が向上します。</p>
+      </div>
+    </div>
+
+    <p style="margin:16px 0;padding:12px 16px;background:#f0f7ff;border-left:4px solid #7c3aed;border-radius:4px;font-size:0.95em;">
+      生成した画像をSNS投稿やバナーに仕上げるなら: <a href="../articles/miricanvas-review" style="color:#7c3aed;font-weight:bold;">MiriCanvas（無料・商用利用OK）</a>でテンプレートに当てはめるだけでプロ品質のデザインが完成します。
+    </p>
+
+    <!-- ===== 16. よくある質問 ===== -->
+    <h2 id="faq">よくある質問（23問）</h2>
     <div class="faq-list">
       <div class="faq-item">
         <div class="faq-q">Google ColabでStable Diffusionは無料で使える？</div>
@@ -1363,6 +1483,26 @@ beautiful anime girl, blue hair, sunset background, high quality, detailed, 8k</
       <div class="faq-item">
         <div class="faq-q">Stable Diffusion Google Colabが使えない場合の代替手段は？</div>
         <div class="faq-a">Colabが使えない場合の代替手段は主に3つです。(1) <strong>ConoHa AI Canvas（月550円〜）</strong>: 国内サービスで安定性が高く、ブラウザだけで商用利用OKの高品質画像生成が可能。(2) <strong>Colab Pro（月$9.99）</strong>: 無料枠より優先的にGPUが割り当てられ安定して利用できる。(3) <strong>ローカル環境構築</strong>: NVIDIA GPU（VRAM 8GB以上）があれば完全無料・無制限で利用可能。詳しくは<a href="#colab-trouble">Colabで使えない問題と解決策</a>をご覧ください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Stable DiffusionはMacで使えますか？</div>
+        <div class="faq-a">Apple Silicon搭載Mac（M1/M2/M3/M4）で動作しますが、NVIDIA GPU搭載PCと比べて3〜10倍遅くなります。PyTorch MPSバックエンドで動作するため、通常のWindows向けとはインストール手順が異なります。快適に使いたい場合はGoogle ColabやConoHa AI Canvasなどのクラウドサービスの利用を推奨します。詳しくは<a href="#img2img">MacでStable Diffusionを使う場合の注意点</a>をご覧ください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">img2imgとtxt2imgの違いは？</div>
+        <div class="faq-a">txt2imgはテキスト（プロンプト）のみで画像を生成します。img2imgは既存の画像+テキストを入力し、元画像をベースに新しい画像を生成します。スケッチからリアル画像を作りたい場合や、写真のスタイル変換をしたい場合に便利です。Denoising Strengthの値で元画像からの変化度合いを調整できます。詳しくは<a href="#img2img">img2imgの使い方</a>セクションをご覧ください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Stable Diffusionで生成した画像をSNSに投稿しても大丈夫？</div>
+        <div class="faq-a">使用するモデルのライセンスに依存します。標準のSD 1.5やSDXLはCreativeML Open RAIL-Mライセンスで、商用利用も可能です。ただし、一部のファインチューンモデルは非商用に限定されている場合があるため、利用前にCivitaiのモデルページ等でライセンスを確認してください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">ForgeとAutomatic1111（A1111）どちらを使うべき？</div>
+        <div class="faq-a">新規ユーザーにはForgeを推奨します。A1111をベースに高速化・省メモリ化されており、VRAM 6GB以下のGPUでも快適に動作します。UIはA1111とほぼ同じなので移行も簡単です。既にA1111に慣れている場合は無理に移行する必要はありません。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">LoRAとは何ですか？</div>
+        <div class="faq-a">Low-Rank Adaptationの略で、少量のデータで特定のスタイルやキャラクターを学習させる技術です。ベースモデルに追加して使用し、アニメ調・写真調など特定の画風を再現できます。CivitAIなどで多数の無料LoRAが公開されています。プロンプト内で<code>&lt;lora:filename:0.8&gt;</code>のように記述して有効化します。</div>
       </div>
     </div>
 
@@ -1575,6 +1715,46 @@ beautiful anime girl, blue hair, sunset background, high quality, detailed, 8k</
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "基本的には英語プロンプトが推奨されます。日本語でも動作しますが精度が下がることが多いです。DeepLやChatGPTで英語に翻訳してからプロンプトに入力すると品質が大きく向上します。SD 3以降はプロンプト理解度が向上し、日本語の精度も改善されています。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Stable DiffusionはMacで使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Apple Silicon搭載Macで動作しますが、NVIDIA GPU搭載PCと比べて3〜10倍遅くなります。快適に使いたい場合はGoogle Colabなどのクラウドサービスの利用を推奨します。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "img2imgとtxt2imgの違いは？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "txt2imgはテキスト（プロンプト）のみで画像を生成します。img2imgは既存の画像+テキストを入力し、元画像をベースに新しい画像を生成します。スケッチからリアル画像を作りたい場合などに便利です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Stable Diffusionで生成した画像をSNSに投稿しても大丈夫？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "使用するモデルのライセンスに依存します。標準のSD 1.5やSDXLはCreativeML Open RAIL-Mライセンスで、商用利用も可能です。ただし、一部のファインチューンモデルは非商用に限定されている場合があるため、利用前にライセンスを確認してください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ForgeとAutomatic1111（A1111）どちらを使うべき？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "新規ユーザーにはForgeを推奨します。A1111をベースに高速化・省メモリ化されており、VRAM 6GB以下のGPUでも快適に動作します。既にA1111に慣れている場合は移行の必要はありません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "LoRAとは何ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Low-Rank Adaptationの略で、少量のデータで特定のスタイルやキャラクターを学習させる技術です。ベースモデルに追加して使用し、アニメ調・写真調など特定の画風を再現できます。CivitAIなどで多数の無料LoRAが公開されています。"
         }
       }
     ]
