@@ -55,7 +55,7 @@
       desc: 'AIツール利用時のプライバシー保護｜月額286円〜',
       url: 'https://px.a8.net/svt/ejp?a8mat=4BAITO+6XGN8Y+3JTE+HVNAR',
       px: 'https://www19.a8.net/0.gif?a8mat=4BAITO+6XGN8Y+3JTE+HVNAR',
-      color: '#0f172a',
+      color: '#2563eb',
       label: '月286円〜 →'
     }
   ];
@@ -69,7 +69,15 @@
   else if (path.includes('irusiru') || path.includes('slide') || path.includes('presentation')) idx = 3;
   else if (path.includes('stable-diffusion') || path.includes('image') || path.includes('conoha') || path.includes('midjourney') || path.includes('firefly') || path.includes('ai-image')) idx = 0;
   else if (path.includes('vpn') || path.includes('security') || path.includes('privacy') || path.includes('ablenet')) idx = 5;
-  else if (path.includes('translate') || path.includes('deepl') || path.includes('ai-translate')) idx = 1;
+  else if (path.includes('deepl')) {
+    idx = 1;
+    // deepl記事では翻訳文脈に合わせたNotta訴求に上書き
+    programs[1] = Object.assign({}, programs[1], {
+      desc: 'AI翻訳42言語対応＋文字起こし｜月3時間無料・登録60秒',
+      label: '無料で翻訳を試す →'
+    });
+  }
+  else if (path.includes('translate') || path.includes('ai-translate')) idx = 1;
   else if (path.includes('design') || path.includes('canva') || path.includes('miri') || path.includes('gamma') || path.includes('free-ai')) idx = 0;
   else if (path.includes('writing') || path.includes('chatgpt') || path.includes('claude') || path.includes('gemini') || path.includes('copilot') || path.includes('perplexity')) idx = 1;
   else idx = 0; // デフォルト: MiriCanvas
