@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stable Diffusion 使い方ガイド｜Google Colabで無料で始める手順＆使えない時の対処法【2026年最新】｜AI navi</title>
+  <title>Stable Diffusion × Google Colab 完全ガイド【2026年最新】使えない時の対処法｜AI navi</title>
   <meta name="description" content="Stable Diffusionの使い方を初心者向けに解説。Google Colabなら無料・インストール不要で始められます。「使えない」時の対処法、AUTOMATIC1111・ComfyUIの手順、プロンプトの書き方まで【2026年最新】">
   <meta name="keywords" content="Stable Diffusion,Google Colab,2026,使い方,無料,画像生成,インストール不要,使えない,対処法,AUTOMATIC1111,ComfyUI,SDXL,SD3,プロンプト,商用利用,Midjourney,DALL-E,比較,LoRA,AI画像生成">
-  <meta property="og:title" content="Stable Diffusion 使い方ガイド｜Google Colabで無料で始める手順＆使えない時の対処法【2026年最新】">
+  <meta property="og:title" content="Stable Diffusion × Google Colab 完全ガイド【2026年最新】使えない時の対処法">
   <meta property="og:description" content="Stable Diffusionの使い方を初心者向けに解説。Google Colabなら無料・インストール不要。「使えない」時の対処法、AUTOMATIC1111・ComfyUIの手順、プロンプトの書き方まで。">
   <meta property="og:url" content="https://ai-navi.app/articles/stable-diffusion-guide">
   <meta property="og:image" content="https://ai-navi.app/images/og-stable-diffusion.png">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="AI navi">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Stable Diffusion 使い方ガイド｜Google Colabで無料で始める手順＆使えない時の対処法【2026年最新】">
+  <meta name="twitter:title" content="Stable Diffusion × Google Colab 完全ガイド【2026年最新】使えない時の対処法">
   <meta name="twitter:description" content="Stable Diffusionの使い方を初心者向けに解説。Google Colabなら無料・インストール不要。「使えない」時の対処法、手順、プロンプトの書き方まで【2026年最新】">
   <meta name="twitter:image" content="https://ai-navi.app/images/og-stable-diffusion.png">
   <link rel="canonical" href="https://ai-navi.app/articles/stable-diffusion-guide">
@@ -22,9 +22,9 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Stable Diffusion 使い方ガイド｜Google Colabで無料で始める手順＆使えない時の対処法【2026年最新】",
+    "headline": "Stable Diffusion × Google Colab 完全ガイド【2026年最新】使えない時の対処法",
     "datePublished": "2026-07-05",
-    "dateModified": "2026-09-29",
+    "dateModified": "2026-09-30",
     "publisher": { "@type": "Organization", "name": "AI navi" }
   }
   </script>
@@ -157,6 +157,16 @@
         "@type": "Question",
         "name": "LoRAとは何ですか？",
         "acceptedAnswer": {"@type": "Answer", "text": "Low-Rank Adaptationの略で、少量のデータで特定のスタイルやキャラクターを学習させる技術です。ベースモデルに追加して使用し、アニメ調・写真調など特定の画風を再現できます。CivitAIなどで多数の無料LoRAが公開されています。"}
+      },
+      {
+        "@type": "Question",
+        "name": "Google ColabでStable Diffusionは使えなくなった？",
+        "acceptedAnswer": {"@type": "Answer", "text": "いいえ、2026年9月現在もGoogle Colabの無料プランでStable Diffusionは利用可能です。過去にColabがSD関連ノートブックの実行を制限した時期がありましたが、現在は解除されています。ただしGoogleはポリシーを随時変更するため、無料枠でGPUが割り当てられない場合は時間帯を変えて再試行するか、Colab Pro（月$9.99）やConoHa AI Canvas（月550円〜）などの代替サービスを検討してください。"}
+      },
+      {
+        "@type": "Question",
+        "name": "Stable Diffusionを無料で使う方法は？",
+        "acceptedAnswer": {"@type": "Answer", "text": "Stable Diffusionを無料で使う方法は主に2つあります。(1) Google Colab（無料プラン）: Googleアカウントがあればブラウザだけで利用可能。T4 GPUが無料で割り当てられ、SDXLやSD 3.5も動作します。(2) ローカル環境: NVIDIA GPU（VRAM 6GB以上推奨）搭載のPCがあれば、AUTOMATIC1111やComfyUIをインストールして完全無料・無制限で生成できます。初心者にはGoogle Colabから始めるのがおすすめです。"}
       }
     ]
   }
@@ -1504,6 +1514,14 @@ beautiful anime girl, blue hair, sunset background, high quality, detailed, 8k</
         <div class="faq-q">LoRAとは何ですか？</div>
         <div class="faq-a">Low-Rank Adaptationの略で、少量のデータで特定のスタイルやキャラクターを学習させる技術です。ベースモデルに追加して使用し、アニメ調・写真調など特定の画風を再現できます。CivitAIなどで多数の無料LoRAが公開されています。プロンプト内で<code>&lt;lora:filename:0.8&gt;</code>のように記述して有効化します。</div>
       </div>
+      <div class="faq-item">
+        <div class="faq-q">Google ColabでStable Diffusionは使えなくなった？</div>
+        <div class="faq-a">いいえ、2026年9月現在もGoogle Colabの無料プランでStable Diffusionは利用可能です。過去にColabがSD関連ノートブックの実行を制限した時期がありましたが、現在は解除されています。ただしGoogleはポリシーを随時変更するため、無料枠でGPUが割り当てられない場合は時間帯を変えて再試行するか、Colab Pro（月$9.99）やConoHa AI Canvas（月550円〜）などの代替サービスを検討してください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Stable Diffusionを無料で使う方法は？</div>
+        <div class="faq-a">Stable Diffusionを無料で使う方法は主に2つあります。(1) Google Colab（無料プラン）: Googleアカウントがあればブラウザだけで利用可能。T4 GPUが無料で割り当てられ、SDXLやSD 3.5も動作します。(2) ローカル環境: NVIDIA GPU（VRAM 6GB以上推奨）搭載のPCがあれば、AUTOMATIC1111やComfyUIをインストールして完全無料・無制限で生成できます。初心者にはGoogle Colabから始めるのがおすすめです。</div>
+      </div>
     </div>
 
     <div class="cta-fullwidth">
@@ -1755,6 +1773,22 @@ beautiful anime girl, blue hair, sunset background, high quality, detailed, 8k</
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Low-Rank Adaptationの略で、少量のデータで特定のスタイルやキャラクターを学習させる技術です。ベースモデルに追加して使用し、アニメ調・写真調など特定の画風を再現できます。CivitAIなどで多数の無料LoRAが公開されています。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Google ColabでStable Diffusionは使えなくなった？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "いいえ、2026年9月現在もGoogle Colabの無料プランでStable Diffusionは利用可能です。過去にColabがSD関連ノートブックの実行を制限した時期がありましたが、現在は解除されています。ただしGoogleはポリシーを随時変更するため、無料枠でGPUが割り当てられない場合は時間帯を変えて再試行するか、Colab Pro（月$9.99）やConoHa AI Canvas（月550円〜）などの代替サービスを検討してください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Stable Diffusionを無料で使う方法は？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Stable Diffusionを無料で使う方法は主に2つあります。(1) Google Colab（無料プラン）: Googleアカウントがあればブラウザだけで利用可能。T4 GPUが無料で割り当てられ、SDXLやSD 3.5も動作します。(2) ローカル環境: NVIDIA GPU（VRAM 6GB以上推奨）搭載のPCがあれば、AUTOMATIC1111やComfyUIをインストールして完全無料・無制限で生成できます。初心者にはGoogle Colabから始めるのがおすすめです。"
         }
       }
     ]
