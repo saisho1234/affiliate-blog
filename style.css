@@ -543,3 +543,8 @@ footer a { color: #60a5fa; text-decoration: none; }
   .shop-buttons{flex-direction:column}
   .shop-btn{width:100%;text-align:center}
 }
+
+/* === AdMax SP専用広告（PCでは非表示） === */
+@media (min-width: 769px) {
+  .sp-only { display: none !important; }
+}
