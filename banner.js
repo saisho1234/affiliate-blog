@@ -36,11 +36,11 @@
     },
     {
       name: 'イルシル',
-      desc: 'テキスト→AIスライド自動生成｜無料プランあり',
-      url: 'https://px.a8.net/svt/ejp?a8mat=4B7QWV+73EZAQ+5UMS+5YJRM',
-      px: 'https://www10.a8.net/0.gif?a8mat=4B7QWV+73EZAQ+5UMS+5YJRM',
+      desc: 'AI資料自動生成｜月1,680円〜・3日間トライアルあり',
+      url: 'https://px.a8.net/svt/ejp?a8mat=4B7QWV+73EZAQ+5UMS+5YZ75',
+      px: 'https://www10.a8.net/0.gif?a8mat=4B7QWV+73EZAQ+5UMS+5YZ75',
       color: '#ea580c',
-      label: '無料で作成 →'
+      label: '3日間試す →'
     },
     {
       name: 'PLAUD NOTE',
