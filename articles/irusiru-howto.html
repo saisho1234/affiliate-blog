@@ -1,833 +1,833 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>イルシルの使い方【5分で完成】AIスライド生成の手順・プロンプトのコツ・テンプレート活用法まで完全解説 | AI navi</title>
-  <meta name="description" content="イルシルの使い方を全5ステップで徹底解説。AIスライド生成のプロンプトのコツ（良い例・悪い例）、テンプレート活用法、PowerPoint書き出しまで初心者でも5分で完了。2026年最新版。">
-  <meta property="og:title" content="イルシルの使い方【5分で完成】AIスライド生成の手順・プロンプトのコツ・テンプレート活用法まで完全解説 | AI navi">
-  <meta property="og:description" content="イルシルの使い方を全5ステップで徹底解説。AIスライド生成のプロンプトのコツ（良い例・悪い例）、テンプレート活用法、PowerPoint書き出しまで初心者でも5分で完了。">
-  <meta property="og:url" content="https://ai-navi.app/articles/irusiru-howto">
-  <meta property="og:image" content="https://ai-navi.app/images/og-irusiru-howto.png">
-  <meta property="og:type" content="article">
-  <meta property="og:site_name" content="AI navi">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://ai-navi.app/images/og-irusiru-howto.png">
-  <link rel="canonical" href="https://ai-navi.app/articles/irusiru-howto">
-  <link rel="stylesheet" href="../style.css">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>イルシルの使い方【5分で完成】AIスライド生成の手順・プロンプトのコツ・テンプレート活用法まで完全解説 | AI navi</title>
+ <meta name="description" content="イルシルの使い方を全5ステップで徹底解説。AIスライド生成のプロンプトのコツ（良い例・悪い例）、テンプレート活用法、PowerPoint書き出しまで初心者でも5分で完了。2026年最新版。">
+ <meta property="og:title" content="イルシルの使い方【5分で完成】AIスライド生成の手順・プロンプトのコツ・テンプレート活用法まで完全解説 | AI navi">
+ <meta property="og:description" content="イルシルの使い方を全5ステップで徹底解説。AIスライド生成のプロンプトのコツ（良い例・悪い例）、テンプレート活用法、PowerPoint書き出しまで初心者でも5分で完了。">
+ <meta property="og:url" content="https://ai-navi.app/articles/irusiru-howto">
+ <meta property="og:image" content="https://ai-navi.app/images/og-irusiru-howto.png">
+ <meta property="og:type" content="article">
+ <meta property="og:site_name" content="AI navi">
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:image" content="https://ai-navi.app/images/og-irusiru-howto.png">
+ <link rel="canonical" href="https://ai-navi.app/articles/irusiru-howto">
+ <link rel="stylesheet" href="../style.css">
 <!-- FAQPage スキーマ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "イルシルは無料で使えますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "はい、イルシルには無料トライアルがあります。クレジットカード不要で登録でき、基本的なスライド作成機能を無料でお試しいただけます。無料期間終了後は有料プランへの移行が必要です。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "イルシルの登録方法は？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "イルシルの公式サイトにアクセスし、「無料で始める」ボタンからメールアドレスとパスワードを入力するだけで登録できます。Googleアカウントでのソーシャルログインにも対応しており、最短1分で利用開始できます。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "イルシルでPowerPointは作れますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "はい、作れます。イルシルで作成したスライドはPowerPoint形式（.pptx）でダウンロード可能です。ダウンロード後にPowerPointで編集・加工することもできます。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "スマホからイルシルは使えますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "イルシルはブラウザ上で動作するWebアプリのため、スマートフォンのブラウザからもアクセス可能です。ただし、スライドの細かい編集作業はPC・タブレットのほうが快適です。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "イルシルのテンプレートは何種類ありますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "イルシルには2026年時点で数百種類以上のテンプレートが用意されています。ビジネス・教育・マーケティング・提案書など用途別に整理されており、目的に合ったデザインをすぐに選べます。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "イルシルとCanvaどちらがいいですか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "AIによる文章からスライド自動生成を重視するならイルシル、デザインの自由度と画像素材の豊富さを重視するならCanvaがおすすめです。プレゼン資料の素早い作成ならイルシルが有利です。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "イルシルの有料プランはいくらですか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "イルシルの有料プランは月額プランと年額プランがあります。詳細な料金は公式サイトで確認してください。年払いにすると月換算で割安になるプランが多く提供されています。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "イルシルで作ったスライドは商用利用できますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "有料プランを利用している場合、作成したスライドは商用利用可能です。ただし、使用している素材やテンプレートによって条件が異なる場合があるため、利用規約を必ずご確認ください。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "イルシルで画像を挿入できますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "はい、できます。イルシルではスライド内に画像をアップロードして挿入できます。また、AIが自動で適切なイラストや図表を挿入する機能も搭載されています。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "イルシルの解約方法は？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "イルシルはアカウントの設定画面（マイページ）から解約・プラン変更が可能です。解約後は次回更新日まで有料機能が使えます。無料トライアル中の解約はいつでも料金なしで行えます。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "イルシルのAI生成でうまくスライドが作れないのですが？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "プロンプト（入力テキスト）を具体的に書くことで精度が大幅に上がります。「誰に向けて」「何を」「何のために」「何枚で」という4つの要素を含めて入力しましょう。例：『中小企業の経営者向けに、DX支援サービスを提案する営業スライド10枚。導入実績・料金・スケジュールを含む』のように具体的に書くと、AI生成の精度が格段に向上します。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "イルシルのテンプレートはどう選べばいいですか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "用途に合わせて選ぶのがポイントです。社内プレゼンにはシンプルなビジネス系、営業提案書にはインパクトのあるビジュアル系、セミナー資料には文字が大きいシンプル系がおすすめです。迷ったらまずAIで生成してからテンプレートを後で差し替えることもできます。"
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "イルシルで作ったスライドをGoogleスライドで開けますか？",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "イルシルからPowerPoint形式（.pptx）でダウンロードしたファイルは、Googleスライドにアップロードして開くことができます。ただし、一部のフォントやレイアウトが変換時にずれる場合があるため、確認・微調整を行ってください。"
-        }
-      }
-    ]
-  }
-  </script>
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+ {
+ "@type": "Question",
+ "name": "イルシルは無料で使えますか？",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "はい、イルシルには無料トライアルがあります。クレジットカード不要で登録でき、基本的なスライド作成機能を無料でお試しいただけます。無料期間終了後は有料プランへの移行が必要です。"
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "イルシルの登録方法は？",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "イルシルの公式サイトにアクセスし、「無料で始める」ボタンからメールアドレスとパスワードを入力するだけで登録できます。Googleアカウントでのソーシャルログインにも対応しており、最短1分で利用開始できます。"
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "イルシルでPowerPointは作れますか？",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "はい、作れます。イルシルで作成したスライドはPowerPoint形式（.pptx）でダウンロード可能です。ダウンロード後にPowerPointで編集・加工することもできます。"
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "スマホからイルシルは使えますか？",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "イルシルはブラウザ上で動作するWebアプリのため、スマートフォンのブラウザからもアクセス可能です。ただし、スライドの細かい編集作業はPC・タブレットのほうが快適です。"
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "イルシルのテンプレートは何種類ありますか？",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "イルシルには2026年時点で数百種類以上のテンプレートが用意されています。ビジネス・教育・マーケティング・提案書など用途別に整理されており、目的に合ったデザインをすぐに選べます。"
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "イルシルとCanvaどちらがいいですか？",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "AIによる文章からスライド自動生成を重視するならイルシル、デザインの自由度と画像素材の豊富さを重視するならCanvaがおすすめです。プレゼン資料の素早い作成ならイルシルが有利です。"
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "イルシルの有料プランはいくらですか？",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "イルシルの有料プランは月額プランと年額プランがあります。詳細な料金は公式サイトで確認してください。年払いにすると月換算で割安になるプランが多く提供されています。"
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "イルシルで作ったスライドは商用利用できますか？",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "有料プランを利用している場合、作成したスライドは商用利用可能です。ただし、使用している素材やテンプレートによって条件が異なる場合があるため、利用規約を必ずご確認ください。"
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "イルシルで画像を挿入できますか？",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "はい、できます。イルシルではスライド内に画像をアップロードして挿入できます。また、AIが自動で適切なイラストや図表を挿入する機能も搭載されています。"
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "イルシルの解約方法は？",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "イルシルはアカウントの設定画面（マイページ）から解約・プラン変更が可能です。解約後は次回更新日まで有料機能が使えます。無料トライアル中の解約はいつでも料金なしで行えます。"
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "イルシルのAI生成でうまくスライドが作れないのですが？",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "プロンプト（入力テキスト）を具体的に書くことで精度が大幅に上がります。「誰に向けて」「何を」「何のために」「何枚で」という4つの要素を含めて入力しましょう。例：『中小企業の経営者向けに、DX支援サービスを提案する営業スライド10枚。導入実績・料金・スケジュールを含む』のように具体的に書くと、AI生成の精度が格段に向上します。"
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "イルシルのテンプレートはどう選べばいいですか？",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "用途に合わせて選ぶのがポイントです。社内プレゼンにはシンプルなビジネス系、営業提案書にはインパクトのあるビジュアル系、セミナー資料には文字が大きいシンプル系がおすすめです。迷ったらまずAIで生成してからテンプレートを後で差し替えることもできます。"
+ }
+ },
+ {
+ "@type": "Question",
+ "name": "イルシルで作ったスライドをGoogleスライドで開けますか？",
+ "acceptedAnswer": {
+ "@type": "Answer",
+ "text": "イルシルからPowerPoint形式（.pptx）でダウンロードしたファイルは、Googleスライドにアップロードして開くことができます。ただし、一部のフォントやレイアウトが変換時にずれる場合があるため、確認・微調整を行ってください。"
+ }
+ }
+ ]
+ }
+ </script>
 
-  <!-- Article スキーマ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "【初心者向け】イルシルの使い方を画像で解説｜AIスライド生成5ステップ・プロンプトのコツ・テンプレート活用法",
-    "datePublished": "2026-07-04",
-    "dateModified": "2026-09-18",
-    "publisher": { "@type": "Organization", "name": "AI navi" }
-  }
-  </script>
+ <!-- Article スキーマ -->
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "【初心者向け】イルシルの使い方を画像で解説｜AIスライド生成5ステップ・プロンプトのコツ・テンプレート活用法",
+ "datePublished": "2026-07-04",
+ "dateModified": "2026-09-18",
+ "publisher": { "@type": "Organization", "name": "AI navi" }
+ }
+ </script>
 
-  <style>
-    .step-list { counter-reset: step-counter; list-style: none; padding-left: 0; }
-    .step-list li { counter-increment: step-counter; display: flex; gap: 16px; align-items: flex-start; margin-bottom: 20px; background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; }
-    .step-list li::before { content: "STEP " counter(step-counter); background: var(--primary); color: white; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 20px; white-space: nowrap; flex-shrink: 0; margin-top: 2px; }
-    .step-list li strong { display: block; font-size: 1rem; margin-bottom: 4px; }
-    .step-list li span { font-size: 0.92rem; color: var(--text-light); }
+ <style>
+ .step-list { counter-reset: step-counter; list-style: none; padding-left: 0; }
+ .step-list li { counter-increment: step-counter; display: flex; gap: 16px; align-items: flex-start; margin-bottom: 20px; background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; }
+ .step-list li::before { content: "STEP " counter(step-counter); background: var(--primary); color: white; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 20px; white-space: nowrap; flex-shrink: 0; margin-top: 2px; }
+ .step-list li strong { display: block; font-size: 1rem; margin-bottom: 4px; }
+ .step-list li span { font-size: 0.92rem; color: var(--text-light); }
 
-    .trouble-item { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-bottom: 16px; }
-    .trouble-item .trouble-q { font-weight: 700; color: #dc2626; margin-bottom: 8px; font-size: 0.95rem; }
-    .trouble-item .trouble-a { font-size: 0.92rem; color: var(--text-light); line-height: 1.7; }
+ .trouble-item { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-bottom: 16px; }
+ .trouble-item .trouble-q { font-weight: 700; color: #dc2626; margin-bottom: 8px; font-size: 0.95rem; }
+ .trouble-item .trouble-a { font-size: 0.92rem; color: var(--text-light); line-height: 1.7; }
 
-    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 24px 0; }
-    .feature-card { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
-    .feature-card .fc-icon { font-size: 1.8rem; margin-bottom: 8px; }
-    .feature-card h3 { font-size: 0.98rem; font-weight: 700; margin-bottom: 6px; }
-    .feature-card p { font-size: 0.87rem; color: var(--text-light); line-height: 1.65; }
+ .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 24px 0; }
+ .feature-card { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+ .feature-card .fc-icon { font-size: 1.8rem; margin-bottom: 8px; }
+ .feature-card h3 { font-size: 0.98rem; font-weight: 700; margin-bottom: 6px; }
+ .feature-card p { font-size: 0.87rem; color: var(--text-light); line-height: 1.65; }
 
-    .plan-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.92rem; }
-    .plan-table th { background: var(--primary); color: white; padding: 12px 16px; text-align: left; }
-    .plan-table td { padding: 12px 16px; border-bottom: 1px solid var(--border); }
-    .plan-table tr:nth-child(even) td { background: #f8fafc; }
-    .plan-table .check { color: #16a34a; font-weight: 700; }
-    .plan-table .cross { color: #dc2626; }
+ .plan-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.92rem; }
+ .plan-table th { background: var(--primary); color: white; padding: 12px 16px; text-align: left; }
+ .plan-table td { padding: 12px 16px; border-bottom: 1px solid var(--border); }
+ .plan-table tr:nth-child(even) td { background: #f8fafc; }
+ .plan-table .check { color: #16a34a; font-weight: 700; }
+ .plan-table .cross { color: #dc2626; }
 
-    .faq-item { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-bottom: 14px; }
-    .faq-item .faq-q { font-weight: 700; color: var(--primary); margin-bottom: 8px; font-size: 0.97rem; }
-    .faq-item .faq-q::before { content: "Q. "; }
-    .faq-item .faq-a { font-size: 0.9rem; color: var(--text-light); line-height: 1.7; }
-    .faq-item .faq-a::before { content: "A. "; font-weight: 700; color: var(--text); }
+ .faq-item { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-bottom: 14px; }
+ .faq-item .faq-q { font-weight: 700; color: var(--primary); margin-bottom: 8px; font-size: 0.97rem; }
+ .faq-item .faq-q::before { content: "Q. "; }
+ .faq-item .faq-a { font-size: 0.9rem; color: var(--text-light); line-height: 1.7; }
+ .faq-item .faq-a::before { content: "A. "; font-weight: 700; color: var(--text); }
 
-    .recommend-list { list-style: none; padding: 0; margin: 0; }
-    .recommend-list li { display: flex; align-items: flex-start; gap: 10px; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 0.93rem; }
-    .recommend-list li:last-child { border-bottom: none; }
-    .recommend-list li::before { content: "✓"; color: #16a34a; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+ .recommend-list { list-style: none; padding: 0; margin: 0; }
+ .recommend-list li { display: flex; align-items: flex-start; gap: 10px; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 0.93rem; }
+ .recommend-list li:last-child { border-bottom: none; }
+ .recommend-list li::before { content: "✓"; color: #16a34a; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
 
-    .tip-box { background: #eff6ff; border-left: 4px solid var(--primary); border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 20px 0; font-size: 0.92rem; line-height: 1.7; }
-    .tip-box strong { color: var(--primary); }
+ .tip-box { background: #eff6ff; border-left: 4px solid var(--primary); border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 20px 0; font-size: 0.92rem; line-height: 1.7; }
+ .tip-box strong { color: var(--primary); }
 
-    .warning-box { background: #fef3c7; border-left: 4px solid #d97706; border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 20px 0; font-size: 0.92rem; line-height: 1.7; }
+ .warning-box { background: #fef3c7; border-left: 4px solid #d97706; border-radius: 0 8px 8px 0; padding: 16px 20px; margin: 20px 0; font-size: 0.92rem; line-height: 1.7; }
 
-    .edit-method-list { list-style: none; padding: 0; margin: 0; }
-    .edit-method-list li { padding: 14px 0; border-bottom: 1px solid var(--border); font-size: 0.93rem; line-height: 1.65; }
-    .edit-method-list li:last-child { border-bottom: none; }
-    .edit-method-list li strong { display: block; color: var(--text); margin-bottom: 4px; }
+ .edit-method-list { list-style: none; padding: 0; margin: 0; }
+ .edit-method-list li { padding: 14px 0; border-bottom: 1px solid var(--border); font-size: 0.93rem; line-height: 1.65; }
+ .edit-method-list li:last-child { border-bottom: none; }
+ .edit-method-list li strong { display: block; color: var(--text); margin-bottom: 4px; }
 
-    .prompt-example { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-bottom: 16px; }
-    .prompt-example .prompt-label { font-weight: 700; font-size: 0.9rem; margin-bottom: 8px; padding: 4px 12px; border-radius: 20px; display: inline-block; }
-    .prompt-example .prompt-good { background: #dcfce7; color: #166534; }
-    .prompt-example .prompt-bad { background: #fee2e2; color: #991b1b; }
-    .prompt-example .prompt-text { background: #f8fafc; border-radius: 8px; padding: 14px 16px; font-size: 0.92rem; line-height: 1.7; margin-top: 8px; border: 1px dashed var(--border); }
-    .prompt-example .prompt-note { font-size: 0.85rem; color: var(--text-light); margin-top: 8px; line-height: 1.6; }
+ .prompt-example { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-bottom: 16px; }
+ .prompt-example .prompt-label { font-weight: 700; font-size: 0.9rem; margin-bottom: 8px; padding: 4px 12px; border-radius: 20px; display: inline-block; }
+ .prompt-example .prompt-good { background: #dcfce7; color: #166534; }
+ .prompt-example .prompt-bad { background: #fee2e2; color: #991b1b; }
+ .prompt-example .prompt-text { background: #f8fafc; border-radius: 8px; padding: 14px 16px; font-size: 0.92rem; line-height: 1.7; margin-top: 8px; border: 1px dashed var(--border); }
+ .prompt-example .prompt-note { font-size: 0.85rem; color: var(--text-light); margin-top: 8px; line-height: 1.6; }
 
-    .cta-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; padding: 32px 28px; margin: 32px 0; text-align: center; color: white; }
-    .cta-gradient .cta-title { font-size: 1.2em; font-weight: 800; margin-bottom: 10px; }
-    .cta-gradient .cta-desc { font-size: 0.95em; opacity: 0.92; margin-bottom: 20px; }
-    .cta-gradient .cta-btn-white { display: inline-block; background: white; color: #764ba2; padding: 16px 40px; border-radius: 50px; font-weight: 800; font-size: 1.1em; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.2s; }
-    .cta-gradient .cta-btn-white:hover { transform: translateY(-2px); }
-    .cta-gradient .cta-sub { font-size: 0.8em; opacity: 0.8; margin-top: 12px; }
+ .cta-gradient { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 16px; padding: 32px 28px; margin: 32px 0; text-align: center; color: white; }
+ .cta-gradient .cta-title { font-size: 1.2em; font-weight: 800; margin-bottom: 10px; }
+ .cta-gradient .cta-desc { font-size: 0.95em; opacity: 0.92; margin-bottom: 20px; }
+ .cta-gradient .cta-btn-white { display: inline-block; background: white; color: #764ba2; padding: 16px 40px; border-radius: 50px; font-weight: 800; font-size: 1.1em; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.2s; }
+ .cta-gradient .cta-btn-white:hover { transform: translateY(-2px); }
+ .cta-gradient .cta-sub { font-size: 0.8em; opacity: 0.8; margin-top: 12px; }
 
-    .template-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 20px 0; }
-    .template-card { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 16px; text-align: center; }
-    .template-card .tpl-icon { font-size: 2rem; margin-bottom: 8px; }
-    .template-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
-    .template-card p { font-size: 0.83rem; color: var(--text-light); line-height: 1.6; }
-  </style>
+ .template-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 20px 0; }
+ .template-card { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 16px; text-align: center; }
+ .template-card .tpl-icon { font-size: 2rem; margin-bottom: 8px; }
+ .template-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
+ .template-card p { font-size: 0.83rem; color: var(--text-light); line-height: 1.6; }
+ </style>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://ai-navi.app/"},
-      {"@type": "ListItem", "position": 2, "name": "AIツール比較", "item": "https://ai-navi.app/"},
-      {"@type": "ListItem", "position": 3, "name": "イルシルの使い方完全ガイド", "item": "https://ai-navi.app/articles/irusiru-howto"}
-    ]
-  }
-  </script>
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+ {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://ai-navi.app/"},
+ {"@type": "ListItem", "position": 2, "name": "AIツール比較", "item": "https://ai-navi.app/"},
+ {"@type": "ListItem", "position": 3, "name": "イルシルの使い方完全ガイド", "item": "https://ai-navi.app/articles/irusiru-howto"}
+ ]
+ }
+ </script>
 </head>
 <body>
 
 <header>
-  <nav>
-    <a class="logo" href="/">AI <span>navi</span></a>
-    <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('nav-open')" aria-label="メニュー">
-      <span></span><span></span><span></span>
-    </button>
-    <ul>
-      <li><a href="/#ranking">ランキング</a></li>
-      <li><a href="/#compare">比較表</a></li>
-      <li><a href="claude-review">Claude</a></li>
-      <li><a href="chatgpt-review">ChatGPT</a></li>
-      <li><a href="../diagnosis">AI診断</a></li>
-    </ul>
-  </nav>
+ <nav>
+ <a class="logo" href="/">AI <span>navi</span></a>
+ <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('nav-open')" aria-label="メニュー">
+ <span></span><span></span><span></span>
+ </button>
+ <ul>
+ <li><a href="/#ranking">ランキング</a></li>
+ <li><a href="/#compare">比較表</a></li>
+ <li><a href="claude-review">Claude</a></li>
+ <li><a href="chatgpt-review">ChatGPT</a></li>
+ <li><a href="../diagnosis">AI診断</a></li>
+ </ul>
+ </nav>
 </header>
 
 <div class="breadcrumb">
-  <a href="/">ホーム</a> &gt; <a href="/">AIツール比較</a> &gt; イルシル使い方ガイド
+ <a href="/">ホーム</a> &gt; <a href="/">AIツール比較</a> &gt; イルシル使い方ガイド
 </div>
 
 <div class="article-wrap">
-  <div class="article-header">
-    <h1>イルシルの使い方【5分で完成】AIスライド生成の手順・プロンプトのコツ・テンプレート活用法まで初心者向けに完全解説</h1>
-    <div class="article-meta">
-      <span>2026年7月4日</span>
-      <span>最終更新: 2026年9月18日</span>
-      <span>約8,500字</span>
-    </div>
-  </div>
-  <div class="author-box">
-    <div class="author-avatar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="52" height="52"><circle cx="32" cy="32" r="32" fill="#4f46e5"/><circle cx="32" cy="24" r="10" fill="white"/><ellipse cx="32" cy="52" rx="16" ry="12" fill="white"/></svg></div>
-    <div class="author-info">
-      <div class="author-name">田中 誠</div>
-      <div class="author-bio">ChatGPT・Claude・Geminiなど主要AIを日常的に活用するブロガー。各ツールを実際に試し、使いやすさ・料金・機能をわかりやすく比較・解説しています。</div>
-    </div>
-  </div>
-  <div class="article-hero-img">
-    <img src="../images/photos/laptop-work.jpg" alt="イルシル使い方のイメージ" loading="lazy" style="width:100%;height:240px;object-fit:cover;border-radius:10px;margin:16px 0;">
-  </div>
+ <div class="article-header">
+ <h1>イルシルの使い方【5分で完成】AIスライド生成の手順・プロンプトのコツ・テンプレート活用法まで初心者向けに完全解説</h1>
+ <div class="article-meta">
+ <span>2026年7月4日</span>
+ <span>最終更新: 2026年9月18日</span>
+ <span>約8,500字</span>
+ </div>
+ </div>
+ <div class="author-box">
+ <div class="author-avatar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="52" height="52"><circle cx="32" cy="32" r="32" fill="#4f46e5"/><circle cx="32" cy="24" r="10" fill="white"/><ellipse cx="32" cy="52" rx="16" ry="12" fill="white"/></svg></div>
+ <div class="author-info">
+ <div class="author-name">小田 健真</div>
+ <div class="author-bio">ChatGPT・Claude・Geminiなど主要AIを日常的に活用するブロガー。各ツールを実際に試し、使いやすさ・料金・機能をわかりやすく比較・解説しています。</div>
+ </div>
+ </div>
+ <div class="article-hero-img">
+ <img src="../images/photos/laptop-work.jpg" alt="イルシル使い方のイメージ" loading="lazy" style="width:100%;height:240px;object-fit:cover;border-radius:10px;margin:16px 0;">
+ </div>
 
 
 
-  <div class="summary-box">
-    <h3>この記事でわかること</h3>
-    <ul>
-      <li>イルシルのアカウント登録から初回ログインまでの手順</li>
-      <li>AIスライド生成の具体的な5ステップ（プロンプト入力~書き出しまで）</li>
-      <li>プロンプトのコツ：良い例・悪い例の比較で精度UP</li>
-      <li>テンプレート活用法（用途別おすすめ・カスタマイズ術）</li>
-      <li>PowerPoint形式（.pptx）で書き出す手順</li>
-      <li>よくあるトラブルの対処法・FAQ 13問</li>
-    </ul>
-  </div>
+ <div class="summary-box">
+ <h3>この記事でわかること</h3>
+ <ul>
+ <li>イルシルのアカウント登録から初回ログインまでの手順</li>
+ <li>AIスライド生成の具体的な5ステップ（プロンプト入力~書き出しまで）</li>
+ <li>プロンプトのコツ：良い例・悪い例の比較で精度UP</li>
+ <li>テンプレート活用法（用途別おすすめ・カスタマイズ術）</li>
+ <li>PowerPoint形式（.pptx）で書き出す手順</li>
+ <li>よくあるトラブルの対処法・FAQ 13問</li>
+ </ul>
+ </div>
 
-  <!-- CTA（冒頭）グラデーション -->
-  <div class="cta-gradient">
-    <div class="cta-title">まずは無料でイルシルを試してみよう</div>
-    <div class="cta-desc">登録無料・クレジットカード不要。AIがテキストからプロ級のスライドを自動作成。</div>
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+73EZAQ+5UMS+5YJRM" rel="nofollow noopener" target="_blank" class="cta-btn-white">【クレカ不要】無料でスライドを自動生成する</a>
-    <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4B7QWV+73EZAQ+5UMS+5YJRM" alt="">
-    <div class="cta-sub">※広告を含みます｜無料トライアルあり</div>
-  </div>
+ <!-- CTA（冒頭）グラデーション -->
+ <div class="cta-gradient">
+ <div class="cta-title">まずは無料でイルシルを試してみよう</div>
+ <div class="cta-desc">登録無料・クレジットカード不要。AIがテキストからプロ級のスライドを自動作成。</div>
+ <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+73EZAQ+5UMS+5YJRM" rel="nofollow noopener" target="_blank" class="cta-btn-white">【クレカ不要】無料でスライドを自動生成する</a>
+ <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4B7QWV+73EZAQ+5UMS+5YJRM" alt="">
+ <div class="cta-sub">※広告を含みます｜無料トライアルあり</div>
+ </div>
 
-  <!-- 目次 -->
-  <nav class="toc">
-    <h2>目次</h2>
-    <ol>
-      <li><a href="#what">イルシルとは？（30秒でわかる基本）</a></li>
-      <li><a href="#signup">イルシルの始め方・アカウント登録</a></li>
-      <li><a href="#5steps">【核心】AIスライド生成5ステップ完全ガイド</a></li>
-      <li><a href="#prompt">プロンプトのコツ（良い例・悪い例）</a></li>
-      <li><a href="#template">テンプレート活用法（用途別おすすめ）</a></li>
-      <li><a href="#edit">テキスト・デザインの編集方法</a></li>
-      <li><a href="#export">PowerPointで書き出す方法</a></li>
-      <li><a href="#trouble">うまくいかないときの対処法</a></li>
-      <li><a href="#price">無料トライアルと有料プランの違い</a></li>
-      <li><a href="#recommend">こんな人に特におすすめ</a></li>
-      <li><a href="#faq">よくある質問（13問）</a></li>
-      <li><a href="#summary">まとめ</a></li>
-    </ol>
-  </nav>
-  <!-- 忍者AdMax 目次下広告 -->
-  <div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;"><p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p><!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax --></div>
+ <!-- 目次 -->
+ <nav class="toc">
+ <h2>目次</h2>
+ <ol>
+ <li><a href="#what">イルシルとは？（30秒でわかる基本）</a></li>
+ <li><a href="#signup">イルシルの始め方・アカウント登録</a></li>
+ <li><a href="#5steps">【核心】AIスライド生成5ステップ完全ガイド</a></li>
+ <li><a href="#prompt">プロンプトのコツ（良い例・悪い例）</a></li>
+ <li><a href="#template">テンプレート活用法（用途別おすすめ）</a></li>
+ <li><a href="#edit">テキスト・デザインの編集方法</a></li>
+ <li><a href="#export">PowerPointで書き出す方法</a></li>
+ <li><a href="#trouble">うまくいかないときの対処法</a></li>
+ <li><a href="#price">無料トライアルと有料プランの違い</a></li>
+ <li><a href="#recommend">こんな人に特におすすめ</a></li>
+ <li><a href="#faq">よくある質問（13問）</a></li>
+ <li><a href="#summary">まとめ</a></li>
+ </ol>
+ </nav>
+ <!-- 忍者AdMax 目次下広告 -->
+ <div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;"><p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p><!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax --></div>
 <!-- 忍者AdMax SP記事内広告 300x250 -->
 <div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;" class="sp-only"><p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p><!-- admax --><script src="https://adm.shinobi.jp/s/b8872443f18589de45163a9a558d01fd"></script><!-- admax --></div>
 
-  <!-- h2: イルシルとは？ -->
-  <h2 id="what">イルシルとは？（30秒でわかる基本）</h2>
-  <div class="article-img-mid" style="margin: 24px 0; border-radius: 10px; overflow: hidden;">
-    <img src="../images/photos/hands-typing.jpg" alt="イルシル使い方" style="width: 100%; height: 240px; object-fit: cover;" loading="lazy">
-  </div>
-  <p>イルシル（irusiru）は、<strong>AIがテキストから自動的にプレゼンテーションスライドを生成してくれる国産Webサービス</strong>です。「どんな資料を作りたいか」を入力するだけで、AIが構成・デザイン・レイアウトをまとめてセットしてくれます。</p>
+ <!-- h2: イルシルとは？ -->
+ <h2 id="what">イルシルとは？（30秒でわかる基本）</h2>
+ <div class="article-img-mid" style="margin: 24px 0; border-radius: 10px; overflow: hidden;">
+ <img src="../images/photos/hands-typing.jpg" alt="イルシル使い方" style="width: 100%; height: 240px; object-fit: cover;" loading="lazy">
+ </div>
+ <p>イルシル（irusiru）は、<strong>AIがテキストから自動的にプレゼンテーションスライドを生成してくれる国産Webサービス</strong>です。「どんな資料を作りたいか」を入力するだけで、AIが構成・デザイン・レイアウトをまとめてセットしてくれます。</p>
 
-  <p>PowerPointやKeynoteのような専門ソフトの操作スキルが不要で、<strong>デザインが苦手な人・時間がない人でもプロ品質のスライドが作れる</strong>のが最大の特徴です。</p>
+ <p>PowerPointやKeynoteのような専門ソフトの操作スキルが不要で、<strong>デザインが苦手な人・時間がない人でもプロ品質のスライドが作れる</strong>のが最大の特徴です。</p>
 
-  <div class="feature-grid">
-    <div class="feature-card">
-      <div class="fc-icon">🤖</div>
-      <h3>AI自動生成</h3>
-      <p>テーマや内容を入力するだけで、AIがスライドの構成・文章・デザインをまとめて自動作成します。</p>
-    </div>
-    <div class="feature-card">
-      <div class="fc-icon">🎨</div>
-      <h3>豊富なテンプレート</h3>
-      <p>ビジネス・教育・マーケティングなど数百種類以上のテンプレートを用途に合わせて選べます。</p>
-    </div>
-    <div class="feature-card">
-      <div class="fc-icon">📤</div>
-      <h3>PowerPoint書き出し</h3>
-      <p>作成したスライドを.pptx形式でダウンロードでき、PowerPointで追加編集することも可能です。</p>
-    </div>
-    <div class="feature-card">
-      <div class="fc-icon">🌐</div>
-      <h3>ブラウザだけで完結</h3>
-      <p>インストール不要。ChromeやSafariなどのブラウザがあればどこからでもアクセスできます。</p>
-    </div>
-  </div>
+ <div class="feature-grid">
+ <div class="feature-card">
+ <div class="fc-icon"></div>
+ <h3>AI自動生成</h3>
+ <p>テーマや内容を入力するだけで、AIがスライドの構成・文章・デザインをまとめて自動作成します。</p>
+ </div>
+ <div class="feature-card">
+ <div class="fc-icon"></div>
+ <h3>豊富なテンプレート</h3>
+ <p>ビジネス・教育・マーケティングなど数百種類以上のテンプレートを用途に合わせて選べます。</p>
+ </div>
+ <div class="feature-card">
+ <div class="fc-icon"></div>
+ <h3>PowerPoint書き出し</h3>
+ <p>作成したスライドを.pptx形式でダウンロードでき、PowerPointで追加編集することも可能です。</p>
+ </div>
+ <div class="feature-card">
+ <div class="fc-icon"></div>
+ <h3>ブラウザだけで完結</h3>
+ <p>インストール不要。ChromeやSafariなどのブラウザがあればどこからでもアクセスできます。</p>
+ </div>
+ </div>
 
-  <div class="tip-box">
-    <strong>他のAIプレゼンツールと比べたい方へ：</strong>イルシルと他ツールの詳細な比較は<a href="irusiru-comparison">AIプレゼンツール徹底比較記事</a>や<a href="irusiru-vs-gamma">イルシル vs Gamma比較記事</a>もあわせてご覧ください。
-  </div>
+ <div class="tip-box">
+ <strong>他のAIプレゼンツールと比べたい方へ：</strong>イルシルと他ツールの詳細な比較は<a href="irusiru-comparison">AIプレゼンツール徹底比較記事</a>や<a href="irusiru-vs-gamma">イルシル vs Gamma比較記事</a>もあわせてご覧ください。
+ </div>
 
-  <!-- h2: アカウント登録 -->
-  <h2 id="signup">イルシルの始め方・アカウント登録</h2>
-  <p>イルシルの登録はとても簡単です。クレジットカード不要で、メールアドレスがあれば最短1~2分で利用を開始できます。以下の手順で進めてください。</p>
+ <!-- h2: アカウント登録 -->
+ <h2 id="signup">イルシルの始め方・アカウント登録</h2>
+ <p>イルシルの登録はとても簡単です。クレジットカード不要で、メールアドレスがあれば最短1~2分で利用を開始できます。以下の手順で進めてください。</p>
 
-  <ol class="step-list">
-    <li>
-      <div>
-        <strong>公式サイトにアクセスする</strong>
-        <span>ブラウザでイルシルの公式サイトを開きます。URLは「irusiru.jp」です。トップページ右上または中央に「無料で始める」「新規登録」ボタンが表示されています。</span>
-      </div>
-    </li>
-    <li>
-      <div>
-        <strong>登録方法を選ぶ</strong>
-        <span>メールアドレス＋パスワードで登録するか、Googleアカウントでのソーシャルログインを選択します。Googleアカウントを使うと入力不要で最速登録できます。</span>
-      </div>
-    </li>
-    <li>
-      <div>
-        <strong>メールアドレスを認証する</strong>
-        <span>メールアドレスで登録した場合、確認メールが届きます。メール内の「認証する」リンクをクリックして認証を完了させます。</span>
-      </div>
-    </li>
-    <li>
-      <div>
-        <strong>プロフィールを設定する</strong>
-        <span>用途（ビジネス・学生・個人など）や業種を選択します。この情報はAIがスライドを生成するときのヒントに使われます。後から変更も可能です。</span>
-      </div>
-    </li>
-    <li>
-      <div>
-        <strong>ダッシュボードが表示されたら完了</strong>
-        <span>ダッシュボード（マイページ）が表示されれば登録完了です。「新規作成」ボタンからすぐにスライド作成を開始できます。</span>
-      </div>
-    </li>
-  </ol>
+ <ol class="step-list">
+ <li>
+ <div>
+ <strong>公式サイトにアクセスする</strong>
+ <span>ブラウザでイルシルの公式サイトを開きます。URLは「irusiru.jp」です。トップページ右上または中央に「無料で始める」「新規登録」ボタンが表示されています。</span>
+ </div>
+ </li>
+ <li>
+ <div>
+ <strong>登録方法を選ぶ</strong>
+ <span>メールアドレス＋パスワードで登録するか、Googleアカウントでのソーシャルログインを選択します。Googleアカウントを使うと入力不要で最速登録できます。</span>
+ </div>
+ </li>
+ <li>
+ <div>
+ <strong>メールアドレスを認証する</strong>
+ <span>メールアドレスで登録した場合、確認メールが届きます。メール内の「認証する」リンクをクリックして認証を完了させます。</span>
+ </div>
+ </li>
+ <li>
+ <div>
+ <strong>プロフィールを設定する</strong>
+ <span>用途（ビジネス・学生・個人など）や業種を選択します。この情報はAIがスライドを生成するときのヒントに使われます。後から変更も可能です。</span>
+ </div>
+ </li>
+ <li>
+ <div>
+ <strong>ダッシュボードが表示されたら完了</strong>
+ <span>ダッシュボード（マイページ）が表示されれば登録完了です。「新規作成」ボタンからすぐにスライド作成を開始できます。</span>
+ </div>
+ </li>
+ </ol>
 
-  <div class="warning-box">
-    <strong>注意：</strong>確認メールが届かない場合は、迷惑メールフォルダを確認してください。それでも届かない場合は「再送信」ボタンから再送できます。
-  </div>
+ <div class="warning-box">
+ <strong>注意：</strong>確認メールが届かない場合は、迷惑メールフォルダを確認してください。それでも届かない場合は「再送信」ボタンから再送できます。
+ </div>
 
-  <!-- h2: AIスライド生成5ステップ -->
-  <h2 id="5steps">【核心】AIスライド生成5ステップ完全ガイド</h2>
-  <p>登録が完了したら、さっそくスライドを作ってみましょう。イルシルでのAIスライド生成は、以下の<strong>5ステップ</strong>で完了します。全工程5分以内で終わるのがイルシルの強みです。</p>
+ <!-- h2: AIスライド生成5ステップ -->
+ <h2 id="5steps">【核心】AIスライド生成5ステップ完全ガイド</h2>
+ <p>登録が完了したら、さっそくスライドを作ってみましょう。イルシルでのAIスライド生成は、以下の<strong>5ステップ</strong>で完了します。全工程5分以内で終わるのがイルシルの強みです。</p>
 
-  <ol class="step-list">
-    <li>
-      <div>
-        <strong>「新規作成」>「AIで作成」を選択</strong>
-        <span>ダッシュボード上部の「新規作成」ボタンをクリック。「AIで作成」「テンプレートから作成」「白紙から作成」の3モードが表示されます。<strong>初心者は迷わず「AIで作成」を選んでください。</strong>AIが構成・デザイン・文章をまとめて処理してくれるので、最も手間が少ない方法です。</span>
-      </div>
-    </li>
-    <li>
-      <div>
-        <strong>プロンプト（テーマ・内容）を入力する</strong>
-        <span>「どんなスライドを作りたいですか？」というプロンプト入力欄が表示されます。ここが<strong>スライドの品質を決める最重要ポイント</strong>です。「誰に」「何を」「何のために」「何枚で」の4要素を含めて具体的に記述しましょう。詳しいコツは次のセクションで解説します。入力例：「中小企業の経営者向けに、自社のDX支援サービスを提案するための営業スライド10枚。導入実績・料金・スケジュールを含む」</span>
-      </div>
-    </li>
-    <li>
-      <div>
-        <strong>テンプレート・デザインを選ぶ</strong>
-        <span>プロンプト入力後、テンプレートの選択画面が表示されます。ビジネス・教育・マーケティングなど用途別に整理されているので、目的に合ったものを選択。<strong>迷ったら「ミニマル系」を選べば失敗しません。</strong>テンプレートは後から変更できるので、ここでは仮選択でOKです。</span>
-      </div>
-    </li>
-    <li>
-      <div>
-        <strong>AI生成結果を確認・微調整する</strong>
-        <span>「生成する」ボタンを押すと、AIが10~30秒でスライドを自動生成します。生成されたスライドをプレビューで確認し、必要に応じてテキストの修正・レイアウト変更・画像差し替えを行います。<strong>8割はAIが仕上げてくれるので、微調整は2割程度。</strong>ここで時間をかけすぎないのがコツです。</span>
-      </div>
-    </li>
-    <li>
-      <div>
-        <strong>保存 > PowerPoint/PDFで書き出し</strong>
-        <span>完成したら「保存」して、右上の「書き出し」ボタンからPowerPoint（.pptx）またはPDF形式でダウンロード。これで完了です。書き出したファイルはそのまま上司・クライアントに送れます。</span>
-      </div>
-    </li>
-  </ol>
+ <ol class="step-list">
+ <li>
+ <div>
+ <strong>「新規作成」>「AIで作成」を選択</strong>
+ <span>ダッシュボード上部の「新規作成」ボタンをクリック。「AIで作成」「テンプレートから作成」「白紙から作成」の3モードが表示されます。<strong>初心者は迷わず「AIで作成」を選んでください。</strong>AIが構成・デザイン・文章をまとめて処理してくれるので、最も手間が少ない方法です。</span>
+ </div>
+ </li>
+ <li>
+ <div>
+ <strong>プロンプト（テーマ・内容）を入力する</strong>
+ <span>「どんなスライドを作りたいですか？」というプロンプト入力欄が表示されます。ここが<strong>スライドの品質を決める最重要ポイント</strong>です。「誰に」「何を」「何のために」「何枚で」の4要素を含めて具体的に記述しましょう。詳しいコツは次のセクションで解説します。入力例：「中小企業の経営者向けに、自社のDX支援サービスを提案するための営業スライド10枚。導入実績・料金・スケジュールを含む」</span>
+ </div>
+ </li>
+ <li>
+ <div>
+ <strong>テンプレート・デザインを選ぶ</strong>
+ <span>プロンプト入力後、テンプレートの選択画面が表示されます。ビジネス・教育・マーケティングなど用途別に整理されているので、目的に合ったものを選択。<strong>迷ったら「ミニマル系」を選べば失敗しません。</strong>テンプレートは後から変更できるので、ここでは仮選択でOKです。</span>
+ </div>
+ </li>
+ <li>
+ <div>
+ <strong>AI生成結果を確認・微調整する</strong>
+ <span>「生成する」ボタンを押すと、AIが10~30秒でスライドを自動生成します。生成されたスライドをプレビューで確認し、必要に応じてテキストの修正・レイアウト変更・画像差し替えを行います。<strong>8割はAIが仕上げてくれるので、微調整は2割程度。</strong>ここで時間をかけすぎないのがコツです。</span>
+ </div>
+ </li>
+ <li>
+ <div>
+ <strong>保存 > PowerPoint/PDFで書き出し</strong>
+ <span>完成したら「保存」して、右上の「書き出し」ボタンからPowerPoint（.pptx）またはPDF形式でダウンロード。これで完了です。書き出したファイルはそのまま上司・クライアントに送れます。</span>
+ </div>
+ </li>
+ </ol>
 
-  <div class="tip-box">
-    <strong>所要時間の目安：</strong>STEP 1（10秒）→ STEP 2（1~2分）→ STEP 3（30秒）→ STEP 4（2~3分）→ STEP 5（30秒）。<strong>合計約5分</strong>でプロ品質のスライドが完成します。従来PowerPointで1~2時間かけていた作業が劇的に短縮されます。
-  </div>
+ <div class="tip-box">
+ <strong>所要時間の目安：</strong>STEP 1（10秒）→ STEP 2（1~2分）→ STEP 3（30秒）→ STEP 4（2~3分）→ STEP 5（30秒）。<strong>合計約5分</strong>でプロ品質のスライドが完成します。従来PowerPointで1~2時間かけていた作業が劇的に短縮されます。
+ </div>
 
-  <!-- h2: プロンプトのコツ -->
-  <h2 id="prompt">プロンプトのコツ（良い例・悪い例）</h2>
-  <p>イルシルのAIスライド生成で<strong>最もクオリティに影響するのがプロンプト（入力テキスト）の書き方</strong>です。同じツールでも、プロンプト次第で「そのまま使える資料」と「作り直しが必要な資料」の差が出ます。</p>
+ <!-- h2: プロンプトのコツ -->
+ <h2 id="prompt">プロンプトのコツ（良い例・悪い例）</h2>
+ <p>イルシルのAIスライド生成で<strong>最もクオリティに影響するのがプロンプト（入力テキスト）の書き方</strong>です。同じツールでも、プロンプト次第で「そのまま使える資料」と「作り直しが必要な資料」の差が出ます。</p>
 
-  <h3>プロンプトに含めるべき4つの要素</h3>
-  <div class="feature-grid">
-    <div class="feature-card">
-      <div class="fc-icon">👤</div>
-      <h3>誰に（ターゲット）</h3>
-      <p>「中小企業の経営者向け」「新入社員向け」「クライアントの人事部長向け」など、聞き手を明記する。</p>
-    </div>
-    <div class="feature-card">
-      <div class="fc-icon">📋</div>
-      <h3>何を（テーマ・内容）</h3>
-      <p>「DX支援サービスの提案」「四半期の営業報告」「新商品のプロモーション企画」など具体的なテーマ。</p>
-    </div>
-    <div class="feature-card">
-      <div class="fc-icon">🎯</div>
-      <h3>何のために（目的）</h3>
-      <p>「契約を獲得するため」「予算承認を得るため」「研修で使うため」など、ゴールを書く。</p>
-    </div>
-    <div class="feature-card">
-      <div class="fc-icon">📊</div>
-      <h3>条件（枚数・含める内容）</h3>
-      <p>「10枚」「料金表を含む」「導入実績3社を掲載」「比較表を入れる」など、具体的な条件。</p>
-    </div>
-  </div>
+ <h3>プロンプトに含めるべき4つの要素</h3>
+ <div class="feature-grid">
+ <div class="feature-card">
+ <div class="fc-icon"></div>
+ <h3>誰に（ターゲット）</h3>
+ <p>「中小企業の経営者向け」「新入社員向け」「クライアントの人事部長向け」など、聞き手を明記する。</p>
+ </div>
+ <div class="feature-card">
+ <div class="fc-icon"></div>
+ <h3>何を（テーマ・内容）</h3>
+ <p>「DX支援サービスの提案」「四半期の営業報告」「新商品のプロモーション企画」など具体的なテーマ。</p>
+ </div>
+ <div class="feature-card">
+ <div class="fc-icon"></div>
+ <h3>何のために（目的）</h3>
+ <p>「契約を獲得するため」「予算承認を得るため」「研修で使うため」など、ゴールを書く。</p>
+ </div>
+ <div class="feature-card">
+ <div class="fc-icon"></div>
+ <h3>条件（枚数・含める内容）</h3>
+ <p>「10枚」「料金表を含む」「導入実績3社を掲載」「比較表を入れる」など、具体的な条件。</p>
+ </div>
+ </div>
 
-  <h3>良い例と悪い例の比較</h3>
+ <h3>良い例と悪い例の比較</h3>
 
-  <div class="prompt-example">
-    <div class="prompt-label prompt-bad">悪い例</div>
-    <div class="prompt-text">営業資料を作って</div>
-    <div class="prompt-note">→ ターゲット・テーマ・目的・条件がすべて不明。AIは汎用的で当たり障りのない内容しか生成できません。結果、ほぼ全文を手動で書き直すことになります。</div>
-  </div>
+ <div class="prompt-example">
+ <div class="prompt-label prompt-bad">悪い例</div>
+ <div class="prompt-text">営業資料を作って</div>
+ <div class="prompt-note">→ ターゲット・テーマ・目的・条件がすべて不明。AIは汎用的で当たり障りのない内容しか生成できません。結果、ほぼ全文を手動で書き直すことになります。</div>
+ </div>
 
-  <div class="prompt-example">
-    <div class="prompt-label prompt-good">良い例</div>
-    <div class="prompt-text">飲食店オーナー向けに、当社のPOSレジシステム「EasyPOS」を提案する営業スライド10枚。導入メリット3点（注文ミス削減・在庫管理・売上分析）、料金プラン（月額9,800円~）、導入事例2社、導入までのスケジュールを含めてください。</div>
-    <div class="prompt-note">→ ターゲット（飲食店オーナー）、テーマ（POSレジ提案）、目的（営業提案）、条件（10枚・メリット3点・料金・事例・スケジュール）がすべて明記されているため、AIが高精度なスライドを生成できます。</div>
-  </div>
+ <div class="prompt-example">
+ <div class="prompt-label prompt-good">良い例</div>
+ <div class="prompt-text">飲食店オーナー向けに、当社のPOSレジシステム「EasyPOS」を提案する営業スライド10枚。導入メリット3点（注文ミス削減・在庫管理・売上分析）、料金プラン（月額9,800円~）、導入事例2社、導入までのスケジュールを含めてください。</div>
+ <div class="prompt-note">→ ターゲット（飲食店オーナー）、テーマ（POSレジ提案）、目的（営業提案）、条件（10枚・メリット3点・料金・事例・スケジュール）がすべて明記されているため、AIが高精度なスライドを生成できます。</div>
+ </div>
 
-  <div class="prompt-example">
-    <div class="prompt-label prompt-bad">悪い例</div>
-    <div class="prompt-text">会社紹介のプレゼンお願いします</div>
-    <div class="prompt-note">→ 会社の何を紹介したいのか、誰に見せるのか不明。AIは一般的な会社紹介テンプレートを出力するだけで、自社の強みや特徴が反映されません。</div>
-  </div>
+ <div class="prompt-example">
+ <div class="prompt-label prompt-bad">悪い例</div>
+ <div class="prompt-text">会社紹介のプレゼンお願いします</div>
+ <div class="prompt-note">→ 会社の何を紹介したいのか、誰に見せるのか不明。AIは一般的な会社紹介テンプレートを出力するだけで、自社の強みや特徴が反映されません。</div>
+ </div>
 
-  <div class="prompt-example">
-    <div class="prompt-label prompt-good">良い例</div>
-    <div class="prompt-text">採用候補者（新卒エンジニア）向けの会社紹介スライド8枚。会社概要・ミッション・技術スタック（React/Go/AWS）・働き方（フルリモート可）・福利厚生・社員の声・選考フローを含めてください。トーンはカジュアルで親しみやすい雰囲気で。</div>
-    <div class="prompt-note">→ ターゲット・用途・含める項目・トーンまで指定。AIが具体的な構成で高品質なスライドを生成します。</div>
-  </div>
+ <div class="prompt-example">
+ <div class="prompt-label prompt-good">良い例</div>
+ <div class="prompt-text">採用候補者（新卒エンジニア）向けの会社紹介スライド8枚。会社概要・ミッション・技術スタック（React/Go/AWS）・働き方（フルリモート可）・福利厚生・社員の声・選考フローを含めてください。トーンはカジュアルで親しみやすい雰囲気で。</div>
+ <div class="prompt-note">→ ターゲット・用途・含める項目・トーンまで指定。AIが具体的な構成で高品質なスライドを生成します。</div>
+ </div>
 
-  <h3>さらにクオリティを上げる上級テクニック</h3>
-  <ul>
-    <li><strong>数値や具体例を入れる：</strong>「売上30%向上」「導入企業500社」など具体的な数字があると、AIがスライドにデータ感を持たせてくれます</li>
-    <li><strong>トーン・文体を指定する：</strong>「フォーマルなビジネス調で」「カジュアルで若者向けの口調で」と書くだけで文体が変わります</li>
-    <li><strong>「～を含めない」も有効：</strong>「価格の話は含めないでください」「競合比較は不要」など除外条件も指定可能</li>
-    <li><strong>箇条書きで構成を指示する：</strong>「1枚目:タイトル、2枚目:課題、3枚目:解決策...」のように枚数ごとの構成を指定すると、AIがその通りに作ってくれます</li>
-  </ul>
+ <h3>さらにクオリティを上げる上級テクニック</h3>
+ <ul>
+ <li><strong>数値や具体例を入れる：</strong>「売上30%向上」「導入企業500社」など具体的な数字があると、AIがスライドにデータ感を持たせてくれます</li>
+ <li><strong>トーン・文体を指定する：</strong>「フォーマルなビジネス調で」「カジュアルで若者向けの口調で」と書くだけで文体が変わります</li>
+ <li><strong>「～を含めない」も有効：</strong>「価格の話は含めないでください」「競合比較は不要」など除外条件も指定可能</li>
+ <li><strong>箇条書きで構成を指示する：</strong>「1枚目:タイトル、2枚目:課題、3枚目:解決策...」のように枚数ごとの構成を指定すると、AIがその通りに作ってくれます</li>
+ </ul>
 
-  <div class="tip-box">
-    <strong>プロンプトは使い回せる：</strong>一度うまくいったプロンプトのパターンを保存しておけば、次回から別テーマに差し替えるだけで高品質なスライドが量産できます。
-  </div>
+ <div class="tip-box">
+ <strong>プロンプトは使い回せる：</strong>一度うまくいったプロンプトのパターンを保存しておけば、次回から別テーマに差し替えるだけで高品質なスライドが量産できます。
+ </div>
 
-  <!-- h2: テンプレートの選び方 -->
-  <h2 id="template">テンプレート活用法（用途別おすすめ）</h2>
-  <p>イルシルには用途・業種・デザインスタイル別に数百種類のテンプレートが用意されています。テンプレートの選び方次第で、完成度が大きく変わります。</p>
+ <!-- h2: テンプレートの選び方 -->
+ <h2 id="template">テンプレート活用法（用途別おすすめ）</h2>
+ <p>イルシルには用途・業種・デザインスタイル別に数百種類のテンプレートが用意されています。テンプレートの選び方次第で、完成度が大きく変わります。</p>
 
-  <h3>用途別おすすめテンプレート</h3>
-  <div class="template-grid">
-    <div class="template-card">
-      <div class="tpl-icon">💼</div>
-      <h4>営業・提案書</h4>
-      <p>インパクトのある見出しと図表・グラフが入ったテンプレート。配色はブランドカラーに合わせると統一感UP。</p>
-    </div>
-    <div class="template-card">
-      <div class="tpl-icon">📊</div>
-      <h4>社内プレゼン・会議</h4>
-      <p>シンプルでテキスト量が多めのビジネス系。余白を活かした見やすいレイアウトが適しています。</p>
-    </div>
-    <div class="template-card">
-      <div class="tpl-icon">🎓</div>
-      <h4>セミナー・講義</h4>
-      <p>文字が大きく、一枚あたりの情報量を絞ったシンプルなテンプレート。遠くからでも読みやすい。</p>
-    </div>
-    <div class="template-card">
-      <div class="tpl-icon">📷</div>
-      <h4>ポートフォリオ・自己紹介</h4>
-      <p>写真や画像が映えるビジュアル重視のテンプレート。印象的な仕上がりになります。</p>
-    </div>
-  </div>
+ <h3>用途別おすすめテンプレート</h3>
+ <div class="template-grid">
+ <div class="template-card">
+ <div class="tpl-icon"></div>
+ <h4>営業・提案書</h4>
+ <p>インパクトのある見出しと図表・グラフが入ったテンプレート。配色はブランドカラーに合わせると統一感UP。</p>
+ </div>
+ <div class="template-card">
+ <div class="tpl-icon"></div>
+ <h4>社内プレゼン・会議</h4>
+ <p>シンプルでテキスト量が多めのビジネス系。余白を活かした見やすいレイアウトが適しています。</p>
+ </div>
+ <div class="template-card">
+ <div class="tpl-icon"></div>
+ <h4>セミナー・講義</h4>
+ <p>文字が大きく、一枚あたりの情報量を絞ったシンプルなテンプレート。遠くからでも読みやすい。</p>
+ </div>
+ <div class="template-card">
+ <div class="tpl-icon"></div>
+ <h4>ポートフォリオ・自己紹介</h4>
+ <p>写真や画像が映えるビジュアル重視のテンプレート。印象的な仕上がりになります。</p>
+ </div>
+ </div>
 
-  <h3>テンプレート活用の3つのコツ</h3>
-  <ol>
-    <li><strong>まずAIで生成してからテンプレートを差し替える：</strong>先に内容をAIに作らせ、あとからデザインを変更するのが効率的です。テンプレートはいつでも変更可能なので、最初の選択に悩む必要はありません。</li>
-    <li><strong>デザインスタイルは3タイプから選ぶ：</strong>「ミニマル系（白基調・シンプル）」「ビビッド系（鮮やかな配色）」「プロフェッショナル系（紺・グレー・落ち着いた色）」の3分類で考えると迷いにくくなります。<strong>初めてなら「ミニマル系」が失敗しにくいです。</strong></li>
-    <li><strong>ブランドカラーを設定する：</strong>自社のロゴカラーやブランドカラーを「デザイン」タブで設定すると、すべてのスライドに統一感が出ます。HEXカラーコード（例: #4f46e5）で直接入力可能です。</li>
-  </ol>
+ <h3>テンプレート活用の3つのコツ</h3>
+ <ol>
+ <li><strong>まずAIで生成してからテンプレートを差し替える：</strong>先に内容をAIに作らせ、あとからデザインを変更するのが効率的です。テンプレートはいつでも変更可能なので、最初の選択に悩む必要はありません。</li>
+ <li><strong>デザインスタイルは3タイプから選ぶ：</strong>「ミニマル系（白基調・シンプル）」「ビビッド系（鮮やかな配色）」「プロフェッショナル系（紺・グレー・落ち着いた色）」の3分類で考えると迷いにくくなります。<strong>初めてなら「ミニマル系」が失敗しにくいです。</strong></li>
+ <li><strong>ブランドカラーを設定する：</strong>自社のロゴカラーやブランドカラーを「デザイン」タブで設定すると、すべてのスライドに統一感が出ます。HEXカラーコード（例: #4f46e5）で直接入力可能です。</li>
+ </ol>
 
-  <div class="tip-box">
-    <strong>内部リンク：</strong>イルシルの機能全体の評判・コスパについては<a href="irusiru-review">イルシルのレビュー記事</a>も、無料でどこまで使えるかは<a href="irusiru-free-plan">イルシル無料プラン完全ガイド</a>もあわせてご確認ください。
-  </div>
+ <div class="tip-box">
+ <strong>内部リンク：</strong>イルシルの機能全体の評判・コスパについては<a href="irusiru-review">イルシルのレビュー記事</a>も、無料でどこまで使えるかは<a href="irusiru-free-plan">イルシル無料プラン完全ガイド</a>もあわせてご確認ください。
+ </div>
 
-  <!-- CTA（中間）グラデーション -->
-  <div class="cta-gradient">
-    <div class="cta-title">プロンプト入力だけでスライド完成</div>
-    <div class="cta-desc">テーマを入力するだけでAIが自動生成。テンプレート数百種類。PowerPoint書き出しも完全対応。</div>
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+73EZAQ+5UMS+5YJRM" rel="nofollow noopener" target="_blank" class="cta-btn-white">【クレカ不要】無料でスライドを自動生成する</a>
-    <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4B7QWV+73EZAQ+5UMS+5YJRM" alt="">
-    <div class="cta-sub">※広告を含みます｜登録1分・クレジットカード不要</div>
-  </div>
+ <!-- CTA（中間）グラデーション -->
+ <div class="cta-gradient">
+ <div class="cta-title">プロンプト入力だけでスライド完成</div>
+ <div class="cta-desc">テーマを入力するだけでAIが自動生成。テンプレート数百種類。PowerPoint書き出しも完全対応。</div>
+ <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+73EZAQ+5UMS+5YJRM" rel="nofollow noopener" target="_blank" class="cta-btn-white">【クレカ不要】無料でスライドを自動生成する</a>
+ <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4B7QWV+73EZAQ+5UMS+5YJRM" alt="">
+ <div class="cta-sub">※広告を含みます｜登録1分・クレジットカード不要</div>
+ </div>
 
-  <!-- h2: テキスト・デザインの編集方法 -->
-  <h2 id="edit">テキスト・デザインの編集方法</h2>
-  <p>AIが生成したスライドをそのまま使っても十分なクオリティですが、テキストや細部を手動で調整することでよりオリジナリティのある資料になります。</p>
+ <!-- h2: テキスト・デザインの編集方法 -->
+ <h2 id="edit">テキスト・デザインの編集方法</h2>
+ <p>AIが生成したスライドをそのまま使っても十分なクオリティですが、テキストや細部を手動で調整することでよりオリジナリティのある資料になります。</p>
 
-  <ul class="edit-method-list">
-    <li>
-      <strong>テキストの編集</strong>
-      スライド上のテキストエリアをクリックすると直接編集モードになります。見出し・本文・注釈など各エリアを個別に編集できます。フォントサイズ・太字・色の変更もツールバーから可能です。
-    </li>
-    <li>
-      <strong>レイアウトの変更</strong>
-      各スライドには複数のレイアウトバリエーションが用意されています。右側のパネルから「レイアウト変更」を選ぶと、同じ内容でも並びやデザインを瞬時に切り替えられます。
-    </li>
-    <li>
-      <strong>配色・テーマカラーの変更</strong>
-      「デザイン」タブからスライド全体のテーマカラーを変更できます。企業のブランドカラーに合わせたい場合は、カラーピッカーでRGB・HEXコードを直接入力することも可能です。
-    </li>
-    <li>
-      <strong>画像の挿入・差し替え</strong>
-      スライド内の画像エリアをクリックすると、PCからのアップロードや内蔵素材の差し替えができます。商品写真や会社ロゴなど自社素材を入れることで、よりリアルな資料になります。
-    </li>
-    <li>
-      <strong>スライドの追加・並べ替え・削除</strong>
-      左のサムネイルパネルでスライドの順番をドラッグ＆ドロップで変更できます。「+」ボタンでスライドを追加、右クリックで削除も簡単に行えます。
-    </li>
-    <li>
-      <strong>図形・アイコンの挿入</strong>
-      「挿入」メニューから矢印・図形・アイコンをスライドに追加できます。フローチャートや比較図を作るときに役立ちます。
-    </li>
-  </ul>
+ <ul class="edit-method-list">
+ <li>
+ <strong>テキストの編集</strong>
+ スライド上のテキストエリアをクリックすると直接編集モードになります。見出し・本文・注釈など各エリアを個別に編集できます。フォントサイズ・太字・色の変更もツールバーから可能です。
+ </li>
+ <li>
+ <strong>レイアウトの変更</strong>
+ 各スライドには複数のレイアウトバリエーションが用意されています。右側のパネルから「レイアウト変更」を選ぶと、同じ内容でも並びやデザインを瞬時に切り替えられます。
+ </li>
+ <li>
+ <strong>配色・テーマカラーの変更</strong>
+ 「デザイン」タブからスライド全体のテーマカラーを変更できます。企業のブランドカラーに合わせたい場合は、カラーピッカーでRGB・HEXコードを直接入力することも可能です。
+ </li>
+ <li>
+ <strong>画像の挿入・差し替え</strong>
+ スライド内の画像エリアをクリックすると、PCからのアップロードや内蔵素材の差し替えができます。商品写真や会社ロゴなど自社素材を入れることで、よりリアルな資料になります。
+ </li>
+ <li>
+ <strong>スライドの追加・並べ替え・削除</strong>
+ 左のサムネイルパネルでスライドの順番をドラッグ＆ドロップで変更できます。「+」ボタンでスライドを追加、右クリックで削除も簡単に行えます。
+ </li>
+ <li>
+ <strong>図形・アイコンの挿入</strong>
+ 「挿入」メニューから矢印・図形・アイコンをスライドに追加できます。フローチャートや比較図を作るときに役立ちます。
+ </li>
+ </ul>
 
-  <!-- h2: PowerPointで書き出す方法 -->
-  <h2 id="export">PowerPointで書き出す方法</h2>
-  <p>イルシルで作成したスライドは、<strong>PowerPoint形式（.pptx）でダウンロード</strong>することができます。上司への共有や社内レビューのためにPowerPointで渡したい場面でも安心です。</p>
+ <!-- h2: PowerPointで書き出す方法 -->
+ <h2 id="export">PowerPointで書き出す方法</h2>
+ <p>イルシルで作成したスライドは、<strong>PowerPoint形式（.pptx）でダウンロード</strong>することができます。上司への共有や社内レビューのためにPowerPointで渡したい場面でも安心です。</p>
 
-  <ol class="step-list">
-    <li>
-      <div>
-        <strong>編集画面右上の「書き出し」ボタンをクリック</strong>
-        <span>スライド編集画面の右上に「書き出し」または「ダウンロード」ボタンがあります。クリックするとダウンロード形式の選択画面が開きます。</span>
-      </div>
-    </li>
-    <li>
-      <div>
-        <strong>「PowerPoint（.pptx）」を選択する</strong>
-        <span>ダウンロード形式の一覧から「PowerPoint」を選択します。PDFやPNG（画像）での書き出しも可能です。用途に応じて使い分けてください。</span>
-      </div>
-    </li>
-    <li>
-      <div>
-        <strong>「ダウンロード」をクリックしてファイルを保存する</strong>
-        <span>ボタンをクリックするとファイルの生成が始まり、数秒後に.pptxファイルがダウンロードされます。PC上の任意のフォルダに保存してください。</span>
-      </div>
-    </li>
-    <li>
-      <div>
-        <strong>PowerPointで開いて追加編集する（任意）</strong>
-        <span>ダウンロードした.pptxファイルはそのままPowerPointで開けます。細かいアニメーション追加や独自フォントへの変更はPowerPoint側で行うと効率的です。</span>
-      </div>
-    </li>
-  </ol>
+ <ol class="step-list">
+ <li>
+ <div>
+ <strong>編集画面右上の「書き出し」ボタンをクリック</strong>
+ <span>スライド編集画面の右上に「書き出し」または「ダウンロード」ボタンがあります。クリックするとダウンロード形式の選択画面が開きます。</span>
+ </div>
+ </li>
+ <li>
+ <div>
+ <strong>「PowerPoint（.pptx）」を選択する</strong>
+ <span>ダウンロード形式の一覧から「PowerPoint」を選択します。PDFやPNG（画像）での書き出しも可能です。用途に応じて使い分けてください。</span>
+ </div>
+ </li>
+ <li>
+ <div>
+ <strong>「ダウンロード」をクリックしてファイルを保存する</strong>
+ <span>ボタンをクリックするとファイルの生成が始まり、数秒後に.pptxファイルがダウンロードされます。PC上の任意のフォルダに保存してください。</span>
+ </div>
+ </li>
+ <li>
+ <div>
+ <strong>PowerPointで開いて追加編集する（任意）</strong>
+ <span>ダウンロードした.pptxファイルはそのままPowerPointで開けます。細かいアニメーション追加や独自フォントへの変更はPowerPoint側で行うと効率的です。</span>
+ </div>
+ </li>
+ </ol>
 
-  <div class="warning-box">
-    <strong>注意：</strong>書き出し後にPowerPointで開いたとき、フォントや一部レイアウトがずれる場合があります。フォントが未インストールの場合は代替フォントに置き換わることがあるため、最終確認は必ずPowerPointで行いましょう。
-  </div>
+ <div class="warning-box">
+ <strong>注意：</strong>書き出し後にPowerPointで開いたとき、フォントや一部レイアウトがずれる場合があります。フォントが未インストールの場合は代替フォントに置き換わることがあるため、最終確認は必ずPowerPointで行いましょう。
+ </div>
 
-  <!-- h2: トラブル対処法 -->
-  <h2 id="trouble">うまくいかないときの対処法</h2>
-  <p>イルシルは直感的に使えるツールですが、初めて使うときに戸惑いやすいポイントをQ&A形式でまとめました。</p>
+ <!-- h2: トラブル対処法 -->
+ <h2 id="trouble">うまくいかないときの対処法</h2>
+ <p>イルシルは直感的に使えるツールですが、初めて使うときに戸惑いやすいポイントをQ&A形式でまとめました。</p>
 
-  <div class="trouble-item">
-    <div class="trouble-q">AIが生成したスライドの内容が的外れ・薄い</div>
-    <div class="trouble-a">入力するプロンプトをより具体的にしましょう。「誰に向けて」「どんな目的で」「何枚」「どんなポイントを盛り込むか」まで記述すると精度が大幅に上がります。また、「再生成」ボタンで別パターンを試すことも有効です。上の<a href="#prompt">プロンプトのコツ</a>セクションも参考にしてください。</div>
-  </div>
+ <div class="trouble-item">
+ <div class="trouble-q">AIが生成したスライドの内容が的外れ・薄い</div>
+ <div class="trouble-a">入力するプロンプトをより具体的にしましょう。「誰に向けて」「どんな目的で」「何枚」「どんなポイントを盛り込むか」まで記述すると精度が大幅に上がります。また、「再生成」ボタンで別パターンを試すことも有効です。上の<a href="#prompt">プロンプトのコツ</a>セクションも参考にしてください。</div>
+ </div>
 
-  <div class="trouble-item">
-    <div class="trouble-q">スライドが保存されない・変更が反映されない</div>
-    <div class="trouble-a">イルシルはオートセーブ機能を搭載していますが、ブラウザの接続が不安定なときに保存が失敗することがあります。ページを更新する前に「保存」ボタンを手動でクリックする習慣をつけましょう。</div>
-  </div>
+ <div class="trouble-item">
+ <div class="trouble-q">スライドが保存されない・変更が反映されない</div>
+ <div class="trouble-a">イルシルはオートセーブ機能を搭載していますが、ブラウザの接続が不安定なときに保存が失敗することがあります。ページを更新する前に「保存」ボタンを手動でクリックする習慣をつけましょう。</div>
+ </div>
 
-  <div class="trouble-item">
-    <div class="trouble-q">ログインできない・パスワードを忘れた</div>
-    <div class="trouble-a">ログイン画面の「パスワードを忘れた方はこちら」からパスワード再設定メールを送れます。Googleアカウントで登録した場合は「Googleでログイン」ボタンを使ってください。</div>
-  </div>
+ <div class="trouble-item">
+ <div class="trouble-q">ログインできない・パスワードを忘れた</div>
+ <div class="trouble-a">ログイン画面の「パスワードを忘れた方はこちら」からパスワード再設定メールを送れます。Googleアカウントで登録した場合は「Googleでログイン」ボタンを使ってください。</div>
+ </div>
 
-  <div class="trouble-item">
-    <div class="trouble-q">書き出したPowerPointファイルのレイアウトが崩れる</div>
-    <div class="trouble-a">使用フォントがPC上にインストールされていないことが主な原因です。イルシル上でWebフォントを使用している場合、PowerPoint側では標準フォントに置き換わります。重要なプレゼン前にはPowerPointで必ず確認し、フォントを置換してください。</div>
-  </div>
+ <div class="trouble-item">
+ <div class="trouble-q">書き出したPowerPointファイルのレイアウトが崩れる</div>
+ <div class="trouble-a">使用フォントがPC上にインストールされていないことが主な原因です。イルシル上でWebフォントを使用している場合、PowerPoint側では標準フォントに置き換わります。重要なプレゼン前にはPowerPointで必ず確認し、フォントを置換してください。</div>
+ </div>
 
-  <div class="trouble-item">
-    <div class="trouble-q">スライドの生成が遅い・タイムアウトする</div>
-    <div class="trouble-a">サーバーの混雑時間帯（平日昼~夕方）は処理に時間がかかることがあります。ページをリロードして再試行するか、時間をおいてから再生成してみてください。ブラウザのキャッシュをクリアすることも有効です。</div>
-  </div>
+ <div class="trouble-item">
+ <div class="trouble-q">スライドの生成が遅い・タイムアウトする</div>
+ <div class="trouble-a">サーバーの混雑時間帯（平日昼~夕方）は処理に時間がかかることがあります。ページをリロードして再試行するか、時間をおいてから再生成してみてください。ブラウザのキャッシュをクリアすることも有効です。</div>
+ </div>
 
-  <!-- h2: 無料トライアルと有料プランの違い -->
-  <h2 id="price">無料トライアルと有料プランの違い</h2>
-  <p>イルシルは無料トライアルがあり、基本的なスライド生成・編集機能を試せます。本格的に活用したい場合は有料プランへのアップグレードを検討しましょう。</p>
+ <!-- h2: 無料トライアルと有料プランの違い -->
+ <h2 id="price">無料トライアルと有料プランの違い</h2>
+ <p>イルシルは無料トライアルがあり、基本的なスライド生成・編集機能を試せます。本格的に活用したい場合は有料プランへのアップグレードを検討しましょう。</p>
 
-  <table class="plan-table">
-    <thead>
-      <tr>
-        <th>機能・項目</th>
-        <th>無料トライアル</th>
-        <th>有料プラン</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>AI自動生成</td>
-        <td class="check">◎（回数制限あり）</td>
-        <td class="check">◎（無制限）</td>
-      </tr>
-      <tr>
-        <td>テンプレート利用</td>
-        <td class="check">○（一部）</td>
-        <td class="check">◎（全種類）</td>
-      </tr>
-      <tr>
-        <td>スライド作成枚数</td>
-        <td>制限あり</td>
-        <td class="check">無制限</td>
-      </tr>
-      <tr>
-        <td>PowerPoint書き出し</td>
-        <td class="cross">△（回数制限）</td>
-        <td class="check">◎（無制限）</td>
-      </tr>
-      <tr>
-        <td>商用利用</td>
-        <td class="cross">不可</td>
-        <td class="check">可</td>
-      </tr>
-      <tr>
-        <td>優先サポート</td>
-        <td class="cross">なし</td>
-        <td class="check">あり</td>
-      </tr>
-      <tr>
-        <td>クレジット表記削除</td>
-        <td class="cross">不可</td>
-        <td class="check">可</td>
-      </tr>
-    </tbody>
-  </table>
+ <table class="plan-table">
+ <thead>
+ <tr>
+ <th>機能・項目</th>
+ <th>無料トライアル</th>
+ <th>有料プラン</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>AI自動生成</td>
+ <td class="check">◎（回数制限あり）</td>
+ <td class="check">◎（無制限）</td>
+ </tr>
+ <tr>
+ <td>テンプレート利用</td>
+ <td class="check">○（一部）</td>
+ <td class="check">◎（全種類）</td>
+ </tr>
+ <tr>
+ <td>スライド作成枚数</td>
+ <td>制限あり</td>
+ <td class="check">無制限</td>
+ </tr>
+ <tr>
+ <td>PowerPoint書き出し</td>
+ <td class="cross">△（回数制限）</td>
+ <td class="check">◎（無制限）</td>
+ </tr>
+ <tr>
+ <td>商用利用</td>
+ <td class="cross">不可</td>
+ <td class="check">可</td>
+ </tr>
+ <tr>
+ <td>優先サポート</td>
+ <td class="cross">なし</td>
+ <td class="check">あり</td>
+ </tr>
+ <tr>
+ <td>クレジット表記削除</td>
+ <td class="cross">不可</td>
+ <td class="check">可</td>
+ </tr>
+ </tbody>
+ </table>
 
-  <p>無料トライアルは機能確認・使い勝手チェックに最適です。定期的に業務でスライドを作る方・商用利用が必要な方は、有料プランへの移行が現実的です。</p>
+ <p>無料トライアルは機能確認・使い勝手チェックに最適です。定期的に業務でスライドを作る方・商用利用が必要な方は、有料プランへの移行が現実的です。</p>
 
-  <div class="tip-box">
-    <strong>料金の詳細を知りたい方へ：</strong><a href="irusiru-pricing">イルシル料金プラン完全ガイド</a>でフリー・パーソナル・パーソナルプラス・法人プランの違いを詳しく解説しています。
-  </div>
+ <div class="tip-box">
+ <strong>料金の詳細を知りたい方へ：</strong><a href="irusiru-pricing">イルシル料金プラン完全ガイド</a>でフリー・パーソナル・パーソナルプラス・法人プランの違いを詳しく解説しています。
+ </div>
 
-  <!-- h2: おすすめユーザー -->
-  <h2 id="recommend">こんな人に特におすすめ</h2>
-  <p>イルシルはあらゆるユーザーに使いやすいツールですが、特に以下のような方には導入効果が大きいです。</p>
+ <!-- h2: おすすめユーザー -->
+ <h2 id="recommend">こんな人に特におすすめ</h2>
+ <p>イルシルはあらゆるユーザーに使いやすいツールですが、特に以下のような方には導入効果が大きいです。</p>
 
-  <ul class="recommend-list">
-    <li>PowerPointの操作が苦手で、デザインに自信がない方</li>
-    <li>会議・プレゼン資料を短時間（30分以内）でまとめる必要がある方</li>
-    <li>営業職・企画職でスライド作成の頻度が週2回以上ある方</li>
-    <li>大学生・就活生で自己紹介・ゼミ発表スライドを効率よく作りたい方</li>
-    <li>副業・フリーランスでクライアント向け提案書を素早く作りたい方</li>
-    <li>スタートアップ・小規模チームでデザイン専任者がいない方</li>
-    <li>教員・研修担当者で授業スライド・研修資料を定期的に作成する方</li>
-  </ul>
+ <ul class="recommend-list">
+ <li>PowerPointの操作が苦手で、デザインに自信がない方</li>
+ <li>会議・プレゼン資料を短時間（30分以内）でまとめる必要がある方</li>
+ <li>営業職・企画職でスライド作成の頻度が週2回以上ある方</li>
+ <li>大学生・就活生で自己紹介・ゼミ発表スライドを効率よく作りたい方</li>
+ <li>副業・フリーランスでクライアント向け提案書を素早く作りたい方</li>
+ <li>スタートアップ・小規模チームでデザイン専任者がいない方</li>
+ <li>教員・研修担当者で授業スライド・研修資料を定期的に作成する方</li>
+ </ul>
 
-  <p>一方で、凝ったアニメーションや高度なインタラクティブ機能を必要とする場合や、完全オリジナルのブランドガイドラインに沿った細かいデザイン調整が必要な場合は、PowerPointやFigmaと併用することをおすすめします。</p>
+ <p>一方で、凝ったアニメーションや高度なインタラクティブ機能を必要とする場合や、完全オリジナルのブランドガイドラインに沿った細かいデザイン調整が必要な場合は、PowerPointやFigmaと併用することをおすすめします。</p>
 
-  <!-- h2: FAQ -->
-  <h2 id="faq">よくある質問（13問）</h2>
+ <!-- h2: FAQ -->
+ <h2 id="faq">よくある質問（13問）</h2>
 
-  <div class="faq-item">
-    <div class="faq-q">イルシルは無料で使えますか？</div>
-    <div class="faq-a">はい、無料トライアルがあります。クレジットカード不要で登録でき、基本的なスライド作成機能をお試しいただけます。無料期間終了後は有料プランへの移行が必要です。</div>
-  </div>
+ <div class="faq-item">
+ <div class="faq-q">イルシルは無料で使えますか？</div>
+ <div class="faq-a">はい、無料トライアルがあります。クレジットカード不要で登録でき、基本的なスライド作成機能をお試しいただけます。無料期間終了後は有料プランへの移行が必要です。</div>
+ </div>
 
-  <div class="faq-item">
-    <div class="faq-q">イルシルの登録方法は？</div>
-    <div class="faq-a">公式サイトの「無料で始める」ボタンからメールアドレスとパスワードを入力するだけで登録できます。Googleアカウントでのソーシャルログインにも対応しており、最短1分で利用開始できます。</div>
-  </div>
+ <div class="faq-item">
+ <div class="faq-q">イルシルの登録方法は？</div>
+ <div class="faq-a">公式サイトの「無料で始める」ボタンからメールアドレスとパスワードを入力するだけで登録できます。Googleアカウントでのソーシャルログインにも対応しており、最短1分で利用開始できます。</div>
+ </div>
 
-  <div class="faq-item">
-    <div class="faq-q">イルシルでPowerPointは作れますか？</div>
-    <div class="faq-a">はい、作れます。作成したスライドをPowerPoint形式（.pptx）でダウンロードでき、そのままPowerPointで開いて追加編集することも可能です。</div>
-  </div>
+ <div class="faq-item">
+ <div class="faq-q">イルシルでPowerPointは作れますか？</div>
+ <div class="faq-a">はい、作れます。作成したスライドをPowerPoint形式（.pptx）でダウンロードでき、そのままPowerPointで開いて追加編集することも可能です。</div>
+ </div>
 
-  <div class="faq-item">
-    <div class="faq-q">スマホからイルシルは使えますか？</div>
-    <div class="faq-a">スマートフォンのブラウザからもアクセスできます。ただし、スライドの細かい編集作業はPC・タブレットでの操作のほうが快適です。閲覧・確認用途ならスマホでも問題ありません。</div>
-  </div>
+ <div class="faq-item">
+ <div class="faq-q">スマホからイルシルは使えますか？</div>
+ <div class="faq-a">スマートフォンのブラウザからもアクセスできます。ただし、スライドの細かい編集作業はPC・タブレットでの操作のほうが快適です。閲覧・確認用途ならスマホでも問題ありません。</div>
+ </div>
 
-  <div class="faq-item">
-    <div class="faq-q">イルシルのテンプレートは何種類ありますか？</div>
-    <div class="faq-a">2026年時点で数百種類以上のテンプレートが用意されています。ビジネス・教育・マーケティング・提案書など用途別に整理されており、目的に合ったデザインをすぐに選べます。</div>
-  </div>
+ <div class="faq-item">
+ <div class="faq-q">イルシルのテンプレートは何種類ありますか？</div>
+ <div class="faq-a">2026年時点で数百種類以上のテンプレートが用意されています。ビジネス・教育・マーケティング・提案書など用途別に整理されており、目的に合ったデザインをすぐに選べます。</div>
+ </div>
 
-  <div class="faq-item">
-    <div class="faq-q">イルシルとCanvaどちらがいいですか？</div>
-    <div class="faq-a">AIによる文章からスライド自動生成を重視するならイルシル、デザインの自由度と豊富な画像素材を重視するならCanvaがおすすめです。プレゼン資料を素早く仕上げるならイルシルが有利です。詳しくは<a href="irusiru-comparison">AIプレゼンツール比較記事</a>をご覧ください。</div>
-  </div>
+ <div class="faq-item">
+ <div class="faq-q">イルシルとCanvaどちらがいいですか？</div>
+ <div class="faq-a">AIによる文章からスライド自動生成を重視するならイルシル、デザインの自由度と豊富な画像素材を重視するならCanvaがおすすめです。プレゼン資料を素早く仕上げるならイルシルが有利です。詳しくは<a href="irusiru-comparison">AIプレゼンツール比較記事</a>をご覧ください。</div>
+ </div>
 
-  <div class="faq-item">
-    <div class="faq-q">イルシルの有料プランはいくらですか？</div>
-    <div class="faq-a">パーソナルプランは月額1,848円（税込）、年間契約なら月額1,430円です。詳しい料金プランの比較は<a href="irusiru-pricing">イルシル料金プラン完全ガイド</a>で解説しています。</div>
-  </div>
+ <div class="faq-item">
+ <div class="faq-q">イルシルの有料プランはいくらですか？</div>
+ <div class="faq-a">パーソナルプランは月額1,848円（税込）、年間契約なら月額1,430円です。詳しい料金プランの比較は<a href="irusiru-pricing">イルシル料金プラン完全ガイド</a>で解説しています。</div>
+ </div>
 
-  <div class="faq-item">
-    <div class="faq-q">イルシルで作ったスライドは商用利用できますか？</div>
-    <div class="faq-a">有料プランを利用している場合は商用利用が可能です。無料トライアル中は商用利用が制限されます。使用する素材・テンプレートによって条件が異なる場合があるため、利用規約を必ずご確認ください。</div>
-  </div>
+ <div class="faq-item">
+ <div class="faq-q">イルシルで作ったスライドは商用利用できますか？</div>
+ <div class="faq-a">有料プランを利用している場合は商用利用が可能です。無料トライアル中は商用利用が制限されます。使用する素材・テンプレートによって条件が異なる場合があるため、利用規約を必ずご確認ください。</div>
+ </div>
 
-  <div class="faq-item">
-    <div class="faq-q">イルシルで画像を挿入できますか？</div>
-    <div class="faq-a">はい、できます。PCからのアップロードや内蔵素材ライブラリからの挿入が可能です。また、AIが自動で適切なイラストや図表を配置する機能も搭載されています。</div>
-  </div>
+ <div class="faq-item">
+ <div class="faq-q">イルシルで画像を挿入できますか？</div>
+ <div class="faq-a">はい、できます。PCからのアップロードや内蔵素材ライブラリからの挿入が可能です。また、AIが自動で適切なイラストや図表を配置する機能も搭載されています。</div>
+ </div>
 
-  <div class="faq-item">
-    <div class="faq-q">イルシルの解約方法は？</div>
-    <div class="faq-a">アカウントの設定画面（マイページ）からいつでも解約・プラン変更が可能です。解約後は次回更新日まで有料機能が利用できます。無料トライアル期間中の解約は料金なしで行えます。</div>
-  </div>
+ <div class="faq-item">
+ <div class="faq-q">イルシルの解約方法は？</div>
+ <div class="faq-a">アカウントの設定画面（マイページ）からいつでも解約・プラン変更が可能です。解約後は次回更新日まで有料機能が利用できます。無料トライアル期間中の解約は料金なしで行えます。</div>
+ </div>
 
-  <div class="faq-item">
-    <div class="faq-q">イルシルのAI生成でうまくスライドが作れないのですが？</div>
-    <div class="faq-a">プロンプト（入力テキスト）を具体的に書くことで精度が大幅に上がります。「誰に向けて」「何を」「何のために」「何枚で」という4つの要素を含めて入力しましょう。例：「中小企業の経営者向けに、DX支援サービスを提案する営業スライド10枚。導入実績・料金・スケジュールを含む」のように具体的に書くと、AI生成の精度が格段に向上します。</div>
-  </div>
+ <div class="faq-item">
+ <div class="faq-q">イルシルのAI生成でうまくスライドが作れないのですが？</div>
+ <div class="faq-a">プロンプト（入力テキスト）を具体的に書くことで精度が大幅に上がります。「誰に向けて」「何を」「何のために」「何枚で」という4つの要素を含めて入力しましょう。例：「中小企業の経営者向けに、DX支援サービスを提案する営業スライド10枚。導入実績・料金・スケジュールを含む」のように具体的に書くと、AI生成の精度が格段に向上します。</div>
+ </div>
 
-  <div class="faq-item">
-    <div class="faq-q">イルシルのテンプレートはどう選べばいいですか？</div>
-    <div class="faq-a">用途に合わせて選ぶのがポイントです。社内プレゼンにはシンプルなビジネス系、営業提案書にはインパクトのあるビジュアル系、セミナー資料には文字が大きいシンプル系がおすすめです。迷ったらまずAIで生成してからテンプレートを後で差し替えることもできます。</div>
-  </div>
+ <div class="faq-item">
+ <div class="faq-q">イルシルのテンプレートはどう選べばいいですか？</div>
+ <div class="faq-a">用途に合わせて選ぶのがポイントです。社内プレゼンにはシンプルなビジネス系、営業提案書にはインパクトのあるビジュアル系、セミナー資料には文字が大きいシンプル系がおすすめです。迷ったらまずAIで生成してからテンプレートを後で差し替えることもできます。</div>
+ </div>
 
-  <div class="faq-item">
-    <div class="faq-q">イルシルで作ったスライドをGoogleスライドで開けますか？</div>
-    <div class="faq-a">イルシルからPowerPoint形式（.pptx）でダウンロードしたファイルは、Googleスライドにアップロードして開くことができます。ただし、一部のフォントやレイアウトが変換時にずれる場合があるため、確認・微調整を行ってください。</div>
-  </div>
+ <div class="faq-item">
+ <div class="faq-q">イルシルで作ったスライドをGoogleスライドで開けますか？</div>
+ <div class="faq-a">イルシルからPowerPoint形式（.pptx）でダウンロードしたファイルは、Googleスライドにアップロードして開くことができます。ただし、一部のフォントやレイアウトが変換時にずれる場合があるため、確認・微調整を行ってください。</div>
+ </div>
 
-  <!-- h2: まとめ -->
-  <h2 id="summary">まとめ</h2>
-  <p>イルシルは、<strong>AIを活用してスライド作成の手間を大幅に削減できる国産Webサービス</strong>です。この記事では、アカウント登録からAIスライド生成5ステップ・プロンプトのコツ・テンプレート活用法・PowerPoint書き出しまで、初心者でも迷わないよう徹底解説しました。</p>
+ <!-- h2: まとめ -->
+ <h2 id="summary">まとめ</h2>
+ <p>イルシルは、<strong>AIを活用してスライド作成の手間を大幅に削減できる国産Webサービス</strong>です。この記事では、アカウント登録からAIスライド生成5ステップ・プロンプトのコツ・テンプレート活用法・PowerPoint書き出しまで、初心者でも迷わないよう徹底解説しました。</p>
 
-  <p>主なポイントをまとめると：</p>
-  <ul>
-    <li>登録はメールアドレスまたはGoogleアカウントで最短1分、クレジットカード不要</li>
-    <li><strong>AIスライド生成は5ステップ・約5分で完了</strong>（新規作成 > プロンプト入力 > テンプレート選択 > 微調整 > 書き出し）</li>
-    <li><strong>プロンプトは「誰に・何を・何のために・条件」の4要素</strong>を含めると精度が劇的に向上</li>
-    <li>テンプレートは数百種類以上。用途別に選び、後から差し替えも可能</li>
-    <li>PowerPoint形式（.pptx）への書き出しに対応</li>
-    <li>無料トライアルで基本機能を試してから有料プランを検討できる</li>
-  </ul>
+ <p>主なポイントをまとめると：</p>
+ <ul>
+ <li>登録はメールアドレスまたはGoogleアカウントで最短1分、クレジットカード不要</li>
+ <li><strong>AIスライド生成は5ステップ・約5分で完了</strong>（新規作成 > プロンプト入力 > テンプレート選択 > 微調整 > 書き出し）</li>
+ <li><strong>プロンプトは「誰に・何を・何のために・条件」の4要素</strong>を含めると精度が劇的に向上</li>
+ <li>テンプレートは数百種類以上。用途別に選び、後から差し替えも可能</li>
+ <li>PowerPoint形式（.pptx）への書き出しに対応</li>
+ <li>無料トライアルで基本機能を試してから有料プランを検討できる</li>
+ </ul>
 
-  <p>「スライド作成に毎回2~3時間かかっている」「デザインが苦手で見栄えのある資料が作れない」という方は、ぜひ一度イルシルを試してみてください。無料で始められるので、まず体験してから判断するのがおすすめです。</p>
+ <p>「スライド作成に毎回2~3時間かかっている」「デザインが苦手で見栄えのある資料が作れない」という方は、ぜひ一度イルシルを試してみてください。無料で始められるので、まず体験してから判断するのがおすすめです。</p>
 
-  <p>他のAIプレゼンツールとの比較や詳細なレビューは、以下の記事も参考にしてください。</p>
-  <ul>
-    <li><a href="irusiru-review">イルシルの評判・料金・機能を徹底レビュー</a></li>
-    <li><a href="irusiru-comparison">イルシル vs Gamma vs Canva AI｜AIプレゼンツール徹底比較</a></li>
-    <li><a href="irusiru-vs-gamma">イルシル vs Gamma 詳細比較</a></li>
-    <li><a href="irusiru-free-plan">【2026年最新】イルシル無料プランでできること・できないこと完全ガイド</a></li>
-    <li><a href="irusiru-pricing">イルシル料金プラン完全ガイド</a></li>
-    <li><a href="ai-presentation-tools">AIプレゼンテーションツール比較｜主要ツール徹底解説</a></li>
-  </ul>
+ <p>他のAIプレゼンツールとの比較や詳細なレビューは、以下の記事も参考にしてください。</p>
+ <ul>
+ <li><a href="irusiru-review">イルシルの評判・料金・機能を徹底レビュー</a></li>
+ <li><a href="irusiru-comparison">イルシル vs Gamma vs Canva AI｜AIプレゼンツール徹底比較</a></li>
+ <li><a href="irusiru-vs-gamma">イルシル vs Gamma 詳細比較</a></li>
+ <li><a href="irusiru-free-plan">【2026年最新】イルシル無料プランでできること・できないこと完全ガイド</a></li>
+ <li><a href="irusiru-pricing">イルシル料金プラン完全ガイド</a></li>
+ <li><a href="ai-presentation-tools">AIプレゼンテーションツール比較｜主要ツール徹底解説</a></li>
+ </ul>
 
-  <!-- CTA（末尾）グラデーション -->
-  <div class="cta-gradient">
-    <div class="cta-title">今すぐイルシルを無料で試してみよう</div>
-    <div class="cta-desc">クレジットカード不要。登録1分でAIスライド作成をすぐに体験できます。5分でプロ品質のスライドが完成。</div>
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+73EZAQ+5UMS+5YJRM" rel="nofollow noopener" target="_blank" class="cta-btn-white">イルシルを無料で始める</a>
-    <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4B7QWV+73EZAQ+5UMS+5YJRM" alt="">
-    <div class="cta-sub">※広告を含みます｜無料トライアルあり</div>
-  </div>
+ <!-- CTA（末尾）グラデーション -->
+ <div class="cta-gradient">
+ <div class="cta-title">今すぐイルシルを無料で試してみよう</div>
+ <div class="cta-desc">クレジットカード不要。登録1分でAIスライド作成をすぐに体験できます。5分でプロ品質のスライドが完成。</div>
+ <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+73EZAQ+5UMS+5YJRM" rel="nofollow noopener" target="_blank" class="cta-btn-white">イルシルを無料で始める</a>
+ <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4B7QWV+73EZAQ+5UMS+5YJRM" alt="">
+ <div class="cta-sub">※広告を含みます｜無料トライアルあり</div>
+ </div>
 
 </div><!-- /article-wrap -->
-  <!-- 忍者AdMax 記事下広告 -->
-  <div style="text-align:center;margin:24px auto;"><!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax --></div>
+ <!-- 忍者AdMax 記事下広告 -->
+ <div style="text-align:center;margin:24px auto;"><!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax --></div>
 
 <footer>
-  <div class="affiliate-disc">本サイトはアフィリエイト広告（A8.net等）を利用しています。</div>
-  <div class="footer-nav">
-    <a href="/">ホーム</a>
-    <a href="claude-review">Claudeレビュー</a>
-    <a href="chatgpt-review">ChatGPTレビュー</a>
-    <a href="/privacy-policy">プライバシーポリシー</a>
-  </div>
-  <p>&copy; 2026 AI navi</p>
+ <div class="affiliate-disc">本サイトはアフィリエイト広告（A8.net等）を利用しています。</div>
+ <div class="footer-nav">
+ <a href="/">ホーム</a>
+ <a href="claude-review">Claudeレビュー</a>
+ <a href="chatgpt-review">ChatGPTレビュー</a>
+ <a href="/privacy-policy">プライバシーポリシー</a>
+ </div>
+ <p>&copy; 2026 AI navi</p>
 </footer>
 
 <!-- スティッキーモバイルCTA -->
 <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+73EZAQ+5UMS+5YJRM" rel="nofollow noopener" target="_blank" style="position:fixed;bottom:0;left:0;right:0;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;text-align:center;padding:14px;font-weight:bold;font-size:0.95em;z-index:9999;text-decoration:none;display:none;" id="sticky-cta">
-  【クレカ不要】無料でスライドを自動生成 →
+ 【クレカ不要】無料でスライドを自動生成 →
 </a>
 <script>
 if(window.innerWidth <= 768) document.getElementById('sticky-cta').style.display='block';
