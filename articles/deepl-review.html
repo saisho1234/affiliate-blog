@@ -597,6 +597,69 @@
  .vs-table tr:nth-child(even) td { background: #f4f7fb; }
  .highlight { color: #0057c8; font-weight: 700; }
  .note { font-size: 0.85rem; color: #555; margin-top: 6px; }
+ /* チャット風吹き出しUI */
+ .chat-box {
+ display: flex;
+ gap: 14px;
+ align-items: flex-start;
+ margin: 28px 0;
+ }
+ .chat-avatar {
+ border-radius: 50%;
+ flex-shrink: 0;
+ object-fit: cover;
+ border: 2px solid #e2e8f0;
+ }
+ .chat-content {
+ flex: 1;
+ }
+ .chat-name {
+ display: block;
+ font-size: 0.82rem;
+ font-weight: 700;
+ color: #64748b;
+ margin-bottom: 4px;
+ }
+ .chat-bubble {
+ position: relative;
+ background: #f1f5f9;
+ border-radius: 0 16px 16px 16px;
+ padding: 16px 20px;
+ font-size: 0.95rem;
+ line-height: 1.8;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+ }
+ .chat-bubble::before {
+ content: "";
+ position: absolute;
+ top: 0;
+ left: -8px;
+ border-width: 0 8px 10px 0;
+ border-style: solid;
+ border-color: transparent #f1f5f9 transparent transparent;
+ }
+ .chat-bubble p { margin: 0; }
+ .chat-bubble.bubble-point {
+ background: #eff6ff;
+ border-left: 4px solid #3b82f6;
+ }
+ .chat-bubble.bubble-point::before {
+ border-color: transparent #eff6ff transparent transparent;
+ }
+ .chat-bubble.bubble-warn {
+ background: #fefce8;
+ border-left: 4px solid #eab308;
+ }
+ .chat-bubble.bubble-warn::before {
+ border-color: transparent #fefce8 transparent transparent;
+ }
+ .chat-bubble.bubble-recommend {
+ background: #f0fdf4;
+ border-left: 4px solid #22c55e;
+ }
+ .chat-bubble.bubble-recommend::before {
+ border-color: transparent #f0fdf4 transparent transparent;
+ }
  @media (max-width: 600px) {
  .cta-box { padding: 22px 14px; }
  .cta-btn { font-size: 0.92rem; padding: 11px 20px; }
@@ -604,6 +667,7 @@
  .compare-table th, .compare-table td,
  .price-table th, .price-table td,
  .vs-table th, .vs-table td { padding: 8px 8px; }
+ .chat-bubble { padding: 12px 14px; font-size: 0.9rem; }
  }
  </style>
 
@@ -765,6 +829,17 @@
  <div class="social-proof-box">
  <span class="proof-icon">&#x2B50;</span>
  <div><span class="proof-text">翻訳精度で世界No.1評価</span><br><span class="proof-sub">ビジネス・学術分野で200万人以上が愛用</span></div>
+ </div>
+
+ <!-- チャット吹き出し: 冒頭 -->
+ <div class="chat-box">
+ <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+ <div class="chat-content">
+ <span class="chat-name">小田 健真（AI navi編集長）</span>
+ <div class="chat-bubble bubble-point">
+ <p>私はDeepL Proを1年以上使っています。正直に言うと、無料版で十分な人もいます。この記事では、あなたがPro版に課金すべきかどうかを5つの観点で判断できるようにまとめました。</p>
+ </div>
+ </div>
  </div>
 
  <!-- 目次 -->
@@ -990,6 +1065,17 @@
  </div>
 
  <p>無料版の制限について詳しくは<a href="../articles/deepl-limit">DeepL「上限に達しました」の解除方法</a>をご覧ください。</p>
+
+ <!-- チャット吹き出し: 料金プラン比較の直前 -->
+ <div class="chat-box">
+ <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+ <div class="chat-content">
+ <span class="chat-name">小田 健真（AI navi編集長）</span>
+ <div class="chat-bubble">
+ <p>プランが3つあって迷いますよね。結論から言うと、個人ならStarterで十分。チームで使うならAdvancedがおすすめです。</p>
+ </div>
+ </div>
+ </div>
 
  <!-- Section 3 -->
  <h2 id="price">DeepL Pro 4プランの料金を完全比較【2026年9月最新】</h2>
@@ -1815,6 +1901,17 @@
  </div>
  </div>
 
+ <!-- チャット吹き出し: メリット・デメリット付近 -->
+ <div class="chat-box">
+ <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+ <div class="chat-content">
+ <span class="chat-name">小田 健真（AI navi編集長）</span>
+ <div class="chat-bubble bubble-warn">
+ <p>注意点として、Proに切り替えても翻訳精度自体は無料版と同じです。Proのメリットは文字数制限の解除・ファイル翻訳・データ非学習の3点です。</p>
+ </div>
+ </div>
+ </div>
+
  <!-- Section: デメリット -->
  <h2 id="demerit">DeepL Proのデメリット・注意点3つ</h2>
  <p>メリットの多いDeepL Proですが、契約前に知っておくべきデメリット・注意点もあります。</p>
@@ -2372,6 +2469,22 @@
  </ul>
 
  <p>まずは無料版を試して、「1,500文字では足りない」「PDFも翻訳したい」「機密文書を扱う」と感じたタイミングでProにアップグレードするのが最も無駄のない進め方です。</p>
+
+ <!-- チャット吹き出し: まとめ付近 -->
+ <div class="chat-box">
+ <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+ <div class="chat-content">
+ <span class="chat-name">小田 健真（AI navi編集長）</span>
+ <div class="chat-bubble bubble-recommend">
+ <p>迷っているなら、まず30日間の無料トライアルを使ってみてください。期間内に解約すれば1円もかかりません。私はトライアル中に「もう無料版には戻れない」と思いました。</p>
+ </div>
+ </div>
+ </div>
+
+ <div style="text-align:center;margin:20px 0;">
+ <a href="https://www.deepl.com/pro?cta=header-prices" class="cta-btn" rel="nofollow noopener" target="_blank" style="background:#22c55e;color:#fff;font-size:1.1rem;padding:16px 36px;border-radius:10px;display:inline-block;text-decoration:none;font-weight:700;box-shadow:0 4px 12px rgba(34,197,94,0.3);">DeepL Proを30日間無料で試す</a>
+ <p style="font-size:0.8rem;color:#6b7280;margin-top:8px;">※ 期間内に解約すれば費用は一切かかりません</p>
+ </div>
 
  <!-- CTA: 末尾 -->
  <div class="cta-box">
