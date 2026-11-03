@@ -64,9 +64,9 @@
   const path = location.pathname;
   let idx = 0;
   if (path.includes('plaud') || path.includes('ic-recorder')) idx = 4;
-  else if (path.includes('notta') || path.includes('transcri') || path.includes('memo') || path.includes('voice') || path.includes('record') || path.includes('zenchord')) idx = 1;
+  else if (path.includes('notta') || path.includes('transcri') || path.includes('memo') || path.includes('voice') || path.includes('record') || path.includes('zenchord') || path.includes('meeting-minutes') || path.includes('english-meeting')) idx = 1;
   else if (path.includes('awarefy') || path.includes('mental')) idx = 2;
-  else if (path.includes('irusiru') || path.includes('slide') || path.includes('presentation')) idx = 3;
+  else if (path.includes('irusiru') || path.includes('slide') || path.includes('presentation') || path.includes('design-tools')) idx = 3;
   else if (path.includes('stable-diffusion') || path.includes('image') || path.includes('conoha') || path.includes('midjourney') || path.includes('firefly') || path.includes('ai-image')) idx = 0;
   else if (path.includes('vpn') || path.includes('security') || path.includes('privacy') || path.includes('ablenet')) idx = 5;
   else if (path.includes('deepl')) {
