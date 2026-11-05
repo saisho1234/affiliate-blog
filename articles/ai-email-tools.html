@@ -39,12 +39,9 @@
     {"@type":"Question","name":"GmailとAIを連携できますか？","acceptedAnswer":{"@type":"Answer","text":"GmailにはGoogle Geminiが統合されており、メール作成・返信をAIで補助できます。またChromeの拡張機能を使えば、ChatGPTやClaudeなど他のAIツールもGmailと連携可能です。"}},
     {"@type":"Question","name":"AIメール作成ツールに機密情報を入力しても大丈夫ですか？","acceptedAnswer":{"@type":"Answer","text":"顧客の個人情報・社外秘の取引条件・未公表の経営情報などの入力は避けるべきです。多くのAIサービスは入力データを学習に使用する可能性があります。機密情報は伏せた上で使用し、企業利用の場合は情報セキュリティポリシーを必ず確認してください。"}},
     {"@type":"Question","name":"英語メールの作成にも使えますか？","acceptedAnswer":{"@type":"Answer","text":"ChatGPT・Claude・Geminiは英語メールにも非常に高い品質で対応しています。『ビジネスフォーマルな英語で』『ネイティブに自然に聞こえるように』など細かい指定も可能です。"}},
-    {"@type":"Question","name":"AIメールツールを使いすぎると問題がありますか？","acceptedAnswer":{"@type":"Answer","text":"過度に依存すると自分で文章を書く力が低下するリスクがあります。AIはあくまで補助ツールとして使い、自分で文章の方針を考えてからAIに仕上げてもらうスタイルが理想的です。"}},
     {"@type":"Question","name":"クレーム対応・お詫びメールにAIは使えますか？","acceptedAnswer":{"@type":"Answer","text":"はい、デリケートなお詫びメールこそAIが力を発揮します。状況・対応内容・トーンの3点を明確に指示すると、誠意が伝わる謝罪文を生成してくれます。特にClaudeはデリケートな文章の品質が非常に高くおすすめです。"}},
     {"@type":"Question","name":"おすすめのAIメール作成ツールはどれですか？","acceptedAnswer":{"@type":"Answer","text":"日本語ビジネスメールに最もおすすめなのはValue AI Writerです。無料で始めたい方はChatGPTまたはClaude、Gmail連携が重要な方はGemini、大量メール生成にはZENCHORD1がおすすめです。"}},
-    {"@type":"Question","name":"AIでお詫び・謝罪メールを書くコツは？","acceptedAnswer":{"@type":"Answer","text":"AIにお詫びメールを書かせるコツは、(1)何が起きたか具体的に伝える、(2)対応策と期限を明示する、(3)言い訳がましくならないトーンを指定する、の3点です。プロンプト例：『製品の初期不良でクレームが来ました。代替品を3日以内に発送することを伝え、誠意を持って謝罪し再発防止策にも触れるメールを作成してください。言い訳は不要です。』Claudeが特にデリケートなメールに強くおすすめです。"}},
-    {"@type":"Question","name":"AIで英語ビジネスメールを作るにはどうすればいい？","acceptedAnswer":{"@type":"Answer","text":"ChatGPT・Claude・Geminiのいずれかに日本語で指示を出し、英語メールを生成させる方法が最も簡単です。プロンプト例：『海外の取引先に納期を1週間延長してほしいと依頼する英語メールを、ビジネスフォーマルな文体で作成してください。理由は部材の調達遅延です。』ネイティブチェックが不安な場合は生成後にDeepLで日本語に逆翻訳して意味を確認するのがおすすめです。"}},
-    {"@type":"Question","name":"AIメールの議事録やメモも自動化できますか？","acceptedAnswer":{"@type":"Answer","text":"はい、メール作成だけでなく会議の議事録やメモもAIで自動化できます。Nottaなどの文字起こしツールを使えば、会議やインタビューを録音するだけでAIが自動で議事録を作成します。作成した議事録をもとにフォローアップメールをAIに書かせるワークフローが特に効率的です。"}}
+    {"@type":"Question","name":"AIで英語ビジネスメールを作るにはどうすればいい？","acceptedAnswer":{"@type":"Answer","text":"ChatGPT・Claude・Geminiのいずれかに日本語で指示を出し、英語メールを生成させる方法が最も簡単です。プロンプト例：『海外の取引先に納期を1週間延長してほしいと依頼する英語メールを、ビジネスフォーマルな文体で作成してください。理由は部材の調達遅延です。』ネイティブチェックが不安な場合は生成後にDeepLで日本語に逆翻訳して意味を確認するのがおすすめです。"}}
   ]}
   </script>
 </head>
@@ -778,22 +775,6 @@
     </div>
     <p>英語メールが不安な場合は、生成された英文を<a href="../articles/deepl-review">DeepL</a>で日本語に逆翻訳して意味を確認するのがおすすめです。</p>
 
-    <!-- 追加FAQ 3問 -->
-    <h2 id="faq-extra">追加FAQ 3問</h2>
-    <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q">Q16. AIでお詫び・謝罪メールを書くコツは？</div>
-        <div class="faq-a">AIにお詫びメールを書かせるコツは3つです。(1) 何が起きたか具体的に伝える、(2) 対応策と期限を明示する、(3)「言い訳がましくならないトーン」と明確に指定する。特にClaudeはデリケートなメールの品質が非常に高く、誠意が伝わる文章を生成してくれます。上記のプロンプト実例2をそのままコピーして使うのがおすすめです。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Q17. AIで英語ビジネスメールを作る方法は？</div>
-        <div class="faq-a">ChatGPT・Claude・Geminiに日本語で指示を出し、英語メールを生成させる方法が最も簡単です。「ビジネスフォーマルな英語で」「ネイティブに自然に聞こえるように」と細かい指定も可能です。生成後はDeepLで日本語に逆翻訳して意味を確認するのが安心です。上記のプロンプト実例3を参考にしてください。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Q18. AIメール作成と議事録の自動化を組み合わせられますか？</div>
-        <div class="faq-a">はい、会議の議事録をAIで自動作成し、その内容をもとにフォローアップメールをAIに書かせるワークフローが非常に効率的です。NottaなどのAI文字起こしツールで会議を録音→議事録を自動生成→ChatGPTやClaudeでフォローアップメールを作成、という流れで<strong>会議後の作業を90%削減</strong>できます。</div>
-      </div>
-    </div>
 
     <!-- Notta CTA -->
     <div style="background:linear-gradient(135deg,#f0f7ff,#e8f4fd);border:2px solid #4A90D9;border-radius:12px;padding:24px;margin:28px 0;text-align:center;">
