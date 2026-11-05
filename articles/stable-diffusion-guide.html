@@ -24,7 +24,7 @@
     "@type": "Article",
     "headline": "Stable Diffusion × Google Colab 完全ガイド【2026年最新】使えない時の対処法",
     "datePublished": "2026-07-05",
-    "dateModified": "2026-10-23",
+    "dateModified": "2026-11-05",
     "publisher": { "@type": "Organization", "name": "AI navi" }
   }
   </script>
@@ -45,128 +45,78 @@
       },
       {
         "@type": "Question",
-        "name": "2026年もGoogle ColabでStable Diffusionは使える？",
-        "acceptedAnswer": {"@type": "Answer", "text": "2026年8月現在、Google Colabの無料プランでもStable Diffusion（AUTOMATIC1111・ComfyUI）は動作確認済みです。ただしGoogleはColabの利用ポリシーを随時変更しているため、将来的に制限が入る可能性はあります。無料枠での利用が不安定な場合はColab Pro、またはConoHa AI Canvasなど専用のクラウドサービスが安心です。"}
-      },
-      {
-        "@type": "Question",
         "name": "Stable Diffusionは無料で使えますか？",
-        "acceptedAnswer": {"@type": "Answer", "text": "はい、Stable Diffusion本体はオープンソースで完全無料です。ローカルにインストールすれば生成コストはかかりません。PCスペックが足りない場合はGoogle Colab（無料枠あり）やConoHa AI Canvasなどのクラウドサービスを利用する方法もあります。"}
+        "acceptedAnswer": {"@type": "Answer", "text": "はい、Stable Diffusion本体はオープンソースで完全無料です。ローカルにインストールすれば生成コストはかかりません。PCスペックが足りない場合はGoogle Colab（無料枠あり）やConoHa AI Canvas（月550円〜）などのクラウドサービスも利用できます。"}
       },
       {
         "@type": "Question",
         "name": "ローカル環境に必要なPCスペックは？",
-        "acceptedAnswer": {"@type": "Answer", "text": "最低限NVIDIA GPU（VRAM 4GB以上）・RAM 8GB・ストレージ20GB以上が必要です。快適に使うにはVRAM 8GB以上（RTX 3060以上）・RAM 16GB以上を推奨します。SDXLを使う場合はVRAM 8GB以上が必須です。Apple Silicon MacではMPS経由で動作しますが速度はNVIDIA GPUに劣ります。"}
+        "acceptedAnswer": {"@type": "Answer", "text": "最低限NVIDIA GPU（VRAM 4GB以上）・RAM 8GB・ストレージ20GB以上が必要です。快適に使うにはVRAM 8GB以上（RTX 3060以上）・RAM 16GB以上を推奨します。SDXLを使う場合はVRAM 8GB以上が必須です。"}
       },
       {
         "@type": "Question",
         "name": "Stable Diffusionで生成した画像は商用利用できる？",
-        "acceptedAnswer": {"@type": "Answer", "text": "使用するモデルのライセンスによります。SD 1.5やSDXLの多くはCreativeML Open RAIL-Mライセンスで商用利用可能です。ただしモデルごとにライセンスが異なるため、Civitaiのモデルページやreadmeで必ず確認してください。SD 3系はStability AIのCommunity Licenseに従います。生成画像を販売・広告等に使う場合は、モデルのライセンスとプラットフォームの利用規約の両方を確認しましょう。"}
+        "acceptedAnswer": {"@type": "Answer", "text": "使用するモデルのライセンスによります。SD 1.5やSDXLの多くはCreativeML Open RAIL-Mライセンスで商用利用可能です。ただしモデルごとにライセンスが異なるため、Civitaiのモデルページで必ず確認してください。"}
       },
       {
         "@type": "Question",
         "name": "MidjourneyとStable Diffusionの違いは？",
-        "acceptedAnswer": {"@type": "Answer", "text": "Midjourneyはブラウザで手軽に使える有料サービス（月$10〜）で、初心者でも簡単に高品質画像を生成できます。Stable Diffusionは無料でオープンソースですが、高性能GPU（VRAM 8GB以上推奨）が必要で、セットアップにやや手間がかかります。一方でモデル・LoRA・拡張機能によるカスタマイズ性はStable Diffusionが圧倒的に上です。"}
+        "acceptedAnswer": {"@type": "Answer", "text": "Midjourneyはブラウザで手軽に使える有料サービス（月$10〜）で初心者でも高品質画像を生成できます。Stable Diffusionは無料でオープンソースですが高性能GPUが必要です。カスタマイズ性はStable Diffusionが圧倒的に上です。"}
       },
       {
         "@type": "Question",
         "name": "DALL-E 3とStable Diffusionの違いは？",
-        "acceptedAnswer": {"@type": "Answer", "text": "DALL-E 3はOpenAIが提供するAI画像生成で、ChatGPT Plus（月$20）経由で利用できます。日本語プロンプトの理解力が非常に高く、テキスト描写も得意です。Stable Diffusionは無料・オープンソースでカスタマイズ性が高い反面、環境構築が必要です。手軽さならDALL-E 3、自由度ならStable Diffusionが優れています。"}
+        "acceptedAnswer": {"@type": "Answer", "text": "DALL-E 3はChatGPT Plus（月$20）経由で利用できる有料サービスです。日本語プロンプト理解力が高く手軽に使えます。Stable Diffusionは無料・オープンソースでカスタマイズ性が高い反面、環境構築が必要です。"}
       },
       {
         "@type": "Question",
-        "name": "Stable Diffusionは日本語プロンプトで使える？",
-        "acceptedAnswer": {"@type": "Answer", "text": "基本的には英語プロンプトが推奨されます。日本語でも動作しますが精度が下がることが多いです。DeepLやChatGPTで英語に翻訳してからプロンプトに入力すると品質が向上します。SD 3以降はプロンプト理解度が向上し、日本語の精度も改善されています。"}
+        "name": "日本語プロンプトは使える？",
+        "acceptedAnswer": {"@type": "Answer", "text": "基本的には英語プロンプトが推奨されます。DeepLやChatGPTで英語に翻訳してから入力すると品質が向上します。SD 3以降は日本語の精度も改善されています。"}
       },
       {
         "@type": "Question",
         "name": "インストールは難しい？初心者でもできる？",
-        "acceptedAnswer": {"@type": "Answer", "text": "AUTOMATIC1111を使えば比較的手順が整理されていますが、Pythonのインストールやコマンドライン操作が必要なため初心者にはハードルがあります。まずはGoogle Colabでノートブックのセルを実行するだけで試せるため、初心者にはColab経由が最初のステップとしておすすめです。"}
+        "acceptedAnswer": {"@type": "Answer", "text": "AUTOMATIC1111を使えば比較的手順が整理されていますが、Pythonとコマンドライン操作が必要なため初心者にはハードルがあります。まずはGoogle Colabで試すのがおすすめです。"}
       },
       {
         "@type": "Question",
         "name": "2026年おすすめのモデルは？",
-        "acceptedAnswer": {"@type": "Answer", "text": "汎用性・品質ならSDXL（Stable Diffusion XL）が2026年現在も主流でおすすめです。さらに高品質を求めるならSD 3.5 Mediumも選択肢に入ります。アニメ・イラスト系ならAnythingV5、リアル系ならRealisticVision、ファンタジー系ならDreamShaperが人気です。Civitaiで多数のモデルを無料でダウンロードできます。"}
+        "acceptedAnswer": {"@type": "Answer", "text": "汎用性・品質ならSDXLが2026年現在も主流です。アニメ・イラスト系ならAnythingV5、リアル系ならRealisticVision、ファンタジー系ならDreamShaperが人気です。Civitaiで多数のモデルを無料でダウンロードできます。"}
       },
       {
         "@type": "Question",
         "name": "プロンプトの書き方のコツは？",
-        "acceptedAnswer": {"@type": "Answer", "text": "基本構造は「被写体 + スタイル + 背景・環境 + 品質キーワード」です。品質を上げるには「masterpiece, best quality, ultra-detailed, 8k」などを末尾に追加します。重要な要素ほど前に配置し、ネガティブプロンプトで「lowres, bad anatomy, blurry」など不要な要素を除外するのがポイントです。重み付け（word:1.2）も活用しましょう。"}
-      },
-      {
-        "@type": "Question",
-        "name": "生成した画像の著作権はどうなる？",
-        "acceptedAnswer": {"@type": "Answer", "text": "2026年現在、日本の著作権法ではAI生成画像の著作権の扱いが明確に定まっていません。一般的にはモデルのライセンスに従えば生成画像の利用は問題ないとされていますが、商用利用する場合はモデルのライセンス・利用規約を必ず確認してください。著作権侵害のリスクを避けるため、学習データに既存の著作物が含まれるモデルには注意が必要です。"}
-      },
-      {
-        "@type": "Question",
-        "name": "スマホでStable Diffusionは使える？",
-        "acceptedAnswer": {"@type": "Answer", "text": "スマホへのローカルインストールは現実的ではありません。ただしGoogle ColabやConoHa AI Canvasなどのクラウド型サービスはブラウザで操作できるため、スマホからでも利用可能です。Colab無料プランはスマホのブラウザからでもアクセスできます。"}
+        "acceptedAnswer": {"@type": "Answer", "text": "基本構造は「被写体 + スタイル + 背景・環境 + 品質キーワード」です。品質を上げるには「masterpiece, best quality, ultra-detailed, 8k」などを末尾に追加します。ネガティブプロンプトで「lowres, bad anatomy, blurry」など不要な要素を除外するのがポイントです。"}
       },
       {
         "@type": "Question",
         "name": "AUTOMATIC1111とComfyUIのどちらがおすすめ？",
-        "acceptedAnswer": {"@type": "Answer", "text": "初心者にはAUTOMATIC1111がおすすめです。シンプルなフォーム形式のUIで、設定項目がわかりやすく配置されています。ComfyUIはノードベースのワークフロー設計で上級者向けですが、複雑な処理の自動化や高速生成が可能です。まずAUTOMATIC1111で基本を学び、慣れたらComfyUIに移行するのがスムーズです。"}
+        "acceptedAnswer": {"@type": "Answer", "text": "初心者にはAUTOMATIC1111がおすすめです。シンプルなフォーム形式で直感的に操作できます。ComfyUIはノードベースで上級者向けですが、複雑なワークフロー自動化が可能です。"}
       },
       {
         "@type": "Question",
-        "name": "SDXL TurboとSDXLの違いは？",
-        "acceptedAnswer": {"@type": "Answer", "text": "SDXL Turboは通常のSDXLを高速化したモデルで、1〜4ステップで画像を生成できます（通常SDXLは20〜30ステップ必要）。生成速度は5〜10倍高速ですが、解像度は512x512が基本でSDXLの1024x1024より低くなります。プロンプトの試行錯誤やラフ生成に向いており、最終出力にはSDXLやSD 3.5の方が高品質です。"}
-      },
-      {
-        "@type": "Question",
-        "name": "FLUX.1とStable Diffusionの違いは？",
-        "acceptedAnswer": {"@type": "Answer", "text": "FLUX.1はStability AIの元メンバーが設立したBlack Forest Labsが開発した画像生成モデルです。FLUX.1 schnellはApache 2.0ライセンスで完全に商用利用可能で、1〜4ステップの高速生成に対応します。Stable Diffusionとは開発元・アーキテクチャが異なりますが、ComfyUIで利用でき、2026年現在SDXLやSD 3.5と並ぶ選択肢として注目されています。"}
-      },
-      {
-        "@type": "Question",
-        "name": "2026年もGoogle ColabでStable Diffusionは無料で使えますか？",
-        "acceptedAnswer": {"@type": "Answer", "text": "はい、2026年8月現在もGoogle Colabの無料プランでStable Diffusionが動作することを確認しています。無料枠ではNVIDIA T4 GPU（VRAM 15GB）が使え、SDXL・SD 3.5 Mediumも動作します。ただし1日あたりの利用時間に上限があり、混雑時はGPUが割り当てられない場合があります。安定して毎日使いたい場合はColab Pro（月$9.99）またはConoHa AI Canvas（月550円〜）の利用を検討してください。"}
-      },
-      {
-        "@type": "Question",
-        "name": "Stable DiffusionをGoogle Colabで無料で使う方法は？",
-        "acceptedAnswer": {"@type": "Answer", "text": "Google Colabにアクセスし、Googleアカウントでログイン → ランタイムを「T4 GPU」に設定 → AUTOMATIC1111のColabノートブックを開いて上から順にセルを実行するだけです。初回は5〜10分のセットアップ後、ブラウザ上でWebUIが操作できます。Google Driveをマウントしてモデルを保存しておくと、次回セッション開始時も素早く再開できます。"}
-      },
-      {
-        "@type": "Question",
-        "name": "Stable Diffusion Google Colabが使えない場合の代替手段は？",
-        "acceptedAnswer": {"@type": "Answer", "text": "Colabが使えない場合の代替手段は主に3つです。(1) ConoHa AI Canvas（月550円〜）: 国内サービスで安定性が高く、ブラウザだけで商用利用OKの高品質画像生成が可能。(2) Colab Pro（月$9.99）: 無料枠より優先的にGPUが割り当てられ安定して利用できる。(3) ローカル環境構築: NVIDIA GPU（VRAM 8GB以上）があれば完全無料・無制限で利用可能。"}
-      },
-      {
-        "@type": "Question",
-        "name": "Stable DiffusionはMacで使えますか？",
-        "acceptedAnswer": {"@type": "Answer", "text": "Apple Silicon搭載Macで動作しますが、NVIDIA GPU搭載PCと比べて3〜10倍遅くなります。快適に使いたい場合はGoogle Colabなどのクラウドサービスの利用を推奨します。"}
-      },
-      {
-        "@type": "Question",
-        "name": "img2imgとtxt2imgの違いは？",
-        "acceptedAnswer": {"@type": "Answer", "text": "txt2imgはテキスト（プロンプト）のみで画像を生成します。img2imgは既存の画像+テキストを入力し、元画像をベースに新しい画像を生成します。スケッチからリアル画像を作りたい場合などに便利です。"}
-      },
-      {
-        "@type": "Question",
-        "name": "Stable Diffusionで生成した画像をSNSに投稿しても大丈夫？",
-        "acceptedAnswer": {"@type": "Answer", "text": "使用するモデルのライセンスに依存します。標準のSD 1.5やSDXLはCreativeML Open RAIL-Mライセンスで、商用利用も可能です。ただし、一部のファインチューンモデルは非商用に限定されている場合があるため、利用前にライセンスを確認してください。"}
-      },
-      {
-        "@type": "Question",
-        "name": "ForgeとAutomatic1111（A1111）どちらを使うべき？",
-        "acceptedAnswer": {"@type": "Answer", "text": "新規ユーザーにはForgeを推奨します。A1111をベースに高速化・省メモリ化されており、VRAM 6GB以下のGPUでも快適に動作します。既にA1111に慣れている場合は移行の必要はありません。"}
+        "name": "スマホでStable Diffusionは使える？",
+        "acceptedAnswer": {"@type": "Answer", "text": "スマホへのローカルインストールは現実的ではありません。Google ColabやConoHa AI Canvasなどのクラウド型サービスはブラウザで操作できるため、スマホからでも利用可能です。"}
       },
       {
         "@type": "Question",
         "name": "LoRAとは何ですか？",
-        "acceptedAnswer": {"@type": "Answer", "text": "Low-Rank Adaptationの略で、少量のデータで特定のスタイルやキャラクターを学習させる技術です。ベースモデルに追加して使用し、アニメ調・写真調など特定の画風を再現できます。CivitAIなどで多数の無料LoRAが公開されています。"}
+        "acceptedAnswer": {"@type": "Answer", "text": "Low-Rank Adaptationの略で、少量のデータで特定のスタイルやキャラクターを学習させる技術です。ベースモデルに追加して使用し、アニメ調・写真調など特定の画風を再現できます。CivitAIで多数の無料LoRAが公開されています。"}
       },
       {
         "@type": "Question",
-        "name": "Google ColabでStable Diffusionは使えなくなった？",
-        "acceptedAnswer": {"@type": "Answer", "text": "いいえ、2026年9月現在もGoogle Colabの無料プランでStable Diffusionは利用可能です。過去にColabがSD関連ノートブックの実行を制限した時期がありましたが、現在は解除されています。ただしGoogleはポリシーを随時変更するため、無料枠でGPUが割り当てられない場合は時間帯を変えて再試行するか、Colab Pro（月$9.99）やConoHa AI Canvas（月550円〜）などの代替サービスを検討してください。"}
+        "name": "FLUX.1とStable Diffusionの違いは？",
+        "acceptedAnswer": {"@type": "Answer", "text": "FLUX.1はBlack Forest Labsが開発した画像生成モデルです。Apache 2.0ライセンスで完全商用利用可能で、1〜4ステップの高速生成に対応します。ComfyUIで利用でき、2026年現在SDXLと並ぶ選択肢として注目されています。"}
       },
       {
         "@type": "Question",
-        "name": "Stable Diffusionを無料で使う方法は？",
-        "acceptedAnswer": {"@type": "Answer", "text": "Stable Diffusionを無料で使う方法は主に2つあります。(1) Google Colab（無料プラン）: Googleアカウントがあればブラウザだけで利用可能。T4 GPUが無料で割り当てられ、SDXLやSD 3.5も動作します。(2) ローカル環境: NVIDIA GPU（VRAM 6GB以上推奨）搭載のPCがあれば、AUTOMATIC1111やComfyUIをインストールして完全無料・無制限で生成できます。初心者にはGoogle Colabから始めるのがおすすめです。"}
+        "name": "ForgeとAutomatic1111どちらを使うべき？",
+        "acceptedAnswer": {"@type": "Answer", "text": "新規ユーザーにはForgeを推奨します。A1111をベースに高速化・省メモリ化されており、VRAM 6GB以下のGPUでも快適に動作します。UIはA1111とほぼ同じなので移行も簡単です。"}
+      },
+      {
+        "@type": "Question",
+        "name": "Google ColabでStable Diffusionが使えない場合の対処法は？",
+        "acceptedAnswer": {"@type": "Answer", "text": "主な代替手段は3つです。(1) ConoHa AI Canvas（月550円〜）: 国内サービスで安定性が高くブラウザだけで利用可能。(2) Colab Pro（月$9.99）: 優先的にGPUが割り当てられる。(3) ローカル環境構築: NVIDIA GPU（VRAM 8GB以上）があれば完全無料・無制限で利用可能。"}
       }
     ]
   }
@@ -391,6 +341,23 @@
 <div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;" class="sp-only"><p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p><!-- admax --><script src="https://adm.shinobi.jp/s/b8872443f18589de45163a9a558d01fd"></script><!-- admax --></div>
 
   <div class="article-body">
+
+    <!-- UIモックカード: Stable Diffusion -->
+    <div style="border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin:24px 0;box-shadow:0 4px 16px rgba(0,0,0,0.08);">
+      <div style="background:#f8fafc;padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #e2e8f0;">
+        <div style="display:flex;gap:5px;"><div style="width:12px;height:12px;border-radius:50%;background:#ff5f57;"></div><div style="width:12px;height:12px;border-radius:50%;background:#febc2e;"></div><div style="width:12px;height:12px;border-radius:50%;background:#28c840;"></div></div>
+        <div style="background:#fff;border-radius:4px;padding:3px 10px;font-size:0.75em;color:#94a3b8;flex:1;border:1px solid #e2e8f0;">colab.research.google.com / stability.ai</div>
+      </div>
+      <div style="background:#fff;padding:24px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+          <div style="width:56px;height:56px;background:#4F46E5;border-radius:12px;display:flex;align-items:center;justify-content:center;">
+            <span style="color:#fff;font-size:1.5em;font-weight:800;">SD</span>
+          </div>
+          <div><div style="font-size:1.2em;font-weight:700;">Stable Diffusion</div><div style="font-size:0.85em;color:#64748b;">オープンソース画像生成AI（Google Colab / ローカル対応）</div></div>
+        </div>
+        <div style="background:#f8fafc;border-radius:8px;padding:12px 16px;font-size:0.9em;line-height:1.8;">✓ 完全無料・オープンソースで商用利用可（モデルによる）<br>✓ Google Colabでインストール不要・ブラウザだけで利用可能<br>✓ SDXL・SD 3.5・FLUX.1など最新モデルに対応</div>
+      </div>
+    </div>
 
     <!-- ===== 1. Stable Diffusionとは？ ===== -->
     <h2 id="what">Stable Diffusionとは？</h2>
@@ -1565,6 +1532,24 @@ beautiful anime girl, blue hair, sunset background, high quality, detailed, 8k</
   <a href="/articles/ai-image-generation" style="color:#1a73e8;text-decoration:none;font-weight:500;">→ AI画像生成ツール比較｜Stable Diffusion以外の選択肢も</a>
 </div>
 
+    <!-- チャット形式Q&A -->
+    <div class="chat-box">
+      <img src="/images/author-avatar.png" alt="読者" class="chat-avatar" width="52" height="52" loading="lazy">
+      <div class="chat-content"><div class="chat-name">読者からの質問</div><div class="chat-bubble">Stable Diffusionって結局、パソコンが古いと無理ですか？</div></div>
+    </div>
+    <div class="chat-box" style="justify-content:flex-end;">
+      <div class="chat-content" style="align-items:flex-end;"><div class="chat-name" style="text-align:right;">小田 健真（筆者）</div><div class="chat-bubble bubble-recommend">古いPCでもGoogle Colabを使えば問題ありません！ブラウザさえあれば無料のGPUを借りて動かせるので、自分のPC性能は関係なし。ローカル環境にこだわらなければ今日からでも始められますよ。</div></div>
+      <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+    </div>
+    <div class="chat-box">
+      <img src="/images/author-avatar.png" alt="読者" class="chat-avatar" width="52" height="52" loading="lazy">
+      <div class="chat-content"><div class="chat-name">読者からの質問</div><div class="chat-bubble">生成した画像って商用利用できるんですか？SNSや仕事に使いたいんですが。</div></div>
+    </div>
+    <div class="chat-box" style="justify-content:flex-end;">
+      <div class="chat-content" style="align-items:flex-end;"><div class="chat-name" style="text-align:right;">小田 健真（筆者）</div><div class="chat-bubble bubble-recommend">基本的にStable Diffusionで生成した画像は商用利用OKです。ただし使用したモデルのライセンスを必ず確認してください。Civitaiからダウンロードしたモデルは商用禁止のものもあります。公式モデル（SDXL等）はCreativeML OpenRAILライセンスで商用利用可。</div></div>
+      <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+    </div>
+
     <!-- ===== 17. まとめ ===== -->
     <h2 id="summary">まとめ</h2>
     <p>Stable Diffusionは、無料・高カスタマイズ性・無制限生成という唯一無二のメリットを持つ画像生成AIです。<strong>Google Colabを使えばPCスペックに関係なく無料で始められる</strong>のが最大の魅力です。</p>
@@ -1845,5 +1830,6 @@ beautiful anime girl, blue hair, sunset background, high quality, detailed, 8k</
     ]
   }
   </script>
+<script src="/sidebar.js"></script>
 </body>
 </html>
