@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepL Chrome拡張機能の使い方【2026年最新】インストール・設定・便利機能を解説 | AI navi</title>
+  <meta name="description" content="DeepLのChrome拡張機能の使い方をスクリーンショット付きで解説。インストール方法・テキスト選択翻訳・ページ翻訳・ショートカットキーまで初心者向けに完全ガイド。">
+  <meta name="keywords" content="DeepL Chrome拡張, DeepL 拡張機能, DeepL 使い方, DeepL インストール, DeepL ショートカット, DeepL 翻訳 Chrome">
+  <link rel="canonical" href="https://ai-navi.app/articles/deepl-chrome-extension">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="DeepL Chrome拡張機能の使い方【2026年最新】インストール・設定・便利機能を解説">
+  <meta property="og:description" content="DeepLのChrome拡張機能の使い方をスクリーンショット付きで解説。インストール方法・テキスト選択翻訳・ページ翻訳・ショートカットキーまで初心者向けに完全ガイド。">
+  <meta property="og:url" content="https://ai-navi.app/articles/deepl-chrome-extension">
+  <meta property="og:image" content="https://ai-navi.app/og-image.png">
+  <meta property="og:site_name" content="AI navi">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ai-navi.app/og-image.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "DeepL Chrome拡張機能の使い方【2026年最新】インストール・設定・便利機能を解説",
+    "image": "https://ai-navi.app/og-image.png",
+    "datePublished": "2026-11-07",
+    "dateModified": "2026-11-07",
+    "author": { "@type": "Person", "name": "小田 健真", "url": "https://ai-navi.app/about" },
+    "publisher": { "@type": "Organization", "name": "AI navi", "logo": { "@type": "ImageObject", "url": "https://ai-navi.app/og-image.png" } },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ai-navi.app/articles/deepl-chrome-extension" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://ai-navi.app/"},
+      {"@type": "ListItem", "position": 2, "name": "AIツール比較", "item": "https://ai-navi.app/"},
+      {"@type": "ListItem", "position": 3, "name": "DeepL Chrome拡張機能の使い方", "item": "https://ai-navi.app/articles/deepl-chrome-extension"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"DeepL Chrome拡張は無料で使えますか？","acceptedAnswer":{"@type":"Answer","text":"はい、基本機能は無料で使えます。月5,000文字まで翻訳無料です。それ以上使う場合はDeepL Proへのアップグレードが必要です。"}},
+    {"@type":"Question","name":"DeepL Chrome拡張のインストール方法を教えてください","acceptedAnswer":{"@type":"Answer","text":"Chromeウェブストアで「DeepL」を検索し、「Chromeに追加」をクリックするだけです。インストールは1分以内に完了します。"}},
+    {"@type":"Question","name":"ページ全体を翻訳するショートカットキーは？","acceptedAnswer":{"@type":"Answer","text":"Ctrl+Shift+E（Windowsの場合）/ Cmd+Shift+E（Mac）でページ全体を翻訳できます。"}},
+    {"@type":"Question","name":"テキストを選択すると翻訳ボタンが出ない","acceptedAnswer":{"@type":"Answer","text":"拡張機能が有効かアドレスバー右の拡張機能アイコンを確認してください。サイトによってはアイコン右クリック→「DeepLで翻訳」を使う方法も有効です。"}},
+    {"@type":"Question","name":"DeepL拡張でPDFは翻訳できますか？","acceptedAnswer":{"@type":"Answer","text":"ブラウザで直接表示したPDFのみ対応しています。ローカルに保存したPDFはDeepL公式サイト（deepl.com）でのファイルアップロード翻訳をご利用ください。"}},
+    {"@type":"Question","name":"DeepL拡張とGoogle翻訳拡張の違いは？","acceptedAnswer":{"@type":"Answer","text":"DeepLは文脈を考慮した自然な翻訳が得意です。技術文書・ビジネス文章はDeepLの方が高精度です。Google翻訳は多言語対応に強みがあります。"}},
+    {"@type":"Question","name":"翻訳結果をコピーする方法は？","acceptedAnswer":{"@type":"Answer","text":"ポップアップ右上のコピーアイコンをクリックするか、翻訳テキストを選択してCtrl+Cでコピーできます。"}},
+    {"@type":"Question","name":"DeepL拡張でプライバシーは大丈夫？","acceptedAnswer":{"@type":"Answer","text":"翻訳テキストはDeepLサーバーに送信されます。機密情報の翻訳にはDeepL Pro（データ保護オプション）を推奨します。無料版では送信データの一部が品質向上に使用される場合があります。"}},
+    {"@type":"Question","name":"スマホ版Chrome（Android/iOS）でも使えますか？","acceptedAnswer":{"@type":"Answer","text":"Chrome拡張機能はスマホ版Chromeには対応していません。スマホでの翻訳にはDeepL公式アプリをご利用ください。"}},
+    {"@type":"Question","name":"無料プランの月5,000文字制限を超えたらどうなる？","acceptedAnswer":{"@type":"Answer","text":"翻訳がブロックされ、DeepL Proへのアップグレードを促すメッセージが表示されます。DeepL Proにアップグレードすると文字数無制限で利用できます。"}}
+  ]}
+  </script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="/">AI <span>navi</span></a>
+    <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('nav-open')" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+    <ul>
+      <li><a href="/#ranking">ランキング</a></li>
+      <li><a href="/#compare">比較表</a></li>
+      <li><a href="claude-review">Claude</a></li>
+      <li><a href="chatgpt-review">ChatGPT</a></li>
+      <li><a href="../diagnosis">AI診断</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="breadcrumb">
+  <a href="/">ホーム</a> &gt; <a href="/">AIツール比較</a> &gt; DeepL Chrome拡張機能の使い方
+</div>
+
+<div class="article-wrap">
+  <div class="article-header">
+    <h1>DeepL Chrome拡張機能の使い方【2026年最新】インストール・設定・便利機能を解説</h1>
+    <div class="article-meta">
+      <span>2026年11月7日</span>
+      <span>最終更新: 2026年11月7日</span>
+      <span>約7,000字</span>
+    </div>
+  </div>
+
+  <div class="author-box">
+    <div class="author-avatar"><img src="/images/author-avatar.png" alt="小田 健真" width="52" height="52" style="border-radius:50%;"></div>
+    <div class="author-info">
+      <div class="author-name">小田 健真</div>
+      <div class="author-bio">ChatGPT・Claude・Geminiなど主要AIを日常的に活用するブロガー。各ツールを実際に試し、使いやすさ・料金・機能をわかりやすく比較・解説しています。</div>
+    </div>
+  </div>
+
+  <!-- 冒頭まとめ -->
+  <div class="cta-block-orange">
+    <div class="recommend-badge">この記事でわかること</div>
+    <h3>DeepL Chrome拡張を完全マスター</h3>
+    <ul style="text-align:left;margin:12px 0;">
+      <li><strong>3ステップでインストール</strong>完了する手順</li>
+      <li>テキスト選択翻訳・ページ翻訳の<strong>具体的な使い方</strong></li>
+      <li><strong>ショートカットキー</strong>で翻訳速度を10倍に</li>
+      <li>よくある<strong>トラブルと解決策</strong></li>
+    </ul>
+    <div class="urgency-bar">Chrome拡張：無料・月5,000文字まで・インストール1分</div>
+    <p style="font-size:0.85em;color:#555;margin-bottom:8px;">翻訳した内容を音声で確認・記録するなら Notta も無料で使えます</p>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank" class="btn btn-primary btn-pulse btn-lg" style="background:#4285f4;">Nottaを無料で試してみる →</a>
+    <div class="cta-note">※ 本リンクはアフィリエイトリンクです</div>
+  </div>
+
+  <div class="article-toc">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#what">DeepL Chrome拡張機能とは</a></li>
+      <li><a href="#install">インストール方法（3ステップ）</a></li>
+      <li><a href="#basic">基本的な使い方（選択翻訳・ページ翻訳）</a></li>
+      <li><a href="#settings">便利な設定とショートカット</a></li>
+      <li><a href="#free-vs-pro">無料版と有料版の違い</a></li>
+      <li><a href="#trouble">よくあるトラブルと解決策</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#summary">まとめ</a></li>
+    </ol>
+  </div>
+
+  <!-- AdMax -->
+  <div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;"><p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p><!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax --></div>
+
+  <div class="article-body">
+
+    <!-- 記事中盤広告 -->
+    <div style="text-align:center;margin:24px auto;"><!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax --></div>
+
+    <h2 id="what">DeepL Chrome拡張機能とは</h2>
+
+    <!-- UIモックカード -->
+    <div style="border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin:24px 0;box-shadow:0 4px 16px rgba(0,0,0,0.08);">
+      <div style="background:#f8fafc;padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #e2e8f0;">
+        <div style="display:flex;gap:5px;"><div style="width:12px;height:12px;border-radius:50%;background:#ff5f57;"></div><div style="width:12px;height:12px;border-radius:50%;background:#febc2e;"></div><div style="width:12px;height:12px;border-radius:50%;background:#28c840;"></div></div>
+        <div style="background:#fff;border-radius:4px;padding:3px 10px;font-size:0.75em;color:#94a3b8;flex:1;border:1px solid #e2e8f0;">chrome.google.com/webstore</div>
+      </div>
+      <div style="background:#fff;padding:24px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+          <div style="width:56px;height:56px;background:#0F2B46;border-radius:12px;display:flex;align-items:center;justify-content:center;">
+            <span style="color:#fff;font-size:1.5em;font-weight:800;">D</span>
+          </div>
+          <div>
+            <div style="font-size:1.2em;font-weight:700;">DeepL Chrome拡張</div>
+            <div style="font-size:0.85em;color:#64748b;">Chrome Web Storeから無料インストール</div>
+          </div>
+        </div>
+        <div style="background:#f8fafc;border-radius:8px;padding:12px 16px;font-size:0.9em;line-height:1.9;">
+          インストール: Chrome Web Storeから1クリック<br>
+          テキスト選択: 選択後にポップアップで即翻訳<br>
+          ページ翻訳: Ctrl+Shift+Eでページ全体翻訳<br>
+          無料枠: 月5,000文字まで<br>
+          対応言語: 29言語以上
+        </div>
+      </div>
+    </div>
+
+    <p>DeepL Chrome拡張機能は、<strong>Webページ上の任意のテキストをその場でDeepL翻訳できる公式Chrome拡張</strong>です。ブラウジング中に英語の記事・ドキュメント・メールを読む際に、わざわざDeepL公式サイトを開く必要がなくなります。</p>
+
+    <div class="summary-box">
+      <h3>DeepL Chrome拡張でできること</h3>
+      <ul>
+        <li>テキストを選択するだけでポップアップ翻訳</li>
+        <li>Ctrl+Shift+Eでページ全体を一発翻訳</li>
+        <li>翻訳結果を1クリックでコピー</li>
+        <li>翻訳先言語の固定設定（毎回選択不要）</li>
+        <li>右クリックメニューから「DeepLで翻訳」</li>
+      </ul>
+    </div>
+
+    <p>DeepLの翻訳品質はGoogle翻訳と比べて<strong>「より自然な日本語」</strong>と評価されています。特にビジネス文書・技術ドキュメント・論文の翻訳では文脈を踏まえた表現が得られるため、英語を頻繁に読む方に強くおすすめできます。DeepLの詳しい評価は<a href="deepl-review">DeepLレビュー記事</a>もご覧ください。</p>
+
+    <h2 id="install">インストール方法（3ステップ）</h2>
+    <p>DeepL Chrome拡張のインストールは<strong>3ステップ・約1分</strong>で完了します。</p>
+
+    <h3>ステップ1：Chromeウェブストアにアクセス</h3>
+    <p>Chromeブラウザを開き、アドレスバーに「chrome.google.com/webstore」と入力してChromeウェブストアにアクセスします。または検索エンジンで「DeepL Chrome拡張」と検索し、公式のChrome Web Storeページにアクセスします。</p>
+
+    <h3>ステップ2：「Chromeに追加」をクリック</h3>
+    <p>Chromeウェブストアの検索窓に「DeepL」と入力して検索します。「DeepL: AI翻訳ツール」という公式拡張機能が表示されるので、「Chromeに追加」ボタンをクリックします。確認ダイアログが表示されたら「拡張機能を追加」をクリックして完了です。</p>
+
+    <h3>ステップ3：アドレスバー右側のアイコンを確認</h3>
+    <p>インストール完了後、Chromeのアドレスバー右側にDeepLのアイコン（青い「D」マーク）が表示されます。表示されない場合は、パズルのピースアイコン（拡張機能メニュー）をクリックして「DeepL」の横にある「ピン止め」アイコンをクリックすると常時表示されます。</p>
+
+    <div class="cta-block">
+      <h3>DeepLでの翻訳を録音・記録するならNotta</h3>
+      <p>英語会議の翻訳・文字起こしを同時にこなしたい方は、AI議事録ツール「Notta」との組み合わせがおすすめです。</p>
+      <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank" class="btn btn-primary btn-pulse" style="background:#4285f4;">Nottaを無料で試す →</a>
+      <div class="cta-note">※ 本リンクはアフィリエイトリンクです</div>
+    </div>
+
+    <h2 id="basic">基本的な使い方（選択翻訳・ページ翻訳）</h2>
+
+    <h3>使い方①：テキスト選択翻訳</h3>
+    <p>DeepL Chrome拡張の最も基本的な使い方です。</p>
+    <ol>
+      <li>翻訳したいテキストをマウスでドラッグして選択する</li>
+      <li>選択テキストの近くにDeepLのポップアップアイコンが表示される</li>
+      <li>アイコンをクリックすると翻訳結果がポップアップで表示される</li>
+      <li>右上のコピーアイコンをクリックで翻訳結果をコピー</li>
+      <li>「DeepLで開く」をクリックするとDeepL公式サイトで詳細翻訳も可能</li>
+    </ol>
+
+    <p><strong>ポイント</strong>：テキストを選択後、すぐにアイコンが表示されない場合は、選択したまま少し待つか、右クリックメニューから「DeepLで翻訳」を選択してください。</p>
+
+    <h3>使い方②：ページ全体翻訳</h3>
+    <p>英語のWebページ全体を日本語に翻訳したい場合は、ショートカットキーを使います。</p>
+    <ol>
+      <li>翻訳したいページを開く</li>
+      <li><strong>Ctrl+Shift+E</strong>（WindowsはCtrl、MacはCmd）を押す</li>
+      <li>ページ全体がDeepL翻訳された日本語に切り替わる</li>
+      <li>元の英語に戻すには再度Ctrl+Shift+Eを押す（トグル切り替え）</li>
+    </ol>
+
+    <p>ページ翻訳はGoogle翻訳のChrome内蔵翻訳よりも自然な日本語になるため、<strong>英語の技術ドキュメント・海外ニュース・論文</strong>を読む際に特に効果を発揮します。</p>
+
+    <h3>使い方③：右クリックメニューから翻訳</h3>
+    <p>テキスト選択後にポップアップが出ない場合や、素早く翻訳したい場合は右クリックメニューを使います。</p>
+    <ol>
+      <li>翻訳したいテキストを選択する</li>
+      <li>右クリックしてコンテキストメニューを開く</li>
+      <li>「DeepLで翻訳」または「選択テキストをDeepLで翻訳」を選択</li>
+      <li>DeepL公式サイトが新しいタブで開き、翻訳結果が表示される</li>
+    </ol>
+
+    <!-- チャットQ&A 1 -->
+    <div class="chat-box">
+      <img src="/images/author-avatar.png" alt="読者" class="chat-avatar" width="52" height="52" loading="lazy">
+      <div class="chat-content">
+        <div class="chat-name">読者からの質問</div>
+        <div class="chat-bubble">Chrome拡張って安全ですか？</div>
+      </div>
+    </div>
+    <div class="chat-box" style="justify-content:flex-end;">
+      <div class="chat-content" style="align-items:flex-end;">
+        <div class="chat-name" style="text-align:right;">小田 健真（筆者）</div>
+        <div class="chat-bubble bubble-recommend">DeepL公式提供なので安心して使えます。ただし翻訳テキストはDeepLサーバーに送信されます。機密情報（社外秘・個人情報）の翻訳には注意が必要です。そのような場合はDeepL Pro（データ保護オプション付き）をご検討ください。</div>
+      </div>
+      <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+    </div>
+
+    <h2 id="settings">便利な設定とショートカット</h2>
+
+    <h3>翻訳先言語の固定設定</h3>
+    <p>毎回翻訳先言語を選択する手間を省けます。</p>
+    <ol>
+      <li>アドレスバー右のDeepLアイコンをクリック</li>
+      <li>「設定」（歯車アイコン）をクリック</li>
+      <li>「翻訳先の言語」で「日本語」を選択して保存</li>
+      <li>以降は翻訳時に毎回言語選択が不要になる</li>
+    </ol>
+
+    <h3>ショートカットキー一覧</h3>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th>操作</th><th>Windows</th><th>Mac</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>ページ全体翻訳（トグル）</td><td>Ctrl+Shift+E</td><td>Cmd+Shift+E</td></tr>
+          <tr><td>選択テキストをDeepLで翻訳</td><td>右クリック→DeepLで翻訳</td><td>右クリック→DeepLで翻訳</td></tr>
+          <tr><td>翻訳結果をコピー</td><td>コピーアイコンクリック</td><td>コピーアイコンクリック</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>ポップアップアイコンの表示/非表示切り替え</h3>
+    <p>テキスト選択時に自動でポップアップが表示されるのが邪魔な場合は、設定からオフにできます。DeepLアイコン→設定→「テキスト選択時にアイコンを表示」をオフにすると、ポップアップが出なくなり、右クリックメニューからのみ翻訳できます。</p>
+
+    <!-- チャットQ&A 2 -->
+    <div class="chat-box">
+      <img src="/images/author-avatar.png" alt="読者" class="chat-avatar" width="52" height="52" loading="lazy">
+      <div class="chat-content">
+        <div class="chat-name">読者からの質問</div>
+        <div class="chat-bubble">テキスト選択翻訳がうまく動かない</div>
+      </div>
+    </div>
+    <div class="chat-box" style="justify-content:flex-end;">
+      <div class="chat-content" style="align-items:flex-end;">
+        <div class="chat-name" style="text-align:right;">小田 健真（筆者）</div>
+        <div class="chat-bubble bubble-recommend">拡張機能アイコンを右クリック→「サイトへのアクセスを管理」→「すべてのサイトでの読み取りと変更を許可」に変更してみてください。サイトごとにアクセス制限がかかっている場合に解決することが多いです。</div>
+      </div>
+      <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+    </div>
+
+    <h2 id="free-vs-pro">無料版と有料版の違い</h2>
+    <p>DeepL Chrome拡張は無料でも主要機能が使えますが、翻訳量の多い方には有料版（DeepL Pro）が必要な場合があります。</p>
+
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th>機能</th><th>無料版</th><th>DeepL Pro</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>月間翻訳文字数</strong></td><td>5,000文字</td><td>無制限</td></tr>
+          <tr><td><strong>テキスト選択翻訳</strong></td><td>対応</td><td>対応</td></tr>
+          <tr><td><strong>ページ全体翻訳</strong></td><td>対応</td><td>対応</td></tr>
+          <tr><td><strong>データ保護</strong></td><td>翻訳データ送信あり</td><td>送信データは即時削除</td></tr>
+          <tr><td><strong>翻訳履歴</strong></td><td>なし</td><td>あり（DeepL Proアカウント）</td></tr>
+          <tr><td><strong>用語集（グロッサリー）</strong></td><td>なし</td><td>対応（固有名詞の一貫訳）</td></tr>
+          <tr><td><strong>APIアクセス</strong></td><td>なし</td><td>対応</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>日常的なWebブラウジングや月5,000文字以内の翻訳なら、<strong>無料版で十分</strong>です。毎日大量のビジネス文書を翻訳する場合や、機密情報を扱う場合はDeepL Proを検討しましょう。DeepLの無料制限については<a href="deepl-limit">DeepL無料制限の詳細</a>もご参照ください。</p>
+
+    <h2 id="trouble">よくあるトラブルと解決策</h2>
+
+    <h3>トラブル1：ポップアップが表示されない</h3>
+    <p><strong>原因と対処法：</strong></p>
+    <ul>
+      <li>拡張機能が無効になっている → アドレスバー右のDeepLアイコンをクリックして有効を確認</li>
+      <li>サイトへのアクセス権限が不足 → アイコン右クリック→「サイトへのアクセスを管理」→「すべてのサイト」に変更</li>
+      <li>Chromeを再起動していない → Chromeを完全に閉じて再起動</li>
+    </ul>
+
+    <h3>トラブル2：ページ翻訳のショートカット（Ctrl+Shift+E）が動かない</h3>
+    <p><strong>対処法：</strong></p>
+    <ul>
+      <li>chrome://extensions/shortcuts にアクセスして、DeepLのショートカットを手動で再設定する</li>
+      <li>他の拡張機能と競合している可能性があるため、ショートカットを別のキーに変更する</li>
+    </ul>
+
+    <h3>トラブル3：月5,000文字の制限に達した</h3>
+    <p>翻訳がブロックされ制限到達メッセージが表示されます。対処法は以下の通りです。</p>
+    <ul>
+      <li>翌月まで待つ（無料枠は月次リセット）</li>
+      <li>DeepL公式サイトでの翻訳を使う（別カウント）</li>
+      <li>DeepL Proにアップグレードして制限を解除する</li>
+    </ul>
+
+    <h3>トラブル4：PDFが翻訳できない</h3>
+    <p>ローカルに保存したPDFはChrome拡張では翻訳できません。<strong>DeepL公式サイト（deepl.com）のファイルアップロード機能</strong>をご利用ください。ブラウザで表示したオンラインPDF（URL付き）なら拡張機能で翻訳可能です。</p>
+
+    <!-- チャットQ&A 3 -->
+    <div class="chat-box">
+      <img src="/images/author-avatar.png" alt="読者" class="chat-avatar" width="52" height="52" loading="lazy">
+      <div class="chat-content">
+        <div class="chat-name">読者からの質問</div>
+        <div class="chat-bubble">有料のDeepL Proにする必要ありますか？</div>
+      </div>
+    </div>
+    <div class="chat-box" style="justify-content:flex-end;">
+      <div class="chat-content" style="align-items:flex-end;">
+        <div class="chat-name" style="text-align:right;">小田 健真（筆者）</div>
+        <div class="chat-bubble bubble-recommend">月5,000文字以内なら無料で十分です。毎日英語記事を複数本読む・ビジネス文書を大量翻訳する場合はProが快適です。まず1ヶ月無料で使ってみて、制限に引っかかるようならアップグレードを検討するのがおすすめです。</div>
+      </div>
+      <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+    </div>
+
+    <!-- 末尾CTA -->
+    <div style="background:linear-gradient(135deg,#0F2B46,#1e4d8c);border-radius:12px;padding:24px;margin:32px 0;text-align:center;color:#fff;">
+      <p style="font-weight:bold;font-size:1.1em;margin-bottom:8px;">翻訳した内容を音声で確認・記録するなら</p>
+      <p style="font-size:0.9em;opacity:0.9;margin-bottom:16px;">DeepLで翻訳 + Nottaで文字起こし・録音の組み合わせで、英語会議の完全自動議事録が実現します。Nottaは月120分まで無料です。</p>
+      <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank"
+         style="display:inline-block;background:#fff;color:#0F2B46;padding:14px 36px;border-radius:8px;font-weight:bold;font-size:1.05em;text-decoration:none;">
+        Nottaを無料で試す（月120分・クレカ不要）→
+      </a>
+      <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B7QWV+7FX302+5988+5YJRM" alt="">
+    </div>
+
+    <!-- AdMax FAQ前広告 -->
+    <div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;"><p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p><!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax --></div>
+
+    <h2 id="faq">よくある質問（FAQ）</h2>
+    <section id="faq-section">
+      <dl class="faq-list">
+        <div class="faq-item">
+          <dt class="faq-q">DeepL Chrome拡張は無料で使えますか？</dt>
+          <dd class="faq-a">はい、基本機能は無料で使えます。月5,000文字まで翻訳無料です。それ以上使う場合はDeepL Proへのアップグレードが必要です。</dd>
+        </div>
+        <div class="faq-item">
+          <dt class="faq-q">DeepL Chrome拡張のインストール方法を教えてください</dt>
+          <dd class="faq-a">Chromeウェブストアで「DeepL」を検索し、「Chromeに追加」をクリックするだけです。インストールは1分以内に完了します。</dd>
+        </div>
+        <div class="faq-item">
+          <dt class="faq-q">ページ全体を翻訳するショートカットキーは？</dt>
+          <dd class="faq-a">Ctrl+Shift+E（Windowsの場合）/ Cmd+Shift+E（Mac）でページ全体を翻訳できます。再度押すと元の言語に戻ります。</dd>
+        </div>
+        <div class="faq-item">
+          <dt class="faq-q">テキストを選択すると翻訳ボタンが出ない</dt>
+          <dd class="faq-a">拡張機能が有効かアドレスバー右の拡張機能アイコンを確認してください。サイトによってはアイコン右クリック→「DeepLで翻訳」を使う方法も有効です。</dd>
+        </div>
+        <div class="faq-item">
+          <dt class="faq-q">DeepL拡張でPDFは翻訳できますか？</dt>
+          <dd class="faq-a">ブラウザで直接表示したPDFのみ対応しています。ローカルに保存したPDFはDeepL公式サイト（deepl.com）でのファイルアップロード翻訳をご利用ください。</dd>
+        </div>
+        <div class="faq-item">
+          <dt class="faq-q">DeepL拡張とGoogle翻訳拡張の違いは？</dt>
+          <dd class="faq-a">DeepLは文脈を考慮した自然な翻訳が得意です。技術文書・ビジネス文章はDeepLの方が高精度です。Google翻訳は多言語対応に強みがあります。</dd>
+        </div>
+        <div class="faq-item">
+          <dt class="faq-q">翻訳結果をコピーする方法は？</dt>
+          <dd class="faq-a">ポップアップ右上のコピーアイコンをクリックするか、翻訳テキストを選択してCtrl+Cでコピーできます。</dd>
+        </div>
+        <div class="faq-item">
+          <dt class="faq-q">DeepL拡張でプライバシーは大丈夫？</dt>
+          <dd class="faq-a">翻訳テキストはDeepLサーバーに送信されます。機密情報の翻訳にはDeepL Pro（データ保護オプション）を推奨します。無料版では送信データの一部が品質向上に使用される場合があります。</dd>
+        </div>
+        <div class="faq-item">
+          <dt class="faq-q">スマホ版Chrome（Android/iOS）でも使えますか？</dt>
+          <dd class="faq-a">Chrome拡張機能はスマホ版Chromeには対応していません。スマホでの翻訳にはDeepL公式アプリをご利用ください。</dd>
+        </div>
+        <div class="faq-item">
+          <dt class="faq-q">無料プランの月5,000文字制限を超えたらどうなる？</dt>
+          <dd class="faq-a">翻訳がブロックされ、DeepL Proへのアップグレードを促すメッセージが表示されます。DeepL Proにアップグレードすると文字数無制限で利用できます。</dd>
+        </div>
+      </dl>
+    </section>
+
+    <h2 id="summary">まとめ</h2>
+    <p>DeepL Chrome拡張機能の使い方を「インストール→基本操作→ショートカット→トラブル解決」の流れで解説しました。</p>
+    <ul>
+      <li>インストールはChromeウェブストアから<strong>1分・無料</strong>で完了</li>
+      <li>テキスト選択で即ポップアップ翻訳・<strong>Ctrl+Shift+Eでページ全体翻訳</strong></li>
+      <li>翻訳先言語を事前に設定しておくと<strong>毎回の手間が省ける</strong></li>
+      <li>月5,000文字以内なら<strong>無料で継続利用可能</strong></li>
+      <li>機密情報の翻訳・大量翻訳にはDeepL Proが推奨</li>
+    </ul>
+    <p>DeepLの詳しい評判・機能については<a href="deepl-review">DeepLレビュー記事</a>を、無料プランの制限については<a href="deepl-limit">DeepL無料版の制限と対処法</a>を、解約方法については<a href="deepl-pro-cancel">DeepL Pro解約方法</a>もあわせてご覧ください。</p>
+    <p>英語の会議を翻訳・文字起こしで記録したい方には、<strong>DeepL Chrome拡張 + AI議事録ツール「Notta」の組み合わせ</strong>が特におすすめです。Nottaは月120分まで無料で使えます。</p>
+
+    <!-- 末尾CTA最終 -->
+    <div style="background:linear-gradient(135deg,#667eea,#764ba2);border-radius:12px;padding:24px;margin:32px 0;text-align:center;color:#fff;">
+      <p style="font-weight:bold;font-size:1.1em;margin-bottom:8px;">翻訳×文字起こしを同時にこなす</p>
+      <p style="font-size:0.9em;opacity:0.9;margin-bottom:16px;">英語会議にはDeepL翻訳 + Notta文字起こしの組み合わせが最強。Nottaは月120分・クレカ不要で無料スタートできます。</p>
+      <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank"
+         style="display:inline-block;background:#fff;color:#764ba2;padding:14px 36px;border-radius:8px;font-weight:bold;font-size:1.05em;text-decoration:none;">
+        Nottaを無料で始める（月120分・クレカ不要）→
+      </a>
+      <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B7QWV+7FX302+5988+5YJRM" alt="">
+    </div>
+
+    <div class="author-box">
+      <img src="../images/author-avatar.png" alt="小田 健真" width="72" height="72" style="border-radius:50%;flex-shrink:0;">
+      <div class="author-info">
+        <h4>小田 健真（おだ けんしん）</h4>
+        <p class="author-title">AIツールレビュアー / 元ITエンジニア</p>
+        <p>大手SIerで10年間システム開発に従事後、独立。現在はAIツールを業務で活用しながら月30〜50本のAIツールを実際に試し、実体験に基づいたレビューを執筆しています。ChatGPT・Claude・Notta・PLAUD NOTEなど主要AIツールを2年以上使用中。</p>
+        <div class="author-links">
+          <a href="/about">プロフィール詳細</a>
+          <a href="https://x.com/ai_navi_tanaka" target="_blank" rel="noopener">X（旧Twitter）</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 関連記事 -->
+  <div class="related-articles" style="margin: 40px 0; padding: 24px; background: #f8f9ff; border-radius: 12px;">
+    <h3 style="margin-bottom: 16px; font-size: 1.1rem;">関連記事</h3>
+    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
+      <li><a href="deepl-review">DeepL 評判・口コミ｜実際に使って分かったメリット・デメリット</a></li>
+      <li><a href="deepl-limit">DeepL無料版の制限と対処法【2026年最新】</a></li>
+      <li><a href="deepl-pro-cancel">DeepL Pro解約方法・注意点まとめ</a></li>
+      <li><a href="notta-review">Notta 評判・口コミ｜AI議事録ツールを徹底レビュー</a></li>
+      <li><a href="ai-meeting-minutes">AI議事録ツール おすすめ比較</a></li>
+      <li><a href="english-meeting-tools">英語会議で使えるAIツールおすすめ5選</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  <div class="affiliate-disc">本サイトはアフィリエイト広告（A8.net等）を利用しています。記事内のリンクから商品・サービスを購入・申込みいただいた場合、当サイトに報酬が発生することがあります。</div>
+  <div class="footer-nav">
+    <a href="/">ホーム</a>
+    <a href="claude-review">Claudeレビュー</a>
+    <a href="chatgpt-review">ChatGPTレビュー</a>
+    <a href="/privacy-policy">プライバシーポリシー</a>
+    <a href="/contact">お問い合わせ</a>
+  </div>
+  <p>&copy; 2026 AI navi</p>
+</footer>
+
+<!-- スティッキーモバイルCTA -->
+<a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank" class="sticky-cta-mobile" style="position:fixed;bottom:0;left:0;right:0;background:#0F2B46;color:#fff;text-align:center;padding:14px 16px;font-weight:bold;font-size:0.95em;text-decoration:none;z-index:999;display:none;">
+  Nottaを無料で試す（翻訳×文字起こし）→
+</a>
+<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B7QWV+7FX302+5988+5YJRM" alt="">
+
+<script>
+if(window.innerWidth < 768){
+  window.addEventListener('scroll',function(){
+    var s=document.querySelector('.sticky-cta-mobile');
+    if(s) s.style.display=window.scrollY>400?'block':'none';
+  });
+}
+</script>
+<script src="../banner.js" defer></script>
+<script src="/sidebar.js"></script>
+</body>
+</html>

@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notta vs PLAUD NOTE どっちがいい？【2026年比較】料金・精度・使い勝手を徹底比較 | AI navi</title>
+  <meta name="description" content="NottaとPLAUD NOTEを料金・文字起こし精度・使いやすさで徹底比較。Notta（月1,500円〜ソフト型）とPLAUD NOTE（本体22,000円ハード型）の違いを実際に使って解説。">
+  <link rel="canonical" href="https://ai-navi.app/articles/notta-vs-plaud">
+  <link rel="stylesheet" href="../style.css">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Notta vs PLAUD NOTE どっちがいい？【2026年比較】料金・精度・使い勝手を徹底比較">
+  <meta property="og:url" content="https://ai-navi.app/articles/notta-vs-plaud">
+  <meta property="og:site_name" content="AI navi">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Notta vs PLAUD NOTE どっちがいい？【2026年比較】料金・精度・使い勝手を徹底比較","datePublished":"2026-11-06","dateModified":"2026-11-06","author":{"@type":"Person","name":"小田 健真"},"publisher":{"@type":"Organization","name":"AI navi"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://ai-navi.app/articles/notta-vs-plaud"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"NottaとPLAUD NOTEの一番の違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"最大の違いは「ソフト型かハード型か」です。Nottaはスマホ・PCアプリで動作するソフト型で初期費用ゼロ、月額1,500円〜から使えます。PLAUD NOTEはカード型の専用デバイス（本体22,000円）が必要なハード型です。"}},{"@type":"Question","name":"Nottaの無料プランはどこまで使えますか？","acceptedAnswer":{"@type":"Answer","text":"Nottaの無料プランは月3時間（180分）の文字起こしが可能です。1回あたりの録音時間は最大3分に制限されており、長時間の会議には有料プランが必要です。"}},{"@type":"Question","name":"PLAUD NOTEの月額費用はいくらですか？","acceptedAnswer":{"@type":"Answer","text":"PLAUD NOTEは本体（22,000円）購入後、月300分の文字起こしが無料で使えます。300分を超える場合は追加プランの契約が必要です。本体代込みで考えると初年度のコストはNottaより高くなる場合があります。"}},{"@type":"Question","name":"文字起こし精度はNottaとPLAUD NOTEどちらが高いですか？","acceptedAnswer":{"@type":"Answer","text":"どちらもWhisperベースのAIを採用しており、静かな環境では甲乙つけがたい精度です。ただしPLAUD NOTEはカード型デバイスで話者の近くに置きやすく、騒がしい環境でも集音しやすい利点があります。Nottaはオンライン会議（Zoom・Teams）との連携が強みです。"}},{"@type":"Question","name":"Nottaはオンライン会議に対応していますか？","acceptedAnswer":{"@type":"Answer","text":"はい、NottaはZoom・Google Meet・Microsoft Teamsなどのオンライン会議に対応しています。ボットが自動参加して録音・文字起こし・要約を行う機能があります（有料プランが必要）。"}},{"@type":"Question","name":"PLAUD NOTEはスマホなしで使えますか？","acceptedAnswer":{"@type":"Answer","text":"録音自体はPLAUD NOTE本体単体でできます。ただし文字起こしや要約の確認にはスマホアプリ（iOS/Android対応）が必要です。"}},{"@type":"Question","name":"NottaとPLAUD NOTEの対応言語はどうですか？","acceptedAnswer":{"@type":"Answer","text":"Nottaは58言語以上に対応し、自動言語検出も可能です。PLAUD NOTEも主要言語に対応していますが、言語切り替えはアプリ設定から行います。日本語精度はどちらも高水準です。"}},{"@type":"Question","name":"Nottaのデータはどこに保存されますか？","acceptedAnswer":{"@type":"Answer","text":"NottaはクラウドサーバーにデータをAES-256暗号化で保存します。ビジネスプランではSSO・アクセス制限など企業向けセキュリティ設定が利用できます。"}},{"@type":"Question","name":"PLAUD NOTEで録音したデータは他のアプリに書き出せますか？","acceptedAnswer":{"@type":"Answer","text":"はい、PLAUD NOTEアプリからテキスト（TXT/Word）やPDF形式で書き出せます。NotionやObsidianとの連携も可能です。"}},{"@type":"Question","name":"学生にはNottaとPLAUD NOTEどちらがおすすめですか？","acceptedAnswer":{"@type":"Answer","text":"コスト重視の学生にはNottaがおすすめです。月3時間の無料プランで授業や講義の録音・文字起こしをお試しできます。本格的に使うなら月1,500円のプロプランが費用対効果が高いです。"}}]}
+  </script>
+  <style>
+    /* UIモックカード */
+    .mock-browser {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+      margin: 24px 0;
+      background: #fff;
+      border: 1px solid #e2e8f0;
+    }
+    .mock-browser-bar {
+      background: #f1f5f9;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .mock-dots {
+      display: flex;
+      gap: 6px;
+    }
+    .mock-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    .mock-dot.red { background: #ef4444; }
+    .mock-dot.yellow { background: #f59e0b; }
+    .mock-dot.green { background: #22c55e; }
+    .mock-url {
+      flex: 1;
+      background: #fff;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 4px 12px;
+      font-size: 0.82rem;
+      color: #64748b;
+    }
+    .mock-body {
+      padding: 24px 28px;
+    }
+    .mock-logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .mock-tagline {
+      font-size: 0.88rem;
+      color: #64748b;
+      margin-bottom: 16px;
+    }
+    .mock-specs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      font-size: 0.85rem;
+    }
+    .mock-spec-item {
+      background: #f8fafc;
+      border-radius: 8px;
+      padding: 10px 14px;
+    }
+    .mock-spec-label {
+      color: #64748b;
+      font-size: 0.78rem;
+      margin-bottom: 3px;
+    }
+    .mock-spec-value {
+      font-weight: 700;
+      color: #1e293b;
+    }
+    /* 比較表 */
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 0.9rem;
+    }
+    .comparison-table th {
+      background: #1e3a8a;
+      color: #fff;
+      padding: 12px 16px;
+      text-align: left;
+    }
+    .comparison-table td {
+      padding: 11px 16px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .comparison-table tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+    .badge-good {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+    .badge-note {
+      display: inline-block;
+      background: #fef9c3;
+      color: #854d0e;
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+    /* chat-box */
+    .chat-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 28px 0;
+    }
+    .chat-box-title {
+      font-size: 0.82rem;
+      color: #64748b;
+      margin-bottom: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .chat-row {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 14px;
+      align-items: flex-start;
+    }
+    .chat-row.author {
+      flex-direction: row-reverse;
+    }
+    .chat-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .chat-avatar.reader { background: #64748b; }
+    .chat-avatar.author-av { background: #4f46e5; }
+    .chat-bubble {
+      max-width: 75%;
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 0.88rem;
+      line-height: 1.65;
+    }
+    .chat-row:not(.author) .chat-bubble {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      color: #1e293b;
+    }
+    .chat-row.author .chat-bubble {
+      background: #4f46e5;
+      color: #fff;
+    }
+    .chat-name {
+      font-size: 0.75rem;
+      color: #94a3b8;
+      margin-bottom: 4px;
+    }
+    .chat-row.author .chat-name {
+      text-align: right;
+    }
+    /* CTA */
+    .cta-box {
+      background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+      border-radius: 14px;
+      padding: 28px 32px;
+      text-align: center;
+      color: #fff;
+      margin: 32px 0;
+    }
+    .cta-box h3 {
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+    .cta-box p {
+      font-size: 0.9rem;
+      opacity: 0.9;
+      margin-bottom: 18px;
+    }
+    .cta-btn {
+      display: inline-block;
+      background: #fff;
+      color: #1e3a8a;
+      font-weight: 800;
+      border-radius: 8px;
+      padding: 12px 28px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: opacity 0.2s;
+    }
+    .cta-btn:hover { opacity: 0.85; }
+    /* FAQ */
+    .faq-item {
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-q {
+      background: #f8fafc;
+      padding: 14px 18px;
+      font-weight: 700;
+      font-size: 0.93rem;
+      color: #1e293b;
+    }
+    .faq-q::before {
+      content: "Q. ";
+      color: #4f46e5;
+    }
+    .faq-a {
+      padding: 14px 18px;
+      font-size: 0.88rem;
+      line-height: 1.75;
+      color: #374151;
+      border-top: 1px solid #e2e8f0;
+    }
+    .faq-a::before {
+      content: "A. ";
+      font-weight: 700;
+      color: #16a34a;
+    }
+    /* 関連記事 */
+    .related-links {
+      background: #f8fafc;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin: 24px 0;
+    }
+    .related-links h3 {
+      font-size: 0.9rem;
+      color: #64748b;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .related-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .related-links ul li {
+      margin-bottom: 6px;
+    }
+    .related-links ul li a {
+      color: #3b82f6;
+      text-decoration: none;
+      font-size: 0.88rem;
+    }
+    .related-links ul li a:hover {
+      text-decoration: underline;
+    }
+    .recommend-box {
+      border-left: 4px solid #4f46e5;
+      background: #f5f3ff;
+      border-radius: 0 10px 10px 0;
+      padding: 16px 20px;
+      margin: 20px 0;
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+    .recommend-box strong {
+      color: #4f46e5;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <a href="/" style="font-weight:800;font-size:1.1em;text-decoration:none;color:#1e3a8a;">AI navi</a>
+  </nav>
+</header>
+<main>
+<article>
+<div class="container">
+  <h1>Notta vs PLAUD NOTE どっちがいい？【2026年比較】料金・精度・使い勝手を徹底比較</h1>
+  <p class="note">公開日: 2026年11月6日 | 最終更新: 2026年11月6日</p>
+  <div class="author-box" style="display:flex;align-items:center;gap:16px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px;margin:20px 0;">
+    <div style="flex-shrink:0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="52" height="52"><circle cx="32" cy="32" r="32" fill="#4f46e5"/><circle cx="32" cy="24" r="10" fill="white"/><ellipse cx="32" cy="52" rx="16" ry="12" fill="white"/></svg></div>
+    <div><div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">小田 健真</div><div style="font-size:0.84rem;color:#64748b;line-height:1.65;">ChatGPT・Claude・Geminiなど主要AIを日常的に活用するブロガー。各ツールを実際に試し、使いやすさ・料金・機能をわかりやすく比較・解説しています。</div></div>
+  </div>
+
+  <p>「議事録の文字起こしに<strong>NottaとPLAUD NOTE</strong>、どっちを選べばいい？」この疑問、非常によく聞かれます。</p>
+  <p>結論から言うと、<strong>オンライン会議が多い人はNotta、対面・リアル収録が多い人はPLAUD NOTE</strong>が向いています。ただし料金体系がまったく違うため、使い方によってコスパが大きく変わります。この記事では実際に両方を使って比較した結果をまとめました。</p>
+
+  <!-- Section 1: 結論まとめ -->
+  <h2>1. 結論まとめ：どっちがおすすめ？</h2>
+
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>比較項目</th>
+        <th>Notta</th>
+        <th>PLAUD NOTE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>タイプ</td>
+        <td>ソフト型（アプリ）</td>
+        <td>ハード型（専用デバイス）</td>
+      </tr>
+      <tr>
+        <td>初期費用</td>
+        <td><span class="badge-good">無料〜</span></td>
+        <td>本体 22,000円</td>
+      </tr>
+      <tr>
+        <td>月額費用</td>
+        <td>無料 / 1,500円 / 3,000円〜</td>
+        <td>月300分無料 / 超過分は有料</td>
+      </tr>
+      <tr>
+        <td>無料枠</td>
+        <td><span class="badge-good">月3時間</span></td>
+        <td>月300分（本体購入後）</td>
+      </tr>
+      <tr>
+        <td>オンライン会議連携</td>
+        <td><span class="badge-good">Zoom・Meet・Teams対応</span></td>
+        <td>スピーカー音を録音（間接的）</td>
+      </tr>
+      <tr>
+        <td>対面収録</td>
+        <td>スマホマイクで可能</td>
+        <td><span class="badge-good">カード型で自然な集音</span></td>
+      </tr>
+      <tr>
+        <td>対応言語</td>
+        <td>58言語以上</td>
+        <td>主要言語対応</td>
+      </tr>
+      <tr>
+        <td>AI要約</td>
+        <td><span class="badge-good">あり（要約・アクション抽出）</span></td>
+        <td>あり（マインドマップ含む）</td>
+      </tr>
+      <tr>
+        <td>こんな人に</td>
+        <td>オンライン会議・コスト重視</td>
+        <td>対面会議・ガジェット好き</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- UIモックカード: Notta -->
+  <h3>Notta — ソフト型AIメモアプリ</h3>
+  <div class="mock-browser">
+    <div class="mock-browser-bar">
+      <div class="mock-dots">
+        <div class="mock-dot red"></div>
+        <div class="mock-dot yellow"></div>
+        <div class="mock-dot green"></div>
+      </div>
+      <div class="mock-url">https://www.notta.ai/ja</div>
+    </div>
+    <div class="mock-body">
+      <div class="mock-logo" style="color:#FF6B35;">Notta</div>
+      <div class="mock-tagline">AI文字起こし・要約・議事録作成アプリ</div>
+      <div class="mock-specs">
+        <div class="mock-spec-item">
+          <div class="mock-spec-label">無料プラン</div>
+          <div class="mock-spec-value">月3時間</div>
+        </div>
+        <div class="mock-spec-item">
+          <div class="mock-spec-label">有料プラン</div>
+          <div class="mock-spec-value">月1,500円〜</div>
+        </div>
+        <div class="mock-spec-item">
+          <div class="mock-spec-label">初期費用</div>
+          <div class="mock-spec-value">0円</div>
+        </div>
+        <div class="mock-spec-item">
+          <div class="mock-spec-label">会議連携</div>
+          <div class="mock-spec-value">Zoom / Meet / Teams</div>
+        </div>
+        <div class="mock-spec-item">
+          <div class="mock-spec-label">対応言語</div>
+          <div class="mock-spec-value">58言語以上</div>
+        </div>
+        <div class="mock-spec-item">
+          <div class="mock-spec-label">AI要約</div>
+          <div class="mock-spec-value">あり（要約・To-Do抽出）</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UIモックカード: PLAUD NOTE -->
+  <h3>PLAUD NOTE — カード型AIボイスレコーダー</h3>
+  <div class="mock-browser">
+    <div class="mock-browser-bar">
+      <div class="mock-dots">
+        <div class="mock-dot red"></div>
+        <div class="mock-dot yellow"></div>
+        <div class="mock-dot green"></div>
+      </div>
+      <div class="mock-url">https://www.plaud.ai/ja-jp</div>
+    </div>
+    <div class="mock-body">
+      <div class="mock-logo" style="color:#1a1a1a;">PLAUD NOTE</div>
+      <div class="mock-tagline">カード型AIボイスレコーダー + 文字起こし</div>
+      <div class="mock-specs">
+        <div class="mock-spec-item">
+          <div class="mock-spec-label">本体価格</div>
+          <div class="mock-spec-value">22,000円</div>
+        </div>
+        <div class="mock-spec-item">
+          <div class="mock-spec-label">月額無料枠</div>
+          <div class="mock-spec-value">300分/月</div>
+        </div>
+        <div class="mock-spec-item">
+          <div class="mock-spec-label">デバイス形状</div>
+          <div class="mock-spec-value">カード型（薄型）</div>
+        </div>
+        <div class="mock-spec-item">
+          <div class="mock-spec-label">スマホ不要で録音</div>
+          <div class="mock-spec-value">可能（単体動作）</div>
+        </div>
+        <div class="mock-spec-item">
+          <div class="mock-spec-label">AI要約</div>
+          <div class="mock-spec-value">あり（マインドマップ）</div>
+        </div>
+        <div class="mock-spec-item">
+          <div class="mock-spec-label">充電</div>
+          <div class="mock-spec-value">USB-C / MagSafe対応</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: Nottaの特徴 -->
+  <h2>2. Nottaの特徴・料金</h2>
+  <p>Nottaは<strong>スマホ・PC・ブラウザで使えるソフト型のAI文字起こしアプリ</strong>です。初期費用ゼロで始められ、無料プランでも月180分（3時間）の文字起こしが可能です。</p>
+
+  <h3>Nottaの料金プラン</h3>
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>プラン</th>
+        <th>月額</th>
+        <th>文字起こし上限</th>
+        <th>主な機能</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>フリー</td>
+        <td><span class="badge-good">無料</span></td>
+        <td>月3時間（1回3分まで）</td>
+        <td>基本機能・テキスト書き出し</td>
+      </tr>
+      <tr>
+        <td>プロ</td>
+        <td>1,500円/月</td>
+        <td>月1,800分（30時間）</td>
+        <td>AI要約・To-Do抽出・録音インポート</td>
+      </tr>
+      <tr>
+        <td>ビジネス</td>
+        <td>3,000円/月〜</td>
+        <td>無制限（チーム共有）</td>
+        <td>会議ボット・SSO・管理機能</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Nottaの強み</h3>
+  <ul>
+    <li><strong>オンライン会議ボット</strong>: Zoom・Google Meet・Microsoft Teamsに自動参加し、録音・文字起こし・要約を自動生成</li>
+    <li><strong>多言語対応</strong>: 58言語以上に対応し、日英混在の会議も自動識別</li>
+    <li><strong>Web版あり</strong>: インストール不要でブラウザから即利用可能</li>
+    <li><strong>Notion・Slack連携</strong>: 議事録を自動でNotionやSlackに送信できる</li>
+  </ul>
+
+  <!-- Section 3: PLAUD NOTEの特徴 -->
+  <h2>3. PLAUD NOTEの特徴・料金</h2>
+  <p>PLAUD NOTEは<strong>カード型の専用ボイスレコーダー</strong>です。名刺サイズの薄型デバイスで、会議卓に置くだけで自然に集音できます。本体22,000円の一時費用が必要ですが、購入後は月300分の文字起こしが無料で使えます。</p>
+
+  <h3>PLAUD NOTEの料金</h3>
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>内容</th>
+        <th>費用</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>本体（PLAUD NOTE）</td>
+        <td>22,000円（税込・一時費用）</td>
+      </tr>
+      <tr>
+        <td>月300分の文字起こし</td>
+        <td><span class="badge-good">無料（本体購入後）</span></td>
+      </tr>
+      <tr>
+        <td>300分超過分</td>
+        <td>追加プランが必要（要公式サイト確認）</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>PLAUD NOTEの強み</h3>
+  <ul>
+    <li><strong>カード型で目立たない</strong>: 名刺サイズで卓上に置いても違和感がなく、ビジネス会議や取材に最適</li>
+    <li><strong>スマホ不要で録音開始</strong>: ボタン1つで録音開始でき、スマホを取り出す必要なし</li>
+    <li><strong>マインドマップ生成</strong>: 会議の内容をマインドマップ形式で自動整理できるユニークな機能</li>
+    <li><strong>Notion・Obsidian連携</strong>: 議事録データを各種ナレッジベースに書き出せる</li>
+  </ul>
+
+  <!-- chat-box 1 -->
+  <div class="chat-box">
+    <div class="chat-box-title">読者からのよくある質問</div>
+    <div class="chat-row">
+      <div class="chat-avatar reader">読</div>
+      <div>
+        <div class="chat-name">読者</div>
+        <div class="chat-bubble">毎月の会議は10〜15回くらい、主にZoomです。NottaとPLAUD NOTE、どちらが合っていますか？</div>
+      </div>
+    </div>
+    <div class="chat-row author">
+      <div class="chat-avatar author-av">小田</div>
+      <div>
+        <div class="chat-name">小田 健真</div>
+        <div class="chat-bubble">Zoomメインならば断然<strong>Notta</strong>をおすすめします。NottaはZoomにボットが自動参加して録音・文字起こしを全自動でやってくれます。月1,500円のプロプランで30時間分処理できるので、月15回の会議（1回1時間）でも余裕があります。PLAUD NOTEはZoomの音声をスピーカーから間接録音する形になり、音質・精度でやや不利です。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: 文字起こし精度比較 -->
+  <h2>4. 文字起こし精度比較</h2>
+  <p>両ツールともWhisperをベースにしたAIエンジンを採用しており、<strong>日本語精度は高水準</strong>です。静かな室内環境では誤字率5%以下を実現します。</p>
+
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>シチュエーション</th>
+        <th>Notta</th>
+        <th>PLAUD NOTE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>オンライン会議（Zoom等）</td>
+        <td><span class="badge-good">優秀（ボット録音で高品質）</span></td>
+        <td><span class="badge-note">やや不利（スピーカー録音）</span></td>
+      </tr>
+      <tr>
+        <td>静かな対面会議</td>
+        <td>良好（スマホマイク）</td>
+        <td><span class="badge-good">優秀（専用デバイスで集音）</span></td>
+      </tr>
+      <tr>
+        <td>騒がしい環境（カフェ等）</td>
+        <td><span class="badge-note">やや苦手</span></td>
+        <td><span class="badge-good">比較的強い（近接集音）</span></td>
+      </tr>
+      <tr>
+        <td>複数話者の識別</td>
+        <td><span class="badge-good">あり（話者ラベル付き）</span></td>
+        <td>あり</td>
+      </tr>
+      <tr>
+        <td>専門用語・固有名詞</td>
+        <td>カスタム辞書登録可</td>
+        <td>アプリ側での補正</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="recommend-box">
+    <strong>精度まとめ</strong>: オンライン会議ではNottaが有利。カフェ・対面取材などリアル環境ではPLAUD NOTEが有利。用途に合ったデバイス選びが精度に直結します。
+  </div>
+
+  <!-- Section 5: 使いやすさ比較 -->
+  <h2>5. 使いやすさ・操作感比較</h2>
+
+  <h3>Nottaの操作感</h3>
+  <ul>
+    <li>アプリをインストールして即使える。Web版もある</li>
+    <li>Zoom連携はカレンダーと同期して自動参加設定が可能</li>
+    <li>文字起こし後はハイライト・タグ・検索で内容をすぐ参照できる</li>
+    <li>UIは日本語完全対応で直感的に操作できる</li>
+  </ul>
+
+  <h3>PLAUD NOTEの操作感</h3>
+  <ul>
+    <li>本体のボタン1つで録音開始・停止。シンプルで迷わない</li>
+    <li>アプリに転送後、文字起こし・要約が自動生成される</li>
+    <li>マインドマップや箇条書き形式での書き出しが選べる</li>
+    <li>Notion・Obsidian連携でナレッジ管理に統合しやすい</li>
+  </ul>
+
+  <!-- chat-box 2 -->
+  <div class="chat-box">
+    <div class="chat-box-title">読者からのよくある質問</div>
+    <div class="chat-row">
+      <div class="chat-avatar reader">読</div>
+      <div>
+        <div class="chat-name">読者</div>
+        <div class="chat-bubble">PLAUD NOTEって初期費用22,000円は高くないですか？長期的に見るとどちらがお得ですか？</div>
+      </div>
+    </div>
+    <div class="chat-row author">
+      <div class="chat-avatar author-av">小田</div>
+      <div>
+        <div class="chat-name">小田 健真</div>
+        <div class="chat-bubble">たとえばNottaプロプラン（月1,500円）を使い続けると、12ヶ月で18,000円。PLAUD NOTEは本体22,000円＋月300分まで無料なので、1年目はNottaの方が安いです。ただし2年目以降はPLAUD NOTEの月額コストがゼロ（300分以内）なら逆転します。月の録音量が300分以内に収まる人はPLAUD NOTEが長期的にお得になります。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 6: こんな人に -->
+  <h2>6. こんな人にはNotta、こんな人にはPLAUD NOTE</h2>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0;">
+    <div style="background:#eff6ff;border:2px solid #3b82f6;border-radius:12px;padding:20px;">
+      <div style="font-weight:800;font-size:1rem;color:#1e3a8a;margin-bottom:12px;">Nottaがおすすめな人</div>
+      <ul style="margin:0;padding-left:1.2em;font-size:0.88rem;line-height:1.8;">
+        <li>Zoom・Teams・Google Meetでの会議が多い</li>
+        <li>初期費用を抑えたい・まず試してみたい</li>
+        <li>58言語対応が必要（グローバル会議）</li>
+        <li>Notion・Slackと連携したい</li>
+        <li>PCとスマホ両方で使いたい</li>
+      </ul>
+    </div>
+    <div style="background:#f0fdf4;border:2px solid #22c55e;border-radius:12px;padding:20px;">
+      <div style="font-weight:800;font-size:1rem;color:#166534;margin-bottom:12px;">PLAUD NOTEがおすすめな人</div>
+      <ul style="margin:0;padding-left:1.2em;font-size:0.88rem;line-height:1.8;">
+        <li>対面会議・インタビュー・取材が多い</li>
+        <li>スマホを出さずに自然に録音したい</li>
+        <li>月300分以内で収まる使い方をしている</li>
+        <li>マインドマップで会議内容を整理したい</li>
+        <li>ガジェット好き・所有感を大切にしたい</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- chat-box 3 -->
+  <div class="chat-box">
+    <div class="chat-box-title">読者からのよくある質問</div>
+    <div class="chat-row">
+      <div class="chat-avatar reader">読</div>
+      <div>
+        <div class="chat-name">読者</div>
+        <div class="chat-bubble">両方試してみたいのですが、先にどちらから始めるべきですか？</div>
+      </div>
+    </div>
+    <div class="chat-row author">
+      <div class="chat-avatar author-av">小田</div>
+      <div>
+        <div class="chat-name">小田 健真</div>
+        <div class="chat-bubble">まず<strong>Nottaの無料プラン</strong>から試すことをおすすめします。初期費用ゼロで月3時間使えるので、AI文字起こしの実力を体験できます。使い勝手が気に入れば月1,500円のプロプランへ。もし「対面録音がメインだな」と感じたら、そこでPLAUD NOTEの購入を検討するのがリスクなく進める順序です。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA: Notta -->
+  <div class="cta-box">
+    <h3>Notta — まずは無料で試す（月3時間）</h3>
+    <p>初期費用ゼロ・登録1分。Zoom連携ですぐに議事録自動化が始められます。</p>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow" target="_blank" class="cta-btn">Notta 無料プランを試す</a>
+    <img src="https://www19.a8.net/0.gif?a8mat=4B7QWV+7FX302+5988+5YJRM" width="1" height="1" style="border:0;" alt="">
+  </div>
+
+  <!-- CTA: PLAUD NOTE -->
+  <div class="cta-box" style="background:linear-gradient(135deg,#1a1a1a 0%,#444 100%);">
+    <h3>PLAUD NOTE — カード型AIレコーダーを見る</h3>
+    <p>本体22,000円・月300分の文字起こし無料。対面会議・取材に最適なハード型デバイス。</p>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B7ROU+691VG2+5J4W+5YRHE" rel="nofollow" target="_blank" class="cta-btn" style="color:#1a1a1a;">PLAUD NOTE 公式サイトを見る</a>
+    <img src="https://www13.a8.net/0.gif?a8mat=4B7ROU+691VG2+5J4W+5YRHE" width="1" height="1" style="border:0;" alt="">
+  </div>
+
+  <!-- FAQ -->
+  <h2>よくある質問（FAQ）</h2>
+
+  <div class="faq-item">
+    <div class="faq-q">NottaとPLAUD NOTEの一番の違いは何ですか？</div>
+    <div class="faq-a">最大の違いは「ソフト型かハード型か」です。Nottaはスマホ・PCアプリで動作するソフト型で初期費用ゼロ、月額1,500円〜から使えます。PLAUD NOTEはカード型の専用デバイス（本体22,000円）が必要なハード型です。</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Nottaの無料プランはどこまで使えますか？</div>
+    <div class="faq-a">Nottaの無料プランは月3時間（180分）の文字起こしが可能です。1回あたりの録音時間は最大3分に制限されており、長時間の会議には有料プランが必要です。</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">PLAUD NOTEの月額費用はいくらですか？</div>
+    <div class="faq-a">PLAUD NOTEは本体（22,000円）購入後、月300分の文字起こしが無料で使えます。300分を超える場合は追加プランの契約が必要です。本体代込みで考えると初年度のコストはNottaより高くなる場合があります。</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">文字起こし精度はNottaとPLAUD NOTEどちらが高いですか？</div>
+    <div class="faq-a">どちらもWhisperベースのAIを採用しており、静かな環境では甲乙つけがたい精度です。ただしPLAUD NOTEはカード型デバイスで話者の近くに置きやすく、騒がしい環境でも集音しやすい利点があります。Nottaはオンライン会議（Zoom・Teams）との連携が強みです。</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Nottaはオンライン会議に対応していますか？</div>
+    <div class="faq-a">はい、NottaはZoom・Google Meet・Microsoft Teamsなどのオンライン会議に対応しています。ボットが自動参加して録音・文字起こし・要約を行う機能があります（有料プランが必要）。</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">PLAUD NOTEはスマホなしで使えますか？</div>
+    <div class="faq-a">録音自体はPLAUD NOTE本体単体でできます。ただし文字起こしや要約の確認にはスマホアプリ（iOS/Android対応）が必要です。</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">NottaとPLAUD NOTEの対応言語はどうですか？</div>
+    <div class="faq-a">Nottaは58言語以上に対応し、自動言語検出も可能です。PLAUD NOTEも主要言語に対応していますが、言語切り替えはアプリ設定から行います。日本語精度はどちらも高水準です。</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Nottaのデータはどこに保存されますか？</div>
+    <div class="faq-a">NottaはクラウドサーバーにデータをAES-256暗号化で保存します。ビジネスプランではSSO・アクセス制限など企業向けセキュリティ設定が利用できます。</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">PLAUD NOTEで録音したデータは他のアプリに書き出せますか？</div>
+    <div class="faq-a">はい、PLAUD NOTEアプリからテキスト（TXT/Word）やPDF形式で書き出せます。NotionやObsidianとの連携も可能です。</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">学生にはNottaとPLAUD NOTEどちらがおすすめですか？</div>
+    <div class="faq-a">コスト重視の学生にはNottaがおすすめです。月3時間の無料プランで授業や講義の録音・文字起こしをお試しできます。本格的に使うなら月1,500円のプロプランが費用対効果が高いです。</div>
+  </div>
+
+  <!-- 関連記事 -->
+  <div class="related-links">
+    <h3>関連記事</h3>
+    <ul>
+      <li><a href="../articles/notta-review">Notta レビュー：料金・使い方・精度を徹底解説</a></li>
+      <li><a href="../articles/plaud-note-review">PLAUD NOTE レビュー：カード型AIレコーダーの実力</a></li>
+      <li><a href="../articles/ai-meeting-minutes">AIで議事録を自動作成！おすすめツール比較2026</a></li>
+    </ul>
+  </div>
+
+</div>
+</article>
+</main>
+<footer style="background:#1e293b;color:#94a3b8;text-align:center;padding:32px 20px;font-size:0.85rem;">
+  <p>© 2026 AI navi | <a href="/privacy" style="color:#94a3b8;">プライバシーポリシー</a></p>
+</footer>
+<script src="../banner.js"></script>
+<script src="/sidebar.js"></script>
+</body>
+</html>

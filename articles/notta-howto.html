@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notta の使い方完全ガイド【2026年最新】文字起こし・議事録・翻訳を5分で始める | AI navi</title>
+  <meta name="description" content="NottaアプリのPC・スマホ別使い方を初心者向けに解説。録音→自動文字起こし→翻訳→議事録作成の流れを図解。無料プランで今すぐ始められます。">
+  <meta name="keywords" content="Notta 使い方, Notta 文字起こし 方法, Notta 議事録, Notta スマホ, Notta PC, Notta 翻訳, Notta 無料">
+  <link rel="canonical" href="https://ai-navi.app/articles/notta-howto">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Notta の使い方完全ガイド【2026年最新】文字起こし・議事録・翻訳を5分で始める">
+  <meta property="og:description" content="NottaアプリのPC・スマホ別使い方を初心者向けに解説。録音→自動文字起こし→翻訳→議事録作成の流れを図解。無料プランで今すぐ始められます。">
+  <meta property="og:url" content="https://ai-navi.app/articles/notta-howto">
+  <meta property="og:image" content="https://ai-navi.app/og-image.png">
+  <meta property="og:site_name" content="AI navi">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ai-navi.app/og-image.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Notta の使い方完全ガイド【2026年最新】文字起こし・議事録・翻訳を5分で始める",
+    "image": "https://ai-navi.app/og-image.png",
+    "datePublished": "2026-11-07",
+    "dateModified": "2026-11-07",
+    "author": { "@type": "Person", "name": "小田 健真", "url": "https://ai-navi.app/about" },
+    "publisher": { "@type": "Organization", "name": "AI navi", "logo": { "@type": "ImageObject", "url": "https://ai-navi.app/og-image.png" } },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ai-navi.app/articles/notta-howto" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://ai-navi.app/"},
+      {"@type": "ListItem", "position": 2, "name": "AIツール比較", "item": "https://ai-navi.app/"},
+      {"@type": "ListItem", "position": 3, "name": "Notta 使い方ガイド", "item": "https://ai-navi.app/articles/notta-howto"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Nottaの無料登録はどうやってするの？","acceptedAnswer":{"@type":"Answer","text":"notta.aiにアクセスし、メールアドレスまたはGoogleアカウントで登録するだけです。クレジットカードの登録は不要で、登録後すぐに月120分の無料文字起こしが使えます。"}},
+    {"@type":"Question","name":"NottaはPCとスマホどちらでも使える？","acceptedAnswer":{"@type":"Answer","text":"はい、どちらでも使えます。PCはブラウザ（Chrome・Edge推奨）でアクセス、スマホはApp Store（iOS）またはGoogle Play（Android）からアプリをインストールして使います。データはクラウドで同期されます。"}},
+    {"@type":"Question","name":"Nottaで音声ファイルをアップロードして文字起こしする方法は？","acceptedAnswer":{"@type":"Answer","text":"ダッシュボードの「ファイルをアップロード」ボタンをクリックし、MP3・WAV・M4A・MP4・MOVなどの音声・動画ファイルを選択するだけです。アップロード後、自動で文字起こしが開始されます。"}},
+    {"@type":"Question","name":"NottaのZoom連携はどうやって設定する？","acceptedAnswer":{"@type":"Answer","text":"Nottaダッシュボードの「会議Bot」→「Zoom連携」からZoomアカウントを連携します。連携後は会議URLを入力するか、Googleカレンダーと連携してスケジュールされた会議にBotが自動参加します。"}},
+    {"@type":"Question","name":"Nottaの文字起こし結果を議事録として編集・共有する方法は？","acceptedAnswer":{"@type":"Answer","text":"文字起こし完了後、テキスト上をクリックして直接編集できます。「AI要約」ボタンで会議の要点・アクションアイテムを自動抽出し、PDF・Word・TXT形式でダウンロードするか、Notion・Slackに直接送信できます。"}},
+    {"@type":"Question","name":"Nottaの翻訳機能はどう使う？","acceptedAnswer":{"@type":"Answer","text":"文字起こし完了後、画面上部の「翻訳」ボタンをクリックし、翻訳先の言語を選択するだけです。42言語に対応しており、英語→日本語・日本語→英語などワンクリックで翻訳されます。"}},
+    {"@type":"Question","name":"スマホアプリでリアルタイム文字起こしするには？","acceptedAnswer":{"@type":"Answer","text":"Nottaアプリを起動し、ホーム画面の「録音」ボタン（マイクアイコン）をタップすると、その場でリアルタイム文字起こしが開始されます。話しながら画面上にテキストが表示されます。"}},
+    {"@type":"Question","name":"Nottaの文字起こし結果はどの形式で保存・出力できる？","acceptedAnswer":{"@type":"Answer","text":"PDF・Word（DOCX）・TXT・SRT（字幕形式）でエクスポートできます。また、Notion・Slack・Google Driveへの直接送信にも対応しています。"}},
+    {"@type":"Question","name":"話者識別機能はどうやって使う？","acceptedAnswer":{"@type":"Answer","text":"Nottaは自動で話者を識別し、「話者1」「話者2」のように区別して文字起こしします。文字起こし完了後に話者名を手動でリネーム（例：「山田さん」「田中さん」）することもできます。"}},
+    {"@type":"Question","name":"Nottaの無料プランでできることとできないことは？","acceptedAnswer":{"@type":"Answer","text":"無料プランでできること：月120分の文字起こし・リアルタイム文字起こし・ファイルアップロード・話者識別・AI要約・PDF/TXTエクスポート。制限されること：月120分超の文字起こし・一部のZoom/Teams Bot連携機能（Proプランで解除）。"}}
+  ]}
+  </script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="/">AI <span>navi</span></a>
+    <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('nav-open')" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+    <ul>
+      <li><a href="/#ranking">ランキング</a></li>
+      <li><a href="/#compare">比較表</a></li>
+      <li><a href="claude-review">Claude</a></li>
+      <li><a href="chatgpt-review">ChatGPT</a></li>
+      <li><a href="../diagnosis">AI診断</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="breadcrumb">
+  <a href="/">ホーム</a> &gt; <a href="/">AIツール比較</a> &gt; Notta 使い方ガイド
+</div>
+
+<div class="article-wrap">
+  <div class="article-header">
+    <h1>Notta の使い方完全ガイド【2026年最新】文字起こし・議事録・翻訳を5分で始める</h1>
+    <div class="article-meta">
+      <span>2026年11月6日</span>
+      <span>最終更新: 2026年11月6日</span>
+      <span>約8,500字</span>
+    </div>
+  </div>
+
+  <div class="author-box">
+    <div class="author-avatar"><img src="/images/author-avatar.png" alt="小田 健真" width="52" height="52" style="border-radius:50%;"></div>
+    <div class="author-info">
+      <div class="author-name">小田 健真</div>
+      <div class="author-bio">ChatGPT・Claude・Geminiなど主要AIを日常的に活用するブロガー。各ツールを実際に試し、使いやすさ・料金・機能をわかりやすく比較・解説しています。</div>
+    </div>
+  </div>
+
+  <!-- 冒頭まとめ -->
+  <div class="cta-block-orange">
+    <div class="recommend-badge">この記事でわかること</div>
+    <h3>Nottaの使い方を初心者向けに完全解説</h3>
+    <ul style="text-align:left;margin:12px 0;">
+      <li>無料登録から<strong>最初の文字起こしまで5分</strong>で完了する手順</li>
+      <li><strong>PC（ブラウザ）とスマホアプリ</strong>の両方の操作方法</li>
+      <li>Zoom・Teams・Google Meet の<strong>Bot連携設定方法</strong></li>
+      <li>翻訳・議事録作成・エクスポートの<strong>具体的な操作手順</strong></li>
+    </ul>
+    <div class="urgency-bar">無料プラン：月120分・クレカ登録不要・42言語対応</div>
+    <p style="font-size:0.85em;color:#555;margin-bottom:8px;">まずは無料で試してみましょう</p>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank" class="btn btn-primary btn-pulse btn-lg" style="background:#4285f4;">今すぐNottaを無料で始める →</a>
+    <div class="cta-note">※ 本リンクはアフィリエイトリンクです</div>
+  </div>
+
+  <div class="article-toc">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#what">Nottaとは（概要・特徴）</a></li>
+      <li><a href="#register">無料登録方法（3ステップ）</a></li>
+      <li><a href="#pc">PC版の使い方</a></li>
+      <li><a href="#smartphone">スマホアプリの使い方</a></li>
+      <li><a href="#minutes">議事録の作成・編集・共有方法</a></li>
+      <li><a href="#translate">翻訳機能の使い方</a></li>
+      <li><a href="#plan">無料版の制限と有料版の違い</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#summary">まとめ</a></li>
+    </ol>
+  </div>
+
+  <!-- AdMax -->
+  <div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;"><p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p><!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax --></div>
+  <div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;" class="sp-only"><p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p><!-- admax --><script src="https://adm.shinobi.jp/s/b8872443f18589de45163a9a558d01fd"></script><!-- admax --></div>
+
+  <div class="article-body">
+
+    <!-- 記事中盤広告 -->
+    <div style="text-align:center;margin:24px auto;"><!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax --></div>
+
+    <h2 id="what">Nottaとは？概要・特徴</h2>
+
+    <!-- UIモックカード -->
+    <div style="border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;margin:24px 0;box-shadow:0 4px 16px rgba(0,0,0,0.08);">
+      <div style="background:#f8fafc;padding:10px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid #e2e8f0;">
+        <div style="display:flex;gap:5px;"><div style="width:12px;height:12px;border-radius:50%;background:#ff5f57;"></div><div style="width:12px;height:12px;border-radius:50%;background:#febc2e;"></div><div style="width:12px;height:12px;border-radius:50%;background:#28c840;"></div></div>
+        <div style="background:#fff;border-radius:4px;padding:3px 10px;font-size:0.75em;color:#94a3b8;flex:1;border:1px solid #e2e8f0;">app.notta.ai</div>
+      </div>
+      <div style="background:#fff;padding:24px;">
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+          <div style="width:56px;height:56px;background:#4285f4;border-radius:12px;display:flex;align-items:center;justify-content:center;">
+            <span style="color:#fff;font-size:1.5em;font-weight:800;">N</span>
+          </div>
+          <div>
+            <div style="font-size:1.2em;font-weight:700;">Notta（ノッタ）</div>
+            <div style="font-size:0.85em;color:#64748b;">42言語対応AI文字起こし・議事録・翻訳ツール</div>
+          </div>
+        </div>
+        <div style="background:#f8fafc;border-radius:8px;padding:12px 16px;font-size:0.9em;line-height:1.9;">
+          対応プラットフォーム: ブラウザ（PC）・iOS・Android<br>
+          文字起こし精度: 公称98%（日本語）<br>
+          対応言語: 42言語<br>
+          会議Bot連携: Zoom・Google Meet・Microsoft Teams<br>
+          無料プラン: 月120分（クレカ不要）
+        </div>
+      </div>
+    </div>
+
+    <p>Notta（ノッタ）は<strong>AI音声認識を使ったクラウド型の文字起こし・議事録ツール</strong>です。リアルタイムでの録音文字起こしはもちろん、既存の音声・動画ファイルのアップロード文字起こし、Zoom・Teams・Google MeetへのBot自動参加など、会議に関わるあらゆる文字起こし作業を自動化できます。</p>
+
+    <div class="summary-box">
+      <h3>Nottaでできること（主な機能一覧）</h3>
+      <ul>
+        <li>リアルタイム文字起こし（録音しながらテキスト化）</li>
+        <li>音声・動画ファイルのアップロード文字起こし</li>
+        <li>Zoom・Teams・Google Meet へのBot自動参加</li>
+        <li>AI要約（会議の要点・アクションアイテムを自動抽出）</li>
+        <li>話者識別（誰が何を話したか自動判別）</li>
+        <li>42言語対応翻訳</li>
+        <li>PDF・Word・TXT・SRTエクスポート</li>
+        <li>Notion・Slack・Google Drive連携</li>
+      </ul>
+    </div>
+
+    <p>Nottaの特徴は<strong>「初期費用ゼロ・クレカ不要・すぐ始められる」</strong>点です。ブラウザからアカウント登録するだけで、5分後には最初の文字起こしを体験できます。まずは詳細なレビューを読みたい方は<a href="notta-review">Notta評判・口コミレビュー</a>もご参照ください。</p>
+
+    <h2 id="register">無料登録方法（3ステップ）</h2>
+    <p>Nottaへの登録は<strong>3ステップ・約2分</strong>で完了します。クレジットカードの登録は不要です。</p>
+
+    <h3>ステップ1：公式サイトにアクセスしてアカウント作成</h3>
+    <p>notta.aiにアクセスし、「無料で始める」ボタンをクリックします。登録方法は以下の3つから選べます。</p>
+    <ul>
+      <li><strong>メールアドレスで登録</strong>：メールアドレスとパスワードを入力し、確認メールのリンクをクリック</li>
+      <li><strong>Googleアカウントで登録</strong>：「Googleでサインアップ」をクリックし、使用するGoogleアカウントを選択</li>
+      <li><strong>Appleアカウントで登録</strong>（iOSの場合）</li>
+    </ul>
+    <p>最も手軽なのは<strong>Googleアカウントで登録</strong>する方法です。ボタン1クリックで登録が完了します。</p>
+
+    <h3>ステップ2：ダッシュボードを確認する</h3>
+    <p>登録完了後、自動的にNottaのダッシュボードが表示されます。画面上部に「今月の残り時間：120分」と表示されていれば登録成功です。</p>
+    <p>左サイドバーには「録音」「アップロード」「会議Bot」「設定」などのメニューが並んでいます。各機能へのアクセスはすべてここから行います。</p>
+
+    <h3>ステップ3：最初の文字起こしを試してみる</h3>
+    <p>ダッシュボード中央の「録音を開始」ボタンをクリックすると、すぐにリアルタイム文字起こしが始まります。試しに何か話しかけると、画面上にリアルタイムでテキストが表示されます。これで登録完了・使用開始です。</p>
+
+    <!-- CTA 中間 -->
+    <div class="cta-block">
+      <h3>まずは無料プランで試してみる</h3>
+      <p>クレジットカード登録不要・月120分の文字起こしが無料で使えます。</p>
+      <p style="font-size:0.85em;color:#555;margin-bottom:8px;">登録はGoogleアカウントまたはメールアドレスだけ</p>
+      <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank" class="btn btn-primary btn-pulse" style="background:#4285f4;">今すぐNottaを無料で始める →</a>
+      <div class="cta-note">※ 本リンクはアフィリエイトリンクです</div>
+    </div>
+
+    <h2 id="pc">PC版の使い方（ブラウザ）</h2>
+    <p>PCではブラウザからnotta.aiにアクセスして使います。Chrome・Edgeを推奨します。PCならではの2つの主要な使い方を紹介します。</p>
+
+    <h3>PC版 使い方①：リアルタイム録音で文字起こし</h3>
+    <ol>
+      <li>notta.aiにログインし、ダッシュボードを開く</li>
+      <li>左メニューまたは中央の「録音を開始」ボタンをクリック</li>
+      <li>マイクのアクセス許可を求められたら「許可」をクリック</li>
+      <li>話すとリアルタイムでテキストが表示される</li>
+      <li>録音を停止するには「停止」ボタンをクリック</li>
+      <li>停止後、文字起こしテキストが保存され、AI要約の生成も開始される</li>
+    </ol>
+    <p><strong>ポイント</strong>：PCの内蔵マイクよりも外付けのUSBマイクやヘッドセットを使うと、文字起こし精度がさらに上がります。</p>
+
+    <h3>PC版 使い方②：音声・動画ファイルをアップロードして文字起こし</h3>
+    <ol>
+      <li>ダッシュボードの「ファイルをアップロード」またはドラッグ&amp;ドロップエリアにファイルをドロップ</li>
+      <li>対応形式：MP3・WAV・M4A・AAC・FLAC・OGG・MP4・MOV・AVI・WMV など</li>
+      <li>ファイルサイズ上限：1GB（Proプランの場合）</li>
+      <li>アップロード完了後、自動で文字起こしが開始される（処理時間：音声1分あたり約15〜30秒）</li>
+      <li>文字起こし完了後、テキストが表示される</li>
+    </ol>
+    <p>過去の会議録音・インタビュー音声・セミナー動画など、蓄積した音声データを一括で文字起こしするのに最適な使い方です。</p>
+
+    <h3>PC版 使い方③：Zoom・Teams・Google Meet のBot連携</h3>
+    <p>オンライン会議の議事録作成を完全自動化できる、Nottaの最も強力な機能です。</p>
+    <ol>
+      <li>Nottaダッシュボードの左メニュー「会議Bot」をクリック</li>
+      <li>使用する会議ツール（Zoom / Teams / Google Meet）を選択</li>
+      <li>「カレンダーを連携」でGoogleカレンダーまたはOutlookカレンダーを連携（スケジュールされた会議に自動Bot参加）、または「今すぐBotを招待」で会議URLを手動入力</li>
+      <li>Nottaのボットが会議に参加し、自動で録音・文字起こしを開始</li>
+      <li>会議終了後、文字起こしとAI要約が自動生成される</li>
+    </ol>
+
+    <!-- チャットQ&A 1 -->
+    <div class="chat-box">
+      <img src="/images/author-avatar.png" alt="読者" class="chat-avatar" width="52" height="52" loading="lazy">
+      <div class="chat-content">
+        <div class="chat-name">読者からの質問</div>
+        <div class="chat-bubble">Notta BotがZoom会議に参加したら、他の参加者にはどう見える？</div>
+      </div>
+    </div>
+    <div class="chat-box" style="justify-content:flex-end;">
+      <div class="chat-content" style="align-items:flex-end;">
+        <div class="chat-name" style="text-align:right;">小田 健真（筆者）</div>
+        <div class="chat-bubble bubble-recommend">「Notta Bot」という名前の参加者として表示されます。事前に参加者へ「議事録作成のためBotが入ります」と伝えておくと丁寧です。ボットはカメラ・マイクはオフで、録音のみ行います。</div>
+      </div>
+      <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+    </div>
+
+    <h2 id="smartphone">スマホアプリの使い方</h2>
+    <p>Nottaのスマホアプリ（iOS・Android対応）は、対面会議・インタビュー・外出先での録音に最適です。</p>
+
+    <h3>アプリのインストール</h3>
+    <ul>
+      <li><strong>iPhone（iOS）</strong>：App Storeで「Notta」を検索してインストール</li>
+      <li><strong>Android</strong>：Google Playで「Notta」を検索してインストール</li>
+    </ul>
+    <p>インストール後、登録済みのアカウントでログインします。PC版で作成したデータはすべてスマホアプリでも確認できます。</p>
+
+    <h3>スマホアプリ 使い方①：リアルタイム文字起こし</h3>
+    <ol>
+      <li>アプリを起動し、ホーム画面の「録音」ボタン（赤いマイクアイコン）をタップ</li>
+      <li>マイクへのアクセス許可を「許可」でOK</li>
+      <li>話すとリアルタイムでテキストが画面下に表示される</li>
+      <li>停止するには「停止」ボタンをタップ</li>
+      <li>AI要約が自動生成されて保存される</li>
+    </ol>
+    <p><strong>対面会議での活用ポイント</strong>：テーブルの中央にスマホを置き、録音を開始します。話者識別機能が自動で誰の発言かを判別します。</p>
+
+    <h3>スマホアプリ 使い方②：過去の録音ファイルをアップロード</h3>
+    <ol>
+      <li>アプリのホーム画面下部「追加」または「+」ボタンをタップ</li>
+      <li>「ファイルからインポート」を選択</li>
+      <li>スマホのファイルアプリまたは写真ライブラリから音声・動画ファイルを選択</li>
+      <li>アップロード後、自動で文字起こしが開始される</li>
+    </ol>
+
+    <!-- チャットQ&A 2 -->
+    <div class="chat-box">
+      <img src="/images/author-avatar.png" alt="読者" class="chat-avatar" width="52" height="52" loading="lazy">
+      <div class="chat-content">
+        <div class="chat-name">読者からの質問</div>
+        <div class="chat-bubble">スマホで録音中にアプリを閉じたり画面をオフにしても大丈夫？</div>
+      </div>
+    </div>
+    <div class="chat-box" style="justify-content:flex-end;">
+      <div class="chat-content" style="align-items:flex-end;">
+        <div class="chat-name" style="text-align:right;">小田 健真（筆者）</div>
+        <div class="chat-bubble bubble-recommend">バックグラウンド録音に対応しているので、画面をオフにしても録音は続きます。ただしアプリを完全に終了すると停止するので注意。画面ロックのまま録音継続できるのはとても便利です。</div>
+      </div>
+      <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+    </div>
+
+    <h2 id="minutes">議事録の作成・編集・共有方法</h2>
+    <p>文字起こしが完了したら、次は議事録として整える作業です。Nottaなら<strong>AI要約→手動修正→エクスポート</strong>の流れで、プロ品質の議事録が数分で完成します。</p>
+
+    <h3>AI要約で自動的に要点を抽出する</h3>
+    <ol>
+      <li>文字起こし完了後の画面で「AI要約」タブをクリック（またはタップ）</li>
+      <li>Nottaが自動で会議の「要点」「アクションアイテム」「決定事項」を箇条書きで生成</li>
+      <li>生成された要約をそのままコピーするか、さらに編集して使用</li>
+    </ol>
+
+    <h3>文字起こしテキストを手動で修正する</h3>
+    <p>誤認識された専門用語・固有名詞は手動で修正できます。</p>
+    <ol>
+      <li>文字起こしテキスト上で修正したい箇所をダブルクリック（PC）またはタップ（スマホ）</li>
+      <li>編集モードになるので正しいテキストに修正</li>
+      <li>Enterキーまたは「保存」で確定（自動保存されます）</li>
+    </ol>
+    <p>また、話者名のリネームも可能です。「話者1」→「山田さん」のように変更することで、より分かりやすい議事録になります。</p>
+
+    <h3>議事録をエクスポート・共有する</h3>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th>エクスポート方法</th><th>形式・宛先</th><th>用途</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>ダウンロード</td><td>PDF・Word・TXT・SRT</td><td>メール添付・社内保存</td></tr>
+          <tr><td>Notionへ送信</td><td>Notionページに直接追記</td><td>プロジェクト管理・ナレッジベース</td></tr>
+          <tr><td>Slackへ送信</td><td>Slackチャンネルに投稿</td><td>チームへの即時共有</td></tr>
+          <tr><td>Google Driveへ保存</td><td>Googleドキュメント形式で保存</td><td>チームドライブでの共同編集</td></tr>
+          <tr><td>URLで共有</td><td>閲覧専用URLを発行</td><td>社外の関係者への共有</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="cta-block">
+      <h3>Nottaで議事録作成を完全自動化</h3>
+      <p>Zoom・Teams・Google Meetの会議にBotを参加させるだけで、終了後に要約付き議事録が自動完成。月120分まで無料です。</p>
+      <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank" class="btn btn-primary btn-pulse" style="background:#4285f4;">無料で議事録を自動化する →</a>
+      <div class="cta-note">※ 本リンクはアフィリエイトリンクです</div>
+    </div>
+
+    <h2 id="translate">翻訳機能の使い方</h2>
+    <p>Nottaの翻訳機能を使えば、英語会議の文字起こしを<strong>ワンクリックで日本語訳</strong>できます。42言語に対応しており、グローバルな会議での議事録作成が格段に楽になります。</p>
+
+    <h3>翻訳の手順</h3>
+    <ol>
+      <li>翻訳したい文字起こしデータを開く</li>
+      <li>画面上部またはサイドパネルの「翻訳」ボタンをクリック</li>
+      <li>翻訳先の言語を選択（英語→日本語、日本語→英語など）</li>
+      <li>「翻訳を開始」をクリックすると、数秒〜数十秒で翻訳が完了</li>
+      <li>翻訳後のテキストは元の文字起こしと並べて表示されるか、翻訳のみ表示を切り替えられる</li>
+    </ol>
+
+    <h3>翻訳機能の活用シーン</h3>
+    <ul>
+      <li><strong>英語会議→日本語議事録</strong>：グローバルミーティングの内容を日本語チームに共有</li>
+      <li><strong>日本語会議→英語議事録</strong>：海外拠点・外国人メンバーへの共有</li>
+      <li><strong>多言語対応</strong>：中国語・韓国語・フランス語・ドイツ語など42言語に対応</li>
+    </ul>
+
+    <!-- チャットQ&A 3 -->
+    <div class="chat-box">
+      <img src="/images/author-avatar.png" alt="読者" class="chat-avatar" width="52" height="52" loading="lazy">
+      <div class="chat-content">
+        <div class="chat-name">読者からの質問</div>
+        <div class="chat-bubble">英語のオンライン会議をNottaで文字起こしして、日本語で議事録を作るには？</div>
+      </div>
+    </div>
+    <div class="chat-box" style="justify-content:flex-end;">
+      <div class="chat-content" style="align-items:flex-end;">
+        <div class="chat-name" style="text-align:right;">小田 健真（筆者）</div>
+        <div class="chat-bubble bubble-recommend">NottaのBot連携でZoom会議に自動参加させ、英語で文字起こし。終了後に「翻訳→日本語」をクリックするだけで日本語議事録が完成します。英語→日本語の翻訳精度も高く、会議後30分以内に日本語議事録が社内に展開できます。</div>
+      </div>
+      <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+    </div>
+
+    <h2 id="plan">無料版の制限と有料版の違い</h2>
+    <p>Nottaは無料プランでも主要機能が使えますが、<strong>月120分の時間制限</strong>が主な壁です。自分の使い方に合ったプランを選びましょう。</p>
+
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr><th>機能</th><th>フリー（無料）</th><th>Pro（月2,200円）</th><th>Business（月4,180円）</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>文字起こし時間/月</strong></td><td>120分（2時間）</td><td>1,800分（30時間）</td><td>無制限</td></tr>
+          <tr><td><strong>1回の録音上限</strong></td><td>3分</td><td>5時間</td><td>5時間</td></tr>
+          <tr><td><strong>リアルタイム文字起こし</strong></td><td>対応</td><td>対応</td><td>対応</td></tr>
+          <tr><td><strong>ファイルアップロード</strong></td><td>対応（月120分上限内）</td><td>無制限</td><td>無制限</td></tr>
+          <tr><td><strong>AI要約</strong></td><td>対応</td><td>対応</td><td>対応</td></tr>
+          <tr><td><strong>話者識別</strong></td><td>対応</td><td>対応</td><td>対応</td></tr>
+          <tr><td><strong>翻訳</strong></td><td>月600分まで</td><td>月1,800分</td><td>無制限</td></tr>
+          <tr><td><strong>Zoom/Teams/Meet Bot</strong></td><td>月5回まで</td><td>無制限</td><td>無制限</td></tr>
+          <tr><td><strong>エクスポート形式</strong></td><td>PDF・TXT</td><td>PDF・Word・TXT・SRT</td><td>全形式</td></tr>
+          <tr><td><strong>チーム機能</strong></td><td>なし</td><td>なし</td><td>管理者ダッシュボード・共有ワークスペース</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>どのプランを選ぶべきか</h3>
+    <ul>
+      <li><strong>月1〜2回・30分以内の会議のみ</strong> → 無料プラン（月120分で十分）</li>
+      <li><strong>週1〜2回・1時間の会議がある</strong> → Proプラン年払い（月1,317円）が最もコスパ良し</li>
+      <li><strong>毎日複数の会議がある・チームで使う</strong> → Businessプラン</li>
+    </ul>
+    <p>Nottaの料金プランを詳しく比較したい方は<a href="notta-pricing">Notta料金プラン徹底比較</a>をご覧ください。また、無料プランの詳細と使いこなし方は<a href="notta-free-plan">Notta無料プランの制限と使い方</a>で詳しく解説しています。</p>
+
+    <!-- 末尾CTA -->
+    <div style="background:linear-gradient(135deg,#667eea,#764ba2);border-radius:12px;padding:24px;margin:32px 0;text-align:center;color:#fff;">
+      <p style="font-weight:bold;font-size:1.1em;margin-bottom:8px;">Notta を今すぐ無料で試す</p>
+      <p style="font-size:0.9em;opacity:0.9;margin-bottom:16px;">月120分・クレカ不要・42言語対応。まず無料で精度を確認してから有料プランを検討できます。</p>
+      <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank"
+         style="display:inline-block;background:#fff;color:#764ba2;padding:14px 36px;border-radius:8px;font-weight:bold;font-size:1.05em;text-decoration:none;">
+        無料プランで試す（月120分・クレカ不要）→
+      </a>
+      <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B7QWV+7FX302+5988+5YJRM" alt="">
+    </div>
+
+    <!-- AdMax FAQ前広告 -->
+    <div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;"><p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p><!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax --></div>
+
+    <h2 id="faq">よくある質問（FAQ）</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Nottaの無料登録はどうやってするの？</div>
+        <div class="faq-a">notta.aiにアクセスし、メールアドレスまたはGoogleアカウントで登録するだけです。クレジットカードの登録は不要で、登録後すぐに月120分の無料文字起こしが使えます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">NottaはPCとスマホどちらでも使える？</div>
+        <div class="faq-a">はい、どちらでも使えます。PCはブラウザ（Chrome・Edge推奨）でアクセス、スマホはApp Store（iOS）またはGoogle Play（Android）からアプリをインストールして使います。データはクラウドで同期されます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Nottaで音声ファイルをアップロードして文字起こしする方法は？</div>
+        <div class="faq-a">ダッシュボードの「ファイルをアップロード」ボタンをクリックし、MP3・WAV・M4A・MP4・MOVなどの音声・動画ファイルを選択するだけです。アップロード後、自動で文字起こしが開始されます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">NottaのZoom連携はどうやって設定する？</div>
+        <div class="faq-a">Nottaダッシュボードの「会議Bot」→「Zoom連携」からZoomアカウントを連携します。連携後は会議URLを入力するか、Googleカレンダーと連携してスケジュールされた会議にBotが自動参加します。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Nottaの文字起こし結果を議事録として編集・共有する方法は？</div>
+        <div class="faq-a">文字起こし完了後、テキスト上をクリックして直接編集できます。「AI要約」ボタンで会議の要点・アクションアイテムを自動抽出し、PDF・Word・TXT形式でダウンロードするか、Notion・Slackに直接送信できます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Nottaの翻訳機能はどう使う？</div>
+        <div class="faq-a">文字起こし完了後、画面上部の「翻訳」ボタンをクリックし、翻訳先の言語を選択するだけです。42言語に対応しており、英語→日本語・日本語→英語などワンクリックで翻訳されます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">スマホアプリでリアルタイム文字起こしするには？</div>
+        <div class="faq-a">Nottaアプリを起動し、ホーム画面の「録音」ボタン（マイクアイコン）をタップすると、その場でリアルタイム文字起こしが開始されます。話しながら画面上にテキストが表示されます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Nottaの文字起こし結果はどの形式で保存・出力できる？</div>
+        <div class="faq-a">PDF・Word（DOCX）・TXT・SRT（字幕形式）でエクスポートできます。また、Notion・Slack・Google Driveへの直接送信にも対応しています。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">話者識別機能はどうやって使う？</div>
+        <div class="faq-a">Nottaは自動で話者を識別し、「話者1」「話者2」のように区別して文字起こしします。文字起こし完了後に話者名を手動でリネーム（例：「山田さん」「田中さん」）することもできます。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Nottaの無料プランでできることとできないことは？</div>
+        <div class="faq-a">無料プランでできること：月120分の文字起こし・リアルタイム文字起こし・ファイルアップロード・話者識別・AI要約・PDF/TXTエクスポート。制限されること：月120分超の文字起こし・一部のZoom/Teams Bot連携機能（Proプランで解除）。</div>
+      </div>
+    </div>
+
+    <h2 id="summary">まとめ</h2>
+    <p>Nottaの使い方を「登録→PC版→スマホ版→議事録作成→翻訳→プラン比較」の順で解説しました。</p>
+    <p><strong>まとめポイント</strong></p>
+    <ul>
+      <li>登録はGoogleアカウントで<strong>約2分・クレカ不要</strong></li>
+      <li>PCではブラウザからBot連携でZoom会議を自動録音、スマホでは対面会議のリアルタイム文字起こしが便利</li>
+      <li>AI要約→手動修正→エクスポートで<strong>5分以内に議事録完成</strong></li>
+      <li>翻訳は42言語ワンクリック対応、英語会議の日本語議事録も自動化できる</li>
+      <li>月2〜3回の会議なら<strong>無料プランで十分</strong>。週1〜2回以上ならProプラン（年払い月1,317円）がコスパ最良</li>
+    </ul>
+    <p>Nottaの評判・口コミを詳しく知りたい方は<a href="notta-review">Nottaレビュー記事</a>を、AI議事録ツールを他サービスと比較したい方は<a href="ai-meeting-minutes">AI議事録ツール比較</a>もあわせてご覧ください。対面会議で専用デバイスを検討している方は<a href="plaud-note-review">PLAUD NOTEレビュー</a>も参考になります。</p>
+
+    <!-- 末尾CTA最終 -->
+    <div style="background:linear-gradient(135deg,#667eea,#764ba2);border-radius:12px;padding:24px;margin:32px 0;text-align:center;color:#fff;">
+      <p style="font-weight:bold;font-size:1.1em;margin-bottom:8px;">まずは無料プランで5分試してみる</p>
+      <p style="font-size:0.9em;opacity:0.9;margin-bottom:16px;">月120分・クレカ不要・42言語・Zoom/Teams/Meet連携対応</p>
+      <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank"
+         style="display:inline-block;background:#fff;color:#764ba2;padding:14px 36px;border-radius:8px;font-weight:bold;font-size:1.05em;text-decoration:none;">
+        Nottaを無料で始める →
+      </a>
+      <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B7QWV+7FX302+5988+5YJRM" alt="">
+    </div>
+
+    <div class="author-box">
+      <img src="../images/author-avatar.png" alt="小田 健真" width="72" height="72" style="border-radius:50%;flex-shrink:0;">
+      <div class="author-info">
+        <h4>小田 健真（おだ けんしん）</h4>
+        <p class="author-title">AIツールレビュアー / 元ITエンジニア</p>
+        <p>大手SIerで10年間システム開発に従事後、独立。現在はAIツールを業務で活用しながら月30〜50本のAIツールを実際に試し、実体験に基づいたレビューを執筆しています。ChatGPT・Claude・Notta・PLAUD NOTEなど主要AIツールを2年以上使用中。</p>
+        <div class="author-links">
+          <a href="/about">プロフィール詳細</a>
+          <a href="https://x.com/ai_navi_tanaka" target="_blank" rel="noopener">X（旧Twitter）</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 関連記事 -->
+  <div class="related-articles" style="margin: 40px 0; padding: 24px; background: #f8f9ff; border-radius: 12px;">
+    <h3 style="margin-bottom: 16px; font-size: 1.1rem;">関連記事</h3>
+    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
+      <li><a href="notta-review">Notta 評判・口コミ｜実際に使って分かったメリット・デメリット</a></li>
+      <li><a href="notta-free-plan">Notta無料プランの使い方・制限・できること</a></li>
+      <li><a href="notta-pricing">Notta 料金プラン比較【2026年最新】</a></li>
+      <li><a href="plaud-note-review">PLAUD NOTEの評判・料金・使い方を徹底レビュー</a></li>
+      <li><a href="ai-meeting-minutes">AI議事録ツール おすすめ比較</a></li>
+      <li><a href="ai-transcription-tools">AI文字起こしツールおすすめ10選</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  <div class="affiliate-disc">本サイトはアフィリエイト広告（A8.net等）を利用しています。記事内のリンクから商品・サービスを購入・申込みいただいた場合、当サイトに報酬が発生することがあります。</div>
+  <div class="footer-nav">
+    <a href="/">ホーム</a>
+    <a href="claude-review">Claudeレビュー</a>
+    <a href="chatgpt-review">ChatGPTレビュー</a>
+    <a href="/privacy-policy">プライバシーポリシー</a>
+    <a href="/contact">お問い合わせ</a>
+  </div>
+  <p>&copy; 2026 AI navi</p>
+</footer>
+
+<!-- スティッキーモバイルCTA -->
+<a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank" class="sticky-cta-mobile" style="position:fixed;bottom:0;left:0;right:0;background:#4285f4;color:#fff;text-align:center;padding:14px 16px;font-weight:bold;font-size:0.95em;text-decoration:none;z-index:999;display:none;">
+  Nottaを無料で試す（月120分・クレカ不要）→
+</a>
+<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B7QWV+7FX302+5988+5YJRM" alt="">
+
+<script>
+if(window.innerWidth < 768){
+  window.addEventListener('scroll',function(){
+    var s=document.querySelector('.sticky-cta-mobile');
+    if(s) s.style.display=window.scrollY>400?'block':'none';
+  });
+}
+</script>
+<script src="../banner.js" defer></script>
+<script src="/sidebar.js"></script>
+</body>
+</html>
