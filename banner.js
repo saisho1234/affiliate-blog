@@ -57,6 +57,22 @@
       px: 'https://www19.a8.net/0.gif?a8mat=4BAITO+6XGN8Y+3JTE+HVNAR',
       color: '#2563eb',
       label: '月286円〜 →'
+    },
+    {
+      name: 'スイカVPN',
+      desc: '14年の信頼実績｜海外からでも日本のVODが見れる',
+      url: 'https://px.a8.net/svt/ejp?a8mat=4BGH3H+EHJQPE+4R3G+61JSI',
+      px: 'https://www16.a8.net/0.gif?a8mat=4BGH3H+EHJQPE+4R3G+61JSI',
+      color: '#16a34a',
+      label: '今すぐ試す →'
+    },
+    {
+      name: 'Karigoバーチャルオフィス',
+      desc: '月額990円〜｜法人登記・郵便受取OK・フリーランス独立に最適',
+      url: 'https://px.a8.net/svt/ejp?a8mat=4BGH3H+G5OISY+1N1U+609HU',
+      px: 'https://www11.a8.net/0.gif?a8mat=4BGH3H+G5OISY+1N1U+609HU',
+      color: '#7c3aed',
+      label: '詳細を見る →'
     }
   ];
 
@@ -68,7 +84,9 @@
   else if (path.includes('awarefy') || path.includes('mental')) idx = 2;
   else if (path.includes('irusiru') || path.includes('slide') || path.includes('presentation') || path.includes('design-tools')) idx = 3;
   else if (path.includes('stable-diffusion') || path.includes('image') || path.includes('conoha') || path.includes('midjourney') || path.includes('firefly') || path.includes('ai-image')) idx = 0;
+  else if (path.includes('vpn-comparison')) idx = 6; // スイカVPN
   else if (path.includes('vpn') || path.includes('security') || path.includes('privacy') || path.includes('ablenet')) idx = 5;
+  else if (path.includes('chatgpt-freelance') || path.includes('ai-side-job')) idx = 7; // Karigo
   else if (path.includes('deepl')) {
     idx = 1;
     // deepl記事では翻訳文脈に合わせたNotta訴求に上書き
