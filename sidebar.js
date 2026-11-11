@@ -101,7 +101,7 @@
              style="display:block;background:${p.color};color:#fff;text-align:center;padding:9px 10px;border-radius:8px;font-weight:700;text-decoration:none;font-size:0.88em;">
             ${p.label}
           </a>
-          <img src="${p.px}" width="1" height="1" style="display:none;" alt="">
+          <img src="${p.px}" width="1" height="1" style="border:0;" alt="">
         </div>
       </div>`;
   }

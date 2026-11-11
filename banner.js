@@ -125,7 +125,7 @@
        style="background:${p.color};color:#fff;padding:8px 20px;border-radius:6px;font-weight:bold;text-decoration:none;white-space:nowrap;flex-shrink:0;font-size:0.95em;box-shadow:0 2px 8px rgba(0,0,0,0.3);">
       ${p.label}
     </a>
-    <img src="${p.px}" width="1" height="1" border="0" alt="" style="display:none;">
+    <img src="${p.px}" width="1" height="1" border="0" alt="" style="border:0;">
     <button id="af-close-btn"
       style="background:none;border:1px solid rgba(255,255,255,0.3);color:#aaa;cursor:pointer;padding:4px 10px;border-radius:4px;font-size:1em;flex-shrink:0;"
       aria-label="閉じる">×</button>
