@@ -24,7 +24,7 @@
     "@type": "Article",
     "headline": "Stable Diffusion × Google Colab 完全ガイド【2026年最新】使えない時の対処法",
     "datePublished": "2026-07-05",
-    "dateModified": "2026-11-06",
+    "dateModified": "2026-11-11",
     "publisher": { "@type": "Organization", "name": "AI navi" }
   }
   </script>
@@ -1529,6 +1529,10 @@ beautiful anime girl, blue hair, sunset background, high quality, detailed, 8k</
       <div class="faq-item">
         <div class="faq-q">Stable Diffusionを無料で使う方法は？</div>
         <div class="faq-a">Stable Diffusionを無料で使う方法は主に2つあります。(1) Google Colab（無料プラン）: Googleアカウントがあればブラウザだけで利用可能。T4 GPUが無料で割り当てられ、SDXLやSD 3.5も動作します。(2) ローカル環境: NVIDIA GPU（VRAM 6GB以上推奨）搭載のPCがあれば、AUTOMATIC1111やComfyUIをインストールして完全無料・無制限で生成できます。初心者にはGoogle Colabから始めるのがおすすめです。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Google Colabで「バックエンドを割り当てられませんでした」と表示される場合の対処法は？</div>
+        <div class="faq-a">Google ColabでStable Diffusionを実行しようとして「バックエンドを割り当てられませんでした」が表示される場合、主にGPUリソースの不足が原因です。対処法は以下の通りです：①しばらく待ってから再実行する（数分〜1時間後、夜間や早朝は比較的空いています）②「ランタイム」→「ランタイムのタイプを変更」でGPUを再選択して接続し直す③ランタイムを一度切断して再接続する（「ランタイム」→「セッションを管理」→切断）④Colab Pro（月$9.99）にアップグレードして優先アクセスを取得する⑤ConoHa AI Canvasなど専用のクラウドGPUサービスに切り替える。無料枠のGPUは需要が高く割り当てに失敗することがあるため、時間帯を変えるだけで解決するケースも多いです。</div>
       </div>
     </div>
 
