@@ -17,7 +17,7 @@
     plaud:      { name: 'PLAUD NOTE', desc: 'ボタン1つで議事録完成', cta: '月300分無料', color: '#b45309', label: '無料で試す →', url: 'https://px.a8.net/svt/ejp?a8mat=4B7ROU+691VG2+5J4W+5YRHE', px: 'https://www13.a8.net/0.gif?a8mat=4B7ROU+691VG2+5J4W+5YRHE' },
     millen:     { name: 'MillenVPN', desc: 'AIツール用セキュアVPN', cta: '30日保証', color: '#2563eb', label: '月286円〜 →', url: 'https://px.a8.net/svt/ejp?a8mat=4BAITO+6XGN8Y+3JTE+HVNAR', px: 'https://www19.a8.net/0.gif?a8mat=4BAITO+6XGN8Y+3JTE+HVNAR' },
     conoha:     { name: 'ConoHa AI Canvas', desc: 'AIでHP・LP自動生成', cta: '初月無料', color: '#7c3aed', label: '無料で始める →', url: 'https://px.a8.net/svt/ejp?a8mat=4B7QWV+8D9CVM+50+7RUDGZ', px: 'https://www19.a8.net/0.gif?a8mat=4B7QWV+8D9CVM+50+7RUDGZ' },
-    bunken:     { name: '文賢', desc: 'AI文章校正｜プロ品質の仕上がり', cta: '1文字から校正', color: '#059669', label: '無料で試す →', url: 'https://px.a8.net/svt/ejp?a8mat=4B7ROU+6JROC2+3Q2O+HVFKY', px: 'https://www12.a8.net/0.gif?a8mat=4B7ROU+6JROC2+3Q2O+HVFKY' },
+    bunken:     { name: '文賢', desc: 'AI文章校正｜プロ品質の仕上がり', cta: '日本語特化', color: '#059669', label: '公式サイトを見る →', url: 'https://px.a8.net/svt/ejp?a8mat=4B7ROU+6JROC2+3Q2O+HVFKY', px: 'https://www12.a8.net/0.gif?a8mat=4B7ROU+6JROC2+3Q2O+HVFKY' },
     valueai:    { name: 'Value AI Writer', desc: 'AI記事生成｜月1,100円〜', cta: '5000文字無料', color: '#7c3aed', label: '無料で試す →', url: 'https://px.a8.net/svt/ejp?a8mat=4B7QWY+6KYJJM+1JUK+1HM30X', px: 'https://www12.a8.net/0.gif?a8mat=4B7QWY+6KYJJM+1JUK+1HM30X' },
   };
 

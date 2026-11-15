@@ -109,7 +109,7 @@
   bar.setAttribute('aria-label', 'PR広告');
   bar.style.cssText = [
     'position:fixed', 'bottom:-80px', 'left:0', 'right:0',
-    'background:linear-gradient(135deg,#0f172a,#1e1b4b)',
+    'background:#0f172a',
     'color:#fff', 'padding:12px 20px', 'z-index:99999',
     'display:flex', 'align-items:center', 'justify-content:center',
     'gap:12px', 'font-size:0.85em', 'font-family:sans-serif',
