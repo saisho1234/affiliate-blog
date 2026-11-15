@@ -26,7 +26,7 @@
     "headline": "Stable Diffusion VRAM不足の解決法7選【2026年】低スペックPC対応",
     "image": "https://ai-navi.app/og-image.png",
     "datePublished": "2026-08-15",
-    "dateModified": "2026-11-12",
+    "dateModified": "2026-11-13",
     "author": { "@type": "Person", "name": "小田 健真", "url": "https://ai-navi.app/about" },
     "publisher": { "@type": "Organization", "name": "AI navi", "logo": { "@type": "ImageObject", "url": "https://ai-navi.app/og-image.png" } }
   }
@@ -90,7 +90,7 @@
     </div>
     <div class="article-meta">
       <span>2026年8月15日</span>
-      <span>最終更新: 2026年9月11日</span>
+      <span>最終更新: 2026年11月13日</span>
       <span>約7,500字</span>
     </div>
   </div>
@@ -317,7 +317,7 @@
     <p><strong>注意：</strong><code>webui.bat</code>ではなく<code>webui-user.bat</code>を編集してください。webui.batはアップデート時に上書きされます。また、<code>=</code>の前後にスペースを入れないようにしてください。</p>
 
     <h3 id="sol2">方法2：xformersを有効にする</h3>
-    <p>xformersはMeta社が開発したメモリ効率に優れたAttention計算ライブラリです。有効にするだけで<strong>VRAMを20〜30%削減しつつ、生成速度も10〜20%向上</strong>する、一石二鳥の最適化です。</p>
+    <p>xformersはMeta社が開発したメモリ効率の良いAttention計算ライブラリです。有効にするだけで<strong>VRAMを20〜30%削減しつつ、生成速度も10〜20%向上</strong>する、一石二鳥の最適化です。</p>
 
     <h4>設定手順</h4>
     <p><code>webui-user.bat</code>のCOMMANDLINE_ARGSに<code>--xformers</code>を追加するだけです。</p>
@@ -341,7 +341,7 @@
       </ul>
     </div>
 
-    <p>Forgeは自動的にVRAM管理を最適化するため、多くの場合は<code>--medvram</code>や<code>--lowvram</code>などのオプションを追加しなくても適切に動作します。VRAM不足に悩んでいるなら、<strong>Forgeへの移行が2026年時点で最もおすすめの解決策</strong>です。</p>
+    <p>ForgeはVRAM管理を自動で最適化するため、多くの場合は<code>--medvram</code>や<code>--lowvram</code>などのオプションを追加しなくても動作します。VRAM不足に悩んでいるなら、<strong>Forgeへの移行が2026年時点でおすすめの解決策</strong>です。</p>
 
     <h3 id="sol4">方法4：VAEをFP16に変更する</h3>
     <p>VAE（Variational Autoencoder）はモデルの画像デコード部分で、デフォルトではFP32（単精度）で動作するものがあります。これをFP16（半精度）のVAEに変更することで、<strong>約1GBのVRAMを節約</strong>できます。</p>
