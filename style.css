@@ -1644,3 +1644,25 @@ main tr:nth-child(even) td, .compare-table tr:nth-child(even) td, .price-table t
 body a[style*="border-radius:20px"] { background: #fff !important; color: var(--text) !important; border: 1px solid var(--border) !important; }
 body a[style*="border-radius:20px"]:hover { border-color: var(--text) !important; }
 .tag-free, .tag-paid, .tag-best { background: none; color: var(--text); border: 1px solid var(--border); font-weight: 500; }
+
+/* =====================================================================
+   読むのを助ける控えめな動き（2026-11）
+   ===================================================================== */
+.read-progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; background: var(--accent); transform: scaleX(0); transform-origin: 0 50%; z-index: 1000; pointer-events: none; }
+.article-toc a.toc-current, .toc a.toc-current { color: var(--accent); font-weight: 700; }
+.article-toc a, .toc a { transition: color .15s; }
+.btn, .af-link-btn, body a[style*="background"] { transition: background-color .15s, filter .15s; }
+body a[style*="color:#fff"][style*="background"]:hover, body a[style*="color: #fff"][style*="background"]:hover,
+.btn-primary:hover, .af-link-btn:hover { filter: brightness(.9); }
+main tbody tr, article tbody tr { transition: background-color .12s; }
+main tbody tr:hover td, article tbody tr:hover td { background: #f6f3ea; }
+.tools-grid > a { transition: background-color .15s; }
+.tools-grid > a:hover, .tools-grid > a:hover .tool-card { background: #fdfcf8; }
+html { scroll-behavior: smooth; }
+main [id], article [id] { scroll-margin-top: 76px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .read-progress, .btn, main tbody tr { transition: none; }
+}
+/* 囲みの中の番号・箇条書きが枠の外に出ないようにする */
+.summary-box ol, .summary-box ul, .point-box ol, .point-box ul, body div[style] > ol, body div[style] > ul { padding-left: 1.5em; }

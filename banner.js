@@ -165,3 +165,47 @@
     }
   }, 5000);
 })();
+
+/* ===== 読書補助の動き（進捗バー・目次の現在地） ===== */
+(function () {
+  try {
+    // 読んだ位置を示す細い線
+    var bar = document.createElement('div');
+    bar.className = 'read-progress';
+    bar.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(bar);
+    var ticking = false;
+    function update() {
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      var r = h > 0 ? Math.min(1, Math.max(0, window.scrollY / h)) : 0;
+      bar.style.transform = 'scaleX(' + r + ')';
+      ticking = false;
+    }
+    window.addEventListener('scroll', function () {
+      if (!ticking) { ticking = true; window.requestAnimationFrame(update); }
+    }, { passive: true });
+    update();
+
+    // 目次の中で、いま読んでいる見出しに印をつける
+    var links = document.querySelectorAll('.article-toc a[href^="#"], .toc a[href^="#"]');
+    if (!links.length || !('IntersectionObserver' in window)) return;
+    var map = {};
+    var targets = [];
+    links.forEach(function (a) {
+      var id = decodeURIComponent(a.getAttribute('href').slice(1));
+      var el = id && document.getElementById(id);
+      if (el) { map[id] = a; targets.push(el); }
+    });
+    var current = null;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          if (current) current.classList.remove('toc-current');
+          current = map[e.target.id];
+          if (current) current.classList.add('toc-current');
+        }
+      });
+    }, { rootMargin: '-10% 0px -75% 0px' });
+    targets.forEach(function (t) { io.observe(t); });
+  } catch (e) { /* 動きは補助なので、失敗しても本文には影響させない */ }
+})();
