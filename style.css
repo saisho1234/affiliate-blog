@@ -1666,3 +1666,5 @@ main [id], article [id] { scroll-margin-top: 76px; }
 }
 /* 囲みの中の番号・箇条書きが枠の外に出ないようにする */
 .summary-box ol, .summary-box ul, .point-box ol, .point-box ul, body div[style] > ol, body div[style] > ul { padding-left: 1.5em; }
+/* ロゴがインライン指定の旧テンプレートも同じ見た目にそろえる */
+header nav > a[href="/"][style] { font-family: var(--serif) !important; color: var(--text) !important; font-size: 1.35rem !important; letter-spacing: .02em; }

@@ -24,7 +24,7 @@
     "headline": "Claudeメッセージ上限リセットはいつ？5時間制の仕組みと対処法5選",
     "image": "https://ai-navi.app/og-image.png",
     "datePublished": "2026-08-15",
-    "dateModified": "2026-11-13",
+    "dateModified": "2026-11-16",
     "author": { "@type": "Person", "name": "小田 健真", "url": "https://ai-navi.app/about" },
     "publisher": { "@type": "Organization", "name": "AI navi", "logo": { "@type": "ImageObject", "url": "https://ai-navi.app/og-image.png" } }
   }
@@ -50,7 +50,7 @@
     {"@type":"Question","name":"「You've hit your limit」と表示されたらどうすればいいですか？","acceptedAnswer":{"@type":"Answer","text":"表示されたエラーメッセージに記載されている時刻まで待つのが基本です。すぐに使いたい場合は、ChatGPTやGeminiなど他のAIに一時的に切り替えるか、Claude Proへのアップグレードを検討してください。"}},
     {"@type":"Question","name":"Claudeの上限に達しやすい使い方はありますか？","acceptedAnswer":{"@type":"Answer","text":"はい。長い会話を1つのスレッドで続ける使い方は上限に達しやすくなります。Claudeは毎回会話全体を読み直すため、会話が長くなるほど1メッセージあたりのトークン消費が増えます。こまめに新しい会話を始めることで消費を抑えられます。"}},
     {"@type":"Question","name":"Claudeのスライディングウィンドウとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"スライディングウィンドウとは、過去5時間以内に使ったトークン量で利用制限を管理する仕組みです。5時間前に使ったトークンは順次「期限切れ」となり、その分だけ新たに使えるようになります。一括リセットではなく、連続的に回復していくイメージです。"}},
-    {"@type":"Question","name":"Claude ProとMaxの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"Proは月額$20で無料版の約5倍の容量です。Maxは月額$100（Max 5x）と$200（Max 20x）の2段階があり、それぞれProの5倍・20倍の容量が利用できます。長時間のコーディングや大量のドキュメント処理にはMaxが適しています。"}},
+    {"@type":"Question","name":"Claude ProとMaxの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"Proは月額$20で無料版の約5倍の容量です。上位にはMax（月額$100）とUltra（月額$200・旧Max 20x）があり、それぞれProの5倍・20倍の容量が利用できます。長時間のコーディングや大量のドキュメント処理にはMaxが適しています。"}},
     {"@type":"Question","name":"Claudeの残り使用量を確認する方法はありますか？","acceptedAnswer":{"@type":"Answer","text":"Claude.aiの「設定（Settings）」→「使用量（Usage）」画面で、現在の使用状況と次のリセット時刻を確認できます。上限に達した際のエラーメッセージにも、再開可能な時刻が表示されます。"}},
     {"@type":"Question","name":"Claudeの上限はメッセージ数で決まりますか？トークン数ですか？","acceptedAnswer":{"@type":"Answer","text":"トークン数で管理されています。Claudeは送受信するメッセージの文字量（トークン数）を計算し、5時間のウィンドウ内での累積トークン消費量が上限に達すると制限がかかります。短いメッセージなら多く送れますが、長い会話や長文の入出力では少ないメッセージ数で上限に達します。"}},
     {"@type":"Question","name":"Claude無料版でも十分に使えますか？","acceptedAnswer":{"@type":"Answer","text":"軽い質問や短い会話であれば無料版でも十分です。ただし、長文の作成・コード生成・長い会話を頻繁に行う場合は、すぐに上限に達してしまいます。日常的にClaudeを活用するなら、Pro（$20/月）へのアップグレードが現実的な選択肢です。"}}
@@ -296,7 +296,7 @@
     </div>
 
     <h2 id="plan-comparison">無料版・Pro・Maxの制限比較表【2026年8月最新】</h2>
-    <p>Claudeには複数の料金プランがあり、プランによって利用できるメッセージ量が大きく異なります。2026年8月時点の最新情報をもとに比較します。</p>
+    <p>Claudeには複数の料金プランがあり、プランによって利用できるメッセージ量が大きく異なります。2026年11月時点の最新情報をもとに比較します。</p>
 
     <div class="compare-table-wrap">
       <table class="compare-table">
@@ -328,7 +328,7 @@
             <td>日常的な業務利用</td>
           </tr>
           <tr>
-            <td><strong>Max 5x</strong></td>
+            <td><strong>Max</strong></td>
             <td>$100/月</td>
             <td>Proの5倍</td>
             <td>全モデル（Opus含む）</td>
@@ -336,7 +336,7 @@
             <td>ヘビーユーザー・開発者</td>
           </tr>
           <tr>
-            <td><strong>Max 20x</strong></td>
+            <td><strong>Ultra（旧Max 20x）</strong></td>
             <td>$200/月</td>
             <td>Proの20倍</td>
             <td>全モデル（Opus含む）</td>
@@ -363,14 +363,14 @@
       </table>
     </div>
 
-    <p>※ 上記は2026年8月時点の情報です。最新の料金・制限は必ず<a href="https://claude.ai/settings" target="_blank" rel="noopener">Claude公式サイト</a>でご確認ください。</p>
+    <p>※ 上記は2026年11月時点の情報です。最新の料金・制限は必ず<a href="https://claude.ai/settings" target="_blank" rel="noopener">Claude公式サイト</a>でご確認ください。</p>
 
     <h3>プラン選びのポイント</h3>
     <ul>
       <li><strong>Free</strong>：Claudeを試してみたい方、週に数回の軽い質問程度の方</li>
       <li><strong>Pro（$20/月）</strong>：毎日Claudeを使う方に最もコスパが良い。Opusモデルも使える</li>
-      <li><strong>Max 5x（$100/月）</strong>：Pro上限に頻繁に達する開発者やライターに。Proの5倍の容量</li>
-      <li><strong>Max 20x（$200/月）</strong>：Claude Codeでの長時間コーディングや、大量ドキュメント処理向け</li>
+      <li><strong>Max（$100/月）</strong>：Pro上限に頻繁に達する開発者やライターに。Proの5倍の容量</li>
+      <li><strong>Ultra（$200/月・旧Max 20x）</strong>：Claude Codeでの長時間コーディングや、大量ドキュメント処理向け</li>
     </ul>
 
     <div class="summary-box">
@@ -579,7 +579,7 @@
       </div>
       <div class="faq-item">
         <div class="faq-q">Claude ProとMaxの違いは何ですか？</div>
-        <div class="faq-a">Proは月額$20で無料版の約5倍の容量です。Maxは月額$100（Max 5x）と$200（Max 20x）の2段階があり、それぞれProの5倍・20倍の容量が利用できます。長時間のコーディングや大量のドキュメント処理など、Pro上限に頻繁に達する方向けのプランです。</div>
+        <div class="faq-a">Proは月額$20で無料版の約5倍の容量です。上位にはMax（月額$100）とUltra（月額$200・旧Max 20x）があり、それぞれProの5倍・20倍の容量が利用できます。長時間のコーディングや大量のドキュメント処理など、Pro上限に頻繁に達する方向けのプランです。</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">Claudeの残り使用量を確認する方法はありますか？</div>
