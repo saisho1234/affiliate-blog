@@ -24,7 +24,7 @@
     "@type": "Article",
     "headline": "Stable Diffusion × Google Colab 完全ガイド【2026年最新】使えない時の対処法",
     "datePublished": "2026-07-05",
-    "dateModified": "2026-11-13",
+    "dateModified": "2026-11-16",
     "publisher": { "@type": "Organization", "name": "AI navi" }
   }
   </script>
@@ -213,6 +213,11 @@
   </div>
 
 <div class="experience-box" style="background: #f0fdf4; border-left: 4px solid #22c55e; padding: 20px; margin: 24px 0; border-radius: 0 8px 8px 0;">
+<div class="warn-box">
+  <p style="margin:0 0 8px;"><strong>2026年11月の追記：無料版ColabでWebUIを動かす場合の注意</strong></p>
+  <p style="margin:0;">この記事の手順は2026年8月25日に筆者が動作を確認したものです。その後、Google Colabの無料版では、AUTOMATIC1111などのWebUIの実行が制限の対象とされ、警告の表示や接続の切断、アカウントの利用制限が報告されています。無料版で試す場合は短時間の動作確認にとどめ、継続して使うなら有料のColab Proか、<a href="#install">ローカル環境</a>・専用のクラウドサービスを検討してください。最新の利用条件はGoogle公式の案内を確認してください。</p>
+</div>
+
 <h3>【2026年8月25日更新】Google Colab Stable Diffusion 2026：無料で使う完全ガイド</h3>
 <p><strong>2026年8月25日現在、Google Colabの無料プランでStable Diffusionは動作します。</strong>本記事ではGoogle ColabでStable Diffusionを無料で使うインストール手順、おすすめモデルの選び方、使えない場合の対処法までを完全ガイドとしてまとめています。「google colab stable diffusion 2026」「google colab stable diffusion 無料」で検索している方に向けて最新情報をお届けします。</p>
 <p>筆者はブログのアイキャッチ画像やSNS用ビジュアルの作成にStable Diffusionを約6ヶ月間使っています。Google Colabの無料枠で始めましたが、セッション切れが頻繁に発生し、途中から有料のColab Proに移行しました。</p>
@@ -420,7 +425,12 @@
     </div>
 
     <!-- ===== 3. Google Colabで無料で使う方法 ===== -->
-    <h2 id="colab">【2026年最新】Google ColabでStable Diffusionを無料で使う方法（ステップバイステップ）</h2>
+    <div class="warn-box">
+  <p style="margin:0 0 8px;"><strong>ご注意：無料版ColabでWebUIを動かす場合の注意</strong></p>
+  <p style="margin:0;">この記事の手順は2026年8月25日に筆者が動作を確認したものです。その後、Google Colabの無料版では、AUTOMATIC1111などのWebUIの実行が制限の対象とされ、警告の表示や接続の切断、アカウントの利用制限が報告されています。無料版で試す場合は短時間の動作確認にとどめ、継続して使うなら有料のColab Proか、<a href="#install">ローカル環境</a>・専用のクラウドサービスを検討してください。最新の利用条件はGoogle公式の案内を確認してください。</p>
+</div>
+
+<h2 id="colab">【2026年最新】Google ColabでStable Diffusionを無料で使う方法（ステップバイステップ）</h2>
     <p>高性能GPUを持っていなくても、<strong>Google Colaboratory（Colab）</strong>を使えばブラウザ上でStable Diffusionを<strong>完全無料</strong>で動かせます。「<strong>google colab stable diffusion 2026</strong>」で検索するユーザーが多いように、PCスペック不問で試せる最も手軽な方法です。2026年8月現在も無料プランで動作確認済みです。</p>
 
     <div class="success-box">
