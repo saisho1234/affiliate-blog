@@ -1668,3 +1668,26 @@ main [id], article [id] { scroll-margin-top: 76px; }
 .summary-box ol, .summary-box ul, .point-box ol, .point-box ul, body div[style] > ol, body div[style] > ul { padding-left: 1.5em; }
 /* ロゴがインライン指定の旧テンプレートも同じ見た目にそろえる */
 header nav > a[href="/"][style] { font-family: var(--serif) !important; color: var(--text) !important; font-size: 1.35rem !important; letter-spacing: .02em; }
+
+/* =====================================================================
+   読めない文字色の修正（2026-11）
+   濃い帯の中のリンク、白地に白文字になっていたボタンなどを直す。
+   ===================================================================== */
+.cta-block, .cta-fullwidth { color: #fff; }
+.cta-block a:not(.btn):not(.cta-btn), .cta-fullwidth a:not(.btn):not(.cta-btn) { color: #fff; }
+.cta-block .cta-btn, .cta-fullwidth .cta-btn { display: inline-block; background: #fff; color: var(--primary) !important; padding: 12px 28px; font-weight: 700; text-decoration: none; }
+.cta-block h2, .cta-block h3, .cta-fullwidth h3 { color: #fff; }
+/* 濃い帯の中の説明文は、個別に灰色指定されていても白で表示する */
+.cta-block p, .cta-block li, .cta-block span:not([style*="background"]), .cta-fullwidth p { color: rgba(255,255,255,.92) !important; }
+/* 淡い背景を個別指定された .cta-block（サイト内に3種類）は、白地＋墨文字の囲みとして扱う */
+.cta-block[style*="#f0f9ff"], .cta-block[style*="#fff8e1"], .cta-block[style*="#f0f7ff"] { background: #fff !important; color: var(--text) !important; border: 1px solid var(--border); }
+.cta-block[style*="#f0f9ff"] h2, .cta-block[style*="#fff8e1"] h2, .cta-block[style*="#f0f7ff"] h2, .cta-block[style*="#f0f9ff"] h3, .cta-block[style*="#fff8e1"] h3, .cta-block[style*="#f0f7ff"] h3, .cta-block[style*="#f0f9ff"] p, .cta-block[style*="#fff8e1"] p, .cta-block[style*="#f0f7ff"] p, .cta-block[style*="#f0f9ff"] li, .cta-block[style*="#fff8e1"] li, .cta-block[style*="#f0f7ff"] li, .cta-block[style*="#f0f9ff"] span:not([style*="background"]), .cta-block[style*="#fff8e1"] span:not([style*="background"]), .cta-block[style*="#f0f7ff"] span:not([style*="background"]) { color: var(--text) !important; opacity: 1; }
+.cta-block[style*="#f0f9ff"] a:not(.btn):not(.cta-btn):not([style*="background"]), .cta-block[style*="#fff8e1"] a:not(.btn):not(.cta-btn):not([style*="background"]), .cta-block[style*="#f0f7ff"] a:not(.btn):not(.cta-btn):not([style*="background"]) { color: var(--primary); }
+.cta-block[style*="#f0f9ff"] .cta-btn, .cta-block[style*="#fff8e1"] .cta-btn, .cta-block[style*="#f0f7ff"] .cta-btn { background: var(--accent); color: #fff !important; }
+/* オレンジ帯は白地の囲みに変更（中の灰色文字が読めなくなるため） */
+.cta-block-orange { background: #fff; color: var(--text); border: 1px solid var(--border); border-left: 3px solid var(--accent); }
+.cta-block-orange h3, .cta-block-orange p { color: var(--text); opacity: 1; }
+.cta-block-orange [style*="color:#fff"]:not(a), .cta-block-orange [style*="color: #fff"]:not(a), .cta-block-orange [style*="color:white"]:not(a) { color: var(--text) !important; }
+/* 定義のなかった副ボタン */
+a.btn-secondary, .btn.btn-secondary { background: #fff; color: var(--text) !important; border: 1px solid var(--text); }
+a.btn-secondary:hover { background: var(--paper); }
