@@ -28,7 +28,7 @@ nav ul a { text-decoration: none; color: var(--text-light); font-size: 0.9rem; f
 nav ul a:hover { color: var(--primary); }
 
 /* ヒーロー */
-.hero { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #0ea5e9 100%); color: white; text-align: center; padding: 64px 20px; }
+.hero { background: #1e3a8a; color: white; text-align: center; padding: 64px 20px; }
 .hero h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; line-height: 1.4; margin-bottom: 16px; }
 .hero p { font-size: 1.05rem; opacity: 0.9; max-width: 600px; margin: 0 auto 32px; }
 .hero-badge { display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-bottom: 32px; }
@@ -55,7 +55,7 @@ section { max-width: 1100px; margin: 0 auto; padding: 48px 20px; }
 .section-divider { border: none; border-top: 2px solid var(--border); margin: 48px 0; }
 
 /* おすすめTop3 */
-.top3 { background: linear-gradient(135deg, #fef9f0, #fff7ed); border-radius: var(--radius); padding: 32px 24px; margin-bottom: 48px; border: 2px solid #fed7aa; }
+.top3 { background: #fef9f0; border-radius: var(--radius); padding: 32px 24px; margin-bottom: 48px; border: 2px solid #fed7aa; }
 .top3-title { font-size: 1.3rem; font-weight: 800; margin-bottom: 24px; color: var(--accent-dark); text-align: center; }
 .top3-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
 .top3-card { background: white; border-radius: 10px; padding: 20px; box-shadow: var(--card-shadow); display: flex; flex-direction: column; gap: 12px; }
@@ -93,12 +93,12 @@ section { max-width: 1100px; margin: 0 auto; padding: 48px 20px; }
 .pros li, .cons li { margin-bottom: 4px; }
 
 /* CTA ブロック */
-.cta-block { background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; border-radius: var(--radius); padding: 36px 28px; text-align: center; margin: 40px 0; border: 2px solid rgba(255,255,255,0.15); }
+.cta-block { background: #1e3a8a; color: white; border-radius: var(--radius); padding: 36px 28px; text-align: center; margin: 40px 0; border: 2px solid rgba(255,255,255,0.15); }
 .cta-block h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 10px; }
 .cta-block p { opacity: 0.9; margin-bottom: 22px; font-size: 0.98rem; }
 .cta-note { font-size: 0.8rem; opacity: 0.7; margin-top: 10px; }
 /* オレンジCTA（目立つ高CV色） */
-.cta-block-orange { background: linear-gradient(135deg, #ea580c, #f97316); color: white; border-radius: var(--radius); padding: 36px 28px; text-align: center; margin: 40px 0; }
+.cta-block-orange { background: #ea580c; color: white; border-radius: var(--radius); padding: 36px 28px; text-align: center; margin: 40px 0; }
 .cta-block-orange h3 { font-size: 1.4rem; font-weight: 800; margin-bottom: 10px; }
 .cta-block-orange p { opacity: 0.9; margin-bottom: 22px; font-size: 0.98rem; }
 /* おすすめラベル */
@@ -202,7 +202,7 @@ footer a { color: #60a5fa; text-decoration: none; }
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: #667eea;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -298,7 +298,7 @@ footer a { color: #60a5fa; text-decoration: none; }
     left: 0;
     right: 0;
     z-index: 999;
-    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    background: var(--accent);
     color: white;
     text-align: center;
     padding: 12px 20px;
@@ -312,7 +312,7 @@ footer a { color: #60a5fa; text-decoration: none; }
     transition: background 0.2s;
   }
   .sticky-cta:hover {
-    background: linear-gradient(135deg, var(--accent-dark), #c2410c);
+    background: var(--accent-dark);
   }
   .article-wrap {
     padding-bottom: 70px;
@@ -321,7 +321,7 @@ footer a { color: #60a5fa; text-decoration: none; }
 
 /* === 収益化改善: インラインCTAボタンボックス === */
 .cta-inline-box {
-  background: linear-gradient(135deg, #fff7ed, #ffedd5);
+  background: #fff7ed;
   border: 2px solid #fb923c;
   border-radius: 12px;
   padding: 20px 24px;
@@ -387,7 +387,7 @@ footer a { color: #60a5fa; text-decoration: none; }
     left: 0;
     right: 0;
     z-index: 999;
-    background: linear-gradient(90deg, #f97316, #ea580c);
+    background: #f97316;
     color: white;
     text-align: center;
     padding: 12px 16px;
@@ -399,7 +399,7 @@ footer a { color: #60a5fa; text-decoration: none; }
     gap: 6px;
     box-shadow: 0 -3px 15px rgba(0,0,0,0.25);
   }
-  .sticky-cta-mobile:hover { background: linear-gradient(90deg, #ea580c, #c2410c); }
+  .sticky-cta-mobile:hover { background: #ea580c; }
   /* 記事コンテンツの下部に余白（スティッキーCTAに隠れないように） */
   body { padding-bottom: 56px; }
 }
@@ -423,7 +423,7 @@ footer a { color: #60a5fa; text-decoration: none; }
 
 /* === (C) 記事末尾フルワイドCTA === */
 .cta-fullwidth {
-  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  background: #4f46e5;
   color: white;
   padding: 32px 24px;
   border-radius: 16px;
@@ -686,7 +686,7 @@ footer a { color: #60a5fa; text-decoration: none; }
 
 /* ====== ポイントボックス（吹き出し以外の強調） ====== */
 .point-box {
-  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  background: #eff6ff;
   border-left: 4px solid var(--primary);
   border-radius: 0 12px 12px 0;
   padding: 18px 22px;
@@ -696,7 +696,7 @@ footer a { color: #60a5fa; text-decoration: none; }
 }
 .point-box strong { color: var(--primary); }
 .warn-box {
-  background: linear-gradient(135deg, #fffbeb, #fef3c7);
+  background: #fffbeb;
   border-left: 4px solid #f59e0b;
   border-radius: 0 12px 12px 0;
   padding: 18px 22px;
@@ -708,7 +708,7 @@ footer a { color: #60a5fa; text-decoration: none; }
 
 /* ====== 3行まとめボックス（記事冒頭用） ====== */
 .summary-3lines {
-  background: linear-gradient(135deg, #f0f7ff, #e8f4fd);
+  background: #f0f7ff;
   border: 2px solid #93c5fd;
   border-radius: 12px;
   padding: 20px 24px;
@@ -769,3 +769,925 @@ footer a { color: #60a5fa; text-decoration: none; }
     background: #f8fafc;
   }
 }
+
+/* =====================================================================
+   デザイン刷新（2026-11）
+   方針: 装飾を減らし、文字を読ませる雑誌風の見た目にする。
+   色は「墨・紙・藍・朱」の4つだけ。グラデーション・影・丸バッジは使わない。
+   記事側にインラインstyleが多いため、一部は !important で上書きしている。
+   ===================================================================== */
+:root {
+  --primary: #1d4f73;
+  --primary-dark: #143a56;
+  --accent: #c8421a;
+  --accent-dark: #a63413;
+  --text: #222222;
+  --text-light: #666660;
+  --bg: #ffffff;
+  --border: #dcdcd4;
+  --paper: #f6f5f0;
+  --card-shadow: none;
+  --radius: 4px;
+  --serif: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP", serif;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic Medium", "Yu Gothic", Meiryo, sans-serif;
+  background: #fff;
+  color: var(--text);
+  line-height: 1.9;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* --- レイアウトの土台（.container が未定義だった不具合の修正） --- */
+.container { max-width: 1100px; margin-left: auto; margin-right: auto; padding-left: 20px; padding-right: 20px; }
+main.container, main.article-container, main.article-main, main.main-content, main:not([class]) {
+  max-width: 1100px; margin-left: auto; margin-right: auto; padding: 8px 20px 48px;
+}
+#sidebar-layout > div:first-child { max-width: 780px; }
+
+/* --- ヘッダー --- */
+header { box-shadow: none; border-bottom: 1px solid var(--text); }
+header.article-header { position: static; border: 0; background: none; }
+.site-header .container { display: flex; align-items: center; justify-content: space-between; height: 60px; position: relative; }
+.site-header nav { height: auto; padding: 0; margin: 0; max-width: none; position: static; }
+.logo { font-family: var(--serif); font-size: 1.35rem; letter-spacing: .02em; color: var(--text); }
+.logo span { color: var(--accent); }
+nav ul a { color: var(--text); font-size: .88rem; }
+nav ul a:hover { color: var(--accent); }
+.breadcrumb { font-size: .8rem; padding-top: 14px; padding-bottom: 6px; }
+
+/* --- 見出しと本文 --- */
+main h1, article h1, .article-header h1 {
+  font-family: var(--serif); font-weight: 700; font-size: clamp(1.5rem, 3.6vw, 2.1rem);
+  line-height: 1.5; letter-spacing: .01em; margin: 10px 0 22px;
+}
+main h2, article h2, .article-body h2 {
+  font-family: var(--serif); font-weight: 700; font-size: 1.4rem; line-height: 1.5;
+  margin: 56px 0 18px; padding: 0 0 10px; border-left: 0; border-bottom: 1px solid var(--text);
+}
+main h3, article h3, .article-body h3 { font-size: 1.08rem; font-weight: 700; line-height: 1.6; margin: 32px 0 10px; }
+main p, article p { margin-bottom: 1.1em; }
+main ul, main ol, article ul, article ol { padding-left: 1.4em; margin-bottom: 1.1em; }
+main a, article a { color: var(--primary); text-underline-offset: 3px; }
+
+/* --- 表 --- */
+main table, article table { width: 100%; border-collapse: collapse; font-size: .92rem; margin: 16px 0; }
+body th {
+  background: var(--paper) !important; color: var(--text) !important;
+  border-bottom: 2px solid var(--text); text-align: left; padding: 10px 12px; font-weight: 700;
+}
+main td, article td { padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.compare-table tr:hover td, .comparison-table tr:hover td { background: inherit; }
+
+/* --- 装飾を抑える（角丸・影・太枠・動き） --- */
+body [style*="border-radius"]:not([style*="50%"]), .top3, .top3-card, .tool-card, .cta-block, .cta-block-orange,
+.cta-fullwidth, .cta-fullwidth .cta-btn, .cta-inline-box, .summary-box, .summary-3lines, .point-box, .warn-box,
+.author-box, .product-card, .faq-item, .article-toc, .badge, .btn, .af-link-btn, .chat-box .chat-bubble {
+  border-radius: 4px !important;
+}
+body [style*="box-shadow"], .top3-card, .tool-card, .btn-primary, .af-link-btn, .product-card,
+.cta-fullwidth .cta-btn, .chat-box .chat-bubble, .article-screenshot img {
+  box-shadow: none !important;
+}
+body [style*="border:2px solid"], body [style*="border: 2px solid"], .top3, .cta-inline-box, .summary-3lines { border-width: 1px !important; }
+.btn-pulse { animation: none; }
+.tool-card:hover, .btn-primary:hover, .af-link-btn:hover, .cta-fullwidth .cta-btn:hover, .related-articles li:hover { transform: none; box-shadow: none; }
+.btn-primary::after { display: none; }
+.btn { letter-spacing: .02em; }
+
+/* --- 囲み枠は「紙色＋細い罫線」に統一 --- */
+.summary-box, .summary-3lines, .point-box, .article-toc, .author-box, .top3 {
+  background: var(--paper); border: 1px solid var(--border);
+}
+.point-box { border-left: 3px solid var(--primary); }
+.warn-box { background: #fdf6e3; border-left: 3px solid #b8860b; }
+.summary-box h3, .point-box strong, .chat-box .chat-bubble strong { color: var(--text); }
+.top3-title { font-family: var(--serif); color: var(--text); text-align: left; }
+.top3-card { border: 1px solid var(--border); }
+.rank-1, .rank-2, .rank-3 { color: var(--accent); }
+.tool-merit { background: none; color: var(--text-light); padding: 0; }
+.tool-card { border: 1px solid var(--border); }
+.tool-icon { background: var(--text); }
+
+/* --- トップページのヒーロー --- */
+.hero { background: var(--paper); color: var(--text); text-align: left; padding: 56px 20px 48px; border-bottom: 1px solid var(--border); }
+.hero-inner { max-width: 1060px; margin: 0 auto; }
+.hero-kicker { font-size: .82rem; letter-spacing: .12em; color: var(--text-light); margin: 0 0 12px; opacity: 1; }
+.hero h1 { font-family: var(--serif); font-size: clamp(1.7rem, 4.4vw, 2.6rem); line-height: 1.45; margin-bottom: 16px; }
+.hero p { opacity: 1; color: #444; max-width: 640px; margin: 0 0 28px; font-size: 1rem; }
+.pr-box { max-width: 1060px; margin: 32px auto; padding: 20px 24px; border: 1px solid var(--border); display: flex; gap: 20px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.pr-box .pr-label { font-size: .72rem; letter-spacing: .1em; color: var(--text-light); border: 1px solid var(--border); padding: 1px 8px; margin-right: 10px; }
+.pr-box h2 { font-size: 1.05rem; margin: 0 0 4px; padding: 0; border: 0; font-family: inherit; }
+.pr-box p { font-size: .88rem; color: var(--text-light); margin: 0; }
+.section-title { font-family: var(--serif); }
+
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+  .hero { padding: 36px 20px 32px; }
+  main h2, article h2, .article-body h2 { font-size: 1.25rem; margin-top: 44px; }
+  .compare-table th:first-child, .comparison-table th:first-child { background: var(--paper); }
+  .table-wrapper::after, .compare-table-wrap::after { background: none; }
+}
+main div > h2:first-child, article div > h2:first-child, main section > h2:first-child { margin-top: 0; }
+.site-header .menu-toggle { margin-left: auto; }
+
+/* --- 別テンプレート（.header-inner / .site-logo / パンくずol）の統一 --- */
+.site-header .header-inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 60px; position: relative; }
+.site-logo { font-family: var(--serif); font-size: 1.35rem; font-weight: 700; letter-spacing: .02em; color: var(--text); text-decoration: none; }
+nav.breadcrumb { height: auto; display: block; }
+nav.breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: 0; }
+nav.breadcrumb ol li + li::before { content: ">"; margin-right: 6px; color: var(--text-light); }
+
+/* --- スマホ: 囲いのない表が画面からはみ出すのを防ぐ --- */
+@media (max-width: 768px) {
+  main table, article table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+}
+
+
+/* =====================================================================
+   デザイン仕上げ（2026-11）: 読みやすさと統一感
+   記事内のインラインstyleで指定された多色の囲み・文字色・ボタン色を、
+   サイトの4色（墨・紙・藍・朱）に寄せる。
+   ===================================================================== */
+:root { --paper: #f1efe8; --page: #fbfaf6; }
+body { background: var(--page); }
+::selection { background: #f3d9cf; }
+
+/* 淡い色の囲みは「白地＋細罫」に統一（警告の黄・赤は意味があるので残す） */
+body [style*="background:#f0fdf4"],
+body [style*="background: #f0fdf4"],
+body [style*="background:#F0FDF4"],
+body [style*="background: #F0FDF4"],
+body [style*="background:#f0f7ff"],
+body [style*="background: #f0f7ff"],
+body [style*="background:#F0F7FF"],
+body [style*="background: #F0F7FF"],
+body [style*="background:#fff7ed"],
+body [style*="background: #fff7ed"],
+body [style*="background:#FFF7ED"],
+body [style*="background: #FFF7ED"],
+body [style*="background:#eff6ff"],
+body [style*="background: #eff6ff"],
+body [style*="background:#EFF6FF"],
+body [style*="background: #EFF6FF"],
+body [style*="background:#e8f5e9"],
+body [style*="background: #e8f5e9"],
+body [style*="background:#E8F5E9"],
+body [style*="background: #E8F5E9"],
+body [style*="background:#f0f9ff"],
+body [style*="background: #f0f9ff"],
+body [style*="background:#F0F9FF"],
+body [style*="background: #F0F9FF"],
+body [style*="background:#f0f4ff"],
+body [style*="background: #f0f4ff"],
+body [style*="background:#F0F4FF"],
+body [style*="background: #F0F4FF"],
+body [style*="background:#fff3e0"],
+body [style*="background: #fff3e0"],
+body [style*="background:#FFF3E0"],
+body [style*="background: #FFF3E0"],
+body [style*="background:#f8f9ff"],
+body [style*="background: #f8f9ff"],
+body [style*="background:#F8F9FF"],
+body [style*="background: #F8F9FF"],
+body [style*="background:#fffbf0"],
+body [style*="background: #fffbf0"],
+body [style*="background:#FFFBF0"],
+body [style*="background: #FFFBF0"],
+body [style*="background:#f8fafc"],
+body [style*="background: #f8fafc"],
+body [style*="background:#F8FAFC"],
+body [style*="background: #F8FAFC"],
+body [style*="background:#f8f9fa"],
+body [style*="background: #f8f9fa"],
+body [style*="background:#F8F9FA"],
+body [style*="background: #F8F9FA"],
+body [style*="background:#f3f4f6"],
+body [style*="background: #f3f4f6"],
+body [style*="background:#F3F4F6"],
+body [style*="background: #F3F4F6"],
+body [style*="background:#f9fafb"],
+body [style*="background: #f9fafb"],
+body [style*="background:#F9FAFB"],
+body [style*="background: #F9FAFB"],
+body [style*="background:#fafafa"],
+body [style*="background: #fafafa"],
+body [style*="background:#FAFAFA"],
+body [style*="background: #FAFAFA"],
+body [style*="background:#f5f5f5"],
+body [style*="background: #f5f5f5"],
+body [style*="background:#F5F5F5"],
+body [style*="background: #F5F5F5"],
+body [style*="background:#dcfce7"],
+body [style*="background: #dcfce7"],
+body [style*="background:#DCFCE7"],
+body [style*="background: #DCFCE7"],
+body [style*="background:#e0f2fe"],
+body [style*="background: #e0f2fe"],
+body [style*="background:#E0F2FE"],
+body [style*="background: #E0F2FE"],
+body [style*="background:#dbeafe"],
+body [style*="background: #dbeafe"],
+body [style*="background:#DBEAFE"],
+body [style*="background: #DBEAFE"],
+body [style*="background:#ede9fe"],
+body [style*="background: #ede9fe"],
+body [style*="background:#EDE9FE"],
+body [style*="background: #EDE9FE"],
+body [style*="background:#f5f3ff"],
+body [style*="background: #f5f3ff"],
+body [style*="background:#F5F3FF"],
+body [style*="background: #F5F3FF"],
+body [style*="background:#eef2ff"],
+body [style*="background: #eef2ff"],
+body [style*="background:#EEF2FF"],
+body [style*="background: #EEF2FF"],
+body [style*="background:#ecfdf5"],
+body [style*="background: #ecfdf5"],
+body [style*="background:#ECFDF5"],
+body [style*="background: #ECFDF5"],
+body [style*="background:#ffedd5"],
+body [style*="background: #ffedd5"],
+body [style*="background:#FFEDD5"],
+body [style*="background: #FFEDD5"],
+body [style*="background:#fef9f0"],
+body [style*="background: #fef9f0"],
+body [style*="background:#FEF9F0"],
+body [style*="background: #FEF9F0"],
+body [style*="background:#e8f4fd"],
+body [style*="background: #e8f4fd"],
+body [style*="background:#E8F4FD"],
+body [style*="background: #E8F4FD"],
+body [style*="background:#f0f8ff"],
+body [style*="background: #f0f8ff"],
+body [style*="background:#F0F8FF"],
+body [style*="background: #F0F8FF"],
+body [style*="background:#e3f2fd"],
+body [style*="background: #e3f2fd"],
+body [style*="background:#E3F2FD"],
+body [style*="background: #E3F2FD"],
+body [style*="background:#f3e5f5"],
+body [style*="background: #f3e5f5"],
+body [style*="background:#F3E5F5"],
+body [style*="background: #F3E5F5"],
+body [style*="background-color:#f0fdf4"],
+body [style*="background-color: #f0fdf4"],
+body [style*="background-color:#F0FDF4"],
+body [style*="background-color: #F0FDF4"],
+body [style*="background-color:#f0f7ff"],
+body [style*="background-color: #f0f7ff"],
+body [style*="background-color:#F0F7FF"],
+body [style*="background-color: #F0F7FF"],
+body [style*="background-color:#fff7ed"],
+body [style*="background-color: #fff7ed"],
+body [style*="background-color:#FFF7ED"],
+body [style*="background-color: #FFF7ED"],
+body [style*="background-color:#eff6ff"],
+body [style*="background-color: #eff6ff"],
+body [style*="background-color:#EFF6FF"],
+body [style*="background-color: #EFF6FF"],
+body [style*="background-color:#e8f5e9"],
+body [style*="background-color: #e8f5e9"],
+body [style*="background-color:#E8F5E9"],
+body [style*="background-color: #E8F5E9"],
+body [style*="background-color:#f0f9ff"],
+body [style*="background-color: #f0f9ff"],
+body [style*="background-color:#F0F9FF"],
+body [style*="background-color: #F0F9FF"],
+body [style*="background-color:#f0f4ff"],
+body [style*="background-color: #f0f4ff"],
+body [style*="background-color:#F0F4FF"],
+body [style*="background-color: #F0F4FF"],
+body [style*="background-color:#fff3e0"],
+body [style*="background-color: #fff3e0"],
+body [style*="background-color:#FFF3E0"],
+body [style*="background-color: #FFF3E0"],
+body [style*="background-color:#f8f9ff"],
+body [style*="background-color: #f8f9ff"],
+body [style*="background-color:#F8F9FF"],
+body [style*="background-color: #F8F9FF"],
+body [style*="background-color:#fffbf0"],
+body [style*="background-color: #fffbf0"],
+body [style*="background-color:#FFFBF0"],
+body [style*="background-color: #FFFBF0"],
+body [style*="background-color:#f8fafc"],
+body [style*="background-color: #f8fafc"],
+body [style*="background-color:#F8FAFC"],
+body [style*="background-color: #F8FAFC"],
+body [style*="background-color:#f8f9fa"],
+body [style*="background-color: #f8f9fa"],
+body [style*="background-color:#F8F9FA"],
+body [style*="background-color: #F8F9FA"],
+body [style*="background-color:#f3f4f6"],
+body [style*="background-color: #f3f4f6"],
+body [style*="background-color:#F3F4F6"],
+body [style*="background-color: #F3F4F6"],
+body [style*="background-color:#f9fafb"],
+body [style*="background-color: #f9fafb"],
+body [style*="background-color:#F9FAFB"],
+body [style*="background-color: #F9FAFB"],
+body [style*="background-color:#fafafa"],
+body [style*="background-color: #fafafa"],
+body [style*="background-color:#FAFAFA"],
+body [style*="background-color: #FAFAFA"],
+body [style*="background-color:#f5f5f5"],
+body [style*="background-color: #f5f5f5"],
+body [style*="background-color:#F5F5F5"],
+body [style*="background-color: #F5F5F5"],
+body [style*="background-color:#dcfce7"],
+body [style*="background-color: #dcfce7"],
+body [style*="background-color:#DCFCE7"],
+body [style*="background-color: #DCFCE7"],
+body [style*="background-color:#e0f2fe"],
+body [style*="background-color: #e0f2fe"],
+body [style*="background-color:#E0F2FE"],
+body [style*="background-color: #E0F2FE"],
+body [style*="background-color:#dbeafe"],
+body [style*="background-color: #dbeafe"],
+body [style*="background-color:#DBEAFE"],
+body [style*="background-color: #DBEAFE"],
+body [style*="background-color:#ede9fe"],
+body [style*="background-color: #ede9fe"],
+body [style*="background-color:#EDE9FE"],
+body [style*="background-color: #EDE9FE"],
+body [style*="background-color:#f5f3ff"],
+body [style*="background-color: #f5f3ff"],
+body [style*="background-color:#F5F3FF"],
+body [style*="background-color: #F5F3FF"],
+body [style*="background-color:#eef2ff"],
+body [style*="background-color: #eef2ff"],
+body [style*="background-color:#EEF2FF"],
+body [style*="background-color: #EEF2FF"],
+body [style*="background-color:#ecfdf5"],
+body [style*="background-color: #ecfdf5"],
+body [style*="background-color:#ECFDF5"],
+body [style*="background-color: #ECFDF5"],
+body [style*="background-color:#ffedd5"],
+body [style*="background-color: #ffedd5"],
+body [style*="background-color:#FFEDD5"],
+body [style*="background-color: #FFEDD5"],
+body [style*="background-color:#fef9f0"],
+body [style*="background-color: #fef9f0"],
+body [style*="background-color:#FEF9F0"],
+body [style*="background-color: #FEF9F0"],
+body [style*="background-color:#e8f4fd"],
+body [style*="background-color: #e8f4fd"],
+body [style*="background-color:#E8F4FD"],
+body [style*="background-color: #E8F4FD"],
+body [style*="background-color:#f0f8ff"],
+body [style*="background-color: #f0f8ff"],
+body [style*="background-color:#F0F8FF"],
+body [style*="background-color: #F0F8FF"],
+body [style*="background-color:#e3f2fd"],
+body [style*="background-color: #e3f2fd"],
+body [style*="background-color:#E3F2FD"],
+body [style*="background-color: #E3F2FD"],
+body [style*="background-color:#f3e5f5"],
+body [style*="background-color: #f3e5f5"],
+body [style*="background-color:#F3E5F5"],
+body [style*="background-color: #F3E5F5"] {
+  background: #fff !important; border-color: var(--border) !important;
+}
+body [style*="border-left:3px solid"], body [style*="border-left:4px solid"], body [style*="border-left: 4px solid"], body [style*="border-left: 3px solid"] {
+  border-left-color: var(--accent) !important; border-left-width: 3px !important;
+}
+.summary-box, .summary-3lines, .point-box, .article-toc, .author-box, .top3, .faq-item, .tool-card, .top3-card, .cta-inline-box, .social-proof-box {
+  background: #fff; border: 1px solid var(--border);
+}
+
+/* 文字色: 青・紫は藍、緑は墨、橙は朱に寄せる */
+main [style*="color:#4a90e2"],
+main [style*="color: #4a90e2"],
+main [style*="color:#4A90E2"],
+main [style*="color: #4A90E2"],
+main [style*="color:#2563eb"],
+main [style*="color: #2563eb"],
+main [style*="color:#2563EB"],
+main [style*="color: #2563EB"],
+main [style*="color:#4e8cff"],
+main [style*="color: #4e8cff"],
+main [style*="color:#4E8CFF"],
+main [style*="color: #4E8CFF"],
+main [style*="color:#4338ca"],
+main [style*="color: #4338ca"],
+main [style*="color:#4338CA"],
+main [style*="color: #4338CA"],
+main [style*="color:#4f46e5"],
+main [style*="color: #4f46e5"],
+main [style*="color:#4F46E5"],
+main [style*="color: #4F46E5"],
+main [style*="color:#7c3aed"],
+main [style*="color: #7c3aed"],
+main [style*="color:#7C3AED"],
+main [style*="color: #7C3AED"],
+main [style*="color:#667eea"],
+main [style*="color: #667eea"],
+main [style*="color:#667EEA"],
+main [style*="color: #667EEA"],
+main [style*="color:#0369a1"],
+main [style*="color: #0369a1"],
+main [style*="color:#0369A1"],
+main [style*="color: #0369A1"],
+main [style*="color:#1d4ed8"],
+main [style*="color: #1d4ed8"],
+main [style*="color:#1D4ED8"],
+main [style*="color: #1D4ED8"],
+main [style*="color:#6366f1"],
+main [style*="color: #6366f1"],
+main [style*="color:#6366F1"],
+main [style*="color: #6366F1"],
+main [style*="color:#0ea5e9"],
+main [style*="color: #0ea5e9"],
+main [style*="color:#0EA5E9"],
+main [style*="color: #0EA5E9"],
+main [style*="color:#1e40af"],
+main [style*="color: #1e40af"],
+main [style*="color:#1E40AF"],
+main [style*="color: #1E40AF"],
+main [style*="color:#3b82f6"],
+main [style*="color: #3b82f6"],
+main [style*="color:#3B82F6"],
+main [style*="color: #3B82F6"],
+main [style*="color:#6d28d9"],
+main [style*="color: #6d28d9"],
+main [style*="color:#6D28D9"],
+main [style*="color: #6D28D9"],
+main [style*="color:#0284c7"],
+main [style*="color: #0284c7"],
+main [style*="color:#0284C7"],
+main [style*="color: #0284C7"],
+article [style*="color:#4a90e2"],
+article [style*="color: #4a90e2"],
+article [style*="color:#4A90E2"],
+article [style*="color: #4A90E2"],
+article [style*="color:#2563eb"],
+article [style*="color: #2563eb"],
+article [style*="color:#2563EB"],
+article [style*="color: #2563EB"],
+article [style*="color:#4e8cff"],
+article [style*="color: #4e8cff"],
+article [style*="color:#4E8CFF"],
+article [style*="color: #4E8CFF"],
+article [style*="color:#4338ca"],
+article [style*="color: #4338ca"],
+article [style*="color:#4338CA"],
+article [style*="color: #4338CA"],
+article [style*="color:#4f46e5"],
+article [style*="color: #4f46e5"],
+article [style*="color:#4F46E5"],
+article [style*="color: #4F46E5"],
+article [style*="color:#7c3aed"],
+article [style*="color: #7c3aed"],
+article [style*="color:#7C3AED"],
+article [style*="color: #7C3AED"],
+article [style*="color:#667eea"],
+article [style*="color: #667eea"],
+article [style*="color:#667EEA"],
+article [style*="color: #667EEA"],
+article [style*="color:#0369a1"],
+article [style*="color: #0369a1"],
+article [style*="color:#0369A1"],
+article [style*="color: #0369A1"],
+article [style*="color:#1d4ed8"],
+article [style*="color: #1d4ed8"],
+article [style*="color:#1D4ED8"],
+article [style*="color: #1D4ED8"],
+article [style*="color:#6366f1"],
+article [style*="color: #6366f1"],
+article [style*="color:#6366F1"],
+article [style*="color: #6366F1"],
+article [style*="color:#0ea5e9"],
+article [style*="color: #0ea5e9"],
+article [style*="color:#0EA5E9"],
+article [style*="color: #0EA5E9"],
+article [style*="color:#1e40af"],
+article [style*="color: #1e40af"],
+article [style*="color:#1E40AF"],
+article [style*="color: #1E40AF"],
+article [style*="color:#3b82f6"],
+article [style*="color: #3b82f6"],
+article [style*="color:#3B82F6"],
+article [style*="color: #3B82F6"],
+article [style*="color:#6d28d9"],
+article [style*="color: #6d28d9"],
+article [style*="color:#6D28D9"],
+article [style*="color: #6D28D9"],
+article [style*="color:#0284c7"],
+article [style*="color: #0284c7"],
+article [style*="color:#0284C7"],
+article [style*="color: #0284C7"] { color: var(--primary) !important; }
+main [style*="color:#15803d"],
+main [style*="color: #15803d"],
+main [style*="color:#15803D"],
+main [style*="color: #15803D"],
+main [style*="color:#2e7d32"],
+main [style*="color: #2e7d32"],
+main [style*="color:#2E7D32"],
+main [style*="color: #2E7D32"],
+main [style*="color:#059669"],
+main [style*="color: #059669"],
+main [style*="color:#059669"],
+main [style*="color: #059669"],
+main [style*="color:#065f46"],
+main [style*="color: #065f46"],
+main [style*="color:#065F46"],
+main [style*="color: #065F46"],
+main [style*="color:#166534"],
+main [style*="color: #166534"],
+main [style*="color:#166534"],
+main [style*="color: #166534"],
+main [style*="color:#16a34a"],
+main [style*="color: #16a34a"],
+main [style*="color:#16A34A"],
+main [style*="color: #16A34A"],
+main [style*="color:#22c55e"],
+main [style*="color: #22c55e"],
+main [style*="color:#22C55E"],
+main [style*="color: #22C55E"] { color: var(--text) !important; }
+main [style*="color:#c2410c"],
+main [style*="color: #c2410c"],
+main [style*="color:#C2410C"],
+main [style*="color: #C2410C"],
+main [style*="color:#ea580c"],
+main [style*="color: #ea580c"],
+main [style*="color:#EA580C"],
+main [style*="color: #EA580C"],
+main [style*="color:#9a3412"],
+main [style*="color: #9a3412"],
+main [style*="color:#9A3412"],
+main [style*="color: #9A3412"],
+main [style*="color:#92400e"],
+main [style*="color: #92400e"],
+main [style*="color:#92400E"],
+main [style*="color: #92400E"],
+main [style*="color:#f59e0b"],
+main [style*="color: #f59e0b"],
+main [style*="color:#F59E0B"],
+main [style*="color: #F59E0B"],
+main [style*="color:#f97316"],
+main [style*="color: #f97316"],
+main [style*="color:#F97316"],
+main [style*="color: #F97316"],
+main [style*="color:#e65100"],
+main [style*="color: #e65100"],
+main [style*="color:#E65100"],
+main [style*="color: #E65100"],
+main [style*="color:#b45309"],
+main [style*="color: #b45309"],
+main [style*="color:#B45309"],
+main [style*="color: #B45309"],
+main [style*="color:#d97706"],
+main [style*="color: #d97706"],
+main [style*="color:#D97706"],
+main [style*="color: #D97706"],
+main [style*="color:#ff6b35"],
+main [style*="color: #ff6b35"],
+main [style*="color:#FF6B35"],
+main [style*="color: #FF6B35"] { color: var(--accent) !important; }
+
+/* 濃い色の帯・見出しバーは藍に統一 */
+body div[style*="background:#2563eb"],
+body div[style*="background: #2563eb"],
+body div[style*="background:#2563EB"],
+body div[style*="background: #2563EB"],
+body div[style*="background:#4f46e5"],
+body div[style*="background: #4f46e5"],
+body div[style*="background:#4F46E5"],
+body div[style*="background: #4F46E5"],
+body div[style*="background:#7c3aed"],
+body div[style*="background: #7c3aed"],
+body div[style*="background:#7C3AED"],
+body div[style*="background: #7C3AED"],
+body div[style*="background:#667eea"],
+body div[style*="background: #667eea"],
+body div[style*="background:#667EEA"],
+body div[style*="background: #667EEA"],
+body div[style*="background:#0ea5e9"],
+body div[style*="background: #0ea5e9"],
+body div[style*="background:#0EA5E9"],
+body div[style*="background: #0EA5E9"],
+body div[style*="background:#059669"],
+body div[style*="background: #059669"],
+body div[style*="background:#059669"],
+body div[style*="background: #059669"],
+body div[style*="background:#4285f4"],
+body div[style*="background: #4285f4"],
+body div[style*="background:#4285F4"],
+body div[style*="background: #4285F4"],
+body div[style*="background:#1e3a8a"],
+body div[style*="background: #1e3a8a"],
+body div[style*="background:#1E3A8A"],
+body div[style*="background: #1E3A8A"],
+body div[style*="background:#16a34a"],
+body div[style*="background: #16a34a"],
+body div[style*="background:#16A34A"],
+body div[style*="background: #16A34A"],
+body div[style*="background:#f97316"],
+body div[style*="background: #f97316"],
+body div[style*="background:#F97316"],
+body div[style*="background: #F97316"],
+body div[style*="background:#ea580c"],
+body div[style*="background: #ea580c"],
+body div[style*="background:#EA580C"],
+body div[style*="background: #EA580C"],
+body div[style*="background:#f59e0b"],
+body div[style*="background: #f59e0b"],
+body div[style*="background:#F59E0B"],
+body div[style*="background: #F59E0B"],
+body div[style*="background:#ff6b35"],
+body div[style*="background: #ff6b35"],
+body div[style*="background:#FF6B35"],
+body div[style*="background: #FF6B35"],
+body div[style*="background:#3b82f6"],
+body div[style*="background: #3b82f6"],
+body div[style*="background:#3B82F6"],
+body div[style*="background: #3B82F6"],
+body div[style*="background:#6366f1"],
+body div[style*="background: #6366f1"],
+body div[style*="background:#6366F1"],
+body div[style*="background: #6366F1"],
+body div[style*="background:#22c55e"],
+body div[style*="background: #22c55e"],
+body div[style*="background:#22C55E"],
+body div[style*="background: #22C55E"],
+body div[style*="background:#10b981"],
+body div[style*="background: #10b981"],
+body div[style*="background:#10B981"],
+body div[style*="background: #10B981"],
+body div[style*="background:#0284c7"],
+body div[style*="background: #0284c7"],
+body div[style*="background:#0284C7"],
+body div[style*="background: #0284C7"],
+body div[style*="background:#1d4ed8"],
+body div[style*="background: #1d4ed8"],
+body div[style*="background:#1D4ED8"],
+body div[style*="background: #1D4ED8"],
+body div[style*="background:#d97706"],
+body div[style*="background: #d97706"],
+body div[style*="background:#D97706"],
+body div[style*="background: #D97706"],
+body div[style*="background:#b45309"],
+body div[style*="background: #b45309"],
+body div[style*="background:#B45309"],
+body div[style*="background: #B45309"],
+body span[style*="background:#2563eb"],
+body span[style*="background: #2563eb"],
+body span[style*="background:#2563EB"],
+body span[style*="background: #2563EB"],
+body span[style*="background:#4f46e5"],
+body span[style*="background: #4f46e5"],
+body span[style*="background:#4F46E5"],
+body span[style*="background: #4F46E5"],
+body span[style*="background:#7c3aed"],
+body span[style*="background: #7c3aed"],
+body span[style*="background:#7C3AED"],
+body span[style*="background: #7C3AED"],
+body span[style*="background:#667eea"],
+body span[style*="background: #667eea"],
+body span[style*="background:#667EEA"],
+body span[style*="background: #667EEA"],
+body span[style*="background:#0ea5e9"],
+body span[style*="background: #0ea5e9"],
+body span[style*="background:#0EA5E9"],
+body span[style*="background: #0EA5E9"],
+body span[style*="background:#059669"],
+body span[style*="background: #059669"],
+body span[style*="background:#059669"],
+body span[style*="background: #059669"],
+body span[style*="background:#4285f4"],
+body span[style*="background: #4285f4"],
+body span[style*="background:#4285F4"],
+body span[style*="background: #4285F4"],
+body span[style*="background:#1e3a8a"],
+body span[style*="background: #1e3a8a"],
+body span[style*="background:#1E3A8A"],
+body span[style*="background: #1E3A8A"],
+body span[style*="background:#16a34a"],
+body span[style*="background: #16a34a"],
+body span[style*="background:#16A34A"],
+body span[style*="background: #16A34A"],
+body span[style*="background:#f97316"],
+body span[style*="background: #f97316"],
+body span[style*="background:#F97316"],
+body span[style*="background: #F97316"],
+body span[style*="background:#ea580c"],
+body span[style*="background: #ea580c"],
+body span[style*="background:#EA580C"],
+body span[style*="background: #EA580C"],
+body span[style*="background:#f59e0b"],
+body span[style*="background: #f59e0b"],
+body span[style*="background:#F59E0B"],
+body span[style*="background: #F59E0B"],
+body span[style*="background:#ff6b35"],
+body span[style*="background: #ff6b35"],
+body span[style*="background:#FF6B35"],
+body span[style*="background: #FF6B35"],
+body span[style*="background:#3b82f6"],
+body span[style*="background: #3b82f6"],
+body span[style*="background:#3B82F6"],
+body span[style*="background: #3B82F6"],
+body span[style*="background:#6366f1"],
+body span[style*="background: #6366f1"],
+body span[style*="background:#6366F1"],
+body span[style*="background: #6366F1"],
+body span[style*="background:#22c55e"],
+body span[style*="background: #22c55e"],
+body span[style*="background:#22C55E"],
+body span[style*="background: #22C55E"],
+body span[style*="background:#10b981"],
+body span[style*="background: #10b981"],
+body span[style*="background:#10B981"],
+body span[style*="background: #10B981"],
+body span[style*="background:#0284c7"],
+body span[style*="background: #0284c7"],
+body span[style*="background:#0284C7"],
+body span[style*="background: #0284C7"],
+body span[style*="background:#1d4ed8"],
+body span[style*="background: #1d4ed8"],
+body span[style*="background:#1D4ED8"],
+body span[style*="background: #1D4ED8"],
+body span[style*="background:#d97706"],
+body span[style*="background: #d97706"],
+body span[style*="background:#D97706"],
+body span[style*="background: #D97706"],
+body span[style*="background:#b45309"],
+body span[style*="background: #b45309"],
+body span[style*="background:#B45309"],
+body span[style*="background: #B45309"],
+body section[style*="background:#2563eb"],
+body section[style*="background: #2563eb"],
+body section[style*="background:#2563EB"],
+body section[style*="background: #2563EB"],
+body section[style*="background:#4f46e5"],
+body section[style*="background: #4f46e5"],
+body section[style*="background:#4F46E5"],
+body section[style*="background: #4F46E5"],
+body section[style*="background:#7c3aed"],
+body section[style*="background: #7c3aed"],
+body section[style*="background:#7C3AED"],
+body section[style*="background: #7C3AED"],
+body section[style*="background:#667eea"],
+body section[style*="background: #667eea"],
+body section[style*="background:#667EEA"],
+body section[style*="background: #667EEA"],
+body section[style*="background:#0ea5e9"],
+body section[style*="background: #0ea5e9"],
+body section[style*="background:#0EA5E9"],
+body section[style*="background: #0EA5E9"],
+body section[style*="background:#059669"],
+body section[style*="background: #059669"],
+body section[style*="background:#059669"],
+body section[style*="background: #059669"],
+body section[style*="background:#4285f4"],
+body section[style*="background: #4285f4"],
+body section[style*="background:#4285F4"],
+body section[style*="background: #4285F4"],
+body section[style*="background:#1e3a8a"],
+body section[style*="background: #1e3a8a"],
+body section[style*="background:#1E3A8A"],
+body section[style*="background: #1E3A8A"],
+body section[style*="background:#16a34a"],
+body section[style*="background: #16a34a"],
+body section[style*="background:#16A34A"],
+body section[style*="background: #16A34A"],
+body section[style*="background:#f97316"],
+body section[style*="background: #f97316"],
+body section[style*="background:#F97316"],
+body section[style*="background: #F97316"],
+body section[style*="background:#ea580c"],
+body section[style*="background: #ea580c"],
+body section[style*="background:#EA580C"],
+body section[style*="background: #EA580C"],
+body section[style*="background:#f59e0b"],
+body section[style*="background: #f59e0b"],
+body section[style*="background:#F59E0B"],
+body section[style*="background: #F59E0B"],
+body section[style*="background:#ff6b35"],
+body section[style*="background: #ff6b35"],
+body section[style*="background:#FF6B35"],
+body section[style*="background: #FF6B35"],
+body section[style*="background:#3b82f6"],
+body section[style*="background: #3b82f6"],
+body section[style*="background:#3B82F6"],
+body section[style*="background: #3B82F6"],
+body section[style*="background:#6366f1"],
+body section[style*="background: #6366f1"],
+body section[style*="background:#6366F1"],
+body section[style*="background: #6366F1"],
+body section[style*="background:#22c55e"],
+body section[style*="background: #22c55e"],
+body section[style*="background:#22C55E"],
+body section[style*="background: #22C55E"],
+body section[style*="background:#10b981"],
+body section[style*="background: #10b981"],
+body section[style*="background:#10B981"],
+body section[style*="background: #10B981"],
+body section[style*="background:#0284c7"],
+body section[style*="background: #0284c7"],
+body section[style*="background:#0284C7"],
+body section[style*="background: #0284C7"],
+body section[style*="background:#1d4ed8"],
+body section[style*="background: #1d4ed8"],
+body section[style*="background:#1D4ED8"],
+body section[style*="background: #1D4ED8"],
+body section[style*="background:#d97706"],
+body section[style*="background: #d97706"],
+body section[style*="background:#D97706"],
+body section[style*="background: #D97706"],
+body section[style*="background:#b45309"],
+body section[style*="background: #b45309"],
+body section[style*="background:#B45309"],
+body section[style*="background: #B45309"] { background: var(--primary) !important; color: #fff !important; }
+.cta-block, .cta-block-orange, .cta-fullwidth { background: var(--primary); border: 0; }
+.cta-fullwidth .cta-btn { color: var(--primary); }
+
+/* ボタンは朱1色（Amazon・楽天・Yahooのブランド色は除く） */
+body a[style*="color:#fff"][style*="background"]:not([style*="#ff9900"]):not([style*="#FF9900"]):not([style*="#bf0000"]):not([style*="#BF0000"]):not([style*="#ff0033"]):not([style*="#FF0033"]),
+body a[style*="color: #fff"][style*="background"]:not([style*="#ff9900"]):not([style*="#FF9900"]):not([style*="#bf0000"]):not([style*="#BF0000"]),
+body a[style*="color:white"][style*="background"]:not([style*="#ff9900"]):not([style*="#FF9900"]):not([style*="#bf0000"]):not([style*="#BF0000"]),
+body a[style*="color: white"][style*="background"] {
+  background: var(--accent) !important; color: #fff !important; border-color: var(--accent) !important;
+}
+body a[style*="background:#fff"][style*="border"], body a[style*="background: #fff"][style*="border"], body a[style*="background:white"][style*="border"] {
+  color: var(--text) !important; border: 1px solid var(--text) !important;
+}
+main a.btn, article a.btn, a.btn, a.af-link-btn, a.sticky-cta { color: #fff; }
+a.btn-outline { color: #fff; border: 1px solid #fff; }
+
+/* 本文の読みやすさ */
+#sidebar-layout > div:first-child { max-width: 760px; }
+main p, main li, article p, article li { font-size: 1rem; }
+main li, article li { margin-bottom: .35em; }
+main li::marker, article li::marker { color: var(--accent); }
+main a, article a { text-decoration-thickness: 1px; }
+main img, article img { max-width: 100%; height: auto; }
+main blockquote, article blockquote { border-left: 3px solid var(--border); padding: 4px 0 4px 18px; color: var(--text-light); margin: 20px 0; }
+main h2, article h2, .article-body h2 { border-bottom: 0; padding: 0; position: relative; margin-top: 64px; }
+main h2::before, article h2::before { content: ""; display: block; width: 40px; height: 3px; background: var(--accent); margin-bottom: 14px; }
+main div > h2:first-child::before, article div > h2:first-child::before, main section > h2:first-child::before, .pr-box h2::before, .article-toc h2::before { display: none; }
+body th { background: var(--paper) !important; }
+main tr:nth-child(even) td, .compare-table tr:nth-child(even) td, .price-table tr:nth-child(even) td { background: transparent; }
+@media (min-width: 900px) { main p, main li, article p, article li { font-size: 1.04rem; } }
+
+/* トップページ */
+.hero { background: var(--paper); }
+.section-title { text-align: left; font-size: 1.5rem; margin: 0 0 6px; padding-top: 18px; border-top: 2px solid var(--text); }
+.section-sub { text-align: left; }
+.tools-grid { gap: 0; border-top: 1px solid var(--border); border-left: 1px solid var(--border); }
+.tools-grid > a, .tools-grid > .tool-card { border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); background: #fff; display: block; }
+.tools-grid > a .tool-card { border: 0; height: 100%; }
+.tools-grid a:hover .tool-card h3 { color: var(--accent); }
+.tool-card h3 { color: var(--text); font-size: 1.02rem; line-height: 1.6; margin: 0 0 8px; }
+.tool-card p { color: var(--text-light); font-size: .86rem; line-height: 1.7; margin: 0; }
+.tool-card > div[style*="font-size:12px"] { color: var(--accent) !important; letter-spacing: .08em; }
+body a[style*="border-radius:20px"] { background: #fff !important; color: var(--text) !important; border: 1px solid var(--border) !important; }
+body a[style*="border-radius:20px"]:hover { border-color: var(--text) !important; }
+.tag-free, .tag-paid, .tag-best { background: none; color: var(--text); border: 1px solid var(--border); font-weight: 500; }
+
+/* =====================================================================
+   読むのを助ける控えめな動き（2026-11）
+   ===================================================================== */
+.read-progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; background: var(--accent); transform: scaleX(0); transform-origin: 0 50%; z-index: 1000; pointer-events: none; }
+.article-toc a.toc-current, .toc a.toc-current { color: var(--accent); font-weight: 700; }
+.article-toc a, .toc a { transition: color .15s; }
+.btn, .af-link-btn, body a[style*="background"] { transition: background-color .15s, filter .15s; }
+body a[style*="color:#fff"][style*="background"]:hover, body a[style*="color: #fff"][style*="background"]:hover,
+.btn-primary:hover, .af-link-btn:hover { filter: brightness(.9); }
+main tbody tr, article tbody tr { transition: background-color .12s; }
+main tbody tr:hover td, article tbody tr:hover td { background: #f6f3ea; }
+.tools-grid > a { transition: background-color .15s; }
+.tools-grid > a:hover, .tools-grid > a:hover .tool-card { background: #fdfcf8; }
+html { scroll-behavior: smooth; }
+main [id], article [id] { scroll-margin-top: 76px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .read-progress, .btn, main tbody tr { transition: none; }
+}
+/* 囲みの中の番号・箇条書きが枠の外に出ないようにする */
+.summary-box ol, .summary-box ul, .point-box ol, .point-box ul, body div[style] > ol, body div[style] > ul { padding-left: 1.5em; }
+/* ロゴがインライン指定の旧テンプレートも同じ見た目にそろえる */
+header nav > a[href="/"][style] { font-family: var(--serif) !important; color: var(--text) !important; font-size: 1.35rem !important; letter-spacing: .02em; }
+
+/* =====================================================================
+   読めない文字色の修正（2026-11）
+   濃い帯の中のリンク、白地に白文字になっていたボタンなどを直す。
+   ===================================================================== */
+.cta-block, .cta-fullwidth { color: #fff; }
+.cta-block a:not(.btn):not(.cta-btn), .cta-fullwidth a:not(.btn):not(.cta-btn) { color: #fff; }
+.cta-block .cta-btn, .cta-fullwidth .cta-btn { display: inline-block; background: #fff; color: var(--primary) !important; padding: 12px 28px; font-weight: 700; text-decoration: none; }
+.cta-block h2, .cta-block h3, .cta-fullwidth h3 { color: #fff; }
+/* 濃い帯の中の説明文は、個別に灰色指定されていても白で表示する */
+.cta-block p, .cta-block li, .cta-block span:not([style*="background"]), .cta-fullwidth p { color: rgba(255,255,255,.92) !important; }
+/* 淡い背景を個別指定された .cta-block（サイト内に3種類）は、白地＋墨文字の囲みとして扱う */
+.cta-block[style*="#f0f9ff"], .cta-block[style*="#fff8e1"], .cta-block[style*="#f0f7ff"] { background: #fff !important; color: var(--text) !important; border: 1px solid var(--border); }
+.cta-block[style*="#f0f9ff"] h2, .cta-block[style*="#fff8e1"] h2, .cta-block[style*="#f0f7ff"] h2, .cta-block[style*="#f0f9ff"] h3, .cta-block[style*="#fff8e1"] h3, .cta-block[style*="#f0f7ff"] h3, .cta-block[style*="#f0f9ff"] p, .cta-block[style*="#fff8e1"] p, .cta-block[style*="#f0f7ff"] p, .cta-block[style*="#f0f9ff"] li, .cta-block[style*="#fff8e1"] li, .cta-block[style*="#f0f7ff"] li, .cta-block[style*="#f0f9ff"] span:not([style*="background"]), .cta-block[style*="#fff8e1"] span:not([style*="background"]), .cta-block[style*="#f0f7ff"] span:not([style*="background"]) { color: var(--text) !important; opacity: 1; }
+.cta-block[style*="#f0f9ff"] a:not(.btn):not(.cta-btn):not([style*="background"]), .cta-block[style*="#fff8e1"] a:not(.btn):not(.cta-btn):not([style*="background"]), .cta-block[style*="#f0f7ff"] a:not(.btn):not(.cta-btn):not([style*="background"]) { color: var(--primary); }
+.cta-block[style*="#f0f9ff"] .cta-btn, .cta-block[style*="#fff8e1"] .cta-btn, .cta-block[style*="#f0f7ff"] .cta-btn { background: var(--accent); color: #fff !important; }
+/* オレンジ帯は白地の囲みに変更（中の灰色文字が読めなくなるため） */
+.cta-block-orange { background: #fff; color: var(--text); border: 1px solid var(--border); border-left: 3px solid var(--accent); }
+.cta-block-orange h3, .cta-block-orange p { color: var(--text); opacity: 1; }
+.cta-block-orange [style*="color:#fff"]:not(a), .cta-block-orange [style*="color: #fff"]:not(a), .cta-block-orange [style*="color:white"]:not(a) { color: var(--text) !important; }
+/* 定義のなかった副ボタン */
+a.btn-secondary, .btn.btn-secondary { background: #fff; color: var(--text) !important; border: 1px solid var(--text); }
+a.btn-secondary:hover { background: var(--paper); }

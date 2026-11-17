@@ -28,7 +28,7 @@
    "description": "ChatGPT・Gemini・Claudeを実際に使い比べた結果を公開。7項目比較表と目的別おすすめで、あなたに合うAIが分かります。",
    "url": "https://ai-navi.app/articles/chatgpt-vs-gemini-vs-claude",
    "datePublished": "2026-11-13",
-   "dateModified": "2026-11-13",
+   "dateModified": "2026-11-16",
    "author": {
      "@type": "Person",
      "name": "小田健真"
@@ -68,7 +68,7 @@
        "name": "ClaudeとChatGPTの違いは何ですか？",
        "acceptedAnswer": {
          "@type": "Answer",
-         "text": "最大の違いは得意分野です。Claudeは日本語の文章品質が高く、長文処理（最大20万トークン）・ビジネス文書作成に強みがあります。一方ChatGPTは画像生成（DALL-E）・音声会話・GPTsプラグインなど機能の幅が広く、マルチモーダルな使い方ができます。料金はどちらも有料プランが月$20で同等です。"
+         "text": "最大の違いは得意分野です。Claudeは日本語の文章品質が高く、長文処理（最大20万トークン）・ビジネス文書作成に強みがあります。一方ChatGPTは画像生成・音声会話・GPTsプラグインなど機能の幅が広く、マルチモーダルな使い方ができます。料金はどちらも有料プランが月$20で同等です。"
        }
      }
    ]
@@ -124,7 +124,7 @@
      </div>
 
      <div class="author-box" style="display:flex;align-items:center;gap:16px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px;margin:20px 0;">
-       <div style="flex-shrink:0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="52" height="52"><circle cx="32" cy="32" r="32" fill="#4f46e5"/><circle cx="32" cy="24" r="10" fill="white"/><ellipse cx="32" cy="52" rx="16" ry="12" fill="white"/></svg></div>
+       <div style="flex-shrink:0"><img src="/images/author-avatar.png" alt="小田 健真" width="52" height="52" style="border-radius:50%;flex-shrink:0;" loading="lazy"></div>
        <div>
          <div style="font-weight:700;font-size:0.95rem;margin-bottom:4px;">小田 健真</div>
          <div style="font-size:0.84rem;color:#64748b;line-height:1.65;">ChatGPT・Claude・Geminiなど主要AIを日常的に活用するブロガー。各ツールを実際に試し、使いやすさ・料金・機能をわかりやすく比較・解説しています。</div>
@@ -176,8 +176,8 @@
          <tbody>
            <tr>
              <td><strong>無料プラン</strong></td>
-             <td class="good">あり（GPT-4o制限付き）</td>
-             <td class="good">あり（Gemini 1.5 Flash）</td>
+             <td class="good">あり（テキストの会話は回数制限なし）</td>
+             <td class="good">あり（利用量に上限）</td>
              <td class="good">あり（Sonnet制限付き）</td>
            </tr>
            <tr>
@@ -194,7 +194,7 @@
            </tr>
            <tr>
              <td><strong>画像生成</strong></td>
-             <td class="good">◎ DALL-E搭載（Plus以上）</td>
+             <td class="good">◎ 対応（無料版は1日数枚が目安）</td>
              <td class="normal">○ Imagen対応（一部）</td>
              <td class="bad">× 非対応</td>
            </tr>
@@ -206,9 +206,9 @@
            </tr>
            <tr>
              <td><strong>有料プラン（月額）</strong></td>
-             <td>Plus: $20 / Pro: $200</td>
-             <td>Advanced: $19.99</td>
-             <td>Pro: $20 / Max: $100〜</td>
+             <td>Go 1,400円 / Plus 3,000円 / Pro 16,800円〜</td>
+             <td>AI Plus 725円 / AI Pro 2,900円 / AI Ultra 14,500円〜</td>
+             <td>Pro 20ドル / Max 100ドル / Ultra 200ドル</td>
            </tr>
            <tr>
              <td><strong>特徴</strong></td>
@@ -220,9 +220,45 @@
        </table>
      </div>
 
-     <p>料金は3つともほぼ月2,000〜3,000円台で横並びです。無料版で十分かどうかは使い方次第なので、まずは3つとも無料で登録して試してみるのが一番手っ取り早いです。</p>
+     <p>主力の有料プランは、ChatGPT Plusが月3,000円、Google AI Proが月2,900円、Claude Proが月20ドルと、ほぼ同じ価格帯です。違いが出るのは、その下の安いプラン（ChatGPTのGo、GeminiのAI Plus）があるかどうかです。無料版で十分かどうかは使い方次第なので、まずは3つとも無料で登録して試してみるのが一番手っ取り早いです。</p>
 
      <!-- 目的別おすすめ -->
+    <h2 id="price-compare">料金プランを並べて比較（2026年11月時点）</h2>
+
+    <p>3社とも2026年にプラン構成が変わっています。古い記事では「どれも月20ドル」と書かれていることが多いですが、現在は安いプランと高いプランが増え、選択肢が広がりました。</p>
+
+    <div class="table-wrap" style="overflow-x:auto;">
+      <table>
+        <thead><tr><th>価格帯</th><th>ChatGPT</th><th>Gemini</th><th>Claude</th></tr></thead>
+        <tbody>
+          <tr><td><strong>無料</strong></td><td>Free</td><td>無料版</td><td>Free</td></tr>
+          <tr><td><strong>月1,500円以下</strong></td><td>Go（1,400円）</td><td>Google AI Plus（725円）</td><td>なし</td></tr>
+          <tr><td><strong>月3,000円前後</strong></td><td>Plus（3,000円）</td><td>Google AI Pro（2,900円）</td><td>Pro（20ドル。年払いなら月17ドル相当）</td></tr>
+          <tr><td><strong>月1万円以上</strong></td><td>Pro（16,800円／30,000円／84,000円）</td><td>Google AI Ultra（14,500円／32,000円）</td><td>Max（100ドル）／Ultra（200ドル）</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.85em;color:#666;">※ ChatGPTとGeminiは日本円の表示価格、Claudeはドル建てです。金額は変わることがあるため、契約前に各公式サイトで確認してください。</p>
+
+    <p>この表から言えることは3つあります。</p>
+    <ul>
+      <li><strong>とにかく安く有料版を使いたいなら、Geminiの月725円が最安</strong>です。ChatGPTにも月1,400円のGoがありますが、Claudeには月20ドル未満のプランがありません。</li>
+      <li><strong>月3,000円前後の主力プランは、価格では差がつきません。</strong>ここは機能と使い心地で選ぶ価格帯です。</li>
+      <li><strong>Claudeだけドル建て</strong>なので、円安のときは請求額が上がります。毎月の出費を固定したい人は、円建てのChatGPTかGeminiのほうが管理しやすいです。</li>
+    </ul>
+
+    <h2 id="free-limits">無料版の「上限のかかり方」の違い</h2>
+
+    <p>3つとも無料で使えますが、上限のかかり方が違います。無料のまま使い続けるつもりなら、ここが一番の判断材料になります。</p>
+
+    <ul>
+      <li><strong>ChatGPT</strong>：テキストの会話は回数制限なし。上限があるのは画像生成・ファイルアップロード・音声などで、機能ごとに別々に数えられます。文章だけのやり取りなら、無料版で止まることはほぼありません。→ <a href="chatgpt-free-limit">ChatGPT無料版の制限まとめ</a></li>
+      <li><strong>Claude</strong>：5時間ごと、および週ごとの利用量に上限があります。回数ではなく処理した量で数えるため、長い文章や大きなファイルを渡すと早く上限に達します。上限の具体的な量は公表されていません。→ <a href="claude-free-limit">Claude無料版の制限まとめ</a></li>
+      <li><strong>Gemini</strong>：モデルや機能ごとに利用量の上限があります。有料版との差は主に使える量で、最安の有料プランが月725円と安いのが特徴です。→ <a href="gemini-free-limit">Gemini無料版の制限まとめ</a></li>
+    </ul>
+
+    <p>まとめると、<strong>文章のやり取りを無料で長く続けたいならChatGPT</strong>、<strong>長い資料を読ませる回数が少ないならClaudeの無料版でも足りる</strong>、<strong>上限に当たったら安く解消したいならGemini</strong>、という選び方になります。</p>
+
      <h2 id="purpose-guide">目的別おすすめ：どれを選ぶべき？</h2>
 
      <h3 id="business-docs">仕事・ビジネス文書を書く人 → Claude</h3>
@@ -255,11 +291,11 @@
      </div>
 
      <h3 id="coding-long">長文・コーディングをしたい人 → Claude</h3>
-     <p>コードを書く用途では、ChatGPTもClaudeもどちらも十分高精度です。ただ、長いコードベースをまるごと読ませて修正・レビューさせたい場合はClaudeの圧倒的なコンテキスト長が活きます。</p>
+     <p>コードを書く用途では、ChatGPTもClaudeもどちらも十分高精度です。ただ、長いコードベースをまるごと読ませて修正・レビューさせたい場合はClaudeの高いコンテキスト長が活きます。</p>
      <p>「このファイル全部見て修正して」という使い方はClaudeが一番安心。ChatGPTはCode Interpreterでコードをその場で実行・動作確認できる点が強みなので、「書いたコードをすぐ試したい」ならChatGPTに分があります。</p>
 
      <!-- MiriCanvas CTA -->
-     <div style="background:linear-gradient(135deg,#fff7ed,#fef3c7);border-radius:12px;padding:24px;margin:32px 0;text-align:center;">
+     <div style="background:#fff7ed;border-radius:12px;padding:24px;margin:32px 0;text-align:center;">
        <p style="font-weight:bold;font-size:1.1em;margin-bottom:8px;">AIで作った文章を、プロ品質のスライドに変換しよう</p>
        <p style="font-size:0.9em;color:#555;margin-bottom:8px;">ChatGPT・Gemini・Claudeで作成したテキストをMiriCanvasに貼り付けるだけで、プレゼン資料・SNS投稿・動画サムネイルが一瞬で完成します。</p>
        <p style="font-size:0.9em;color:#555;margin-bottom:16px;">無料テンプレートが豊富で、デザインの知識ゼロでもプロ品質に仕上がるのが最大の強みです。</p>
@@ -276,7 +312,7 @@
      <p>「とにかく何でもできるAI」を求めているならChatGPTが最もバランスがいいです。3つの中で機能の幅が一番広く、使い始める人への入り口としても最適です。</p>
 
      <ul>
-       <li><strong>画像生成（DALL-E 3）</strong>：テキストからイラスト・画像を生成。SNS素材やアイデアのビジュアル化に便利</li>
+       <li><strong>画像生成</strong>：テキストからイラスト・画像を生成。SNS素材やアイデアのビジュアル化に便利</li>
        <li><strong>Advanced Voice Mode</strong>：人間に近い自然な音声会話。英語学習・ハンズフリー作業に向く</li>
        <li><strong>GPTs（カスタムAI）</strong>：目的特化のAIを作成・活用できる独自エコシステム</li>
        <li><strong>Code Interpreter</strong>：Pythonコードをその場で実行・データ分析が可能</li>
@@ -288,7 +324,7 @@
      <ul>
        <li><strong>Google検索との統合</strong>：リアルタイムの情報をベースに回答してくれる</li>
        <li><strong>Googleサービス連携</strong>：Docs・Drive・Gmail・YouTubeと直接連携できる</li>
-       <li><strong>Gemini Advanced（$19.99/月）</strong>：Gemini 1.5 Proが使え、長いドキュメント処理も対応</li>
+       <li><strong>Google AI Pro（月2,900円）</strong>：上位モデルを無料版より多く使え、長いドキュメントの処理にも対応</li>
        <li><strong>スマホでの使いやすさ</strong>：Androidとの統合が深く、モバイル利用に最適</li>
      </ul>
 
@@ -303,7 +339,7 @@
      </ul>
 
      <!-- Notta CTA -->
-     <div style="background:linear-gradient(135deg,#f0f7ff,#e8f4fd);border-radius:12px;padding:20px;margin:32px 0;text-align:center;">
+     <div style="background:#f0f7ff;border-radius:12px;padding:20px;margin:32px 0;text-align:center;">
        <p style="font-weight:bold;font-size:1.05em;margin-bottom:8px;">会議の文字起こし・議事録作成をAIで自動化</p>
        <p style="font-size:0.9em;color:#555;margin-bottom:16px;">NottaはAIで音声を自動文字起こし＆要約。ChatGPT・Claudeと組み合わせれば、会議後の作業がほぼゼロになります。</p>
        <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank"
@@ -330,7 +366,7 @@
 
        <div class="faq-item">
          <div class="faq-question">Q. ClaudeとChatGPTの違いは何ですか？</div>
-         <div class="faq-answer">最大の違いは得意分野です。Claudeは日本語の文章品質が高く、長文処理（最大200,000トークン）とビジネス文書の作成が得意です。ChatGPTは画像生成（DALL-E）・音声会話（Advanced Voice Mode）・GPTsプラグインなど機能の幅が広く、マルチモーダルな使い方ができます。料金はどちらも有料プランが月$20（約3,000円）で同等です。</div>
+         <div class="faq-answer">最大の違いは得意分野です。Claudeは日本語の文章品質が高く、長文処理（最大200,000トークン）とビジネス文書の作成が得意です。ChatGPTは画像生成・音声会話（Advanced Voice Mode）・GPTsプラグインなど機能の幅が広く、マルチモーダルな使い方ができます。料金はどちらも有料プランが月$20（約3,000円）で同等です。</div>
        </div>
      </div>
 
@@ -362,7 +398,7 @@
      </div>
 
      <!-- 最後のMiriCanvas CTA -->
-     <div style="background:linear-gradient(135deg,#fff7ed,#fef3c7);border-radius:12px;padding:20px;margin:24px 0;text-align:center;">
+     <div style="background:#fff7ed;border-radius:12px;padding:20px;margin:24px 0;text-align:center;">
        <p style="font-weight:bold;font-size:1.05em;margin-bottom:8px;">AIで作った文章・アイデアをビジュアルに変換するなら</p>
        <p style="font-size:0.9em;color:#555;margin-bottom:16px;">MiriCanvasのAIデザインツールを使えば、ChatGPT・Gemini・Claudeで生成したテキストを元に、プレゼン・SNS投稿・動画サムネイルがすぐに完成します。</p>
        <a href="https://px.a8.net/svt/ejp?a8mat=4B7ROU+6NC9YQ+5EX8+5YRHE" rel="nofollow noopener" target="_blank"
@@ -383,9 +419,9 @@
    <div class="container">
      <p>&copy; 2026 AI navi. All rights reserved.</p>
      <nav class="footer-nav">
-       <a href="https://ai-navi.app/privacy/">プライバシーポリシー</a>
-       <a href="https://ai-navi.app/disclaimer/">免責事項</a>
-       <a href="https://ai-navi.app/contact/">お問い合わせ</a>
+       <a href="/privacy-policy">プライバシーポリシー</a>
+       <a href="/privacy-policy">免責事項</a>
+       <a href="/contact">お問い合わせ</a>
      </nav>
    </div>
  </footer>
