@@ -23,17 +23,17 @@
 
   // ─── Amazonリンク定義 ─────────────────────────────
   const AMZ = {
-    ic:      { name: 'ICレコーダー おすすめ', kw: 'Amazon で探す →', url: 'https://www.amazon.co.jp/s?k=IC%E3%83%AC%E3%82%B3%E3%83%BC%E3%83%80%E3%83%BC&tag=ainavi2026-22' },
-    mic:     { name: 'コンデンサーマイク おすすめ', kw: 'Amazon で探す →', url: 'https://www.amazon.co.jp/s?k=%E3%82%B3%E3%83%B3%E3%83%87%E3%83%B3%E3%82%B5%E3%83%BC%E3%83%9E%E3%82%A4%E3%82%AF&tag=ainavi2026-22' },
-    monitor: { name: 'PCモニター おすすめ', kw: 'Amazon で探す →', url: 'https://www.amazon.co.jp/s?k=PC%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%BC&tag=ainavi2026-22' },
-    earbuds: { name: 'ワイヤレスイヤホン おすすめ', kw: 'Amazon で探す →', url: 'https://www.amazon.co.jp/s?k=%E3%83%AF%E3%82%A4%E3%83%A4%E3%83%AC%E3%82%B9%E3%82%A4%E3%83%A4%E3%83%9B%E3%83%B3&tag=ainavi2026-22' },
-    headset: { name: 'ヘッドセット おすすめ', kw: 'Amazon で探す →', url: 'https://www.amazon.co.jp/s?k=%E3%83%98%E3%83%83%E3%83%89%E3%82%BB%E3%83%83%E3%83%88+PC&tag=ainavi2026-22' },
-    webcam:  { name: 'ウェブカメラ おすすめ', kw: 'Amazon で探す →', url: 'https://www.amazon.co.jp/s?k=%E3%82%A6%E3%82%A7%E3%83%96%E3%82%AB%E3%83%A1%E3%83%A9&tag=ainavi2026-22' },
-    pentab:  { name: 'ペンタブレット おすすめ', kw: 'Amazon で探す →', url: 'https://www.amazon.co.jp/s?k=%E3%83%9A%E3%83%B3%E3%82%BF%E3%83%96%E3%83%AC%E3%83%83%E3%83%88&tag=ainavi2026-22' },
-    plaud:   { name: 'PLAUD NOTE', kw: 'Amazon で価格を見る →', url: 'https://www.amazon.co.jp/s?k=PLAUD+NOTE&tag=ainavi2026-22' },
-    desk:    { name: 'デスク・リモートワーク用品', kw: 'Amazon で探す →', url: 'https://www.amazon.co.jp/s?k=%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF+%E3%83%87%E3%82%B9%E3%82%AF&tag=ainavi2026-22' },
-    book:    { name: 'AI活用 おすすめ本', kw: 'Amazon で探す →', url: 'https://www.amazon.co.jp/s?k=AI+%E6%B4%BB%E7%94%A8+%E6%9C%AC&tag=ainavi2026-22' },
-    speaker: { name: 'スマートスピーカー おすすめ', kw: 'Amazon で探す →', url: 'https://www.amazon.co.jp/s?k=%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%82%B9%E3%83%94%E3%83%BC%E3%82%AB%E3%83%BC&tag=ainavi2026-22' },
+    ic:      { name: 'ICレコーダー おすすめ', kw: 'Amazon で探す →', url: '//af.moshimo.com/af/c/click?a_id=5791251&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DIC%25E3%2583%25AC%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2580%25E3%2583%25BC' },
+    mic:     { name: 'コンデンサーマイク おすすめ', kw: 'Amazon で探す →', url: '//af.moshimo.com/af/c/click?a_id=5791251&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E3%2582%25B3%25E3%2583%25B3%25E3%2583%2587%25E3%2583%25B3%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%259E%25E3%2582%25A4%25E3%2582%25AF' },
+    monitor: { name: 'PCモニター おすすめ', kw: 'Amazon で探す →', url: '//af.moshimo.com/af/c/click?a_id=5791251&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DPC%25E3%2583%25A2%25E3%2583%258B%25E3%2582%25BF%25E3%2583%25BC' },
+    earbuds: { name: 'ワイヤレスイヤホン おすすめ', kw: 'Amazon で探す →', url: '//af.moshimo.com/af/c/click?a_id=5791251&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E3%2583%25AF%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%25AC%25E3%2582%25B9%25E3%2582%25A4%25E3%2583%25A4%25E3%2583%259B%25E3%2583%25B3' },
+    headset: { name: 'ヘッドセット おすすめ', kw: 'Amazon で探す →', url: '//af.moshimo.com/af/c/click?a_id=5791251&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E3%2583%2598%25E3%2583%2583%25E3%2583%2589%25E3%2582%25BB%25E3%2583%2583%25E3%2583%2588%2BPC' },
+    webcam:  { name: 'ウェブカメラ おすすめ', kw: 'Amazon で探す →', url: '//af.moshimo.com/af/c/click?a_id=5791251&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E3%2582%25A6%25E3%2582%25A7%25E3%2583%2596%25E3%2582%25AB%25E3%2583%25A1%25E3%2583%25A9' },
+    pentab:  { name: 'ペンタブレット おすすめ', kw: 'Amazon で探す →', url: '//af.moshimo.com/af/c/click?a_id=5791251&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E3%2583%259A%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%2596%25E3%2583%25AC%25E3%2583%2583%25E3%2583%2588' },
+    plaud:   { name: 'PLAUD NOTE', kw: 'Amazon で価格を見る →', url: '//af.moshimo.com/af/c/click?a_id=5791251&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DPLAUD%2BNOTE' },
+    desk:    { name: 'デスク・リモートワーク用品', kw: 'Amazon で探す →', url: '//af.moshimo.com/af/c/click?a_id=5791251&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E3%2583%25AA%25E3%2583%25A2%25E3%2583%25BC%25E3%2583%2588%25E3%2583%25AF%25E3%2583%25BC%25E3%2582%25AF%2B%25E3%2583%2587%25E3%2582%25B9%25E3%2582%25AF' },
+    book:    { name: 'AI活用 おすすめ本', kw: 'Amazon で探す →', url: '//af.moshimo.com/af/c/click?a_id=5791251&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3DAI%2B%25E6%25B4%25BB%25E7%2594%25A8%2B%25E6%259C%25AC' },
+    speaker: { name: 'スマートスピーカー おすすめ', kw: 'Amazon で探す →', url: '//af.moshimo.com/af/c/click?a_id=5791251&p_id=170&pc_id=185&pl_id=4062&url=https%3A%2F%2Fwww.amazon.co.jp%2Fs%3Fk%3D%25E3%2582%25B9%25E3%2583%259E%25E3%2583%25BC%25E3%2583%2588%25E3%2582%25B9%25E3%2583%2594%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25BC' },
   };
 
   // ─── ページ別プログラム選択 ──────────────────────────
