@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepL APIの使い方と料金【2026年】Free/Proの違い | AI navi</title>
+  <meta name="description" content="DeepL APIのFree/Proの違い、APIキーの取得方法、curl・Pythonでの最小コード、使用量の確認方法を解説。料金の考え方やエンドポイントの違いなど、はまりやすい注意点もまとめました。">
+  <meta name="keywords" content="DeepL API, DeepL API 使い方, DeepL API 料金, DeepL API Free, DeepL API Pro, DeepL API キー, DeepL API Python">
+  <meta property="og:title" content="DeepL APIの使い方と料金【2026年】Free/Proの違い">
+  <meta property="og:url" content="https://ai-navi.app/articles/deepl-api">
+  <meta property="og:image" content="https://ai-navi.app/og-image.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="AI navi">
+  <meta property="og:description" content="DeepL APIのFree/Proの違い、APIキーの取得方法、curl・Pythonでの最小コード、使用量の確認方法を解説。料金の考え方やエンドポイントの違いなど、はまりやすい注意点もまとめました。">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DeepL APIの使い方と料金【2026年】Free/Proの違い">
+  <meta name="twitter:description" content="DeepL APIのFree/Proの違い、APIキーの取得方法、curl・Pythonでの最小コード、使用量の確認方法を解説。料金の考え方やエンドポイントの違いなど、はまりやすい注意点もまとめました。">
+  <meta name="twitter:image" content="https://ai-navi.app/og-image.png">
+  <link rel="canonical" href="https://ai-navi.app/articles/deepl-api">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "DeepL APIの使い方と料金【2026年】Free/Proの違い",
+  "image": "https://ai-navi.app/og-image.png",
+  "datePublished": "2026-11-23",
+  "dateModified": "2026-11-23",
+  "author": {
+    "@type": "Person",
+    "name": "小田 健真",
+    "url": "https://ai-navi.app/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AI navi",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ai-navi.app/og-image.png"
+    }
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "ホーム",
+      "item": "https://ai-navi.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "DeepLレビュー",
+      "item": "https://ai-navi.app/articles/deepl-review"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "DeepL APIの使い方と料金",
+      "item": "https://ai-navi.app/articles/deepl-api"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"DeepL APIは無料で使えますか？","acceptedAnswer":{"@type":"Answer","text":"Freeプランなら無料で使えます。月に翻訳できる文字数に上限があり、月50万文字までとされています。上限や提供条件は変更される可能性があるため、公式で確認してください。"}},{"@type":"Question","name":"DeepL API Proの料金はいくらですか？","acceptedAnswer":{"@type":"Answer","text":"基本料金に加えて、使った文字数に応じて課金される料金体系とされています。単価は変更されることがあるため、当サイトでは金額を断定していません。公式のAPI料金ページで確認してください。"}},{"@type":"Question","name":"DeepL Proを契約していればAPIも使えますか？","acceptedAnswer":{"@type":"Answer","text":"DeepL Pro（翻訳ツールのサブスクリプション）とDeepL APIは別のサービスとして案内されています。APIを使うにはAPIのプランへの登録が必要です。詳細は公式で確認してください。"}},{"@type":"Question","name":"APIで認証エラーが出ます。","acceptedAnswer":{"@type":"Answer","text":"FreeのキーでProのエンドポイントに接続している、またはその逆の可能性があります。Freeはapi-free.deepl.com、Proはapi.deepl.comです。キーの貼り付けミスや、ヘッダーの書式も確認してください。"}},{"@type":"Question","name":"FreeとProで翻訳の品質は違いますか？","acceptedAnswer":{"@type":"Answer","text":"翻訳エンジンの品質に差があるという案内は確認できていません。主な違いは利用できる文字数、料金、データの扱い、利用できる機能です。詳細は公式で確認してください。"}},{"@type":"Question","name":"プログラミングなしでDeepLを大量に使う方法はありますか？","acceptedAnswer":{"@type":"Answer","text":"ブラウザ版やデスクトップアプリのファイル翻訳を使えば、WordやPDFをまとめて訳せます。量が多い場合はDeepL Proの利用も検討してください。"}}]}
+</script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a class="logo" href="/">AI <span>navi</span></a>
+    <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('nav-open')" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+    <ul>
+      <li><a href="/#ranking">ランキング</a></li>
+      <li><a href="/#compare">比較表</a></li>
+      <li><a href="claude-review">Claude</a></li>
+      <li><a href="chatgpt-review">ChatGPT</a></li>
+      <li><a href="../diagnosis">AI診断</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="breadcrumb">
+  <a href="/">ホーム</a> &gt; <a href="../articles/deepl-review">DeepLレビュー</a> &gt; DeepL APIの使い方と料金
+</div>
+
+<div class="article-wrap">
+  <div class="article-header">
+    <h1>DeepL APIの使い方と料金【2026年】Free/Proの違いと始め方</h1>
+    <div class="article-meta">
+      <span>2026年11月23日</span>
+      <span>最終更新: 2026年11月23日</span>
+    </div>
+  </div>
+  <div class="author-box">
+    <div class="author-avatar"><img src="/images/author-avatar.png" alt="小田 健真" width="52" height="52" style="border-radius:50%;"></div>
+    <div class="author-info">
+      <div class="author-name">小田 健真</div>
+      <div class="author-bio">ChatGPT・Claude・Geminiなど主要AIを日常的に活用するブロガー。各ツールを実際に試し、使いやすさ・料金・機能をわかりやすく比較・解説しています。</div>
+    </div>
+  </div>
+
+  <div class="summary-box" style="background:#fff3e0;border-left:4px solid #e65100;">
+    <h2 style="margin-top:0;font-size:1.1em;">結論</h2>
+    <p>DeepL APIは、<strong>自分のプログラムやツールからDeepLの翻訳を呼び出すための開発者向けサービス</strong>です。ブラウザで使うDeepL翻訳やDeepL Pro（翻訳ツールのサブスクリプション）とは別の契約として提供されています。まずはFreeプランでAPIキーを取得し、少量で動作を確かめてから、利用量に応じてProプランを検討する流れが一般的です。</p>
+    <ul>
+      <li>Freeは月の翻訳文字数に上限がある無料枠（月50万文字までとされる。公式で要確認）</li>
+      <li>Proは基本料金＋使った文字数に応じた従量課金という料金体系とされる（金額は公式で要確認）</li>
+      <li>FreeとProではAPIのエンドポイント（接続先URL）が異なる点に注意</li>
+      <li>料金・上限・提供条件は<a href="https://www.deepl.com/pro-api" target="_blank" rel="nofollow noopener">DeepL API公式ページ</a>で必ず最新情報を確認する</li>
+    </ul>
+  </div>
+
+  <div class="article-toc">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#s1">DeepL APIとは？DeepL Proとの違い</a></li>
+      <li><a href="#s2">DeepL API FreeとProの違い（比較表）</a></li>
+      <li><a href="#s3">APIキーの取得方法</a></li>
+      <li><a href="#s4">最小コードで翻訳してみる（curl・Python）</a></li>
+      <li><a href="#s5">使用量（文字数）を確認する方法</a></li>
+      <li><a href="#s6">料金の考え方と見積もりのコツ</a></li>
+      <li><a href="#s7">はまりやすい注意点</a></li>
+      <li><a href="#s8">まとめ</a></li>
+      <li><a href="#faq">よくある質問（FAQ）</a></li>
+      <li><a href="#related">関連記事</a></li>
+    </ol>
+  </div>
+  <!-- 忍者AdMax 目次下広告 -->
+  <div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;"><p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p><!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax --></div>
+<!-- 忍者AdMax SP記事内広告 300x250 -->
+<div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;" class="sp-only"><p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p><!-- admax --><script src="https://adm.shinobi.jp/s/b8872443f18589de45163a9a558d01fd"></script><!-- admax --></div>
+
+  <div class="article-body">
+
+    <h2 id="s1">DeepL APIとは？DeepL Proとの違い</h2>
+    <p>DeepL APIは、DeepLの翻訳エンジンをプログラムから利用するための仕組みです。たとえば次のような用途で使われます。</p>
+    <ul>
+      <li>社内チャットや業務システムに翻訳ボタンを組み込む</li>
+      <li>ECサイトの商品説明や、アプリの多言語対応の下訳を自動で作る</li>
+      <li>スプレッドシートやスクリプトで大量のテキストを一括翻訳する</li>
+      <li>問い合わせメールを自動で翻訳して担当者に回す</li>
+    </ul>
+    <p>混同しやすいのが「DeepL Pro」との違いです。DeepL Proは、ブラウザやアプリで人が翻訳するためのサブスクリプションで、APIはプログラムから呼び出すための別サービスとして案内されています。<strong>DeepL Proを契約していても、APIが使い放題になるわけではない</strong>と考えておきましょう（契約の扱いは公式で要確認）。人が使う翻訳ツールの料金は<a href="../articles/deepl-pro-price">DeepL Pro料金プラン比較</a>で整理しています。</p>
+
+    <h2 id="s2">DeepL API FreeとProの違い（比較表）</h2>
+    <p>DeepL APIには、無料で使えるFreeプランと、有料のProプランがあります。以下は考え方を整理した比較表です。金額や上限は変更されることがあるため、「公式で要確認」の項目は契約前に必ず確認してください。</p>
+    <div class="table-wrapper">
+      <table class="comparison-table">
+        <thead><tr><th>項目</th><th>DeepL API Free</th><th>DeepL API Pro</th></tr></thead>
+        <tbody>
+          <tr><td><strong>料金</strong></td><td>無料</td><td>基本料金＋文字数に応じた従量課金とされる（公式で要確認）</td></tr>
+          <tr><td><strong>翻訳できる文字数</strong></td><td>月50万文字までとされる（公式で要確認）</td><td>上限なしで使った分だけ課金とされる。利用上限を自分で設定できる場合あり（公式で要確認）</td></tr>
+          <tr><td><strong>エンドポイント</strong></td><td>api-free.deepl.com</td><td>api.deepl.com</td></tr>
+          <tr><td><strong>入力データの扱い</strong></td><td>Proとは扱いが異なる可能性あり（公式で要確認）</td><td>翻訳テキストを学習に使わない旨が案内されている（公式で要確認）</td></tr>
+          <tr><td><strong>向いている用途</strong></td><td>個人開発・検証・少量の自動化</td><td>業務システム・商用サービス・大量翻訳</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Freeプランの提供条件（登録時の本人確認やカード登録の要否など）は変更されることがあります。登録画面の案内に従ってください。</p>
+
+    <h2 id="s3">APIキーの取得方法</h2>
+    <ol>
+      <li><a href="https://www.deepl.com/pro-api" target="_blank" rel="nofollow noopener">DeepL API公式ページ</a>を開き、FreeまたはProのプランを選んで登録する</li>
+      <li>DeepLのアカウントにログインし、アカウント設定の「APIキー」の画面を開く</li>
+      <li>表示されている認証キー（APIキー）をコピーする。必要に応じて新しいキーを発行する</li>
+    </ol>
+    <p>APIキーはパスワードと同じくらい重要な情報です。GitHubなどの公開リポジトリにそのまま書き込むと、第三者に使われて利用枠を消費されたり、Proでは想定外の請求につながったりするおそれがあります。環境変数や秘密情報の管理機能に保存し、ソースコードに直接書かないようにしましょう。</p>
+
+    <h2 id="s4">最小コードで翻訳してみる（curl・Python）</h2>
+    <p>ここでは動作確認用の最小限の例を紹介します。仕様は更新されることがあるため、実装時は<a href="https://developers.deepl.com/docs" target="_blank" rel="nofollow noopener">DeepL APIの公式ドキュメント</a>もあわせて確認してください。<code>YOUR_API_KEY</code> の部分は自分のキーに置き換えます。</p>
+    <h3>curlで試す（Freeプランの例）</h3>
+    <pre><code>curl -X POST 'https://api-free.deepl.com/v2/translate' \
+  --header 'Authorization: DeepL-Auth-Key YOUR_API_KEY' \
+  --header 'Content-Type: application/json' \
+  --data '{"text": ["Hello, world!"], "target_lang": "JA"}'</code></pre>
+    <p>成功すると、訳文と検出された翻訳元の言語がJSON形式で返ってきます。Proプランの場合は、URLを <code>https://api.deepl.com/v2/translate</code> に変えます。認証はリクエストヘッダーにキーを入れる方式です。</p>
+    <h3>Pythonで試す（公式ライブラリ）</h3>
+    <p>DeepLはPython向けの公式クライアントライブラリを公開しています。<code>pip install deepl</code> でインストールし、次のように書きます。</p>
+    <pre><code>import os
+import deepl
+
+translator = deepl.Translator(os.environ["DEEPL_API_KEY"])
+result = translator.translate_text("Hello, world!", target_lang="JA")
+print(result.text)</code></pre>
+    <p>公式ライブラリを使うと、FreeかProかに応じた接続先の切り替えを自動で行ってくれるため、エンドポイントの書き間違いを防げます。Node.jsなどほかの言語向けのライブラリも用意されています。</p>
+    <h3>よく使うオプション</h3>
+    <ul>
+      <li><strong>target_lang：</strong>翻訳先の言語。英語は EN-US / EN-GB のように地域を指定する形式が推奨されている</li>
+      <li><strong>source_lang：</strong>翻訳元の言語。省略すると自動判定。短い文では判定がぶれやすいので、わかっている場合は指定する</li>
+      <li><strong>formality：</strong>丁寧さの度合い。対応している言語とプランは公式で要確認</li>
+      <li><strong>用語集（glossary）：</strong>社名や専門用語の訳語を固定する機能。対応する言語の組み合わせは公式で要確認</li>
+    </ul>
+
+    <h2 id="s5">使用量（文字数）を確認する方法</h2>
+    <p>APIには、当月に使った文字数と上限を確認するための仕組み（usageエンドポイント）があります。Pythonのライブラリなら <code>translator.get_usage()</code> で確認できます。アカウントの管理画面からも使用状況を確認できるので、定期的にチェックする習慣をつけておくと、Freeプランの上限到達やProでの使いすぎを防げます。</p>
+    <p>なお、ブラウザ版のDeepL無料版の制限（1回あたりログインなし1,500文字／ログイン時5,000文字、月5万文字程度とされる。公式で要確認）とAPIの文字数枠は別物です。ブラウザ版で上限に達した場合の対処は<a href="../articles/deepl-limit">DeepL無料版の上限と解除方法5選</a>を参照してください。</p>
+
+    <h2 id="s6">料金の考え方と見積もりのコツ</h2>
+    <p>Proプランは「基本料金＋使った文字数に応じた料金」という考え方とされています。具体的な単価は変更されることがあるため本記事では断定しませんが、見積もりは次の手順で立てると現実的です。</p>
+    <ol>
+      <li><strong>翻訳したい文章の月間文字数を見積もる：</strong>1件あたりの平均文字数×月の件数で概算する</li>
+      <li><strong>再翻訳を減らせるか考える：</strong>同じ文章を何度も訳す仕組みなら、結果をキャッシュ（保存）して再利用すると文字数を節約できる</li>
+      <li><strong>Freeで実際の消費量を測る：</strong>まずFreeプランで小規模に動かし、usageで実際の消費ペースを確認する</li>
+      <li><strong>公式の単価で計算し、上限を設定する：</strong><a href="https://www.deepl.com/pro-api" target="_blank" rel="nofollow noopener">DeepL API公式ページ</a>の単価で月額を計算し、利用上限（コスト上限）を設定できる場合は設定しておく</li>
+    </ol>
+    <p>課金対象となる文字数の数え方（空白や記号、HTMLタグの扱いなど）も公式ドキュメントで確認しておくと、想定とのずれを防げます。</p>
+
+    <h2 id="s7">はまりやすい注意点</h2>
+    <ul>
+      <li><strong>エンドポイントの取り違え：</strong>FreeのキーでProのURLに接続する（またはその逆）と認証エラーになります。Freeプランのキーは末尾が「:fx」になっているとされ、見分ける目安になります。</li>
+      <li><strong>英語の指定：</strong>翻訳先に「EN」だけを指定すると非推奨やエラーになる場合があるため、EN-USかEN-GBを指定します。</li>
+      <li><strong>レート制限：</strong>短時間に大量のリクエストを送ると、一時的に制限されることがあります。エラー時は少し待って再試行する処理を入れておきましょう。</li>
+      <li><strong>HTMLやXMLの翻訳：</strong>タグを含む文章をそのまま送るとタグが崩れることがあります。タグを扱うオプションの有無を公式ドキュメントで確認してください。</li>
+      <li><strong>機密情報の扱い：</strong>個人情報や顧客データを送る場合は、データの扱いに関する公式の説明と社内ルールを必ず確認します。</li>
+      <li><strong>訳文の品質確認：</strong>APIは自動で大量に訳せる反面、誤訳にも気づきにくくなります。公開前に人が確認する工程を入れておくのが安全です。DeepLが苦手な文章は<a href="../articles/deepl-accuracy">DeepLの翻訳精度は？</a>で解説しています。</li>
+    </ul>
+    <div style="background:#f8fafc;border:2px solid #64748b;border-radius:12px;padding:20px;margin:24px 0;text-align:center;">
+  <p style="font-weight:bold;font-size:1.05em;margin-bottom:8px;">【PR】公開する多言語コンテンツは ― 翻訳代行という選択肢</p>
+  <p style="font-size:0.9em;color:#555;margin-bottom:12px;line-height:1.7;">APIによる自動翻訳は下訳や社内向けには便利ですが、Webサイトの多言語化や契約関連の文書など、公開・提出する文章は専門の翻訳会社にチェックや翻訳を依頼する方法もあります。EMEAO!は、翻訳代行会社を無料で紹介してもらえる見積もり比較サービスです。</p>
+  <a href="https://px.a8.net/svt/ejp?a8mat=4BGR93+4V1GMQ+2LHA+3H3LMQ" rel="nofollow noopener" target="_blank" style="display:inline-block;background:#475569;color:#fff;padding:14px 32px;border-radius:8px;font-weight:bold;font-size:1.02em;text-decoration:none;">翻訳代行の見積もりを無料で相談する →</a>
+  <p style="font-size:0.8em;color:#888;margin-top:8px;">※広告を含みます｜利用は無料（見積もり後の発注は任意）</p>
+</div>
+
+    <h2 id="s8">まとめ</h2>
+    <p>DeepL APIは、まずFreeプランでキーを取得し、curlや公式ライブラリで動作を確認するところから始めるのがおすすめです。FreeとProではエンドポイントが異なる点、APIはDeepL Proとは別の契約である点を押さえておけば、大きくつまずくことはありません。料金や上限は変わることがあるため、本番運用の前に公式の最新情報で見積もりを立ててください。プログラムを書かずにファイルを訳したい場合は<a href="../articles/deepl-word-pdf">DeepLでWord・PDF・PowerPointを翻訳する方法</a>、基本操作は<a href="../articles/deepl-how-to-use">DeepLの使い方</a>をご覧ください。</p>
+
+    <h2 id="faq">よくある質問（FAQ）</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">DeepL APIは無料で使えますか？</div>
+        <div class="faq-a">Freeプランなら無料で使えます。月に翻訳できる文字数に上限があり、月50万文字までとされています。上限や提供条件は変更される可能性があるため、公式で確認してください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">DeepL API Proの料金はいくらですか？</div>
+        <div class="faq-a">基本料金に加えて、使った文字数に応じて課金される料金体系とされています。単価は変更されることがあるため、当サイトでは金額を断定していません。公式のAPI料金ページで確認してください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">DeepL Proを契約していればAPIも使えますか？</div>
+        <div class="faq-a">DeepL Pro（翻訳ツールのサブスクリプション）とDeepL APIは別のサービスとして案内されています。APIを使うにはAPIのプランへの登録が必要です。詳細は公式で確認してください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">APIで認証エラーが出ます。</div>
+        <div class="faq-a">FreeのキーでProのエンドポイントに接続している、またはその逆の可能性があります。Freeはapi-free.deepl.com、Proはapi.deepl.comです。キーの貼り付けミスや、ヘッダーの書式も確認してください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">FreeとProで翻訳の品質は違いますか？</div>
+        <div class="faq-a">翻訳エンジンの品質に差があるという案内は確認できていません。主な違いは利用できる文字数、料金、データの扱い、利用できる機能です。詳細は公式で確認してください。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">プログラミングなしでDeepLを大量に使う方法はありますか？</div>
+        <div class="faq-a">ブラウザ版やデスクトップアプリのファイル翻訳を使えば、WordやPDFをまとめて訳せます。量が多い場合はDeepL Proの利用も検討してください。</div>
+      </div>
+    </div>
+
+    <h2 id="related">関連記事</h2>
+    <ul>
+      <li><a href="../articles/deepl-how-to-use">DeepLの使い方【2026年】PC・スマホ・アプリ別に解説</a></li>
+      <li><a href="../articles/deepl-word-pdf">DeepLでWord・PDF・PowerPointを翻訳する方法と注意点</a></li>
+      <li><a href="../articles/deepl-accuracy">DeepLの翻訳精度は？苦手な文章と精度を上げるコツ</a></li>
+      <li><a href="../articles/deepl-write">DeepL Writeとは？使い方・無料範囲・文章校正としての実力</a></li>
+      <li><a href="../articles/deepl-pro-price">DeepL Pro料金プラン比較【2026年】3プランの違い</a></li>
+      <li><a href="../articles/deepl-limit">DeepL無料版の上限と解除方法5選【2026年】文字数制限・回数リセット</a></li>
+      <li><a href="../articles/deepl-alternatives">DeepL以外のおすすめ翻訳ツール7選｜代替比較【2026年】</a></li>
+      <li><a href="../articles/translation-tool-comparison">翻訳ツール比較【2026年】DeepL・Google翻訳他</a></li>
+    </ul>
+
+    <div class="author-box">
+    <div class="author-avatar"><img src="/images/author-avatar.png" alt="小田 健真" width="52" height="52" style="border-radius:50%;"></div>
+    <div class="author-info">
+      <div class="author-name">小田 健真</div>
+      <div class="author-bio">ChatGPT・Claude・Geminiなど主要AIを日常的に活用するブロガー。各ツールを実際に試し、使いやすさ・料金・機能をわかりやすく比較・解説しています。</div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+  <!-- 忍者AdMax 記事下広告 -->
+  <div style="text-align:center;margin:24px auto;"><!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax --></div>
+
+<footer>
+  <div class="affiliate-disc">本サイトはアフィリエイト広告（A8.net等）を利用しています。記事内のリンクから商品・サービスを購入・申込みいただいた場合、当サイトに報酬が発生することがあります。</div>
+  <div class="footer-nav">
+    <a href="/">ホーム</a>
+    <a href="claude-review">Claudeレビュー</a>
+    <a href="chatgpt-review">ChatGPTレビュー</a>
+    <a href="/privacy-policy">プライバシーポリシー</a>
+    <a href="/contact">お問い合わせ</a>
+  </div>
+  <p>&copy; 2026 AI navi</p>
+</footer>
+
+<script src="../banner.js"></script>
+<script src="/sidebar.js"></script>
+</body>
+</html>

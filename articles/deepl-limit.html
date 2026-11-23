@@ -60,7 +60,7 @@
  {"@type":"Question","name":"DeepL Proの無料トライアルの申し込み方法は？","acceptedAnswer":{"@type":"Answer","text":"DeepL公式サイト（deepl.com/pro）にアクセスし、プランを選択してアカウント作成・クレジットカード登録を行います。登録後すぐにPro機能が有効になり、30日以内に解約すれば課金されません。所要時間は約3分です。"}},
  {"@type":"Question","name":"DeepLは無料で無制限に使えますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ、DeepL無料版には1回1,500文字（ログイン時5,000文字）・月3ファイルの制限があります。「DeepL 無料無制限」と検索される方が多いですが、無制限に翻訳するにはDeepL Pro（有料プラン）へのアップグレードが必要です。30日間の無料トライアルで無制限翻訳を体験できます。"}},
  {"@type":"Question","name":"Cookie削除でDeepLの上限を解除できますか？","acceptedAnswer":{"@type":"Answer","text":"一時的に解除できる場合があります。DeepL無料版はCookieで利用状況を管理しているため、ブラウザのCookieを削除すると利用カウントがリセットされることがあります。ただし根本的な解決にはならないため、頻繁に上限に達する場合はDeepL Proへの移行をおすすめします。"}},
- {"@type":"Question","name":"DeepL API Freeは廃止されたのですか？","acceptedAnswer":{"@type":"Answer","text":"2024年後半からDeepL API Free（月50万文字無料の開発者向けプラン）の新規登録が停止されており、事実上の廃止状態です。既存ユーザーは引き続き利用できる場合がありますが、新規では申し込めません。なお、これは開発者向けAPIの話であり、DeepLのWebサイトやアプリで翻訳する一般ユーザーの無料版（DeepL Free）は2026年9月現在も利用可能です。"}}
+ {"@type":"Question","name":"DeepL API Freeは廃止されたのですか？","acceptedAnswer":{"@type":"Answer","text":"2026年11月時点でも、DeepLの公式開発者ドキュメントにはAPI Free（月50万文字まで無料）が掲載されており、廃止の公式発表は確認できません。使えない場合は、月の上限到達やエンドポイント（api-free.deepl.com）の取り違えが考えられます。最新の提供条件は公式で確認してください。"}}
  ]}
  </script>
 </head>
@@ -133,7 +133,7 @@
  <ul>
  <li>DeepL無料版の翻訳上限（文字数・ファイル数・月間制限）の正確な仕様</li>
  <li>「上限に達しました」を今すぐ解除する5つの方法（Cookie削除・シークレットモードなど）</li>
- <li>DeepL API Freeが廃止された後の代替手段</li>
+ <li>DeepL API Freeの現状と、使えないときの代替手段</li>
  <li>DeepL Proの料金プラン比較と選び方</li>
  <li>無料のまま使い続けるための実践的なコツ（Tips）</li>
  <li>よくある質問15問</li>
@@ -163,7 +163,7 @@
  <li><a href="#should-upgrade">あなたはDeepL Proにすべき？【かんたん診断】</a></li>
  <li><a href="#how-to-unlock">DeepL「上限に達しました」を解除する方法｜Pro版で完全解除</a></li>
  <li><a href="#pro-comparison">DeepL Proの料金プラン比較｜無料版との違いと選び方</a></li>
- <li><a href="#alternatives">DeepL API Freeの廃止と代替手段｜制限なく使える無料翻訳ツール</a></li>
+ <li><a href="#alternatives">DeepL API Freeはなくなった？現状と代替手段｜無料翻訳ツール</a></li>
  <li><a href="#not-using-limit">「使っていないのに上限エラー」の原因と対処法</a></li>
  <li><a href="#free-tips">【課金なし】DeepL無料版の制限を回避して使い続ける方法</a></li>
  <li><a href="#faq">よくある質問（FAQ）15問</a></li>
@@ -462,8 +462,8 @@
  <ul style="margin:0;padding-left:20px;color:#374151;">
  <li style="margin-bottom:6px;">「無料でご利用いただける上限に達しました」→ <strong>翌月1日にリセット or 有料版へ</strong></li>
  <li style="margin-bottom:6px;">「翻訳できませんでした」→ <strong>テキストを短く分割して再試行</strong></li>
- <li style="margin-bottom:6px;">「DeepL APIのフリープランが廃止」→ <strong>無料版Webアプリは継続利用可能</strong></li>
- <li style="margin-bottom:6px;">「ファイルの翻訳ができない」→ <strong>有料版（月1,150円〜）のみ対応</strong></li>
+ <li style="margin-bottom:6px;">「DeepL API Freeが使えない」→ <strong>月50万文字の上限・エンドポイントを確認（Webアプリへの影響なし）</strong></li>
+ <li style="margin-bottom:6px;">「ファイルの翻訳ができない」→ <strong>無料版の月間ファイル数の上限を確認 or 有料版（月1,056円〜）</strong></li>
  </ul>
 </div>
 
@@ -860,30 +860,31 @@
  <p style="margin:4px 0 0;font-size:0.85em;color:#64748b;">無料枠・料金・特徴を比較表で整理しています。</p>
  </div>
 
- <h2 id="alternatives">DeepL API Freeの廃止と代替手段｜制限なく使える無料翻訳ツール</h2>
+ <h2 id="alternatives">DeepL API Freeはなくなった？現状と代替手段｜無料翻訳ツール</h2>
 
- <h3 id="api-free-abolished">DeepL API Freeは廃止された？無料版への影響と対策【2026年最新】</h3>
- <p>「<strong>DeepL API Free なくなった</strong>」「<strong>DeepL API Free 廃止</strong>」と検索する方が増えています。結論から言うと、<strong>DeepL API Freeプランは2024年後半から新規登録の受付が停止</strong>されており、事実上の廃止状態です。</p>
+ <h3 id="api-free-abolished">DeepL API Freeはなくなった？現状と無料版への影響【2026年】</h3>
+ <p>「<strong>DeepL API Free なくなった</strong>」「<strong>DeepL API Free 廃止</strong>」と検索する方がいます。結論から言うと、<strong>2026年11月時点でも、DeepLの公式開発者ドキュメントにはAPI Free（月50万文字まで無料）が掲載されています</strong>。廃止されたという公式発表は確認できませんでした。</p>
 
- <p><strong>経緯と現状（2026年9月時点）：</strong></p>
+ <p><strong>「なくなった」と感じる主な原因：</strong></p>
  <ul>
- <li><strong>2024年後半</strong>：DeepL API Free（月50万文字まで無料）の新規アカウント登録が停止。既存ユーザーは引き続き利用可能</li>
- <li><strong>2025年以降</strong>：既存のAPI Freeユーザーも段階的に有料プラン（API Pro）への移行を案内される事例が報告</li>
- <li><strong>2026年現在</strong>：API Freeの新規登録は不可。既存ユーザーの利用可否はアカウントにより異なる</li>
+ <li><strong>月50万文字の上限に達した</strong>：上限に達すると、次の請求期間まで翻訳できません</li>
+ <li><strong>エンドポイントの違い</strong>：Freeのキーは <code>api-free.deepl.com</code>、Proは <code>api.deepl.com</code> を使います。取り違えると認証エラーになります</li>
+ <li><strong>登録条件・提供内容の変更</strong>：登録時の条件（カード登録など）や提供内容は変わることがあるため、最新情報は公式で要確認です</li>
  </ul>
+ <p>公式の情報は <a href="https://developers.deepl.com/docs" target="_blank" rel="noopener">DeepL開発者ドキュメント</a> で確認できます。詳しい使い方は<a href="deepl-api.html">DeepL APIの使い方と料金</a>で解説しています。</p>
 
  <p><strong>一般ユーザー（Web版・アプリ版）への影響：</strong></p>
- <p>API Freeの廃止は<strong>開発者向けAPI</strong>の話であり、<strong>DeepLのWebサイトやアプリで翻訳する一般ユーザーには直接の影響はありません</strong>。無料版（DeepL Free）のテキスト翻訳（1回1,500文字（ログイン時5,000文字）・月3ファイル）は2026年9月現在も利用可能です。</p>
+ <p>API Freeは<strong>開発者向けAPI</strong>の話であり、<strong>DeepLのWebサイトやアプリで翻訳する一般ユーザーには直接の影響はありません</strong>。無料版（DeepL Free）のテキスト翻訳（1回1,500文字（ログイン時5,000文字）・月3ファイル）は2026年9月現在も利用可能です。</p>
 
- <p><strong>API Freeが使えなくなった開発者の対策：</strong></p>
+ <p><strong>API Freeの上限を超える・使えない場合の対策：</strong></p>
  <ol>
- <li><strong>DeepL API Pro</strong>に移行する（従量課金制・月$5.49〜 + $25/100万文字）</li>
- <li><strong>Google Cloud Translation API</strong>を利用する（月50万文字まで無料枠あり）</li>
+ <li><strong>DeepL API Pro</strong>に移行する（基本料金＋文字数に応じた従量課金。料金は公式で要確認）</li>
+ <li><strong>Google Cloud Translation API</strong>を利用する（無料枠あり。条件は公式で要確認）</li>
  <li><strong>ChatGPT API</strong>（GPT-4o mini）で翻訳する（低コストで高品質）</li>
  <li><strong>LibreTranslate</strong>（オープンソース）をセルフホストする（完全無料）</li>
  </ol>
 
- <p>2024年にDeepL API Freeプラン（月50万文字無料）の新規登録が制限されるなど、無料で使えるDeepLの範囲は年々縮小傾向にあります。API Freeが使えなくなった方や、DeepLの上限に達したとき、以下の無料ツールを代替・一時的な代用として活用できます。</p>
+ <p>API Freeの上限に達した方や、DeepLの上限に達したとき、以下の無料ツールを代替・一時的な代用として活用できます。</p>
 
  <div class="table-wrapper">
  <table class="comparison-table">
@@ -1180,6 +1181,11 @@
  <li><a href="../articles/free-ai-tools">無料AIツールおすすめ20選｜翻訳・文章作成・画像生成まで完全無料で使える</a></li>
  <li><a href="../articles/ai-writing-tools">AIライティングツールおすすめ15選｜無料で使える文章作成AI比較【2026年最新】</a></li>
  <li><a href="../articles/vpn-comparison">VPNおすすめ比較｜速度・料金・安全性で選ぶ最適サービス【2026年最新】</a></li>
+ <li><a href="../articles/deepl-how-to-use">DeepLの使い方【2026年】PC・スマホ・アプリ別に解説</a></li>
+ <li><a href="../articles/deepl-word-pdf">DeepLでWord・PDF・PowerPointを翻訳する方法と注意点</a></li>
+ <li><a href="../articles/deepl-api">DeepL APIの使い方と料金【2026年】Free/Proの違い</a></li>
+ <li><a href="../articles/deepl-write">DeepL Writeとは？使い方・無料範囲・文章校正としての実力</a></li>
+ <li><a href="../articles/deepl-accuracy">DeepLの翻訳精度は？苦手な文章と精度を上げるコツ</a></li>
  </ul>
 
  <!-- CTA 末尾（強化版） -->
