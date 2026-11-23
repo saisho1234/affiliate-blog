@@ -54,7 +54,6 @@
 
   <!-- ChatGPT関連 -->
   <url><loc>https://ai-navi.app/articles/chatgpt-howto</loc><lastmod>2026-09-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ai-navi.app/articles/chatgpt-plus-guide</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ai-navi.app/articles/chatgpt-pricing</loc><lastmod>2026-11-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ai-navi.app/articles/chatgpt-freelance-guide</loc><lastmod>2026-10-31</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ai-navi.app/articles/chatgpt-business</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -75,7 +74,6 @@
   <!-- イルシル関連 -->
   <url><loc>https://ai-navi.app/articles/irusiru-howto</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ai-navi.app/articles/irusiru-comparison</loc><lastmod>2026-09-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ai-navi.app/articles/irusiru-free-plan</loc><lastmod>2026-09-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ai-navi.app/articles/irusiru-pricing</loc><lastmod>2026-09-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ai-navi.app/articles/irusiru-vs-gamma</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
@@ -91,7 +89,6 @@
   <url><loc>https://ai-navi.app/articles/ai-business-tools</loc><lastmod>2026-10-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ai-navi.app/articles/ai-tools-demerits</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ai-navi.app/articles/ai-side-job</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://ai-navi.app/articles/ai-writing-check</loc><lastmod>2026-11-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ai-navi.app/articles/ai-summarize-tools</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ai-navi.app/articles/ai-transcription-tools</loc><lastmod>2026-10-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ai-navi.app/articles/ai-transcription-compare</loc><lastmod>2026-09-18</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -147,10 +144,8 @@
   <url><loc>https://ai-navi.app/articles/ai-proofreading-compare</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ai-navi.app/articles/chatgpt-vs-gemini-vs-claude</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ai-navi.app/articles/ai-mojio-compare</loc><lastmod>2026-11-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ai-navi.app/articles/ai-image-generator-free</loc><lastmod>2026-11-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ai-navi.app/articles/deepl-pro-price</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ai-navi.app/articles/deepl-pro-trial</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://ai-navi.app/articles/translation-tool-comparison</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ai-navi.app/articles/ai-gadget-recommend</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ai-navi.app/articles/deepl-how-to-use</loc><lastmod>2026-11-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ai-navi.app/articles/deepl-word-pdf</loc><lastmod>2026-11-23</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>

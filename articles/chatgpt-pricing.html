@@ -168,6 +168,46 @@
         "@type": "Answer",
         "text": "Proは月約1.5万円〜の最上位の個人プランで、利用量に応じた複数の価格帯があるとされます（公式で要確認）。Plus（月額3,000円）で上限に頻繁に当たる開発者やリサーチャー向けです。大多数の人はPlusで足ります。"
       }
+    },
+    {
+      "@type": "Question",
+      "name": "ChatGPT Plusで画像生成できますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。テキストで指示するだけで、写真風・イラスト・ロゴなどの画像を生成できます。無料版でも画像生成は使えますが1日数枚が目安で、Plus（月額3,000円）では上限が大きく広がります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ChatGPT Plusに切り替えると過去の会話はどうなりますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "無料版での会話はそのまま引き継がれ、Plusに切り替えた後も確認・続きの会話ができます。Plusを解約して無料版に戻った場合も、会話履歴は保持されます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ChatGPT PlusのAdvanced Voice Mode（高度な音声会話）とは？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "リアルタイムで自然な音声会話ができる機能です。話の途中での割り込みや話すスピードの調整に対応しており、英語のスピーキング練習、アイデア出し、移動中のハンズフリー利用に向いています。無料版では利用に制限があり、Plusではより多く使えます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "カスタムGPT（GPTs）とは何ですか？Plus限定ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "特定の用途に特化したオリジナルのAIアシスタントを、プログラミングなしで作れる機能です。「自社のFAQに答えるGPT」「文体を統一するアシスタント」などを作り、GPTストアで公開することもできます。無料版は他の人が作ったGPTを使うことはできますが、自分で作成するにはPlus以上が必要です。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "ChatGPT Plusにはいつ課金すべきですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "無料版の上限に頻繁に当たるようになったときが目安です。画像生成を多く使いたいとき、ExcelやCSVのデータ分析をしたいとき、カスタムGPTを作りたいときも課金を検討するタイミングです。上限に当たる頻度が低ければGo（月額1,400円）で足りる場合もあります。月払いでいつでも解約できるので、まず1ヶ月試して判断するのがおすすめです。"
+      }
     }
   ]
 }
@@ -272,7 +312,7 @@
           <div style="font-size:0.85em;">2名以上なら</div>
         </div>
       </div>
-      <p style="margin:0;font-size:0.9em;opacity:0.95;">迷ったらまず無料版を試し、制限が気になったらPlusへ。年間プランなら月払いより約17%お得です。</p>
+      <p style="margin:0;font-size:0.9em;opacity:0.95;">迷ったらまず無料版を試し、制限が気になったらPlusへ。個人向けプランは月払いのみです。</p>
     </div>
 
     <div class="experience-box">
@@ -288,6 +328,7 @@
         <li>ChatGPT全料金プラン（Free/Plus/Pro/Team/Enterprise）の違いと詳細比較</li>
         <li>ChatGPT Plusの月額は日本円でいくら？円建ての固定価格</li>
         <li>年払いの有無（個人向けは月払いのみ）</li>
+        <li>ChatGPT Plusでできること（画像生成・音声会話・カスタムGPT・データ分析など）と申し込み手順</li>
         <li>ChatGPT Plus vs Claude Pro vs Gemini（Google AI Pro） 料金比較</li>
         <li>どのプランを選ぶべきか判断チャート</li>
         <li>支払い方法・解約方法・学生向けプラン情報</li>
@@ -309,14 +350,14 @@
         <li><a href="#plus-yen">ChatGPT Plusは月いくら？日本円換算</a></li>
         <li><a href="#annual">年間プランはある？個人向けは月払いのみ</a></li>
         <li><a href="#free">無料版でできること・できないこと</a></li>
-        <li><a href="#plus">ChatGPT Plus（月3,000円）の価値・おすすめな人</a></li>
+        <li><a href="#plus">ChatGPT Plus（月3,000円）でできること・価値・おすすめな人</a></li>
         <li><a href="#team-enterprise">Business（旧Team）・Enterpriseプランの特徴</a></li>
         <li><a href="#compare">ChatGPT Plus vs Claude Pro vs Gemini（Google AI Pro） 料金比較</a></li>
         <li><a href="#how-to-choose">どのプランを選ぶべき？判断チャート</a></li>
-        <li><a href="#payment">支払い方法・解約方法</a></li>
+        <li><a href="#payment">申し込み手順・支払い方法・解約方法</a></li>
         <li><a href="#student">学生・教育向けプラン情報</a></li>
         <li><a href="#recommend">おすすめな人・おすすめしない人</a></li>
-        <li><a href="#faq">よくある質問（FAQ）15選</a></li>
+        <li><a href="#faq">よくある質問（FAQ）20選</a></li>
         <li><a href="#summary">まとめ</a></li>
       </ol>
     </nav>
@@ -532,7 +573,7 @@
 
       <!-- 5. ChatGPT Plus -->
       <section id="plus">
-        <h2>5. ChatGPT Plus（月3,000円）の価値・おすすめな人</h2>
+        <h2>5. ChatGPT Plus（月3,000円）でできること・価値・おすすめな人</h2>
         <p>ChatGPT Plusは月額3,000円（税込）で、<strong>最も人気のある個人向け有料プラン</strong>です。無料版と比べて何が変わるのか、本当に課金する価値があるのかを詳しく解説します。</p>
 
         <!-- 評価ボックス -->
@@ -585,7 +626,45 @@
           </ul>
         </div>
 
-        <p>ChatGPTの詳しい使い方は<a href="../articles/chatgpt-howto">ChatGPT使い方ガイド</a>や<a href="../articles/chatgpt-plus-guide">ChatGPT Plus完全ガイド</a>も参考にしてください。</p>
+        <h3 id="plus-features">Plusでできること：主な機能の活用シーン</h3>
+        <p>Plusで広がる機能を、具体的な使い道とあわせて紹介します。各機能の上限や使えるモデルは随時変わるため、最新の内容は公式サイトで確認してください。</p>
+
+        <h4>画像生成（上限拡大）</h4>
+        <p>「和風カフェのロゴを作って」「青空の下の富士山をイラスト風に」のように、日本語で指示するだけで写真風・イラスト・ロゴ・アイコンなどを作れます。無料版でも生成はできますが1日数枚が目安で、Plusでは上限が大きく広がります。SNSのサムネイルやブログのアイキャッチ、プレゼン用のビジュアルを日常的に作る方に向いています。</p>
+
+        <h4>Advanced Voice Mode（高度な音声会話）</h4>
+        <p>リアルタイムで自然な音声会話ができるモードです。話の途中で割り込んだり、話すスピードを変えてもらったりでき、人と話している感覚に近いやり取りができます。</p>
+        <ul>
+          <li><strong>英語学習</strong>：スピーキング練習や、言い回しの添削</li>
+          <li><strong>アイデア出し</strong>：手を動かしながら音声でブレインストーミング</li>
+          <li><strong>移動中の活用</strong>：ハンズフリーで質問やメモ作成</li>
+        </ul>
+
+        <h4>カスタムGPT（GPTs）の作成</h4>
+        <p>特定の用途に特化したオリジナルのAIアシスタントを、<strong>プログラミングなしで</strong>作れます。「自社製品の知識に特化したサポート用GPT」「決まった文体を守るライティングアシスタント」のように、指示やナレッジを組み込んで繰り返し使えます。GPTストアで公開・共有することも可能です。無料版は他の人が作ったGPTを「使う」ことはできますが、自分で「作る」にはPlus以上が必要です。</p>
+
+        <h4>データ分析（Advanced Data Analysis）</h4>
+        <p>ChatGPTが内部でPythonコードを実行できる機能です。ExcelやCSVをアップロードして集計・グラフ化・統計処理をしたり、数値計算や文字列の整形をしたりできます。売上データの分析や研究データの処理など、表計算ソフトでは手間のかかる作業に役立ちます。</p>
+
+        <h4>推論に時間をかけるモード</h4>
+        <p>数学・論理・コーディングなどの込み入った問題に対して、時間をかけて考えてから回答するモードです。通常の回答より時間はかかりますが、手順の多い問題や複雑なアルゴリズムの検討に向いています。</p>
+
+        <h4>メモリ機能</h4>
+        <p>「私は〇〇の仕事をしている」「丁寧な文体で答えてほしい」といった情報を覚えて、次回以降の会話に反映します。毎回同じ前提を説明する手間が省けます。</p>
+
+        <!-- Notta CTA -->
+        <div style="background:#f0f7ff;border-radius:12px;padding:20px;margin:24px 0;text-align:center;">
+          <p style="font-weight:bold;font-size:1.05em;margin-bottom:8px;">【PR】Notta｜AI文字起こし・議事録ツール</p>
+          <p style="font-size:0.9em;color:#555;margin-bottom:16px;">ChatGPT Plusで要約・分析する素材づくりに。会議やインタビューを録音するだけで、文字起こしとAI議事録を自動で作成できます。</p>
+          <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank"
+             style="display:inline-block;background:#4A90D9;color:#fff;padding:14px 32px;border-radius:8px;font-weight:bold;font-size:1.05em;text-decoration:none;">
+            Nottaで録音→AI議事録を試す →
+          </a>
+          <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4B7QWV+7FX302+5988+5YJRM" alt="">
+          <p style="font-size:0.8em;color:#888;margin-top:8px;">※広告を含みます</p>
+        </div>
+
+        <p>ChatGPTの詳しい使い方は<a href="../articles/chatgpt-howto">ChatGPT使い方ガイド</a>も参考にしてください。</p>
       </section>
 
       <!-- 6. Team・Enterprise -->
@@ -768,6 +847,30 @@
           </div>
         </div>
 
+        <h3 id="checklist">ChatGPT Plusに課金すべき？判定チェックリスト</h3>
+        <p>フローチャートで迷った方は、次の項目にいくつ当てはまるか数えてみてください。</p>
+        <div style="background:#f8fafc;border:2px solid #e2e8f0;border-radius:12px;padding:24px;margin:20px 0;">
+          <ul style="margin:0;padding-left:1.2em;line-height:2;">
+            <li>ChatGPTをほぼ毎日使っている</li>
+            <li>無料版の上限（画像生成・ファイルアップロード・音声など）に当たることがある</li>
+            <li>SNS用・ブログ用・プレゼン用の画像をAIで作りたい</li>
+            <li>ExcelやCSVのデータをAIで分析・グラフ化したい</li>
+            <li>仕事でメール・報告書・企画書の作成にAIを使っている</li>
+            <li>コードのレビューやデバッグをAIに任せたい</li>
+            <li>カスタムGPTを自作して業務を効率化したい</li>
+            <li>数学やコーディングの込み入った問題を、推論に時間をかけるモードで解きたい</li>
+            <li>音声会話（Advanced Voice Mode）を英語学習などに活用したい</li>
+          </ul>
+          <div style="margin-top:16px;padding:12px 16px;background:#eff6ff;border-radius:8px;">
+            <strong style="color:#1d4ed8;">判定の目安</strong>
+            <ul style="margin:4px 0 0;padding-left:1.2em;font-size:0.95em;">
+              <li><strong>0〜2個</strong>：無料版（または上限が少し足りないならGo）で十分</li>
+              <li><strong>3〜5個</strong>：Plusを1ヶ月試して、使用頻度と効果を確認する価値あり</li>
+              <li><strong>6個以上</strong>：Plus（月3,000円）がおすすめ</li>
+            </ul>
+          </div>
+        </div>
+
         <div class="summary-box">
           <h3>迷ったときの最善策</h3>
           <p>ChatGPTは無料版でも多くの機能が使えます。まず無料版を使ってみて、「もっと使いたい」「制限が気になる」と感じた時点でPlusへのアップグレードを検討するのが最もリスクの少ない方法です。Plusはいつでも解約できるので安心です。</p>
@@ -776,7 +879,24 @@
 
       <!-- 9. 支払い方法・解約方法 -->
       <section id="payment">
-        <h2>9. 支払い方法・解約方法</h2>
+        <h2>9. 申し込み手順・支払い方法・解約方法</h2>
+
+        <h3 id="signup-steps">ChatGPT Plusの申し込み手順（5ステップ）</h3>
+        <div style="background:#f8fafc;border-radius:10px;padding:16px 20px;margin:16px 0;">
+          <strong>事前に準備するもの</strong>
+          <ul style="margin:8px 0 0;">
+            <li>ChatGPTアカウント（無料版でOK。未登録なら先に作成）</li>
+            <li>クレジットカードまたはデビットカード（アプリ経由ならApple Pay・Google Payも可）</li>
+          </ul>
+        </div>
+        <ol style="line-height:2;">
+          <li><strong>chatgpt.comにアクセス</strong>：<a href="https://chatgpt.com" target="_blank" rel="nofollow noopener">chatgpt.com</a> を開きます。Googleアカウント・Microsoftアカウント・メールアドレスでログインできます。</li>
+          <li><strong>アカウント作成／ログイン</strong>：アカウントがなければ無料で作成し、あればそのままログインします。</li>
+          <li><strong>プランのアップグレードを選ぶ</strong>：画面左下のアカウント名から「プランをアップグレード」を選び、プラン一覧で「Plus（月3,000円）」を選択します。</li>
+          <li><strong>支払い情報を入力</strong>：カード番号・有効期限・セキュリティコード・名義人・請求先住所（日本の住所でOK）を入力します。</li>
+          <li><strong>登録完了</strong>：決済が完了するとすぐにPlusの機能が使えるようになります。</li>
+        </ol>
+        <p style="font-size:0.9em;color:#666;">※ iOS・Androidアプリから登録するとストア経由の課金になり、Web経由と金額が異なる場合があります。料金を確認したうえで登録したい場合は、ブラウザからchatgpt.comにアクセスして申し込むのが確実です。</p>
 
         <h3>ChatGPTの支払い方法</h3>
         <div class="table-wrap">
@@ -800,7 +920,7 @@
           </table>
         </div>
 
-        <p><strong>通貨について：</strong>ChatGPTの料金はすべてUSドル建てです。日本円で直接支払うことはできませんが、クレジットカードで決済すればカード会社が自動的にドルから円に換算して請求します。為替手数料はカード会社により1.5〜3%程度です。</p>
+        <p><strong>通貨について：</strong>日本では円建ての固定価格で表示・請求されます（最新の価格・通貨は公式で要確認）。</p>
 
         <h3>ChatGPT Plusの解約手順（3ステップ）</h3>
         <div style="background:#fefce8;border:2px solid #eab308;border-radius:10px;padding:20px 24px;margin:20px 0;">
@@ -811,6 +931,7 @@
           </ol>
           <p style="font-size:0.9em;color:#666;margin:12px 0 0;">※解約後も現在の請求期間終了まで有料機能は利用可能です。違約金はかかりません。<br>※iOSアプリ経由で課金した場合は、Appleの「設定」→「サブスクリプション」から解約する必要があります。</p>
         </div>
+        <p><strong>解約後のデータについて：</strong>無料版に戻っても、会話履歴・作成したカスタムGPT・メモリは消えません。再びPlusを使いたくなったら、同じ手順でいつでも再登録できます。</p>
       </section>
 
       <!-- 10. 学生・教育向け -->
@@ -859,7 +980,7 @@
 
       <!-- 12. FAQ -->
       <section id="faq">
-        <h2>12. よくある質問（FAQ）15選</h2>
+        <h2>12. よくある質問（FAQ）20選</h2>
 
         <dl class="faq-list">
           <dt>Q1. ChatGPTは無料で使えますか？</dt>
@@ -906,6 +1027,21 @@
 
           <dt>Q15. ChatGPT TeamとPlusの違いは何ですか？</dt>
           <dd>Team（現在の名称はBusiness）は、Plusの機能に加えて、メンバーの一元管理、入力データをAIの学習に使わない設定、チーム専用ワークスペース、GPTsのチーム共有、一括請求が使えます。2名以上で会社のデータを扱う場合に向いています。</dd>
+
+          <dt>Q16. ChatGPT Plusで画像生成できますか？</dt>
+          <dd>はい。テキストで指示するだけで、写真風・イラスト・ロゴなどの画像を生成できます。無料版でも画像生成は使えますが1日数枚が目安で、Plus（月額3,000円）では上限が大きく広がります。</dd>
+
+          <dt>Q17. ChatGPT Plusに切り替えると過去の会話はどうなりますか？</dt>
+          <dd>無料版での会話はそのまま引き継がれ、Plusに切り替えた後も確認・続きの会話ができます。Plusを解約して無料版に戻った場合も、会話履歴は保持されます。</dd>
+
+          <dt>Q18. ChatGPT PlusのAdvanced Voice Mode（高度な音声会話）とは？</dt>
+          <dd>リアルタイムで自然な音声会話ができる機能です。話の途中での割り込みや話すスピードの調整に対応しており、英語のスピーキング練習、アイデア出し、移動中のハンズフリー利用に向いています。無料版では利用に制限があり、Plusではより多く使えます。</dd>
+
+          <dt>Q19. カスタムGPT（GPTs）とは何ですか？Plus限定ですか？</dt>
+          <dd>特定の用途に特化したオリジナルのAIアシスタントを、プログラミングなしで作れる機能です。「自社のFAQに答えるGPT」「文体を統一するアシスタント」などを作り、GPTストアで公開することもできます。無料版は他の人が作ったGPTを使うことはできますが、自分で作成するにはPlus以上が必要です。</dd>
+
+          <dt>Q20. ChatGPT Plusにはいつ課金すべきですか？</dt>
+          <dd>無料版の上限に頻繁に当たるようになったときが目安です。画像生成を多く使いたいとき、ExcelやCSVのデータ分析をしたいとき、カスタムGPTを作りたいときも課金を検討するタイミングです。上限に当たる頻度が低ければGo（月額1,400円）で足りる場合もあります。月払いでいつでも解約できるので、まず1ヶ月試して判断するのがおすすめです。</dd>
         </dl>
       </section>
 
@@ -945,7 +1081,6 @@
         <div class="related-articles" style="background:#f8f9fc;border-radius:10px;padding:20px 24px;margin:32px 0;">
           <p style="font-weight:700;margin:0 0 12px;font-size:1em;">関連記事</p>
           <ul style="margin:0;padding-left:1.4em;line-height:2;">
-            <li><a href="../articles/chatgpt-plus-guide">ChatGPT Plus完全ガイド｜課金すべき人・機能まとめ</a></li>
             <li><a href="../articles/chatgpt-review">ChatGPT 徹底レビュー｜使い方・料金・機能を解説</a></li>
             <li><a href="../articles/chatgpt-howto">ChatGPTの使い方ガイド【初心者向け】</a></li>
             <li><a href="../articles/claude-pricing">Claude 料金プラン完全解説【2026年】</a></li>
