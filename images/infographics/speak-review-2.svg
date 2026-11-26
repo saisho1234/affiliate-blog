@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+  <rect width="800" height="460" fill="#f8fafc" rx="16"/>
+  <rect x="0" y="0" width="800" height="72" fill="#2563eb" rx="16"/>
+  <rect x="0" y="56" width="800" height="16" fill="#2563eb"/>
+  <text x="400" y="45" text-anchor="middle" fill="white" font-size="22" font-weight="bold">スピークが向く人・向かない人</text>
+
+  <!-- good -->
+  <rect x="32" y="92" width="360" height="340" fill="white" rx="14" stroke="#059669" stroke-width="2"/>
+  <rect x="32" y="92" width="360" height="52" fill="#059669" rx="14"/>
+  <rect x="32" y="124" width="360" height="20" fill="#059669"/>
+  <text x="212" y="126" text-anchor="middle" fill="white" font-size="18" font-weight="bold">◯ 向いている人</text>
+
+  <circle cx="62" cy="180" r="6" fill="#059669"/>
+  <text x="80" y="185" fill="#1e293b" font-size="14" font-weight="bold">人前で話すのが恥ずかしい</text>
+  <text x="80" y="206" fill="#64748b" font-size="12">相手がAIなので間違いを気にせず声に出せる</text>
+  <circle cx="62" cy="242" r="6" fill="#059669"/>
+  <text x="80" y="247" fill="#1e293b" font-size="14" font-weight="bold">スキマ時間に毎日続けたい</text>
+  <text x="80" y="268" fill="#64748b" font-size="12">予約不要。1レッスン単位で区切りやすい</text>
+  <circle cx="62" cy="304" r="6" fill="#059669"/>
+  <text x="80" y="309" fill="#1e293b" font-size="14" font-weight="bold">初心者〜中級で話す量が足りない</text>
+  <text x="80" y="330" fill="#64748b" font-size="12">超初心者〜中上級までのカリキュラム</text>
+  <circle cx="62" cy="366" r="6" fill="#059669"/>
+  <text x="80" y="371" fill="#1e293b" font-size="14" font-weight="bold">オンライン英会話の前に慣れたい</text>
+  <text x="80" y="392" fill="#64748b" font-size="12">言いたいフレーズを先に口に覚えさせる</text>
+
+  <!-- bad -->
+  <rect x="408" y="92" width="360" height="340" fill="white" rx="14" stroke="#dc2626" stroke-width="2"/>
+  <rect x="408" y="92" width="360" height="52" fill="#dc2626" rx="14"/>
+  <rect x="408" y="124" width="360" height="20" fill="#dc2626"/>
+  <text x="588" y="126" text-anchor="middle" fill="white" font-size="18" font-weight="bold">✕ 向いていない人</text>
+
+  <circle cx="438" cy="180" r="6" fill="#dc2626"/>
+  <text x="456" y="185" fill="#1e293b" font-size="14" font-weight="bold">人間相手の緊張感がほしい</text>
+  <text x="456" y="206" fill="#64748b" font-size="12">会話相手はAI。講師は動画レッスンで登場</text>
+  <circle cx="438" cy="242" r="6" fill="#dc2626"/>
+  <text x="456" y="247" fill="#1e293b" font-size="14" font-weight="bold">TOEICの点数が最優先</text>
+  <text x="456" y="268" fill="#64748b" font-size="12">試験対策の教材ではなく会話練習が中心</text>
+  <circle cx="438" cy="304" r="6" fill="#dc2626"/>
+  <text x="456" y="309" fill="#1e293b" font-size="14" font-weight="bold">声を出せる場所がない</text>
+  <text x="456" y="330" fill="#64748b" font-size="12">発話が前提。通勤電車では使いにくい</text>
+  <circle cx="438" cy="366" r="6" fill="#dc2626"/>
+  <text x="456" y="371" fill="#1e293b" font-size="14" font-weight="bold">月額をできるだけ抑えたい</text>
+  <text x="456" y="392" fill="#64748b" font-size="12">本格的に使うには有料プランが前提</text>
+</svg>

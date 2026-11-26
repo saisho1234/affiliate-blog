@@ -8,14 +8,16 @@
   <meta name="keywords" content="Stable Diffusion VRAM不足, Stable Diffusion メモリ不足, Stable Diffusion 低スペック, CUDA out of memory, Stable Diffusion VRAM 4GB, Stable Diffusion 軽量化">
   <meta property="og:title" content="Stable Diffusion VRAM不足の解決法7選【2026年】 | AI navi">
   <meta property="og:url" content="https://ai-navi.app/articles/stable-diffusion-vram">
-  <meta property="og:image" content="https://ai-navi.app/og-image.png">
+  <meta property="og:image" content="https://ai-navi.app/images/og/stable-diffusion-vram.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="AI navi">
   <meta property="og:description" content="Stable DiffusionのVRAM不足エラーを解決する7つの方法を解説。--medvram・xformers・Forge移行など、VRAM 4GB〜8GBでも画像生成できる設定を紹介。">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Stable Diffusion VRAM不足の解決法7選【2026年】 | AI navi">
   <meta name="twitter:description" content="Stable DiffusionのVRAM不足エラーを解決する7つの方法を解説。--medvram・xformers・Forge移行など、VRAM 4GB〜8GBでも画像生成できる設定を紹介。">
-  <meta name="twitter:image" content="https://ai-navi.app/og-image.png">
+  <meta name="twitter:image" content="https://ai-navi.app/images/og/stable-diffusion-vram.png">
   <link rel="canonical" href="https://ai-navi.app/articles/stable-diffusion-vram">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../style.css">
@@ -24,11 +26,22 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Stable Diffusion VRAM不足の解決法7選【2026年】",
-    "image": "https://ai-navi.app/og-image.png",
+    "image": "https://ai-navi.app/images/og/stable-diffusion-vram.png",
     "datePublished": "2026-08-15",
     "dateModified": "2026-11-13",
-    "author": { "@type": "Person", "name": "小田 健真", "url": "https://ai-navi.app/about" },
-    "publisher": { "@type": "Organization", "name": "AI navi", "logo": { "@type": "ImageObject", "url": "https://ai-navi.app/og-image.png" } }
+    "author": {
+      "@type": "Person",
+      "name": "小田 健真",
+      "url": "https://ai-navi.app/about"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AI navi",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ai-navi.app/og-image.png"
+      }
+    }
   }
   </script>
 
@@ -45,8 +58,7 @@
   </script>
 
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-    {"@type":"Question","name":"Stable Diffusionに必要なVRAMは最低何GBですか？","acceptedAnswer":{"@type":"Answer","text":"SD1.5モデルなら最低4GB、SDXLなら最低6GB、Flux.1なら最低8GBが目安です。ただし4GBでは--lowvramオプションが必須で、生成速度は大幅に低下します。快適に使うならSD1.5で6GB以上、SDXLで8GB以上を推奨します。"}},
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Stable Diffusionに必要なVRAMは最低何GBですか？","acceptedAnswer":{"@type":"Answer","text":"SD1.5モデルなら最低4GB、SDXLなら最低6GB、Flux.1なら最低8GBが目安です。ただし4GBでは--lowvramオプションが必須で、生成速度は大幅に低下します。快適に使うならSD1.5で6GB以上、SDXLで8GB以上を推奨します。"}},
     {"@type":"Question","name":"「CUDA out of memory」エラーが出たらどうすればいいですか？","acceptedAnswer":{"@type":"Answer","text":"まずwebui-user.batのCOMMANDLINE_ARGSに--medvram（6GB以下）または--lowvram（4GB以下）を追加してください。それでも解決しない場合は、生成解像度を512x512に下げる、バッチサイズを1にする、xformersを有効にする、などの対策を順に試してください。"}},
     {"@type":"Question","name":"--medvramと--lowvramの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"--medvramはVRAM使用量を中程度に削減するオプションで、速度低下は軽微です（VRAM 6GB前後向け）。--lowvramはVRAM使用量を最小限に抑えますが、生成速度が3〜5倍遅くなります（VRAM 4GB向け）。画質自体はどちらも変わりません。"}},
     {"@type":"Question","name":"xformersとは何ですか？インストール方法は？","acceptedAnswer":{"@type":"Answer","text":"xformersはMeta社が開発したメモリ効率の良いAttention機構のライブラリです。VRAM使用量を20〜30%削減しつつ生成速度も向上します。webui-user.batのCOMMANDLINE_ARGSに--xformersを追加するだけで自動インストール・有効化されます。"}},
@@ -55,8 +67,7 @@
     {"@type":"Question","name":"Google ColabでStable Diffusionを無料で使えますか？","acceptedAnswer":{"@type":"Answer","text":"Google Colabの無料プランでもStable Diffusionを動かすことは可能ですが、2024年以降は無料枠でのGPU割り当てが制限されています。安定して使うにはColab Pro（月約1,179円）の契約を推奨します。Tesla T4（16GB VRAM）が割り当てられるため、ローカルの低スペックPCより快適に生成できます。"}},
     {"@type":"Question","name":"NVIDIAドライバの「システムメモリフォールバック」とは何ですか？","acceptedAnswer":{"@type":"Answer","text":"NVIDIAドライバ536.40以降に搭載された機能で、VRAMが不足するとシステムRAMを代わりに使用します。エラーは出なくなりますが、生成速度が10倍以上遅くなることがあります。Stable Diffusionでは無効化を推奨します。NVIDIAコントロールパネルの3D設定から「システムメモリフォールバックを許可」をオフにしてください。"}},
     {"@type":"Question","name":"VAEを変更するとVRAM使用量は減りますか？","acceptedAnswer":{"@type":"Answer","text":"はい、FP16（半精度）のVAEに変更することでVRAM使用量を約1GB削減できます。また、webui-user.batに--no-half-vaeオプションを追加すると、VAE処理時のメモリスパイクを防げます。真っ黒な画像が生成される場合はVAE関連の問題であることが多いです。"}},
-    {"@type":"Question","name":"Stable Diffusionで推奨されるGPUは何ですか？予算別に教えてください","acceptedAnswer":{"@type":"Answer","text":"予算別のおすすめは、2万円台: GTX 1660 Super（6GB・SD1.5向け）、4万円台: RTX 3060（12GB・SDXL対応）、7万円台: RTX 4060 Ti（16GB・全モデル快適）、10万円以上: RTX 4070以上（Flux.1も快適）です。コスパ最強はRTX 3060 12GBで、中古なら2〜3万円で入手可能です。"}}
-  ]}
+    {"@type":"Question","name":"Stable Diffusionで推奨されるGPUは何ですか？予算別に教えてください","acceptedAnswer":{"@type":"Answer","text":"予算別のおすすめは、2万円台: GTX 1660 Super（6GB・SD1.5向け）、4万円台: RTX 3060（12GB・SDXL対応）、7万円台: RTX 4060 Ti（16GB・全モデル快適）、10万円以上: RTX 4070以上（Flux.1も快適）です。コスパで選ぶならRTX 3060 12GBで、中古なら2〜3万円で入手可能です。"}}]}
   </script>
 </head>
 <body>
@@ -102,7 +113,7 @@
     </div>
   </div>
   <div class="article-hero-img">
-    <img src="../images/photos/laptop-work.jpg" alt="Stable Diffusion VRAM不足エラーの解決方法を調べるPC画面" loading="lazy" style="width:100%;height:240px;object-fit:cover;border-radius:10px;margin:16px 0;">
+    <img width="640" height="380" src="../images/photos/laptop-work.jpg" alt="Stable Diffusion VRAM不足エラーの解決方法を調べるPC画面" loading="lazy" style="width:100%;height:240px;object-fit:cover;border-radius:10px;margin:16px 0;">
   </div>
 
   <div class="summary-box" style="background:#fff3e0;border-left:4px solid #e65100;">
@@ -674,7 +685,7 @@
     </ul>
 
     <div class="author-box">
-      <div class="author-avatar"><img src="/images/author-avatar.png" alt="小田 健真" width="52" height="52" style="border-radius:50%;"></div>
+      <div class="author-avatar"><img loading="lazy" decoding="async" src="/images/author-avatar.png" alt="小田 健真" width="52" height="52" style="border-radius:50%;"></div>
       <div class="author-info">
         <div class="author-name">小田 健真</div>
         <div class="author-bio">ChatGPT・Claude・Geminiなど主要AIを日常的に活用するブロガー。各ツールを実際に試し、使いやすさ・料金・機能をわかりやすく比較・解説しています。</div>

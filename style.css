@@ -158,7 +158,7 @@ section { max-width: 1100px; margin: 0 auto; padding: 48px 20px; }
 footer { background: #1e293b; color: #94a3b8; text-align: center; padding: 32px 20px; font-size: 0.85rem; }
 footer a { color: #60a5fa; text-decoration: none; }
 .footer-nav { display: flex; gap: 20px; justify-content: center; margin-bottom: 16px; flex-wrap: wrap; }
-.affiliate-disc { background: #0f172a; padding: 12px 20px; border-radius: 6px; font-size: 0.8rem; margin-bottom: 16px; }
+.affiliate-disc { background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0; padding: 12px 20px; border-radius: 6px; font-size: 0.8rem; margin-bottom: 16px; }
 
 /* レスポンシブ */
 @media (max-width: 768px) {

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+  <rect width="800" height="480" fill="#f8fafc" rx="16"/>
+  <rect x="0" y="0" width="800" height="72" fill="#2563eb" rx="16"/>
+  <rect x="0" y="56" width="800" height="16" fill="#2563eb"/>
+  <text x="400" y="44" text-anchor="middle" fill="white" font-size="22" font-weight="bold">生成AIパスポート試験 早見表（2026年11月時点）</text>
+
+  <!-- 概要カード 左 -->
+  <rect x="28" y="90" width="360" height="250" fill="white" rx="12" stroke="#dbeafe" stroke-width="2"/>
+  <text x="48" y="122" fill="#2563eb" font-size="15" font-weight="bold">試験の基本</text>
+  <text x="48" y="156" fill="#64748b" font-size="13">主催</text>
+  <text x="140" y="156" fill="#1e293b" font-size="13" font-weight="bold">生成AI活用普及協会（GUGA）</text>
+  <text x="48" y="186" fill="#64748b" font-size="13">形式</text>
+  <text x="140" y="186" fill="#1e293b" font-size="13" font-weight="bold">オンライン（IBT）・自宅で受験</text>
+  <text x="48" y="216" fill="#64748b" font-size="13">問題</text>
+  <text x="140" y="216" fill="#1e293b" font-size="13" font-weight="bold">60分・60問（四肢択一式）</text>
+  <text x="48" y="246" fill="#64748b" font-size="13">受験料</text>
+  <text x="140" y="246" fill="#1e293b" font-size="13" font-weight="bold">一般11,000円／学生5,500円</text>
+  <text x="48" y="276" fill="#64748b" font-size="13">合格率</text>
+  <text x="140" y="276" fill="#1e293b" font-size="13" font-weight="bold">81.2%（2026年8月試験）</text>
+  <text x="48" y="306" fill="#64748b" font-size="13">合格基準</text>
+  <text x="140" y="306" fill="#1e293b" font-size="13" font-weight="bold">非公開</text>
+  <text x="48" y="328" fill="#64748b" font-size="11">※資格の有効期限はなし</text>
+
+  <!-- 日程 右 -->
+  <rect x="412" y="90" width="360" height="250" fill="white" rx="12" stroke="#dbeafe" stroke-width="2"/>
+  <text x="432" y="122" fill="#2563eb" font-size="15" font-weight="bold">年5回の日程（受験期間）</text>
+  <rect x="432" y="138" width="320" height="30" fill="#fff7ed" rx="6" stroke="#f97316" stroke-width="1.5"/>
+  <text x="444" y="158" fill="#c2410c" font-size="13" font-weight="bold">2月試験：2/1〜2月末（申込は1/31まで）</text>
+  <text x="444" y="194" fill="#1e293b" font-size="13">4月試験：4/1〜4/30</text>
+  <text x="444" y="222" fill="#1e293b" font-size="13">6月試験：6/1〜6/30</text>
+  <text x="444" y="250" fill="#1e293b" font-size="13">8月試験：8/1〜8/31</text>
+  <text x="444" y="278" fill="#1e293b" font-size="13">10月試験：10/1〜10/31</text>
+  <text x="432" y="308" fill="#64748b" font-size="11">申込は前々月1日〜前月末（2月試験は10/1〜）</text>
+  <text x="432" y="326" fill="#64748b" font-size="11">合否は翌月中旬（20日頃まで）に通知</text>
+
+  <!-- 注意帯 -->
+  <rect x="28" y="356" width="744" height="76" fill="#fef3c7" rx="12" stroke="#f59e0b" stroke-width="2"/>
+  <text x="48" y="386" fill="#92400e" font-size="14" font-weight="bold">2027年2月試験からシラバス改訂</text>
+  <text x="48" y="412" fill="#78350f" font-size="12">AIエージェント・リスク予防/ガバナンスを拡充。テキストは「2027年試験シラバス対応」版を選ぶ</text>
+
+  <text x="400" y="462" text-anchor="middle" fill="#94a3b8" font-size="11">AI navi (ai-navi.app) | 出典：GUGA公式サイト</text>
+</svg>

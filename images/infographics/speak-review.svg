@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+  <rect width="800" height="500" fill="#f8fafc" rx="16"/>
+  <rect x="0" y="0" width="800" height="72" fill="#2563eb" rx="16"/>
+  <rect x="0" y="56" width="800" height="16" fill="#2563eb"/>
+  <text x="400" y="45" text-anchor="middle" fill="white" font-size="22" font-weight="bold">スピークの料金早見表（2026年11月時点）</text>
+
+  <!-- Premium -->
+  <rect x="40" y="96" width="340" height="300" fill="white" rx="14" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="40" y="96" width="340" height="54" fill="#e2e8f0" rx="14"/>
+  <rect x="40" y="130" width="340" height="20" fill="#e2e8f0"/>
+  <text x="210" y="131" text-anchor="middle" fill="#1e293b" font-size="19" font-weight="bold">プレミアム</text>
+  <text x="70" y="192" fill="#64748b" font-size="14">月間プラン</text>
+  <text x="350" y="194" text-anchor="end" fill="#1e293b" font-size="24" font-weight="bold">3,800円</text>
+  <line x1="70" y1="212" x2="350" y2="212" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="70" y="244" fill="#64748b" font-size="14">年間プラン</text>
+  <text x="350" y="246" text-anchor="end" fill="#1e293b" font-size="24" font-weight="bold">19,800円</text>
+  <text x="350" y="270" text-anchor="end" fill="#2563eb" font-size="13" font-weight="bold">月あたり約1,650円</text>
+  <line x1="70" y1="288" x2="350" y2="288" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="70" y="318" fill="#334155" font-size="13">・AIとの会話練習・レッスン</text>
+  <text x="70" y="342" fill="#334155" font-size="13">・発音コース・復習機能</text>
+  <text x="70" y="366" fill="#334155" font-size="13">・カスタムレッスンは無制限ではない</text>
+
+  <!-- Premium Plus -->
+  <rect x="420" y="96" width="340" height="300" fill="white" rx="14" stroke="#2563eb" stroke-width="3"/>
+  <rect x="420" y="96" width="340" height="54" fill="#2563eb" rx="14"/>
+  <rect x="420" y="130" width="340" height="20" fill="#2563eb"/>
+  <text x="590" y="131" text-anchor="middle" fill="white" font-size="19" font-weight="bold">プレミアムプラス</text>
+  <text x="450" y="192" fill="#64748b" font-size="14">月間プラン</text>
+  <text x="730" y="194" text-anchor="end" fill="#1e293b" font-size="24" font-weight="bold">5,800円</text>
+  <line x1="450" y1="212" x2="730" y2="212" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="450" y="244" fill="#64748b" font-size="14">年間プラン</text>
+  <text x="730" y="246" text-anchor="end" fill="#1e293b" font-size="24" font-weight="bold">29,800円</text>
+  <text x="730" y="270" text-anchor="end" fill="#2563eb" font-size="13" font-weight="bold">月あたり約2,483円</text>
+  <line x1="450" y1="288" x2="730" y2="288" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="450" y="318" fill="#334155" font-size="13">・プレミアムの機能すべて</text>
+  <text x="450" y="342" fill="#334155" font-size="13">・カスタムレッスンが無制限</text>
+  <text x="450" y="366" fill="#334155" font-size="13">・苦手から自動で練習を作れる</text>
+
+  <!-- footer -->
+  <rect x="40" y="414" width="720" height="66" fill="#fef3c7" rx="12" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="400" y="442" text-anchor="middle" fill="#92400e" font-size="14" font-weight="bold">7日間の無料体験あり（公式：全機能を利用可能）</text>
+  <text x="400" y="466" text-anchor="middle" fill="#92400e" font-size="12">価格はApp Storeのアプリ内課金表示。キャンペーンや購入経路で変わるため申込画面で再確認を</text>
+</svg>

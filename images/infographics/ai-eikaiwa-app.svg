@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+  <rect width="800" height="520" fill="#f8fafc" rx="16"/>
+  <rect x="0" y="0" width="800" height="72" fill="#2563eb" rx="16"/>
+  <rect x="0" y="56" width="800" height="16" fill="#2563eb"/>
+  <text x="400" y="45" text-anchor="middle" fill="white" font-size="22" font-weight="bold">AI英会話アプリの選び方フロー（目的別）</text>
+
+  <!-- start -->
+  <rect x="270" y="92" width="260" height="48" fill="#1e293b" rx="24"/>
+  <text x="400" y="122" text-anchor="middle" fill="white" font-size="16" font-weight="bold">いちばん伸ばしたいのは？</text>
+
+  <!-- connectors -->
+  <path d="M400 140 V160 M112 160 H688 M112 160 V184 M304 160 V184 M496 160 V184 M688 160 V184" stroke="#94a3b8" stroke-width="2" fill="none"/>
+
+  <!-- 4 goals -->
+  <rect x="32" y="184" width="160" height="70" fill="white" rx="12" stroke="#2563eb" stroke-width="2"/>
+  <text x="112" y="214" text-anchor="middle" fill="#1e293b" font-size="15" font-weight="bold">とにかく話す量</text>
+  <text x="112" y="238" text-anchor="middle" fill="#64748b" font-size="12">瞬発力・会話の慣れ</text>
+
+  <rect x="224" y="184" width="160" height="70" fill="white" rx="12" stroke="#7c3aed" stroke-width="2"/>
+  <text x="304" y="214" text-anchor="middle" fill="#1e293b" font-size="15" font-weight="bold">発音を直したい</text>
+  <text x="304" y="238" text-anchor="middle" fill="#64748b" font-size="12">通じる音・聞き取り</text>
+
+  <rect x="416" y="184" width="160" height="70" fill="white" rx="12" stroke="#059669" stroke-width="2"/>
+  <text x="496" y="214" text-anchor="middle" fill="#1e293b" font-size="15" font-weight="bold">場面別に練習</text>
+  <text x="496" y="238" text-anchor="middle" fill="#64748b" font-size="12">旅行・面接・仕事</text>
+
+  <rect x="608" y="184" width="160" height="70" fill="white" rx="12" stroke="#ea580c" stroke-width="2"/>
+  <text x="688" y="214" text-anchor="middle" fill="#1e293b" font-size="15" font-weight="bold">まず無料で</text>
+  <text x="688" y="238" text-anchor="middle" fill="#64748b" font-size="12">お金をかけず試す</text>
+
+  <path d="M112 254 V280 M304 254 V280 M496 254 V280 M688 254 V280" stroke="#94a3b8" stroke-width="2" fill="none"/>
+  <path d="M106 274 L112 284 L118 274 M298 274 L304 284 L310 274 M490 274 L496 284 L502 274 M682 274 L688 284 L694 274" stroke="#94a3b8" stroke-width="2" fill="none"/>
+
+  <!-- answers -->
+  <rect x="32" y="288" width="160" height="112" fill="#2563eb" rx="12"/>
+  <text x="112" y="322" text-anchor="middle" fill="white" font-size="18" font-weight="bold">スピーク</text>
+  <text x="112" y="348" text-anchor="middle" fill="#dbeafe" font-size="12">声に出す反復＋</text>
+  <text x="112" y="366" text-anchor="middle" fill="#dbeafe" font-size="12">AIとの自由会話</text>
+  <text x="112" y="388" text-anchor="middle" fill="white" font-size="11">7日間無料体験あり</text>
+
+  <rect x="224" y="288" width="160" height="112" fill="#7c3aed" rx="12"/>
+  <text x="304" y="322" text-anchor="middle" fill="white" font-size="18" font-weight="bold">ELSA Speak</text>
+  <text x="304" y="348" text-anchor="middle" fill="#ede9fe" font-size="12">音単位で発音を</text>
+  <text x="304" y="366" text-anchor="middle" fill="#ede9fe" font-size="12">採点・指摘</text>
+  <text x="304" y="388" text-anchor="middle" fill="white" font-size="11">発音特化</text>
+
+  <rect x="416" y="288" width="160" height="112" fill="#059669" rx="12"/>
+  <text x="496" y="322" text-anchor="middle" fill="white" font-size="18" font-weight="bold">Talkful</text>
+  <text x="496" y="348" text-anchor="middle" fill="#d1fae5" font-size="12">シーン別ロールプレイ</text>
+  <text x="496" y="366" text-anchor="middle" fill="#d1fae5" font-size="12">カスタム会話</text>
+  <text x="496" y="388" text-anchor="middle" fill="white" font-size="11">米英の発音切替あり</text>
+
+  <rect x="608" y="288" width="160" height="112" fill="#ea580c" rx="12"/>
+  <text x="688" y="322" text-anchor="middle" fill="white" font-size="18" font-weight="bold">ChatGPT</text>
+  <text x="688" y="348" text-anchor="middle" fill="#ffedd5" font-size="12">音声モードで</text>
+  <text x="688" y="366" text-anchor="middle" fill="#ffedd5" font-size="12">雑談・添削</text>
+  <text x="688" y="388" text-anchor="middle" fill="white" font-size="11">無料版でも試せる</text>
+
+  <!-- footer tip -->
+  <rect x="32" y="424" width="736" height="68" fill="#fef3c7" rx="12" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="400" y="452" text-anchor="middle" fill="#92400e" font-size="14" font-weight="bold">迷ったら：気になるアプリを2つ選び、1週間ずつ順番に試す</text>
+  <text x="400" y="476" text-anchor="middle" fill="#92400e" font-size="12">続けられたほうが正解。体験終了前日に「残すか・解約か」を決める</text>
+</svg>

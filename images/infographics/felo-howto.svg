@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+  <rect width="800" height="480" fill="#f8fafc" rx="16"/>
+  <rect x="0" y="0" width="800" height="72" fill="#2563eb" rx="16"/>
+  <rect x="0" y="56" width="800" height="16" fill="#2563eb"/>
+  <text x="400" y="44" text-anchor="middle" fill="white" font-size="22" font-weight="bold">Felo・Perplexity・Genspark の違い（2026年11月時点）</text>
+
+  <!-- header row -->
+  <rect x="28" y="90" width="744" height="44" fill="#1e3a5f" rx="8"/>
+  <text x="110" y="118" text-anchor="middle" fill="white" font-size="14" font-weight="bold">比較項目</text>
+  <text x="310" y="118" text-anchor="middle" fill="white" font-size="15" font-weight="bold">Felo</text>
+  <text x="495" y="118" text-anchor="middle" fill="white" font-size="15" font-weight="bold">Perplexity</text>
+  <text x="680" y="118" text-anchor="middle" fill="white" font-size="15" font-weight="bold">Genspark</text>
+
+  <!-- rows -->
+  <rect x="28" y="140" width="744" height="54" fill="white" rx="8" stroke="#e2e8f0"/>
+  <text x="110" y="172" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="bold">得意分野</text>
+  <text x="310" y="164" text-anchor="middle" fill="#1e293b" font-size="13">多言語のAI検索</text>
+  <text x="310" y="183" text-anchor="middle" fill="#1e293b" font-size="13">＋スライド・図解</text>
+  <text x="495" y="172" text-anchor="middle" fill="#1e293b" font-size="13">出典付きのAI検索</text>
+  <text x="680" y="164" text-anchor="middle" fill="#1e293b" font-size="13">エージェントが</text>
+  <text x="680" y="183" text-anchor="middle" fill="#1e293b" font-size="13">資料まで作る</text>
+
+  <rect x="28" y="200" width="744" height="54" fill="#f1f5f9" rx="8" stroke="#e2e8f0"/>
+  <text x="110" y="232" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="bold">無料版</text>
+  <text x="310" y="224" text-anchor="middle" fill="#1e293b" font-size="13">高速検索は無制限</text>
+  <text x="310" y="243" text-anchor="middle" fill="#64748b" font-size="12">プロ検索は1日5回</text>
+  <text x="495" y="224" text-anchor="middle" fill="#1e293b" font-size="13">通常検索は無制限</text>
+  <text x="495" y="243" text-anchor="middle" fill="#64748b" font-size="12">高度な検索は回数制限</text>
+  <text x="680" y="224" text-anchor="middle" fill="#1e293b" font-size="13">1日100クレジット</text>
+  <text x="680" y="243" text-anchor="middle" fill="#64748b" font-size="12">生涯上限あり</text>
+
+  <rect x="28" y="260" width="744" height="54" fill="white" rx="8" stroke="#e2e8f0"/>
+  <text x="110" y="292" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="bold">有料プラン</text>
+  <text x="310" y="284" text-anchor="middle" fill="#2563eb" font-size="13" font-weight="bold">Pro 月14.99ドル</text>
+  <text x="310" y="303" text-anchor="middle" fill="#64748b" font-size="12">約2,250円</text>
+  <text x="495" y="284" text-anchor="middle" fill="#2563eb" font-size="13" font-weight="bold">Pro 月20ドル</text>
+  <text x="495" y="303" text-anchor="middle" fill="#64748b" font-size="12">約3,000円</text>
+  <text x="680" y="284" text-anchor="middle" fill="#2563eb" font-size="13" font-weight="bold">Plus 月24.99ドル</text>
+  <text x="680" y="303" text-anchor="middle" fill="#64748b" font-size="12">約3,750円</text>
+
+  <rect x="28" y="320" width="744" height="54" fill="#f1f5f9" rx="8" stroke="#e2e8f0"/>
+  <text x="110" y="352" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="bold">作れるもの</text>
+  <text x="310" y="344" text-anchor="middle" fill="#1e293b" font-size="12">スライド・マインドマップ</text>
+  <text x="310" y="363" text-anchor="middle" fill="#1e293b" font-size="12">LiveDoc</text>
+  <text x="495" y="344" text-anchor="middle" fill="#1e293b" font-size="12">回答・リサーチ</text>
+  <text x="495" y="363" text-anchor="middle" fill="#1e293b" font-size="12">レポート中心</text>
+  <text x="680" y="344" text-anchor="middle" fill="#1e293b" font-size="12">スライド・シート</text>
+  <text x="680" y="363" text-anchor="middle" fill="#1e293b" font-size="12">ドキュメントなど</text>
+
+  <rect x="28" y="380" width="744" height="54" fill="white" rx="8" stroke="#e2e8f0"/>
+  <text x="110" y="412" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="bold">向いている人</text>
+  <text x="310" y="404" text-anchor="middle" fill="#1e293b" font-size="12">海外情報を日本語で</text>
+  <text x="310" y="422" text-anchor="middle" fill="#1e293b" font-size="12">まとめたい人</text>
+  <text x="495" y="404" text-anchor="middle" fill="#1e293b" font-size="12">出典を確かめながら</text>
+  <text x="495" y="422" text-anchor="middle" fill="#1e293b" font-size="12">調べたい人</text>
+  <text x="680" y="404" text-anchor="middle" fill="#1e293b" font-size="12">調査から資料作成まで</text>
+  <text x="680" y="422" text-anchor="middle" fill="#1e293b" font-size="12">任せたい人</text>
+
+  <text x="400" y="464" text-anchor="middle" fill="#94a3b8" font-size="11">※円換算は1ドル150円の目安。料金・機能は変更されることがあります｜AI navi (ai-navi.app) 作成</text>
+</svg>

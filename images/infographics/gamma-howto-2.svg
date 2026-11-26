@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+  <rect width="800" height="440" fill="#f8fafc" rx="16"/>
+  <rect x="0" y="0" width="800" height="72" fill="#2563eb" rx="16"/>
+  <rect x="0" y="56" width="800" height="16" fill="#2563eb"/>
+  <text x="400" y="45" text-anchor="middle" fill="white" font-size="22" font-weight="bold">Gamma無料プランの早見表（2026年11月時点）</text>
+
+  <!-- left card: credits -->
+  <rect x="28" y="92" width="360" height="300" fill="white" rx="12" stroke="#dbeafe" stroke-width="2"/>
+  <rect x="28" y="92" width="360" height="40" fill="#dbeafe" rx="12"/>
+  <rect x="28" y="116" width="360" height="16" fill="#dbeafe"/>
+  <text x="208" y="118" text-anchor="middle" fill="#1e3a8a" font-size="15" font-weight="bold">AIクレジット</text>
+  <text x="208" y="190" text-anchor="middle" fill="#2563eb" font-size="44" font-weight="bold">400</text>
+  <text x="208" y="216" text-anchor="middle" fill="#334155" font-size="13">登録時に1回だけ付与</text>
+  <text x="52" y="256" fill="#1e293b" font-size="13">・毎月の補充はなし（使い切りで終了）</text>
+  <text x="52" y="282" fill="#1e293b" font-size="13">・紹介1件で200クレジット追加</text>
+  <text x="52" y="308" fill="#1e293b" font-size="13">・保有上限は2,000クレジット</text>
+  <text x="52" y="334" fill="#1e293b" font-size="13">・手動編集は消費しない</text>
+  <text x="52" y="360" fill="#1e293b" font-size="13">・失敗した生成は消費されない</text>
+
+  <!-- right card: export -->
+  <rect x="412" y="92" width="360" height="300" fill="white" rx="12" stroke="#dbeafe" stroke-width="2"/>
+  <rect x="412" y="92" width="360" height="40" fill="#dbeafe" rx="12"/>
+  <rect x="412" y="116" width="360" height="16" fill="#dbeafe"/>
+  <text x="592" y="118" text-anchor="middle" fill="#1e3a8a" font-size="15" font-weight="bold">書き出し（エクスポート）</text>
+  <text x="436" y="166" fill="#1e293b" font-size="14" font-weight="bold">PDF</text>
+  <text x="560" y="166" fill="#ea580c" font-size="13">可（バッジ付き）</text>
+  <text x="436" y="198" fill="#1e293b" font-size="14" font-weight="bold">PowerPoint</text>
+  <text x="560" y="198" fill="#ea580c" font-size="13">可（バッジ付き）</text>
+  <text x="436" y="230" fill="#1e293b" font-size="14" font-weight="bold">PNG</text>
+  <text x="560" y="230" fill="#16a34a" font-size="13">可</text>
+  <text x="436" y="262" fill="#1e293b" font-size="14" font-weight="bold">Googleスライド</text>
+  <text x="560" y="262" fill="#16a34a" font-size="13">可（Web版のみ）</text>
+  <line x1="436" y1="282" x2="748" y2="282" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="436" y="308" fill="#475569" font-size="12">バッジ＝「Made by Gamma」の表示</text>
+  <text x="436" y="330" fill="#475569" font-size="12">ログイン中のブラウザ印刷（Ctrl+P）は</text>
+  <text x="436" y="350" fill="#475569" font-size="12">バッジが付かない（公式ヘルプ）</text>
+
+  <text x="400" y="420" text-anchor="middle" fill="#94a3b8" font-size="11">AI navi (ai-navi.app) | 出典：Gamma Help Center（クレジット・エクスポートの各記事）</text>
+</svg>

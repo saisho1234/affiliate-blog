@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+  <rect width="800" height="500" fill="#f8fafc" rx="16"/>
+  <rect x="0" y="0" width="800" height="72" fill="#2563eb" rx="16"/>
+  <rect x="0" y="56" width="800" height="16" fill="#2563eb"/>
+  <text x="400" y="44" text-anchor="middle" fill="white" font-size="22" font-weight="bold">Genspark 料金プラン早見表（2026年11月時点）</text>
+
+  <!-- Free -->
+  <rect x="28" y="92" width="236" height="300" fill="white" rx="12" stroke="#dbeafe" stroke-width="2"/>
+  <text x="146" y="128" text-anchor="middle" fill="#1e293b" font-size="20" font-weight="bold">Free</text>
+  <text x="146" y="166" text-anchor="middle" fill="#2563eb" font-size="26" font-weight="bold">0円</text>
+  <line x1="52" y1="186" x2="240" y2="186" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="48" y="214" fill="#1e293b" font-size="13">✓ 1日100クレジット</text>
+  <text x="48" y="238" fill="#64748b" font-size="12">　（生涯上限に達すると停止）</text>
+  <text x="48" y="264" fill="#1e293b" font-size="13">✓ AI Drive 1GB</text>
+  <text x="48" y="290" fill="#1e293b" font-size="13">✓ AIスライドの作成・共有</text>
+  <text x="48" y="316" fill="#ef4444" font-size="13">✕ ファイルの書き出し不可</text>
+  <text x="146" y="370" text-anchor="middle" fill="#64748b" font-size="12">まずはお試しに</text>
+
+  <!-- Plus -->
+  <rect x="282" y="92" width="236" height="300" fill="#fff7ed" rx="12" stroke="#f97316" stroke-width="2.5"/>
+  <rect x="282" y="92" width="236" height="34" fill="#f97316" rx="12"/>
+  <rect x="282" y="112" width="236" height="14" fill="#f97316"/>
+  <text x="400" y="115" text-anchor="middle" fill="white" font-size="13" font-weight="bold">★ 個人ならこれ</text>
+  <text x="400" y="152" text-anchor="middle" fill="#1e293b" font-size="20" font-weight="bold">Plus</text>
+  <text x="400" y="184" text-anchor="middle" fill="#f97316" font-size="22" font-weight="bold">月24.99ドル</text>
+  <text x="400" y="204" text-anchor="middle" fill="#64748b" font-size="11">年払いなら月19.99ドル相当</text>
+  <line x1="306" y1="216" x2="494" y2="216" stroke="#fed7aa" stroke-width="1.5"/>
+  <text x="302" y="242" fill="#1e293b" font-size="13">✓ 月10,000クレジット〜</text>
+  <text x="302" y="268" fill="#1e293b" font-size="13">✓ AI Drive 50GB</text>
+  <text x="302" y="294" fill="#1e293b" font-size="13">✓ スライドをPPTX等で出力</text>
+  <text x="302" y="320" fill="#1e293b" font-size="13">✓ 週ごとの無料利用枠</text>
+  <text x="400" y="370" text-anchor="middle" fill="#64748b" font-size="12">資料作成を日常的にする人</text>
+
+  <!-- Pro -->
+  <rect x="536" y="92" width="236" height="300" fill="white" rx="12" stroke="#dbeafe" stroke-width="2"/>
+  <text x="654" y="128" text-anchor="middle" fill="#1e293b" font-size="20" font-weight="bold">Pro</text>
+  <text x="654" y="166" text-anchor="middle" fill="#7c3aed" font-size="22" font-weight="bold">月249.99ドル</text>
+  <text x="654" y="186" text-anchor="middle" fill="#64748b" font-size="11">年払いなら月199.99ドル相当</text>
+  <line x1="560" y1="200" x2="748" y2="200" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="556" y="228" fill="#1e293b" font-size="13">✓ 月125,000クレジット〜</text>
+  <text x="556" y="254" fill="#1e293b" font-size="13">✓ AI Drive 1TB</text>
+  <text x="556" y="280" fill="#1e293b" font-size="13">✓ Plusの機能をすべて</text>
+  <text x="556" y="306" fill="#1e293b" font-size="13">✓ 大量のエージェント実行</text>
+  <text x="654" y="370" text-anchor="middle" fill="#64748b" font-size="12">業務で毎日フル活用する人</text>
+
+  <rect x="28" y="410" width="744" height="50" fill="#eff6ff" rx="10"/>
+  <text x="400" y="432" text-anchor="middle" fill="#1e3a5f" font-size="13" font-weight="bold">チーム向け：Team 1席あたり月40ドル（年払い月35ドル）／ Enterprise は要相談</text>
+  <text x="400" y="451" text-anchor="middle" fill="#64748b" font-size="11">※ドル建て。円の請求額は為替で変わります</text>
+  <text x="400" y="486" text-anchor="middle" fill="#94a3b8" font-size="11">出典：Genspark ヘルプセンター「メンバーシッププラン」｜AI navi (ai-navi.app) 作成</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+  <rect width="800" height="450" fill="#f8fafc" rx="16"/>
+  <rect x="0" y="0" width="800" height="72" fill="#7c3aed" rx="16"/>
+  <rect x="0" y="56" width="800" height="16" fill="#7c3aed"/>
+  <text x="400" y="45" text-anchor="middle" fill="white" font-size="22" font-weight="bold">伝わるプロンプトは「5つの要素」で組み立てる</text>
+
+  <!-- rows -->
+  <rect x="24" y="92" width="752" height="50" fill="white" rx="10" stroke="#ede9fe" stroke-width="2"/>
+  <rect x="24" y="92" width="150" height="50" fill="#7c3aed" rx="10"/>
+  <text x="99" y="123" text-anchor="middle" fill="white" font-size="15" font-weight="bold">① 主題</text>
+  <text x="194" y="115" fill="#1e293b" font-size="13" font-weight="bold">何を描くか</text>
+  <text x="194" y="133" fill="#64748b" font-size="12">例：木のテーブルに置かれたコーヒーカップ</text>
+
+  <rect x="24" y="152" width="752" height="50" fill="white" rx="10" stroke="#ede9fe" stroke-width="2"/>
+  <rect x="24" y="152" width="150" height="50" fill="#2563eb" rx="10"/>
+  <text x="99" y="183" text-anchor="middle" fill="white" font-size="15" font-weight="bold">② スタイル</text>
+  <text x="194" y="175" fill="#1e293b" font-size="13" font-weight="bold">写真風・イラスト・水彩など</text>
+  <text x="194" y="193" fill="#64748b" font-size="12">例：やわらかい自然光の写真風</text>
+
+  <rect x="24" y="212" width="752" height="50" fill="white" rx="10" stroke="#ede9fe" stroke-width="2"/>
+  <rect x="24" y="212" width="150" height="50" fill="#0891b2" rx="10"/>
+  <text x="99" y="243" text-anchor="middle" fill="white" font-size="15" font-weight="bold">③ 構図</text>
+  <text x="194" y="235" fill="#1e293b" font-size="13" font-weight="bold">アングル・配置・余白</text>
+  <text x="194" y="253" fill="#64748b" font-size="12">例：斜め上から、右側に文字を入れる余白</text>
+
+  <rect x="24" y="272" width="752" height="50" fill="white" rx="10" stroke="#ede9fe" stroke-width="2"/>
+  <rect x="24" y="272" width="150" height="50" fill="#059669" rx="10"/>
+  <text x="99" y="303" text-anchor="middle" fill="white" font-size="15" font-weight="bold">④ 比率・用途</text>
+  <text x="194" y="295" fill="#1e293b" font-size="13" font-weight="bold">どこで使う画像か</text>
+  <text x="194" y="313" fill="#64748b" font-size="12">例：横長16:9のブログ見出し画像</text>
+
+  <rect x="24" y="332" width="752" height="50" fill="white" rx="10" stroke="#ede9fe" stroke-width="2"/>
+  <rect x="24" y="332" width="150" height="50" fill="#f97316" rx="10"/>
+  <text x="99" y="363" text-anchor="middle" fill="white" font-size="15" font-weight="bold">⑤ 入れないもの</text>
+  <text x="194" y="355" fill="#1e293b" font-size="13" font-weight="bold">避けたい要素をはっきり書く</text>
+  <text x="194" y="373" fill="#64748b" font-size="12">例：人物・ロゴ・文字は入れない</text>
+
+  <text x="400" y="412" text-anchor="middle" fill="#475569" font-size="13">迷ったら①と④だけ書いて生成し、結果を見ながら②③⑤を足していく</text>
+  <text x="400" y="436" text-anchor="middle" fill="#94a3b8" font-size="11">AI navi (ai-navi.app) | 2026年11月時点の情報</text>
+</svg>

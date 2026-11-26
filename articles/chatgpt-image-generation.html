@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>ChatGPTで画像生成するやり方【2026年】無料版の回数とプロンプト例 | AI navi</title>
+ <meta name="description" content="ChatGPTで画像を作る手順を4ステップで解説。無料版の回数制限の仕組み、そのまま使えるプロンプト例12個、思いどおりに直すコツ、商用利用で気をつけたい著作権と規約の要点まで2026年11月時点の公式情報でまとめました。">
+ <meta name="keywords" content="ChatGPT 画像生成 やり方, ChatGPT 画像生成 無料, ChatGPT 画像生成 回数, ChatGPT 画像 プロンプト, ChatGPT 画像 商用利用, ChatGPT 画像 作り方">
+ <meta property="og:title" content="ChatGPTで画像生成するやり方【2026年】無料版の回数とプロンプト例">
+ <meta property="og:url" content="https://ai-navi.app/articles/chatgpt-image-generation">
+ <meta property="og:image" content="https://ai-navi.app/images/og/chatgpt-image-generation.png">
+ <meta property="og:type" content="article">
+ <meta property="og:site_name" content="AI navi">
+ <meta property="og:description" content="ChatGPTで画像を作る手順を4ステップで解説。無料版の回数制限の仕組み、そのまま使えるプロンプト例12個、思いどおりに直すコツ、商用利用で気をつけたい著作権と規約の要点まで2026年11月時点の公式情報でまとめました。">
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:title" content="ChatGPTで画像生成するやり方【2026年】無料版の回数とプロンプト例">
+ <meta name="twitter:description" content="ChatGPTで画像を作る手順を4ステップで解説。無料版の回数制限の仕組み、そのまま使えるプロンプト例12個、思いどおりに直すコツ、商用利用で気をつけたい著作権と規約の要点まで2026年11月時点の公式情報でまとめました。">
+ <meta name="twitter:image" content="https://ai-navi.app/images/og/chatgpt-image-generation.png">
+ <link rel="canonical" href="https://ai-navi.app/articles/chatgpt-image-generation">
+ <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+ <link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "ChatGPTで画像生成するやり方【2026年】無料版の回数とプロンプト例",
+ "image":"https://ai-navi.app/images/og/chatgpt-image-generation.png",
+ "datePublished": "2026-11-25",
+ "dateModified": "2026-11-25",
+ "author": { "@type": "Person", "name": "小田 健真", "url": "https://ai-navi.app/about" },
+ "publisher": { "@type": "Organization", "name": "AI navi", "logo": { "@type": "ImageObject", "url": "https://ai-navi.app/og-image.png" } }
+ }
+ </script>
+
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+ {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://ai-navi.app/"},
+ {"@type": "ListItem", "position": 2, "name": "AIツール比較", "item": "https://ai-navi.app/"},
+ {"@type": "ListItem", "position": 3, "name": "ChatGPTで画像生成するやり方", "item": "https://ai-navi.app/articles/chatgpt-image-generation"}
+ ]
+ }
+ </script>
+
+ <script type="application/ld+json">
+ {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"ChatGPTの無料版でも画像生成はできますか？","acceptedAnswer":{"@type":"Answer","text":"できます。OpenAIのヘルプでは、ChatGPT Imagesはすべてのプランで、ウェブ・iOS・Androidから使えると案内されています（2026年11月時点）。無料アカウントでログインし、チャット欄に「〜の画像を作って」と入力すれば生成が始まります。"}},
+ {"@type":"Question","name":"ChatGPT無料版で画像は1日何枚まで作れますか？","acceptedAnswer":{"@type":"Answer","text":"2026年11月時点の公式ヘルプには具体的な枚数の記載がありません。画像生成には会話とは別の利用上限があり、上限に達するとChatGPT上で通知され、時間をおくと再び使えるようになります。上限は混雑状況などで変わる可能性があります。"}},
+ {"@type":"Question","name":"画像生成の上限に達したらどうすればいいですか？","acceptedAnswer":{"@type":"Answer","text":"画面に表示される再開時刻まで待つのが基本です。すぐに続けたい場合は、有料のPlus（月3,000円前後）などにアップグレードすると、より多く生成できるようになります。待っている間にプロンプトを整理しておくと、再開後の試行回数を減らせます。"}},
+ {"@type":"Question","name":"ChatGPTで作った画像は商用利用できますか？","acceptedAnswer":{"@type":"Answer","text":"OpenAIの利用規約では、法律で認められる範囲で出力の権利は利用者に帰属するとされています。ただし既存のキャラクターや作品に似た画像、実在の人物やロゴを含む画像は、著作権や商標権などの侵害になるおそれがあります。公開前に類似の作品がないか確認してください。"}},
+ {"@type":"Question","name":"手持ちの写真を加工することはできますか？","acceptedAnswer":{"@type":"Answer","text":"できます。写真をアップロードして「背景を白にして」などと指示すると編集されます。範囲選択ツールで一部だけを指定することもできますが、公式ヘルプでも選択範囲の外まで変わる場合があると案内されています。"}},
+ {"@type":"Question","name":"画像の縦横比は指定できますか？","acceptedAnswer":{"@type":"Answer","text":"できます。縦横比の選択メニューを使うか、プロンプトに「横長16:9」「縦長9:16」「正方形」などと書けば反映されます。ブログのアイキャッチなら横長、スマホ向けのSNS投稿なら縦長や正方形が使いやすいです。"}},
+ {"@type":"Question","name":"作った画像はどこに保存されますか？","acceptedAnswer":{"@type":"Answer","text":"ChatGPTで作った画像は、サイドバーの「画像」に自動で保存されます。端末に保存したい場合は、画像を開いて保存（ダウンロード）ボタンを押します。画像を削除したいときは、その画像を作った会話を削除します。"}}
+ ]}
+ </script>
+</head>
+<body>
+
+<header>
+ <nav>
+ <a class="logo" href="/">AI <span>navi</span></a>
+ <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('nav-open')" aria-label="メニュー">
+ <span></span><span></span><span></span>
+ </button>
+ <ul>
+ <li><a href="/#ranking">ランキング</a></li>
+ <li><a href="/#compare">比較表</a></li>
+ <li><a href="claude-review">Claude</a></li>
+ <li><a href="chatgpt-review">ChatGPT</a></li>
+ <li><a href="../diagnosis">AI診断</a></li>
+ </ul>
+ </nav>
+</header>
+
+<div class="breadcrumb">
+ <a href="/">ホーム</a> &gt; <a href="../articles/chatgpt-review">ChatGPTレビュー</a> &gt; ChatGPTで画像生成するやり方
+</div>
+
+<div class="article-wrap">
+ <div class="article-header">
+ <h1>ChatGPTで画像生成するやり方【2026年】無料版の回数とプロンプト例</h1>
+ <div class="article-meta">
+ <span>2026年11月25日</span>
+ <span>最終更新: 2026年11月25日</span>
+ <span>約7,000字</span>
+ </div>
+ </div>
+ <div class="affiliate-disc">本サイトはアフィリエイト広告（A8.net等）を利用しています。記事内のリンクから商品・サービスを購入・申込みいただいた場合、当サイトに報酬が発生することがあります。</div>
+ <div class="author-box">
+ <div class="author-avatar"><img src="/images/author-avatar.png" alt="小田 健真" width="52" height="52" style="border-radius:50%;"></div>
+ <div class="author-info">
+ <div class="author-name">小田 健真</div>
+ <div class="author-bio">ChatGPT・Claude・Geminiなど主要AIを日常的に活用するブロガー。各ツールの使いやすさ・料金・機能をわかりやすく比較・解説しています。</div>
+ </div>
+ </div>
+ <div class="article-hero-img">
+ <img src="../images/photos/marketing.jpg" alt="ChatGPTで画像を作るイメージ" loading="lazy" style="width:100%;height:240px;object-fit:cover;border-radius:10px;margin:16px 0;">
+ </div>
+
+ <div class="summary-box" style="background:#fff3e0;border-left:4px solid #e65100;">
+ <h2 style="margin-top:0;font-size:1.1em;">結論：無料アカウントでも「〜の画像を作って」と打つだけで始められる</h2>
+ <ul>
+ <li><strong>やり方</strong>：ChatGPTにログイン → 作りたい画像を日本語で指示 → 会話で修正 → 保存。この4ステップで完了</li>
+ <li><strong>無料版の回数</strong>：画像生成には会話とは別の上限がある。具体的な枚数は公式に非公開（2026年11月時点）</li>
+ <li><strong>うまく作るコツ</strong>：「主題・スタイル・構図・比率・入れないもの」の5要素で指示する</li>
+ <li><strong>商用利用</strong>：規約上は使えるが、既存作品・実在人物・ロゴに似た画像は避ける</li>
+ </ul>
+ <p style="margin:12px 0 0;font-size:0.93em;">文字入りのバナーやSNS画像まで仕上げたいなら、ChatGPTで素材を作り、文字入れはデザインツールに任せると崩れにくくなります。<a href="https://px.a8.net/svt/ejp?a8mat=4B7ROU+6NC9YQ+5EX8+5YRHE" rel="nofollow noopener" target="_blank" style="color:#e65100;font-weight:bold;">MiriCanvas（無料で始められるデザインツール）</a>なら、テンプレートに画像を差し込むだけで整います。</p>
+ <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4B7ROU+6NC9YQ+5EX8+5YRHE" alt="" style="display:none;">
+ </div>
+
+ <figure style="margin:24px 0;text-align:center;">
+ <img src="../images/infographics/chatgpt-image-generation.svg" alt="ChatGPTで画像を作る4ステップの図解" loading="lazy" style="max-width:100%;height:auto;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.10);">
+ <figcaption style="font-size:0.82em;color:#64748b;margin-top:6px;">▲ ChatGPTで画像を作る流れ（AI navi作成）</figcaption>
+ </figure>
+
+ <div class="summary-box">
+ <h3>この記事でわかること</h3>
+ <ul>
+ <li>ChatGPTで画像を作る具体的な手順（PC・スマホ）</li>
+ <li>無料版の画像生成の回数制限と、上限に達したときの対処</li>
+ <li>コピーして使えるプロンプト例12個</li>
+ <li>一部だけ直す・縦横比を変えるなどの修正のコツ</li>
+ <li>商用利用するときに確認したい規約と著作権のポイント</li>
+ </ul>
+ </div>
+
+ <div class="article-toc">
+ <h2>目次</h2>
+ <ol>
+ <li><a href="#what">ChatGPTの画像生成でできること</a></li>
+ <li><a href="#steps">ChatGPTで画像を作るやり方【4ステップ】</a></li>
+ <li><a href="#limit">無料版で画像は何枚作れる？回数制限の仕組み</a></li>
+ <li><a href="#prompts">そのまま使えるプロンプト例12選</a></li>
+ <li><a href="#edit">思いどおりの画像に近づける修正のコツ</a></li>
+ <li><a href="#commercial">商用利用するときの注意点</a></li>
+ <li><a href="#faq">よくある質問</a></li>
+ <li><a href="#summary">まとめ</a></li>
+ </ol>
+ </div>
+
+ <!-- 忍者AdMax 広告 -->
+ <div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;">
+ <p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p>
+ <!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax -->
+ </div>
+<!-- 忍者AdMax SP記事内広告 300x250 -->
+<div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;" class="sp-only"><p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p><!-- admax --><script src="https://adm.shinobi.jp/s/b8872443f18589de45163a9a558d01fd"></script><!-- admax --></div>
+
+ <div class="article-body">
+
+<div class="chat-box">
+  <img src="/images/reader-avatar.svg" alt="読者" class="chat-avatar" width="52" height="52" loading="lazy">
+  <div class="chat-content">
+    <span class="chat-name">読者</span>
+    <div class="chat-bubble">
+      <p>ChatGPTで画像が作れるって聞いたけど、専用のアプリや有料プランが必要なんですか？</p>
+    </div>
+  </div>
+</div>
+<div class="chat-box">
+  <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+  <div class="chat-content">
+    <span class="chat-name">小田 健真（AI navi編集長）</span>
+    <div class="chat-bubble bubble-point">
+      <p>いつものChatGPTの画面で、そのまま頼めば作ってくれます。無料アカウントでも使えるので、まずは1枚作ってみて、足りなくなったら有料を考える順番で十分です。</p>
+    </div>
+  </div>
+</div>
+
+ <h2 id="what">ChatGPTの画像生成でできること</h2>
+ <p>ChatGPTの画像生成機能は「ChatGPT Images」と呼ばれ、チャットと同じ画面で使えます。OpenAIのヘルプによると、2026年11月時点ですべてのプランで提供され、ウェブ版・iPhoneアプリ・Androidアプリのどれからでも利用可能です。</p>
+ <p>会話の延長で画像を頼めるのが最大の特徴です。「もう少し明るく」「人物を消して」のように、言葉で追加の注文を出すと前の画像をもとに直してくれます。専用の画像生成ツールのように細かいパラメータを覚える必要はありません。</p>
+
+ <div class="table-wrapper">
+ <table class="comparison-table">
+ <thead>
+ <tr><th>できること</th><th>内容</th></tr>
+ </thead>
+ <tbody>
+ <tr><td><strong>文章から画像を作る</strong></td><td>「〜の画像を作って」と書くだけで生成。写真風・イラスト・アイコンなどタッチも指定できる</td></tr>
+ <tr><td><strong>手持ちの画像を編集</strong></td><td>写真をアップロードして背景変更・不要物の削除・スタイル変換などを指示</td></tr>
+ <tr><td><strong>一部だけ描き直す</strong></td><td>範囲選択ツールで指定した部分だけを変更</td></tr>
+ <tr><td><strong>縦横比の指定</strong></td><td>比率の選択メニューか、プロンプト内の指定で横長・縦長・正方形に対応</td></tr>
+ <tr><td><strong>テンプレートから作る</strong></td><td>サイドバーの「画像」からポスターやロゴなどの型を選び、質問に答えて仕上げる</td></tr>
+ <tr><td><strong>ループするGIF</strong></td><td>動くGIFの作成や、静止画を動かす指示にも対応（アップロードしたGIFの編集は不可）</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <p>使えるAI画像生成サービスはChatGPT以外にもたくさんあります。ツールごとの無料枠や画風の違いを比べたい方は「<a href="../articles/ai-image-generation">AI画像生成おすすめ15選</a>」で整理しています。この記事では、ChatGPTに絞って操作手順を解説します。</p>
+
+ <h2 id="steps">ChatGPTで画像を作るやり方【4ステップ】</h2>
+ <p>PCでもスマホでも流れは同じです。ここではPCのブラウザ版を基準に説明し、スマホで違う部分は補足します。</p>
+
+ <h3>ステップ1：ChatGPTにログインする</h3>
+ <p>PCならブラウザで <strong>chatgpt.com</strong> を開き、スマホなら公式の「ChatGPT」アプリを入れてログインします。アカウントをまだ持っていない場合は、メールアドレスかGoogleアカウントなどで無料登録できます。登録の詳しい流れは「<a href="../articles/chatgpt-howto">ChatGPTの始め方・使い方</a>」を参照してください。</p>
+ <p>アプリストアにはChatGPTと似た名前の非公式アプリも並んでいます。開発元が「OpenAI」になっているかを確認してから入れましょう。</p>
+
+ <h3>ステップ2：作りたい画像を日本語で指示する</h3>
+ <p>入力欄に、作りたい画像の内容を書いて送信します。英語で書く必要はありません。</p>
+ <div style="background:#f1f5f9;border-radius:8px;padding:14px 18px;margin:16px 0;font-size:0.95em;line-height:1.8;">
+ <strong>入力例：</strong>木のテーブルに置かれたコーヒーカップの画像を作って。やわらかい朝の光の写真風で、横長16:9。
+ </div>
+ <p>サイドバーの「画像」を開くと、ポスターやロゴなどのテンプレートも選べます。何を書けばいいか迷う場合は、テンプレートから入ると質問に答える形で必要な情報を埋められます。</p>
+
+ <h3>ステップ3：会話で修正して仕上げる</h3>
+ <p>1回目で理想どおりになることは少ないので、結果を見ながら追加で注文します。「背景を白にして」「カップを右に寄せて」のように、変えたい点だけを短く伝えるのがコツです。</p>
+ <p>一部だけ直したいときは、画像をクリックして編集画面を開き、選択ツールで範囲を塗ってから指示を書きます。スマホでは画像を開いて「編集」または「選択」をタップし、範囲を指定して「次へ」から変更内容を入力します。</p>
+
+ <h3>ステップ4：画像を保存する</h3>
+ <p>完成した画像を開くと、コピー・保存・共有のボタンが表示されます。「保存」を押すと端末にダウンロードされます。作った画像はサイドバーの「画像」にも自動で残るので、あとから探し直すこともできます。</p>
+
+ <p>画像を消したいときは、画像そのものではなく「その画像を作った会話」を削除する仕組みです。人に見せたくない試作が残っている場合は、会話ごと整理しておきましょう。</p>
+
+<!-- 忍者AdMax 記事中盤広告 300x250 -->
+<div style="text-align:center;margin:32px auto;"><!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax --></div>
+
+ <h2 id="limit">無料版で画像は何枚作れる？回数制限の仕組み</h2>
+ <p>いちばん多い疑問が「無料で何枚まで作れるのか」です。2026年11月時点の公式ヘルプ（無料プランのFAQ）には、画像生成について次のように書かれています。</p>
+ <ul>
+ <li>画像生成・ファイルのアップロード・音声などのツールは、<strong>会話とは別の利用上限</strong>を持つ</li>
+ <li>上限に達するとChatGPT上で通知され、<strong>時間をおけば再び使える</strong></li>
+ <li>Plus・Pro・Businessにアップグレードすると利用状況がリセットされる</li>
+ </ul>
+ <p>一方で、<strong>「1日◯枚」という具体的な数字は公式に示されていません</strong>。2025年に無料ユーザーへ新しい画像生成が開放された際には「1日3枚程度」と報じられましたが、上限は需要に応じて変わるとされており、現在も同じとは限りません。ネット上の「無料は1日2枚」といった情報は、古い時期のものが混ざっている点に注意してください。</p>
+
+ <div class="table-wrapper">
+ <table class="comparison-table">
+ <thead>
+ <tr><th>項目</th><th>無料版</th><th>Plus（月3,000円前後）</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>画像生成</td><td>使える（上限あり・枚数は非公開）</td><td>使える（無料版より多く生成できる）</td></tr>
+ <tr><td>画像の編集・範囲選択</td><td>使える</td><td>使える</td></tr>
+ <tr><td>考えながら作る画像生成（Images with thinking）</td><td>対象外</td><td>使える</td></tr>
+ <tr><td>上限に達したとき</td><td>表示される時刻まで待つ</td><td>無料版より上限に当たりにくい</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <p style="font-size:0.88em;color:#64748b;">※2026年11月時点のOpenAI公式ヘルプをもとに作成。上限や提供範囲は予告なく変わることがあります。</p>
+
+ <h3 id="trouble">画像が作れない・止まるときの対処</h3>
+ <ul>
+ <li><strong>上限の通知が出た</strong>：表示された時刻まで待つ。待つ間にプロンプトを書き直しておくと、再開後の試行回数を節約できる</li>
+ <li><strong>生成を断られた</strong>：実在の人物、既存キャラクター、暴力的・性的な内容などは利用ポリシーにより断られることがある。表現を一般的なものに変える</li>
+ <li><strong>途中で止まる・真っ白のまま</strong>：ページを再読み込みするか、新しい会話で同じ指示を出し直す</li>
+ <li><strong>ログインしていない</strong>：画像生成はログインした状態で使う。未ログインのまま試している場合はまずログインする</li>
+ </ul>
+ <p>会話そのものの回数制限やリセットの仕組みについては「<a href="../articles/chatgpt-free-limit">ChatGPT無料版の制限まとめ</a>」で詳しく扱っています。有料プランの料金を比べたい方は「<a href="../articles/chatgpt-pricing">ChatGPTの料金プラン</a>」をどうぞ。</p>
+
+ <h2 id="prompts">そのまま使えるプロンプト例12選</h2>
+ <p>画像の指示は、次の5つの要素を意識すると伝わりやすくなります。全部を最初から書く必要はなく、まず「主題」と「比率・用途」だけで生成し、結果を見ながら足していくと効率的です。</p>
+
+ <figure style="margin:24px 0;text-align:center;">
+ <img src="../images/infographics/chatgpt-image-generation-2.svg" alt="画像生成プロンプトの5つの要素（主題・スタイル・構図・比率・入れないもの）" loading="lazy" style="max-width:100%;height:auto;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.10);">
+ <figcaption style="font-size:0.82em;color:#64748b;margin-top:6px;">▲ プロンプトを組み立てる5つの要素（AI navi作成）</figcaption>
+ </figure>
+
+ <p>以下は用途別のプロンプト例です。【 】の部分を自分の内容に置き換えて使ってください。</p>
+
+ <div class="table-wrapper">
+ <table class="comparison-table">
+ <thead>
+ <tr><th>用途</th><th>プロンプト例</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>ブログのアイキャッチ</td><td>【在宅ワーク】をテーマにしたアイキャッチ画像。明るい部屋でノートPCに向かう机まわり、人物なし、写真風、横長16:9、右側に文字を置ける余白</td></tr>
+ <tr><td>SNS投稿</td><td>【秋の新メニュー】の告知用画像。【栗のパフェ】を真上から撮った写真風、温かみのある色、正方形、文字は入れない</td></tr>
+ <tr><td>アイコン</td><td>【猫】をモチーフにしたシンプルなアイコン。丸い枠、フラットデザイン、2色まで、背景は白</td></tr>
+ <tr><td>資料の挿絵</td><td>【チームでの情報共有】を表すイラスト。ビジネス資料向けの落ち着いた青系、人物は簡略化、横長</td></tr>
+ <tr><td>商品イメージ</td><td>【白いマグカップ】の商品イメージ。木目の台の上、柔らかい自然光、背景はぼかす、写真風</td></tr>
+ <tr><td>図解の下絵</td><td>【申し込みから利用開始まで】の流れを3ステップで表す図。矢印でつなぐ、アイコン中心、文字は最小限</td></tr>
+ <tr><td>ロゴ案</td><td>【カフェ】のロゴ案を3パターン。シンプル、線の細いデザイン、店名の文字は入れずマークだけ</td></tr>
+ <tr><td>イラスト</td><td>【雨の日の街角】の水彩画風イラスト。傘をさす人の後ろ姿、青と灰色を中心に</td></tr>
+ <tr><td>背景素材</td><td>【プレゼン資料】の背景に使える抽象的な模様。淡い緑のグラデーション、主張しすぎない、横長16:9</td></tr>
+ <tr><td>写真の編集</td><td>（写真を添付して）この写真の背景を真っ白にして、商品だけを残して</td></tr>
+ <tr><td>スタイル変換</td><td>（写真を添付して）この風景写真を、色鉛筆で描いたやさしいイラスト風にして</td></tr>
+ <tr><td>季節の挨拶</td><td>【年賀状】用のイラスト。【干支の動物】を可愛くデフォルメ、和風の配色、縦長、余白多め</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <p>画像の中に日本語の文字を入れると、文字が崩れたり誤字が出たりすることがあります。見出しや店名など正確さが必要な文字は、画像には入れず「文字を置く余白」だけを作ってもらい、あとからデザインツールで重ねるほうが確実です。</p>
+
+ <div style="background:#f0f9ff;border-left:4px solid #0ea5e9;padding:14px 18px;margin:20px 0;border-radius:0 8px 8px 0;">
+ <p style="margin:0;font-size:0.93em;line-height:1.7;"><strong>文字入れ・サイズ調整はデザインツールで：</strong>ChatGPTで作った画像を<a href="https://px.a8.net/svt/ejp?a8mat=4B7ROU+6NC9YQ+5EX8+5YRHE" rel="nofollow noopener" target="_blank" style="color:#0284c7;font-weight:bold;">MiriCanvas</a>に読み込めば、テンプレートに当てはめて文字を入れ、SNSやバナー用のサイズに書き出せます。AI画像生成や背景除去の機能もあり、無料で始められます。</p>
+ <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4B7ROU+6NC9YQ+5EX8+5YRHE" alt="" style="display:none;">
+ </div>
+
+ <!-- 忍者AdMax 広告 -->
+ <div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;">
+ <p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p>
+ <!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax -->
+ </div>
+
+ <h2 id="edit">思いどおりの画像に近づける修正のコツ</h2>
+ <p>生成された画像が微妙にずれていたとき、最初から作り直すより、今の画像を土台に直していくほうが早く仕上がります。修正で意識したいポイントは次の5つです。</p>
+
+ <h3>1. 変えたい点を1回に1〜2個だけ伝える</h3>
+ <p>「背景を白にして、人物を増やして、色を暖色にして、横長にして」とまとめて頼むと、どれかが反映されなかったり、気に入っていた部分まで変わったりしがちです。優先度の高い修正から順に、少しずつ頼みましょう。</p>
+
+ <h3>2. 残したい部分をはっきり言う</h3>
+ <p>「カップの形と色はそのままで、背景だけ変えて」のように、変えない部分を指定すると、全体が描き直されるのを防げます。</p>
+
+ <h3>3. 一部だけ直すなら範囲選択ツールを使う</h3>
+ <p>編集画面の選択ツールで直したい範囲を塗ってから指示すると、そこを中心に描き直されます。ただし公式ヘルプでも「選択範囲は常に正確ではなく、範囲外まで変わることがある」と案内されています。仕上がりを確認し、気になる場合は「元に戻す」で戻しましょう。</p>
+
+ <h3>4. 縦横比は最初に決める</h3>
+ <p>あとから比率を変えると構図が大きく変わることがあります。ブログ用なら横長16:9、スマホ向けのストーリーズなら縦長9:16など、使う場所を決めてから生成すると手戻りが減ります。</p>
+
+ <h3>5. うまくいかないときは新しい会話でやり直す</h3>
+ <p>修正を重ねるうちに、前の指示が混ざって意図しない画像になることがあります。そんなときは、これまでの修正内容を1つのプロンプトにまとめ直し、新しい会話で生成し直すとすっきりします。</p>
+
+<div class="chat-box">
+  <img src="/images/reader-avatar.svg" alt="読者" class="chat-avatar" width="52" height="52" loading="lazy">
+  <div class="chat-content">
+    <span class="chat-name">読者</span>
+    <div class="chat-bubble">
+      <p>同じキャラクターを何枚も描いてほしいときは、どう頼めばいいですか？</p>
+    </div>
+  </div>
+</div>
+<div class="chat-box">
+  <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+  <div class="chat-content">
+    <span class="chat-name">小田 健真（AI navi編集長）</span>
+    <div class="chat-bubble bubble-recommend">
+      <p>気に入った1枚ができたら、その画像を添付して「この人物と同じ見た目で、別のポーズを」と頼むのが確実です。髪型・服の色・体型など特徴を文章でも書き添えると、ぶれが小さくなります。</p>
+    </div>
+  </div>
+</div>
+
+ <h2 id="commercial">商用利用するときの注意点</h2>
+ <p>ブログやSNS、販促物にChatGPTの画像を使いたい方も多いはずです。ここでは規約と著作権の両面から、公開前に確認したいポイントを整理します。</p>
+
+ <h3>OpenAIの規約上の扱い</h3>
+ <p>OpenAIの利用規約では、法律で認められる範囲で、出力（生成された画像を含む）の権利は利用者に帰属するとされています。そのため、規約上は商用目的での利用も制限されていません。ただし規約には次のような注意書きもあります。</p>
+ <ul>
+ <li>出力は唯一のものとは限らず、<strong>他の利用者に似た画像が生成されることがある</strong></li>
+ <li>出力が用途に適しているかは、<strong>利用者自身が確認する責任がある</strong></li>
+ <li>利用ポリシーに反する使い方（他人の権利を侵害する用途など）は認められない</li>
+ </ul>
+
+ <h3>日本の著作権で気をつけたいこと</h3>
+ <p>文化庁の「AIと著作権に関する考え方について」では、AIで生成した画像でも、既存の作品との<strong>類似性</strong>と、既存の作品をもとにしたこと（<strong>依拠性</strong>）が認められれば、著作権侵害になりうると整理されています。とくに注意したいのは次のケースです。</p>
+ <ul>
+ <li>アニメや漫画の<strong>既存キャラクター</strong>に似せた画像</li>
+ <li>特定の作品や作家の絵を添付し、<strong>そっくりに描かせた</strong>画像</li>
+ <li><strong>実在の人物</strong>の顔や、企業の<strong>ロゴ・商標</strong>を含む画像</li>
+ </ul>
+ <p>また、AIが自動で作った画像は、人の創作的な関与が小さい場合、著作物として保護されない可能性があります。自分の画像を他人に使われても権利を主張しにくい場面がある点も、事業で使う際は覚えておきましょう。</p>
+
+ <div class="summary-box" style="background:#e8f5e9;border-left:4px solid #2e7d32;">
+ <h3 style="margin-top:0;">公開前のチェックリスト</h3>
+ <ul>
+ <li>特定のキャラクター・作品・作家名をプロンプトに入れていないか</li>
+ <li>実在の人物やブランドのロゴが写り込んでいないか</li>
+ <li>画像検索などで、よく似た既存の作品がないか</li>
+ <li>文字の誤りや、手指・物の形の不自然さが残っていないか</li>
+ </ul>
+ </div>
+ <p>ツールごとの商用利用の可否は「<a href="../articles/ai-image-commercial-use">AI画像生成の商用利用OK・NG一覧</a>」で比較しています。無料で使える他の画像生成ツールを探している方は「<a href="../articles/ai-image-free-tools">AI画像生成 無料おすすめ10選</a>」も参考にしてください。</p>
+
+ <h2 id="faq">よくある質問</h2>
+ <div class="faq-list">
+ <div class="faq-item">
+ <div class="faq-q">ChatGPTの無料版でも画像生成はできますか？</div>
+ <div class="faq-a">できます。OpenAIのヘルプでは、ChatGPT Imagesはすべてのプランで、ウェブ・iOS・Androidから使えると案内されています（2026年11月時点）。無料アカウントでログインし、チャット欄に「〜の画像を作って」と入力すれば生成が始まります。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">ChatGPT無料版で画像は1日何枚まで作れますか？</div>
+ <div class="faq-a">2026年11月時点の公式ヘルプには具体的な枚数の記載がありません。画像生成には会話とは別の利用上限があり、上限に達するとChatGPT上で通知され、時間をおくと再び使えるようになります。上限は混雑状況などで変わる可能性があります。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">画像生成の上限に達したらどうすればいいですか？</div>
+ <div class="faq-a">画面に表示される再開時刻まで待つのが基本です。すぐに続けたい場合は、有料のPlus（月3,000円前後）などにアップグレードすると、より多く生成できるようになります。待っている間にプロンプトを整理しておくと、再開後の試行回数を減らせます。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">ChatGPTで作った画像は商用利用できますか？</div>
+ <div class="faq-a">OpenAIの利用規約では、法律で認められる範囲で出力の権利は利用者に帰属するとされています。ただし既存のキャラクターや作品に似た画像、実在の人物やロゴを含む画像は、著作権や商標権などの侵害になるおそれがあります。公開前に類似の作品がないか確認してください。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">手持ちの写真を加工することはできますか？</div>
+ <div class="faq-a">できます。写真をアップロードして「背景を白にして」などと指示すると編集されます。範囲選択ツールで一部だけを指定することもできますが、公式ヘルプでも選択範囲の外まで変わる場合があると案内されています。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">画像の縦横比は指定できますか？</div>
+ <div class="faq-a">できます。縦横比の選択メニューを使うか、プロンプトに「横長16:9」「縦長9:16」「正方形」などと書けば反映されます。ブログのアイキャッチなら横長、スマホ向けのSNS投稿なら縦長や正方形が使いやすいです。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">作った画像はどこに保存されますか？</div>
+ <div class="faq-a">ChatGPTで作った画像は、サイドバーの「画像」に自動で保存されます。端末に保存したい場合は、画像を開いて保存（ダウンロード）ボタンを押します。画像を削除したいときは、その画像を作った会話を削除します。</div>
+ </div>
+ </div>
+
+<h2 id="summary">まとめ</h2>
+
+<div class="chat-box">
+  <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+  <div class="chat-content">
+    <span class="chat-name">小田 健真（AI navi編集長）</span>
+    <div class="chat-bubble bubble-recommend">
+      <p>最初は「主題」と「どこで使うか」だけ書いて1枚作り、足りない部分を会話で足していくのが近道です。無料版の上限に何度も当たるようになったら、そこで初めてPlusを検討すれば十分です。</p>
+    </div>
+  </div>
+</div>
+
+ <p>ChatGPTの画像生成は、無料アカウントでもいつもの画面から使えます。手順は「ログイン → 日本語で指示 → 会話で修正 → 保存」の4ステップだけです。</p>
+
+ <div class="summary-box">
+ <h3>ChatGPT画像生成のポイント</h3>
+ <ul>
+ <li><strong>やり方</strong>：「〜の画像を作って」と書けば始まる。サイドバーの「画像」からテンプレートも使える</li>
+ <li><strong>無料版の回数</strong>：会話とは別の上限があり、枚数は非公開。上限に達したら時間をおく</li>
+ <li><strong>プロンプト</strong>：主題・スタイル・構図・比率・入れないものの5要素で組み立てる</li>
+ <li><strong>修正</strong>：1回に1〜2点ずつ。一部だけなら範囲選択ツールを使う</li>
+ <li><strong>商用利用</strong>：規約上は可能。既存作品・実在人物・ロゴに似た画像は避ける</li>
+ </ul>
+ </div>
+
+ <div class="cta-box" style="text-align:center;margin:24px 0;padding:20px;background:#f3f0ff;border-radius:8px;">
+ <p style="margin:0 0 12px;font-weight:bold;">ChatGPTで作った画像を、文字入りのバナーやSNS投稿に仕上げるなら</p>
+ <a href="https://px.a8.net/svt/ejp?a8mat=4B7ROU+6NC9YQ+5EX8+5YRHE" rel="nofollow noopener" target="_blank" class="btn btn-primary btn-pulse">MiriCanvasを無料で試してみる →</a>
+ <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4B7ROU+6NC9YQ+5EX8+5YRHE" alt="" style="display:none;">
+ <div style="font-size:0.8em;color:#666;margin-top:8px;">※ 80万点以上のテンプレート / AI画像生成・背景除去機能あり / 広告を含みます</div>
+ </div>
+
+ <p style="font-size:0.85em;color:#64748b;line-height:1.8;">参考：<br>
+ <a href="https://help.openai.com/en/articles/11084440-images-in-chatgpt" rel="nofollow noopener" target="_blank">OpenAI Help Center「Images in ChatGPT」</a><br>
+ <a href="https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq" rel="nofollow noopener" target="_blank">OpenAI Help Center「ChatGPT Free Tier FAQ」</a><br>
+ <a href="https://openai.com/policies/row-terms-of-use/" rel="nofollow noopener" target="_blank">OpenAI「Terms of Use」</a><br>
+ <a href="https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html" rel="nofollow noopener" target="_blank">文化庁「AIと著作権について」</a><br>
+ <a href="https://www.tomsguide.com/ai/chatgpts-updated-image-generator-is-now-free-for-all-but-theres-a-catch" rel="nofollow noopener" target="_blank">Tom's Guide（2025年の無料開放時の報道）</a><br>
+ ※料金・上限・機能は2026年11月時点の情報です。最新の内容は各公式サイトでご確認ください。</p>
+
+ <section class="related-articles" style="background: #f8fafc; border-radius: 12px; padding: 24px; margin: 32px 0;">
+<h2 style="font-size: 1.2em; margin-bottom: 16px;">この記事を読んだ人におすすめ</h2>
+<ul style="list-style: none; padding: 0;">
+<li style="margin-bottom: 12px; padding: 12px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
+<a href="../articles/ai-image-generation" style="text-decoration: none; color: #1a1a1a; font-weight: bold;">AI画像生成おすすめ15選【2026年】無料枠・商用利用を比較</a>
+</li>
+<li style="margin-bottom: 12px; padding: 12px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
+<a href="../articles/ai-image-free-tools" style="text-decoration: none; color: #1a1a1a; font-weight: bold;">AI画像生成 無料おすすめ10選【2026年】商用OK比較</a>
+</li>
+<li style="margin-bottom: 12px; padding: 12px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
+<a href="../articles/ai-image-commercial-use" style="text-decoration: none; color: #1a1a1a; font-weight: bold;">AI画像生成の商用利用OK・NG一覧【2026年】</a>
+</li>
+<li style="margin-bottom: 12px; padding: 12px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
+<a href="../articles/chatgpt-free-limit" style="text-decoration: none; color: #1a1a1a; font-weight: bold;">ChatGPT無料版の制限まとめ｜回数上限とリセットの仕組み</a>
+</li>
+<li style="margin-bottom: 12px; padding: 12px; background: #eff6ff; border-radius: 8px; border: 2px solid #2563eb;">
+<a href="../articles/miricanvas-review" style="text-decoration: none; color: #1a1a1a; font-weight: bold;">MiriCanvasの評判・使い方レビュー</a>
+<br><span style="font-size:0.85em;color:#555;">生成した画像に文字を入れてバナーやSNS画像に仕上げたい方はこちら。</span>
+</li>
+</ul>
+</section>
+
+ </div>
+</div>
+
+<footer>
+ <div class="affiliate-disc">本サイトはアフィリエイト広告（A8.net等）を利用しています。記事内のリンクから商品・サービスを購入・申込みいただいた場合、当サイトに報酬が発生することがあります。</div>
+ <div class="footer-nav">
+ <a href="/">ホーム</a>
+ <a href="claude-review">Claudeレビュー</a>
+ <a href="chatgpt-review">ChatGPTレビュー</a>
+ <a href="/privacy-policy">プライバシーポリシー</a>
+ <a href="/contact">お問い合わせ</a>
+ </div>
+ <p>&copy; 2026 AI navi</p>
+</footer>
+
+<script src="../banner.js"></script>
+<script src="/sidebar.js"></script>
+</body>
+</html>

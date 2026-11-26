@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>ChatGPTで英会話を練習する方法【2026年】音声モードとプロンプト例 | AI navi</title>
+ <meta name="description" content="ChatGPTの音声モードで英会話を練習する方法を解説。始め方、無料版とPlusの利用上限、1回15分の練習メニュー、コピペで使えるプロンプト例8つ、発音チェックなどの限界と専用アプリが向く人まで2026年11月時点でまとめました。">
+ <meta name="keywords" content="ChatGPT 英会話, ChatGPT 英会話 練習方法, ChatGPT 音声モード 英会話, ChatGPT 英会話 プロンプト, AI 英会話 無料">
+ <meta property="og:title" content="ChatGPTで英会話を練習する方法【2026年】音声モードとプロンプト例">
+ <meta property="og:url" content="https://ai-navi.app/articles/chatgpt-eikaiwa">
+ <meta property="og:image" content="https://ai-navi.app/images/og/chatgpt-eikaiwa.png">
+ <meta property="og:type" content="article">
+ <meta property="og:site_name" content="AI navi">
+ <meta property="og:description" content="ChatGPTの音声モードで英会話を練習する方法を解説。始め方、無料版とPlusの利用上限、1回15分の練習メニュー、コピペで使えるプロンプト例8つ、発音チェックなどの限界と専用アプリが向く人まで2026年11月時点でまとめました。">
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:title" content="ChatGPTで英会話を練習する方法【2026年】音声モードとプロンプト例">
+ <meta name="twitter:description" content="ChatGPTの音声モードで英会話を練習する方法を解説。始め方、無料版とPlusの利用上限、1回15分の練習メニュー、コピペで使えるプロンプト例8つ、発音チェックなどの限界と専用アプリが向く人まで2026年11月時点でまとめました。">
+ <meta name="twitter:image" content="https://ai-navi.app/images/og/chatgpt-eikaiwa.png">
+ <link rel="canonical" href="https://ai-navi.app/articles/chatgpt-eikaiwa">
+ <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+ <link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "ChatGPTで英会話を練習する方法【2026年】音声モードとプロンプト例",
+ "image": "https://ai-navi.app/images/infographics/chatgpt-eikaiwa.svg",
+ "datePublished": "2026-11-25",
+ "dateModified": "2026-11-25",
+ "author": { "@type": "Person", "name": "小田 健真", "url": "https://ai-navi.app/about" },
+ "publisher": { "@type": "Organization", "name": "AI navi", "logo": { "@type": "ImageObject", "url": "https://ai-navi.app/og-image.png" } }
+ }
+ </script>
+
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+ {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://ai-navi.app/"},
+ {"@type": "ListItem", "position": 2, "name": "ChatGPTレビュー", "item": "https://ai-navi.app/articles/chatgpt-review"},
+ {"@type": "ListItem", "position": 3, "name": "ChatGPTで英会話を練習する方法", "item": "https://ai-navi.app/articles/chatgpt-eikaiwa"}
+ ]
+ }
+ </script>
+
+ <script type="application/ld+json">
+ {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"ChatGPTの無料版でも英会話の練習はできますか？","acceptedAnswer":{"@type":"Answer","text":"できます。2026年11月時点のOpenAI公式ヘルプでは、無料ユーザーも音声モードを利用できますが「利用は限定的で、上限は変わる可能性がある」とされ、具体的な時間は示されていません。毎日長く話したい場合はPlus（月3,000円前後）を検討するとよいでしょう。"}},
+ {"@type":"Question","name":"ChatGPT Plusだと音声モードはどれくらい使えますか？","acceptedAnswer":{"@type":"Answer","text":"2026年11月時点の公式ヘルプでは、Plusの音声（Live）の利用は24時間の範囲で計測され、目安として3時間と記載されています。上限に達すると通知が表示されます。上限は変更されることがあるため、最新の数値は公式ヘルプで確認してください。"}},
+ {"@type":"Question","name":"ChatGPTは発音を直してくれますか？","acceptedAnswer":{"@type":"Answer","text":"「聞き取りにくかった単語を教えて」と頼めばある程度は指摘してくれますが、発音を細かく採点する仕組みではありません。公式ヘルプにも、文字起こしが話した内容と一字一句一致しない場合があると書かれています。発音を重点的に鍛えたいなら、発音判定のある英会話専用アプリと併用するのがおすすめです。"}},
+ {"@type":"Question","name":"音声で話した内容はあとで見返せますか？","acceptedAnswer":{"@type":"Answer","text":"見返せます。公式ヘルプによると、音声での会話が終わるとチャットに文字起こしが追加され、チャット履歴から確認できます。この文字起こしを使って、テキストで添削を頼む復習方法が効果的です。"}},
+ {"@type":"Question","name":"英語が全然話せない初心者でも使えますか？","acceptedAnswer":{"@type":"Answer","text":"使えますが、何を話すかを自分で決める必要があるため、初心者には負担になりやすい面があります。最初は「1文ずつ短く話す」「わからないときは日本語で質問してよい」などのルールをプロンプトで決めておくと続けやすくなります。基礎フレーズから順番に学びたい人は、カリキュラムのある英会話アプリの方が向いています。"}},
+ {"@type":"Question","name":"英語と日本語が混ざると聞き取ってもらえませんか？","acceptedAnswer":{"@type":"Answer","text":"言語の判定がずれることがあります。公式ヘルプでは、設定の「音声」から言語を指定する方法や、会話の途中で言語を切り替えるよう頼む方法が案内されています。練習中は英語で話すと決めておくと判定が安定しやすくなります。"}},
+ {"@type":"Question","name":"ChatGPTと英会話アプリはどちらがいいですか？","acceptedAnswer":{"@type":"Answer","text":"話す場面を自分で決めて自由に練習したい中級者以上はChatGPT、レベル別のカリキュラムや発音チェック、学習記録で継続したい人は英会話専用アプリが向いています。アプリの選び方はAI英会話アプリのおすすめ記事で比較しています。"}}
+ ]}
+ </script>
+</head>
+<body>
+
+<header>
+ <nav>
+ <a class="logo" href="/">AI <span>navi</span></a>
+ <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('nav-open')" aria-label="メニュー">
+ <span></span><span></span><span></span>
+ </button>
+ <ul>
+ <li><a href="/#ranking">ランキング</a></li>
+ <li><a href="/#compare">比較表</a></li>
+ <li><a href="claude-review">Claude</a></li>
+ <li><a href="chatgpt-review">ChatGPT</a></li>
+ <li><a href="../diagnosis">AI診断</a></li>
+ </ul>
+ </nav>
+</header>
+
+<div class="breadcrumb">
+ <a href="/">ホーム</a> &gt; <a href="../articles/chatgpt-review">ChatGPTレビュー</a> &gt; ChatGPTで英会話を練習する方法
+</div>
+
+<div class="article-wrap">
+ <div class="article-header">
+ <h1>ChatGPTで英会話を練習する方法｜音声モードの始め方・プロンプト例8選・向いていない人【2026年】</h1>
+ <div class="article-meta">
+ <span>2026年11月25日</span>
+ <span>最終更新: 2026年11月25日</span>
+ <span>約7,000字</span>
+ </div>
+ </div>
+ <div class="affiliate-disc">本サイトはアフィリエイト広告（A8.net等）を利用しています。記事内のリンクから商品・サービスを購入・申込みいただいた場合、当サイトに報酬が発生することがあります。</div>
+ <div class="author-box">
+ <div class="author-avatar"><img src="/images/author-avatar.png" alt="小田 健真" width="52" height="52" style="border-radius:50%;"></div>
+ <div class="author-info">
+ <div class="author-name">小田 健真</div>
+ <div class="author-title" style="font-size:0.85em;color:#6366f1;font-weight:600;margin:2px 0 4px;">AIツール専門ライター｜50ツール以上を実際に検証</div>
+ <div class="author-bio">ChatGPT・Claude・Geminiなど主要AIを日常的に活用するブロガー。各ツールを実際に試し、使いやすさ・料金・機能をわかりやすく比較・解説しています。</div>
+ </div>
+ </div>
+ <div class="article-hero-img">
+ <img src="../images/photos/laptop2.jpg" alt="ChatGPTで英会話を練習するイメージ" loading="lazy" style="width:100%;height:140px;object-fit:cover;border-radius:10px;margin:16px 0;">
+ </div>
+ <div class="summary-box" style="background:#f0fdfa;border-left:4px solid #0d9488;">
+ <h2 style="margin-top:0;font-size:1.1em;">結論：ChatGPTは「話す量を増やす相手」として優秀。基礎固めと発音は専用アプリが得意</h2>
+ <p style="margin:0 0 12px;font-size:0.93em;">ChatGPTの音声モードを使えば、スマホ1台で好きな場面の英会話をいつでも練習できます。ただし<strong>何を話すかは自分で決める必要があり、発音の細かい採点も得意ではありません</strong>。</p>
+ <ol>
+ <li><strong>始め方</strong>：入力欄の音声アイコンをタップしてマイクを許可するだけ</li>
+ <li><strong>コツ</strong>：先にテキストで役割とルールを渡し、添削は会話のあとにまとめて</li>
+ <li><strong>上限</strong>：無料版は利用が限定的。Plus（月3,000円前後）は公式ヘルプで24時間あたり3時間が目安（2026年11月時点）</li>
+ <li><strong>向かない人</strong>：初心者で話題が浮かばない人・発音を重点的に直したい人 → 専用アプリが近道</li>
+ </ol>
+ </div>
+
+ <!-- 結論直後CTA（A8未提携：承認後に差し替え） -->
+ <div style="background:#fff7ed;border:2px solid #f97316;border-radius:12px;padding:20px;margin:24px 0;text-align:center;">
+ <p style="font-weight:bold;font-size:1.05em;margin-bottom:8px;">「何を話せばいいかわからない」なら英会話専用アプリも</p>
+ <p style="font-size:0.9em;color:#555;margin-bottom:16px;">レッスンの流れが用意されたAI英会話アプリなら、話す内容を考える手間がありません。</p>
+ <!-- A8-PENDING: speak -->
+ <a href="https://apps.apple.com/jp/app/id1286609883" rel="noopener" target="_blank" style="display:inline-block;background:#f97316;color:#fff;padding:12px 26px;border-radius:8px;font-weight:bold;text-decoration:none;margin:4px;">スピークを見てみる →</a>
+ <!-- A8-PENDING: talkful -->
+ <a href="https://apps.apple.com/jp/app/id6553991680" rel="noopener" target="_blank" style="display:inline-block;background:#0d9488;color:#fff;padding:12px 26px;border-radius:8px;font-weight:bold;text-decoration:none;margin:4px;">Talkfulを見てみる →</a>
+ <p style="font-size:0.8em;color:#888;margin-top:8px;">※App Storeの公式ページに移動します。料金はストアでご確認ください</p>
+ </div>
+
+ <figure style="margin:24px 0;text-align:center;">
+ <img src="../images/infographics/chatgpt-eikaiwa.svg" alt="ChatGPTで英会話を練習する1回15分のメニュー図解" loading="lazy" width="800" height="410" style="max-width:100%;height:auto;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.10);">
+ <figcaption style="font-size:0.82em;color:#64748b;margin-top:6px;">▲ 準備→会話→添削→復習の15分メニュー（AI navi作成）</figcaption>
+ </figure>
+
+ <div class="summary-box">
+ <h3>この記事でわかること</h3>
+ <ul>
+ <li>ChatGPTの音声モードの始め方（スマホ・PC）</li>
+ <li>無料版とPlusで使える量の違い</li>
+ <li>効果が出やすい1回15分の練習メニュー</li>
+ <li>コピペで使えるロールプレイ・添削用のプロンプト8つ</li>
+ <li>ChatGPT英会話の限界と、専用アプリを選んだ方がいい人</li>
+ </ul>
+ </div>
+
+ <div class="article-toc">
+ <h2>目次</h2>
+ <ol>
+ <li><a href="#can">ChatGPTで英会話の練習はできる？向いている使い方</a></li>
+ <li><a href="#start">音声モードの始め方（スマホ・PC）</a></li>
+ <li><a href="#limits">無料版とPlusの違い・利用上限</a></li>
+ <li><a href="#menu">効果が出やすい1回15分の練習メニュー</a></li>
+ <li><a href="#prompts">コピペで使えるプロンプト例8選</a></li>
+ <li><a href="#cons">ChatGPT英会話の限界と注意点</a></li>
+ <li><a href="#apps">英会話専用アプリが向いている人</a></li>
+ <li><a href="#faq">よくある質問（FAQ）</a></li>
+ <li><a href="#summary">まとめ</a></li>
+ </ol>
+ </div>
+
+ <!-- 忍者AdMax 広告 -->
+ <div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;">
+ <p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p>
+ <!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax -->
+ </div>
+<!-- 忍者AdMax SP記事内広告 300x250 -->
+<div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;" class="sp-only"><p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p><!-- admax --><script src="https://adm.shinobi.jp/s/b8872443f18589de45163a9a558d01fd"></script><!-- admax --></div>
+
+ <div class="article-body">
+
+<div class="chat-box">
+  <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+  <div class="chat-content">
+    <span class="chat-name">小田 健真（AI navi編集長）</span>
+    <div class="chat-bubble bubble-point">
+      <p>英会話は「話した量」がものを言う分野です。人を相手にすると緊張して言葉が出ない人ほど、まずAI相手に口を動かす習慣を作るところから始めるのがいいと思います。</p>
+    </div>
+  </div>
+</div>
+
+ <h2 id="can">ChatGPTで英会話の練習はできる？向いている使い方</h2>
+ <p>結論から言うと、ChatGPTは英会話の練習相手として十分に使えます。音声モードではChatGPTの返事が声で返ってきて、内容は文字でも追えます。話しかけるタイミングを気にせず、言い間違えても気まずくならないのが、人間の講師との大きな違いです。</p>
+ <p>特に向いているのは次のような使い方です。</p>
+ <ul>
+ <li><strong>場面を決めたロールプレイ</strong>：ホテルのチェックイン、レストランの注文、面接、取引先との雑談など</li>
+ <li><strong>自分専用の想定問答</strong>：来週の会議で聞かれそうな質問を英語で投げてもらう</li>
+ <li><strong>話した内容の添削</strong>：会話の文字起こしをもとに、より自然な言い方を教えてもらう</li>
+ <li><strong>スキマ時間の瞬発力トレーニング</strong>：通勤前の5分で質問に即答する練習</li>
+ </ul>
+ <p>反対に、アルファベットや基本の文法から積み上げたい段階では、自分で話題やゴールを決めるのが難しく、続きにくい面があります。この点は<a href="#cons">後半の限界</a>で詳しく説明します。</p>
+
+ <div class="table-wrapper">
+ <table class="comparison-table">
+ <thead>
+ <tr><th>練習内容</th><th>ChatGPTの向き・不向き</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>自由な会話・ロールプレイ</td><td>◎ 場面を細かく指定できる</td></tr>
+ <tr><td>仕事・面接の想定問答</td><td>◎ 自分の状況に合わせられる</td></tr>
+ <tr><td>文法・表現の添削</td><td>○ テキストで頼むと丁寧に解説してくれる</td></tr>
+ <tr><td>リスニング</td><td>○ 話す速さや語彙のレベルを指定できる</td></tr>
+ <tr><td>発音の細かい矯正</td><td>△ 採点の仕組みはなく、指摘は大まかになりやすい</td></tr>
+ <tr><td>基礎からの体系的な学習</td><td>△ カリキュラムは自分で組む必要がある</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <h2 id="start">音声モードの始め方（スマホ・PC）</h2>
+ <p>OpenAIの公式ヘルプに沿って、音声モードの始め方をまとめます（2026年11月時点）。</p>
+
+ <h3>スマホアプリ（iPhone・Android）</h3>
+ <ol>
+ <li>ChatGPTアプリを開き、メッセージ入力欄にある音声（Voice）アイコンをタップ</li>
+ <li>マイクへのアクセスを許可する</li>
+ <li>初回は声の種類を選ぶ</li>
+ <li>そのまま英語で話しかける</li>
+ </ol>
+
+ <h3>Webブラウザ（PC）</h3>
+ <ol>
+ <li>ChatGPT.comを開き、入力欄の音声アイコンをクリック</li>
+ <li>ブラウザのマイク許可を求められたら許可する</li>
+ <li>話しかける</li>
+ </ol>
+ <p>PCで練習する場合は、イヤホンマイクを使うとChatGPTの声をマイクが拾いにくくなり、会話が途切れにくくなります。公式ヘルプでも、周囲の雑音や声の重なりは聞き取りに影響すると説明されています。</p>
+
+ <h3>英語として聞き取ってもらう設定</h3>
+ <p>英語で話しているのに日本語として扱われる場合は、設定の「音声」から言語を指定できます。会話の途中で「Please speak only in English.」と頼んで切り替える方法も案内されています。</p>
+
+<div class="chat-box">
+  <img src="/images/reader-avatar.svg" alt="読者" class="chat-avatar" width="52" height="52" loading="lazy">
+  <div class="chat-content">
+    <span class="chat-name">読者</span>
+    <div class="chat-bubble">
+      <p>話した内容って記録に残るんですか？あとで復習したいんですが。</p>
+    </div>
+  </div>
+</div>
+<div class="chat-box">
+  <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+  <div class="chat-content">
+    <span class="chat-name">小田 健真（AI navi編集長）</span>
+    <div class="chat-bubble bubble-recommend">
+      <p>公式ヘルプによると、音声での会話が終わるとチャットに文字起こしが追加されます。この文字起こしを添削に回すのが、ChatGPT英会話のいちばん効率のいい復習方法です。</p>
+    </div>
+  </div>
+</div>
+
+<!-- 忍者AdMax 記事中盤広告 300x250 -->
+<div style="text-align:center;margin:32px auto;"><!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax --></div>
+
+ <h2 id="limits">無料版とPlusの違い・利用上限</h2>
+ <p>音声モードは無料版でも使えますが、使える量に差があります。公式ヘルプの記載を整理すると次のとおりです（2026年11月時点）。</p>
+ <div class="table-wrapper">
+ <table class="comparison-table">
+ <thead>
+ <tr><th>項目</th><th>無料版</th><th>Plus（月3,000円前後）</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>音声モード</td><td>利用できる（限定的）</td><td>利用できる</td></tr>
+ <tr><td>利用上限</td><td>「限定的で、上限は変わる可能性がある」とされ具体的な時間は非公表</td><td>24時間あたり3時間が目安と記載</td></tr>
+ <tr><td>上限の数え方</td><td colspan="2">直近24時間で計測。上限に達すると通知が出る</td></tr>
+ <tr><td>文字起こし</td><td colspan="2">会話後にチャットへ追加され、履歴から見返せる</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <p>無料版は上限の時間がはっきりしないため、「毎日決まった時間に15分話す」といった習慣づくりには少し不安が残ります。まずは無料版で試し、途中で止まることが多いと感じたらPlusを検討する、という順番が無駄がありません。プランごとの違いは「<a href="chatgpt-free-limit">ChatGPT無料版の制限</a>」と「<a href="chatgpt-pricing">ChatGPT料金プラン比較</a>」で詳しく解説しています。</p>
+
+ <h2 id="menu">効果が出やすい1回15分の練習メニュー</h2>
+ <p>音声モードを開いてなんとなく雑談するだけだと、同じ表現ばかり使って伸び悩みがちです。おすすめは「準備→会話→添削→復習」を1セットにした15分のメニューです。</p>
+
+ <h3>① 準備（2分）：テキストで役割とルールを渡す</h3>
+ <p>音声モードを始める前に、テキスト入力で「あなたは何の役か」「どんなルールで話すか」を伝えておきます。音声で長い指示を話すより確実です。下の<a href="#prompts">プロンプト例</a>をそのまま貼り付けて使えます。</p>
+
+ <h3>② 会話（8分）：止まらずに話し続ける</h3>
+ <p>音声モードに切り替えて、ロールプレイを始めます。言葉に詰まったら「Hint, please.」と言えばヒントを出してもらえるよう、準備のプロンプトで決めておくと安心です。<strong>会話中は間違いを気にせず、とにかく話し続けること</strong>が大切です。その場で毎回直されると、話すリズムが崩れてしまいます。</p>
+
+ <h3>③ 添削（3分）：文字起こしをもとに直してもらう</h3>
+ <p>会話が終わったら、テキストで「今の会話で私が言った英文の間違いを3つだけ、より自然な言い方と一緒に教えて」と頼みます。全部を指摘させると量が多すぎて覚えきれないため、<strong>3つに絞る</strong>のがポイントです。</p>
+
+ <h3>④ 復習（2分）：直した文を声に出す</h3>
+ <p>添削された文を3回声に出して読みます。気に入った言い回しはメモアプリに貯めておき、次回の会話で意識して使うと定着しやすくなります。</p>
+
+ <h3>レベル別の調整のしかた</h3>
+ <div class="table-wrapper">
+ <table class="comparison-table">
+ <thead>
+ <tr><th>レベル</th><th>プロンプトに足す条件</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>初級</td><td>中学英語の単語だけ使う／1回の返事は1文／わからないときは日本語で質問してよい</td></tr>
+ <tr><td>中級</td><td>自然な速さで話す／質問は理由を答えさせる形にする／言い換え表現を1つ提案する</td></tr>
+ <tr><td>上級</td><td>反論や追加質問をしてくる／ビジネスの丁寧な言い回しを求める／話す速さを上げる</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <h2 id="prompts">コピペで使えるプロンプト例8選</h2>
+ <p>音声モードに入る前に、テキストで貼り付けて使ってください。【 】内は自分の状況に合わせて書き換えます。</p>
+
+ <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:16px 20px;margin:16px 0;font-size:0.93em;line-height:1.8;">
+ <p style="margin:0 0 6px;font-weight:bold;">① 基本のルール設定（最初に必ず使う）</p>
+ <p style="margin:0;">これから英会話の練習相手になってください。私の英語レベルは【中級】です。返事は英語で2文以内、会話中は間違いを直さないでください。私が「Hint, please.」と言ったら、使えそうな表現を1つだけ教えてください。会話が終わったら、私が「Feedback」と言うまで添削はしないでください。</p>
+ </div>
+ <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:16px 20px;margin:16px 0;font-size:0.93em;line-height:1.8;">
+ <p style="margin:0 0 6px;font-weight:bold;">② 旅行のロールプレイ</p>
+ <p style="margin:0;">あなたは【ニューヨークのホテル】のフロント係です。私はチェックインに来た客です。予約の確認、部屋の希望、朝食の時間など、実際に聞かれそうなことを1つずつ英語で質問してください。</p>
+ </div>
+ <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:16px 20px;margin:16px 0;font-size:0.93em;line-height:1.8;">
+ <p style="margin:0 0 6px;font-weight:bold;">③ 英語面接の練習</p>
+ <p style="margin:0;">あなたは【外資系IT企業】の面接官です。【営業職】の英語面接を想定して、よく聞かれる質問を1問ずつ出してください。私の答えが短すぎたら「Can you give me an example?」のように深掘りしてください。</p>
+ </div>
+ <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:16px 20px;margin:16px 0;font-size:0.93em;line-height:1.8;">
+ <p style="margin:0 0 6px;font-weight:bold;">④ 会議・スモールトーク</p>
+ <p style="margin:0;">あなたは海外支社の同僚です。オンライン会議が始まる前の雑談をしましょう。週末の過ごし方や天気など軽い話題から始めて、最後に【来週のプロジェクトの進み具合】を質問してください。</p>
+ </div>
+ <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:16px 20px;margin:16px 0;font-size:0.93em;line-height:1.8;">
+ <p style="margin:0 0 6px;font-weight:bold;">⑤ 瞬発力トレーニング</p>
+ <p style="margin:0;">日常的な質問を英語で1つずつ出してください。私は10秒以内に答えます。答えの内容は問わないので、テンポよく次の質問に進んでください。10問で終わりにしてください。</p>
+ </div>
+ <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:16px 20px;margin:16px 0;font-size:0.93em;line-height:1.8;">
+ <p style="margin:0 0 6px;font-weight:bold;">⑥ 会話後の添削</p>
+ <p style="margin:0;">Feedback。今の会話で私が話した英文から、直した方がいいものを3つだけ選んでください。それぞれ「元の文」「自然な言い方」「理由（日本語で1行）」の形で教えてください。</p>
+ </div>
+ <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:16px 20px;margin:16px 0;font-size:0.93em;line-height:1.8;">
+ <p style="margin:0 0 6px;font-weight:bold;">⑦ 言い換えの引き出しを増やす</p>
+ <p style="margin:0;">今の会話で私が何度も使った単語や言い回しを教えてください。それぞれ、同じ意味で使える別の表現を2つずつ、例文つきで出してください。</p>
+ </div>
+ <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:16px 20px;margin:16px 0;font-size:0.93em;line-height:1.8;">
+ <p style="margin:0 0 6px;font-weight:bold;">⑧ リスニング強化</p>
+ <p style="margin:0;">【空港での乗り継ぎ】をテーマに、ネイティブ同士の短い会話を作って読み上げてください。読み終わったら、内容についての質問を英語で3つ出してください。私が答えたあとで正解を教えてください。</p>
+ </div>
+
+<div class="chat-box">
+  <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+  <div class="chat-content">
+    <span class="chat-name">小田 健真（AI navi編集長）</span>
+    <div class="chat-bubble">
+      <p>①のルール設定は毎回貼るのが面倒なので、ChatGPTのカスタム指示（パーソナライズ設定）に入れておくと楽になります。ただしふだんの用途でも英語で返ってくるようになるので、英会話用のプロジェクトを分けるのも手です。</p>
+    </div>
+  </div>
+</div>
+
+ <h2 id="cons">ChatGPT英会話の限界と注意点</h2>
+ <p>便利な一方で、ChatGPTは英会話学習のために作られたサービスではありません。始める前に知っておきたい限界をまとめます。</p>
+
+ <h3>1. 発音の細かい採点はできない</h3>
+ <p>ChatGPTは話した内容を理解して返事をしてくれますが、音ごとの発音を点数で示す仕組みはありません。公式ヘルプでも、文字起こしは話した内容と一字一句一致しない場合があると説明されています。多少発音がずれても意味を汲み取ってくれるぶん、自分の弱点に気づきにくい面があります。</p>
+
+ <h3>2. 何を話すか自分で決める必要がある</h3>
+ <p>カリキュラムや「今日のレッスン」が用意されているわけではないため、話す場面やゴールは自分で決めることになります。英語に慣れていないうちは、ここで手が止まって続かなくなる人が少なくありません。</p>
+
+ <h3>3. 上限で会話が途中で終わることがある</h3>
+ <p>公式ヘルプによると、利用上限・1回の会話の最大時間・会話の長さの上限のいずれかに達すると、会話が終了する場合があります。無料版は上限の時間が明示されていないため、練習の途中で止まる可能性を前提にしておきましょう。</p>
+
+ <h3>4. 周りの音や話し声に反応する</h3>
+ <p>音声モードは1対1の会話を想定していて、周囲の人どうしの会話に反応することもあると案内されています。カフェや電車内より、静かな場所でイヤホンマイクを使う方が練習に集中できます。</p>
+
+ <h3>5. 返事が長くなりやすい</h3>
+ <p>指示をしないとChatGPTの返事が長くなり、自分が話す時間が減ってしまいます。「返事は2文以内」とルールに入れておくのはこのためです。</p>
+
+ <div class="table-wrapper">
+ <table class="comparison-table">
+ <thead>
+ <tr><th>限界</th><th>対策</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>発音の採点ができない</td><td>発音判定のある専用アプリと併用する</td></tr>
+ <tr><td>話題が浮かばない</td><td>プロンプト例②〜⑤で場面を固定する／専用アプリのレッスンを使う</td></tr>
+ <tr><td>途中で止まる</td><td>1回15分に区切る／必要ならPlusを検討</td></tr>
+ <tr><td>周囲の音を拾う</td><td>静かな場所＋イヤホンマイク</td></tr>
+ <tr><td>返事が長い</td><td>「2文以内」をルールに入れる</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- 忍者AdMax 広告 -->
+ <div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;">
+ <p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p>
+ <!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax -->
+ </div>
+
+ <h2 id="apps">英会話専用アプリが向いている人</h2>
+ <p>ChatGPTと英会話専用のAIアプリは、どちらが上というより得意分野が違います。自分に合うのはどちらか、下の図で確認してみてください。</p>
+
+ <figure style="margin:24px 0;text-align:center;">
+ <img src="../images/infographics/chatgpt-eikaiwa-2.svg" alt="ChatGPTと英会話専用アプリそれぞれが向いている人の比較図" loading="lazy" width="800" height="430" style="max-width:100%;height:auto;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.10);">
+ <figcaption style="font-size:0.82em;color:#64748b;margin-top:6px;">▲ ChatGPTと専用アプリの向き・不向き（AI navi作成）</figcaption>
+ </figure>
+
+ <p>専用アプリの強みは、<strong>レベルに合わせたレッスンが最初から用意されていること</strong>です。今日やることをアプリが決めてくれるので、「何を話そう」と迷う時間がありません。発音を判定する機能や、学習の記録・連続日数の表示など、続けるための仕組みが入っているアプリも多くあります。</p>
+ <p>たとえば「スピーク」はOpenAIからの出資を受けたSpeakeasy Labsが提供するスピーキング練習アプリで、「Talkful」は面接・旅行・留学などの場面を選んでAIとロールプレイできるアプリです。いずれも無料でダウンロードでき、本格的に使うには有料プランが必要になります。料金や無料で使える範囲は各ストアのページで確認してください。</p>
+
+ <div class="chat-box">
+  <img src="/images/reader-avatar.svg" alt="読者" class="chat-avatar" width="52" height="52" loading="lazy">
+  <div class="chat-content">
+    <span class="chat-name">読者</span>
+    <div class="chat-bubble">
+      <p>ChatGPT Plusと英会話アプリ、両方に払うのはちょっと…。どっちか1つならどっちですか？</p>
+    </div>
+  </div>
+</div>
+<div class="chat-box">
+  <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+  <div class="chat-content">
+    <span class="chat-name">小田 健真（AI navi編集長）</span>
+    <div class="chat-bubble bubble-recommend">
+      <p>仕事や調べものでもChatGPTを使うならPlus、英語学習だけが目的で初級〜中級なら専用アプリ、というのがひとつの目安です。どちらも無料で試せるので、1週間ずつ使ってみて続いた方を選ぶのが確実です。</p>
+    </div>
+  </div>
+</div>
+
+ <p>AI英会話アプリの料金や特徴の比較は「<a href="ai-eikaiwa-app">AI英会話アプリおすすめ比較</a>」にまとめています。仕事で英語の会議に出る機会が多い方は、聞き取りを助けるツールを紹介した「<a href="english-meeting-tools">英語会議を乗り切るAIツール5選</a>」もあわせてどうぞ。</p>
+
+ <div class="cta-box" style="text-align:center;margin:24px 0;padding:20px;background:#fff7ed;border-radius:8px;">
+ <p style="margin:0 0 12px;font-weight:bold;">レッスン付きのAI英会話アプリを試してみる</p>
+ <!-- A8-PENDING: speak -->
+ <a href="https://apps.apple.com/jp/app/id1286609883" rel="noopener" target="_blank" class="btn btn-primary" style="margin:4px;">スピーク（App Store）→</a>
+ <!-- A8-PENDING: talkful -->
+ <a href="https://apps.apple.com/jp/app/id6553991680" rel="noopener" target="_blank" class="btn btn-primary" style="margin:4px;">Talkful（App Store）→</a>
+ <div style="font-size:0.8em;color:#666;margin-top:8px;">※料金・無料体験の有無はストアのページでご確認ください</div>
+ </div>
+
+ <h2 id="faq">よくある質問（FAQ）</h2>
+ <div class="faq-list">
+ <div class="faq-item">
+ <div class="faq-q">ChatGPTの無料版でも英会話の練習はできますか？</div>
+ <div class="faq-a">できます。2026年11月時点のOpenAI公式ヘルプでは、無料ユーザーも音声モードを利用できますが「利用は限定的で、上限は変わる可能性がある」とされ、具体的な時間は示されていません。毎日長く話したい場合はPlus（月3,000円前後）を検討するとよいでしょう。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">ChatGPT Plusだと音声モードはどれくらい使えますか？</div>
+ <div class="faq-a">2026年11月時点の公式ヘルプでは、Plusの音声（Live）の利用は24時間の範囲で計測され、目安として3時間と記載されています。上限に達すると通知が表示されます。上限は変更されることがあるため、最新の数値は公式ヘルプで確認してください。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">ChatGPTは発音を直してくれますか？</div>
+ <div class="faq-a">「聞き取りにくかった単語を教えて」と頼めばある程度は指摘してくれますが、発音を細かく採点する仕組みではありません。公式ヘルプにも、文字起こしが話した内容と一字一句一致しない場合があると書かれています。発音を重点的に鍛えたいなら、発音判定のある英会話専用アプリと併用するのがおすすめです。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">音声で話した内容はあとで見返せますか？</div>
+ <div class="faq-a">見返せます。公式ヘルプによると、音声での会話が終わるとチャットに文字起こしが追加され、チャット履歴から確認できます。この文字起こしを使って、テキストで添削を頼む復習方法が効果的です。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">英語が全然話せない初心者でも使えますか？</div>
+ <div class="faq-a">使えますが、何を話すかを自分で決める必要があるため、初心者には負担になりやすい面があります。最初は「1文ずつ短く話す」「わからないときは日本語で質問してよい」などのルールをプロンプトで決めておくと続けやすくなります。基礎フレーズから順番に学びたい人は、カリキュラムのある英会話アプリの方が向いています。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">英語と日本語が混ざると聞き取ってもらえませんか？</div>
+ <div class="faq-a">言語の判定がずれることがあります。公式ヘルプでは、設定の「音声」から言語を指定する方法や、会話の途中で言語を切り替えるよう頼む方法が案内されています。練習中は英語で話すと決めておくと判定が安定しやすくなります。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">ChatGPTと英会話アプリはどちらがいいですか？</div>
+ <div class="faq-a">話す場面を自分で決めて自由に練習したい中級者以上はChatGPT、レベル別のカリキュラムや発音チェック、学習記録で継続したい人は英会話専用アプリが向いています。アプリの選び方はAI英会話アプリのおすすめ記事で比較しています。</div>
+ </div>
+ </div>
+
+<h2 id="summary">まとめ</h2>
+
+ <p>ChatGPTの音声モードは、スマホ1台でいつでも英語を話せる練習相手になります。効果を出すコツは、<strong>テキストで先にルールを渡す</strong>こと、<strong>会話中は止めずに話し、添削は最後に3つだけ</strong>にすることです。</p>
+
+ <div class="summary-box">
+ <h3>ChatGPT英会話 要点</h3>
+ <ul>
+ <li><strong>始め方</strong>：入力欄の音声アイコン→マイク許可→声を選んで話すだけ</li>
+ <li><strong>上限</strong>：無料版は限定的（時間非公表）、Plus（月3,000円前後）は24時間あたり3時間が目安（2026年11月時点）</li>
+ <li><strong>練習メニュー</strong>：準備2分→会話8分→添削3分→復習2分</li>
+ <li><strong>限界</strong>：発音の採点なし・話題は自分で決める・途中で止まることがある</li>
+ <li><strong>専用アプリが向く人</strong>：初級者・発音重視・カリキュラムで続けたい人</li>
+ </ul>
+ </div>
+
+<div class="chat-box">
+  <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+  <div class="chat-content">
+    <span class="chat-name">小田 健真（AI navi編集長）</span>
+    <div class="chat-bubble bubble-recommend">
+      <p>まずは今日、プロンプト①と②をコピーして5分だけ話してみてください。「話題を考えるのがしんどい」と感じたら、それが専用アプリに切り替えるサインです。</p>
+    </div>
+  </div>
+</div>
+
+ <div style="background:#fff7ed;border:2px solid #f97316;border-radius:12px;padding:20px;margin:24px 0;text-align:center;">
+ <p style="font-weight:bold;font-size:1.05em;margin-bottom:8px;">話す内容まで用意してほしいなら、AI英会話アプリ</p>
+ <p style="font-size:0.9em;color:#555;margin-bottom:16px;">レッスン・発音チェック・学習記録で、続ける仕組みが整っています。</p>
+ <!-- A8-PENDING: speak -->
+ <a href="https://apps.apple.com/jp/app/id1286609883" rel="noopener" target="_blank" style="display:inline-block;background:#f97316;color:#fff;padding:12px 26px;border-radius:8px;font-weight:bold;text-decoration:none;margin:4px;">スピークを見てみる →</a>
+ <!-- A8-PENDING: talkful -->
+ <a href="https://apps.apple.com/jp/app/id6553991680" rel="noopener" target="_blank" style="display:inline-block;background:#0d9488;color:#fff;padding:12px 26px;border-radius:8px;font-weight:bold;text-decoration:none;margin:4px;">Talkfulを見てみる →</a>
+ <p style="font-size:0.85em;margin-top:12px;"><a href="ai-eikaiwa-app" style="color:#c2410c;font-weight:bold;">AI英会話アプリの比較記事を読む →</a></p>
+ </div>
+
+ <p style="font-size:0.85em;color:#64748b;line-height:1.8;">参考：<br>
+ <a href="https://help.openai.com/en/articles/8400625-voice-mode-faq" target="_blank" rel="noopener">OpenAI Help Center「Voice Mode FAQ」</a><br>
+ <a href="https://apps.apple.com/jp/app/id1286609883" target="_blank" rel="noopener">App Store「AI英会話スピーク」</a><br>
+ <a href="https://apps.apple.com/jp/app/id6553991680" target="_blank" rel="noopener">App Store「AI英会話Talkful」</a><br>
+ <a href="https://atmarkit.itmedia.co.jp/ait/articles/2303/06/news021.html" target="_blank" rel="noopener">＠IT「OpenAIのテクノロジーも活用した、英会話学習アプリが登場」</a><br>
+ ※料金・利用上限・機能は2026年11月時点の情報です。最新の内容は公式サイトでご確認ください。</p>
+
+ <section class="related-articles" style="background: #f8fafc; border-radius: 12px; padding: 24px; margin: 32px 0;">
+<h2 style="font-size: 1.2em; margin-bottom: 16px;">この記事を読んだ人におすすめ</h2>
+<ul style="list-style: none; padding: 0;">
+<li style="margin-bottom: 12px; padding: 12px; background: #eff6ff; border-radius: 8px; border: 2px solid #2563eb;">
+<a href="../articles/ai-eikaiwa-app" style="text-decoration: none; color: #1a1a1a; font-weight: bold;">AI英会話アプリおすすめ比較【2026年】</a>
+<br><span style="font-size:0.85em;color:#555;">カリキュラムや発音チェック付きのアプリを探している方へ。</span>
+</li>
+<li style="margin-bottom: 12px; padding: 12px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
+<a href="../articles/english-meeting-tools" style="text-decoration: none; color: #1a1a1a; font-weight: bold;">英語会議を乗り切るAIツール5選【2026年】無料あり</a>
+</li>
+<li style="margin-bottom: 12px; padding: 12px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
+<a href="../articles/chatgpt-free-limit" style="text-decoration: none; color: #1a1a1a; font-weight: bold;">ChatGPT無料版の制限【2026年11月】回数・画像・ファイルの上限</a>
+</li>
+<li style="margin-bottom: 12px; padding: 12px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
+<a href="../articles/chatgpt-pricing" style="text-decoration: none; color: #1a1a1a; font-weight: bold;">ChatGPT料金プラン比較【2026年】Plus・Proの違い</a>
+</li>
+</ul>
+</section>
+ </div>
+</div>
+
+<footer>
+ <div class="affiliate-disc">本サイトはアフィリエイト広告（A8.net等）を利用しています。記事内のリンクから商品・サービスを購入・申込みいただいた場合、当サイトに報酬が発生することがあります。</div>
+ <div class="footer-nav">
+ <a href="/">ホーム</a>
+ <a href="claude-review">Claudeレビュー</a>
+ <a href="chatgpt-review">ChatGPTレビュー</a>
+ <a href="/privacy-policy">プライバシーポリシー</a>
+ <a href="/contact">お問い合わせ</a>
+ </div>
+ <p>&copy; 2026 AI navi</p>
+</footer>
+
+<script src="../banner.js"></script>
+<script src="/sidebar.js"></script>
+</body>
+</html>

@@ -8,12 +8,14 @@
   <meta name="keywords" content="Claude メッセージ上限, Claude 上限 リセット いつ, Claude 制限 解除, Claude メッセージ制限, Claude Pro 上限, Claude 5時間">
   <meta property="og:title" content="Claudeメッセージ上限リセットはいつ？5時間制の仕組みと対処法5選 | AI navi">
   <meta property="og:url" content="https://ai-navi.app/articles/claude-message-limit">
-  <meta property="og:image" content="https://ai-navi.app/og-image.png">
+  <meta property="og:image" content="https://ai-navi.app/images/og/claude-message-limit.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="AI navi">
   <meta property="og:description" content="Claudeのメッセージ上限は5時間のスライディングウィンドウ制でリセット。プラン別制限比較・対処法5つ・エラー一覧を2026年最新情報で解説。今すぐ確認 →">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://ai-navi.app/og-image.png">
+  <meta name="twitter:image" content="https://ai-navi.app/images/og/claude-message-limit.png">
   <link rel="canonical" href="https://ai-navi.app/articles/claude-message-limit">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../style.css">
@@ -22,11 +24,22 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "Claudeメッセージ上限リセットはいつ？5時間制の仕組みと対処法5選",
-    "image": "https://ai-navi.app/og-image.png",
+    "image": "https://ai-navi.app/images/og/claude-message-limit.png",
     "datePublished": "2026-08-15",
     "dateModified": "2026-11-23",
-    "author": { "@type": "Person", "name": "小田 健真", "url": "https://ai-navi.app/about" },
-    "publisher": { "@type": "Organization", "name": "AI navi", "logo": { "@type": "ImageObject", "url": "https://ai-navi.app/og-image.png" } }
+    "author": {
+      "@type": "Person",
+      "name": "小田 健真",
+      "url": "https://ai-navi.app/about"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AI navi",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ai-navi.app/og-image.png"
+      }
+    }
   }
   </script>
 
@@ -43,18 +56,16 @@
   </script>
 
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-    {"@type":"Question","name":"Claudeのメッセージ上限はいつリセットされますか？","acceptedAnswer":{"@type":"Answer","text":"Claudeのメッセージ上限は「5時間のスライディングウィンドウ制」でリセットされます。最初のメッセージを送った時点から5時間後に上限が回復する仕組みです。深夜0時など固定時刻でのリセットではありません。"}},
-    {"@type":"Question","name":"Claudeの無料版は1日何回まで使えますか？","acceptedAnswer":{"@type":"Answer","text":"Claudeの無料版には明確な「1日○回」という固定回数の制限は公表されていません。5時間のスライディングウィンドウ内でのトークン消費量に基づいて制限されます。短いメッセージなら多く送れ、長いメッセージや長い会話では少なくなります。"}},
-    {"@type":"Question","name":"Claude Proにすれば上限はなくなりますか？","acceptedAnswer":{"@type":"Answer","text":"完全に無制限にはなりませんが、無料版の約5倍の容量が利用できます。2026年5月に上限が約2倍に引き上げられ、通常の業務利用であれば上限に達することは少なくなりました。さらに上限を増やしたい場合はMax（$100/月または$200/月）プランがあります。"}},
-    {"@type":"Question","name":"「You've hit your limit」と表示されたらどうすればいいですか？","acceptedAnswer":{"@type":"Answer","text":"表示されたエラーメッセージに記載されている時刻まで待つのが基本です。すぐに使いたい場合は、ChatGPTやGeminiなど他のAIに一時的に切り替えるか、Claude Proへのアップグレードを検討してください。"}},
-    {"@type":"Question","name":"Claudeの上限に達しやすい使い方はありますか？","acceptedAnswer":{"@type":"Answer","text":"はい。長い会話を1つのスレッドで続ける使い方は上限に達しやすくなります。Claudeは毎回会話全体を読み直すため、会話が長くなるほど1メッセージあたりのトークン消費が増えます。こまめに新しい会話を始めることで消費を抑えられます。"}},
-    {"@type":"Question","name":"Claudeのスライディングウィンドウとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"スライディングウィンドウとは、過去5時間以内に使ったトークン量で利用制限を管理する仕組みです。5時間前に使ったトークンは順次「期限切れ」となり、その分だけ新たに使えるようになります。一括リセットではなく、連続的に回復していくイメージです。"}},
-    {"@type":"Question","name":"Claude ProとMaxの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"Proは月額$20で無料版の約5倍の容量です。上位にはMax（月約1.5万〜3万円）があり、月$100プランでProの5倍、月$200プランで20倍の容量が利用できます。長時間のコーディングや大量のドキュメント処理にはMaxが適しています。"}},
-    {"@type":"Question","name":"Claudeの残り使用量を確認する方法はありますか？","acceptedAnswer":{"@type":"Answer","text":"Claude.aiの「設定（Settings）」→「使用量（Usage）」画面で、現在の使用状況と次のリセット時刻を確認できます。上限に達した際のエラーメッセージにも、再開可能な時刻が表示されます。"}},
-    {"@type":"Question","name":"Claudeの上限はメッセージ数で決まりますか？トークン数ですか？","acceptedAnswer":{"@type":"Answer","text":"トークン数で管理されています。Claudeは送受信するメッセージの文字量（トークン数）を計算し、5時間のウィンドウ内での累積トークン消費量が上限に達すると制限がかかります。短いメッセージなら多く送れますが、長い会話や長文の入出力では少ないメッセージ数で上限に達します。"}},
-    {"@type":"Question","name":"Claude無料版でも十分に使えますか？","acceptedAnswer":{"@type":"Answer","text":"軽い質問や短い会話であれば無料版でも十分です。ただし、長文の作成・コード生成・長い会話を頻繁に行う場合は、すぐに上限に達してしまいます。日常的にClaudeを活用するなら、Pro（$20/月）へのアップグレードが現実的な選択肢です。"}}
-  ]}
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Claudeのメッセージ上限はいつリセットされますか？","acceptedAnswer":{"@type":"Answer","text":"Claudeのメッセージ上限は「5時間のスライディングウィンドウ制」でリセットされます。最初のメッセージを送った時点から5時間後に上限が回復し始めます。深夜0時など固定時刻でのリセットではなく、ユーザーごとに異なるタイミングでリセットされます。"}},
+    {"@type":"Question","name":"Claudeの無料版は1日何回まで使えますか？","acceptedAnswer":{"@type":"Answer","text":"Claudeの無料版には「1日○回」という固定の回数制限は公表されていません。5時間のスライディングウィンドウ内でのトークン消費量に基づいて制限されるため、短いメッセージなら多く送れ、長いメッセージや長い会話では少なくなります。"}},
+    {"@type":"Question","name":"Claude Proにすれば上限はなくなりますか？","acceptedAnswer":{"@type":"Answer","text":"完全に無制限にはなりませんが、無料版の約5倍の容量が利用できます。2026年5月に上限が約2倍に引き上げられており、通常の業務利用であれば上限に達することは少なくなりました。さらに上限を増やしたい場合はMax（$100/月 or $200/月）プランがあります。"}},
+    {"@type":"Question","name":"「You've hit your limit」と表示されたらどうすればいいですか？","acceptedAnswer":{"@type":"Answer","text":"エラーメッセージに表示された時刻まで待つのが基本です。すぐに使いたい場合は、ChatGPTやGeminiなど他のAIに一時的に切り替えるか、Claude Proへのアップグレードを検討してください。詳しくは本記事の「対処法5つ」をご覧ください。"}},
+    {"@type":"Question","name":"Claudeの上限に達しやすい使い方はありますか？","acceptedAnswer":{"@type":"Answer","text":"長い会話を1つのスレッドで続ける使い方は上限に達しやすくなります。Claudeは毎回会話全体を読み直すため、会話が長くなるほど1メッセージあたりのトークン消費が増えます。こまめに新しい会話を始めることで消費を大幅に抑えられます。"}},
+    {"@type":"Question","name":"Claudeのスライディングウィンドウとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"スライディングウィンドウとは、過去5時間以内に使ったトークン量で利用制限を管理する仕組みです。5時間前に使ったトークンは順次「期限切れ」となり、その分だけ新たに使えるようになります。一括リセットではなく、連続的に回復していくのが特徴です。"}},
+    {"@type":"Question","name":"Claude ProとMaxの違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"Proは月額$20で無料版の約5倍の容量です。上位にはMax（月約1.5万〜3万円）があり、月$100プランでProの5倍、月$200プランで20倍の容量が利用できます。長時間のコーディングや大量のドキュメント処理など、Pro上限に頻繁に達する方向けのプランです。"}},
+    {"@type":"Question","name":"Claudeの残り使用量を確認する方法はありますか？","acceptedAnswer":{"@type":"Answer","text":"Claude.aiの「設定（Settings）」→「使用量（Usage）」画面で現在の使用状況と次のリセット時刻を確認できます。上限に達した際のエラーメッセージにも、再開可能な時刻が表示されます。"}},
+    {"@type":"Question","name":"Claudeの上限はメッセージ数で決まりますか？トークン数ですか？","acceptedAnswer":{"@type":"Answer","text":"トークン数で管理されています。送受信するメッセージの文字量（トークン数）が計算され、5時間ウィンドウ内の累積トークン消費量が上限に達すると制限がかかります。短いメッセージなら多く送れますが、長い会話では少ないメッセージ数で上限に達します。"}},
+    {"@type":"Question","name":"Claude無料版でも十分に使えますか？","acceptedAnswer":{"@type":"Answer","text":"軽い質問や短い会話であれば無料版でも十分です。ただし、長文の作成・コード生成・長い会話を頻繁に行う場合はすぐに上限に達します。日常的にClaudeを活用するなら、Pro（$20/月）へのアップグレードが現実的な選択肢です。"}}]}
   </script>
 </head>
 <body>
@@ -100,7 +111,7 @@
     </div>
   </div>
   <div class="article-hero-img">
-    <img src="../images/photos/laptop-work.jpg" alt="Claudeのメッセージ上限について調べるイメージ" loading="lazy" style="width:100%;height:240px;object-fit:cover;border-radius:10px;margin:16px 0;">
+    <img width="640" height="380" src="../images/photos/laptop-work.jpg" alt="Claudeのメッセージ上限について調べるイメージ" loading="lazy" style="width:100%;height:240px;object-fit:cover;border-radius:10px;margin:16px 0;">
   </div>
 
   <div class="summary-box" style="background:#fff3e0;border-left:4px solid #e65100;">
@@ -490,7 +501,7 @@
     <p>次のセクションで詳しく解説しますが、会話の仕方を工夫するだけで同じ用途でもトークン消費を大幅に削減できます。「上限に達しにくい使い方」を身につけることが長期的な解決策です。</p>
 
     <h2 id="tips">上限に達しにくくする使い方のコツ</h2>
-    <img src="../images/photos/reading.jpg" alt="Claudeを効率的に使うイメージ" loading="lazy" style="width:100%;max-width:680px;height:200px;object-fit:cover;border-radius:8px;margin:16px auto;display:block;">
+    <img width="640" height="427" src="../images/photos/reading.jpg" alt="Claudeを効率的に使うイメージ" loading="lazy" style="width:100%;max-width:680px;height:200px;object-fit:cover;border-radius:8px;margin:16px auto;display:block;">
     <p>Claudeのメッセージ上限はトークン制のため、使い方を工夫するだけで同じプランでも大幅に多くのメッセージを送ることができます。</p>
 
     <h3>コツ1：長い会話は避け、こまめに新しい会話を始める</h3>
@@ -663,7 +674,7 @@
     </div>
 
     <div class="author-box">
-      <div class="author-avatar"><img src="/images/author-avatar.png" alt="小田 健真" width="52" height="52" style="border-radius:50%;"></div>
+      <div class="author-avatar"><img loading="lazy" decoding="async" src="/images/author-avatar.png" alt="小田 健真" width="52" height="52" style="border-radius:50%;"></div>
       <div class="author-info">
         <div class="author-name">小田 健真</div>
         <div class="author-bio">ChatGPT・Claude・Geminiなど主要AIを日常的に活用するブロガー。各ツールを実際に試し、使いやすさ・料金・機能をわかりやすく比較・解説しています。</div>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Geminiの使い方と始め方【2026年】スマホ・PC・Gmail連携の手順 | AI navi</title>
+ <meta name="description" content="Geminiの始め方をスマホ・PC別に手順で解説。質問・ファイル要約・音声入力の基本、GmailやGoogleドキュメントとの連携方法、プロンプト例、無料版とGoogle AI Proの違いを2026年11月時点の公式情報でまとめました。">
+ <meta name="keywords" content="Gemini 使い方, Gemini 始め方, Gemini スマホ, Gemini Gmail 連携, Gemini Googleドキュメント, Gemini 無料 有料 違い">
+ <meta property="og:title" content="Geminiの使い方と始め方【2026年】スマホ・PC・Gmail連携の手順">
+ <meta property="og:url" content="https://ai-navi.app/articles/gemini-howto">
+ <meta property="og:image" content="https://ai-navi.app/images/og/gemini-howto.png">
+ <meta property="og:type" content="article">
+ <meta property="og:site_name" content="AI navi">
+ <meta property="og:description" content="Geminiの始め方をスマホ・PC別に手順で解説。質問・ファイル要約・音声入力の基本、GmailやGoogleドキュメントとの連携方法、プロンプト例、無料版とGoogle AI Proの違いを2026年11月時点の公式情報でまとめました。">
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:title" content="Geminiの使い方と始め方【2026年】スマホ・PC・Gmail連携の手順">
+ <meta name="twitter:description" content="Geminiの始め方をスマホ・PC別に手順で解説。質問・ファイル要約・音声入力の基本、GmailやGoogleドキュメントとの連携方法、プロンプト例、無料版とGoogle AI Proの違いを2026年11月時点の公式情報でまとめました。">
+ <meta name="twitter:image" content="https://ai-navi.app/images/og/gemini-howto.png">
+ <link rel="canonical" href="https://ai-navi.app/articles/gemini-howto">
+ <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+ <link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "Article",
+ "headline": "Geminiの使い方と始め方【2026年】スマホ・PC・Gmail連携の手順",
+ "image":"https://ai-navi.app/images/og/gemini-howto.png",
+ "datePublished": "2026-11-25",
+ "dateModified": "2026-11-25",
+ "author": { "@type": "Person", "name": "小田 健真", "url": "https://ai-navi.app/about" },
+ "publisher": { "@type": "Organization", "name": "AI navi", "logo": { "@type": "ImageObject", "url": "https://ai-navi.app/og-image.png" } }
+ }
+ </script>
+
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+ {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://ai-navi.app/"},
+ {"@type": "ListItem", "position": 2, "name": "AIツール比較", "item": "https://ai-navi.app/"},
+ {"@type": "ListItem", "position": 3, "name": "Geminiの使い方と始め方", "item": "https://ai-navi.app/articles/gemini-howto"}
+ ]
+ }
+ </script>
+
+ <script type="application/ld+json">
+ {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"Geminiは無料で使えますか？","acceptedAnswer":{"@type":"Answer","text":"使えます。Googleアカウントがあれば、ウェブ版（gemini.google.com）とスマホアプリのどちらでも無料で利用できます。ウェブ版は一部の機能ならログインなしでも使えますが、会話履歴の保存などにはログインが必要です。"}},
+ {"@type":"Question","name":"GeminiとGmailを連携するにはどうすればいいですか？","acceptedAnswer":{"@type":"Answer","text":"Gmailと同じGoogleアカウントでGeminiにログインし、Geminiアプリの履歴（アクティビティ）をオンにします。Gmailの「他のGoogleサービスのスマート機能」もオンにしたうえで、入力欄で「@」を打ってGmailを選ぶか、プロンプトに「Gmail」と書いて質問します。"}},
+ {"@type":"Question","name":"Googleドキュメントの内容をGeminiに要約させられますか？","acceptedAnswer":{"@type":"Answer","text":"できます。Workspaceと連携した状態で「ドキュメントで〇〇に関する資料を探して要約して」のように、サービス名とキーワードで指定します。URLを貼るのではなく、サービス名・種類・キーワードで探させるのが公式の推奨です。なお、コメントや画像の内容は読み取れません。"}},
+ {"@type":"Question","name":"Geminiの無料版と有料版の違いは何ですか？","acceptedAnswer":{"@type":"Answer","text":"2026年11月時点で、Google AI Pro（月額2,900円）は使用量の上限が無料版の4倍、一度に扱える量が100万トークン（無料版は3.2万トークン）になり、GmailやGoogleドキュメントの画面内でGeminiを使えるようになります。ストレージも5TBに増えます。"}},
+ {"@type":"Question","name":"Geminiの使用量上限はいつリセットされますか？","acceptedAnswer":{"@type":"Answer","text":"公式ヘルプによると、使用量の上限は5時間ごとにリセットされます。ただし週ごとの上限もあり、そちらに達した場合は週単位での回復を待つ必要があります。現在の使用状況はgemini.google.comの設定から確認できます。"}},
+ {"@type":"Question","name":"仕事用（会社）のGoogleアカウントでもGeminiを使えますか？","acceptedAnswer":{"@type":"Answer","text":"使える場合がありますが、組織の管理者がGeminiやWorkspaceとの連携を有効にしている必要があります。会社のアカウントで連携メニューが表示されない場合は、社内の管理者に設定を確認してください。"}},
+ {"@type":"Question","name":"スマホとPCで会話履歴は共有されますか？","acceptedAnswer":{"@type":"Answer","text":"同じGoogleアカウントでログインし、Geminiアプリの履歴をオンにしていれば、スマホで始めた会話をPCで続けられます。履歴をオフにすると、Workspaceとの連携も使えなくなる点に注意してください。"}}
+ ]}
+ </script>
+</head>
+<body>
+
+<header>
+ <nav>
+ <a class="logo" href="/">AI <span>navi</span></a>
+ <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('nav-open')" aria-label="メニュー">
+ <span></span><span></span><span></span>
+ </button>
+ <ul>
+ <li><a href="/#ranking">ランキング</a></li>
+ <li><a href="/#compare">比較表</a></li>
+ <li><a href="claude-review">Claude</a></li>
+ <li><a href="chatgpt-review">ChatGPT</a></li>
+ <li><a href="../diagnosis">AI診断</a></li>
+ </ul>
+ </nav>
+</header>
+
+<div class="breadcrumb">
+ <a href="/">ホーム</a> &gt; <a href="../articles/gemini-review">Geminiレビュー</a> &gt; Geminiの使い方と始め方
+</div>
+
+<div class="article-wrap">
+ <div class="article-header">
+ <h1>Geminiの使い方と始め方【2026年】スマホ・PC・Gmail連携の手順</h1>
+ <div class="article-meta">
+ <span>2026年11月25日</span>
+ <span>最終更新: 2026年11月25日</span>
+ <span>約7,000字</span>
+ </div>
+ </div>
+ <div class="affiliate-disc">本サイトはアフィリエイト広告（A8.net等）を利用しています。記事内のリンクから商品・サービスを購入・申込みいただいた場合、当サイトに報酬が発生することがあります。</div>
+ <div class="author-box">
+ <div class="author-avatar"><img src="/images/author-avatar.png" alt="小田 健真" width="52" height="52" style="border-radius:50%;"></div>
+ <div class="author-info">
+ <div class="author-name">小田 健真</div>
+ <div class="author-bio">ChatGPT・Claude・Geminiなど主要AIを日常的に活用するブロガー。各ツールの使いやすさ・料金・機能をわかりやすく比較・解説しています。</div>
+ </div>
+ </div>
+ <div class="article-hero-img">
+ <img src="../images/photos/hands-typing.jpg" alt="Geminiを使うイメージ" loading="lazy" style="width:100%;height:240px;object-fit:cover;border-radius:10px;margin:16px 0;">
+ </div>
+
+ <div class="summary-box" style="background:#fff3e0;border-left:4px solid #e65100;">
+ <h2 style="margin-top:0;font-size:1.1em;">結論：Googleアカウントがあれば、今日から無料で使える</h2>
+ <ul>
+ <li><strong>スマホ</strong>：公式「Gemini」アプリを入れ、Googleアカウントでログインするだけ</li>
+ <li><strong>PC</strong>：ブラウザで gemini.google.com を開いてログイン。インストール不要</li>
+ <li><strong>Gmail・ドキュメント連携</strong>：履歴をオンにして、入力欄で「@」からGmailなどを選んで質問する</li>
+ <li><strong>有料版（Google AI Pro・月額2,900円）</strong>：上限が無料版の4倍になり、Gmailやドキュメントの画面内でもGeminiが使える</li>
+ </ul>
+ <p style="margin:12px 0 0;font-size:0.93em;">会議の内容をGeminiで要約したい方は、先に音声を文字にしておくと作業が早く進みます。<a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank" style="color:#e65100;font-weight:bold;">AI文字起こしのNotta</a>なら無料プランから試せます。</p>
+ <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B7QWV+7FX302+5988+5YJRM" alt="" style="display:none;">
+ </div>
+
+ <figure style="margin:24px 0;text-align:center;">
+ <img src="../images/infographics/gemini-howto.svg" alt="Geminiの始め方（スマホとPCの手順）の図解" loading="lazy" style="max-width:100%;height:auto;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.10);">
+ <figcaption style="font-size:0.82em;color:#64748b;margin-top:6px;">▲ スマホとPCでのGeminiの始め方（AI navi作成）</figcaption>
+ </figure>
+
+ <div class="summary-box">
+ <h3>この記事でわかること</h3>
+ <ul>
+ <li>Geminiをスマホ・PCで使い始めるまでの手順</li>
+ <li>質問・ファイル要約・写真・音声入力など基本の操作</li>
+ <li>Gmail・Googleドキュメント・ドライブと連携する方法</li>
+ <li>仕事や日常ですぐ使えるプロンプト例</li>
+ <li>無料版とGoogle AI Proの違い、使用量上限の確認方法</li>
+ </ul>
+ </div>
+
+ <div class="article-toc">
+ <h2>目次</h2>
+ <ol>
+ <li><a href="#what">Geminiとは？できることをざっくり把握</a></li>
+ <li><a href="#start">Geminiの始め方【スマホ・PC】</a></li>
+ <li><a href="#basic">基本の使い方｜質問・ファイル・写真・音声</a></li>
+ <li><a href="#workspace">Gmail・Googleドキュメントと連携する使い方</a></li>
+ <li><a href="#examples">仕事・日常で使える活用例とプロンプト</a></li>
+ <li><a href="#plans">無料版と有料版（Google AI Pro）の違い</a></li>
+ <li><a href="#faq">よくある質問</a></li>
+ <li><a href="#summary">まとめ</a></li>
+ </ol>
+ </div>
+
+ <!-- 忍者AdMax 広告 -->
+ <div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;">
+ <p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p>
+ <!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax -->
+ </div>
+<!-- 忍者AdMax SP記事内広告 300x250 -->
+<div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;" class="sp-only"><p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p><!-- admax --><script src="https://adm.shinobi.jp/s/b8872443f18589de45163a9a558d01fd"></script><!-- admax --></div>
+
+ <div class="article-body">
+
+<div class="chat-box">
+  <img src="/images/reader-avatar.svg" alt="読者" class="chat-avatar" width="52" height="52" loading="lazy">
+  <div class="chat-content">
+    <span class="chat-name">読者</span>
+    <div class="chat-bubble">
+      <p>Geminiが気になっているけど、ChatGPTと何が違うのか、どこから始めればいいのかがよくわかりません。</p>
+    </div>
+  </div>
+</div>
+<div class="chat-box">
+  <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+  <div class="chat-content">
+    <span class="chat-name">小田 健真（AI navi編集長）</span>
+    <div class="chat-bubble bubble-point">
+      <p>GmailやGoogleドキュメントをふだん使っているなら、Geminiは相性がいい選択肢です。始め方は数分で終わるので、まずは手順どおりにログインして、身近な質問から試してみてください。</p>
+    </div>
+  </div>
+</div>
+
+ <h2 id="what">Geminiとは？できることをざっくり把握</h2>
+ <p>Gemini（ジェミニ）は、Googleが提供する対話型のAIアシスタントです。質問に答える、文章を書く、資料を要約する、写真の内容を説明するといった使い方ができます。</p>
+ <p>ほかのAIと比べたときの特徴は、<strong>GmailやGoogleドキュメント、ドライブ、カレンダーなどGoogleのサービスとつながる</strong>点です。「先週届いた見積もりメールの金額は？」のように、自分のメールや資料の中身を探して答えさせることもできます。</p>
+
+ <div class="table-wrapper">
+ <table class="comparison-table">
+ <thead>
+ <tr><th>できること</th><th>使い方の例</th></tr>
+ </thead>
+ <tbody>
+ <tr><td><strong>質問・調べもの</strong></td><td>言葉の意味、手続きの流れ、旅行の計画などを質問する</td></tr>
+ <tr><td><strong>文章作成</strong></td><td>メールの下書き、ブログの構成案、挨拶文を作る</td></tr>
+ <tr><td><strong>ファイルの要約</strong></td><td>PDFや資料をアップロードして要点をまとめる</td></tr>
+ <tr><td><strong>写真の質問</strong></td><td>植物の名前、手書きメモの文字起こし、グラフの読み取り</td></tr>
+ <tr><td><strong>Googleサービス連携</strong></td><td>Gmail・ドキュメント・ドライブ・カレンダーの情報を検索・要約</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <p>Geminiの評判や他のAIとの性能比較は「<a href="../articles/gemini-review">Gemini評判・口コミ</a>」、ChatGPT・Claudeとの使い分けは「<a href="../articles/chatgpt-vs-gemini-vs-claude">ChatGPT・Gemini・Claude比較</a>」で解説しています。この記事は操作手順に絞って進めます。</p>
+
+ <h2 id="start">Geminiの始め方【スマホ・PC】</h2>
+ <p>必要なのはGoogleアカウントだけです。Gmailを使っている方は、そのアカウントでそのまま始められます。</p>
+
+ <h3>スマホ（iPhone・Android）で始める手順</h3>
+ <ol>
+ <li><strong>アプリを入れる</strong>：App Store（iPhone）またはGoogle Play（Android）で「Gemini」と検索し、提供元がGoogleの公式アプリをインストールする</li>
+ <li><strong>ログインする</strong>：アプリを開き、Googleアカウントを選んでログインする</li>
+ <li><strong>話しかける</strong>：画面下の入力欄に質問を書いて送信する。マイクのアイコンから音声でも入力できる</li>
+ </ol>
+ <p>Androidでは、端末の設定によってはアシスタントとしてGeminiを呼び出せます。スマホは外出先でのちょっとした調べものや、カメラで撮った写真について質問したいときに便利です。</p>
+
+ <h3>PC（ブラウザ）で始める手順</h3>
+ <ol>
+ <li><strong>サイトを開く</strong>：Chrome・Edge・Safariなどのブラウザで <strong>gemini.google.com</strong> にアクセスする</li>
+ <li><strong>ログインする</strong>：右上の「ログイン」からGoogleアカウントでログインする</li>
+ <li><strong>入力して送信</strong>：画面中央の入力欄に指示を書いて送信する</li>
+ </ol>
+ <p>ウェブ版は一部の機能ならログインしなくても試せますが、会話の保存やGoogleサービスとの連携にはログインが必要です。長い文章の作成や資料の要約は、画面の広いPCのほうが作業しやすいでしょう。</p>
+
+ <div style="background:#f0f9ff;border-left:4px solid #0ea5e9;padding:14px 18px;margin:20px 0;border-radius:0 8px 8px 0;">
+ <p style="margin:0;font-size:0.93em;line-height:1.7;"><strong>会社のアカウントで使う場合：</strong>仕事用・学校用のGoogleアカウントでは、組織の管理者がGeminiや連携機能を有効にしている必要があります。メニューが表示されないときは、社内の管理者に確認しましょう。</p>
+ </div>
+
+<!-- 忍者AdMax 記事中盤広告 300x250 -->
+<div style="text-align:center;margin:32px auto;"><!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax --></div>
+
+ <h2 id="basic">基本の使い方｜質問・ファイル・写真・音声</h2>
+
+ <h3>1. 文章で質問する</h3>
+ <p>入力欄に質問や依頼を書いて送信するのが基本です。答えが長すぎる・難しいと感じたら「中学生にもわかるように」「3行で」と続けて頼むと、同じ会話のまま言い直してくれます。</p>
+ <div style="background:#f1f5f9;border-radius:8px;padding:14px 18px;margin:16px 0;font-size:0.95em;line-height:1.8;">
+ <strong>入力例：</strong>ふるさと納税の流れを、初めての人向けに5つのステップで説明して。
+ </div>
+
+ <h3>2. ファイルをアップロードして要約する</h3>
+ <p>入力欄の「＋」アイコンからPDFや文書ファイルを追加し、「この資料の要点を箇条書きで5つ」と指示します。無料版は一度に扱える量が3.2万トークンまでなので、長い資料は章ごとに分けて渡すと抜け漏れが減ります。</p>
+
+ <h3>3. 写真について質問する</h3>
+ <p>スマホならカメラで撮った写真、PCなら画像ファイルを添付して質問できます。「この料理のレシピを考えて」「このグラフから読み取れることは？」など、文字では説明しにくい内容を聞くときに役立ちます。</p>
+
+ <h3>4. 音声で話しかける</h3>
+ <p>マイクのアイコンを押して話すと、そのまま文字に変換されて送信されます。スマホアプリでは、音声のまま会話を続けるモードも用意されています。手がふさがっているときや、考えを整理しながら話したいときに便利です。</p>
+
+ <h3>5. 会話を管理する</h3>
+ <p>過去の会話は画面左（スマホはメニュー）の一覧から開き直せます。話題が変わるときは新しいチャットを始めたほうが、前の内容に引きずられない回答になります。</p>
+
+<div class="chat-box">
+  <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+  <div class="chat-content">
+    <span class="chat-name">小田 健真（AI navi編集長）</span>
+    <div class="chat-bubble bubble-point">
+      <p>Geminiの答えにも間違いは混ざります。金額・日付・制度の条件など、間違えると困る情報は、回答の根拠を聞いたうえで公式サイトでも確かめる習慣をつけておくと安心です。</p>
+    </div>
+  </div>
+</div>
+
+ <h2 id="workspace">Gmail・Googleドキュメントと連携する使い方</h2>
+ <p>Geminiならではの使い方が、Googleのサービスとの連携です。Geminiの画面からGmail・ドキュメント・ドライブ・カレンダーなどの中身を検索したり、要約したりできます。</p>
+
+ <h3>連携の準備（最初に1回だけ）</h3>
+ <ol>
+ <li>GmailやドキュメントとGeminiで<strong>同じGoogleアカウント</strong>にログインする</li>
+ <li>Geminiの設定で<strong>アプリの履歴（アクティビティ）をオン</strong>にする（オフだと連携できない）</li>
+ <li>Gmailの設定で<strong>「他のGoogleサービスのスマート機能」をオン</strong>にし、Geminiを再読み込みする</li>
+ <li>未接続の場合に表示される接続の案内に従って、Workspaceを接続する</li>
+ </ol>
+
+ <h3>連携した状態での質問のしかた</h3>
+ <p>入力欄で <strong>「@」を入力すると、Gmail・ドキュメント・ドライブなどのサービス一覧</strong>が出るので、使いたいものを選んでから質問します。「Gmail」「ドキュメント」といった言葉をプロンプトに含めるだけでも指定できます。新しい会話を始めるたびに、サービス名を1回入れるのがポイントです。</p>
+ <p>公式ヘルプでは、メールや文書の<strong>URLを貼るのではなく、サービス名・種類・キーワードで探させる</strong>よう案内されています。</p>
+
+ <div class="table-wrapper">
+ <table class="comparison-table">
+ <thead>
+ <tr><th>やりたいこと</th><th>プロンプト例</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>メールを探す</td><td>@Gmail 〇〇株式会社から届いた見積もりのメールで、合計金額と納期を教えて</td></tr>
+ <tr><td>未読をまとめる</td><td>@Gmail 今週届いたメールのうち、返信が必要そうなものを一覧にして</td></tr>
+ <tr><td>資料を要約</td><td>@ドキュメント 「新商品企画」に関するドキュメントを探して、要点を5つの箇条書きにして</td></tr>
+ <tr><td>ファイルを探す</td><td>@ドライブ 最新の賃貸契約書を探して、更新料の金額を確認して</td></tr>
+ <tr><td>予定の確認</td><td>@カレンダー 来週の空いている時間帯を教えて</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <p style="font-size:0.88em;color:#64748b;">※公式ヘルプによると、ドキュメントやGmail内のコメント・画像の内容は読み取れません。</p>
+
+ <h3>GmailやドキュメントのなかでGeminiを使う（有料プラン）</h3>
+ <p>ここまでの方法は「Geminiの画面からGoogleのサービスを見に行く」使い方です。これとは別に、<strong>Gmailやドキュメントを開いた画面の中でGeminiを呼び出し、メールの返信文や文書の下書きをその場で作る</strong>機能があります。こちらはGoogle AI PlusやGoogle AI Proなどの有料プランに含まれる機能として案内されています（2026年11月時点）。</p>
+
+ <h2 id="examples">仕事・日常で使える活用例とプロンプト</h2>
+ <p>Geminiの使いみちが思いつかないときは、次のような場面から試してみてください。</p>
+
+ <h3>仕事での活用例</h3>
+ <ul>
+ <li><strong>メールの下書き</strong>：「取引先に納期の延長をお願いするメールを、丁寧すぎない文面で」</li>
+ <li><strong>資料の要約</strong>：PDFを添付して「上司に報告するために、結論と数字だけを3行で」</li>
+ <li><strong>会議の準備</strong>：「明日の打ち合わせで確認すべき論点を5つ挙げて」</li>
+ <li><strong>議事録の整理</strong>：文字起こしを貼り付けて「決定事項・担当者・期限を表にして」</li>
+ </ul>
+
+ <div style="background:#f0f9ff;border-left:4px solid #0ea5e9;padding:14px 18px;margin:20px 0;border-radius:0 8px 8px 0;">
+ <p style="margin:0;font-size:0.93em;line-height:1.7;"><strong>会議の録音から議事録まで：</strong>Geminiに議事録を整理させるには、まず会話を文字にする必要があります。<a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank" style="color:#0284c7;font-weight:bold;">Notta</a>のようなAI文字起こしツールで録音をテキスト化し、その文章をGeminiに渡して決定事項を抜き出す、という分担にすると手作業がぐっと減ります。</p>
+ <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B7QWV+7FX302+5988+5YJRM" alt="" style="display:none;">
+ </div>
+
+ <h3>日常での活用例</h3>
+ <ul>
+ <li><strong>献立づくり</strong>：冷蔵庫の中の写真を添付して「この食材で作れる夕食を3案」</li>
+ <li><strong>旅行の計画</strong>：「2泊3日で京都。移動は電車、予算は1人4万円で行程を組んで」</li>
+ <li><strong>学習</strong>：「この英文を訳して、使われている文法を解説して」</li>
+ <li><strong>手続きの確認</strong>：「引っ越しで必要な役所の手続きをチェックリストにして」（制度の詳細は自治体の公式情報で確認）</li>
+ </ul>
+
+ <h3>SNS画像や資料のデザインを仕上げたいとき</h3>
+ <p>Geminiで考えたキャッチコピーや構成案を、そのままSNS画像やチラシに仕上げたい場合は、デザインツールと組み合わせるのが効率的です。<a href="https://px.a8.net/svt/ejp?a8mat=4B7ROU+6NC9YQ+5EX8+5YRHE" rel="nofollow noopener" target="_blank" style="color:#2563eb;font-weight:bold;">MiriCanvas</a>なら、テンプレートに文章を流し込むだけで見栄えのいいデザインになり、無料で始められます。</p>
+ <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4B7ROU+6NC9YQ+5EX8+5YRHE" alt="" style="display:none;">
+
+ <!-- 忍者AdMax 広告 -->
+ <div style="text-align:center;margin:32px auto;max-width:340px;padding:8px 0;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb;">
+ <p style="font-size:0.72em;color:#aaa;margin:0 0 6px;text-align:center;letter-spacing:0.05em;">スポンサー</p>
+ <!-- admax --><script src="https://adm.shinobi.jp/s/2d32d3f1737b0ede850bd7934734b342"></script><!-- admax -->
+ </div>
+
+ <h2 id="plans">無料版と有料版（Google AI Pro）の違い</h2>
+ <p>Geminiは無料のままでも基本的な機能を使えます。有料プランに切り替えると、主に「使える量」と「Googleサービスの中での使い勝手」が変わります。</p>
+
+ <figure style="margin:24px 0;text-align:center;">
+ <img src="../images/infographics/gemini-howto-2.svg" alt="Gemini無料版とGoogle AI Proの違いの早見表" loading="lazy" style="max-width:100%;height:auto;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.10);">
+ <figcaption style="font-size:0.82em;color:#64748b;margin-top:6px;">▲ 無料版とGoogle AI Proの主な違い（AI navi作成）</figcaption>
+ </figure>
+
+ <div class="table-wrapper">
+ <table class="comparison-table">
+ <thead>
+ <tr><th>項目</th><th>無料版</th><th>Google AI Plus</th><th>Google AI Pro</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>月額</td><td>0円</td><td>公式で確認（キャンペーンで変動）</td><td>2,900円</td></tr>
+ <tr><td>使用量の上限</td><td>標準</td><td>無料版の2倍</td><td>無料版の4倍</td></tr>
+ <tr><td>一度に扱える量</td><td>3.2万トークン</td><td>12.8万トークン</td><td>100万トークン</td></tr>
+ <tr><td>Gmail・ドキュメント内のGemini</td><td>—</td><td>Gmailなどで利用可</td><td>Gmail・ドキュメントなどで利用可</td></tr>
+ <tr><td>ストレージ</td><td>15GB</td><td>400GB</td><td>5TB</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <p style="font-size:0.88em;color:#64748b;">※2026年11月時点のGoogle公式情報をもとに作成。上位にGoogle AI Ultraもあります。上限や価格は予告なく変わることがあります。</p>
+
+ <h3>使用量の上限と確認方法</h3>
+ <p>公式ヘルプによると、使用量の上限は<strong>5時間ごとにリセット</strong>されます（週ごとの上限に達した場合を除く）。いまどれくらい使ったかは、gemini.google.com の設定アイコンから使用量上限の項目を開くと確認できます。有料プランで上限に達した場合は、軽量なモデルで会話を続けられます。</p>
+ <p>無料版でどこまで使えるか、上限に当たったときの具体的な対処は「<a href="../articles/gemini-free-limit">Gemini無料版の制限まとめ</a>」で詳しく解説しています。</p>
+
+ <h3>有料にするか迷ったときの目安</h3>
+ <ul>
+ <li>1日に何度も上限の表示が出て、作業が止まる</li>
+ <li>長いPDFや大量の資料をまとめて読み込ませたい</li>
+ <li>Gmailやドキュメントの画面の中で、返信や下書きを作りたい</li>
+ <li>Googleドライブやフォトの容量がそもそも足りていない</li>
+ </ul>
+ <p>どれにも当てはまらないなら、無料版のままで十分です。</p>
+
+ <h2 id="faq">よくある質問</h2>
+ <div class="faq-list">
+ <div class="faq-item">
+ <div class="faq-q">Geminiは無料で使えますか？</div>
+ <div class="faq-a">使えます。Googleアカウントがあれば、ウェブ版（gemini.google.com）とスマホアプリのどちらでも無料で利用できます。ウェブ版は一部の機能ならログインなしでも使えますが、会話履歴の保存などにはログインが必要です。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">GeminiとGmailを連携するにはどうすればいいですか？</div>
+ <div class="faq-a">Gmailと同じGoogleアカウントでGeminiにログインし、Geminiアプリの履歴（アクティビティ）をオンにします。Gmailの「他のGoogleサービスのスマート機能」もオンにしたうえで、入力欄で「@」を打ってGmailを選ぶか、プロンプトに「Gmail」と書いて質問します。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">Googleドキュメントの内容をGeminiに要約させられますか？</div>
+ <div class="faq-a">できます。Workspaceと連携した状態で「ドキュメントで〇〇に関する資料を探して要約して」のように、サービス名とキーワードで指定します。URLを貼るのではなく、サービス名・種類・キーワードで探させるのが公式の推奨です。なお、コメントや画像の内容は読み取れません。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">Geminiの無料版と有料版の違いは何ですか？</div>
+ <div class="faq-a">2026年11月時点で、Google AI Pro（月額2,900円）は使用量の上限が無料版の4倍、一度に扱える量が100万トークン（無料版は3.2万トークン）になり、GmailやGoogleドキュメントの画面内でGeminiを使えるようになります。ストレージも5TBに増えます。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">Geminiの使用量上限はいつリセットされますか？</div>
+ <div class="faq-a">公式ヘルプによると、使用量の上限は5時間ごとにリセットされます。ただし週ごとの上限もあり、そちらに達した場合は週単位での回復を待つ必要があります。現在の使用状況はgemini.google.comの設定から確認できます。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">仕事用（会社）のGoogleアカウントでもGeminiを使えますか？</div>
+ <div class="faq-a">使える場合がありますが、組織の管理者がGeminiやWorkspaceとの連携を有効にしている必要があります。会社のアカウントで連携メニューが表示されない場合は、社内の管理者に設定を確認してください。</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-q">スマホとPCで会話履歴は共有されますか？</div>
+ <div class="faq-a">同じGoogleアカウントでログインし、Geminiアプリの履歴をオンにしていれば、スマホで始めた会話をPCで続けられます。履歴をオフにすると、Workspaceとの連携も使えなくなる点に注意してください。</div>
+ </div>
+ </div>
+
+<h2 id="summary">まとめ</h2>
+
+<div class="chat-box">
+  <img src="/images/author-avatar.png" alt="筆者" class="chat-avatar" width="52" height="52" loading="lazy">
+  <div class="chat-content">
+    <span class="chat-name">小田 健真（AI navi編集長）</span>
+    <div class="chat-bubble bubble-recommend">
+      <p>まずは無料版で、ふだんの調べものとGmail連携の2つを試すのがおすすめです。上限の表示が頻繁に出るようになったら、そのとき初めて有料プランを比べれば遅くありません。</p>
+    </div>
+  </div>
+</div>
+
+ <p>GeminiはGoogleアカウントがあればすぐ使い始められるAIです。スマホはアプリ、PCはブラウザからログインするだけで、質問・要約・写真の質問・音声入力まで無料で試せます。</p>
+
+ <div class="summary-box">
+ <h3>Geminiの使い方のポイント</h3>
+ <ul>
+ <li><strong>始め方</strong>：スマホは公式アプリ、PCは gemini.google.com からGoogleアカウントでログイン</li>
+ <li><strong>基本操作</strong>：文章・ファイル・写真・音声で質問できる。話題が変わったら新しいチャットに</li>
+ <li><strong>Google連携</strong>：履歴をオンにし、「@」でGmail・ドキュメント・ドライブを選んで質問</li>
+ <li><strong>無料と有料の差</strong>：Google AI Pro（月額2,900円）は上限4倍・100万トークン・Gmailやドキュメント内で利用可</li>
+ <li><strong>上限</strong>：5時間ごとにリセット。週ごとの上限もある</li>
+ </ul>
+ </div>
+
+ <div class="cta-box" style="text-align:center;margin:24px 0;padding:20px;background:#f3f0ff;border-radius:8px;">
+ <p style="margin:0 0 12px;font-weight:bold;">会議や打ち合わせの内容をGeminiでまとめたい方へ</p>
+ <a href="https://px.a8.net/svt/ejp?a8mat=4B7QWV+7FX302+5988+5YJRM" rel="nofollow noopener" target="_blank" class="btn btn-primary btn-pulse">Nottaの無料プランで文字起こしを試す →</a>
+ <img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=4B7QWV+7FX302+5988+5YJRM" alt="" style="display:none;">
+ <div style="font-size:0.8em;color:#666;margin-top:8px;">※ 録音をテキスト化し、Geminiでの要約・整理につなげられます / 広告を含みます</div>
+ </div>
+
+ <p style="font-size:0.85em;color:#64748b;line-height:1.8;">参考：<br>
+ <a href="https://gemini.google/subscriptions/?gl=JP&amp;hl=ja" rel="nofollow noopener" target="_blank">Google「Gemini サブスクリプション（料金プラン）」</a><br>
+ <a href="https://support.google.com/gemini/answer/16275805?hl=ja" rel="nofollow noopener" target="_blank">Geminiアプリ ヘルプ「Google AI のサブスクリプション プランに応じた使用量上限」</a><br>
+ <a href="https://support.google.com/gemini/answer/15229592?hl=ja" rel="nofollow noopener" target="_blank">Geminiアプリ ヘルプ「Google Workspace アプリとの接続」</a><br>
+ <a href="https://support.google.com/gemini/answer/13278668?hl=ja" rel="nofollow noopener" target="_blank">Geminiアプリ ヘルプ「Gemini アプリの利用要件」</a><br>
+ ※料金・上限・機能は2026年11月時点の情報です。最新の内容は公式サイトでご確認ください。</p>
+
+ <section class="related-articles" style="background: #f8fafc; border-radius: 12px; padding: 24px; margin: 32px 0;">
+<h2 style="font-size: 1.2em; margin-bottom: 16px;">この記事を読んだ人におすすめ</h2>
+<ul style="list-style: none; padding: 0;">
+<li style="margin-bottom: 12px; padding: 12px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
+<a href="../articles/gemini-review" style="text-decoration: none; color: #1a1a1a; font-weight: bold;">Gemini評判・口コミ【2026年】無料版と有料版を比較</a>
+</li>
+<li style="margin-bottom: 12px; padding: 12px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
+<a href="../articles/gemini-free-limit" style="text-decoration: none; color: #1a1a1a; font-weight: bold;">Gemini無料版の制限まとめ【2026年】回数上限・有料版との違い</a>
+</li>
+<li style="margin-bottom: 12px; padding: 12px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
+<a href="../articles/chatgpt-vs-gemini-vs-claude" style="text-decoration: none; color: #1a1a1a; font-weight: bold;">ChatGPT・Gemini・Claudeを比較｜目的別の使い分け</a>
+</li>
+<li style="margin-bottom: 12px; padding: 12px; background: #eff6ff; border-radius: 8px; border: 2px solid #2563eb;">
+<a href="../articles/notta-howto" style="text-decoration: none; color: #1a1a1a; font-weight: bold;">Nottaの使い方｜録音から文字起こし・要約まで</a>
+<br><span style="font-size:0.85em;color:#555;">会議の内容をAIでまとめたい方はこちら。</span>
+</li>
+</ul>
+</section>
+
+ </div>
+</div>
+
+<footer>
+ <div class="affiliate-disc">本サイトはアフィリエイト広告（A8.net等）を利用しています。記事内のリンクから商品・サービスを購入・申込みいただいた場合、当サイトに報酬が発生することがあります。</div>
+ <div class="footer-nav">
+ <a href="/">ホーム</a>
+ <a href="claude-review">Claudeレビュー</a>
+ <a href="chatgpt-review">ChatGPTレビュー</a>
+ <a href="/privacy-policy">プライバシーポリシー</a>
+ <a href="/contact">お問い合わせ</a>
+ </div>
+ <p>&copy; 2026 AI navi</p>
+</footer>
+
+<script src="../banner.js"></script>
+<script src="/sidebar.js"></script>
+</body>
+</html>

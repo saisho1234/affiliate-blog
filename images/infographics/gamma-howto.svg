@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" width="800" height="470" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+  <rect width="800" height="470" fill="#f8fafc" rx="16"/>
+  <rect x="0" y="0" width="800" height="72" fill="#7c3aed" rx="16"/>
+  <rect x="0" y="56" width="800" height="16" fill="#7c3aed"/>
+  <text x="400" y="45" text-anchor="middle" fill="white" font-size="22" font-weight="bold">Gammaでスライドを作る5ステップ</text>
+
+  <!-- step 1 -->
+  <rect x="28" y="96" width="744" height="56" fill="white" rx="12" stroke="#ede9fe" stroke-width="2"/>
+  <circle cx="62" cy="124" r="20" fill="#7c3aed"/>
+  <text x="62" y="130" text-anchor="middle" fill="white" font-size="17" font-weight="bold">1</text>
+  <text x="96" y="119" fill="#1e293b" font-size="15" font-weight="bold">アカウント登録（Google / メール）</text>
+  <text x="96" y="140" fill="#64748b" font-size="12">登録時に無料クレジットが付与される（補充はなし）</text>
+
+  <!-- step 2 -->
+  <rect x="28" y="162" width="744" height="56" fill="white" rx="12" stroke="#ede9fe" stroke-width="2"/>
+  <circle cx="62" cy="190" r="20" fill="#7c3aed"/>
+  <text x="62" y="196" text-anchor="middle" fill="white" font-size="17" font-weight="bold">2</text>
+  <text x="96" y="185" fill="#1e293b" font-size="15" font-weight="bold">作り方を選ぶ：生成 / 貼り付け / インポート</text>
+  <text x="96" y="206" fill="#64748b" font-size="12">テーマ1行から作る・手元の原稿を整える・既存ファイルを取り込む</text>
+
+  <!-- step 3 -->
+  <rect x="28" y="228" width="744" height="56" fill="white" rx="12" stroke="#ede9fe" stroke-width="2"/>
+  <circle cx="62" cy="256" r="20" fill="#7c3aed"/>
+  <text x="62" y="262" text-anchor="middle" fill="white" font-size="17" font-weight="bold">3</text>
+  <text x="96" y="251" fill="#1e293b" font-size="15" font-weight="bold">アウトライン（目次）を確認して直す</text>
+  <text x="96" y="272" fill="#64748b" font-size="12">ここで順番・枚数・見出しを固めるとやり直しが減る</text>
+
+  <!-- step 4 -->
+  <rect x="28" y="294" width="744" height="56" fill="white" rx="12" stroke="#ede9fe" stroke-width="2"/>
+  <circle cx="62" cy="322" r="20" fill="#7c3aed"/>
+  <text x="62" y="328" text-anchor="middle" fill="white" font-size="17" font-weight="bold">4</text>
+  <text x="96" y="317" fill="#1e293b" font-size="15" font-weight="bold">テーマを選んで生成 → 手動で仕上げ</text>
+  <text x="96" y="338" fill="#64748b" font-size="12">手動の編集はクレジットを消費しない。数字・固有名詞は必ず目で確認</text>
+
+  <!-- step 5 -->
+  <rect x="28" y="360" width="744" height="56" fill="#fff7ed" rx="12" stroke="#f97316" stroke-width="2"/>
+  <circle cx="62" cy="388" r="20" fill="#f97316"/>
+  <text x="62" y="394" text-anchor="middle" fill="white" font-size="17" font-weight="bold">5</text>
+  <text x="96" y="383" fill="#1e293b" font-size="15" font-weight="bold">共有リンク or 書き出し（PDF / PowerPoint / PNG）</text>
+  <text x="96" y="404" fill="#9a3412" font-size="12">無料プランのPDF・PPTXには「Made by Gamma」バッジが付く</text>
+
+  <text x="400" y="448" text-anchor="middle" fill="#94a3b8" font-size="11">AI navi (ai-navi.app) | 2026年11月時点・Gamma公式ヘルプをもとに作成</text>
+</svg>

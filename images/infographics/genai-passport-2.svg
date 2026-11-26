@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+  <rect width="800" height="440" fill="#f8fafc" rx="16"/>
+  <rect x="0" y="0" width="800" height="72" fill="#7c3aed" rx="16"/>
+  <rect x="0" y="56" width="800" height="16" fill="#7c3aed"/>
+  <text x="400" y="44" text-anchor="middle" fill="white" font-size="22" font-weight="bold">生成AIパスポート 勉強の進め方4ステップ</text>
+
+  <!-- step cards -->
+  <rect x="24" y="96" width="176" height="250" fill="white" rx="12" stroke="#ddd6fe" stroke-width="2"/>
+  <circle cx="112" cy="134" r="22" fill="#2563eb"/>
+  <text x="112" y="141" text-anchor="middle" fill="white" font-size="18" font-weight="bold">1</text>
+  <text x="112" y="186" text-anchor="middle" fill="#1e293b" font-size="15" font-weight="bold">シラバス確認</text>
+  <text x="112" y="216" text-anchor="middle" fill="#64748b" font-size="12">公式PDFで</text>
+  <text x="112" y="234" text-anchor="middle" fill="#64748b" font-size="12">5章の範囲と</text>
+  <text x="112" y="252" text-anchor="middle" fill="#64748b" font-size="12">キーワードを把握</text>
+  <text x="112" y="320" text-anchor="middle" fill="#2563eb" font-size="12" font-weight="bold">目安：1日</text>
+
+  <rect x="216" y="96" width="176" height="250" fill="white" rx="12" stroke="#ddd6fe" stroke-width="2"/>
+  <circle cx="304" cy="134" r="22" fill="#7c3aed"/>
+  <text x="304" y="141" text-anchor="middle" fill="white" font-size="18" font-weight="bold">2</text>
+  <text x="304" y="186" text-anchor="middle" fill="#1e293b" font-size="15" font-weight="bold">公式テキスト</text>
+  <text x="304" y="216" text-anchor="middle" fill="#64748b" font-size="12">2027年試験対応版を</text>
+  <text x="304" y="234" text-anchor="middle" fill="#64748b" font-size="12">1周通読。用語は</text>
+  <text x="304" y="252" text-anchor="middle" fill="#64748b" font-size="12">自分の言葉でメモ</text>
+  <text x="304" y="320" text-anchor="middle" fill="#7c3aed" font-size="12" font-weight="bold">目安：1〜2週間</text>
+
+  <rect x="408" y="96" width="176" height="250" fill="white" rx="12" stroke="#ddd6fe" stroke-width="2"/>
+  <circle cx="496" cy="134" r="22" fill="#0891b2"/>
+  <text x="496" y="141" text-anchor="middle" fill="white" font-size="18" font-weight="bold">3</text>
+  <text x="496" y="186" text-anchor="middle" fill="#1e293b" font-size="15" font-weight="bold">AIを実際に触る</text>
+  <text x="496" y="216" text-anchor="middle" fill="#64748b" font-size="12">ChatGPT等で</text>
+  <text x="496" y="234" text-anchor="middle" fill="#64748b" font-size="12">用語の意味や</text>
+  <text x="496" y="252" text-anchor="middle" fill="#64748b" font-size="12">リスクを確かめる</text>
+  <text x="496" y="320" text-anchor="middle" fill="#0891b2" font-size="12" font-weight="bold">2と並行で</text>
+
+  <rect x="600" y="96" width="176" height="250" fill="#f0fdf4" rx="12" stroke="#22c55e" stroke-width="2"/>
+  <circle cx="688" cy="134" r="22" fill="#059669"/>
+  <text x="688" y="141" text-anchor="middle" fill="white" font-size="18" font-weight="bold">4</text>
+  <text x="688" y="186" text-anchor="middle" fill="#1e293b" font-size="15" font-weight="bold">問題演習</text>
+  <text x="688" y="216" text-anchor="middle" fill="#64748b" font-size="12">60分60問を想定し</text>
+  <text x="688" y="234" text-anchor="middle" fill="#64748b" font-size="12">1問1分で解く</text>
+  <text x="688" y="252" text-anchor="middle" fill="#64748b" font-size="12">練習をする</text>
+  <text x="688" y="320" text-anchor="middle" fill="#059669" font-size="12" font-weight="bold">目安：数日〜1週間</text>
+
+  <text x="400" y="382" text-anchor="middle" fill="#475569" font-size="13">※期間はAI navi編集部が提案する一例です（公式の推奨学習時間ではありません）</text>
+  <text x="400" y="420" text-anchor="middle" fill="#94a3b8" font-size="11">AI navi (ai-navi.app) | 2026年11月時点</text>
+</svg>

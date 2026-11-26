@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 410" width="800" height="410" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+  <rect width="800" height="410" fill="#f8fafc" rx="16"/>
+  <rect x="0" y="0" width="800" height="72" fill="#0d9488" rx="16"/>
+  <rect x="0" y="56" width="800" height="16" fill="#0d9488"/>
+  <text x="400" y="45" text-anchor="middle" fill="white" font-size="22" font-weight="bold">ChatGPTで英会話｜1回15分の練習メニュー</text>
+
+  <!-- 4 columns -->
+  <rect x="28" y="96" width="176" height="216" fill="white" rx="12" stroke="#ccfbf1" stroke-width="2"/>
+  <circle cx="116" cy="132" r="22" fill="#0d9488"/>
+  <text x="116" y="139" text-anchor="middle" fill="white" font-size="18" font-weight="bold">1</text>
+  <text x="116" y="184" text-anchor="middle" fill="#1e293b" font-size="15" font-weight="bold">準備 2分</text>
+  <text x="116" y="216" text-anchor="middle" fill="#475569" font-size="12">テキストで役割と</text>
+  <text x="116" y="236" text-anchor="middle" fill="#475569" font-size="12">ルールを先に渡す</text>
+  <text x="116" y="268" text-anchor="middle" fill="#0f766e" font-size="12">例：店員役・</text>
+  <text x="116" y="288" text-anchor="middle" fill="#0f766e" font-size="12">短い英語で返す</text>
+
+  <rect x="216" y="96" width="176" height="216" fill="white" rx="12" stroke="#ccfbf1" stroke-width="2"/>
+  <circle cx="304" cy="132" r="22" fill="#0d9488"/>
+  <text x="304" y="139" text-anchor="middle" fill="white" font-size="18" font-weight="bold">2</text>
+  <text x="304" y="184" text-anchor="middle" fill="#1e293b" font-size="15" font-weight="bold">会話 8分</text>
+  <text x="304" y="216" text-anchor="middle" fill="#475569" font-size="12">音声モードで</text>
+  <text x="304" y="236" text-anchor="middle" fill="#475569" font-size="12">ロールプレイ</text>
+  <text x="304" y="268" text-anchor="middle" fill="#0f766e" font-size="12">詰まったら</text>
+  <text x="304" y="288" text-anchor="middle" fill="#0f766e" font-size="12">「Hint, please.」</text>
+
+  <rect x="404" y="96" width="176" height="216" fill="white" rx="12" stroke="#ccfbf1" stroke-width="2"/>
+  <circle cx="492" cy="132" r="22" fill="#0d9488"/>
+  <text x="492" y="139" text-anchor="middle" fill="white" font-size="18" font-weight="bold">3</text>
+  <text x="492" y="184" text-anchor="middle" fill="#1e293b" font-size="15" font-weight="bold">添削 3分</text>
+  <text x="492" y="216" text-anchor="middle" fill="#475569" font-size="12">会話後の文字起こしを</text>
+  <text x="492" y="236" text-anchor="middle" fill="#475569" font-size="12">テキストで添削依頼</text>
+  <text x="492" y="268" text-anchor="middle" fill="#0f766e" font-size="12">間違い3つだけ</text>
+  <text x="492" y="288" text-anchor="middle" fill="#0f766e" font-size="12">に絞ってもらう</text>
+
+  <rect x="592" y="96" width="180" height="216" fill="#fff7ed" rx="12" stroke="#f97316" stroke-width="2"/>
+  <circle cx="682" cy="132" r="22" fill="#f97316"/>
+  <text x="682" y="139" text-anchor="middle" fill="white" font-size="18" font-weight="bold">4</text>
+  <text x="682" y="184" text-anchor="middle" fill="#1e293b" font-size="15" font-weight="bold">復習 2分</text>
+  <text x="682" y="216" text-anchor="middle" fill="#475569" font-size="12">直した文を</text>
+  <text x="682" y="236" text-anchor="middle" fill="#475569" font-size="12">声に出して3回</text>
+  <text x="682" y="268" text-anchor="middle" fill="#c2410c" font-size="12">言い換え表現を</text>
+  <text x="682" y="288" text-anchor="middle" fill="#c2410c" font-size="12">メモに残す</text>
+
+  <rect x="28" y="328" width="744" height="40" fill="#f0fdfa" rx="10"/>
+  <text x="400" y="354" text-anchor="middle" fill="#134e4a" font-size="13">ポイント：会話中は止めずに話し続け、直すのは最後にまとめて</text>
+
+  <text x="400" y="392" text-anchor="middle" fill="#94a3b8" font-size="11">AI navi (ai-navi.app) | 2026年11月時点</text>
+</svg>
