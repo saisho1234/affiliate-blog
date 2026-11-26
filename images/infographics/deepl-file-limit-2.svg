@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 956" width="800" height="956" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+<rect width="800" height="956" fill="#f8fafc" rx="16"/>
+<rect x="0" y="0" width="800" height="84" fill="#2563eb" rx="16"/><rect x="0" y="68" width="800" height="16" fill="#2563eb"/>
+<text x="400" y="52" text-anchor="middle" fill="white" font-size="32" font-weight="bold">ファイル上限を回避する5つの方法</text>
+<rect x="28" y="108" width="744" height="146" fill="white" rx="12" stroke="#dbeafe" stroke-width="2"/>
+<circle cx="75" cy="181" r="28" fill="#2563eb"/>
+<text x="75" y="191" text-anchor="middle" fill="white" font-size="28" font-weight="bold">1</text>
+<text x="122" y="160" fill="#1e293b" font-size="28" font-weight="bold">PDF→Wordに変換してコピペ翻訳</text>
+<text x="122" y="194" fill="#475569" font-size="24">〇 DeepLの品質・ファイル枠を消費しない</text>
+<text x="122" y="228" fill="#475569" font-size="24">✕ 表・図は再現されない</text>
+<rect x="28" y="268" width="744" height="146" fill="white" rx="12" stroke="#dbeafe" stroke-width="2"/>
+<circle cx="75" cy="341" r="28" fill="#2563eb"/>
+<text x="75" y="351" text-anchor="middle" fill="white" font-size="28" font-weight="bold">2</text>
+<text x="122" y="320" fill="#1e293b" font-size="28" font-weight="bold">ファイルを分割して月をまたぐ</text>
+<text x="122" y="354" fill="#475569" font-size="24">〇 レイアウト維持をフル活用</text>
+<text x="122" y="388" fill="#475569" font-size="24">✕ 急ぎの翻訳には不向き</text>
+<rect x="28" y="428" width="744" height="146" fill="white" rx="12" stroke="#dbeafe" stroke-width="2"/>
+<circle cx="75" cy="501" r="28" fill="#2563eb"/>
+<text x="75" y="511" text-anchor="middle" fill="white" font-size="28" font-weight="bold">3</text>
+<text x="122" y="480" fill="#1e293b" font-size="28" font-weight="bold">DeepL API Free（月50万文字）</text>
+<text x="122" y="514" fill="#475569" font-size="24">〇 ファイル枠と別カウント</text>
+<text x="122" y="548" fill="#475569" font-size="24">✕ プログラミングの基礎知識が必要</text>
+<rect x="28" y="588" width="744" height="146" fill="white" rx="12" stroke="#dbeafe" stroke-width="2"/>
+<circle cx="75" cy="661" r="28" fill="#2563eb"/>
+<text x="75" y="671" text-anchor="middle" fill="white" font-size="28" font-weight="bold">4</text>
+<text x="122" y="640" fill="#1e293b" font-size="28" font-weight="bold">ChatGPTにファイルを渡す</text>
+<text x="122" y="674" fill="#475569" font-size="24">〇 文脈を理解した自然な翻訳</text>
+<text x="122" y="708" fill="#475569" font-size="24">✕ 長文は出力が途中で切れることも</text>
+<rect x="28" y="748" width="744" height="146" fill="white" rx="12" stroke="#dbeafe" stroke-width="2"/>
+<circle cx="75" cy="821" r="28" fill="#2563eb"/>
+<text x="75" y="831" text-anchor="middle" fill="white" font-size="28" font-weight="bold">5</text>
+<text x="122" y="800" fill="#1e293b" font-size="28" font-weight="bold">Google翻訳のドキュメント翻訳</text>
+<text x="122" y="834" fill="#475569" font-size="24">〇 回数制限なし・無料</text>
+<text x="122" y="868" fill="#475569" font-size="24">✕ 品質はDeepLに劣ることが多い</text>
+<text x="400" y="932" text-anchor="middle" fill="#94a3b8" font-size="24">AI navi (ai-navi.app)｜記事本文の内容をもとに作成</text>
+</svg>

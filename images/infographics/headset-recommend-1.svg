@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 568" width="800" height="568" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+<rect width="800" height="568" fill="#f8fafc" rx="16"/>
+<rect x="0" y="0" width="800" height="84" fill="#0891b2" rx="16"/><rect x="0" y="68" width="800" height="16" fill="#0891b2"/>
+<text x="400" y="52" text-anchor="middle" fill="white" font-size="32" font-weight="bold">ヘッドセット選び 3つの重要ポイント</text>
+<rect x="28" y="108" width="744" height="146" fill="white" rx="12" stroke="#cffafe" stroke-width="2"/>
+<circle cx="75" cy="181" r="28" fill="#0891b2"/>
+<text x="75" y="191" text-anchor="middle" fill="white" font-size="28" font-weight="bold">1</text>
+<text x="122" y="160" fill="#1e293b" font-size="28" font-weight="bold">接続方式</text>
+<text x="122" y="194" fill="#475569" font-size="24">USB有線は遅延ゼロで最も安定。</text>
+<text x="122" y="228" fill="#475569" font-size="24">おすすめはUSBドングル付きBluetooth</text>
+<rect x="28" y="268" width="744" height="112" fill="white" rx="12" stroke="#cffafe" stroke-width="2"/>
+<circle cx="75" cy="324" r="28" fill="#0891b2"/>
+<text x="75" y="334" text-anchor="middle" fill="white" font-size="28" font-weight="bold">2</text>
+<text x="122" y="320" fill="#1e293b" font-size="28" font-weight="bold">ノイズキャンセリング</text>
+<text x="122" y="354" fill="#475569" font-size="24">Web会議の品質を上げるなら「マイク側NC」を最優先</text>
+<rect x="28" y="394" width="744" height="112" fill="white" rx="12" stroke="#cffafe" stroke-width="2"/>
+<circle cx="75" cy="450" r="28" fill="#0891b2"/>
+<text x="75" y="460" text-anchor="middle" fill="white" font-size="28" font-weight="bold">3</text>
+<text x="122" y="446" fill="#1e293b" font-size="28" font-weight="bold">装着感</text>
+<text x="122" y="480" fill="#475569" font-size="24">1日3時間以上Web会議があるならオーバーイヤータイプ</text>
+<text x="400" y="544" text-anchor="middle" fill="#94a3b8" font-size="24">AI navi (ai-navi.app)｜記事本文の内容をもとに作成</text>
+</svg>

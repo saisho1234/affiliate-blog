@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 602" width="800" height="602" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+<rect width="800" height="602" fill="#f8fafc" rx="16"/>
+<rect x="0" y="0" width="800" height="84" fill="#2563eb" rx="16"/><rect x="0" y="68" width="800" height="16" fill="#2563eb"/>
+<text x="400" y="52" text-anchor="middle" fill="white" font-size="32" font-weight="bold">「使っていないのに上限」の原因と対処</text>
+<rect x="28" y="108" width="744" height="146" fill="white" rx="12" stroke="#dbeafe" stroke-width="2"/>
+<circle cx="75" cy="181" r="28" fill="#2563eb"/>
+<text x="75" y="191" text-anchor="middle" fill="white" font-size="28" font-weight="bold">1</text>
+<text x="122" y="160" fill="#1e293b" font-size="28" font-weight="bold">共有IPアドレスによる誤判定</text>
+<text x="122" y="194" fill="#475569" font-size="24">学校・図書館・カフェのWi-Fiなど →</text>
+<text x="122" y="228" fill="#475569" font-size="24">モバイル回線や別のWi-Fiに切り替える</text>
+<rect x="28" y="268" width="744" height="146" fill="white" rx="12" stroke="#dbeafe" stroke-width="2"/>
+<circle cx="75" cy="341" r="28" fill="#2563eb"/>
+<text x="75" y="351" text-anchor="middle" fill="white" font-size="28" font-weight="bold">2</text>
+<text x="122" y="320" fill="#1e293b" font-size="28" font-weight="bold">拡張機能が自動翻訳していた</text>
+<text x="122" y="354" fill="#475569" font-size="24">ページを開くたびに翻訳リクエスト →</text>
+<text x="122" y="388" fill="#475569" font-size="24">自動翻訳をオフ／拡張機能を一時無効化</text>
+<rect x="28" y="428" width="744" height="112" fill="white" rx="12" stroke="#dbeafe" stroke-width="2"/>
+<circle cx="75" cy="484" r="28" fill="#2563eb"/>
+<text x="75" y="494" text-anchor="middle" fill="white" font-size="28" font-weight="bold">3</text>
+<text x="122" y="480" fill="#1e293b" font-size="28" font-weight="bold">短時間の連続翻訳</text>
+<text x="122" y="514" fill="#475569" font-size="24">ボット対策の自動判定 → 数分〜数十分待てば自動解除</text>
+<text x="400" y="578" text-anchor="middle" fill="#94a3b8" font-size="24">AI navi (ai-navi.app)｜記事本文の内容をもとに作成</text>
+</svg>

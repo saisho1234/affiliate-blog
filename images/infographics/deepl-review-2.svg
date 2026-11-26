@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 552" width="800" height="552" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+<rect width="800" height="552" fill="#f8fafc" rx="16"/>
+<rect x="0" y="0" width="800" height="84" fill="#2563eb" rx="16"/><rect x="0" y="68" width="800" height="16" fill="#2563eb"/>
+<text x="400" y="52" text-anchor="middle" fill="white" font-size="32" font-weight="bold">無料版とPro版 データの扱いの違い</text>
+<rect x="28" y="108" width="360" height="306" fill="white" rx="12" stroke="#dc2626" stroke-width="2"/>
+<rect x="28" y="108" width="360" height="60" fill="#dc2626" rx="12"/><rect x="28" y="152" width="360" height="16" fill="#dc2626"/>
+<text x="208" y="148" text-anchor="middle" fill="white" font-size="26" font-weight="bold">無料版</text>
+<circle cx="54" cy="200" r="6" fill="#dc2626"/>
+<text x="70" y="208" fill="#1e293b" font-size="24">入力テキストが</text>
+<text x="70" y="242" fill="#1e293b" font-size="24">翻訳品質の向上に使</text>
+<text x="70" y="276" fill="#1e293b" font-size="24">われる場合がある</text>
+<circle cx="54" cy="314" r="6" fill="#dc2626"/>
+<text x="70" y="322" fill="#1e293b" font-size="24">契約書・顧客リスト・個人</text>
+<text x="70" y="356" fill="#1e293b" font-size="24">情報は入力を避ける</text>
+<rect x="412" y="108" width="360" height="306" fill="white" rx="12" stroke="#2563eb" stroke-width="2"/>
+<rect x="412" y="108" width="360" height="60" fill="#2563eb" rx="12"/><rect x="412" y="152" width="360" height="16" fill="#2563eb"/>
+<text x="592" y="148" text-anchor="middle" fill="white" font-size="26" font-weight="bold">Pro版</text>
+<circle cx="438" cy="200" r="6" fill="#2563eb"/>
+<text x="454" y="208" fill="#1e293b" font-size="24">翻訳完了時に</text>
+<text x="454" y="242" fill="#1e293b" font-size="24">テキストを即時削除</text>
+<circle cx="438" cy="280" r="6" fill="#2563eb"/>
+<text x="454" y="288" fill="#1e293b" font-size="24">TLSで暗号化して送受信</text>
+<circle cx="438" cy="326" r="6" fill="#2563eb"/>
+<text x="454" y="334" fill="#1e293b" font-size="24">企業向けプランは</text>
+<text x="454" y="368" fill="#1e293b" font-size="24">SSOに対応</text>
+<rect x="28" y="430" width="744" height="58" fill="#fff7ed" rx="12" stroke="#f97316" stroke-width="2"/>
+<text x="400" y="466" text-anchor="middle" fill="#9a3412" font-size="24" font-weight="bold">個人の調べもの・学習なら無料版、仕事で使うならPro版</text>
+<text x="400" y="528" text-anchor="middle" fill="#94a3b8" font-size="24">AI navi (ai-navi.app)｜記事本文の内容をもとに作成</text>
+</svg>

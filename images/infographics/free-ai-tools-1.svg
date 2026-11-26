@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 820" width="800" height="820" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+<rect width="800" height="820" fill="#f8fafc" rx="16"/>
+<rect x="0" y="0" width="800" height="84" fill="#059669" rx="16"/><rect x="0" y="68" width="800" height="16" fill="#059669"/>
+<text x="400" y="52" text-anchor="middle" fill="white" font-size="32" font-weight="bold">無料AIツール選び 5つのチェックポイント</text>
+<rect x="28" y="108" width="744" height="112" fill="white" rx="12" stroke="#d1fae5" stroke-width="2"/>
+<circle cx="75" cy="164" r="28" fill="#059669"/>
+<text x="75" y="174" text-anchor="middle" fill="white" font-size="28" font-weight="bold">✓</text>
+<text x="122" y="160" fill="#1e293b" font-size="28" font-weight="bold">日本語対応度</text>
+<text x="122" y="194" fill="#475569" font-size="24">日本語の入出力精度。海外ツールは英語のみの場合も</text>
+<rect x="28" y="234" width="744" height="112" fill="white" rx="12" stroke="#d1fae5" stroke-width="2"/>
+<circle cx="75" cy="290" r="28" fill="#059669"/>
+<text x="75" y="300" text-anchor="middle" fill="white" font-size="28" font-weight="bold">✓</text>
+<text x="122" y="286" fill="#1e293b" font-size="28" font-weight="bold">無料枠の上限</text>
+<text x="122" y="320" fill="#475569" font-size="24">回数・トークン・月間制限を事前に確認</text>
+<rect x="28" y="360" width="744" height="146" fill="white" rx="12" stroke="#d1fae5" stroke-width="2"/>
+<circle cx="75" cy="433" r="28" fill="#059669"/>
+<text x="75" y="443" text-anchor="middle" fill="white" font-size="28" font-weight="bold">✓</text>
+<text x="122" y="412" fill="#1e293b" font-size="28" font-weight="bold">データ学習ポリシー</text>
+<text x="122" y="446" fill="#475569" font-size="24">入力がAIの学習に使われるか。</text>
+<text x="122" y="480" fill="#475569" font-size="24">機密情報を扱うなら特に重要</text>
+<rect x="28" y="520" width="744" height="112" fill="white" rx="12" stroke="#d1fae5" stroke-width="2"/>
+<circle cx="75" cy="576" r="28" fill="#059669"/>
+<text x="75" y="586" text-anchor="middle" fill="white" font-size="28" font-weight="bold">✓</text>
+<text x="122" y="572" fill="#1e293b" font-size="28" font-weight="bold">商用利用の可否</text>
+<text x="122" y="606" fill="#475569" font-size="24">生成物を仕事で使えるか。利用規約はツールごとに異なる</text>
+<rect x="28" y="646" width="744" height="112" fill="white" rx="12" stroke="#d1fae5" stroke-width="2"/>
+<circle cx="75" cy="702" r="28" fill="#059669"/>
+<text x="75" y="712" text-anchor="middle" fill="white" font-size="28" font-weight="bold">✓</text>
+<text x="122" y="698" fill="#1e293b" font-size="28" font-weight="bold">登録の手軽さ</text>
+<text x="122" y="732" fill="#475569" font-size="24">登録不要か、Googleアカウントで即ログインできるか</text>
+<text x="400" y="796" text-anchor="middle" fill="#94a3b8" font-size="24">AI navi (ai-navi.app)｜記事本文の内容をもとに作成</text>
+</svg>

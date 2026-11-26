@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 636" width="800" height="636" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+<rect width="800" height="636" fill="#f8fafc" rx="16"/>
+<rect x="0" y="0" width="800" height="84" fill="#059669" rx="16"/><rect x="0" y="68" width="800" height="16" fill="#059669"/>
+<text x="400" y="52" text-anchor="middle" fill="white" font-size="32" font-weight="bold">無料AIを失敗せずに選ぶ3ステップ</text>
+<rect x="28" y="108" width="744" height="146" fill="white" rx="12" stroke="#d1fae5" stroke-width="2"/>
+<circle cx="75" cy="181" r="28" fill="#059669"/>
+<text x="75" y="191" text-anchor="middle" fill="white" font-size="28" font-weight="bold">1</text>
+<text x="122" y="160" fill="#1e293b" font-size="28" font-weight="bold">やりたいことを1つに絞る</text>
+<text x="122" y="194" fill="#475569" font-size="24">メールの下書き・資料の要約・画像づくりなど、</text>
+<text x="122" y="228" fill="#475569" font-size="24">毎週発生する作業を1つ選ぶ</text>
+<rect x="28" y="268" width="744" height="146" fill="white" rx="12" stroke="#d1fae5" stroke-width="2"/>
+<circle cx="75" cy="341" r="28" fill="#059669"/>
+<text x="75" y="351" text-anchor="middle" fill="white" font-size="28" font-weight="bold">2</text>
+<text x="122" y="320" fill="#1e293b" font-size="28" font-weight="bold">同じ指示を2つのAIで比べる</text>
+<text x="122" y="354" fill="#475569" font-size="24">読みやすさ・正確さ・修正のしやすさを</text>
+<text x="122" y="388" fill="#475569" font-size="24">自分の作業で見比べる</text>
+<rect x="28" y="428" width="744" height="146" fill="white" rx="12" stroke="#d1fae5" stroke-width="2"/>
+<circle cx="75" cy="501" r="28" fill="#059669"/>
+<text x="75" y="511" text-anchor="middle" fill="white" font-size="28" font-weight="bold">3</text>
+<text x="122" y="480" fill="#1e293b" font-size="28" font-weight="bold">入力してよい情報を決める</text>
+<text x="122" y="514" fill="#475569" font-size="24">氏名・住所・顧客情報・社外秘は入れない。</text>
+<text x="122" y="548" fill="#475569" font-size="24">学習オプションも確認</text>
+<text x="400" y="612" text-anchor="middle" fill="#94a3b8" font-size="24">AI navi (ai-navi.app)｜記事本文の内容をもとに作成</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 552" width="800" height="552" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+<rect width="800" height="552" fill="#f8fafc" rx="16"/>
+<rect x="0" y="0" width="800" height="84" fill="#2563eb" rx="16"/><rect x="0" y="68" width="800" height="16" fill="#2563eb"/>
+<text x="400" y="52" text-anchor="middle" fill="white" font-size="32" font-weight="bold">「解約」と「退会」の違い</text>
+<rect x="28" y="108" width="360" height="306" fill="white" rx="12" stroke="#2563eb" stroke-width="2"/>
+<rect x="28" y="108" width="360" height="60" fill="#2563eb" rx="12"/><rect x="28" y="152" width="360" height="16" fill="#2563eb"/>
+<text x="208" y="148" text-anchor="middle" fill="white" font-size="26" font-weight="bold">解約（登録の解除）</text>
+<circle cx="54" cy="200" r="6" fill="#2563eb"/>
+<text x="70" y="208" fill="#1e293b" font-size="24">有料プランの更新を止める</text>
+<circle cx="54" cy="246" r="6" fill="#2563eb"/>
+<text x="70" y="254" fill="#1e293b" font-size="24">アカウントは残る</text>
+<circle cx="54" cy="292" r="6" fill="#2563eb"/>
+<text x="70" y="300" fill="#1e293b" font-size="24">契約期間が終わると</text>
+<text x="70" y="334" fill="#1e293b" font-size="24">無料版に</text>
+<rect x="412" y="108" width="360" height="306" fill="white" rx="12" stroke="#dc2626" stroke-width="2"/>
+<rect x="412" y="108" width="360" height="60" fill="#dc2626" rx="12"/><rect x="412" y="152" width="360" height="16" fill="#dc2626"/>
+<text x="592" y="148" text-anchor="middle" fill="white" font-size="26" font-weight="bold">退会（アカウント削除）</text>
+<circle cx="438" cy="200" r="6" fill="#dc2626"/>
+<text x="454" y="208" fill="#1e293b" font-size="24">アカウント</text>
+<text x="454" y="242" fill="#1e293b" font-size="24">そのものをなくす</text>
+<circle cx="438" cy="280" r="6" fill="#dc2626"/>
+<text x="454" y="288" fill="#1e293b" font-size="24">有料契約は先に解約が必要</text>
+<circle cx="438" cy="326" r="6" fill="#dc2626"/>
+<text x="454" y="334" fill="#1e293b" font-size="24">設定や用語集は</text>
+<text x="454" y="368" fill="#1e293b" font-size="24">使えなくなる</text>
+<rect x="28" y="430" width="744" height="58" fill="#fff7ed" rx="12" stroke="#f97316" stroke-width="2"/>
+<text x="400" y="466" text-anchor="middle" fill="#9a3412" font-size="24" font-weight="bold">アプリの削除・ログアウトはどちらにもならない</text>
+<text x="400" y="528" text-anchor="middle" fill="#94a3b8" font-size="24">AI navi (ai-navi.app)｜記事本文の内容をもとに作成</text>
+</svg>

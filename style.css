@@ -1691,3 +1691,190 @@ header nav > a[href="/"][style] { font-family: var(--serif) !important; color: v
 /* 定義のなかった副ボタン */
 a.btn-secondary, .btn.btn-secondary { background: #fff; color: var(--text) !important; border: 1px solid var(--text); }
 a.btn-secondary:hover { background: var(--paper); }
+
+/* =====================================================================
+   読みやすさ改修（2026-11-26）
+   「文字が多すぎて見づらい」への対応。上位の日本語ブログ（SWELL系・比較メディア）
+   を参考に、見出しの帯・マーカー・囲み・余白で「拾い読み」できる紙面にする。
+   色は 藍(--primary)・朱(--accent)・紙(--paper)・マーカー黄 の4色に限定。
+   ===================================================================== */
+:root {
+  --marker: #fff1a8;
+  --tint: #eef3f7;
+  --box-radius: 8px;
+  --sans: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic Medium", "Yu Gothic", Meiryo, sans-serif;
+}
+
+/* --- 横はみ出しゼロ --- */
+html, body { overflow-x: hidden; }
+main, article { overflow-wrap: anywhere; }
+
+/* --- 本文: 文字サイズ・行間・段落間 --- */
+main p, main li, article p, article li, .article-wrap p, .article-wrap li { font-size: 1rem; line-height: 1.95; letter-spacing: .03em; color: #333; }
+main p, article p, .article-wrap p { margin: 0 0 1.7em; }
+main li, article li, .article-wrap li { margin-bottom: .5em; }
+@media (min-width: 900px) {
+  main p, main li, article p, article li, .article-wrap p, .article-wrap li { font-size: 1.0625rem; line-height: 2; }
+}
+@media (max-width: 768px) {
+  main.container, main.article-container, main.article-main, main.main-content, main:not([class]),
+  .article-wrap, .container { padding-left: 16px !important; padding-right: 16px !important; }
+}
+
+/* --- 見出し: 記事本文の直下にある h2/h3 だけが対象（囲みの中の見出しは除外） --- */
+:is(.article-body, .article-container, .content-section, .article-content, main, article, main > section:not([style]):not([class]), article > section:not([style]):not([class]), main section[id]:not([style]):not([class])) > h2:not([style]):not(.section-title):not(.top3-title) {
+  font-family: var(--sans); font-weight: 700; font-size: 1.3rem; line-height: 1.55; letter-spacing: .02em;
+  background: var(--primary); color: #fff; border: 0; border-radius: 6px;
+  padding: 14px 18px; margin: 80px 0 28px;
+}
+:is(.article-body, .article-container, .content-section, .article-content, main, article, main > section:not([style]):not([class]), article > section:not([style]):not([class]), main section[id]:not([style]):not([class])) > h2:not([style]):not(.section-title):not(.top3-title)::before { display: none; }
+:is(.article-body, .article-container, .content-section, .article-content, main, article, main > section:not([style]):not([class]), article > section:not([style]):not([class]), main section[id]:not([style]):not([class])) > h3:not([style]):not(.faq-question) {
+  font-family: var(--sans); font-weight: 700; font-size: 1.15rem; line-height: 1.6;
+  padding: 4px 0 8px 14px; margin: 48px 0 20px;
+  border-left: 5px solid var(--accent); border-bottom: 1px solid var(--border);
+}
+:is(.article-body, .article-container, .content-section, .article-content, main, article) > h4:not([style]) {
+  font-size: 1.05rem; font-weight: 700; margin: 32px 0 12px; padding-left: 1.1em; position: relative;
+}
+:is(.article-body, .article-container, .content-section, .article-content, main, article) > h4:not([style])::before {
+  content: ""; position: absolute; left: 0; top: .55em; width: .55em; height: .55em; border-radius: 50%; background: var(--accent);
+}
+@media (max-width: 768px) {
+  :is(.article-body, .article-container, .content-section, .article-content, main, article, main > section:not([style]):not([class]), article > section:not([style]):not([class]), main section[id]:not([style]):not([class])) > h2:not([style]):not(.section-title):not(.top3-title) {
+    font-size: 1.18rem; padding: 12px 14px; margin-top: 64px;
+  }
+  :is(.article-body, .article-container, .content-section, .article-content, main, article, main > section:not([style]):not([class]), article > section:not([style]):not([class]), main section[id]:not([style]):not([class])) > h3:not([style]):not(.faq-question) { font-size: 1.08rem; margin-top: 40px; }
+}
+/* 記事タイトルはゴシックで力強く */
+.article-header h1, main > h1, article > h1 { font-family: var(--sans); font-weight: 800; line-height: 1.5; letter-spacing: .02em; }
+
+/* --- 強調: 黄色マーカー（濃い帯の中・見出し・表・ボタンでは付けない） --- */
+:is(main, article, .article-wrap) :is(p, li, dd) > :is(strong, b) {
+  background: linear-gradient(transparent 58%, var(--marker) 58%);
+  padding: 0 2px; font-weight: 700; color: inherit;
+}
+:is(.cta-block, .cta-fullwidth, [style*="color:#fff"], [style*="color: #fff"], [style*="color:white"], [style*="color: white"], th, a) :is(strong, b) { background: none !important; padding: 0; }
+.cta-block[style*="#f0f9ff"] :is(p, li) > strong, .cta-block[style*="#fff8e1"] :is(p, li) > strong, .cta-block[style*="#f0f7ff"] :is(p, li) > strong { background: linear-gradient(transparent 58%, var(--marker) 58%) !important; }
+
+/* --- 本文直下のリスト: 枠で囲んで拾い読みしやすく --- */
+:is(.article-body, .article-container, .content-section, .article-content, main > section:not([style]):not([class]), article > section:not([style]):not([class]), main section[id]:not([style]):not([class])) > :is(ul, ol):not([class]):not([style]) {
+  background: #fff; border: 1px solid var(--border); border-radius: var(--box-radius);
+  padding: 18px 20px 14px 20px; margin: 0 0 1.9em; list-style: none;
+}
+:is(.article-body, .article-container, .content-section, .article-content, main > section:not([style]):not([class]), article > section:not([style]):not([class]), main section[id]:not([style]):not([class])) > ul:not([class]):not([style]) > li {
+  position: relative; padding-left: 1.6em;
+}
+:is(.article-body, .article-container, .content-section, .article-content, main > section:not([style]):not([class]), article > section:not([style]):not([class]), main section[id]:not([style]):not([class])) > ul:not([class]):not([style]) > li::before {
+  content: ""; position: absolute; left: .25em; top: .45em; width: .4em; height: .75em;
+  border-right: 3px solid var(--accent); border-bottom: 3px solid var(--accent); transform: rotate(45deg);
+}
+:is(.article-body, .article-container, .content-section, .article-content, main > section:not([style]):not([class]), article > section:not([style]):not([class]), main section[id]:not([style]):not([class])) > ol:not([class]):not([style]) { counter-reset: li; }
+:is(.article-body, .article-container, .content-section, .article-content, main > section:not([style]):not([class]), article > section:not([style]):not([class]), main section[id]:not([style]):not([class])) > ol:not([class]):not([style]) > li {
+  counter-increment: li; position: relative; padding-left: 2.1em;
+}
+:is(.article-body, .article-container, .content-section, .article-content, main > section:not([style]):not([class]), article > section:not([style]):not([class]), main section[id]:not([style]):not([class])) > ol:not([class]):not([style]) > li::before {
+  content: counter(li); position: absolute; left: 0; top: .3em; width: 1.6em; height: 1.6em; line-height: 1.6em;
+  border-radius: 50%; background: var(--primary); color: #fff; font-size: .85em; font-weight: 700; text-align: center; letter-spacing: 0;
+}
+:is(.summary-box, .point-box, .highlight-box, .experience-box, .warn-box, .chat-bubble) li { margin-bottom: .3em; }
+
+/* --- 表: 藍のヘッダ・縞模様・スマホは横スクロール --- */
+main table, article table, .article-wrap table { font-size: .93rem; line-height: 1.7; border: 1px solid var(--border); background: #fff; margin: 8px 0 28px; }
+body thead th, body table tr:first-child > th:not(:only-child) {
+  background: var(--primary) !important; color: #fff !important; border-bottom: 0; border-right: 1px solid rgba(255,255,255,.18);
+}
+body tbody tr:not(:first-child) > th { background: var(--tint) !important; color: var(--text) !important; border-bottom: 1px solid var(--border); }
+main td, article td, .article-wrap td { border-bottom: 1px solid var(--border); border-right: 1px solid #ecebe4; padding: 12px 14px; }
+main tbody tr:nth-child(even) td, article tbody tr:nth-child(even) td, .article-wrap tbody tr:nth-child(even) td { background: #f8f8f4; }
+main tbody tr:hover td, article tbody tr:hover td, .article-wrap tbody tr:hover td { background: #f3f1e8; }
+.table-wrapper, .compare-table-wrap, .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 28px; }
+.table-wrapper table, .compare-table-wrap table, .table-wrap table { margin-bottom: 8px; }
+@media (max-width: 768px) {
+  main table, article table, .article-wrap table { font-size: .86rem; }
+  main th, main td, article th, article td, .article-wrap th, .article-wrap td { min-width: 6.5em; padding: 10px; }
+  main th:first-child, article th:first-child, main td:first-child, article td:first-child { min-width: 5.5em; }
+}
+
+/* --- 囲みの統一: 要点＝藍の上線 / 体験談＝朱の左線 / 注意＝黄 --- */
+.summary-box, .summary-3lines, .point-box, .highlight-box {
+  background: #fff !important; border: 1px solid var(--border) !important; border-top: 4px solid var(--primary) !important;
+  border-radius: var(--box-radius) !important; padding: 20px 22px !important; margin: 28px 0 36px !important;
+}
+.summary-box > :is(h2, h3, h4):first-child {
+  font-family: var(--sans) !important; font-size: 1.05rem !important; color: var(--primary) !important;
+  background: none !important; border: 0 !important; padding: 0 !important; margin: 0 0 10px !important;
+}
+.summary-box > :is(h2, h3, h4):first-child::before { display: none; }
+.summary-box p:last-child, .point-box p:last-child, .highlight-box p:last-child, .experience-box p:last-child { margin-bottom: 0; }
+.experience-box, .author-experience {
+  background: var(--paper) !important; border: 0 !important; border-left: 4px solid var(--accent) !important;
+  border-radius: 0 var(--box-radius) var(--box-radius) 0 !important; padding: 20px 22px !important; margin: 36px 0 !important;
+}
+.experience-box > h3 {
+  font-family: var(--sans) !important; font-size: 1rem !important; color: var(--accent) !important; margin: 0 0 8px !important;
+  padding: 0 !important; border: 0 !important; background: none !important;
+}
+.experience-box .note { font-size: .82rem; color: var(--text-light); }
+.warn-box { border-radius: var(--box-radius) !important; padding: 18px 20px; margin: 28px 0; }
+
+/* --- 目次 --- */
+.article-toc, .toc { background: #fff !important; border: 1px solid var(--border) !important; border-radius: var(--box-radius) !important; padding: 20px 22px !important; margin: 28px 0 40px !important; }
+.article-toc h2, .toc h2 { font-family: var(--sans) !important; font-size: 1rem !important; margin: 0 0 8px !important; padding: 0 0 8px !important; border-bottom: 1px solid var(--border) !important; background: none !important; color: var(--text) !important; }
+.article-toc li, .toc li { font-size: .95rem !important; margin-bottom: .25em !important; line-height: 1.7 !important; }
+.article-toc a, .toc a { color: var(--text) !important; text-decoration: none; }
+.article-toc a:hover, .toc a:hover { color: var(--accent) !important; text-decoration: underline; }
+
+/* --- 吹き出し --- */
+.chat-box { margin: 28px 0 32px; gap: 12px; }
+.chat-box .chat-bubble { background: #fff !important; border: 1px solid var(--border) !important; border-radius: 12px !important; padding: 14px 18px !important; line-height: 1.85; }
+.chat-box .chat-bubble.bubble-point { border-color: #b9cddd !important; background: var(--tint) !important; }
+.chat-box .chat-bubble.bubble-recommend { border-color: #e9c3b5 !important; background: #fdf4f0 !important; }
+.chat-box .chat-bubble.bubble-warn { border-color: #ecd9a0 !important; background: #fffbea !important; }
+.chat-box .chat-name { font-size: .75rem; color: var(--text-light); }
+
+/* --- FAQ: Q/Aバッジで区切る --- */
+.faq-list { gap: 14px; }
+.faq-item { background: #fff !important; border: 1px solid var(--border) !important; border-radius: var(--box-radius) !important; overflow: hidden; margin-bottom: 14px; }
+.faq-q { display: block !important; position: relative; background: var(--tint); padding: 14px 40px 14px 50px !important; line-height: 1.7; }
+.faq-q::before { content: "Q"; position: absolute; left: 14px; top: 14px; width: 1.7em; height: 1.7em; line-height: 1.7em; text-align: center; border-radius: 50%; background: var(--primary); color: #fff; font-weight: 700; font-size: .9em; }
+.faq-q::after { position: absolute; right: 14px; top: 14px; }
+.faq-a { display: block !important; position: relative; padding: 14px 16px 16px 50px !important; color: #333; line-height: 1.9; font-size: .96rem; }
+.faq-a::before { content: "A"; position: absolute; left: 14px; top: 16px; width: 1.7em; height: 1.7em; line-height: 1.7em; text-align: center; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: .9em; }
+h3.faq-question { font-family: var(--sans) !important; font-size: 1rem !important; background: var(--tint) !important; padding: 14px 16px !important; margin: 0 !important; border: 0 !important; color: var(--primary) !important; }
+.faq-answer { padding: 14px 16px 16px; line-height: 1.9; }
+
+/* --- CTA・関連記事 --- */
+.cta-box { background: #fff; border: 2px solid var(--accent); border-radius: var(--box-radius); padding: 22px 20px; margin: 36px 0; text-align: center; }
+.cta-box .cta-lead { font-weight: 700; margin-bottom: 14px; }
+.cta-box .cta-btn { display: inline-block; background: var(--accent); color: #fff !important; padding: 14px 28px; border-radius: 999px; font-weight: 700; text-decoration: none; }
+.cta-block, .cta-fullwidth, .cta-block-orange { border-radius: var(--box-radius) !important; }
+.btn-primary, .cta-block .cta-btn, .cta-fullwidth .cta-btn, a.af-link-btn { border-radius: 999px !important; }
+.related-articles, .related-box, .related-tools { background: #fff !important; border: 1px solid var(--border) !important; border-radius: var(--box-radius) !important; }
+.related-articles :is(h2, h3), .related-box :is(h2, h3), .related-tools :is(h2, h3) { font-family: var(--sans) !important; font-size: 1.05rem !important; background: none !important; color: var(--text) !important; padding: 0 0 8px !important; border: 0 !important; border-bottom: 2px solid var(--primary) !important; display: inline-block; }
+.related-articles :is(h2, h3)::before, .related-box :is(h2, h3)::before, .related-tools :is(h2, h3)::before { display: none; }
+.related-articles li, .related-box li { padding: 10px 0 10px 1.2em !important; margin: 0 !important; border-bottom: 1px dashed var(--border); position: relative; font-size: .96rem; line-height: 1.6; }
+.related-articles li::before, .related-box li::before { content: "›"; position: absolute; left: .2em; top: 9px; color: var(--accent); font-weight: 700; }
+.related-articles li:last-child, .related-box li:last-child { border-bottom: 0; }
+.related-articles ul, .related-box ul { gap: 0 !important; list-style: none; padding-left: 0 !important; }
+
+/* --- 画像・スクショの前後に余白 --- */
+.article-screenshot, .article-img-mid, .article-hero-img { margin: 28px 0 32px; }
+main img, article img, .article-wrap img { border-radius: 6px; }
+
+/* --- 別テンプレート（.site-nav）のヘッダー: スマホで裸のリンクが並ぶのを整える --- */
+.site-header .container:has(> .site-nav) > .menu-toggle { display: none; }
+.site-header .site-nav { display: flex; gap: 14px; align-items: center; }
+.site-header .site-nav a { color: var(--text) !important; text-decoration: none; font-size: .82rem; white-space: nowrap; }
+.site-header .site-nav a:hover { color: var(--accent) !important; }
+
+/* --- 要点ボックスの箇条書きもチェック印に --- */
+.summary-box > ul:not([style]) { list-style: none; padding-left: 0 !important; margin-bottom: 0; }
+.summary-box > ul:not([style]) > li { position: relative; padding-left: 1.6em; }
+.summary-box > ul:not([style]) > li::before {
+  content: ""; position: absolute; left: .25em; top: .45em; width: .4em; height: .75em;
+  border-right: 3px solid var(--accent); border-bottom: 3px solid var(--accent); transform: rotate(45deg);
+}
+@media (max-width: 768px) {
+  .summary-box, .summary-3lines, .point-box, .highlight-box, .experience-box, .author-experience, .article-toc, .toc { padding: 16px 16px !important; }
+  :is(.article-body, .article-container, .content-section, .article-content) > :is(ul, ol):not([class]):not([style]) { padding: 14px 14px 10px; }
+}

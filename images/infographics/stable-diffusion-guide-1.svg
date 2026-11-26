@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 716" width="800" height="716" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+<rect width="800" height="716" fill="#f8fafc" rx="16"/>
+<rect x="0" y="0" width="800" height="84" fill="#7c3aed" rx="16"/><rect x="0" y="68" width="800" height="16" fill="#7c3aed"/>
+<text x="400" y="52" text-anchor="middle" fill="white" font-size="32" font-weight="bold">プロンプトのコツと主要パラメータ</text>
+<rect x="28" y="108" width="744" height="96" fill="#ede9fe" rx="12"/>
+<text x="400" y="146" text-anchor="middle" fill="#1e293b" font-size="24" font-weight="bold">基本構造：[被写体], [スタイル],</text>
+<text x="400" y="180" text-anchor="middle" fill="#1e293b" font-size="24" font-weight="bold">[背景・環境], [品質キーワード]</text>
+<rect x="28" y="220" width="360" height="432" fill="white" rx="12" stroke="#7c3aed" stroke-width="2"/>
+<rect x="28" y="220" width="360" height="60" fill="#7c3aed" rx="12"/><rect x="28" y="264" width="360" height="16" fill="#7c3aed"/>
+<text x="208" y="260" text-anchor="middle" fill="white" font-size="26" font-weight="bold">プロンプトのコツ</text>
+<circle cx="54" cy="312" r="6" fill="#7c3aed"/>
+<text x="70" y="320" fill="#1e293b" font-size="24">英語で書く</text>
+<circle cx="54" cy="358" r="6" fill="#7c3aed"/>
+<text x="70" y="366" fill="#1e293b" font-size="24">品質キーワードを加える</text>
+<text x="70" y="400" fill="#1e293b" font-size="24">（masterpiece など）</text>
+<circle cx="54" cy="438" r="6" fill="#7c3aed"/>
+<text x="70" y="446" fill="#1e293b" font-size="24">重要な要素を前に書く</text>
+<circle cx="54" cy="484" r="6" fill="#7c3aed"/>
+<text x="70" y="492" fill="#1e293b" font-size="24">ネガティブプロンプトで</text>
+<text x="70" y="526" fill="#1e293b" font-size="24">不要な要素を除外</text>
+<circle cx="54" cy="564" r="6" fill="#7c3aed"/>
+<text x="70" y="572" fill="#1e293b" font-size="24">重み付け (word:1.2) /</text>
+<text x="70" y="606" fill="#1e293b" font-size="24">(word:0.8)</text>
+<rect x="412" y="220" width="360" height="432" fill="white" rx="12" stroke="#0891b2" stroke-width="2"/>
+<rect x="412" y="220" width="360" height="60" fill="#0891b2" rx="12"/><rect x="412" y="264" width="360" height="16" fill="#0891b2"/>
+<text x="592" y="260" text-anchor="middle" fill="white" font-size="26" font-weight="bold">主要パラメータ</text>
+<circle cx="438" cy="312" r="6" fill="#0891b2"/>
+<text x="454" y="320" fill="#1e293b" font-size="24">Sampling Steps：20〜30</text>
+<circle cx="438" cy="358" r="6" fill="#0891b2"/>
+<text x="454" y="366" fill="#1e293b" font-size="24">CFG Scale：7〜12</text>
+<circle cx="438" cy="404" r="6" fill="#0891b2"/>
+<text x="454" y="412" fill="#1e293b" font-size="24">Seed：同じシードと設定で</text>
+<text x="454" y="446" fill="#1e293b" font-size="24">同じ画像を再現</text>
+<circle cx="438" cy="484" r="6" fill="#0891b2"/>
+<text x="454" y="492" fill="#1e293b" font-size="24">Sampling Method：DPM++</text>
+<text x="454" y="526" fill="#1e293b" font-size="24">2M Karras・Euler a</text>
+<text x="400" y="692" text-anchor="middle" fill="#94a3b8" font-size="24">AI navi (ai-navi.app)｜記事本文の内容をもとに作成</text>
+</svg>

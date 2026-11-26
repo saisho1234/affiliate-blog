@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 596" width="800" height="596" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+<rect width="800" height="596" fill="#f8fafc" rx="16"/>
+<rect x="0" y="0" width="800" height="84" fill="#4f46e5" rx="16"/><rect x="0" y="68" width="800" height="16" fill="#4f46e5"/>
+<text x="400" y="52" text-anchor="middle" fill="white" font-size="32" font-weight="bold">目的別 AIメモアプリの選び方</text>
+<rect x="28" y="108" width="744" height="76" fill="white" rx="12" stroke="#e0e7ff" stroke-width="3"/>
+<rect x="28" y="108" width="10" height="76" fill="#4f46e5" rx="5"/>
+<text x="58" y="156" fill="#1e293b" font-size="28" font-weight="bold">会議の議事録を自動作成</text>
+<text x="748" y="156" text-anchor="end" fill="#4f46e5" font-size="26" font-weight="bold">Notta</text>
+<rect x="28" y="196" width="744" height="76" fill="white" rx="12" stroke="#e0e7ff" stroke-width="3"/>
+<rect x="28" y="196" width="10" height="76" fill="#4f46e5" rx="5"/>
+<text x="58" y="244" fill="#1e293b" font-size="28" font-weight="bold">音声メモを自動でテキスト化</text>
+<text x="748" y="244" text-anchor="end" fill="#4f46e5" font-size="26" font-weight="bold">Notta</text>
+<rect x="28" y="284" width="744" height="76" fill="white" rx="12" stroke="#e0e7ff" stroke-width="3"/>
+<rect x="28" y="284" width="10" height="76" fill="#4f46e5" rx="5"/>
+<text x="58" y="332" fill="#1e293b" font-size="28" font-weight="bold">お金をかけずに資料を分析</text>
+<text x="748" y="332" text-anchor="end" fill="#4f46e5" font-size="26" font-weight="bold">NotebookLM（完全無料）</text>
+<rect x="28" y="372" width="744" height="76" fill="white" rx="12" stroke="#e0e7ff" stroke-width="3"/>
+<rect x="28" y="372" width="10" height="76" fill="#4f46e5" rx="5"/>
+<text x="58" y="420" fill="#1e293b" font-size="28" font-weight="bold">オフラインで使いたい</text>
+<text x="748" y="420" text-anchor="end" fill="#4f46e5" font-size="26" font-weight="bold">Obsidian</text>
+<rect x="28" y="460" width="744" height="76" fill="white" rx="12" stroke="#e0e7ff" stroke-width="3"/>
+<rect x="28" y="460" width="10" height="76" fill="#4f46e5" rx="5"/>
+<text x="58" y="508" fill="#1e293b" font-size="28" font-weight="bold">エンジニア向け</text>
+<text x="748" y="508" text-anchor="end" fill="#4f46e5" font-size="26" font-weight="bold">Obsidian・Readwise Reader</text>
+<text x="400" y="572" text-anchor="middle" fill="#94a3b8" font-size="24">AI navi (ai-navi.app)｜記事本文の内容をもとに作成</text>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 786" width="800" height="786" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+<rect width="800" height="786" fill="#f8fafc" rx="16"/>
+<rect x="0" y="0" width="800" height="84" fill="#7c3aed" rx="16"/><rect x="0" y="68" width="800" height="16" fill="#7c3aed"/>
+<text x="400" y="52" text-anchor="middle" fill="white" font-size="32" font-weight="bold">Stable Diffusionのビジネス活用5選</text>
+<rect x="28" y="108" width="744" height="112" fill="white" rx="12" stroke="#ede9fe" stroke-width="2"/>
+<circle cx="75" cy="164" r="28" fill="#7c3aed"/>
+<text x="75" y="174" text-anchor="middle" fill="white" font-size="28" font-weight="bold">1</text>
+<text x="122" y="160" fill="#1e293b" font-size="28" font-weight="bold">ブログ・メディアのアイキャッチ</text>
+<text x="122" y="194" fill="#475569" font-size="24">記事テーマに合う独自の画像を量産して差別化</text>
+<rect x="28" y="234" width="744" height="112" fill="white" rx="12" stroke="#ede9fe" stroke-width="2"/>
+<circle cx="75" cy="290" r="28" fill="#7c3aed"/>
+<text x="75" y="300" text-anchor="middle" fill="white" font-size="28" font-weight="bold">2</text>
+<text x="122" y="286" fill="#1e293b" font-size="28" font-weight="bold">SNS投稿用のオリジナル画像</text>
+<text x="122" y="320" fill="#475569" font-size="24">統一感のあるブランドイメージを低コストで</text>
+<rect x="28" y="360" width="744" height="112" fill="white" rx="12" stroke="#ede9fe" stroke-width="2"/>
+<circle cx="75" cy="416" r="28" fill="#7c3aed"/>
+<text x="75" y="426" text-anchor="middle" fill="white" font-size="28" font-weight="bold">3</text>
+<text x="122" y="412" fill="#1e293b" font-size="28" font-weight="bold">広告バナー・LPのプロトタイプ</text>
+<text x="122" y="446" fill="#475569" font-size="24">複数パターンを素早く生成し、A/Bテストの素材に</text>
+<rect x="28" y="486" width="744" height="112" fill="white" rx="12" stroke="#ede9fe" stroke-width="2"/>
+<circle cx="75" cy="542" r="28" fill="#7c3aed"/>
+<text x="75" y="552" text-anchor="middle" fill="white" font-size="28" font-weight="bold">4</text>
+<text x="122" y="538" fill="#1e293b" font-size="28" font-weight="bold">商品イメージ・コンセプト画像</text>
+<text x="122" y="572" fill="#475569" font-size="24">企画段階の認識合わせやクライアントへのプレゼンに</text>
+<rect x="28" y="612" width="744" height="112" fill="white" rx="12" stroke="#ede9fe" stroke-width="2"/>
+<circle cx="75" cy="668" r="28" fill="#7c3aed"/>
+<text x="75" y="678" text-anchor="middle" fill="white" font-size="28" font-weight="bold">5</text>
+<text x="122" y="664" fill="#1e293b" font-size="28" font-weight="bold">プレゼン資料の挿絵</text>
+<text x="122" y="698" fill="#475569" font-size="24">オリジナルのイラスト・図解で資料の説得力アップ</text>
+<text x="400" y="762" text-anchor="middle" fill="#94a3b8" font-size="24">AI navi (ai-navi.app)｜記事本文の内容をもとに作成</text>
+</svg>

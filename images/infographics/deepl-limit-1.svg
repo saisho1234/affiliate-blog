@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 636" width="800" height="636" font-family="'Hiragino Sans','Noto Sans JP',sans-serif">
+<rect width="800" height="636" fill="#f8fafc" rx="16"/>
+<rect x="0" y="0" width="800" height="84" fill="#2563eb" rx="16"/><rect x="0" y="68" width="800" height="16" fill="#2563eb"/>
+<text x="400" y="52" text-anchor="middle" fill="white" font-size="32" font-weight="bold">上限エラー3パターンと対処法</text>
+<rect x="28" y="108" width="744" height="146" fill="white" rx="12" stroke="#dbeafe" stroke-width="2"/>
+<circle cx="75" cy="181" r="28" fill="#2563eb"/>
+<text x="75" y="191" text-anchor="middle" fill="white" font-size="28" font-weight="bold">1</text>
+<text x="122" y="160" fill="#1e293b" font-size="28" font-weight="bold">1回の文字数上限を超えた</text>
+<text x="122" y="194" fill="#475569" font-size="24">1,500文字（ログイン時5,000文字）以内に</text>
+<text x="122" y="228" fill="#475569" font-size="24">分割して翻訳／Proで制限を撤廃</text>
+<rect x="28" y="268" width="744" height="146" fill="white" rx="12" stroke="#dbeafe" stroke-width="2"/>
+<circle cx="75" cy="341" r="28" fill="#2563eb"/>
+<text x="75" y="351" text-anchor="middle" fill="white" font-size="28" font-weight="bold">2</text>
+<text x="122" y="320" fill="#1e293b" font-size="28" font-weight="bold">ファイル翻訳の月3ファイル上限</text>
+<text x="122" y="354" fill="#475569" font-size="24">翌月のリセットを待つ／</text>
+<text x="122" y="388" fill="#475569" font-size="24">テキストをコピペして翻訳（ファイル枠を消費しない）</text>
+<rect x="28" y="428" width="744" height="146" fill="white" rx="12" stroke="#dbeafe" stroke-width="2"/>
+<circle cx="75" cy="501" r="28" fill="#2563eb"/>
+<text x="75" y="511" text-anchor="middle" fill="white" font-size="28" font-weight="bold">3</text>
+<text x="122" y="480" fill="#1e293b" font-size="28" font-weight="bold">短時間の大量翻訳による一時制限</text>
+<text x="122" y="514" fill="#475569" font-size="24">30分〜数時間待って再試行／</text>
+<text x="122" y="548" fill="#475569" font-size="24">即時解除が必要な業務はProへ</text>
+<text x="400" y="612" text-anchor="middle" fill="#94a3b8" font-size="24">AI navi (ai-navi.app)｜記事本文の内容をもとに作成</text>
+</svg>
