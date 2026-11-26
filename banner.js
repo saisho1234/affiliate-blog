@@ -102,6 +102,9 @@
   else if (path.includes('writing') || path.includes('chatgpt') || path.includes('claude') || path.includes('gemini') || path.includes('copilot') || path.includes('perplexity')) idx = 1;
   else idx = 0; // デフォルト: MiriCanvas
 
+  // イルシルのA8案件は「PC専用」。スマホではMiriCanvasを出す(2026-11-26)
+  if (idx === 3 && window.matchMedia && window.matchMedia('(max-width: 768px)').matches) idx = 0;
+
   const p = programs[idx];
 
   // バナー要素を作成（初期非表示）
